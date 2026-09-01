@@ -20,7 +20,9 @@
 | Repositório `linux-essentials-labs` | ✅ público no GitHub, primeiro commit feito |
 | `.wslconfig` limitando WSL2 a 3 GB | ⬜ pendente |
 | Teste de restauração do snapshot | ⬜ pendente |
-| Contas learning.lpi.org e OverTheWire | ⬜ pendente |
+| Contas learning.lpi.org e OverTheWire | ✅ criadas (01/09) |
+| **Semana 1 — Objetivos 2.1 e 2.2** | 🔄 em andamento (01 a 07/09) |
+| Bandit — primeiro acesso | ✅ conectado e jogando |
 | Voucher da prova | ⬜ comprar na Semana 5 |
 
 ---
@@ -233,7 +235,7 @@ Um arquivo por semana em `labs/`, commitado ao fim de cada sessão. Três benef�
 - [x] Repositório `linux-essentials-labs` público no GitHub
 - [ ] `.wslconfig` limitando WSL2 a 3 GB
 - [ ] Teste de restauração do snapshot
-- [ ] Contas em learning.lpi.org e OverTheWire
+- [x] Contas em learning.lpi.org e OverTheWire (01/09)
 
 ---
 
