@@ -21,8 +21,10 @@
 | `.wslconfig` limitando WSL2 a 3 GB | ⬜ pendente |
 | Teste de restauração do snapshot | ⬜ pendente |
 | Contas learning.lpi.org e OverTheWire | ✅ criadas (01/09) |
-| **Semana 1 — Objetivos 2.1 e 2.2** | 🔄 em andamento (01 a 07/09) |
+| **Semana 1 — Tópico 1 + FHS** | 🔄 em andamento (01 a 07/09) |
 | Bandit — primeiro acesso | ✅ conectado e jogando |
+
+> **Ordem ajustada em 02/09:** o curso do Muller começa pelo **Tópico 1**, não pelo Tópico 2. O cronograma da seção 7 foi reordenado para acompanhar o curso — a data da prova não muda.
 | Voucher da prova | ⬜ comprar na Semana 5 |
 
 ---
@@ -222,6 +224,24 @@ Um arquivo por semana em `labs/`, commitado ao fim de cada sessão. Três benef�
 
 ## 7. Cronograma semana a semana
 
+> **Ordem revisada em 02/09** para acompanhar a sequência do curso do Muller, que começa pelo Tópico 1. Os blocos de conteúdo abaixo estão identificados por letra; a tabela dá a ordem cronológica real. A data da prova não mudou.
+
+| Semana | Datas | Bloco | Conteúdo |
+|---|---|---|---|
+| 0 | 25–31/08 | — | ✅ Laboratório montado |
+| **1** | **01–07/09** | **A** | 🔄 Tópico 1 — comunidade, licenças, distros, FHS |
+| 2 | 08–14/09 | B | Tópico 2 p1 — linha de comando e ajuda |
+| 3 | 15–21/09 | C | Tópico 2 p2 — arquivos, diretórios, links |
+| 4 | 22–28/09 | D | Tópico 3 p1 — compactação, filtros, busca |
+| 5 | 29/09–05/10 | E | Tópico 3 p2 — shell scripting · 🎯 **agendar a prova** |
+| 6 | 06–12/10 | F | Tópico 5 — usuários, grupos e permissões |
+| 7 | 13–19/10 | G | Tópico 4 — hardware, processos e rede |
+| 8 | 20–26/10 | H | Segunda passada (Dion) + simulado diagnóstico |
+| 9 | 27/10–02/11 | I | Simulados e lab integrador |
+| 10 | 03–09/11 | J | Revisão final · **PROVA** |
+
+> Efeito colateral positivo da nova ordem: o Tópico 1 é o mais teórico e o de menor densidade prática. Fazê-lo primeiro deixa o Anki rodando desde a semana 1, com sete semanas de revisão espaçada até a prova — que é exatamente o que conteúdo de memorização precisa.
+
 ### ✅ Semana 0 — 25 a 31/08 · Laboratório — **CONCLUÍDA**
 - [x] VirtualBox instalado (sem Extension Pack)
 - [x] VM `lab-ubuntu` criada: 2 GB RAM, 2 vCPU, disco 25 GB dinâmico
@@ -239,7 +259,7 @@ Um arquivo por semana em `labs/`, commitado ao fim de cada sessão. Três benef�
 
 ---
 
-### Semana 1 — 01 a 07/09 · Tópico 2, parte 1 (peso 9)
+### Bloco B · Semana 2 — 08 a 14/09 · Tópico 2, parte 1 (peso 9)
 **Objetivos:** 2.1 Command Line Basics · 2.2 Using the Command Line to Get Help
 
 **Laboratório:**
@@ -256,7 +276,7 @@ Um arquivo por semana em `labs/`, commitado ao fim de cada sessão. Três benef�
 
 ---
 
-### Semana 2 — 08 a 14/09 · Tópico 2, parte 2 (peso 9)
+### Bloco C · Semana 3 — 15 a 21/09 · Tópico 2, parte 2 (peso 9)
 **Objetivos:** 2.3 Using Directories and Listing Files · 2.4 Creating, Moving and Deleting Files
 
 **Laboratório:**
@@ -272,7 +292,7 @@ Um arquivo por semana em `labs/`, commitado ao fim de cada sessão. Três benef�
 
 ---
 
-### Semana 3 — 15 a 21/09 · Tópico 5 (peso 7)
+### Bloco F · Semana 6 — 06 a 12/10 · Tópico 5 (peso 7)
 **Objetivos:** 5.1 Basic Security and Identifying User Types · 5.2 Creating Users and Groups · 5.3 Managing File Permissions and Ownership · 5.4 Special Directories and Files
 
 **Laboratório:**
@@ -290,7 +310,7 @@ Um arquivo por semana em `labs/`, commitado ao fim de cada sessão. Três benef�
 
 ---
 
-### Semana 4 — 22 a 28/09 · Tópico 3, parte 1 (peso 9)
+### Bloco D · Semana 4 — 22 a 28/09 · Tópico 3, parte 1 (peso 9)
 **Objetivos:** 3.1 Archiving Files on the Command Line · 3.2 Searching and Extracting Data from Files
 
 **Laboratório:**
@@ -307,7 +327,7 @@ Um arquivo por semana em `labs/`, commitado ao fim de cada sessão. Três benef�
 
 ---
 
-### Semana 5 — 29/09 a 05/10 · Tópico 3, parte 2 (peso 9)
+### Bloco E · Semana 5 — 29/09 a 05/10 · Tópico 3, parte 2 (peso 9)
 **Objetivo:** 3.3 Turning Commands into a Script — peso 4, o objetivo individual mais pesado da prova
 
 **Laboratório:**
@@ -325,7 +345,7 @@ Marcar antes de se sentir pronto é intencional — prazo firme é o que impede 
 
 ---
 
-### Semana 6 — 06 a 12/10 · Tópico 4 (peso 8)
+### Bloco G · Semana 7 — 13 a 19/10 · Tópico 4 (peso 8)
 **Objetivos:** 4.1 Choosing an Operating System · 4.2 Understanding Computer Hardware · 4.3 Where Data is Stored · 4.4 Your Computer on the Network
 
 **Laboratório:**
@@ -344,7 +364,7 @@ Marcar antes de se sentir pronto é intencional — prazo firme é o que impede 
 
 ---
 
-### Semana 7 — 13 a 19/10 · Tópico 1 (peso 7)
+### Bloco A · Semana 1 — 01 a 07/09 · Tópico 1 (peso 7) — 🔄 EM ANDAMENTO
 **Objetivos:** 1.1 Linux Evolution and Popular Operating Systems · 1.2 Major Open Source Applications · 1.3 Open Source Software and Licensing · 1.4 ICT Skills and Working in Linux
 
 Semana conceitual — **é onde o Anki ganha a prova**, porque é memorização pura.
