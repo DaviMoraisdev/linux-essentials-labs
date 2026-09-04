@@ -21,8 +21,11 @@
 | `.wslconfig` limitando WSL2 a 3 GB | ⬜ pendente |
 | Teste de restauração do snapshot | ⬜ pendente |
 | Contas learning.lpi.org e OverTheWire | ✅ criadas (01/09) |
-| **Semana 1 — Tópico 1 + FHS** | 🔄 em andamento (01 a 07/09) |
-| Bandit — primeiro acesso | ✅ conectado e jogando |
+| **Semana 1 — Tópico 1 + FHS** | 🔄 em andamento — teoria concluída (04/09) |
+| Tópico 1 — licenças, distros, interfaces, aplicações, portas, linguagens | ✅ estudado e revisado |
+| FHS — visão geral dos diretórios | ✅ estudado e revisado |
+| Bandit | ✅ níveis 0 a 4 · 🔄 nível 5 |
+| Cards de revisão (Notion) | ✅ em uso desde a semana 1 |
 
 > **Ordem ajustada em 02/09:** o curso do Muller começa pelo **Tópico 1**, não pelo Tópico 2. O cronograma da seção 7 foi reordenado para acompanhar o curso — a data da prova não muda.
 | Voucher da prova | ⬜ comprar na Semana 5 |
@@ -193,7 +196,7 @@ Host lab
 |---|---|---|
 | **LPI Learning Materials** (learning.lpi.org) | Material oficial da LPI, escrito objetivo por objetivo, com tradução PT-BR | Grátis |
 | **OverTheWire — Bandit** | Jogo de linha de comando via SSH. Níveis 0–20 treinam `find`, `grep`, `tar`, pipes e permissões — o coração dos tópicos 2, 3 e 5 | Grátis |
-| **Anki** (deck próprio) | Retenção espaçada. Criar os cards é metade do estudo | Grátis |
+| **Notion** (cards próprios) | Retenção espaçada. Escrever o card é metade do estudo | Grátis |
 | **explainshell.com** | Explica cada flag de um comando complexo | Grátis |
 | **tldr / tealdeer** (`sudo apt install tealdeer`) | Exemplos práticos, complemento ao `man` | Grátis |
 | **Livro "Certificação Linux Essentials"** (Uirá Endy Ribeiro) | Opcional, bom para o tópico 1 (licenças, distros, história) | ~R$40 |
@@ -210,7 +213,7 @@ Host lab
 2. **25–30 min de laboratório** — reproduzir tudo na VM, **digitando**, nunca copiando e colando. Errar, ler a mensagem de erro, consertar.
 3. **5–10 min de registro** — anotar no caderno: o comando, o que faz, e o exemplo real executado.
 
-**Regra do dia seguinte:** antes de cada sessão nova, refazer de memória 3 comandos da sessão anterior, sem consultar. Travou? Consulta e o comando vira card no Anki. Isso é *active recall* e vale mais que reassistir a aula.
+**Regra do dia seguinte:** antes de cada sessão nova, refazer de memória 3 comandos da sessão anterior, sem consultar. Travou? Consulta e o comando vira card no Notion. Isso é *active recall* e vale mais que reassistir a aula.
 
 **Quebrar coisas de propósito.** O snapshot `limpo` existe para isso. Rodar `chmod 000 /etc`, apagar `/bin`, errar um `rm -rf` — ver o sistema quebrar e entender por que ensina mais rápido que qualquer aula.
 
@@ -240,7 +243,7 @@ Um arquivo por semana em `labs/`, commitado ao fim de cada sessão. Três benef�
 | 9 | 27/10–02/11 | I | Simulados e lab integrador |
 | 10 | 03–09/11 | J | Revisão final · **PROVA** |
 
-> Efeito colateral positivo da nova ordem: o Tópico 1 é o mais teórico e o de menor densidade prática. Fazê-lo primeiro deixa o Anki rodando desde a semana 1, com sete semanas de revisão espaçada até a prova — que é exatamente o que conteúdo de memorização precisa.
+> Efeito colateral positivo da nova ordem: o Tópico 1 é o mais teórico e o de menor densidade prática. Fazê-lo primeiro deixa os cards de revisão rodando desde a semana 1, com sete semanas de revisão espaçada até a prova — que é exatamente o que conteúdo de memorização precisa.
 
 ### ✅ Semana 0 — 25 a 31/08 · Laboratório — **CONCLUÍDA**
 - [x] VirtualBox instalado (sem Extension Pack)
@@ -288,7 +291,7 @@ Um arquivo por semana em `labs/`, commitado ao fim de cada sessão. Três benef�
 - FHS: percorrer `/etc`, `/var`, `/usr`, `/home`, `/tmp`, `/opt`, `/bin`, `/dev`, `/proc` e escrever uma linha sobre cada
 
 **Prática extra:** Bandit 6–10
-**Entregável:** `labs/semana-02.md` + primeira leva no Anki (~40 comandos)
+**Entregável:** `labs/semana-03.md` + leva de cards no Notion (~40 comandos)
 
 ---
 
@@ -367,7 +370,7 @@ Marcar antes de se sentir pronto é intencional — prazo firme é o que impede 
 ### Bloco A · Semana 1 — 01 a 07/09 · Tópico 1 (peso 7) — 🔄 EM ANDAMENTO
 **Objetivos:** 1.1 Linux Evolution and Popular Operating Systems · 1.2 Major Open Source Applications · 1.3 Open Source Software and Licensing · 1.4 ICT Skills and Working in Linux
 
-Semana conceitual — **é onde o Anki ganha a prova**, porque é memorização pura.
+Semana conceitual — **é onde os cards de revisão ganham a prova**, porque é memorização pura.
 
 - História: Unix → GNU → kernel Linux (Torvalds, 1991) → distribuições
 - Onde Linux roda: servidores, cloud, embarcados, Android, supercomputadores
@@ -377,8 +380,8 @@ Semana conceitual — **é onde o Anki ganha a prova**, porque é memorização 
 - Ambientes desktop: GNOME, KDE Plasma, Xfce; X11 vs Wayland
 - Privacidade e boas práticas: senhas, criptografia, backup
 
-**Meta:** ~60 cards no Anki, revisão de 10 min/dia até a prova.
-**Entregável:** `labs/semana-07.md` + deck completo
+**Meta:** ~60 cards no Notion, revisão de 10 min/dia até a prova.
+**Entregável:** `labs/semana-01.md` + conjunto de cards completo
 
 ---
 
@@ -408,7 +411,7 @@ Semana conceitual — **é onde o Anki ganha a prova**, porque é memorização 
 ---
 
 ### Semana 10 — 03 a 09/11 · Revisão final e prova
-- Seg–Qua: revisão **leve** — só a cola do GitHub + Anki, 40 min/dia. Sem conteúdo novo
+- Seg–Qua: revisão **leve** — só a cola do GitHub + os cards do Notion, 40 min/dia. Sem conteúdo novo
 - Qui: 1 simulado final. Se ≥ 85%, está pronto
 - Sex/Sáb: **descanso**. Não estudar na véspera
 - **Prova: 09 ou 10/11.** Chegar 30 min antes, levar dois documentos com foto
@@ -464,7 +467,7 @@ Registro do que foi descoberto na prática, para não repetir.
 
 Para antecipar a prova para meados de outubro, em ordem de impacto:
 
-1. **Corte o que já sabe.** Fazer um simulado diagnóstico na **semana 1**, não na 8. Se já acerta 60% do Tópico 1, essa semana vira 2h de Anki.
+1. **Corte o que já sabe.** Fazer um simulado diagnóstico na **semana 1**, não na 8. Se já acerta 60% do Tópico 1, essa semana vira 2h de revisão de cards.
 2. **Não assistir o Dion do zero.** Economiza ~5h sozinho.
 3. **Subir para 10h/semana só nas semanas 4–5** (Tópico 3, peso 9 e o objetivo mais pesado). Investir onde o peso é maior comprime mais que aumentar tudo uniformemente.
 4. **Bandit todo dia, 20 min.** Única atividade que substitui vídeo por competência real. Chegar ao nível 20 vale mais que 10h de aula.
