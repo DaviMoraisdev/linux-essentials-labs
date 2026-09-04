@@ -215,19 +215,84 @@ Servidor quer previsibilidade → fixed release. Desktop de entusiasta quer novi
 
 ⚠️ Sua anotação dizia "Switch Open Office". O termo é **suíte de escritório** (*office suite*).
 
-| Categoria | Softwares |
-|---|---|
-| **Suíte de escritório** | LibreOffice (Writer, Calc, Impress), Apache OpenOffice |
-| **Navegador** | Firefox, Chromium |
-| **E-mail (cliente)** | Thunderbird, Evolution |
-| **Imagem e design** | GIMP (raster), Inkscape (vetor), Blender (3D) |
-| **Servidor web** | Apache HTTP Server, nginx |
-| **Banco de dados** | MySQL, MariaDB, PostgreSQL, SQLite |
-| **Compartilhamento de arquivos** | Samba (SMB/Windows), NFS |
-| **Servidor de e-mail** | Postfix, Sendmail, Dovecot |
-| **Virtualização e containers** | KVM, QEMU, VirtualBox, Docker, Kubernetes |
-| **Linguagens** | C, Python, Perl, PHP, JavaScript, Java, Shell script |
-| **Shells** | Bash (padrão), Zsh, Fish, Dash, Ksh |
+### 6.1 Aplicações de desktop
+
+| Categoria | Softwares | Observações |
+|---|---|---|
+| **Suíte de escritório** | LibreOffice (Writer, Calc, Impress, Draw), Apache OpenOffice | LibreOffice é um **fork** do OpenOffice.org, feito em 2010 pela The Document Foundation. Hoje é o mais ativo dos dois |
+| **Navegador** | Firefox (Mozilla), Chromium | |
+| **Navegador de terminal** | `links`, `lynx`, `w3m` | Acessam a web em modo texto, sem interface gráfica |
+| **Cliente de e-mail** | Thunderbird (Mozilla), Evolution | Cliente = *MUA* (Mail User Agent). Fala IMAP e POP3 com o servidor; o Thunderbird também faz calendário e newsgroups |
+| **Edição de imagem (raster)** | **GIMP** — GNU Image Manipulation Program | Equivalente ao Photoshop. Trabalha com pixels |
+| **Edição vetorial** | Inkscape | Equivalente ao Illustrator. Trabalha com curvas |
+| **3D** | Blender | Modelagem, animação, renderização e também edição de vídeo |
+| **Áudio e vídeo** | VLC, Rhythmbox, Audacious, Clementine, Audacity (edição) | |
+
+> ⚠️ **Fork não é cópia.** Um *fork* é uma **derivação** que passa a seguir seu próprio caminho, com equipe e decisões próprias. O LibreOffice divergiu tanto do OpenOffice que hoje são projetos diferentes, não duas versões do mesmo. Cópia seria um clone que acompanha o original — como o antigo CentOS era do RHEL.
+
+### 6.2 Aplicações de servidor e suas portas
+
+Serviços de rede escutam em **portas** TCP ou UDP. Saber as principais é objetivo direto da prova.
+
+| Serviço | Função | Porta | Software |
+|---|---|---|---|
+| **HTTP** | Servidor web | **80** | Apache HTTP Server, nginx |
+| **HTTPS** | Servidor web com TLS | **443** | Apache, nginx |
+| **SSH** | Acesso remoto **criptografado** | **22** | OpenSSH (`sshd`) |
+| **Telnet** | Acesso remoto **sem criptografia** | **23** | telnetd |
+| **SMTP** | **Envio** de e-mail | **25** | Postfix, Sendmail, Exim |
+| **POP3** | **Recebimento** de e-mail (baixa e apaga) | **110** | Dovecot |
+| **IMAP** | **Recebimento** de e-mail (mantém no servidor) | **143** | Dovecot |
+| **DNS** | Traduz **nomes → IPs** | **53** | BIND, dnsmasq, unbound |
+| **DHCP** | Distribui IPs automaticamente | **67/68** | ISC DHCP, dnsmasq |
+| **FTP** | Transferência de arquivos | **21** | vsftpd, ProFTPD |
+| **NFS** | Network File System — compartilhamento entre Unix/Linux | **2049** | nfs-kernel-server |
+| **SMB/CIFS** | Compartilhamento compatível com **Windows** | **139 / 445** | Samba |
+| **MySQL / MariaDB** | Banco de dados relacional | **3306** | MySQL, MariaDB |
+| **PostgreSQL** | Banco de dados relacional | **5432** | PostgreSQL |
+| **LDAP** | Diretório de usuários | **389** | OpenLDAP |
+| **IPP** | Impressão | **631** | **CUPS** — Common Unix Printing System |
+
+Também open source, sem porta fixa padrão: **ownCloud** e **Nextcloud** (nuvem privada, rodam sobre HTTP/HTTPS).
+
+**Correções desta seção:**
+
+- ⚠️ **`ssh` e `sshd` não são a mesma coisa.** O `ssh` é o **cliente** (o que você digita); o `sshd` é o **daemon**, o servidor que fica escutando na porta 22. O sufixo **`d` significa daemon** e se repete em vários serviços: `httpd`, `named`, `crond`, `sshd`. Você já viu isso na prática — na VM, `systemctl is-active ssh.socket` consulta o lado servidor.
+- ⚠️ **Telnet não foi feito para "testar portas".** Ele é um protocolo de **login remoto sem criptografia**, de 1969 — tudo, inclusive a senha, trafega em texto puro. Está **obsoleto e foi substituído pelo SSH**. Usar `telnet host porta` para testar se um serviço responde é um uso lateral e improvisado (hoje se usa `nc` ou `ss`). A prova cobra o contraste **Telnet inseguro × SSH criptografado**.
+- **DNS** faz a resolução de **nome → IP** (e o caminho inverso, chamado *reverse lookup*). Sua anotação dizia "conversão dos IPs", que inverte a direção.
+
+### 6.3 Métodos de desenvolvimento
+
+Os dois modelos vêm do ensaio **"The Cathedral and the Bazaar"**, de Eric S. Raymond (1997) — texto fundador da cultura open source.
+
+| Modelo | Como funciona | Exemplo histórico |
+|---|---|---|
+| **Cathedral** (catedral) | O código é desenvolvido por um grupo restrito e só é publicado nas **releases**. Entre uma versão e outra, o público não vê nada | Projeto GNU / Emacs, na época do ensaio |
+| **Bazaar** (bazar) | Desenvolvimento **aberto e contínuo**: qualquer um vê o código a qualquer momento, propõe mudanças e reporta bugs | Kernel Linux |
+
+A frase-síntese do ensaio: *"given enough eyeballs, all bugs are shallow"* — com olhos suficientes, todo bug é raso. É o argumento central a favor do modelo bazar.
+
+### 6.4 Linguagens de programação
+
+| Tipo | Como executa | Exemplos |
+|---|---|---|
+| **Compiladas** | Um **compilador** traduz o código-fonte para código de máquina (binário) **antes** da execução. O resultado roda direto no processador | C, C++, Go, Rust |
+| **Interpretadas** | Um **interpretador** lê e executa o código-fonte **na hora**, linha a linha. Não há binário gerado | Python, Perl, PHP, Ruby, Shell script, JavaScript |
+| **Híbridas (bytecode)** | Compiladas para um formato intermediário, executado por uma máquina virtual | Java (JVM), C# (.NET) |
+
+**Trade-offs reais:**
+
+| Aspecto | Compilada | Interpretada |
+|---|---|---|
+| **Velocidade de execução** | Mais rápida (código de máquina nativo) | Mais lenta (tradução em tempo de execução) |
+| **Portabilidade** | O binário serve só para uma arquitetura/SO — precisa recompilar | O mesmo arquivo roda em qualquer lugar que tenha o interpretador |
+| **Dependência** | Nenhuma na máquina do usuário | Exige o interpretador instalado |
+| **Ciclo de desenvolvimento** | Mais lento: editar → compilar → testar | Mais rápido: editar → rodar |
+| **Erros** | Muitos aparecem na compilação | Só aparecem na execução |
+
+> ⚠️ **Correção:** sua anotação dizia que linguagens compiladas "tendem a ser menores devido às bibliotecas que pesam bastante". **Tamanho não é uma diferença confiável entre os dois modelos** — um binário C com *static linking* pode ser bem maior que o script Python equivalente. As diferenças que valem são as da tabela acima: velocidade de execução × portabilidade e velocidade de desenvolvimento.
+
+Para a prova, as linguagens citadas nos objetivos são: **C, Java, JavaScript, Perl, PHP, Python e Shell script**.
 
 ---
 
@@ -317,23 +382,114 @@ O último `ls -l /bin` mostra algo curioso: em distribuições modernas, `/bin` 
 | 7 | CentOS = "RHEL de graça" | CentOS Linux acabou; **Stream** é upstream, não clone | Situação mudou em 2021/2024 |
 | 8 | Free Software = "liberdade sem exceções" | São as **4 liberdades**; copyleft impõe condição ao redistribuir | Base filosófica do objetivo 1.3 |
 | 9 | "Kanonical" / "Switch Office" | **Canonical** / **suíte** de escritório | Grafia dos nomes cai em questão |
+| 10 | Telnet "para testar portas" | Telnet = login remoto **sem criptografia**, obsoleto, substituído pelo SSH | O contraste Telnet × SSH é questão clássica |
+| 11 | "SSH pode ser chamado de SSHD" | `ssh` = **cliente**; `sshd` = **daemon/servidor**. O `d` final significa daemon | Distinção cliente/servidor cai na prova |
+| 12 | DNS "converte os IPs" | DNS resolve **nome → IP** (e o reverso) | Direção invertida |
+| 13 | Fork = "cópia" | Fork = **derivação** que segue caminho próprio | LibreOffice × OpenOffice |
+| 14 | Compiladas "tendem a ser menores" | Tamanho não distingue; o que distingue é **velocidade × portabilidade** | Comparação errada leva a resposta errada |
+| 15 | Interpretadas "compilam e executam" | O interpretador **executa direto**, sem gerar binário | Definição do objetivo 1.2 |
+| 16 | Bandit 3 e 4 resolvidos com `find` + `cat` em tudo | Nível 3 é `ls -a` (arquivo oculto); nível 4 é `file ./*` (identificar tipo) | Ver seção 11 |
 
 ---
 
-## 10. Cards para o Anki
+## 10. Cards de revisão (Notion)
 
-Prioridade alta — faça hoje:
+Perguntas prioritárias desta semana, já no meu sistema de cards:
 
+**Licenças e filosofia**
 - Copyleft permite vender? → Sim. Exige código aberto e mesma licença.
 - Freeware é software livre? → Não. É gratuito mas proprietário.
 - MPL é permissiva ou copyleft? → Copyleft fraco (por arquivo).
 - LGPL serve para quê? → Bibliotecas usadas por programas não-GPL.
+- Quais as 4 liberdades? → 0 executar, 1 estudar/modificar, 2 redistribuir, 3 distribuir modificado.
+- OSI e FSF representam o quê? → Open Source Initiative (código) e Free Software Foundation (liberdade).
+
+**Distribuições**
 - Fedora vem do RHEL ou o RHEL vem do Fedora? → Fedora é upstream do RHEL.
+- O que substituiu o CentOS Linux? → Rocky Linux e AlmaLinux.
+
+**FHS e comandos**
 - O que significa `/usr`? → Unix System Resources.
 - Diferença entre `/media` e `/mnt`? → Automático vs manual/temporário.
 - Diferença entre `cd ..` e `cd -`? → Pai vs anterior.
-- Quais as 4 liberdades? → 0 executar, 1 estudar/modificar, 2 redistribuir, 3 distribuir modificado.
-- OSI e FSF representam o quê? → Open Source Initiative (código) e Free Software Foundation (liberdade).
+- Qual comando identifica o tipo de um arquivo? → `file`.
+- Como listar arquivos ocultos? → `ls -a`.
+
+**Portas e serviços**
+- SSH, Telnet, HTTP, HTTPS, SMTP, POP3, IMAP, DNS → 22, 23, 80, 443, 25, 110, 143, 53
+- Samba, NFS, MySQL, CUPS → 139/445, 2049, 3306, 631
+- Diferença entre `ssh` e `sshd`? → Cliente e daemon (servidor).
+- Por que o Telnet foi abandonado? → Trafega tudo em texto puro, sem criptografia.
+
+**Desenvolvimento**
+- Cathedral vs Bazaar? → Código fechado até a release vs aberto continuamente.
+- Compilada vs interpretada? → Binário nativo (rápido, não portável) vs execução direta do fonte (portável, exige interpretador).
+
+---
+
+## 11. Registro do Bandit
+
+Progresso e comandos usados em cada nível. Formato de conexão:
+
+```bash
+ssh bandit<N>@bandit.labs.overthewire.org -p 2220
+```
+
+| Nível | Desafio | Comando que resolveu | Status |
+|---|---|---|---|
+| 0 → 1 | Senha num arquivo `readme` | `ls` · `cat readme` | ✅ |
+| 1 → 2 | Arquivo chamado `-` | `cat ./-` | ✅ |
+| 2 → 3 | Nome de arquivo com espaços | `cat './--spaces in this filename--'` | ✅ |
+| 3 → 4 | Arquivo oculto em `inhere/` | `cd inhere` · `ls -a` · `cat ./...Hiding-From-You` | ✅ |
+| 4 → 5 | Único arquivo legível entre 10 | `file ./*` · `cat ./-file07` | ✅ |
+| 5 → 6 | Arquivo com tamanho e propriedades específicas | em andamento | 🔄 |
+
+### O que cada nível ensinou
+
+**Nível 1 — o arquivo `-`.** `cat -` não funciona porque, para o `cat`, o `-` sozinho significa **"leia da entrada padrão"** em vez de "leia um arquivo com esse nome". O terminal fica parado esperando você digitar. Duas saídas:
+
+```bash
+cat ./-          # o "./" força a interpretação como caminho
+cat < -          # redireciona o arquivo para a entrada
+```
+
+**Nível 2 — espaços no nome.** O shell separa argumentos por espaço, então um nome com espaços vira vários argumentos. Três formas de resolver:
+
+```bash
+cat './--spaces in this filename--'      # aspas simples
+cat ./--spaces\ in\ this\ filename--     # escape com barra invertida
+cat ./--sp<Tab>                          # Tab completion escapa sozinho
+```
+
+O Tab completion é o mais prático e é o que se usa no dia a dia. Ele escapa automaticamente espaços e caracteres especiais.
+
+> Repare que o `./` reapareceu. Sempre que um nome começa com `-`, o comando tenta lê-lo como opção. O `./` desfaz a ambiguidade. Alternativa universal: `cat -- "-arquivo"` — o `--` marca "acabaram as opções".
+
+**Nível 3 — arquivo oculto.** ⚠️ Aqui a ferramenta certa não era o `find`. Arquivos que começam com `.` são **ocultos** e o `ls` comum não os mostra:
+
+```bash
+ls          # não mostra nada
+ls -a       # mostra ...Hiding-From-You
+```
+
+O `-a` vem de *all*. O `find` também funcionou, mas é matar mosca com canhão — e na prova o que se pergunta é o `ls -a`.
+
+**Nível 4 — identificar o tipo do arquivo.** ⚠️ Você abriu todos com `cat` até achar. Funciona, mas o desafio existe para ensinar o comando **`file`**:
+
+```bash
+file ./*
+```
+
+Ele lê os primeiros bytes de cada arquivo (os *magic numbers*) e diz o que é: `ASCII text`, `data`, `ELF executable`, `PNG image`. Num diretório com 10 arquivos, resolve em um comando. Cat em arquivo binário, além de não ajudar, bagunça o terminal — se acontecer, o conserto é `reset`.
+
+**Nível 5 — dica sem entregar a resposta.** O desafio pede um arquivo com três características simultâneas: legível por humano, **1033 bytes**, e **não executável**. O `find` aceita filtros para exatamente isso:
+
+```bash
+man find
+# procure por: -size, -type, -readable, -executable
+```
+
+O `!` nega uma condição. Tamanho em bytes se escreve com o sufixo `c`. Monte o comando você mesmo — é o objetivo 3.2 da prova e vale mais que a senha.
 
 ---
 
@@ -342,9 +498,12 @@ Prioridade alta — faça hoje:
 - [x] Tópico 1 — comunidade, open source e licenças
 - [x] Tópico 1 — distribuições e aplicações do Linux
 - [x] Tópico 1 — interfaces gráficas
+- [x] Tópico 1 — aplicações de servidor e portas
+- [x] Tópico 1 — métodos de desenvolvimento e linguagens
 - [x] FHS — visão geral dos diretórios
-- [x] Bandit — primeiro acesso
-- [ ] Bandit níveis 0 a 5
-- [ ] Cards do Anki criados
+- [x] Prática de navegação na VM (`cd`, `ls`, `cat`, `find`, `free -h`)
+- [x] Bandit níveis 0 a 4 concluídos
+- [x] Cards de revisão criados no Notion
+- [ ] Bandit nível 5 → 6
 - [ ] Verificar os diretórios do FHS na própria VM (`ls /`, `cat /proc/cpuinfo`, `ls -l /bin`)
-- [ ] Aplicações open source por categoria (seção 6) revisadas
+- [ ] Refazer os níveis 3 e 4 do Bandit usando `ls -a` e `file`
