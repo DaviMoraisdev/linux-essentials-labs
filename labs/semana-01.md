@@ -440,9 +440,9 @@ ssh bandit<N>@bandit.labs.overthewire.org -p 2220
 | 0 → 1 | Senha num arquivo `readme` | `ls` · `cat readme` | ✅ |
 | 1 → 2 | Arquivo chamado `-` | `cat ./-` | ✅ |
 | 2 → 3 | Nome de arquivo com espaços | `cat './--spaces in this filename--'` | ✅ |
-| 3 → 4 | Arquivo oculto em `inhere/` | `cd inhere` · `ls -a` · `cat ./...Hiding-From-You` | ✅ |
-| 4 → 5 | Único arquivo legível entre 10 | `file ./*` · `cat ./-file07` | ✅ |
-| 5 → 6 | Arquivo com tamanho e propriedades específicas | em andamento | 🔄 |
+| 3 → 4 | Arquivo oculto em `inhere/` | `cd inhere` · `ls -a` · `cat ./...Hiding-From-You` | ✅ refeito com o comando correto |
+| 4 → 5 | Único arquivo legível entre 10 | `file ./*` · `cat ./-file07` | ✅ refeito com o comando correto |
+| 5 → 6 | Arquivo com tamanho e propriedades específicas | `find` com filtros | ➡️ Semana 2 |
 
 ### O que cada nível ensinou
 
@@ -482,14 +482,39 @@ file ./*
 
 Ele lê os primeiros bytes de cada arquivo (os *magic numbers*) e diz o que é: `ASCII text`, `data`, `ELF executable`, `PNG image`. Num diretório com 10 arquivos, resolve em um comando. Cat em arquivo binário, além de não ajudar, bagunça o terminal — se acontecer, o conserto é `reset`.
 
-**Nível 5 — dica sem entregar a resposta.** O desafio pede um arquivo com três características simultâneas: legível por humano, **1033 bytes**, e **não executável**. O `find` aceita filtros para exatamente isso:
+**Nível 5 — transferido para a Semana 2.** O desafio pede um arquivo com três características simultâneas: legível por humano, **1033 bytes**, e **não executável**. O `find` aceita filtros para exatamente isso:
 
 ```bash
 man find
 # procure por: -size, -type, -readable, -executable
 ```
 
-O `!` nega uma condição. Tamanho em bytes se escreve com o sufixo `c`. Monte o comando você mesmo — é o objetivo 3.2 da prova e vale mais que a senha.
+O `!` nega uma condição e tamanho em bytes leva o sufixo `c`. Como o `find` com filtros é conteúdo do objetivo 3.2 (Semana 4), e a Semana 2 já cobre navegação e busca em profundidade, este nível fica melhor posicionado lá do que forçado agora.
+
+### Correção registrada
+
+Os níveis 3 e 4 foram inicialmente resolvidos com `find` e com `cat` em todos os arquivos. Ambos foram **refeitos** com as ferramentas que o desafio existe para ensinar:
+
+| Nível | Solução improvisada | Solução correta | Por quê |
+|---|---|---|---|
+| 3 | `find` para achar o arquivo | `ls -a` | O arquivo é **oculto** (começa com `.`), não escondido em subdiretório |
+| 4 | `cat` em todos os 10 arquivos | `file ./*` | O `file` lê os *magic numbers* e identifica o tipo de todos de uma vez |
+
+---
+
+## 12. Fechamento da Semana 1
+
+**Concluído (01 a 05/09):**
+
+- Tópico 1 completo: open source e software livre, licenças, distribuições, aplicações de desktop e servidor, portas, métodos de desenvolvimento e linguagens
+- FHS: tabela de diretórios estudada e **verificada na própria VM** (`ls /`, `cat /proc/cpuinfo`, `cat /proc/meminfo`, `ls -l /bin`, `df -h`, `free -h`)
+- Bandit: níveis 0 a 4 concluídos, sendo 3 e 4 refeitos com as ferramentas corretas
+- Cards de revisão criados no Notion
+- 16 correções conceituais identificadas e registradas (seção 9)
+
+**Balanço:** o Tópico 1 vale 7 dos 40 pontos da prova e é o único integralmente teórico. Ele está fechado em uma semana, dentro do prazo previsto. A partir da Semana 2 o peso muda de lado — os tópicos restantes somam 33 pontos e são majoritariamente prática de terminal.
+
+**Ponto de atenção para as próximas semanas:** a tendência observada nos níveis 3 e 4 do Bandit foi resolver o problema com a ferramenta que já se conhece, em vez de procurar a ferramenta adequada. Funciona, mas a prova cobra o comando específico. O hábito a construir é: antes de improvisar, perguntar "existe um comando feito para isso?" e consultar `apropos` ou `man -k`.
 
 ---
 
@@ -504,6 +529,13 @@ O `!` nega uma condição. Tamanho em bytes se escreve com o sufixo `c`. Monte o
 - [x] Prática de navegação na VM (`cd`, `ls`, `cat`, `find`, `free -h`)
 - [x] Bandit níveis 0 a 4 concluídos
 - [x] Cards de revisão criados no Notion
-- [ ] Bandit nível 5 → 6
-- [ ] Verificar os diretórios do FHS na própria VM (`ls /`, `cat /proc/cpuinfo`, `ls -l /bin`)
-- [ ] Refazer os níveis 3 e 4 do Bandit usando `ls -a` e `file`
+- [x] Verificação dos diretórios do FHS na própria VM
+- [x] Níveis 3 e 4 do Bandit refeitos com `ls -a` e `file`
+
+**Transferido para a Semana 2:**
+
+- [ ] Bandit nível 5 → 6 (`find` com filtros de tamanho e permissão)
+
+---
+
+**Semana 1 encerrada em 05/09/2026.**

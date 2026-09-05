@@ -18,14 +18,13 @@
 | Snapshot `limpo` | ✅ criado |
 | Atalhos PowerShell (`lab-up`, `lab-down`, `lab-status`) | ✅ funcionando |
 | Repositório `linux-essentials-labs` | ✅ público no GitHub, primeiro commit feito |
-| `.wslconfig` limitando WSL2 a 3 GB | ⬜ pendente |
-| Teste de restauração do snapshot | ⬜ pendente |
 | Contas learning.lpi.org e OverTheWire | ✅ criadas (01/09) |
-| **Semana 1 — Tópico 1 + FHS** | 🔄 em andamento — teoria concluída (04/09) |
+| **Semana 1 — Tópico 1 + FHS** | ✅ **concluída em 05/09** (2 dias antes do prazo) |
 | Tópico 1 — licenças, distros, interfaces, aplicações, portas, linguagens | ✅ estudado e revisado |
-| FHS — visão geral dos diretórios | ✅ estudado e revisado |
-| Bandit | ✅ níveis 0 a 4 · 🔄 nível 5 |
+| FHS — diretórios estudados e verificados na VM | ✅ |
+| Bandit | ✅ níveis 0 a 4 · nível 5 movido para a Semana 2 |
 | Cards de revisão (Notion) | ✅ em uso desde a semana 1 |
+| **Semana 2 — Tópico 2, parte 1 (Bloco B)** | ⬜ inicia 08/09 |
 
 > **Ordem ajustada em 02/09:** o curso do Muller começa pelo **Tópico 1**, não pelo Tópico 2. O cronograma da seção 7 foi reordenado para acompanhar o curso — a data da prova não muda.
 | Voucher da prova | ⬜ comprar na Semana 5 |
@@ -263,6 +262,8 @@ Um arquivo por semana em `labs/`, commitado ao fim de cada sessão. Três benef�
 ---
 
 ### Bloco B · Semana 2 — 08 a 14/09 · Tópico 2, parte 1 (peso 9)
+
+> Herdado da Semana 1: **Bandit nível 5 → 6** (`find` com `-size`, `-readable`, `! -executable`).
 **Objetivos:** 2.1 Command Line Basics · 2.2 Using the Command Line to Get Help
 
 **Laboratório:**
