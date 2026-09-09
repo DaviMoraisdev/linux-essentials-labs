@@ -72,7 +72,7 @@ Registro:
 
 ---
 
-## Sessão 1 — Segunda 08/09 — Anatomia de um comando e navegação
+## Sessão 1 — Quarta 09/09 — Anatomia de um comando e navegação — CONCLUÍDA
 
 ### Curso
 
@@ -134,23 +134,118 @@ O `cd` sozinho e o `cd ~` vão para a home. O `cd -` volta ao diretório anterio
 
 ### Comandos praticados
 
-```bash
+**Identificação e localização**
 
+| Comando | Função |
+|---|---|
+| `whoami` | Mostra o nome do usuário atual |
+| `hostname` | Mostra o nome da máquina |
+| `pwd` | Mostra o caminho do diretório atual (ex.: `/home/davi/projetos`) |
+
+**Navegação**
+
+| Comando | Função |
+|---|---|
+| `cd` | Navega entre diretórios |
+| `cd ..` | Vai para o diretório **pai** |
+| `cd /` | Vai para a raiz do sistema |
+| `cd ~` | Vai para a home do usuário |
+| `cd -` | Volta ao **último diretório visitado** |
+
+**Listagem**
+
+| Comando | Função |
+|---|---|
+| `ls` | Lista o conteúdo do diretório atual |
+| `ls -l` | Formato detalhado (long) |
+| `ls -a` | Inclui arquivos ocultos (all) |
+| `ls -h` | Tamanhos legíveis para humanos — só tem efeito junto com `-l` |
+| `ls -lh` | Detalhado com tamanhos legíveis |
+| `ls -la` | Detalhado com ocultos |
+| `ls -lah` | Detalhado, com ocultos e tamanhos legíveis |
+| `ls -lt` | Detalhado, ordenado por data de modificação (mais recente primeiro) |
+| `ls --all` | Forma longa de `ls -a` |
+| `echo` | Exibe texto na tela |
+
+**Sequência de navegação executada**
+
+```bash
+cd /etc          # arquivos de configuração do sistema e dos programas instalados
+pwd              # /etc
+cd /var/log      # registros de eventos e erros do sistema e dos programas
+pwd              # /var/log
+cd /tmp          # arquivos temporários de curta duração
+cd -             # volta ao diretório anterior
 ```
 
 ### O que aprendi
 
-- Opção curta e opção longa:
-- Diferença entre `cd ..` e `cd -`:
-- Código de saída de um comando bem-sucedido e de um que falhou:
+**Opção curta e opção longa.** `ls -a` e `ls --all` são a mesma opção em duas formas. A curta usa uma letra e um hífen; a longa usa uma palavra e dois hífens. Opções curtas podem ser agrupadas (`ls -lah` = `ls -l -a -h`); as longas nunca.
+
+**Diferença entre `cd ..` e `cd -`.** `cd ..` sobe um nível na árvore, para o diretório **pai**. `cd -` volta para o **último diretório em que eu estive**, independentemente de onde ele fica na árvore. São coisas diferentes.
+
+**Caminho com e sem a barra inicial.** `ls etc` procura uma pasta chamada `etc` **dentro do diretório atual** (caminho relativo). `ls /etc` parte da **raiz** do sistema (caminho absoluto).
+
+**Código de saída.** Pendente — rodar `ls /naoexiste` seguido de `echo $?` e comparar com o retorno de um comando bem-sucedido.
+
+### Correções desta sessão
+
+**1. `cd ..` não é "voltar para a pasta anterior".** Ele vai para o **diretório pai**, ou seja, sobe um nível na árvore. Quem volta ao diretório anterior é o `cd -`. Verificação prática:
+
+```bash
+cd /var/log
+cd /etc
+cd ..     # resultado: /      (o pai de /etc)
+cd -      # resultado: /etc   (o anterior)
+```
+
+**2. Erro no registro da sequência de navegação.** A anotação diz que o `cd -` do passo 6 retornou para a home. Ele retornou para **`/var/log`**, porque essa era a posição imediatamente anterior:
+
+```
+cd /etc      -> atual: /etc
+cd /var/log  -> atual: /var/log · anterior: /etc
+cd /tmp      -> atual: /tmp     · anterior: /var/log
+cd -         -> atual: /var/log
+```
+
+O `cd -` guarda apenas **um** nível de histórico, na variável `$OLDPWD`. Rodando `cd -` duas vezes seguidas, você alterna entre os mesmos dois diretórios. Para confirmar:
+
+```bash
+echo $OLDPWD
+```
+
+**3. `ls` lista o conteúdo do diretório atual**, arquivos e pastas — não "o que cada diretório possui". Para ver o conteúdo dos subdiretórios é `ls -R` (recursivo).
+
+**4. `ls -h` sozinho não muda nada.** O `-h` afeta apenas a **coluna de tamanho**, que só aparece com `-l`. Comprove:
+
+```bash
+ls -h /etc      # saída idêntica a "ls /etc"
+ls -lh /etc     # aí sim: 4.0K em vez de 4096
+```
+
+**5. `echo` não é "para exibir valores de variáveis".** Ele exibe **qualquer texto**. A impressão de que serve para variáveis vem do fato de que o shell expande `$VAR` **antes** de o `echo` receber o argumento — quando ele executa, já recebeu o valor pronto, não a variável. Prove os dois usos:
+
+```bash
+echo "texto puro, sem variável nenhuma"
+echo $HOME
+type echo
+```
+
+O `type echo` revela algo útil: o `echo` é um **shell builtin**, embutido no Bash — e existe também um `/usr/bin/echo` no disco. Mesma distinção do `cd`, que aparece na Sessão 3.
 
 ### Dúvidas em aberto
 
 -
 
+### Pendente desta sessão
+
+- [ ] `ls /naoexiste` seguido de `echo $?` — observar o código de saída de erro
+- [ ] `ls -lh /etc /var` — comando com dois argumentos
+- [ ] `echo $OLDPWD` — confirmar como o `cd -` funciona
+
 ---
 
-## Sessão 2 — Terça 09/09 — Caminhos absolutos e relativos
+## Sessão 2 — Quarta 09/09 — Caminhos absolutos e relativos — CONCLUÍDA
 
 ### Curso
 
@@ -224,31 +319,86 @@ ls /bin | wc -l
 
 ### Comandos praticados
 
-```bash
+Executada em 09/09, no mesmo dia da Sessão 1.
 
+**Árvore de treino**
+
+```bash
+mkdir -p treino/nivel1/nivel2/nivel3
+cd treino/nivel1/nivel2/nivel3
+pwd                     # /home/davi/treino/nivel1/nivel2/nivel3
+```
+
+O `-p` cria toda a cadeia de diretórios-pai de uma vez. Sem ele, seria preciso criar um nível por comando.
+
+**Exploração do sistema de arquivos**
+
+```bash
+ls /                    # conteúdo da raiz
+ls /etc | head -20      # primeiras 20 linhas da listagem de /etc
+ls /var                 # backups crash local log opt snap tmp cache lib lock mail run spool
+ls /usr                 # bin include lib64 local share games lib libexec sbin src
+ls /bin | wc -l         # 1114
 ```
 
 ### O que aprendi
 
-- Caminho absoluto e relativo, nas minhas palavras:
+**Caminho absoluto e relativo.** O caminho **absoluto** começa com `/` e parte da raiz do sistema — funciona de qualquer lugar. O **relativo** parte do diretório atual. Por isso `ls etc` procura uma pasta `etc` dentro de onde estou, enquanto `ls /etc` vai direto ao `/etc` do sistema.
 
 | Símbolo | Significado |
 |---|---|
-| `/` | |
-| `.` | |
-| `..` | |
-| `~` | |
-| `-` | |
+| `/` | Raiz do sistema |
+| `.` | Diretório atual |
+| `..` | Diretório pai |
+| `~` | Home do usuário atual |
+| `-` | Diretório anterior (apenas com `cd`) |
 
-- O que aconteceu ao tentar apagar um arquivo em `/var/log`:
+**O pipe (`|`).** Pega a **saída** do comando da esquerda e a entrega como **entrada** ao comando da direita. Em `ls /etc | head -20`, a listagem completa é gerada e o `head -20` corta nas primeiras 20 linhas. Em `ls /bin | wc -l`, o `wc -l` conta as linhas em vez de exibi-las.
+
+Isso é objetivo 3.2, conteúdo da Semana 4 — encontrado antes da hora, o que é bom.
+
+**Observação sobre o resultado `1114`.** Em distribuições modernas, `/bin` é um **link simbólico** para `/usr/bin` (a chamada unificação `/usr merge`). Ou seja, esse número é o total de executáveis de `/usr/bin`. Confirmar com:
+
+```bash
+ls -l /bin
+```
 
 ### Dúvidas em aberto
 
 -
 
+### Itens da sessão que não apareceram nas anotações
+
+Se não foram feitos, valem cinco minutos — os dois entregam conceitos que voltam depois:
+
+- [ ] **Navegação usando apenas caminhos relativos**, sem `/` inicial e sem `cd ~`, partindo de `nivel3`:
+  ```bash
+  cd ~/treino/nivel1/nivel2/nivel3
+  cd ..
+  cd ../..
+  cd nivel1/nivel2
+  cd ../../..
+  ```
+  Confirmar a posição com `pwd` a cada passo. É o exercício que transforma a definição de caminho relativo em intuição.
+
+- [ ] **O experimento do `Permission denied`:**
+  ```bash
+  cd /var/log
+  cp /etc/hostname .
+  ls -l hostname
+  rm hostname
+  ```
+  A última linha deve falhar. `/var/log` pertence ao root. Anotar a mensagem exata — ela é a ponte direta para o Tópico 5, na Semana 6.
+
+### Limpeza
+
+```bash
+cd ~ && rm -rf treino
+```
+
 ---
 
-## Sessão 3 — Quarta 10/09 — Sistema de ajuda (objetivo 2.2)
+## Sessão 3 — Quinta 10/09 — Sistema de ajuda (objetivo 2.2)
 
 Esta sessão corresponde a um objetivo inteiro da prova.
 
@@ -361,7 +511,7 @@ O `man` é exaustivo; o `tldr` mostra os usos mais comuns. Os dois têm lugar.
 
 ---
 
-## Sessão 4 — Quinta 11/09 — Variáveis, aspas e globbing
+## Sessão 4 — Sexta 11/09 — Variáveis, aspas e globbing
 
 ### Curso
 
@@ -507,7 +657,7 @@ cd ~ && rm -rf globbing
 
 ---
 
-## Sessão 5 — Sexta 12/09 — Histórico, atalhos e autoavaliação
+## Sessão 5 — Sábado 12/09 — Histórico, atalhos e autoavaliação
 
 ### Laboratório
 
@@ -634,11 +784,11 @@ Erros e o que revisar:
 
 ## Checklist da semana
 
-- [ ] Sessão 1 — anatomia do comando e navegação
-- [ ] Sessão 2 — caminhos absolutos e relativos
-- [ ] Sessão 3 — sistema de ajuda
-- [ ] Sessão 4 — variáveis, aspas e globbing
-- [ ] Sessão 5 — histórico, atalhos e autoavaliação
+- [x] Sessão 1 — anatomia do comando e navegação (09/09)
+- [x] Sessão 2 — caminhos absolutos e relativos (09/09)
+- [ ] Sessão 3 — sistema de ajuda (10/09)
+- [ ] Sessão 4 — variáveis, aspas e globbing (11/09)
+- [ ] Sessão 5 — histórico, atalhos e autoavaliação (12/09)
 - [ ] Bandit nível 5 para 6 (pendência da Semana 1)
 - [ ] Cards do Notion atualizados
 - [ ] Autoavaliação com 12 acertos ou mais
