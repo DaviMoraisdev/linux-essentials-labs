@@ -1,6 +1,6 @@
 # Semana 2 — Linha de comando e sistema de ajuda
 
-Período: 08 a 14/09/2026
+Período: 07 a 13/09/2026 (segunda a domingo)
 Objetivos da prova: 2.1 (Command Line Basics) e 2.2 (Using the Command Line to Get Help)
 Tópico 2, peso 9 de 40 — o maior da prova, empatado com o Tópico 3
 Carga prevista: 5 sessões de aproximadamente 1 hora, de segunda a sexta
@@ -237,10 +237,45 @@ O `type echo` revela algo útil: o `echo` é um **shell builtin**, embutido no B
 
 -
 
+### Pendências quitadas em 09/09
+
+**Comando com dois argumentos — concluído**
+
+```bash
+ls -lh /etc
+ls -lh /var /log
+ls /
+echo $?          # retornou 0
+```
+
+**Correção 6 — o `/log` não existe.** Não há um diretório `/log` na raiz do sistema. O diretório de logs é `/var/log`. Escrito com espaço, `ls -lh /var /log` passa **dois argumentos** ao `ls`: o `/var`, que existe, e o `/log`, que não. A saída correta traz a listagem de `/var` seguida de:
+
+```
+ls: cannot access '/log': No such file or directory
+```
+
+Para listar os logs, o comando é `ls -lh /var/log`, sem espaço.
+
+**Correção 7 — o `echo $?` não testou o que deveria.** A variável `$?` guarda o código de saída do **último comando executado**, e apenas dele. Na sequência acima o `echo $?` veio depois do `ls /`, que funcionou — por isso o retorno `0`. O código de erro do `ls -lh /var /log` já havia sido sobrescrito.
+
+Para observar o código de erro, o `echo $?` precisa vir **imediatamente** após o comando testado:
+
+```bash
+ls /naoexiste
+echo $?          # 2 — erro
+ls /
+echo $?          # 0 — sucesso
+ls -lh /var /log
+echo $?          # 2 — falhou em um dos dois argumentos
+```
+
+Convenção dos códigos: `0` sempre significa sucesso; qualquer valor diferente de zero significa erro, e o número indica o tipo. O `ls` usa `1` para problemas menores e `2` para erro grave, como argumento inexistente.
+
+Esse mecanismo é a base do `&&` e do `||`, que aparecem na Semana 5 — e é exatamente o que aconteceu no `apt update && apr upgrade` durante a montagem do laboratório: o `update` retornou `0`, então o shell executou o segundo comando, que não existia.
+
 ### Pendente desta sessão
 
-- [ ] `ls /naoexiste` seguido de `echo $?` — observar o código de saída de erro
-- [ ] `ls -lh /etc /var` — comando com dois argumentos
+- [ ] Refazer a sequência acima com o `echo $?` imediatamente após cada comando
 - [ ] `echo $OLDPWD` — confirmar como o `cd -` funciona
 
 ---
@@ -367,11 +402,9 @@ ls -l /bin
 
 -
 
-### Itens da sessão que não apareceram nas anotações
+### Itens complementares
 
-Se não foram feitos, valem cinco minutos — os dois entregam conceitos que voltam depois:
-
-- [ ] **Navegação usando apenas caminhos relativos**, sem `/` inicial e sem `cd ~`, partindo de `nivel3`:
+- [x] **Navegação usando apenas caminhos relativos**, sem `/` inicial e sem `cd ~`, partindo de `nivel3` — concluído em 09/09:
   ```bash
   cd ~/treino/nivel1/nivel2/nivel3
   cd ..
@@ -379,7 +412,7 @@ Se não foram feitos, valem cinco minutos — os dois entregam conceitos que vol
   cd nivel1/nivel2
   cd ../../..
   ```
-  Confirmar a posição com `pwd` a cada passo. É o exercício que transforma a definição de caminho relativo em intuição.
+  Confirmando a posição com `pwd` a cada passo. É o exercício que transforma a definição de caminho relativo em intuição, e é onde o `cd ..` como "diretório pai" finalmente se separa do `cd -`.
 
 - [ ] **O experimento do `Permission denied`:**
   ```bash
