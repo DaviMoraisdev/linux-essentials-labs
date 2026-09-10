@@ -25,9 +25,11 @@
 | Bandit | ✅ níveis 0 a 4 · nível 5 movido para a Semana 2 |
 | Cards de revisão (Notion) | ✅ em uso desde a semana 1 |
 | **Semana 2 — Tópico 2, parte 1 (Bloco B)** | 🔄 em andamento — Sessões 1 e 2 concluídas (09/09) |
+| Voucher da prova | ⬜ comprar na Semana 5 |
 
 > **Ordem ajustada em 02/09:** o curso do Muller começa pelo **Tópico 1**, não pelo Tópico 2. O cronograma da seção 7 foi reordenado para acompanhar o curso — a data da prova não muda.
-| Voucher da prova | ⬜ comprar na Semana 5 |
+>
+> **Calendário corrigido em 09/09:** as semanas passaram a correr de **segunda a domingo**. A prova cai na segunda-feira seguinte ao fim da Semana 10.
 
 ---
 
@@ -61,11 +63,11 @@ No ritmo de ~6h/semana, isso dá **9 a 10 semanas**.
 
 | Tópico | Peso | Semanas |
 |---|---|---|
-| 2. Finding Your Way on a Linux System | **9** | S1 + S2 |
+| 2. Finding Your Way on a Linux System | **9** | S2 + S3 |
 | 3. The Power of the Command Line | **9** | S4 + S5 |
-| 4. The Linux Operating System | **8** | S6 |
-| 1. The Linux Community and a Career in Open Source | 7 | S7 |
-| 5. Security and File Permissions | 7 | S3 |
+| 4. The Linux Operating System | **8** | S7 |
+| 1. The Linux Community and a Career in Open Source | 7 | S1 |
+| 5. Security and File Permissions | 7 | S6 |
 
 Tópicos 2, 3 e 5 somam 25 dos 40 pontos e são **100% prática de terminal**. Tópico 1 é quase todo memorização.
 
@@ -228,19 +230,22 @@ Um arquivo por semana em `labs/`, commitado ao fim de cada sessão. Três benef�
 
 > **Ordem revisada em 02/09** para acompanhar a sequência do curso do Muller, que começa pelo Tópico 1. Os blocos de conteúdo abaixo estão identificados por letra; a tabela dá a ordem cronológica real. A data da prova não mudou.
 
+Semanas alinhadas de **segunda a domingo**. A prova cai na segunda-feira seguinte ao fim da Semana 10.
+
 | Semana | Datas | Bloco | Conteúdo |
 |---|---|---|---|
-| 0 | 25–31/08 | — | ✅ Laboratório montado |
-| **1** | **01–07/09** | **A** | 🔄 Tópico 1 — comunidade, licenças, distros, FHS |
-| 2 | 08–14/09 | B | Tópico 2 p1 — linha de comando e ajuda |
-| 3 | 15–21/09 | C | Tópico 2 p2 — arquivos, diretórios, links |
-| 4 | 22–28/09 | D | Tópico 3 p1 — compactação, filtros, busca |
-| 5 | 29/09–05/10 | E | Tópico 3 p2 — shell scripting · 🎯 **agendar a prova** |
-| 6 | 06–12/10 | F | Tópico 5 — usuários, grupos e permissões |
-| 7 | 13–19/10 | G | Tópico 4 — hardware, processos e rede |
-| 8 | 20–26/10 | H | Segunda passada (Dion) + simulado diagnóstico |
-| 9 | 27/10–02/11 | I | Simulados e lab integrador |
-| 10 | 03–09/11 | J | Revisão final · **PROVA** |
+| 0 | até 31/08 | — | ✅ Laboratório montado |
+| 1 | 01–06/09 | A | ✅ Tópico 1 — comunidade, licenças, distros, FHS |
+| **2** | **07–13/09** | **B** | 🔄 Tópico 2 p1 — linha de comando e ajuda |
+| 3 | 14–20/09 | C | Tópico 2 p2 — arquivos, diretórios, links |
+| 4 | 21–27/09 | D | Tópico 3 p1 — compactação, filtros, busca |
+| 5 | 28/09–04/10 | E | Tópico 3 p2 — shell scripting · 🎯 **agendar a prova** |
+| 6 | 05–11/10 | F | Tópico 5 — usuários, grupos e permissões |
+| 7 | 12–18/10 | G | Tópico 4 — hardware, processos e rede |
+| 8 | 19–25/10 | H | Segunda passada (Dion) + simulado diagnóstico |
+| 9 | 26/10–01/11 | I | Simulados e lab integrador |
+| 10 | 02–08/11 | J | Revisão final |
+| — | **09/11 (segunda)** | — | **PROVA** |
 
 > Efeito colateral positivo da nova ordem: o Tópico 1 é o mais teórico e o de menor densidade prática. Fazê-lo primeiro deixa os cards de revisão rodando desde a semana 1, com sete semanas de revisão espaçada até a prova — que é exatamente o que conteúdo de memorização precisa.
 
@@ -261,7 +266,7 @@ Um arquivo por semana em `labs/`, commitado ao fim de cada sessão. Três benef�
 
 ---
 
-### Bloco B · Semana 2 — 08 a 14/09 · Tópico 2, parte 1 (peso 9)
+### Bloco B · Semana 2 — 07 a 13/09 · Tópico 2, parte 1 (peso 9) — 🔄 EM ANDAMENTO
 
 > Herdado da Semana 1: **Bandit nível 5 → 6** (`find` com `-size`, `-readable`, `! -executable`).
 **Objetivos:** 2.1 Command Line Basics · 2.2 Using the Command Line to Get Help
@@ -280,7 +285,7 @@ Um arquivo por semana em `labs/`, commitado ao fim de cada sessão. Três benef�
 
 ---
 
-### Bloco C · Semana 3 — 15 a 21/09 · Tópico 2, parte 2 (peso 9)
+### Bloco C · Semana 3 — 14 a 20/09 · Tópico 2, parte 2 (peso 9)
 **Objetivos:** 2.3 Using Directories and Listing Files · 2.4 Creating, Moving and Deleting Files
 
 **Laboratório:**
@@ -296,7 +301,7 @@ Um arquivo por semana em `labs/`, commitado ao fim de cada sessão. Três benef�
 
 ---
 
-### Bloco F · Semana 6 — 06 a 12/10 · Tópico 5 (peso 7)
+### Bloco F · Semana 6 — 05 a 11/10 · Tópico 5 (peso 7)
 **Objetivos:** 5.1 Basic Security and Identifying User Types · 5.2 Creating Users and Groups · 5.3 Managing File Permissions and Ownership · 5.4 Special Directories and Files
 
 **Laboratório:**
@@ -314,7 +319,7 @@ Um arquivo por semana em `labs/`, commitado ao fim de cada sessão. Três benef�
 
 ---
 
-### Bloco D · Semana 4 — 22 a 28/09 · Tópico 3, parte 1 (peso 9)
+### Bloco D · Semana 4 — 21 a 27/09 · Tópico 3, parte 1 (peso 9)
 **Objetivos:** 3.1 Archiving Files on the Command Line · 3.2 Searching and Extracting Data from Files
 
 **Laboratório:**
@@ -331,7 +336,7 @@ Um arquivo por semana em `labs/`, commitado ao fim de cada sessão. Três benef�
 
 ---
 
-### Bloco E · Semana 5 — 29/09 a 05/10 · Tópico 3, parte 2 (peso 9)
+### Bloco E · Semana 5 — 28/09 a 04/10 · Tópico 3, parte 2 (peso 9)
 **Objetivo:** 3.3 Turning Commands into a Script — peso 4, o objetivo individual mais pesado da prova
 
 **Laboratório:**
@@ -349,7 +354,7 @@ Marcar antes de se sentir pronto é intencional — prazo firme é o que impede 
 
 ---
 
-### Bloco G · Semana 7 — 13 a 19/10 · Tópico 4 (peso 8)
+### Bloco G · Semana 7 — 12 a 18/10 · Tópico 4 (peso 8)
 **Objetivos:** 4.1 Choosing an Operating System · 4.2 Understanding Computer Hardware · 4.3 Where Data is Stored · 4.4 Your Computer on the Network
 
 **Laboratório:**
@@ -368,7 +373,7 @@ Marcar antes de se sentir pronto é intencional — prazo firme é o que impede 
 
 ---
 
-### Bloco A · Semana 1 — 01 a 07/09 · Tópico 1 (peso 7) — 🔄 EM ANDAMENTO
+### Bloco A · Semana 1 — 01 a 06/09 · Tópico 1 (peso 7) — ✅ CONCLUÍDO
 **Objetivos:** 1.1 Linux Evolution and Popular Operating Systems · 1.2 Major Open Source Applications · 1.3 Open Source Software and Licensing · 1.4 ICT Skills and Working in Linux
 
 Semana conceitual — **é onde os cards de revisão ganham a prova**, porque é memorização pura.
@@ -386,7 +391,7 @@ Semana conceitual — **é onde os cards de revisão ganham a prova**, porque é
 
 ---
 
-### Semana 8 — 20 a 26/10 · Segunda passada + diagnóstico
+### Bloco H · Semana 8 — 19 a 25/10 · Segunda passada + diagnóstico
 - **Jason Dion completo em 1.5x** (~4h) — terminologia em inglês e caça a lacunas
 - **Primeiro simulado completo**, 40 questões cronometradas, 60 min, sem consultar
 - Registrar a nota e **listar todos os erros por objetivo** (ex.: "3 erros em 5.3")
@@ -396,7 +401,7 @@ Semana conceitual — **é onde os cards de revisão ganham a prova**, porque é
 
 ---
 
-### Semana 9 — 27/10 a 02/11 · Simulados e fechamento de lacunas
+### Bloco I · Semana 9 — 26/10 a 01/11 · Simulados e fechamento de lacunas
 - **3 simulados completos**, um a cada 2 dias, sempre cronometrados
 - Após cada um: revisão dirigida só nos objetivos com erro
 - **Lab integrador final** (2h, do zero, sem consultar):
@@ -411,7 +416,7 @@ Semana conceitual — **é onde os cards de revisão ganham a prova**, porque é
 
 ---
 
-### Semana 10 — 03 a 09/11 · Revisão final e prova
+### Bloco J · Semana 10 — 02 a 08/11 · Revisão final · Prova em 09/11
 - Seg–Qua: revisão **leve** — só a cola do GitHub + os cards do Notion, 40 min/dia. Sem conteúdo novo
 - Qui: 1 simulado final. Se ≥ 85%, está pronto
 - Sex/Sáb: **descanso**. Não estudar na véspera
