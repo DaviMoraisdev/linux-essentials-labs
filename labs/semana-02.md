@@ -275,8 +275,8 @@ Esse mecanismo é a base do `&&` e do `||`, que aparecem na Semana 5 — e é ex
 
 ### Pendente desta sessão
 
-- [ ] Refazer a sequência acima com o `echo $?` imediatamente após cada comando
-- [ ] `echo $OLDPWD` — confirmar como o `cd -` funciona
+- [x] Refazer a sequência acima com o `echo $?` imediatamente após cada comando
+- [x] `echo $OLDPWD` — confirmar como o `cd -` funciona
 
 ---
 
@@ -414,7 +414,7 @@ ls -l /bin
   ```
   Confirmando a posição com `pwd` a cada passo. É o exercício que transforma a definição de caminho relativo em intuição, e é onde o `cd ..` como "diretório pai" finalmente se separa do `cd -`.
 
-- [ ] **O experimento do `Permission denied`:**
+- [x] **O experimento do `Permission denied`:**
   ```bash
   cd /var/log
   cp /etc/hostname .
@@ -618,7 +618,7 @@ O `type -a ls` revela as duas camadas de uma vez: primeiro o alias, depois o exe
   sudo updatedb
   locate hostname | head
   ```
-- [ ] Navegar em `/usr/share/doc/` e abrir a documentação de um pacote:
+- [x] Navegar em `/usr/share/doc/` e abrir a documentação de um pacote:
   ```bash
   ls /usr/share/doc | head -20
   ls /usr/share/doc/tar/
