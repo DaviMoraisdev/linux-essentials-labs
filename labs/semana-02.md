@@ -431,7 +431,7 @@ cd ~ && rm -rf treino
 
 ---
 
-## Sessão 3 — Quinta 10/09 — Sistema de ajuda (objetivo 2.2)
+## Sessão 3 — Quinta 10/09 — Sistema de ajuda (objetivo 2.2) — CONCLUÍDA
 
 Esta sessão corresponde a um objetivo inteiro da prova.
 
@@ -519,28 +519,111 @@ O `man` é exaustivo; o `tldr` mostra os usos mais comuns. Os dois têm lugar.
 
 ### Comandos praticados
 
-```bash
+**As quatro formas de pedir ajuda**
 
-```
+| Comando | O que faz |
+|---|---|
+| `man ls` | Abre o manual completo do comando |
+| `ls --help` | Ajuda rápida, embutida no próprio programa |
+| `help cd` | Ajuda de comandos **internos do shell** (builtins) |
+| `info ls` | Documentação mais extensa e organizada em nós navegáveis |
 
-### Seções do manual
+**Seções do manual**
+
+`man passwd` abre o manual do comando *change user password*. Para escolher a seção: `man <número de 1 a 8> passwd`.
 
 | Seção | Conteúdo |
 |---|---|
-| 1 | |
-| 5 | |
-| 8 | |
+| 1 | Comandos usados pelo usuário |
+| 2 | Chamadas de sistema |
+| 3 | Funções de bibliotecas |
+| 4 | Dispositivos e arquivos especiais |
+| 5 | Formatos de arquivos e arquivos de configuração |
+| 6 | Jogos |
+| 7 | Convenções, protocolos e tópicos diversos |
+| 8 | Comandos administrativos |
+
+Sem número, o `man` abre a **menor seção disponível**. Por isso `man passwd` mostra o comando (seção 1), e é preciso `man 5 passwd` para ver o formato do arquivo `/etc/passwd`.
+
+As três que mais caem na prova são **1, 5 e 8**.
+
+**Busca no manual**
+
+| Comando | O que faz |
+|---|---|
+| `apropos copy` | Pesquisa a palavra nas **descrições** de todas as páginas — retorna `cp: copy files and directories` |
+| `man -k copy` | Idêntico ao `apropos`; o `-k` vem de *keyword* |
+| `apropos "list directory"` | As aspas fazem o shell enviar a frase como **um único argumento** |
+| `whatis ls` | Procura pelo **nome exato** e mostra a descrição curta |
+| `man -f ls` | Idêntico ao `whatis` |
+
+**Localizar comandos e arquivos**
+
+| Comando | Sentido |
+|---|---|
+| `which` | QUAL executável |
+| `type` | QUE TIPO de comando |
+| `whereis` | ONDE estão os arquivos relacionados (binário, fonte, manual) |
+
+O `which ls` retorna `/usr/bin/ls`. Já `which cd` pode não retornar nada, porque o `cd` não é um programa externo e sim um comando **interno do shell**.
 
 ### O que aprendi
 
-- `which` e `type`, e o caso do `cd`:
-- Quando usar `apropos`:
-- O que existe em `/usr/share/doc/`:
-- `locate` e `find`, diferença:
+**Quando usar `apropos`.** Quando não se sabe o nome exato do comando. O `apropos` busca por descrição; o `whatis` exige o nome certo.
+
+**O que existe em `/usr/share/doc/`.** Documentação de programas e pacotes instalados, fornecida pelos próprios pacotes — changelogs, exemplos de configuração e READMEs que não estão nas man pages.
+
+**`locate` e `find`.** O `locate` procura num **banco de dados indexado**, o que o torna muito rápido. O `find` percorre o sistema de arquivos **em tempo real**, o que é mais lento porém sempre atual. Como o banco do `locate` é gerado pelo `updatedb`, ele não enxerga arquivos criados depois da última indexação.
+
+### Correções desta sessão
+
+**Correção 8 — a leitura do `type ls` está invertida.** A anotação diz que a saída `ls is aliased to 'ls --color=auto'` significa "que o `ls` é um programa externo encontrado naquele caminho". Ela significa o oposto: o `ls` que você digita é um **alias**, um apelido definido no `~/.bashrc` do Ubuntu, que chama o programa real acrescentando `--color=auto`.
+
+O `type` pode devolver cinco respostas diferentes, e distingui-las é objetivo de prova:
+
+| Resposta | Significado | Exemplo |
+|---|---|---|
+| `is aliased to` | Apelido criado pelo usuário ou pela distribuição | `ls` |
+| `is a shell builtin` | Função embutida no Bash, não existe em disco | `cd`, `echo` |
+| `is a function` | Função definida no shell | funções do `.bashrc` |
+| `is /caminho/do/arquivo` | Programa externo, um arquivo real | `tar` |
+| `is a shell keyword` | Palavra reservada da linguagem | `if`, `for`, `while` |
+
+Para ver tudo que responde por um nome, use `-a`:
+
+```bash
+type ls
+type -a ls        # mostra o alias E o /usr/bin/ls
+type cd
+type -a echo      # builtin E /usr/bin/echo
+type if
+alias
+```
+
+O `type -a ls` revela as duas camadas de uma vez: primeiro o alias, depois o executável que ele acaba chamando. É isso que explica por que sua listagem sai colorida sem você pedir.
+
+**Correção 9 — caminho sem a barra inicial.** A anotação registra `which ls → usr/bin/ls`. O correto é **`/usr/bin/ls`**, com barra no início. Sem ela seria um caminho relativo, apontando para uma pasta `usr` dentro do diretório atual — que não existe. Justamente a distinção da Sessão 2.
+
+**Correção 10 — erro de digitação no caminho da documentação.** É **`/usr/share/doc/`**, não `/usr/share/odc/`. O `doc` vem de *documentation*.
 
 ### Dúvidas em aberto
 
 -
+
+### Itens do roteiro ainda não registrados
+
+- [ ] Instalar e testar o `locate` na prática:
+  ```bash
+  sudo apt install -y plocate
+  sudo updatedb
+  locate hostname | head
+  ```
+- [ ] Navegar em `/usr/share/doc/` e abrir a documentação de um pacote:
+  ```bash
+  ls /usr/share/doc | head -20
+  ls /usr/share/doc/tar/
+  ```
+- [ ] Comparar `tldr tar` com `man tar`
 
 ---
 
@@ -819,7 +902,7 @@ Erros e o que revisar:
 
 - [x] Sessão 1 — anatomia do comando e navegação (09/09)
 - [x] Sessão 2 — caminhos absolutos e relativos (09/09)
-- [ ] Sessão 3 — sistema de ajuda (10/09)
+- [x] Sessão 3 — sistema de ajuda (10/09)
 - [ ] Sessão 4 — variáveis, aspas e globbing (11/09)
 - [ ] Sessão 5 — histórico, atalhos e autoavaliação (12/09)
 - [ ] Bandit nível 5 para 6 (pendência da Semana 1)
