@@ -24,7 +24,7 @@
 | FHS — diretórios estudados e verificados na VM | ✅ |
 | Bandit | ✅ níveis 0 a 4 · nível 5 movido para a Semana 2 |
 | Cards de revisão (Notion) | ✅ em uso desde a semana 1 |
-| **Semana 2 — Tópico 2, parte 1 (Bloco B)** | 🔄 em andamento — Sessões 1 e 2 concluídas (09/09) |
+| **Semana 2 — Tópico 2, parte 1 (Bloco B)** | 🔄 em andamento — Sessões 1, 2 e 3 concluídas (09 e 10/09) |
 | Voucher da prova | ⬜ comprar na Semana 5 |
 
 > **Ordem ajustada em 02/09:** o curso do Muller começa pelo **Tópico 1**, não pelo Tópico 2. O cronograma da seção 7 foi reordenado para acompanhar o curso — a data da prova não muda.
