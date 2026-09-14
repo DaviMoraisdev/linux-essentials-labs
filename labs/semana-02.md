@@ -62,13 +62,28 @@ man find
 
 Procure no manual por `-size`, `-type`, `-readable` e `-executable`. O `!` nega uma condição e tamanho em bytes leva o sufixo `c`. Monte o comando sem consultar solução pronta.
 
-Sugestão de encaixe: sábado, ou ao final da Sessão 2.
+**Concluído em 13/09.**
 
-Registro:
+O diretório `inhere` continha muitos arquivos espalhados por subdiretórios, inviabilizando a inspeção manual. A solução foi filtrar pelas três características simultâneas:
 
 ```bash
-
+cd inhere
+ls -l
+find . -readable -size 1033c ! -executable
+# encontrado: ./maybehere07/.file2
+cat maybehere07/.file2
 ```
+
+Anatomia do comando:
+
+| Trecho | Significado |
+|---|---|
+| `find .` | Procura a partir do diretório atual, recursivamente |
+| `-readable` | Apenas arquivos legíveis pelo usuário atual |
+| `-size 1033c` | Exatamente 1033 bytes — o sufixo `c` significa *characters* (bytes) |
+| `! -executable` | O `!` **nega** a condição: apenas os que **não** são executáveis |
+
+Observação: o arquivo encontrado era `.file2`, com ponto no início — **oculto**. É a mesma lição do nível 3, agora resolvida sem precisar procurar por ela: o `find` percorre tudo, inclusive ocultos, por padrão.
 
 ---
 
@@ -275,8 +290,8 @@ Esse mecanismo é a base do `&&` e do `||`, que aparecem na Semana 5 — e é ex
 
 ### Pendente desta sessão
 
-- [x] Refazer a sequência acima com o `echo $?` imediatamente após cada comando
-- [x] `echo $OLDPWD` — confirmar como o `cd -` funciona
+- [ ] Refazer a sequência acima com o `echo $?` imediatamente após cada comando
+- [ ] `echo $OLDPWD` — confirmar como o `cd -` funciona
 
 ---
 
@@ -414,7 +429,7 @@ ls -l /bin
   ```
   Confirmando a posição com `pwd` a cada passo. É o exercício que transforma a definição de caminho relativo em intuição, e é onde o `cd ..` como "diretório pai" finalmente se separa do `cd -`.
 
-- [x] **O experimento do `Permission denied`:**
+- [ ] **O experimento do `Permission denied`:**
   ```bash
   cd /var/log
   cp /etc/hostname .
@@ -618,7 +633,7 @@ O `type -a ls` revela as duas camadas de uma vez: primeiro o alias, depois o exe
   sudo updatedb
   locate hostname | head
   ```
-- [x] Navegar em `/usr/share/doc/` e abrir a documentação de um pacote:
+- [ ] Navegar em `/usr/share/doc/` e abrir a documentação de um pacote:
   ```bash
   ls /usr/share/doc | head -20
   ls /usr/share/doc/tar/
@@ -627,7 +642,7 @@ O `type -a ls` revela as duas camadas de uma vez: primeiro o alias, depois o exe
 
 ---
 
-## Sessão 4 — Sexta 11/09 — Variáveis, aspas e globbing
+## Sessão 4 — Domingo 13/09 — Variáveis, aspas e globbing — CONCLUÍDA
 
 ### Curso
 
@@ -738,34 +753,159 @@ Limpeza:
 cd ~ && rm -rf globbing
 ```
 
-### Comandos praticados
+### Variáveis de ambiente
 
-```bash
+O `$PATH` é a lista de diretórios onde o shell procura programas, separados por dois-pontos.
+
+| Comando | O que mostra |
+|---|---|
+| `echo $HOME` | Diretório pessoal do usuário |
+| `echo $USER` | Nome do usuário atual |
+| `echo $PWD` | Diretório atual |
+| `echo $SHELL` | Shell padrão configurado |
+| `echo $PATH` | Diretórios onde o Linux procura comandos |
+| `echo $?` | Código de saída do último comando executado |
+| `env \| head -20` | Primeiras 20 variáveis de ambiente |
+| `env \| wc -l` | Quantidade total de variáveis de ambiente |
+
+O `echo $PATH | tr ':' '\n'` troca os dois-pontos por quebras de linha e mostra um diretório por linha:
 
 ```
+/usr/local/sbin
+/usr/local/bin
+/usr/sbin
+/usr/bin
+/sbin
+/bin
+/usr/games
+/usr/local/games
+/snap/bin
+```
+
+### Criando e removendo variáveis
+
+```bash
+minhavar="teste"      # cria uma variável no shell atual
+echo $minhavar        # teste
+bash                  # inicia um processo Bash filho
+echo $minhavar        # vazio — não foi herdada
+exit                  # encerra o shell filho
+
+export minhavar="teste"   # cria e marca para ser enviada aos filhos
+set | grep minhavar       # confirma que existe
+unset minhavar            # remove do shell atual
+echo $minhavar            # vazio
+```
+
+```
+Bash pai
+│
+│ minhavar="teste" [EXPORTADA]
+│
+└── processos filhos
+    recebem minhavar
+```
+
+O `set` sozinho mostra variáveis do shell, variáveis exportadas, funções e outras configurações.
+
+| Tipo | Escopo |
+|---|---|
+| **Variável de shell** | Existe apenas no shell atual; **não é herdada** pelos processos filhos |
+| **Variável de ambiente** | Existe no shell atual e **é herdada** por todos os processos filhos |
 
 ### Aspas
 
-| Forma | Comportamento | Meu exemplo |
+| Forma | Comportamento | Exemplo |
 |---|---|---|
-| `"duplas"` | | |
-| `'simples'` | | |
-| `\` | | |
+| `"duplas"` | O Bash **expande** variáveis | `echo "Minha home é $HOME"` → `Minha home é /home/davi` |
+| `'simples'` | Tudo é tratado como **texto literal** | `echo 'Minha home é $HOME'` → `$HOME` não é interpretado |
+| sem aspas | A variável **é expandida**, mas o Bash pode **separar o conteúdo em vários argumentos** | ver exemplo abaixo |
+| `\` | Protege o próximo caractere | `echo "Custa \$100"` → `Custa $100` |
+
+Sem aspas, o `echo` recebe quatro argumentos separados:
+
+```
+echo
+├── Minha
+├── home
+├── é
+└── /home/davi
+```
+
+**O experimento do espaço no nome:**
+
+```bash
+arquivo="meu arquivo.txt"
+touch $arquivo        # cria DOIS arquivos: "meu" e "arquivo.txt"
+ls
+rm meu arquivo.txt    # o rm também recebe dois argumentos e remove os dois
+touch "$arquivo"      # o espaço é preservado — UM argumento, UM arquivo
+```
 
 ### Globbing
 
-| Curinga | Casa com | Meu exemplo |
+Mecanismo do shell usado para encontrar nomes de arquivos que combinam com padrões.
+
+| Padrão | Significado |
+|---|---|
+| `*` | Zero ou mais caracteres |
+| `?` | Exatamente um caractere |
+| `[abc]` | Um caractere dentre os listados |
+| `[a-z]` | Um caractere dentro de um intervalo |
+
+```bash
+touch arquivo{01..20}.txt   # brace expansion: cria arquivo01.txt até arquivo20.txt
+touch nota{a..e}.md         # cria notaa.md até notae.md
+
+ls *.txt                    # todos os .txt; não pega os .md
+ls arquivo0?.txt            # arquivo01 a arquivo09 — um caractere após o 0
+ls arquivo1[0-5].txt        # arquivo10 a arquivo15
+ls nota[abc].md             # notaa.md, notab.md, notac.md
+ls arquivo*                 # qualquer nome que comece com "arquivo"
+
+cd ~ && rm -rf globbing
+```
+
+### Correções desta sessão
+
+**Correção 11 — brace expansion não é globbing.** A anotação colocou `{01..20}` sob o título de globbing. São mecanismos diferentes, e a prova distingue os dois:
+
+| Mecanismo | O que faz | Depende de arquivos existirem |
 |---|---|---|
-| `*` | | |
-| `?` | | |
-| `[abc]` | | |
-| `[a-z]` | | |
+| **Brace expansion** `{01..20}` `{a,b,c}` | Gera uma **lista literal de texto** | Não |
+| **Globbing** `*` `?` `[abc]` | **Casa com nomes de arquivos que já existem** | Sim |
 
-### O que aprendi
+Comprove a diferença:
 
-- Por que `touch $arquivo` criou dois arquivos:
-- Variável de shell e variável de ambiente:
-- Quem expande o asterisco:
+```bash
+cd /tmp && mkdir teste-expansao && cd teste-expansao
+echo {1..5}.txt     # imprime: 1.txt 2.txt 3.txt 4.txt 5.txt — mesmo sem nenhum arquivo
+echo *.txt          # imprime: *.txt — não casou com nada, o shell devolve o padrão cru
+touch {1..5}.txt
+echo *.txt          # agora sim: 1.txt 2.txt 3.txt 4.txt 5.txt
+cd ~ && rm -rf /tmp/teste-expansao
+```
+
+É por isso que o brace expansion serve para **criar** arquivos e o globbing para **selecionar** os que já existem.
+
+**Correção 12 — direção da herança.** A anotação diz que a variável de shell "não recebe processos filhos". A direção é a inversa: os **processos filhos é que não recebem** a variável. Quem herda é o filho, não a variável.
+
+**Correção 13 — o que o `grep` está filtrando.** A anotação diz que `set | grep HOME` "procura texto em HOME". Ele procura a palavra `HOME` **na saída do comando `set`**. O `grep` sempre filtra o que chega pela entrada; o argumento é o que ele procura, não onde procura.
+
+**Correção 14 — `emv` não existe.** Erro de digitação na tabela: o comando é `env | wc -l`.
+
+**Correção 15 — o `tar` sozinho não comprime.** A anotação registra que o `tar` empacota vários arquivos em um `.tar`, o que está certo. Vale completar: empacotar e comprimir são **operações separadas**. O `.tar` é só o pacote; a compressão vem de um segundo programa acionado por flag — `-z` (gzip, gera `.tar.gz`), `-j` (bzip2, `.tar.bz2`), `-J` (xz, `.tar.xz`). Isso é objetivo 3.1, na Semana 4.
+
+**Correção 16 — o `history` não é só da sessão atual.** Ele lê o arquivo `~/.bash_history`, que persiste entre sessões. Por isso comandos de dias anteriores aparecem na lista.
+
+### Pendente desta sessão
+
+- [ ] O experimento que fecha o conceito da semana — rodar e comparar:
+  ```bash
+  echo *.txt
+  ls *.txt
+  ```
+  O `echo` mostra **exatamente o que o `ls` recebe**. Quem expande o asterisco é o shell, antes de o comando existir; o `ls` nunca vê um `*`.
 
 ### Dúvidas em aberto
 
@@ -773,7 +913,7 @@ cd ~ && rm -rf globbing
 
 ---
 
-## Sessão 5 — Sábado 12/09 — Histórico, atalhos e autoavaliação
+## Sessão 5 — Domingo 13/09 — Histórico, atalhos e autoavaliação — CONCLUÍDA (exceto autoavaliação)
 
 ### Laboratório
 
@@ -830,18 +970,47 @@ unalias ll
 
 Aliases criados assim desaparecem ao fechar o terminal. Para torná-los permanentes vão no `~/.bashrc`, que será tratado na Semana 5.
 
+### Histórico
+
+| Comando | O que faz |
+|---|---|
+| `history` | Mostra o histórico de comandos, com um número associado a cada um |
+| `history \| tail -20` | As últimas 20 linhas do histórico |
+| `history \| grep chmod` | Filtra o histórico procurando por `chmod` |
+| `!!` | Executa novamente o comando imediatamente anterior |
+| `sudo !!` | Executa o último comando com `sudo` na frente |
+| `!42` | Executa o comando número 42 do histórico |
+| `!ls` | Executa o comando mais recente que começou com `ls` |
+
+O `history` lê o arquivo `~/.bash_history`, que **persiste entre sessões** — por isso comandos de dias anteriores continuam na lista.
+
 ### Atalhos treinados
 
-| Atalho | Ação | Já é reflexo |
-|---|---|---|
-| `Ctrl+A` | | |
-| `Ctrl+E` | | |
-| `Ctrl+U` | | |
-| `Ctrl+K` | | |
-| `Ctrl+W` | | |
-| `Ctrl+L` | | |
-| `Ctrl+R` | | |
-| `Tab` | | |
+| Atalho | Ação |
+|---|---|
+| `Ctrl+A` | Início da linha |
+| `Ctrl+E` | Fim da linha |
+| `Ctrl+U` | Apaga do cursor até o início |
+| `Ctrl+K` | Apaga do cursor até o fim |
+| `Ctrl+W` | Apaga a palavra anterior |
+| `Ctrl+L` | Limpa a tela |
+| `Ctrl+C` | Cancela o comando atual |
+| `Ctrl+D` | Encerra a entrada ou sai do shell |
+| `Tab` | Completa comando ou nome de arquivo |
+| `Tab Tab` | Lista as opções possíveis |
+
+### Aliases
+
+Apelidos para comandos no shell, usados para encurtar comandos longos ou criar atalhos personalizados.
+
+```bash
+alias                    # lista os aliases existentes
+alias ll='ls -lah'       # cria o apelido ll
+alias ..='cd ..'         # cria o apelido ..
+unalias ll               # remove o apelido
+```
+
+Aliases criados assim desaparecem ao fechar o terminal. Para torná-los permanentes vão no `~/.bashrc`, que será tratado na Semana 5.
 
 ---
 
@@ -886,6 +1055,8 @@ Responda sem consultar nada. Confira só depois de responder todas.
 
 </details>
 
+**Não realizada na Semana 2.** Transferida como dívida para a Semana 3, onde será a primeira atividade.
+
 Nota obtida: ___ de 15
 
 Meta: 12 de 15. Cada erro vira card no Notion no mesmo dia.
@@ -903,12 +1074,34 @@ Erros e o que revisar:
 - [x] Sessão 1 — anatomia do comando e navegação (09/09)
 - [x] Sessão 2 — caminhos absolutos e relativos (09/09)
 - [x] Sessão 3 — sistema de ajuda (10/09)
-- [ ] Sessão 4 — variáveis, aspas e globbing (11/09)
-- [ ] Sessão 5 — histórico, atalhos e autoavaliação (12/09)
-- [ ] Bandit nível 5 para 6 (pendência da Semana 1)
+- [x] Sessão 4 — variáveis, aspas e globbing (13/09)
+- [x] Sessão 5 — histórico, atalhos e aliases (13/09)
+- [x] Bandit nível 5 para 6 (pendência da Semana 1)
+- [ ] Autoavaliação — transferida para a Semana 3
+- [ ] Curso do Muller — nenhum avanço nesta semana
 - [ ] Cards do Notion atualizados
-- [ ] Autoavaliação com 12 acertos ou mais
-- [ ] Commits diários no repositório
+
+## Fechamento da Semana 2
+
+**Concluída em 13/09, no último dia do prazo.** As cinco sessões foram cumpridas, mas com duas sessões comprimidas no domingo, o que gerou dívidas.
+
+**Objetivos cobertos:** 2.1 (Command Line Basics) e 2.2 (Using the Command Line to Get Help) — 5 dos 9 pontos do Tópico 2.
+
+**Realizado:**
+
+- Estrutura de comandos, opções curtas e longas, códigos de saída
+- Caminhos absolutos e relativos, símbolos `/ . .. ~ -`
+- Sistema de ajuda completo: `man` e suas 8 seções, `apropos`, `whatis`, `--help`, `help`, `info`
+- Localização de comandos: `which`, `type`, `whereis`
+- Variáveis de shell e de ambiente, `export`, `set`, `unset`
+- Aspas simples, duplas e escape
+- Globbing e brace expansion
+- Histórico, atalhos de edição e aliases
+- Bandit nível 5 para 6, com `find` e filtros combinados
+
+**Ponto de atenção:** o conteúdo foi absorvido **apenas pela prática**, sem avanço no curso. Funcionou bem nesta semana, porque os objetivos 2.1 e 2.2 são inteiramente operacionais. Não deve funcionar igual nos Tópicos 3 e 4, que trazem conceitos que o laboratório sozinho não ensina.
+
+**Qualidade das anotações:** 16 correções registradas ao longo da semana, nenhuma delas grave. A maioria foi imprecisão de redação, não erro de compreensão. As duas conceituais reais foram a leitura invertida do `type ls` (Sessão 3) e a confusão entre brace expansion e globbing (Sessão 4).
 
 ---
 
