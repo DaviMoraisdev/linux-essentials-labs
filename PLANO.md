@@ -18,8 +18,6 @@
 | Snapshot `limpo` | ✅ criado |
 | Atalhos PowerShell (`lab-up`, `lab-down`, `lab-status`) | ✅ funcionando |
 | Repositório `linux-essentials-labs` | ✅ público no GitHub, primeiro commit feito |
-| `.wslconfig` limitando WSL2 a 3 GB | ⬜ pendente |
-| Teste de restauração do snapshot | ⬜ pendente |
 | Contas learning.lpi.org e OverTheWire | ✅ criadas (01/09) |
 | **Semana 1 — Tópico 1 + FHS** | ✅ **concluída em 05/09** (2 dias antes do prazo) |
 | Tópico 1 — licenças, distros, interfaces, aplicações, portas, linguagens | ✅ estudado e revisado |
@@ -241,8 +239,8 @@ Semanas alinhadas de **segunda a domingo**. A prova cai na segunda-feira seguint
 |---|---|---|---|
 | 0 | até 31/08 | — | ✅ Laboratório montado |
 | 1 | 01–06/09 | A | ✅ Tópico 1 — comunidade, licenças, distros, FHS |
-| **2** | **07–13/09** | **B** | 🔄 Tópico 2 p1 — linha de comando e ajuda |
-| 3 | 14–20/09 | C | Tópico 2 p2 — arquivos, diretórios, links |
+| **2** | **07–13/09** | **B** |  ✅ Tópico 2 p1 — linha de comando e ajuda |
+| 3 | 14–20/09 | C | 	🔄 Tópico 2 p2 — arquivos, diretórios, links |
 | 4 | 21–27/09 | D | Tópico 3 p1 — compactação, filtros, busca |
 | 5 | 28/09–04/10 | E | Tópico 3 p2 — shell scripting · 🎯 **agendar a prova** |
 | 6 | 05–11/10 | F | Tópico 5 — usuários, grupos e permissões |
@@ -265,8 +263,6 @@ Semanas alinhadas de **segunda a domingo**. A prova cai na segunda-feira seguint
 - [x] SSH funcionando pelo Windows Terminal (`ssh lab`)
 - [x] Atalhos `lab-up` / `lab-down` / `lab-status` no `$PROFILE`
 - [x] Repositório `linux-essentials-labs` público no GitHub
-- [ ] `.wslconfig` limitando WSL2 a 3 GB
-- [ ] Teste de restauração do snapshot
 - [x] Contas em learning.lpi.org e OverTheWire (01/09)
 
 ---
