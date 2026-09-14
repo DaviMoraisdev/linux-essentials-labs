@@ -18,13 +18,18 @@
 | Snapshot `limpo` | ✅ criado |
 | Atalhos PowerShell (`lab-up`, `lab-down`, `lab-status`) | ✅ funcionando |
 | Repositório `linux-essentials-labs` | ✅ público no GitHub, primeiro commit feito |
+| `.wslconfig` limitando WSL2 a 3 GB | ⬜ pendente |
+| Teste de restauração do snapshot | ⬜ pendente |
 | Contas learning.lpi.org e OverTheWire | ✅ criadas (01/09) |
 | **Semana 1 — Tópico 1 + FHS** | ✅ **concluída em 05/09** (2 dias antes do prazo) |
 | Tópico 1 — licenças, distros, interfaces, aplicações, portas, linguagens | ✅ estudado e revisado |
 | FHS — diretórios estudados e verificados na VM | ✅ |
 | Bandit | ✅ níveis 0 a 4 · nível 5 movido para a Semana 2 |
 | Cards de revisão (Notion) | ✅ em uso desde a semana 1 |
-| **Semana 2 — Tópico 2, parte 1 (Bloco B)** | 🔄 em andamento — Sessões 1, 2 e 3 concluídas (09 e 10/09) |
+| **Semana 2 — Tópico 2, parte 1 (Bloco B)** | ✅ **concluída em 13/09**, no prazo — com dívidas |
+| Bandit | ✅ níveis 0 a 6 |
+| Dívidas abertas | ⚠️ autoavaliação da S2, 6 experimentos menores, curso do Muller atrasado |
+| **Semana 3 — Tópico 2, parte 2 (Bloco C)** | ⬜ inicia 14/09 — Sessão 1 dedicada à quitação de dívidas |
 | Voucher da prova | ⬜ comprar na Semana 5 |
 
 > **Ordem ajustada em 02/09:** o curso do Muller começa pelo **Tópico 1**, não pelo Tópico 2. O cronograma da seção 7 foi reordenado para acompanhar o curso — a data da prova não muda.
