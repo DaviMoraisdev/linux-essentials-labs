@@ -51,7 +51,7 @@ sudo poweroff
 
 ---
 
-## Sessão 1 — Segunda 14/09 — Quitação de dívidas e autoavaliação
+## Sessão 1 — Segunda 14/09 — Quitação de dívidas e autoavaliação — CONCLUÍDA
 
 Sessão curta em comandos e alta em valor. Faça na ordem.
 
@@ -61,15 +61,20 @@ Abra `labs/semana-02.md`, vá até a seção de autoavaliação e responda as 15
 
 Esta é a dívida mais importante das seis. As outras cinco são experimentos; esta é a **única medição** de quanto do conteúdo das semanas 1 e 2 realmente ficou. Sem ela, entramos na Semana 4 sem saber se a base está sólida.
 
-Registre a nota abaixo e transforme cada erro em card no Notion **hoje**.
+**Resultado: 14 de 15.** Meta era 12.
 
-Nota: ___ de 15
+Acertos: questões 1 a 8 e 10 a 15. As respostas sobre `which` versus `type`, sobre a expansão do asterisco pelo shell e sobre o `?` casar exatamente um caractere vieram completas e com a justificativa correta.
 
-Erros:
+**Erro único — questão 9: o que o `export` faz que a atribuição simples não faz.**
 
-1.
-2.
-3.
+Resposta dada: "cria uma variável do shell".
+Correto: a atribuição simples **já cria** a variável de shell. O `export` acrescenta uma coisa só — **marca a variável para ser herdada pelos processos filhos**, o que a torna variável de ambiente.
+
+Card criado no Notion: *"O que `export` faz? → Marca a variável para ser herdada pelos processos filhos. A atribuição simples já cria a variável, mas ela fica só no shell atual."*
+
+Este conceito estava correto nas anotações da Sessão 4 da Semana 2, com diagrama e tudo. Errar sob condição de prova, sem consulta, é precisamente o tipo de lacuna que só a autoavaliação revela.
+
+**Observação — questão 3.** O caminho absoluto foi `/home/davi/documentos/arquivo.txt` e o relativo `documentos/arquivos.txt`. O conceito está certo, mas os nomes divergem no plural, então não apontam para o mesmo arquivo. Não conta como erro, mas vale atenção: em questão de preenchimento, um caractere a mais invalida a resposta.
 
 ### Parte 2 — Os experimentos pendentes (20 min)
 
@@ -116,6 +121,30 @@ cp /etc/hostname .
 
 Deve falhar. Anote a mensagem exata; ela reaparece na Semana 6.
 
+> **Este é o único experimento que não foi concluído.** O comando executado foi `cp /etc/hostname`, sem o ponto final, e o erro obtido foi outro:
+>
+> ```
+> cp: missing destination file operand after '/etc/hostname'
+> ```
+>
+> Isso é **erro de sintaxe**, não de permissão. O `cp` exige **dois operandos**: origem e destino. Sem o destino, ele nem chega a tentar escrever — falha antes, na checagem dos argumentos.
+>
+> O ponto no fim do comando **é o destino**. Ele significa "o diretório atual", que naquele momento é `/var/log`. Com ele, o `cp` tenta de fato criar o arquivo e aí sim esbarra na permissão:
+>
+> ```
+> cp: cannot create regular file './hostname': Permission denied
+> ```
+>
+> Refazer, com o ponto:
+>
+> ```bash
+> cd /var/log
+> cp /etc/hostname .
+> echo $?
+> ```
+>
+> Vale observar a diferença entre os dois códigos de saída e entre as duas mensagens. Uma diz "você escreveu o comando errado"; a outra diz "o comando está certo, mas você não tem direito de fazer isso". Distinguir as duas é o que separa depurar de adivinhar.
+
 **O `locate` e o banco de dados indexado:**
 
 ```bash
@@ -141,9 +170,30 @@ ls /usr/share/doc/tar/
 
 ### Registro da sessão
 
-```bash
+**Código de saída.** Confirmado nos três casos: `ls /naoexiste` retorna 2; `ls /` retorna 0; `ls -lh /var /log` retorna 2, porque o `/var` existe mas o `/log` não — basta um argumento falhar para o código ser diferente de zero.
 
+**Mecanismo do `cd -`.** Confirmado. O shell guarda o diretório anterior em `$OLDPWD`; o `cd -` é um atalho para `cd $OLDPWD`. Saindo de `/etc` para `/var/log`, o `$OLDPWD` passou a valer `/etc`, e o `cd -` voltou para lá.
+
+**Expansão do asterisco.** Confirmado. Com `a.txt`, `b.txt` e `c.txt` no diretório, tanto `echo *.txt` quanto `ls *.txt` produzem a mesma lista — porque o `ls` recebe exatamente o que o `echo` mostrou. Já `echo *.md` devolveu `*.md` literalmente: sem nenhum arquivo correspondente, o shell não expande e entrega o padrão cru ao comando.
+
+**`locate` e banco indexado.** Confirmado o ciclo completo: o arquivo recém-criado não aparece na busca, `sudo updatedb` reindexa, e a busca seguinte encontra `/home/davi/arquivo-recem-criado.txt`. É a diferença prática entre consultar um índice e percorrer o sistema de arquivos.
+
+**Documentação dos pacotes.** `/usr/share/doc` listou os pacotes instalados em ordem alfabética. Em `/usr/share/doc/tar/` apareceram `AUTHORS`, `README.Debian`, `changelog.Debian.gz`, `NEWS.gz`, `THANKS.gz` e `copyright` — arquivos que não estão na man page.
+
+Repare que vários terminam em `.gz`: estão comprimidos. Para ler sem descomprimir:
+
+```bash
+zcat /usr/share/doc/tar/changelog.Debian.gz | head
+zless /usr/share/doc/tar/NEWS.gz
 ```
+
+Os comandos `zcat`, `zless` e `zgrep` operam direto sobre arquivos `gzip`. Conteúdo do objetivo 3.1, na Semana 4.
+
+**`Permission denied`.** Não concluído — ver observação acima. Pendente para a Sessão 2.
+
+### Pendente
+
+- [ ] Refazer `cp /etc/hostname .` em `/var/log`, **com o ponto**, e registrar a mensagem de permissão
 
 ---
 
@@ -529,7 +579,7 @@ Registro:
 
 ## Checklist da semana
 
-- [ ] Sessão 1 — dívidas e autoavaliação da Semana 2
+- [x] Sessão 1 — dívidas e autoavaliação da Semana 2 (14/09) — nota 14 de 15
 - [ ] Sessão 2 — criar, copiar, mover e remover
 - [ ] Sessão 3 — links e arquivos ocultos
 - [ ] Sessão 4 — FHS aprofundado e opções do `ls`
@@ -546,14 +596,16 @@ Registro:
 
 | # | Dívida | Onde foi absorvida |
 |---|---|---|
-| 1 | Autoavaliação da Semana 2 (15 questões) | Sessão 1, Parte 1 |
-| 2 | `echo $?` imediatamente após o comando testado | Sessão 1, Parte 2 |
-| 3 | `echo $OLDPWD` e o mecanismo do `cd -` | Sessão 1, Parte 2 |
-| 4 | Experimento `echo *.txt` versus `ls *.txt` | Sessão 1, Parte 2 |
-| 5 | Experimento do `Permission denied` em `/var/log` | Sessão 1, Parte 2 |
-| 6 | Instalar e testar `locate` com `updatedb` | Sessão 1, Parte 2 |
-| 7 | Navegar em `/usr/share/doc/` | Sessão 1, Parte 2 |
-| 8 | Avanço no curso do Muller | Sessão 5, Parte 1 |
+| # | Dívida | Situação |
+|---|---|---|
+| 1 | Autoavaliação da Semana 2 (15 questões) | Quitada em 14/09 — 14 de 15 |
+| 2 | `echo $?` imediatamente após o comando testado | Quitada em 14/09 |
+| 3 | `echo $OLDPWD` e o mecanismo do `cd -` | Quitada em 14/09 |
+| 4 | Experimento `echo *.txt` versus `ls *.txt` | Quitada em 14/09 |
+| 5 | Experimento do `Permission denied` em `/var/log` | **Em aberto** — comando incompleto, refazer com o ponto |
+| 6 | Instalar e testar `locate` com `updatedb` | Quitada em 14/09 |
+| 7 | Navegar em `/usr/share/doc/` | Quitada em 14/09 |
+| 8 | Avanço no curso do Muller | Em aberto — Sessão 5 |
 
 ---
 
