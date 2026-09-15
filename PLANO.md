@@ -26,8 +26,9 @@
 | Cards de revisão (Notion) | ✅ em uso desde a semana 1 |
 | **Semana 2 — Tópico 2, parte 1 (Bloco B)** | ✅ **concluída em 13/09**, no prazo — com dívidas |
 | Bandit | ✅ níveis 0 a 6 |
-| Dívidas abertas | ⚠️ autoavaliação da S2, 6 experimentos menores, curso do Muller atrasado |
-| **Semana 3 — Tópico 2, parte 2 (Bloco C)** | ⬜ inicia 14/09 — Sessão 1 dedicada à quitação de dívidas |
+| **Autoavaliação da Semana 2** | ✅ **14 de 15** em 14/09 (meta era 12) |
+| Dívidas da Semana 2 | ✅ 6 de 8 quitadas · em aberto: experimento do `Permission denied` e curso do Muller |
+| **Semana 3 — Tópico 2, parte 2 (Bloco C)** | 🔄 em andamento — Sessão 1 concluída (14/09) |
 | Voucher da prova | ⬜ comprar na Semana 5 |
 
 > **Ordem ajustada em 02/09:** o curso do Muller começa pelo **Tópico 1**, não pelo Tópico 2. O cronograma da seção 7 foi reordenado para acompanhar o curso — a data da prova não muda.
@@ -239,8 +240,8 @@ Semanas alinhadas de **segunda a domingo**. A prova cai na segunda-feira seguint
 |---|---|---|---|
 | 0 | até 31/08 | — | ✅ Laboratório montado |
 | 1 | 01–06/09 | A | ✅ Tópico 1 — comunidade, licenças, distros, FHS |
-| **2** | **07–13/09** | **B** |  ✅ Tópico 2 p1 — linha de comando e ajuda |
-| 3 | 14–20/09 | C | 	🔄 Tópico 2 p2 — arquivos, diretórios, links |
+| **2** | **07–13/09** | **B** | 🔄 Tópico 2 p1 — linha de comando e ajuda |
+| 3 | 14–20/09 | C | Tópico 2 p2 — arquivos, diretórios, links |
 | 4 | 21–27/09 | D | Tópico 3 p1 — compactação, filtros, busca |
 | 5 | 28/09–04/10 | E | Tópico 3 p2 — shell scripting · 🎯 **agendar a prova** |
 | 6 | 05–11/10 | F | Tópico 5 — usuários, grupos e permissões |
