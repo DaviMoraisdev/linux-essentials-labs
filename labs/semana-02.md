@@ -290,8 +290,8 @@ Esse mecanismo é a base do `&&` e do `||`, que aparecem na Semana 5 — e é ex
 
 ### Pendente desta sessão
 
-- [x] Refazer a sequência acima com o `echo $?` imediatamente após cada comando
-- [x] `echo $OLDPWD` — confirmar como o `cd -` funciona
+- [ ] Refazer a sequência acima com o `echo $?` imediatamente após cada comando
+- [ ] `echo $OLDPWD` — confirmar como o `cd -` funciona
 
 ---
 
@@ -429,7 +429,7 @@ ls -l /bin
   ```
   Confirmando a posição com `pwd` a cada passo. É o exercício que transforma a definição de caminho relativo em intuição, e é onde o `cd ..` como "diretório pai" finalmente se separa do `cd -`.
 
-- [x] **O experimento do `Permission denied`:**
+- [ ] **O experimento do `Permission denied`:**
   ```bash
   cd /var/log
   cp /etc/hostname .
@@ -627,18 +627,18 @@ O `type -a ls` revela as duas camadas de uma vez: primeiro o alias, depois o exe
 
 ### Itens do roteiro ainda não registrados
 
-- [x] Instalar e testar o `locate` na prática:
+- [ ] Instalar e testar o `locate` na prática:
   ```bash
   sudo apt install -y plocate
   sudo updatedb
   locate hostname | head
   ```
-- [x] Navegar em `/usr/share/doc/` e abrir a documentação de um pacote:
+- [ ] Navegar em `/usr/share/doc/` e abrir a documentação de um pacote:
   ```bash
   ls /usr/share/doc | head -20
   ls /usr/share/doc/tar/
   ```
-- [x] Comparar `tldr tar` com `man tar`
+- [ ] Comparar `tldr tar` com `man tar`
 
 ---
 
@@ -900,7 +900,7 @@ cd ~ && rm -rf /tmp/teste-expansao
 
 ### Pendente desta sessão
 
-- [x] O experimento que fecha o conceito da semana — rodar e comparar:
+- [ ] O experimento que fecha o conceito da semana — rodar e comparar:
   ```bash
   echo *.txt
   ls *.txt
@@ -1055,17 +1055,32 @@ Responda sem consultar nada. Confira só depois de responder todas.
 
 </details>
 
-**Não realizada na Semana 2.** Transferida como dívida para a Semana 3, onde será a primeira atividade.
+**Realizada em 14/09**, como primeira atividade da Semana 3.
 
-Nota obtida: ___ de 15
+**Nota obtida: 14 de 15.** Meta era 12.
 
-Meta: 12 de 15. Cada erro vira card no Notion no mesmo dia.
+**Único erro — questão 9: o que o `export` faz que a atribuição simples não faz.**
 
-Erros e o que revisar:
+Resposta dada: "cria uma variável do shell".
+Resposta correta: a atribuição simples **já cria** a variável de shell. O que o `export` faz a mais é **marcar a variável para ser herdada pelos processos filhos**, transformando-a em variável de ambiente.
 
-1.
-2.
-3.
+```bash
+minhavar="teste"       # já existe uma variável de shell aqui
+bash
+echo $minhavar         # vazia — o filho não herdou
+exit
+
+export minhavar        # agora sim: marcada para herança
+bash
+echo $minhavar         # teste
+exit
+```
+
+Observação: este conceito estava **correto** nas anotações da Sessão 4, inclusive com o diagrama da herança. O erro apareceu apenas sob condição de prova, sem consulta — que é exatamente o que a autoavaliação existe para revelar.
+
+Card para o Notion: *"O que `export` faz? → Marca a variável para ser herdada pelos processos filhos. A atribuição simples já cria a variável, mas só no shell atual."*
+
+**Observação menor — questão 3.** O caminho absoluto citado foi `/home/davi/documentos/arquivo.txt` e o relativo `documentos/arquivos.txt`. O conceito está certo, mas os nomes divergem (`arquivo` e `arquivos`), então não são o mesmo arquivo. Não conta como erro; vale como atenção à precisão ao escrever caminhos.
 
 ---
 
@@ -1077,7 +1092,7 @@ Erros e o que revisar:
 - [x] Sessão 4 — variáveis, aspas e globbing (13/09)
 - [x] Sessão 5 — histórico, atalhos e aliases (13/09)
 - [x] Bandit nível 5 para 6 (pendência da Semana 1)
-- [ ] Autoavaliação — transferida para a Semana 3
+- [x] Autoavaliação — realizada em 14/09, nota 14 de 15
 - [ ] Curso do Muller — nenhum avanço nesta semana
 - [ ] Cards do Notion atualizados
 
