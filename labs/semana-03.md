@@ -197,11 +197,112 @@ Os comandos `zcat`, `zless` e `zgrep` operam direto sobre arquivos `gzip`. Conte
 
 ---
 
-## Sessão 2 — Terça 15/09 — Criar, copiar, mover e remover (objetivo 2.4)
+## Sessão 2 — Terça 15/09 — Criar, copiar, mover e remover (objetivo 2.4) — CONCLUÍDA
 
-### Curso
+### Curso — Gerenciamento de pacotes .deb (15/09)
 
-Muller: seções sobre manipulação de arquivos e diretórios. **Esta semana o curso volta ao roteiro** — ver observação ao final do documento.
+Retomada do curso. O conteúdo desta aula vai além do exigido pelo Linux Essentials, que cobra apenas o reconhecimento das famílias de pacotes e dos gerenciadores. A profundidade de `dpkg` e `apt-get` aqui é material de **LPIC-1** e será reaproveitada no RHCSA, no equivalente `rpm`/`dnf`.
+
+**Duas formas de instalar software**
+
+| Forma | Como | Resolve dependências |
+|---|---|---|
+| Repositórios oficiais da distribuição | `apt install pacote` | Sim, automaticamente |
+| Pacote `.deb` local, baixado do site do fabricante | `dpkg -i pacote.deb` | **Não** |
+
+**Comandos do `apt`**
+
+| Comando | Função |
+|---|---|
+| `apt update` | Atualiza o **índice local** de pacotes a partir dos repositórios |
+| `apt upgrade` | Atualiza os pacotes instalados |
+| `apt full-upgrade` / `apt-get dist-upgrade` | Atualiza resolvendo dependências que exijam instalar ou remover pacotes |
+| `apt search palavra` | Pesquisa no cache por palavra-chave |
+| `apt install pacote` | Instala |
+| `apt remove pacote` | Remove o programa, mantendo as configurações |
+| `apt remove --purge` / `apt purge` | Remove o programa **e** os arquivos de configuração |
+| `apt autoremove` | Remove bibliotecas órfãs, que nenhum pacote instalado usa mais |
+
+**Comandos do `dpkg`**
+
+| Comando | Função |
+|---|---|
+| `dpkg -l` / `dpkg --get-selections` | Lista os pacotes instalados |
+| `dpkg -i pacote.deb` | Instala um pacote local |
+| `dpkg --remove pacote` | Remove, mantendo configurações e dependências |
+| `dpkg --purge pacote` | Remove também as configurações |
+
+O ponto central: **o `dpkg` não resolve dependências.** Ele instala exatamente o arquivo que você apontou, e falha se faltar alguma biblioteca. Quem conserta é o `apt`:
+
+```bash
+sudo apt-get -f install        # -f de --fix-broken
+```
+
+**Onde ficam os repositórios**
+
+```bash
+cd /etc/apt
+ls
+ls sources.list.d/
+```
+
+**Correção 17 — o `sources.list` não é mais o arquivo principal.** No Ubuntu 26.04, a configuração dos repositórios migrou para o formato **deb822**, em `/etc/apt/sources.list.d/ubuntu.sources`. O arquivo `/etc/apt/sources.list` ainda existe por compatibilidade, mas costuma estar vazio ou apenas com um comentário apontando para o novo local. Confirme no seu sistema:
+
+```bash
+cat /etc/apt/sources.list
+cat /etc/apt/sources.list.d/ubuntu.sources
+```
+
+O segundo mostra os quatro repositórios que você já viu na Semana 0: `resolute`, `resolute-updates`, `resolute-security` e `resolute-backports`.
+
+**Correção 18 — `apt upgrade` não "exclui o kernel".** A anotação registra que o `apt upgrade` atualiza tudo "com exceção do kernel". Isso é uma simplificação difundida, mas não é a regra real.
+
+O que de fato distingue os comandos é **se podem instalar ou remover pacotes**:
+
+| Comando | Instala pacotes novos | Remove pacotes |
+|---|---|---|
+| `apt-get upgrade` | Não | Não |
+| `apt upgrade` | Sim | Não |
+| `apt full-upgrade` / `apt-get dist-upgrade` | Sim | Sim |
+
+O kernel entra nessa história por consequência: cada versão nova do kernel é um **pacote novo** (`linux-image-7.0.0-15`, e não uma atualização do `linux-image-7.0.0-14`). Como o `apt-get upgrade` se recusa a instalar pacotes novos, ele acaba deixando o kernel para trás — e foi daí que nasceu a regra decorada. Já o `apt upgrade`, que você usou na Semana 0, instala o kernel normalmente.
+
+É por isso que aqueles quatro pacotes ficaram como `Not Upgrading` naquela ocasião: não era o kernel, eram pacotes cuja atualização exigia mexer em outros.
+
+**Correção 19 — `dist-upgrade` não significa "atualizar a distribuição".** A anotação diz que `apt-get dist-upgrade` é "upgrade de distribuição de kernel". O nome engana. O `dist-upgrade` é um **upgrade inteligente**: ele resolve mudanças de dependência instalando e removendo pacotes conforme necessário, dentro da **mesma versão** da distribuição.
+
+Quem troca a versão do sistema — de 26.04 para 26.10, por exemplo — é outro comando:
+
+```bash
+sudo do-release-upgrade
+```
+
+Confundir os dois é erro comum e potencialmente caro em servidor.
+
+**Correção 20 — sintaxe.** A anotação registra `apt-get —dist upgrade`. O correto é `apt-get dist-upgrade`, sem hífens e com hífen entre as palavras. E "atualização de cache do apt → update apt" está com a ordem invertida: é `apt update`.
+
+**Correção 21 — `apt update` não atualiza os repositórios.** Ele atualiza o **índice local** do seu sistema, baixando dos repositórios a lista do que existe e em que versão. Os repositórios são servidores remotos e não mudam por ação sua. A distinção importa: `apt update` não instala nem atualiza nada — só sincroniza o catálogo.
+
+**Acréscimo — a forma moderna de instalar um `.deb` local**
+
+O roteiro `dpkg -i` seguido de `apt-get -f install` funciona, mas hoje existe um caminho direto que resolve dependências de primeira:
+
+```bash
+sudo apt install ./code.deb
+```
+
+O `./` é obrigatório. Sem ele, o `apt` procuraria nos repositórios um pacote **chamado** `code.deb`, em vez de ler o arquivo. É a mesma lógica do `cat ./-` do Bandit nível 1.
+
+**Roteiro de instalação praticado**
+
+```bash
+sudo apt update
+sudo apt upgrade
+# baixar o .deb, por exemplo de https://code.visualstudio.com/
+sudo dpkg -i code.deb
+sudo apt-get -f install          # se faltarem dependências
+dpkg -l | grep -i code           # confirmar
+```
 
 ### Laboratório
 
@@ -306,17 +407,78 @@ Três arquivos distintos. O Linux é **case sensitive**, ao contrário do Window
 
 ### Registro da sessão
 
-```bash
+Laboratório executado por completo, sem erros de interpretação.
+
+**Criação.** O `touch` e o `mkdir` aceitam vários argumentos e criam vários itens de uma vez. O `-p` do `mkdir` cria toda a cadeia de diretórios-pai do caminho.
+
+Leitura do primeiro caractere na saída do `ls -l`:
+
+| Início | Tipo |
+|---|---|
+| `-rw-rw-r--` | Arquivo comum |
+| `drwxrwxr-x` | Diretório |
+| `lrwxrwxrwx` | Link simbólico (Sessão 3) |
+
+Esse primeiro caractere é o tipo do arquivo, e os nove seguintes são as permissões em três grupos. Conteúdo do Tópico 5, Semana 6 — mas já visível aqui.
+
+**Cópia.** O `-r` de *recursive* é obrigatório para diretórios, porque um diretório pode conter subdiretórios e arquivos que também precisam ser copiados. Sem ele:
 
 ```
+cp: -r not specified; omitting directory 'projeto'
+```
+
+**Diferença entre `cp` e `mv`:** o `cp` duplica e mantém o original; o `mv` desloca ou renomeia, e o original deixa de existir no lugar antigo.
+
+**Movimentação.** O `mv` faz renomear e mover porque renomear é mover para o mesmo diretório com outro nome. O `.` como destino significa "o diretório atual" — o mesmo `.` da tabela de símbolos da Semana 2.
+
+**A sobrescrita silenciosa.** Confirmada: o `cp` substituiu `importante.txt` sem qualquer aviso, e o conteúdo original se perdeu. Com `-i` (*interactive*), aparece a confirmação:
+
+```
+cp: overwrite 'importante.txt'?
+```
+
+| Comando | Se o destino já existir |
+|---|---|
+| `cp arquivo destino` | Sobrescreve sem perguntar |
+| `cp -i arquivo destino` | Pergunta antes |
+| `mv arquivo destino` | Substitui sem perguntar |
+| `mv -i arquivo destino` | Pergunta antes |
+
+Observação registrada e correta: com o `cp`, o arquivo de origem continua existindo; com o `mv`, ele desaparece do local original.
+
+**Remoção.**
+
+```
+rmdir: failed to remove 'projeto': Directory not empty
+```
+
+O `rmdir` só apaga diretórios vazios — é uma proteção deliberada. Para remover com conteúdo, `rm -r`. E `rm -ri` pede confirmação item por item durante a remoção recursiva.
+
+**Case sensitivity.** `Arquivo.txt`, `arquivo.txt` e `ARQUIVO.txt` coexistem como três arquivos distintos. O Linux diferencia maiúsculas de minúsculas em nomes de arquivos e diretórios.
+
+### Dívida quitada — o `Permission denied`
+
+Refeito com o ponto, e agora com o erro correto:
+
+```
+cp: cannot create regular file './hostname': Permission denied
+```
+
+Compare com o erro da tentativa anterior, sem o ponto:
+
+```
+cp: missing destination file operand after '/etc/hostname'
+```
+
+A primeira mensagem diz que o comando está incompleto; a segunda diz que o comando está certo mas o usuário não tem direito de escrever em `/var/log`. Esse diretório pertence ao `root`, e é essa a porta de entrada do Tópico 5.
 
 ### O que aprendi
 
-- `touch` além de criar:
-- Por que `cp -r` é necessário:
-- O risco de `cp` e `mv` sem `-i`:
-- `rmdir` e `rm -r`, diferença:
-- Case sensitivity, com meu exemplo:
+- **`touch` além de criar:** atualiza os timestamps de um arquivo que já existe.
+- **Por que `cp -r` é necessário:** diretórios podem conter outros itens, e o `-r` manda copiar recursivamente todo o conteúdo.
+- **O risco de `cp` e `mv` sem `-i`:** ambos sobrescrevem o destino em silêncio, sem aviso e sem possibilidade de desfazer.
+- **`rmdir` e `rm -r`:** o `rmdir` só remove diretórios vazios; o `rm -r` remove o diretório e tudo que houver dentro.
+- **Case sensitivity:** `Arquivo.txt` e `arquivo.txt` são arquivos diferentes no Linux.
 
 ---
 
@@ -580,7 +742,7 @@ Registro:
 ## Checklist da semana
 
 - [x] Sessão 1 — dívidas e autoavaliação da Semana 2 (14/09) — nota 14 de 15
-- [ ] Sessão 2 — criar, copiar, mover e remover
+- [x] Sessão 2 — criar, copiar, mover e remover (15/09) — com retomada do curso
 - [ ] Sessão 3 — links e arquivos ocultos
 - [ ] Sessão 4 — FHS aprofundado e opções do `ls`
 - [ ] Sessão 5 — curso do Muller e autoavaliação da Semana 3
@@ -602,10 +764,12 @@ Registro:
 | 2 | `echo $?` imediatamente após o comando testado | Quitada em 14/09 |
 | 3 | `echo $OLDPWD` e o mecanismo do `cd -` | Quitada em 14/09 |
 | 4 | Experimento `echo *.txt` versus `ls *.txt` | Quitada em 14/09 |
-| 5 | Experimento do `Permission denied` em `/var/log` | **Em aberto** — comando incompleto, refazer com o ponto |
+| 5 | Experimento do `Permission denied` em `/var/log` | Quitada em 15/09 |
 | 6 | Instalar e testar `locate` com `updatedb` | Quitada em 14/09 |
 | 7 | Navegar em `/usr/share/doc/` | Quitada em 14/09 |
-| 8 | Avanço no curso do Muller | Em aberto — Sessão 5 |
+| 8 | Avanço no curso do Muller | Quitada em 15/09 — gerenciamento de pacotes |
+
+**Todas as oito dívidas da Semana 2 foram quitadas até 15/09.**
 
 ---
 
