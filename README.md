@@ -28,8 +28,8 @@ A ordem das semanas acompanha a sequência do curso utilizado, que inicia pelo T
 |---|---|---|---|
 | 0 | 25–31/08 | Montagem do laboratório | Concluída |
 | 1 | 01–07/09 | Tópico 1 — Comunidade, licenças, distribuições e FHS | Concluída |
-| 2 | 08–14/09 | Tópico 2 — Linha de comando e sistema de ajuda | Em andamento |
-| 3 | 15–21/09 | Tópico 2 — Arquivos, diretórios e links | Pendente |
+| 2 | 08–14/09 | Tópico 2 — Linha de comando e sistema de ajuda | Concluída |
+| 3 | 15–21/09 | Tópico 2 — Arquivos, diretórios e links | Em andamento |
 | 4 | 22–28/09 | Tópico 3 — Compactação, filtros e busca | Pendente |
 | 5 | 29/09–05/10 | Tópico 3 — Shell scripting | Pendente |
 | 6 | 06–12/10 | Tópico 5 — Usuários, grupos e permissões | Pendente |
