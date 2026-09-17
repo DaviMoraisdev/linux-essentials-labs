@@ -248,9 +248,7 @@ type echo
 
 O `type echo` revela algo útil: o `echo` é um **shell builtin**, embutido no Bash — e existe também um `/usr/bin/echo` no disco. Mesma distinção do `cd`, que aparece na Sessão 3.
 
-### Dúvidas em aberto
-
--
+---
 
 ### Pendências quitadas em 09/09
 
@@ -288,10 +286,10 @@ Convenção dos códigos: `0` sempre significa sucesso; qualquer valor diferente
 
 Esse mecanismo é a base do `&&` e do `||`, que aparecem na Semana 5 — e é exatamente o que aconteceu no `apt update && apr upgrade` durante a montagem do laboratório: o `update` retornou `0`, então o shell executou o segundo comando, que não existia.
 
-### Pendente desta sessão
+### Dívidas Pagas:
 
-- [ ] Refazer a sequência acima com o `echo $?` imediatamente após cada comando
-- [ ] `echo $OLDPWD` — confirmar como o `cd -` funciona
+- [x] Refazer a sequência acima com o `echo $?` imediatamente após cada comando
+- [x] `echo $OLDPWD` — confirmar como o `cd -` funciona
 
 ---
 
@@ -413,10 +411,6 @@ Isso é objetivo 3.2, conteúdo da Semana 4 — encontrado antes da hora, o que 
 ls -l /bin
 ```
 
-### Dúvidas em aberto
-
--
-
 ### Itens complementares
 
 - [x] **Navegação usando apenas caminhos relativos**, sem `/` inicial e sem `cd ~`, partindo de `nivel3` — concluído em 09/09:
@@ -429,7 +423,7 @@ ls -l /bin
   ```
   Confirmando a posição com `pwd` a cada passo. É o exercício que transforma a definição de caminho relativo em intuição, e é onde o `cd ..` como "diretório pai" finalmente se separa do `cd -`.
 
-- [ ] **O experimento do `Permission denied`:**
+- [x] **O experimento do `Permission denied`:**
   ```bash
   cd /var/log
   cp /etc/hostname .
@@ -621,24 +615,22 @@ O `type -a ls` revela as duas camadas de uma vez: primeiro o alias, depois o exe
 
 **Correção 10 — erro de digitação no caminho da documentação.** É **`/usr/share/doc/`**, não `/usr/share/odc/`. O `doc` vem de *documentation*.
 
-### Dúvidas em aberto
+---
 
--
+### Itens do roteiro já registrados
 
-### Itens do roteiro ainda não registrados
-
-- [ ] Instalar e testar o `locate` na prática:
+- [x] Instalar e testar o `locate` na prática:
   ```bash
   sudo apt install -y plocate
   sudo updatedb
   locate hostname | head
   ```
-- [ ] Navegar em `/usr/share/doc/` e abrir a documentação de um pacote:
+- [x] Navegar em `/usr/share/doc/` e abrir a documentação de um pacote:
   ```bash
   ls /usr/share/doc | head -20
   ls /usr/share/doc/tar/
   ```
-- [ ] Comparar `tldr tar` com `man tar`
+- [x] Comparar `tldr tar` com `man tar`
 
 ---
 
@@ -1093,8 +1085,8 @@ Card para o Notion: *"O que `export` faz? → Marca a variável para ser herdada
 - [x] Sessão 5 — histórico, atalhos e aliases (13/09)
 - [x] Bandit nível 5 para 6 (pendência da Semana 1)
 - [x] Autoavaliação — realizada em 14/09, nota 14 de 15
-- [ ] Curso do Muller — nenhum avanço nesta semana
-- [ ] Cards do Notion atualizados
+- [x] Curso do Muller — nenhum avanço nesta semana
+- [x] Cards do Notion atualizados
 
 ## Fechamento da Semana 2
 
@@ -1117,22 +1109,6 @@ Card para o Notion: *"O que `export` faz? → Marca a variável para ser herdada
 **Ponto de atenção:** o conteúdo foi absorvido **apenas pela prática**, sem avanço no curso. Funcionou bem nesta semana, porque os objetivos 2.1 e 2.2 são inteiramente operacionais. Não deve funcionar igual nos Tópicos 3 e 4, que trazem conceitos que o laboratório sozinho não ensina.
 
 **Qualidade das anotações:** 16 correções registradas ao longo da semana, nenhuma delas grave. A maioria foi imprecisão de redação, não erro de compreensão. As duas conceituais reais foram a leitura invertida do `type ls` (Sessão 3) e a confusão entre brace expansion e globbing (Sessão 4).
-
----
-
-## Fechamento da semana
-
-O que ficou sólido:
-
--
-
-O que preciso revisar:
-
--
-
-Comandos que viraram card no Notion:
-
--
 
 ---
 
