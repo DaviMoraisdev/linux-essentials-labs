@@ -890,18 +890,14 @@ cd ~ && rm -rf /tmp/teste-expansao
 
 **Correção 16 — o `history` não é só da sessão atual.** Ele lê o arquivo `~/.bash_history`, que persiste entre sessões. Por isso comandos de dias anteriores aparecem na lista.
 
-### Pendente desta sessão
+### Dividas Pagas: 
 
-- [ ] O experimento que fecha o conceito da semana — rodar e comparar:
+- [x] O experimento que fecha o conceito da semana — rodar e comparar:
   ```bash
   echo *.txt
   ls *.txt
   ```
   O `echo` mostra **exatamente o que o `ls` recebe**. Quem expande o asterisco é o shell, antes de o comando existir; o `ls` nunca vê um `*`.
-
-### Dúvidas em aberto
-
--
 
 ---
 
