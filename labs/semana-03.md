@@ -193,7 +193,7 @@ Os comandos `zcat`, `zless` e `zgrep` operam direto sobre arquivos `gzip`. Conte
 
 ### Pendente
 
-- [x] Refazer `cp /etc/hostname .` em `/var/log`, **com o ponto**, e registrar a mensagem de permissão
+- [ ] Refazer `cp /etc/hostname .` em `/var/log`, **com o ponto**, e registrar a mensagem de permissão
 
 ---
 
@@ -482,7 +482,7 @@ A primeira mensagem diz que o comando está incompleto; a segunda diz que o coma
 
 ---
 
-## Sessão 3 — Quarta 16/09 — Links simbólicos e hard links
+## Sessão 3 — Quarta 16/09 — Links simbólicos e hard links — CONCLUÍDA
 
 ### Laboratório
 
@@ -569,21 +569,113 @@ ls
 
 ### Registro da sessão
 
-```bash
+Sessão executada por completo. Nenhuma correção necessária.
+
+**Saída observada do `ls -li`:**
 
 ```
+262338 -rw-rw-r-- 2 davi davi 18 Sep 17 02:08 original.txt
+262338 -rw-rw-r-- 2 davi davi 18 Sep 17 02:08 hardlink.txt
+270559 lrwxrwxrwx 1 davi davi 12 Sep 17 02:08 simbolico.txt -> original.txt
+```
+
+`original.txt` e `hardlink.txt` compartilham o inode **262338**. O `simbolico.txt` tem inode próprio, **270559**, e traz a seta apontando para o destino.
+
+**O que é um inode.** A identidade real do arquivo no sistema de arquivos. O nome é apenas uma referência para essa estrutura, que guarda:
+
+- Permissões
+- Proprietário e grupo
+- Tamanho
+- Datas
+- Localização dos dados no disco
+
+Repare no que o inode **não** guarda: o nome do arquivo. O nome vive no diretório, como uma entrada que aponta para um inode. É exatamente por isso que dois nomes podem apontar para o mesmo arquivo.
+
+**Por que o `rm` não apaga os dados.** Registro correto na anotação: o `rm original.txt` remove a **referência** ao inode, não o conteúdo. Os dados só são liberados quando o último nome desaparece. É daí que vem o termo técnico para o `rm` em C: a chamada de sistema se chama `unlink`.
+
+**O teste confirmado:**
+
+| Comando após `rm original.txt` | Resultado |
+|---|---|
+| `cat hardlink.txt` | Funciona — o inode continua com um nome apontando para ele |
+| `cat simbolico.txt` | Quebra — guardava só um caminho, e o caminho sumiu |
+
+### Dois detalhes que a saída revela
+
+**A coluna do número — a contagem de links.**
+
+```
+-rw-rw-r-- 2 davi davi 18 ... original.txt
+           ↑
+```
+
+Esse `2` é o **número de hard links apontando para o inode**. Ele valia `1` antes de você criar o hard link, e passou a `2` no momento em que o `ln` rodou. Depois do `rm original.txt`, volta a `1`.
+
+É a contagem que o sistema usa para saber quando liberar o espaço em disco: só quando ela chega a zero. Comprove:
+
+```bash
+cd ~/lab3
+echo teste > conta.txt
+ls -l conta.txt          # coluna: 1
+ln conta.txt segundo
+ls -l conta.txt          # coluna: 2
+ln conta.txt terceiro
+ls -l conta.txt          # coluna: 3
+rm segundo terceiro
+ls -l conta.txt          # coluna: 1
+```
+
+Diretórios sempre começam com contagem `2`, porque o próprio `.` de dentro deles é um segundo nome para o mesmo inode. Cada subdiretório criado aumenta em um, por causa do `..` que ele contém. Verifique com `ls -ld` em qualquer diretório.
+
+**O tamanho do link simbólico.**
+
+```
+lrwxrwxrwx 1 davi davi 12 ... simbolico.txt -> original.txt
+                       ↑
+```
+
+`12` bytes. E `original.txt` tem exatamente **12 caracteres**. Não é coincidência: o conteúdo de um link simbólico **é o caminho de destino em texto**, e nada mais. O tamanho do link é o comprimento da string que ele guarda.
+
+```bash
+ln -s /um/caminho/bem/mais/longo/ainda alvo-longo
+ls -l alvo-longo      # o tamanho acompanha o comprimento do caminho
+rm alvo-longo
+```
+
+Isso explica de uma vez por que o link simbólico funciona entre partições — ele guarda texto, não uma referência a inode, e inodes só fazem sentido dentro do mesmo sistema de arquivos.
 
 ### O que aprendi
 
 | | Hard link | Link simbólico |
 |---|---|---|
-| Aponta para | | |
-| Sobrevive à remoção do original | | |
-| Funciona entre partições | | |
-| Funciona com diretórios | | |
+| Aponta para | O inode (o dado) | Um caminho em texto |
+| Sobrevive à remoção do original | Sim | Não |
+| Funciona entre partições | Não | Sim |
+| Funciona com diretórios | Não | Sim |
+| Criado com | `ln` | `ln -s` |
+| Tem inode próprio | Não | Sim |
+| Primeiro caractere no `ls -l` | `-` | `l` |
 
-- O que é um inode:
-- Por que arquivos de configuração começam com ponto:
+### Arquivos ocultos
+
+- [ ] Registrar as observações desta parte — os comandos constam do roteiro, mas as anotações da sessão não trazem o resultado
+
+```bash
+cd ~
+ls
+ls -a
+ls -a ~ | head -20
+cat ~/.bashrc | head -20
+
+touch .oculto.txt
+ls                            # não aparece
+ls -a                         # aparece
+mv .oculto.txt visivel.txt    # deixar de ser oculto é só renomear
+ls
+rm visivel.txt
+```
+
+Ponto a observar: o "oculto" não é um atributo do arquivo, como no Windows. É apenas uma convenção — o `ls` omite, por padrão, tudo que começa com ponto. Renomear já resolve, e nenhuma permissão muda no processo.
 
 ---
 
@@ -686,6 +778,17 @@ Responda sem consultar.
 14. O que o `touch` faz com um arquivo que já existe?
 15. Qual flag do `cp`, `mv` e `rm` pede confirmação antes de sobrescrever ou apagar?
 
+**Inodes e links — aprofundamento**
+
+16. Na saída `-rw-rw-r-- 2 davi davi 18 out original.txt`, o que significa o número `2`?
+17. Um link simbólico para `original.txt` aparece com 12 bytes de tamanho. Por quê?
+18. Por que um hard link não funciona entre partições diferentes, mas um link simbólico funciona?
+
+**Gerenciamento de pacotes — conteúdo do curso**
+
+19. Qual a diferença entre `apt update` e `apt upgrade`?
+20. O `dpkg -i pacote.deb` falhou por dependências. Quais são as duas formas de resolver?
+
 <details>
 <summary>Gabarito</summary>
 
@@ -704,12 +807,17 @@ Responda sem consultar.
 13. `ls -lS` ordena por tamanho; `ls -ltr` ordena por data, do mais antigo primeiro.
 14. Atualiza a data de modificação.
 15. `-i`, de *interactive*.
+16. A contagem de hard links apontando para aquele inode. Vale 1 num arquivo comum e sobe a cada hard link criado. O espaço em disco só é liberado quando ela chega a zero.
+17. Porque o conteúdo de um link simbólico é o caminho de destino em texto, e `original.txt` tem 12 caracteres. O tamanho do link é o comprimento da string que ele guarda.
+18. O hard link aponta para um inode, e a numeração de inodes só é válida dentro do mesmo sistema de arquivos. O link simbólico guarda um caminho em texto, que é interpretado na hora do acesso e pode apontar para qualquer lugar.
+19. O `apt update` sincroniza o índice local de pacotes com os repositórios, sem instalar nada. O `apt upgrade` usa esse índice para efetivamente atualizar os pacotes instalados.
+20. Instalar com `dpkg -i` e depois corrigir com `sudo apt-get -f install`; ou, de forma direta, usar `sudo apt install ./pacote.deb`, que resolve as dependências desde o início. O `./` é obrigatório nessa segunda forma.
 
 </details>
 
-Nota: ___ de 15
+Nota: ___ de 20
 
-Meta: 12 de 15.
+Meta: 16 de 20.
 
 ### Limpeza
 
@@ -743,13 +851,13 @@ Registro:
 
 - [x] Sessão 1 — dívidas e autoavaliação da Semana 2 (14/09) — nota 14 de 15
 - [x] Sessão 2 — criar, copiar, mover e remover (15/09) — com retomada do curso
-- [ ] Sessão 3 — links e arquivos ocultos
+- [x] Sessão 3 — links e inodes (16/09) — parte de arquivos ocultos sem registro
 - [ ] Sessão 4 — FHS aprofundado e opções do `ls`
 - [ ] Sessão 5 — curso do Muller e autoavaliação da Semana 3
 - [ ] Bandit níveis 6 a 8
 - [ ] Cards do Notion atualizados
 - [ ] Autoavaliação da Semana 2 com 12 acertos ou mais
-- [ ] Autoavaliação da Semana 3 com 12 acertos ou mais
+- [ ] Autoavaliação da Semana 3 com 16 acertos ou mais (20 questões)
 - [ ] Commits ao fim de cada sessão
 
 ---
