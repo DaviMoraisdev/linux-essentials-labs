@@ -29,7 +29,7 @@
 | **Autoavaliação da Semana 2** | ✅ **14 de 15** em 14/09 (meta era 12) |
 | Dívidas da Semana 2 | ✅ **todas as 8 quitadas** até 15/09 |
 | Curso do Muller | ✅ retomado em 15/09 — gerenciamento de pacotes `.deb` |
-| **Semana 3 — Tópico 2, parte 2 (Bloco C)** | 🔄 em andamento — Sessões 1 e 2 concluídas (14 e 15/09) |
+| **Semana 3 — Tópico 2, parte 2 (Bloco C)** | 🔄 em andamento — Sessões 1, 2 e 3 concluídas (14 a 16/09) |
 | Voucher da prova | ⬜ comprar na Semana 5 |
 
 > **Ordem ajustada em 02/09:** o curso do Muller começa pelo **Tópico 1**, não pelo Tópico 2. O cronograma da seção 7 foi reordenado para acompanhar o curso — a data da prova não muda.
