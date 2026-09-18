@@ -193,7 +193,7 @@ Os comandos `zcat`, `zless` e `zgrep` operam direto sobre arquivos `gzip`. Conte
 
 ### Pendente
 
-- [x] Refazer `cp /etc/hostname .` em `/var/log`, **com o ponto**, e registrar a mensagem de permissão
+- [ ] Refazer `cp /etc/hostname .` em `/var/log`, **com o ponto**, e registrar a mensagem de permissão
 
 ---
 
@@ -679,7 +679,90 @@ Ponto a observar: o "oculto" não é um atributo do arquivo, como no Windows. É
 
 ---
 
-## Sessão 4 — Quinta 17/09 — FHS aprofundado e navegação avançada (objetivo 2.3)
+## Sessão 4 — Quinta 17/09 — FHS aprofundado e navegação avançada (objetivo 2.3) — CONCLUÍDA
+
+### Curso — Gerenciamento de pacotes .rpm e yum (17/09)
+
+Família Red Hat. É o contraponto direto da aula anterior sobre `.deb`.
+
+**Equivalências entre as duas famílias**
+
+| Função | Debian / Ubuntu | Red Hat |
+|---|---|---|
+| Ferramenta de baixo nível, pacote local | `dpkg` | `rpm` |
+| Ferramenta de alto nível, com repositórios | `apt` | `yum` / `dnf` |
+| Extensão do pacote | `.deb` | `.rpm` |
+| Onde ficam os repositórios | `/etc/apt/sources.list.d/` | `/etc/yum.repos.d/` |
+| Formato do arquivo de repositório | `.sources` (deb822) | `.repo` |
+
+**Comandos do `rpm`**
+
+| Comando | Função |
+|---|---|
+| `rpm -qa` | Lista todos os pacotes instalados (*query all*) |
+| `rpm -qi pacote` | Informações detalhadas do pacote (*query info*) |
+| `rpm -qR pacote` | Lista as dependências do pacote (*query requires*) |
+| `rpm -i pacote.rpm` | Instala |
+| `rpm -ivh pacote.rpm` | Instala com saída detalhada e barra de progresso |
+| `rpm -e pacote` | Remove (*erase*) |
+
+**Comandos do `yum`**
+
+| Comando | Função |
+|---|---|
+| `yum update` | Atualiza o sistema **e** o cache de metadados |
+| `yum search palavra` | Pesquisa pacotes |
+| `yum install pacote` | Instala, resolvendo dependências |
+| `yum install -y pacote` | O `-y` responde sim a todas as confirmações |
+| `yum check-update` | Verifica se há atualizações disponíveis, sem instalar |
+| `yum deplist pacote` | Lista as dependências do pacote |
+| `yum remove pacote` | Remove, mantendo as bibliotecas |
+| `yum clean packages` | Limpa os arquivos `.rpm` baixados do cache |
+
+**Roteiro praticado**
+
+```bash
+yum update
+yum install httpd -y          # servidor web Apache
+yum install code.rpm          # resolve dependências
+yum remove code
+rpm -i code.rpm               # reinstala pela via de baixo nível
+```
+
+**Correção 22 — as flags do `rpm -ivh`.** A anotação atribui a barra de progresso ao `-ih` e os detalhes ao `-ihv`. Cada letra faz uma coisa, e a ordem entre elas não importa:
+
+| Flag | Significa | Efeito |
+|---|---|---|
+| `-i` | *install* | Instala |
+| `-v` | *verbose* | Saída detalhada |
+| `-h` | *hash* | Barra de progresso feita de `#` |
+
+A combinação canônica, que você vai ver em toda documentação, é `rpm -ivh`.
+
+**Correção 23 — `yum check-install` não existe.** O comando é **`yum check-update`**, e ele verifica se há atualizações disponíveis **sem instalar nada**. É o equivalente aproximado do `apt list --upgradable`.
+
+**Correção 24 — `yum clean packages` não remove pacotes órfãos.** Ele limpa os arquivos `.rpm` que foram **baixados para o cache** durante instalações, liberando espaço em `/var/cache`. Não mexe em nada instalado.
+
+O equivalente real do `apt autoremove` é:
+
+```bash
+dnf autoremove
+```
+
+Confundir "limpar cache" com "remover pacotes órfãos" leva a achar que o sistema foi limpo quando não foi.
+
+**Acréscimo importante — `yum` foi substituído por `dnf`.** O curso ensina o `yum`, que era a ferramenta do CentOS 7. A partir do RHEL 8, Fedora 22 e derivados — incluindo **Rocky Linux e AlmaLinux**, que são o que você vai usar no RHCSA — a ferramenta é o **`dnf`**, e o `yum` virou apenas um link simbólico apontando para ele.
+
+```bash
+# Em um container Rocky, verifique:
+docker run -it --rm rockylinux/rockylinux:10 bash
+ls -l /usr/bin/yum
+dnf --version
+```
+
+Os comandos são quase idênticos, então o aprendizado se transfere. Vale apenas escrever `dnf` daqui em diante, porque é o que aparece na documentação atual e nas provas da Red Hat.
+
+**Diferença de desenho entre as duas famílias que vale notar.** No Debian, atualizar exige dois passos separados: `apt update` sincroniza o índice, `apt upgrade` atualiza os pacotes. No Red Hat, `yum update` faz as duas coisas de uma vez. Confundir isso é fonte comum de erro para quem transita entre as famílias.
 
 ### Laboratório
 
@@ -738,15 +821,112 @@ O `-d` é o mais sutil e o mais cobrado: sem ele, `ls -l /etc` lista **o que est
 
 ### Registro da sessão
 
-```bash
+**Links simbólicos na raiz.** Quatro encontrados, todos apontando para dentro de `/usr`:
 
 ```
+lrwxrwxrwx 1 root root 7 Apr 20 08:46 bin   -> usr/bin
+lrwxrwxrwx 1 root root 7 Apr 20 08:46 lib   -> usr/lib
+lrwxrwxrwx 1 root root 9 Apr 20 08:46 lib64 -> usr/lib64
+lrwxrwxrwx 1 root root 8 Apr 20 08:46 sbin  -> usr/sbin
+```
+
+Isso é o **`/usr` merge**, mencionado na Semana 1 e agora visto de fato. Repare que os tamanhos são 7, 7, 9 e 8 bytes — exatamente o comprimento de `usr/bin`, `usr/lib`, `usr/lib64` e `usr/sbin`. É a mesma lição de ontem sobre o tamanho do link simbólico ser o comprimento do caminho que ele guarda.
+
+**Inventário do sistema**
+
+| Comando | Resultado |
+|---|---|
+| `ls /etc \| wc -l` | 197 itens de configuração |
+| `ls /usr/bin \| wc -l` | 1117 executáveis |
+| `ls /usr/share/doc \| wc -l` | 721 pacotes com documentação |
+| `ls /home` | `davi` — um único usuário comum |
+| `cat /etc/hostname` | `lab-ubuntu` |
+
+Detalhe que fecha um ciclo: na Semana 2, `ls /bin | wc -l` devolveu **1114**. Agora `/usr/bin` devolve **1117**. Não é contradição — `/bin` **é** `/usr/bin`, e os três executáveis a mais são o `plocate`, o `tealdeer` e o `updatedb` instalados desde então.
+
+**`/proc` — o sistema de arquivos do kernel**
+
+```bash
+ls /proc | head
+```
+
+Os números listados são **PIDs** de processos em execução. Cada processo ganha um diretório com seu identificador, contendo informações sobre ele. É por isso que `/proc` é chamado de pseudo-sistema de arquivos: nada disso existe em disco, é o kernel expondo seu próprio estado em forma de arquivos.
+
+```
+cat /proc/uptime    →  4450.55 8668.18
+```
+
+Leitura correta na anotação. O primeiro número é o tempo de máquina ligada em segundos; o segundo é o tempo ocioso **somado entre os processadores**. O segundo ser quase o dobro do primeiro faz sentido: a VM tem 2 vCPUs, e ambas ficaram quase sempre paradas.
+
+```
+cat /proc/version   →  Linux version 7.0.0-30-generic ...
+```
+
+**`/dev/null` e os arquivos de dispositivo**
+
+```
+crw-rw-rw- 1 root root 1, 3 Sep 17 12:35 /dev/null
+```
+
+Dois detalhes nessa linha valem atenção:
+
+O primeiro caractere é **`c`**, de *character device* — dispositivo de caractere, que trabalha byte a byte. É o terceiro tipo que você encontra, depois do `-` de arquivo comum e do `l` de link simbólico. Discos aparecem como **`b`**, de *block device*:
+
+```bash
+ls -l /dev/sda
+```
+
+E onde normalmente estaria o tamanho, há **`1, 3`**. Esses são os números **major** e **minor** do dispositivo: o major identifica o driver que responde por ele, o minor identifica qual dispositivo específico dentro daquele driver. Arquivos de dispositivo não têm conteúdo, então não têm tamanho — o que o `ls -l` mostra ali é a identificação do dispositivo.
+
+**Opções do `ls`**
+
+| Opção | Efeito |
+|---|---|
+| `-S` | Ordena por tamanho, maior primeiro |
+| `-t` | Ordena por data de modificação, mais recente primeiro |
+| `-r` | Inverte a ordem escolhida — `-ltr` traz o mais antigo primeiro |
+| `-d` | Mostra o **diretório em si**, não o conteúdo |
+| `-R` | Recursivo, entra nos subdiretórios |
+| `-1` | Um item por linha |
+
+### Observações e correções
+
+**Correção 25 — o `head` corta a listagem, não os arquivos.** A anotação diz que `ls /var/log | head` mostra "as 10 primeiras linhas dos arquivos de logs". Ele mostra as **10 primeiras entradas da listagem** do diretório. O `head` recebe a saída do `ls`, que são nomes de arquivos — ele nunca abre nenhum deles.
+
+Para ver o conteúdo de um log, é preciso apontar para o arquivo:
+
+```bash
+head /var/log/syslog        # 10 primeiras linhas DO ARQUIVO
+ls /var/log | head          # 10 primeiros NOMES do diretório
+```
+
+**Correção 26 — `2> dev/null` não funcionaria.** A anotação registra `ls /naoexiste 2> dev/null`, sem a barra inicial. Escrito assim, o shell tentaria criar um arquivo `null` dentro de um diretório `dev` no diretório atual — que não existe — e o redirecionamento falharia.
+
+O correto é **`2> /dev/null`**, com caminho absoluto. É a mesma distinção entre caminho absoluto e relativo da Semana 2, agora aparecendo num contexto novo.
+
+**Achado — há um arquivo indesejado na sua home.** A saída do `ls -a ~` traz:
+
+```
+'sudo apt upgrade -y'
+```
+
+Esse é um **arquivo** cujo nome é literalmente `sudo apt upgrade -y`. Ele foi criado por acidente, provavelmente por um redirecionamento (`>`) digitado antes do comando. As aspas simples no `ls` são o próprio shell avisando que o nome contém espaços.
+
+É um exemplo involuntário e perfeito do tema da Semana 2: nomes com espaço precisam de aspas. Para remover:
+
+```bash
+cd ~
+ls -l 'sudo apt upgrade -y'     # confirme que está vazio antes
+rm 'sudo apt upgrade -y'
+```
+
+Se as aspas incomodarem, o Tab completion resolve: digite `rm sudo` e aperte Tab — ele completa e escapa os espaços sozinho.
 
 ### O que aprendi
 
-- O que faz `/dev/null`:
-- Diferença entre `ls -l /etc` e `ls -ld /etc`:
-- Três diretórios do FHS que eu não sabia o conteúdo e agora sei:
+- **`/dev/null`:** descarta tudo aquilo que recebe.
+- **`ls -l /etc` e `ls -ld /etc`:** o primeiro lista o conteúdo do diretório; o segundo mostra as informações do diretório em si.
+- **Diretórios do FHS explorados:** `/var/log` (arquivos de log do sistema e dos programas), `/etc` (configuração do sistema e dos programas instalados), `/proc` (estado do kernel e dos processos, gerado em tempo real) e `/dev` (arquivos que representam dispositivos).
 
 ---
 
@@ -831,9 +1011,11 @@ cd ~ && rm -rf lab3
 
 Encaixe no sábado ou distribua 15 minutos por sessão.
 
+**Reprogramado para a Semana 4.** Os níveis 6 a 9 exercitam `find` com filtros de usuário e grupo, `grep`, `sort` e `uniq` — todos conteúdo do objetivo 3.2, que é justamente o tema da Semana 4. Fazê-los agora seria treinar comandos antes de estudá-los; fazê-los na semana que vem alinha prática e teoria.
+
 | Nível | O que treina |
 |---|---|
-| 6 → 7 | `find` com `-user` e `-group`, busca a partir da raiz, tratamento de erros de permissão |
+| 6 → 7 | `find` com `-user` e `-group`, busca a partir da raiz, descarte de erros com `2>/dev/null` |
 | 7 → 8 | `grep` em arquivo grande |
 | 8 → 9 | `sort` e `uniq -u` combinados por pipe |
 
@@ -852,9 +1034,9 @@ Registro:
 - [x] Sessão 1 — dívidas e autoavaliação da Semana 2 (14/09) — nota 14 de 15
 - [x] Sessão 2 — criar, copiar, mover e remover (15/09) — com retomada do curso
 - [x] Sessão 3 — links e inodes (16/09) — parte de arquivos ocultos sem registro
-- [ ] Sessão 4 — FHS aprofundado e opções do `ls`
+- [x] Sessão 4 — FHS aprofundado e opções do `ls` (17/09) — com curso de `.rpm`/`yum`
 - [ ] Sessão 5 — curso do Muller e autoavaliação da Semana 3
-- [ ] Bandit níveis 6 a 8
+- [ ] Bandit níveis 6 a 9 — reprogramados para a Semana 4, onde o conteúdo casa
 - [ ] Cards do Notion atualizados
 - [ ] Autoavaliação da Semana 2 com 12 acertos ou mais
 - [ ] Autoavaliação da Semana 3 com 16 acertos ou mais (20 questões)
