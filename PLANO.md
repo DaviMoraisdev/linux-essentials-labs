@@ -29,10 +29,12 @@
 | **Autoavaliação da Semana 2** | ✅ **14 de 15** em 14/09 (meta era 12) |
 | Dívidas da Semana 2 | ✅ **todas as 8 quitadas** até 15/09 |
 | Curso do Muller | ✅ em dia — pacotes `.deb` (15/09) e `.rpm`/`yum` (17/09) |
-| **Semana 3 — Tópico 2, parte 2 (Bloco C)** | 🔄 em andamento — Sessões 1 a 4 concluídas (14 a 17/09) |
-| **Tópico 2 (peso 9)** | ✅ os quatro objetivos cobertos: 2.1, 2.2, 2.3 e 2.4 |
+| **Semana 3 — Tópico 2, parte 2 (Bloco C)** | ✅ **concluída em 19/09**, um dia antes do prazo |
+| **Tópico 2 (peso 9)** | ✅ **completo** — os quatro objetivos: 2.1, 2.2, 2.3 e 2.4 |
+| Autoavaliação da Semana 3 | ✅ **20 de 20** (meta era 16) |
 | Bandit | níveis 0 a 6 · níveis 7 a 9 reprogramados para a Semana 4 |
 | Simulado diagnóstico | ⬜ **recomendado antes de decidir sobre antecipar a prova** |
+| **Semana 4 — Tópico 3, parte 1 (Bloco D)** | ⬜ inicia 21/09 — documento pronto |
 | Voucher da prova | ⬜ comprar na Semana 5 |
 
 > **Ordem ajustada em 02/09:** o curso do Muller começa pelo **Tópico 1**, não pelo Tópico 2. O cronograma da seção 7 foi reordenado para acompanhar o curso — a data da prova não muda.
