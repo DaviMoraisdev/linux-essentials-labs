@@ -930,13 +930,11 @@ Se as aspas incomodarem, o Tab completion resolve: digite `rm sudo` e aperte Tab
 
 ---
 
-## Sessão 5 — Sexta 18/09 — Recuperação do curso e autoavaliação
+## Sessão 5 — Sábado 19/09 — Autoavaliação — CONCLUÍDA
 
-### Parte 1 — Curso do Muller (40 min)
+### Parte 1 — Curso do Muller
 
-Assista, em 1.25x, as seções correspondentes aos Tópicos 2.3 e 2.4. Se houver acúmulo das semanas anteriores, priorize o que ainda não foi visto sobre manipulação de arquivos.
-
-Anote apenas o que **divergir** do que você já praticou. Se o vídeo só confirmar o que o laboratório ensinou, não copie nada — siga em frente.
+**Não realizada nesta sessão.** Não caracteriza atraso: o curso teve duas aulas nesta semana, em 15/09 (pacotes `.deb`) e 17/09 (pacotes `.rpm` e `yum`), ambas registradas nas Sessões 2 e 4.
 
 ### Parte 2 — Autoavaliação da Semana 3 (20 min)
 
@@ -995,9 +993,83 @@ Responda sem consultar.
 
 </details>
 
-Nota: ___ de 20
+### Resultado — 20 de 20
 
-Meta: 16 de 20.
+**Realizada em 19/09.** Todas as vinte respostas corretas, contra a meta de 16.
+
+Duas justificativas, porém, precisam de correção. A primeira é significativa.
+
+**Correção 27 — um hard link NÃO é uma cópia.**
+
+Na questão 7, a resposta foi certa, mas o motivo não:
+
+> O hardlink continua funcionando porque **é uma cópia do arquivo original com outro nome**
+
+Um hard link não é cópia. É um **segundo nome apontando para o mesmo inode** — existe um único conjunto de dados no disco, com dois rótulos. A diferença é verificável:
+
+```bash
+cd ~ && mkdir -p teste-link && cd teste-link
+echo "linha um" > arquivo.txt
+ln arquivo.txt link.txt
+cp arquivo.txt copia.txt
+
+echo "linha dois" >> arquivo.txt
+
+cat link.txt      # tem as duas linhas — é o mesmo arquivo
+cat copia.txt     # tem só a primeira — é outro arquivo
+ls -li            # arquivo.txt e link.txt compartilham o inode; copia.txt tem o seu
+
+cd ~ && rm -rf teste-link
+```
+
+Se hard link fosse cópia, ocuparia o dobro do espaço em disco e as edições não se propagariam. Nenhuma das duas coisas acontece.
+
+Vale notar que este conceito estava **correto** nas suas anotações da Sessão 3, com diagrama inclusive: *"hardlink.txt não é uma cópia de original.txt — os dois nomes passam a apontar para o mesmo conteúdo físico"*. É o segundo caso, depois do `export`, em que a compreensão existe na anotação mas escorrega sob condição de prova.
+
+O risco concreto: se a prova perguntar **"o que é um hard link?"** em vez de "ele continua funcionando?", a alternativa "uma cópia do arquivo" está entre as distratoras clássicas.
+
+Card para o Notion: *"Hard link é cópia? → Não. É outro nome para o mesmo inode. Um único dado no disco, dois rótulos. Editar por um nome altera o que o outro mostra."*
+
+**Correção 28 — `apt-get -f install` não força nada.**
+
+Na questão 20: *"`sudo apt-get -f install` para forçar a instalação"*.
+
+O `-f` é abreviação de **`--fix-broken`**. Ele não força coisa alguma — ele **conserta** o estado quebrado do sistema de pacotes, resolvendo e instalando as dependências que faltavam. É uma operação de reparo, não de imposição.
+
+A distinção importa porque o `apt` tem opções que realmente forçam, como `--force-yes` e `--allow-downgrades`, e essas sim são perigosas em servidor. Trocar os conceitos leva a usar a ferramenta errada quando algo dá problema de verdade.
+
+### Observações menores
+
+Na questão 3, a resposta *"o conteúdo se reescreve"* está certa mas incompleta. O que a prova cobra é o **silêncio**: não há aviso, confirmação nem possibilidade de desfazer. Esse é o ponto.
+
+Na questão 18, faltou a razão de fundo: a numeração de inodes **só é válida dentro do mesmo sistema de arquivos**. É por isso que um hard link não atravessa partições — o número que ele guarda não significa nada do outro lado.
+
+---
+
+## Fechamento da Semana 3
+
+**Concluída em 19/09, um dia antes do prazo.** Todas as cinco sessões cumpridas.
+
+**Objetivos cobertos:** 2.3 (Using Directories and Listing Files) e 2.4 (Creating, Moving and Deleting Files). Com isso, **o Tópico 2 está completo** — os quatro objetivos, somando 9 dos 40 pontos da prova.
+
+**Realizado:**
+
+- Oito dívidas da Semana 2, todas quitadas até 15/09
+- Autoavaliação da Semana 2: 14 de 15
+- Criação, cópia, movimentação e remoção, incluindo as armadilhas de sobrescrita silenciosa
+- Hard links, links simbólicos e inodes, com o teste de remoção do original
+- FHS percorrido na prática: `/etc`, `/var/log`, `/usr`, `/proc`, `/dev`, `/tmp`
+- Opções avançadas do `ls`: `-S`, `-t`, `-r`, `-d`, `-R`, `-1`, `-i`
+- Curso: gerenciamento de pacotes nas duas famílias, Debian e Red Hat
+- Autoavaliação da Semana 3: 20 de 20
+
+**Correções registradas na semana:** 12, numeradas de 17 a 28. Duas foram conceituais de fato — o hard link como cópia e o `-f` como força. As demais foram imprecisão de redação ou conteúdo desatualizado do curso.
+
+**Pendências transferidas para a Semana 4:**
+
+- Bandit níveis 6 a 9, realocados de propósito: eles exercitam `find`, `grep`, `sort` e `uniq`, que são o conteúdo do objetivo 3.2
+- Registro das observações sobre arquivos ocultos, da Sessão 3
+- Simulado diagnóstico completo, de 40 questões
 
 ### Limpeza
 
@@ -1035,12 +1107,11 @@ Registro:
 - [x] Sessão 2 — criar, copiar, mover e remover (15/09) — com retomada do curso
 - [x] Sessão 3 — links e inodes (16/09) — parte de arquivos ocultos sem registro
 - [x] Sessão 4 — FHS aprofundado e opções do `ls` (17/09) — com curso de `.rpm`/`yum`
-- [ ] Sessão 5 — curso do Muller e autoavaliação da Semana 3
+- [x] Sessão 5 — autoavaliação da Semana 3 (19/09)
+- [x] Autoavaliação da Semana 2 — 14 de 15
+- [x] Autoavaliação da Semana 3 — 20 de 20
 - [ ] Bandit níveis 6 a 9 — reprogramados para a Semana 4, onde o conteúdo casa
 - [ ] Cards do Notion atualizados
-- [ ] Autoavaliação da Semana 2 com 12 acertos ou mais
-- [ ] Autoavaliação da Semana 3 com 16 acertos ou mais (20 questões)
-- [ ] Commits ao fim de cada sessão
 
 ---
 
