@@ -18,6 +18,8 @@
 | Snapshot `limpo` | ✅ criado |
 | Atalhos PowerShell (`lab-up`, `lab-down`, `lab-status`) | ✅ funcionando |
 | Repositório `linux-essentials-labs` | ✅ público no GitHub, primeiro commit feito |
+| `.wslconfig` limitando WSL2 a 3 GB | ⬜ pendente |
+| Teste de restauração do snapshot | ⬜ pendente |
 | Contas learning.lpi.org e OverTheWire | ✅ criadas (01/09) |
 | **Semana 1 — Tópico 1 + FHS** | ✅ **concluída em 05/09** (2 dias antes do prazo) |
 | Tópico 1 — licenças, distros, interfaces, aplicações, portas, linguagens | ✅ estudado e revisado |
@@ -32,9 +34,9 @@
 | **Semana 3 — Tópico 2, parte 2 (Bloco C)** | ✅ **concluída em 19/09**, um dia antes do prazo |
 | **Tópico 2 (peso 9)** | ✅ **completo** — os quatro objetivos: 2.1, 2.2, 2.3 e 2.4 |
 | Autoavaliação da Semana 3 | ✅ **20 de 20** (meta era 16) |
-| Bandit | níveis 0 a 6 · níveis 7 a 9 reprogramados para a Semana 4 |
+| Bandit | níveis 0 a 7 concluídos · níveis 8 e 9 na Semana 4 |
 | Simulado diagnóstico | ⬜ **recomendado antes de decidir sobre antecipar a prova** |
-| **Semana 4 — Tópico 3, parte 1 (Bloco D)** | ⬜ inicia 21/09 — documento pronto |
+| **Semana 4 — Tópico 3, parte 1 (Bloco D)** | 🔄 em andamento — Sessão 1 concluída (21/09) |
 | Voucher da prova | ⬜ comprar na Semana 5 |
 
 > **Ordem ajustada em 02/09:** o curso do Muller começa pelo **Tópico 1**, não pelo Tópico 2. O cronograma da seção 7 foi reordenado para acompanhar o curso — a data da prova não muda.
@@ -270,6 +272,8 @@ Semanas alinhadas de **segunda a domingo**. A prova cai na segunda-feira seguint
 - [x] SSH funcionando pelo Windows Terminal (`ssh lab`)
 - [x] Atalhos `lab-up` / `lab-down` / `lab-status` no `$PROFILE`
 - [x] Repositório `linux-essentials-labs` público no GitHub
+- [ ] `.wslconfig` limitando WSL2 a 3 GB
+- [ ] Teste de restauração do snapshot
 - [x] Contas em learning.lpi.org e OverTheWire (01/09)
 
 ---
