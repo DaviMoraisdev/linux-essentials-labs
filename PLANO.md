@@ -18,8 +18,6 @@
 | Snapshot `limpo` | ✅ criado |
 | Atalhos PowerShell (`lab-up`, `lab-down`, `lab-status`) | ✅ funcionando |
 | Repositório `linux-essentials-labs` | ✅ público no GitHub, primeiro commit feito |
-| `.wslconfig` limitando WSL2 a 3 GB | ⬜ pendente |
-| Teste de restauração do snapshot | ⬜ pendente |
 | Contas learning.lpi.org e OverTheWire | ✅ criadas (01/09) |
 | **Semana 1 — Tópico 1 + FHS** | ✅ **concluída em 05/09** (2 dias antes do prazo) |
 | Tópico 1 — licenças, distros, interfaces, aplicações, portas, linguagens | ✅ estudado e revisado |
@@ -272,8 +270,6 @@ Semanas alinhadas de **segunda a domingo**. A prova cai na segunda-feira seguint
 - [x] SSH funcionando pelo Windows Terminal (`ssh lab`)
 - [x] Atalhos `lab-up` / `lab-down` / `lab-status` no `$PROFILE`
 - [x] Repositório `linux-essentials-labs` público no GitHub
-- [ ] `.wslconfig` limitando WSL2 a 3 GB
-- [ ] Teste de restauração do snapshot
 - [x] Contas em learning.lpi.org e OverTheWire (01/09)
 
 ---
