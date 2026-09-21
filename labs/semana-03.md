@@ -193,7 +193,7 @@ Os comandos `zcat`, `zless` e `zgrep` operam direto sobre arquivos `gzip`. Conte
 
 ### Pendente
 
-- [ ] Refazer `cp /etc/hostname .` em `/var/log`, **com o ponto**, e registrar a mensagem de permissão
+- [x] Refazer `cp /etc/hostname .` em `/var/log`, **com o ponto**, e registrar a mensagem de permissão
 
 ---
 
@@ -1111,7 +1111,7 @@ Registro:
 - [x] Autoavaliação da Semana 2 — 14 de 15
 - [x] Autoavaliação da Semana 3 — 20 de 20
 - [ ] Bandit níveis 6 a 9 — reprogramados para a Semana 4, onde o conteúdo casa
-- [ ] Cards do Notion atualizados
+- [X] Cards do Notion atualizados
 
 ---
 
