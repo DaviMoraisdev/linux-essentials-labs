@@ -95,7 +95,7 @@ ls -l
 
 ---
 
-## Sessão 1 — Segunda 21/09 — Visualização e redirecionamento
+## Sessão 1 — Segunda 21/09 — Visualização e redirecionamento — CONCLUÍDA
 
 ### Curso
 
@@ -209,17 +209,113 @@ O nome vem do encanamento: um "T" divide o fluxo em dois. É a solução para qu
 
 ### Registro da sessão
 
-```bash
+**Visualização**
+
+| Comando | Função |
+|---|---|
+| `cat` | *Concatenate* — exibe o conteúdo e, na origem, serve para juntar arquivos |
+| `cat -n` | Exibe com numeração de linhas |
+| `less` | Visualizador interativo, adequado para arquivos com milhares de linhas |
+| `head` / `head -3` | As 10 primeiras linhas, ou as 3 primeiras |
+| `tail` / `tail -3` | As 10 últimas linhas, ou as 3 últimas |
+| `tail -n +2` | Da linha 2 em diante — o `+` significa "a partir de", útil para descartar cabeçalho de CSV |
+| `tail -f` | *Follow* — mantém o arquivo aberto e exibe cada linha nova assim que chega |
+
+O `tail -f` é o instrumento padrão para acompanhar a aplicação em tempo real durante o desenvolvimento e na depuração de servidores.
+
+**Os três fluxos**
+
+| Fluxo | Número | Função |
+|---|---|---|
+| `stdin` | 0 | Entrada de dados |
+| `stdout` | 1 | Saída do resultado |
+| `stderr` | 2 | Saída de erro |
+
+`stdout` e `stderr` vão ambos para o terminal por padrão, e por isso parecem o mesmo canal. São fluxos distintos, que podem ser separados.
+
+**Redirecionamento de saída**
+
+O `>` direciona o `stdout` para um arquivo e **sobrescreve** o conteúdo existente. O `>>` **acrescenta** ao final. É a mesma armadilha da sobrescrita silenciosa do `cp`.
+
+Observação registrada corretamente e que vale destacar: o `>` é uma abreviação de **`1>`**. Quando nenhum número é escrito, o shell assume o fluxo 1. É por isso que `2>` redireciona apenas o erro — o número muda o fluxo afetado.
 
 ```
+                ┌─ stdout (1) ──> saida.txt
+ls ─────────────┤
+                └─ stderr (2) ──> erros.txt
+```
+
+**Descarte com `/dev/null`**
+
+| Comando | O que é descartado |
+|---|---|
+| `comando 2> /dev/null` | Apenas os erros |
+| `comando > /dev/null` | Apenas a saída normal |
+| `comando &> /dev/null` | Tudo |
+
+**Redirecionamento de entrada**
+
+O `<` alimenta o `stdin` do comando a partir de um arquivo. O `wc -l arquivo` mostra o nome do arquivo na saída; o `wc -l < arquivo` não.
+
+**Heredoc** — de *here document*
+
+Fornece várias linhas de uma vez como entrada para um comando. As linhas seguintes são tratadas como `stdin` até aparecer uma linha contendo apenas o delimitador.
+
+- O `EOF` não é obrigatório — é uma convenção, de *End Of File*. Qualquer palavra serve.
+- As aspas simples em `'EOF'` impedem que variáveis sejam expandidas dentro do texto.
+
+**`tee`**
+
+Exibe a saída no terminal e grava em arquivo ao mesmo tempo. Como o `>`, **sobrescreve** o arquivo existente; o `-a` faz acrescentar.
+
+### Correções desta sessão
+
+**Correção 29 — o que o `2>&1` realmente faz.**
+
+A anotação registra o `2>&1` como *"mande as saídas 2 E 1 para o arquivo X"*. O efeito final, naquele comando específico, é esse — mas o mecanismo é outro, e é o mecanismo que explica o comportamento que parece estranho.
+
+O `2>&1` **não menciona arquivo nenhum**. Ele diz apenas: *"faça o fluxo 2 ir para onde o fluxo 1 está indo **neste momento**"*. Quem define o arquivo é o `> tudo.txt` que vem antes.
+
+E o shell processa os redirecionamentos **da esquerda para a direita**. É isso que torna a ordem decisiva:
+
+```bash
+ls /etc /naoexiste > tudo.txt 2>&1
+# 1. "> tudo.txt"  → o fluxo 1 passa a apontar para tudo.txt
+# 2. "2>&1"        → o fluxo 2 aponta para onde o 1 está: tudo.txt
+# Resultado: os dois no arquivo
+
+ls /etc /naoexiste 2>&1 > tudo.txt
+# 1. "2>&1"        → o fluxo 2 aponta para onde o 1 está AGORA: o terminal
+# 2. "> tudo.txt"  → o fluxo 1 muda para tudo.txt; o 2 continua no terminal
+# Resultado: o erro aparece na tela
+```
+
+Rode os dois e compare. O `&` antes do `1` também importa: sem ele, `2>1` criaria um **arquivo chamado `1`**. O `&` indica que o `1` é um descritor de fluxo, não um nome de arquivo.
+
+Registro corrigido para o "o que aprendi":
+
+> O `2>&1` faz o fluxo de erro (2) seguir para o mesmo destino que o fluxo de saída (1) tem naquele ponto do comando. Por isso deve vir **depois** do redirecionamento da saída.
+
+**Correção 30 — quem abre o arquivo no `<` é o shell, não o comando.**
+
+A anotação diz que, no `wc -l < arquivo`, *"o nome desaparece porque o **shell** recebe apenas os dados"*. É o inverso: quem abre e lê o arquivo é justamente o **shell**. Ele entrega o conteúdo pronto no `stdin` do `wc`. Quem nunca fica sabendo o nome é o **`wc`**.
+
+| Forma | Quem abre o arquivo | O `wc` conhece o nome |
+|---|---|---|
+| `wc -l arquivo` | O `wc` | Sim — e por isso o imprime |
+| `wc -l < arquivo` | O shell | Não — recebe só os dados |
+
+É a mesma lógica da expansão do asterisco na Semana 2: o shell trabalha **antes** de o comando começar, e o comando recebe o resultado já pronto.
+
+**Organização —** a nota *"o nome vem de Here Document; permite fornecer várias linhas como entrada"* estava sob o `tee`. Foi movida para a seção do heredoc, a que ela pertence.
 
 ### O que aprendi
 
-- Os três fluxos padrão e seus números:
-- Diferença entre `>` e `>>`:
-- O que faz `2>&1`:
-- Para que serve o `tee`:
-- Diferença entre `wc -l arquivo` e `wc -l < arquivo`:
+- **Os três fluxos padrão:** `stdin` (0), `stdout` (1) e `stderr` (2).
+- **`>` e `>>`:** o `>` direciona a saída e sobrescreve o arquivo; o `>>` direciona e acrescenta.
+- **`2>&1`:** faz o fluxo de erro seguir o mesmo destino que o fluxo de saída tem naquele ponto. Por isso a ordem importa.
+- **`tee`:** exibe a saída no terminal e grava em arquivo simultaneamente.
+- **`wc -l arquivo` e `wc -l < arquivo`:** no primeiro, o `wc` abre o arquivo e conhece o nome; no segundo, o shell abre e entrega só os dados, e o `wc` nunca sabe de onde vieram.
 
 ---
 
@@ -667,6 +763,25 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
 man find        # procure -user e -group
 ```
 
+**Concluído em 21/09, antes da sessão prevista.**
+
+```bash
+find / -user bandit7 -group bandit6 -size 33c
+cat /var/lib/dpkg/info/bandit7.password
+```
+
+Os três filtros combinados estavam certos.
+
+**Correção 31 — as linhas de `Permission denied` não eram arquivos encontrados.** A anotação diz que *"surgiram diversos arquivos, mas quase todos com permission denied, com exceção de um"*. Na verdade o `find` encontrou **um único arquivo**. As centenas de outras linhas eram **mensagens de erro** sobre diretórios em que ele não teve permissão de entrar — saíram pelo `stderr`, não pelo `stdout`.
+
+É exatamente o conteúdo da Sessão 1. Com o redirecionamento, a saída fica limpa:
+
+```bash
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+```
+
+Uma linha só, o resultado. Vale refazer o comando assim para ver a diferença com os próprios olhos — é a aplicação mais comum do `2>/dev/null` no dia a dia.
+
 ### Desafio integrador
 
 Resolva sem consultar solução pronta. Cada um é um único pipeline.
@@ -811,12 +926,12 @@ Encaixe no sábado ou domingo. Uma hora, sem interrupção.
 ## Checklist da semana
 
 - [ ] Preparação do ambiente (`lab4`, `funcionarios.csv`, `sistema.log`)
-- [ ] Sessão 1 — visualização e redirecionamento
+- [x] Sessão 1 — visualização e redirecionamento (21/09)
 - [ ] Sessão 2 — pipes e filtros
 - [ ] Sessão 3 — `grep` e expressões regulares
 - [ ] Sessão 4 — compactação e arquivamento
 - [ ] Sessão 5 — `find`, desafio integrador e autoavaliação
-- [ ] Bandit níveis 6, 7 e 8
+- [ ] Bandit níveis 6, 7 e 8 — nível 6 concluído (21/09)
 - [ ] Desafio integrador — sete pipelines
 - [ ] Autoavaliação com 16 acertos ou mais
 - [ ] Simulado diagnóstico de 40 questões
