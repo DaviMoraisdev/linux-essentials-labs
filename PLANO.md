@@ -34,7 +34,7 @@
 | Autoavaliação da Semana 3 | ✅ **20 de 20** (meta era 16) |
 | Bandit | níveis 0 a 7 concluídos · níveis 8 e 9 na Semana 4 |
 | Simulado diagnóstico | ⬜ **recomendado antes de decidir sobre antecipar a prova** |
-| **Semana 4 — Tópico 3, parte 1 (Bloco D)** | 🔄 em andamento — Sessões 1 e 2 concluídas ( 21 a 23/09 |
+| **Semana 4 — Tópico 3, parte 1 (Bloco D)** | 🔄 em andamento — Sessões 1 e 2 concluídas ( 21 a 23/09 )  |
 | Bandit | níveis 0 0 9 concluídos | 
 | Curso do Muller | ⚠️ sem avanço desde 17/09 — retomar na Semana 4 |
 | Voucher da prova | ⬜ comprar na Semana 5 |
