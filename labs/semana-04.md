@@ -319,7 +319,7 @@ A anotação diz que, no `wc -l < arquivo`, *"o nome desaparece porque o **shell
 
 ---
 
-## Sessão 2 — Terça 22/09 — Pipes e filtros
+## Sessão 2 — Terça 22/09 — Pipes e filtros — EM ANDAMENTO
 
 ### Curso
 
@@ -432,19 +432,127 @@ man uniq        # procure a opção -u
 
 Lembre: o `uniq` precisa de entrada ordenada.
 
-### Registro da sessão
+### Registro parcial — 22/09
 
-```bash
+Cobertos até aqui: pipe, `wc`, `sort` e `uniq`. Pendentes: `cut`, `tr`, encadeamento longo e Bandit nível 8.
+
+**O pipe**
+
+Lê-se como "execute o primeiro comando e entregue o resultado ao segundo". O `cat funcionarios.csv | wc -l` devolveu **11** — as dez linhas de dados mais o cabeçalho.
+
+**`wc` — contagem**
 
 ```
+wc funcionarios.csv    →    11  11  296  funcionarios.csv
+```
+
+Três números: linhas, palavras e bytes. As 11 palavras coincidem com as 11 linhas porque nenhuma linha do CSV tem espaço — cada linha inteira conta como uma palavra só.
+
+| Opção | Conta | Origem |
+|---|---|---|
+| `-l` | Linhas | *lines* |
+| `-w` | Palavras | *words* |
+| `-c` | Bytes | *chars*, no sentido antigo de byte |
+| `-m` | Caracteres | *multibyte* |
+
+Registro correto e preciso na anotação: **`á` conta como um caractere mas ocupa dois bytes**. É essa a diferença entre `-c` e `-m`, e ela só aparece em texto acentuado.
+
+**`sort` — ordenação**
+
+| Opção | Função |
+|---|---|
+| `-r` | Inverte a ordem |
+| `-n` | Ordena por valor numérico |
+| `-t','` | Define a vírgula como separador de campos |
+| `-k4` | Ordena pela quarta coluna |
+
+**`uniq` — duplicatas**
+
+Remove repetições **adjacentes**; por isso quase sempre vem depois do `sort`. O `-c`, de *count*, em vez de apenas eliminar, mostra quantas ocorrências cada valor teve.
+
+### Correções desta sessão
+
+**Correção 32 — o `sort` sem `-n` é crescente, não decrescente.**
+
+A anotação registra: *"`sort` gera o resultado em ordem decrescente porque ele compara os caracteres de cada número e não seu valor matemático"*.
+
+A justificativa está certa; a conclusão não. **As duas formas ordenam em ordem crescente.** O que muda é o critério de comparação:
+
+```bash
+printf "9\n100\n25\n3\n" > numeros.txt
+
+sort numeros.txt      # 100, 25, 3, 9
+sort -n numeros.txt   # 3, 9, 25, 100
+```
+
+O primeiro resultado parece desordenado, mas é crescente — só que em ordem **de texto**, caractere por caractere, da esquerda para a direita:
+
+| Valor | Primeiro caractere | Posição |
+|---|---|---|
+| `100` | `1` | vem primeiro |
+| `25` | `2` | segundo |
+| `3` | `3` | terceiro |
+| `9` | `9` | último |
+
+O `sort` nunca chega a olhar o segundo caractere do `100`: assim que compara `1` com `2`, já decidiu. É o mesmo critério que coloca `Ana` antes de `Bruno`.
+
+Quem inverte a ordem é o **`-r`**, e só ele:
+
+```bash
+sort -r numeros.txt     # 9, 3, 25, 100   — texto, decrescente
+sort -nr numeros.txt    # 100, 25, 9, 3   — numérico, decrescente
+```
+
+Registro corrigido:
+
+> Sem `-n`, o `sort` ordena como texto: compara caractere por caractere, então `100` vem antes de `25`. Com `-n`, compara o valor numérico. Ambos em ordem crescente; para inverter, é o `-r`.
+
+**Correção 33 — o `-k` escolhe a coluna, não separa nada.**
+
+A anotação diz *"`-k2` separa por setor"* e *"o número após o K significa o setor da coluna"*. Os dois papéis estão trocados:
+
+| Opção | Papel |
+|---|---|
+| `-t','` | **Separa** as colunas, definindo qual caractere marca a divisão |
+| `-k2` | **Escolhe** por qual coluna ordenar — aqui, a segunda |
+
+O número depois do `-k` é o **número da coluna**, não o setor. No `funcionarios.csv` a coluna 2 contém o setor, então `-k2` ordena por setor — mas isso é uma coincidência do arquivo, não o significado da opção. Em outro arquivo, `-k2` ordenaria por qualquer coisa que estivesse na segunda coluna.
+
+O `-k` vem de *key*, a chave de ordenação.
+
+**Observação — a direção do pipe.**
+
+A anotação descreve `cat funcionarios.csv | wc -l` como *"lê-se primeiro o stdin, que é `cat funcionarios.csv`"*. O `cat` não é o `stdin` de ninguém. A cadeia correta:
+
+```
+cat funcionarios.csv          wc -l
+        stdout      ──|──>     stdin
+```
+
+O pipe conecta o **`stdout` do comando à esquerda** ao **`stdin` do comando à direita**. Cada comando continua tendo seus três fluxos; o `|` só religa dois deles entre processos vizinhos.
+
+Detalhe que reforça o conceito: o `stderr` **não passa pelo pipe**. Comprove:
+
+```bash
+ls /etc /naoexiste | wc -l      # a mensagem de erro aparece na tela, fora da contagem
+ls /etc /naoexiste 2>&1 | wc -l # agora o erro entra na contagem
+```
+
+### Pendente desta sessão
+
+- [ ] `cut` — extração de colunas por delimitador e por posição
+- [ ] `tr` — substituição e remoção de caracteres
+- [ ] Os três pipelines de encadeamento
+- [ ] Bandit nível 8 para 9
+- [ ] Curso do Muller
 
 ### O que aprendi
 
-- Por que o `uniq` quase sempre vem depois do `sort`:
-- Diferença entre `sort` e `sort -n`:
-- O que o `-t` e o `-k` fazem no `sort`:
-- Por que o `tr` não aceita nome de arquivo:
-- Meu próprio pipeline de três ou mais comandos:
+- **Por que o `uniq` vem depois do `sort`:** ele só elimina duplicatas adjacentes; sem ordenar antes, repetições separadas passam.
+- **`sort` e `sort -n`:** ambos crescentes; o primeiro compara texto caractere por caractere, o segundo compara valor numérico.
+- **`-t` e `-k` no `sort`:** o `-t` define o separador de colunas, o `-k` define por qual coluna ordenar.
+- **Por que o `tr` não aceita nome de arquivo:** *(pendente)*
+- **Meu próprio pipeline de três ou mais comandos:** *(pendente)*
 
 ---
 
@@ -927,7 +1035,7 @@ Encaixe no sábado ou domingo. Uma hora, sem interrupção.
 
 - [ ] Preparação do ambiente (`lab4`, `funcionarios.csv`, `sistema.log`)
 - [x] Sessão 1 — visualização e redirecionamento (21/09)
-- [ ] Sessão 2 — pipes e filtros
+- [~] Sessão 2 — pipes e filtros (22/09) — pipe, `wc`, `sort` e `uniq` feitos; `cut`, `tr` e encadeamento pendentes
 - [ ] Sessão 3 — `grep` e expressões regulares
 - [ ] Sessão 4 — compactação e arquivamento
 - [ ] Sessão 5 — `find`, desafio integrador e autoavaliação
