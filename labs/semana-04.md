@@ -319,7 +319,7 @@ A anotação diz que, no `wc -l < arquivo`, *"o nome desaparece porque o **shell
 
 ---
 
-## Sessão 2 — Terça 22/09 — Pipes e filtros — EM ANDAMENTO
+## Sessão 2 — Terça 22/09 — Pipes e filtros — CONCLUÍDA
 
 ### Curso
 
@@ -432,9 +432,34 @@ man uniq        # procure a opção -u
 
 Lembre: o `uniq` precisa de entrada ordenada.
 
-### Registro parcial — 22/09
+**Concluído em 23/09.**
 
-Cobertos até aqui: pipe, `wc`, `sort` e `uniq`. Pendentes: `cut`, `tr`, encadeamento longo e Bandit nível 8.
+```bash
+sort data.txt | uniq -u
+```
+
+**Correção 36 — o `uniq -u` não "remove as duplicatas".** A anotação diz que o `-u` *"significa exibir linhas que são totalmente exclusivas em um arquivo, remove as duplicatas"*. A primeira metade está certa; a segunda descreve outra coisa.
+
+As três formas fazem coisas diferentes:
+
+| Comando | Entrada `a a b c c c` | Resultado |
+|---|---|---|
+| `uniq` | | `a b c` — colapsa as repetições, cada valor aparece uma vez |
+| `uniq -u` | | `b` — mostra **só** o que nunca se repetiu; descarta o resto por inteiro |
+| `uniq -d` | | `a c` — mostra **só** o que se repete |
+
+O `uniq` comum **mantém** os valores repetidos, reduzidos a uma ocorrência. O `-u` os **elimina completamente** da saída. Era exatamente disso que o desafio precisava: a senha era a única linha sem duplicata.
+
+Comprove:
+
+```bash
+printf "a\na\nb\nc\nc\nc\n" | uniq
+printf "a\na\nb\nc\nc\nc\n" | uniq -u
+printf "a\na\nb\nc\nc\nc\n" | uniq -d
+printf "a\na\nb\nc\nc\nc\n" | uniq -c
+```
+
+### Registro da sessão — 22 e 23/09
 
 **O pipe**
 
@@ -538,21 +563,128 @@ ls /etc /naoexiste | wc -l      # a mensagem de erro aparece na tela, fora da co
 ls /etc /naoexiste 2>&1 | wc -l # agora o erro entra na contagem
 ```
 
-### Pendente desta sessão
+### `cut` — extração de colunas
 
-- [ ] `cut` — extração de colunas por delimitador e por posição
-- [ ] `tr` — substituição e remoção de caracteres
-- [ ] Os três pipelines de encadeamento
-- [ ] Bandit nível 8 para 9
-- [ ] Curso do Muller
+Extrai campos ou posições de cada linha.
+
+| Forma | Função |
+|---|---|
+| `-d','` | Define o delimitador (*delimiter*) |
+| `-f1` | Extrai o campo 1 (*field*) |
+| `-f1,3` | Campos 1 e 3 |
+| `-f2-4` | Do campo 2 ao 4 |
+| `-c1-5` | Por **posição de caractere**, ignorando delimitadores |
+
+Distinção registrada corretamente e que vale guardar: **`-f` trabalha com campos separados por delimitador; `-c` trabalha com posições fixas na linha.** O `-c` serve para arquivos de largura fixa, onde não há separador.
+
+### `tr` — substituição de caracteres
+
+De *translate*. Forma geral: `tr 'o-que-procurar' 'pelo-que-substituir'`.
+
+| Comando | Efeito |
+|---|---|
+| `tr ':' '\n'` | Troca cada `:` por quebra de linha |
+| `tr ',' '\t'` | Troca vírgulas por tabulação |
+| `tr 'a-z' 'A-Z'` | Converte minúsculas em maiúsculas |
+| `tr -d ','` | Remove o caractere (*delete*) |
+
+O `tr` lê exclusivamente do `stdin` — não abre arquivos. Por isso aparece sempre depois de um pipe ou de um `<`.
+
+**Detalhe que a prova explora: o `tr` opera caractere a caractere, não por palavra.**
+
+```bash
+echo "abc" | tr 'abc' 'xyz'      # xyz — mapeia a→x, b→y, c→z
+echo "cab" | tr 'abc' 'xyz'      # zxy — cada letra é traduzida onde estiver
+```
+
+Ele **não** substitui a sequência `abc` pela sequência `xyz`. Constrói uma tabela de correspondência posição a posição e aplica a cada caractere isolado. É por isso que `tr 'a-z' 'A-Z'` funciona: são 26 caracteres mapeados um a um.
+
+Para substituir palavras inteiras, a ferramenta é o `sed`, que fica fora do escopo do Linux Essentials.
+
+### Encadeamento
+
+**Quantos usuários existem no sistema**
+
+```bash
+cut -d':' -f1 /etc/passwd | wc -l      # 33
+```
+
+Funciona, mas o `cut` aqui não faz diferença: recortar uma coluna não altera o número de linhas. O caminho direto é `wc -l /etc/passwd`, ou `wc -l < /etc/passwd` para omitir o nome. Vale o registro — em pipeline, cada etapa precisa justificar a própria existência.
+
+**Quais shells estão em uso e quantas vezes**
+
+```bash
+cut -d':' -f7 /etc/passwd | sort | uniq -c | sort -rn
+```
+
+```
+     29 /usr/sbin/nologin
+      2 /bin/bash
+      1 /bin/sync
+      1 /bin/false
+```
+
+Resultado consistente: 29 + 2 + 1 + 1 = 33 usuários, batendo com o comando anterior. As 29 contas com `/usr/sbin/nologin` são **contas de serviço** — existem para que programas rodem com identidade própria, e o shell `nologin` impede que alguém faça login com elas. É um assunto do Tópico 5, na Semana 6.
+
+**Os três maiores salários, com nome**
+
+```bash
+tail -n +2 funcionarios.csv | sort -t',' -k4 -rn | head -3 | cut -d',' -f1,4
+```
+
+Descrição correta na anotação, etapa por etapa: descarta o cabeçalho, ordena pelo salário em ordem numérica decrescente, pega os três primeiros, extrai nome e salário. Cada comando faz uma coisa só.
+
+### Correções desta etapa
+
+**Correção 34 — o `-k` seleciona a coluna, não o "setor".**
+
+Reincidência da correção 33. O registro no "o que aprendi" diz: *"o `-k` seleciona o setor da tabela, por exemplo `-k2` será ordenada o setor 2 da tabela"*.
+
+Não existe "setor 2 da tabela". O `-k2` significa **coluna 2** — e no `funcionarios.csv` acontece de a coluna 2 conter o setor. Em `/etc/passwd`, `-k2` ordenaria pela senha; em qualquer outro arquivo, por outra coisa qualquer.
+
+Vale trocar a palavra na cabeça: **`-k` é coluna**, sempre. O `k` vem de *key*, chave de ordenação.
+
+**Correção 35 — seu pipeline traz o cabeçalho e responde outra pergunta.**
+
+```bash
+cut -d',' -f4 funcionarios.csv | sort -rn | uniq -c
+```
+
+Saída obtida:
+
+```
+      1 12000
+      1 11000
+      ...
+      2 4500
+      1 salario
+```
+
+Dois pontos:
+
+O `salario` na última linha é o **cabeçalho do CSV**, que não foi descartado. Ele foi parar no fim porque o `sort -n` trata texto não numérico como zero, e a ordem é decrescente. Conserto: `tail -n +2` na frente.
+
+E o pipeline responde *"quais salários existem e quantas vezes cada um aparece, do maior salário para o menor"*. Uma pergunta legítima — mas diferente de *"quais salários são mais frequentes"*, que exigiria contar primeiro e ordenar pela contagem depois:
+
+```bash
+# Por valor do salário, do maior para o menor (o seu, corrigido)
+tail -n +2 funcionarios.csv | cut -d',' -f4 | sort -rn | uniq -c
+
+# Por frequência, do mais repetido para o menos
+tail -n +2 funcionarios.csv | cut -d',' -f4 | sort | uniq -c | sort -rn
+```
+
+A ordem dos `sort` muda a pergunta que o pipeline responde. É o tipo de sutileza que só aparece quando se monta o próprio comando, e é por isso que este exercício estava no roteiro.
+
+**Observação —** a anotação do `cut` chama `/etc/passwd` de "diretório". É um **arquivo**.
 
 ### O que aprendi
 
-- **Por que o `uniq` vem depois do `sort`:** ele só elimina duplicatas adjacentes; sem ordenar antes, repetições separadas passam.
+- **Por que o `uniq` vem depois do `sort`:** ele só elimina duplicatas adjacentes; sem ordenar antes, repetições separadas passam despercebidas.
 - **`sort` e `sort -n`:** ambos crescentes; o primeiro compara texto caractere por caractere, o segundo compara valor numérico.
-- **`-t` e `-k` no `sort`:** o `-t` define o separador de colunas, o `-k` define por qual coluna ordenar.
-- **Por que o `tr` não aceita nome de arquivo:** *(pendente)*
-- **Meu próprio pipeline de três ou mais comandos:** *(pendente)*
+- **`-t` e `-k` no `sort`:** o `-t` define o separador de campos; o `-k` define **a coluna** pela qual ordenar.
+- **Por que o `tr` não aceita nome de arquivo:** ele lê exclusivamente do `stdin`. Quem abre o arquivo é o `cat` ou o `<`; o `tr` só recebe o fluxo.
+- **Meu pipeline:** `tail -n +2 funcionarios.csv | cut -d',' -f4 | sort -rn | uniq -c` — descarta o cabeçalho, extrai a coluna de salários, ordena do maior para o menor e conta as ocorrências de cada valor.
 
 ---
 
@@ -650,6 +782,16 @@ O desafio pede a senha que está ao lado de uma palavra específica, dentro de u
 ```bash
 ssh bandit7@bandit.labs.overthewire.org -p 2220
 ```
+
+**Concluído em 23/09.**
+
+A senha estava ao lado da palavra `millionth`, dentro de um `data.txt` grande demais para inspeção visual com `cat`.
+
+```bash
+grep millionth data.txt
+```
+
+Registro correto: o `cat` era inviável não por falha do comando, mas porque o arquivo tem milhares de linhas. O `grep` resolve porque **filtra em vez de exibir**. Essa é a diferença de mentalidade que o Tópico 3 cobra.
 
 ### Registro da sessão
 
@@ -1035,11 +1177,11 @@ Encaixe no sábado ou domingo. Uma hora, sem interrupção.
 
 - [ ] Preparação do ambiente (`lab4`, `funcionarios.csv`, `sistema.log`)
 - [x] Sessão 1 — visualização e redirecionamento (21/09)
-- [~] Sessão 2 — pipes e filtros (22/09) — pipe, `wc`, `sort` e `uniq` feitos; `cut`, `tr` e encadeamento pendentes
+- [x] Sessão 2 — pipes e filtros (22 e 23/09)
 - [ ] Sessão 3 — `grep` e expressões regulares
 - [ ] Sessão 4 — compactação e arquivamento
 - [ ] Sessão 5 — `find`, desafio integrador e autoavaliação
-- [ ] Bandit níveis 6, 7 e 8 — nível 6 concluído (21/09)
+- [x] Bandit níveis 6, 7 e 8 — todos concluídos (21 e 23/09)
 - [ ] Desafio integrador — sete pipelines
 - [ ] Autoavaliação com 16 acertos ou mais
 - [ ] Simulado diagnóstico de 40 questões
