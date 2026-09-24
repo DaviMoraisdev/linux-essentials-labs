@@ -34,13 +34,15 @@
 | Autoavaliação da Semana 3 | ✅ **20 de 20** (meta era 16) |
 | Bandit | níveis 0 a 7 concluídos · níveis 8 e 9 na Semana 4 |
 | Simulado diagnóstico | ⬜ **recomendado antes de decidir sobre antecipar a prova** |
-| **Semana 4 — Tópico 3, parte 1 (Bloco D)** | 🔄 em andamento — Sessões 1 e 2 concluídas ( 21 a 23/09 )  |
-| Bandit | níveis 0 0 9 concluídos | 
+| **Semana 4 — Tópico 3, parte 1 (Bloco D)** | 🔄 em andamento — Sessões 1 a 3 concluídas (21 a 24/09) |
+| Bandit | níveis 0 a 9 concluídos |
 | Curso do Muller | ✅ retomado em 23/09 — **aula 26 de 72**, no Tópico 2.1 |
 | Defasagem curso × laboratório | Curso no Tópico 2.1; laboratório no Tópico 3.2 — ver nota abaixo |
 | Voucher da prova | ⬜ comprar na Semana 5 |
 
 > **Ordem ajustada em 02/09:** o curso do Muller começa pelo **Tópico 1**, não pelo Tópico 2. O cronograma da seção 7 foi reordenado para acompanhar o curso — a data da prova não muda.
+>
+> **Defasagem identificada em 23/09:** o laboratório avançou mais rápido que o curso. O curso está no Tópico 2.1 (aula 26 de 72) enquanto os laboratórios já cobrem o Tópico 3.2. Estratégia: assistir as aulas dos Tópicos 2.2 a 2.4 em **1.5x**, já que o conteúdo foi praticado, e reduzir para **1x** ao chegar no objetivo **3.3 (shell script)**, que é o de maior peso individual da prova e o único em que o vídeo entrega algo que o laboratório sozinho não ensina.
 >
 > **Calendário corrigido em 09/09:** as semanas passaram a correr de **segunda a domingo**. A prova cai na segunda-feira seguinte ao fim da Semana 10.
 
