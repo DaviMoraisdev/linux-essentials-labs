@@ -688,6 +688,108 @@ A ordem dos `sort` muda a pergunta que o pipeline responde. É o tipo de sutilez
 
 ---
 
+## Registro do curso — 23/09 — Objetivos 1.4 e 2.1
+
+Quatro aulas assistidas. Posição no curso: **aula 26 de 72**, cobrindo o Tópico 2.1.
+
+O conteúdo destas aulas pertence a objetivos já praticados nas Semanas 1 e 2. Fica registrado aqui por ordem cronológica.
+
+### Objetivo 1.4 — ICT Skills and Working in Linux
+
+**Privacidade na navegação.** O modo de navegação privada ou anônima do navegador.
+
+> **Nuance que a prova explora:** o modo privado impede que o **seu computador** guarde histórico, cookies e dados de formulário. Ele **não torna você anônimo na internet.** O provedor de acesso, o empregador na rede corporativa e o próprio site continuam vendo o tráfego. Para anonimato de rede seriam necessários outros recursos, como VPN ou Tor. Confundir "privado localmente" com "anônimo na rede" é erro comum.
+
+**TTY — terminais virtuais**
+
+O nome vem de *teletypewriter*, os terminais físicos de impressão dos anos 1960. Hoje designa os **consoles virtuais**: sessões de terminal independentes, cada uma com seu próprio login, funcionando sem interface gráfica.
+
+| Atalho | Console |
+|---|---|
+| `Ctrl+Alt+F1` a `Ctrl+Alt+F6` | Alterna entre os terminais virtuais |
+
+Em uma distribuição com interface gráfica, a sessão gráfica ocupa um desses números — no Ubuntu Desktop, normalmente o `tty1` para a tela de login e o `tty2` para a sessão do usuário — e os demais ficam como consoles de texto.
+
+**Uso prático:** quando a interface gráfica congela, alternar para um TTY dá acesso ao sistema, que continua funcionando por baixo. De lá é possível matar o processo travado ou reiniciar o servidor gráfico, sem perder o que estava aberto.
+
+Sua VM não tem interface gráfica, então ela abre direto no `tty1`.
+
+**Detalhe que vale conhecer, porque você usa todo dia:** uma conexão SSH **não** é um TTY. É um **pseudo-terminal**, ou *pty*. Verifique:
+
+```bash
+tty                  # numa sessão SSH: /dev/pts/0
+who                  # a coluna do terminal mostra pts/0
+```
+
+O `pts` vem de *pseudo-terminal slave*. Terminais virtuais reais aparecem como `/dev/tty1`; sessões remotas e emuladores de terminal aparecem como `/dev/pts/N`. É a diferença entre um console de hardware e um terminal emulado por software.
+
+**Onde o Linux é usado.** Servidores web (Apache, nginx), cloud computing e virtualização.
+
+A sigla **LAMP** vale memorizar, porque a prova usa: **L**inux + **A**pache + **M**ySQL/MariaDB + **P**HP, Perl ou Python. A variante com nginx no lugar do Apache é chamada **LEMP** — o "E" vem da pronúncia de nginx, *engine-x*.
+
+### Objetivo 2.1 — O shell
+
+**O que é.** O shell é o interpretador de comandos: o programa que lê o que você digita, interpreta e executa. O padrão na maioria das distribuições é o **Bash** — *Bourne Again Shell*, trocadilho com o `sh` original de Stephen Bourne.
+
+**Shells que a prova menciona**
+
+| Shell | Característica |
+|---|---|
+| `bash` | Padrão na maioria das distribuições Linux |
+| `sh` / `dash` | Shell mínimo, rápido; usado em scripts de sistema |
+| `zsh` | Mais recursos interativos; padrão no macOS desde 2019 |
+| `ksh` | Korn Shell |
+| `csh` / `tcsh` | Sintaxe inspirada em C |
+| `fish` | Foco em usabilidade, sintaxe incompatível com `sh` |
+
+**Trocar o shell padrão**
+
+```bash
+sudo usermod -s /usr/bin/zsh davi      # como administrador
+chsh -s /usr/bin/zsh                   # o próprio usuário, sem sudo
+cat /etc/shells                        # shells autorizados no sistema
+```
+
+O shell escolhido precisa constar em `/etc/shells`, ou o `chsh` recusa.
+
+### Correções do curso
+
+**Correção 37 — a troca de shell vale no próximo login, não após reiniciar.**
+
+A anotação diz que *"o novo shell entra após reinicialização da máquina"*. O `usermod -s` altera o campo de shell do usuário em `/etc/passwd`, e esse campo é lido **no momento do login**. Basta sair e entrar de novo:
+
+```bash
+exit          # encerra a sessão SSH
+ssh lab       # o novo shell já está valendo
+```
+
+Reiniciar funciona porque força um novo login, mas é consequência, não requisito. A distinção importa em servidor: ninguém reinicia uma máquina de produção para trocar o shell de um usuário.
+
+Comprove sem alterar nada:
+
+```bash
+grep "^davi" /etc/passwd     # o último campo é o shell configurado
+```
+
+**Correção 38 — o `$SHELL` mostra o shell configurado, não o que está rodando.**
+
+A anotação sugere que `echo $SHELL` revela o shell em uso. Na maioria das vezes coincide, mas são coisas diferentes: o `$SHELL` é uma variável de ambiente preenchida **no login** com o valor de `/etc/passwd`. Se você abrir outro shell depois, ela não muda.
+
+```bash
+echo $SHELL       # /bin/bash — o shell de login
+sh                # abre um shell diferente
+echo $SHELL       # continua /bin/bash — a variável não acompanhou
+echo $0           # sh — este sim é o que está rodando
+ps -p $$          # confirma o processo do shell atual
+exit
+```
+
+O `$0` guarda o nome do processo em execução, e o `$$` guarda o PID do shell atual. São os dois jeitos corretos de responder "qual shell está rodando **agora**".
+
+Isso conecta direto com a Semana 2: `$SHELL` é variável de ambiente, herdada do login; o `$0` é do processo. A mesma distinção entre variável de shell e de ambiente, vista de outro ângulo.
+
+---
+
 ## Sessão 3 — Quarta 23/09 — `grep` e expressões regulares
 
 Esta é a sessão mais importante da semana. O `grep` é o comando mais cobrado do objetivo 3.2, e as expressões regulares básicas são conhecimento exigido explicitamente.
