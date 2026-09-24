@@ -790,7 +790,7 @@ Isso conecta direto com a Semana 2: `$SHELL` é variável de ambiente, herdada d
 
 ---
 
-## Sessão 3 — Quarta 23/09 — `grep` e expressões regulares
+## Sessão 3 — `grep` e expressões regulares — CONCLUÍDA em 24/09
 
 Esta é a sessão mais importante da semana. O `grep` é o comando mais cobrado do objetivo 3.2, e as expressões regulares básicas são conhecimento exigido explicitamente.
 
@@ -897,23 +897,138 @@ Registro correto: o `cat` era inviável não por falha do comando, mas porque o 
 
 ### Registro da sessão
 
+**Opções do `grep`**
+
+| Opção | Origem | Função |
+|---|---|---|
+| `-i` | *ignore case* | Ignora a diferença entre maiúsculas e minúsculas |
+| `-c` | *count* | Conta **linhas** que casaram |
+| `-n` | *number* | Mostra o número da linha |
+| `-v` | *invert* | Mostra as linhas que **não** casam |
+| `-w` | *word* | Casa apenas palavras inteiras |
+| `-r` | *recursive* | Percorre diretórios e subdiretórios |
+| `-l` | *files with matches* | Mostra só os **nomes** dos arquivos que contêm o padrão |
+
+Observação precisa registrada na anotação, e que vale destacar: **o `-c` conta linhas que casaram, não ocorrências do padrão.** Se uma linha contiver `ERROR` três vezes, ela conta como **um**. Comprove:
+
 ```bash
+printf "ERROR ERROR ERROR\nINFO\n" | grep -c ERROR      # 1, não 3
+printf "ERROR ERROR ERROR\nINFO\n" | grep -o ERROR | wc -l   # 3
+```
+
+O `-o`, de *only matching*, imprime cada ocorrência em uma linha separada. É assim que se conta ocorrências de verdade.
+
+**Complemento ao `-l`:** existe o par maiúsculo, `-L`, que faz o inverso — lista os arquivos que **não** contêm o padrão.
+
+```bash
+grep -l bash /etc/* 2>/dev/null | head      # arquivos COM bash
+grep -L bash /etc/* 2>/dev/null | head      # arquivos SEM bash
+```
+
+**Filtrar configuração**
+
+```bash
+grep -v '^#' /etc/ssh/sshd_config | grep -v '^$'
+```
+
+O `^#` casa linhas que começam com `#`; o `-v` inverte, deixando passar tudo que não é comentário. O segundo `grep -v '^$'` remove as linhas vazias — `^$` significa "início imediatamente seguido de fim", ou seja, linha sem nenhum caractere.
+
+**Regex versus globbing**
+
+| Símbolo | No globbing | Na regex |
+|---|---|---|
+| `*` | Qualquer sequência de caracteres | Zero ou mais repetições **do elemento anterior** |
+| `?` | Exatamente um caractere | Zero ou uma ocorrência do elemento anterior (exige `-E`) |
+| `.` | Ponto literal | Qualquer caractere, um só |
+| `[abc]` | Um caractere entre os listados | Mesmo significado |
+
+Raciocínio correto registrado sobre o `a*`: ele casa até a linha `b`, porque "zero ocorrências de `a`" satisfaz o padrão. Para exigir pelo menos um, escreve-se `aa*` — o primeiro `a` é obrigatório e o `a*` cobre as repetições seguintes.
+
+**Âncoras e conjuntos**
+
+| Padrão | Significado |
+|---|---|
+| `^a` | Começa com `a` |
+| `a$` | Termina com `a` |
+| `^$` | Linha vazia |
+| `c.rla` | `c`, qualquer caractere, `rla` — casa `Carla` |
+| `^[AB]` | Começa com `A` ou `B` |
+| `[0-9][0-9][0-9][0-9]` | Quatro dígitos consecutivos |
+| `[^0-9]` | Qualquer caractere que **não** seja dígito |
+
+**Regex estendida — `grep -E`**
+
+Ativa as *Extended Regular Expressions*. Necessário para `|`, `?`, `+`, `{}` e parênteses de agrupamento.
+
+| Padrão | Efeito |
+|---|---|
+| `ERROR\|WARN` | Uma coisa **ou** outra |
+| `a{2,3}` | Entre 2 e 3 repetições |
+| `colou?r` | O `u` é opcional: casa `color` e `colour` |
+
+O `egrep` é a forma antiga, equivalente a `grep -E`. Está formalmente obsoleto, mas ainda aparece em scripts e em questões de prova.
+
+### Correções desta sessão
+
+**Correção 39 — o `grep ERROR` não falhou por causa de maiúsculas.**
+
+A anotação diz, no item 2, que `grep ERROR sistema.log` *"não retornou nenhuma saída"*, e o item 3 explica que *"sem o `-i` o grep não encontra ERROR porque o Linux diferencia maiúsculas e minúsculas"*.
+
+Essa explicação contradiz as próprias anotações seguintes: o item 4 registra que `grep -c ERROR` **retornou 3**, e o item 5 mostra a linha encontrada por `grep -n ERROR`. Se o padrão não casasse, esses dois também teriam vindo vazios.
+
+O motivo é simples: o `sistema.log` contém `ERROR` **em maiúsculas**, exatamente como escrito no comando. A busca casa.
+
+Quem falharia é o inverso:
+
+```bash
+grep error sistema.log      # nada — o arquivo tem ERROR, não error
+grep ERROR sistema.log      # 3 linhas
+grep -i error sistema.log   # 3 linhas — o -i ignora a diferença
+```
+
+A causa provável do resultado vazio na primeira tentativa é ter rodado o comando fora do diretório `lab4`. Nesse caso a mensagem não é "nenhuma saída", e sim:
 
 ```
+grep: sistema.log: No such file or directory
+```
+
+Vale refazer dentro de `~/lab4` e comparar as três formas acima. A regra a fixar: **o `grep` é sensível a maiúsculas por padrão, e o `-i` remove essa sensibilidade — mas um padrão escrito igual ao texto sempre casa.**
+
+**Correção 40 — `-f1,4` são as colunas 1 e 4, não "de 1 a 4".**
+
+No terceiro comando combinado, a anotação diz que `cut -d',' -f1,4` *"pega as colunas de 1 a 4"*. São apenas duas colunas, a primeira e a quarta.
+
+| Forma | Significado |
+|---|---|
+| `-f1,4` | Colunas 1 **e** 4 |
+| `-f1-4` | Colunas 1 **até** 4 |
+| `-f1,3-5` | Coluna 1 e da 3 à 5 |
+
+A vírgula lista; o hífen define intervalo. Esta distinção estava **correta** nas anotações da Sessão 2 — é escorregão de redação, não de compreensão, mas é exatamente o tipo de detalhe que a prova usa para separar respostas.
+
+Comprove a diferença:
+
+```bash
+cut -d',' -f1,4 funcionarios.csv | head -3
+cut -d',' -f1-4 funcionarios.csv | head -3
+```
+
+**Observação — transcrição do padrão.** A anotação registra o exemplo do ponto como `c.arla`. O comando era `c.rla`: `c` + qualquer caractere + `rla`, que casa `Carla`. Com `c.arla` seriam seis posições, e `Carla` tem cinco — não casaria.
 
 ### O que aprendi
 
 | Símbolo | No globbing | Na regex |
 |---|---|---|
-| `*` | | |
-| `?` | | |
-| `.` | | |
-| `[abc]` | | |
+| `*` | Qualquer sequência de caracteres | Zero ou mais repetições do elemento anterior |
+| `?` | Exatamente um caractere | Zero ou uma ocorrência do elemento anterior (exige `-E`) |
+| `.` | Ponto literal | Qualquer caractere único |
+| `[abc]` | Um caractere entre `a`, `b` e `c` | Mesmo significado |
 
-- Os dois significados do `^`:
-- O que o `-v` do `grep` faz:
-- Quando é preciso usar `grep -E`:
-- O comando que mostra um arquivo de configuração sem comentários nem linhas vazias:
+- **Os dois significados do `^`:** dentro dos colchetes nega o conjunto — `[^0-9]` casa qualquer caractere que não seja dígito; fora dos colchetes ancora o início da linha.
+- **O `-v` do `grep`:** inverte o filtro, mostrando as linhas que **não** contêm o padrão.
+- **Quando usar `grep -E`:** para `|`, `?`, `+`, `{}` e parênteses de agrupamento.
+- **Configuração sem comentários nem linhas vazias:** `grep -v '^#' arquivo | grep -v '^$'`
+- **`-c` conta linhas, não ocorrências:** para contar ocorrências, `grep -o padrão | wc -l`.
 
 ---
 
@@ -1280,7 +1395,7 @@ Encaixe no sábado ou domingo. Uma hora, sem interrupção.
 - [ ] Preparação do ambiente (`lab4`, `funcionarios.csv`, `sistema.log`)
 - [x] Sessão 1 — visualização e redirecionamento (21/09)
 - [x] Sessão 2 — pipes e filtros (22 e 23/09)
-- [ ] Sessão 3 — `grep` e expressões regulares
+- [x] Sessão 3 — `grep` e expressões regulares (24/09)
 - [ ] Sessão 4 — compactação e arquivamento
 - [ ] Sessão 5 — `find`, desafio integrador e autoavaliação
 - [x] Bandit níveis 6, 7 e 8 — todos concluídos (21 e 23/09)
