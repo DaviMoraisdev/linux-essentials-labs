@@ -36,7 +36,8 @@
 | Simulado diagnóstico | ⬜ **recomendado antes de decidir sobre antecipar a prova** |
 | **Semana 4 — Tópico 3, parte 1 (Bloco D)** | 🔄 em andamento — Sessões 1 e 2 concluídas ( 21 a 23/09 )  |
 | Bandit | níveis 0 0 9 concluídos | 
-| Curso do Muller | ⚠️ sem avanço desde 17/09 — retomar na Semana 4 |
+| Curso do Muller | ✅ retomado em 23/09 — **aula 26 de 72**, no Tópico 2.1 |
+| Defasagem curso × laboratório | Curso no Tópico 2.1; laboratório no Tópico 3.2 — ver nota abaixo |
 | Voucher da prova | ⬜ comprar na Semana 5 |
 
 > **Ordem ajustada em 02/09:** o curso do Muller começa pelo **Tópico 1**, não pelo Tópico 2. O cronograma da seção 7 foi reordenado para acompanhar o curso — a data da prova não muda.
