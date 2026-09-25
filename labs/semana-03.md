@@ -1079,28 +1079,6 @@ cd ~ && rm -rf lab3
 
 ---
 
-## Bandit — níveis 6 a 8
-
-Encaixe no sábado ou distribua 15 minutos por sessão.
-
-**Reprogramado para a Semana 4.** Os níveis 6 a 9 exercitam `find` com filtros de usuário e grupo, `grep`, `sort` e `uniq` — todos conteúdo do objetivo 3.2, que é justamente o tema da Semana 4. Fazê-los agora seria treinar comandos antes de estudá-los; fazê-los na semana que vem alinha prática e teoria.
-
-| Nível | O que treina |
-|---|---|
-| 6 → 7 | `find` com `-user` e `-group`, busca a partir da raiz, descarte de erros com `2>/dev/null` |
-| 7 → 8 | `grep` em arquivo grande |
-| 8 → 9 | `sort` e `uniq -u` combinados por pipe |
-
-O nível 6 tem uma particularidade útil: a busca a partir de `/` gera centenas de mensagens de `Permission denied`. Descartá-las é o uso prático do `2>/dev/null` que você viu na Sessão 4.
-
-Registro:
-
-```bash
-
-```
-
----
-
 ## Checklist da semana
 
 - [x] Sessão 1 — dívidas e autoavaliação da Semana 2 (14/09) — nota 14 de 15
