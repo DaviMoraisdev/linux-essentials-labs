@@ -97,10 +97,6 @@ ls -l
 
 ## Sessão 1 — Segunda 21/09 — Visualização e redirecionamento — CONCLUÍDA
 
-### Curso
-
-Muller: seções sobre redirecionamento e visualização de arquivos.
-
 ### Laboratório
 
 **Ver o conteúdo de um arquivo**
@@ -113,99 +109,35 @@ head funcionarios.csv           # 10 primeiras linhas, por padrão
 head -3 funcionarios.csv
 tail -3 funcionarios.csv
 tail -n +2 funcionarios.csv     # da linha 2 em diante, descartando o cabeçalho
+sudo tail -f /var/log/syslog    # acompanha em tempo real; Ctrl+C para sair
 ```
 
-O `tail -n +2` é útil o suficiente para valer a memorização: ele começa **a partir** da linha indicada, em vez de contar do fim.
-
-**Acompanhar um arquivo em tempo real**
-
-```bash
-sudo tail -f /var/log/syslog
-```
-
-O `-f` de *follow* deixa o comando aberto, imprimindo cada linha nova conforme ela chega. Saia com `Ctrl+C`. É o comando mais usado do mundo em depuração de servidor.
-
-**Os três fluxos padrão**
-
-Todo comando no Linux nasce com três canais:
-
-| Fluxo | Número | Nome | Função |
-|---|---|---|---|
-| `stdin` | 0 | Entrada padrão | De onde o comando lê |
-| `stdout` | 1 | Saída padrão | Onde escreve o resultado |
-| `stderr` | 2 | Saída de erro | Onde escreve mensagens de erro |
-
-Por padrão, `stdout` e `stderr` vão ambos para a tela — e é por isso que parecem a mesma coisa. Não são.
-
-**Redirecionamento de saída**
+**Redirecionamento**
 
 ```bash
 ls -l > listagem.txt            # cria ou SOBRESCREVE
-cat listagem.txt
-
 ls -l >> listagem.txt           # ACRESCENTA ao final
-wc -l listagem.txt
 
-echo "nova linha" > listagem.txt
-cat listagem.txt                # o conteúdo anterior sumiu
-```
-
-A diferença entre `>` e `>>` é a mesma armadilha do `cp` da semana passada: o `>` sobrescreve em silêncio.
-
-**Separando saída de erro**
-
-```bash
-ls /etc /naoexiste                      # os dois fluxos se misturam na tela
-
-ls /etc /naoexiste > saida.txt          # só o stdout foi para o arquivo
-cat saida.txt                           # o erro ficou na tela
-
-ls /etc /naoexiste 2> erros.txt         # agora só o stderr foi
-cat erros.txt
-
+ls /etc /naoexiste > saida.txt          # só o stdout
+ls /etc /naoexiste 2> erros.txt         # só o stderr
 ls /etc /naoexiste > saida.txt 2> erros.txt    # cada um no seu arquivo
 ls /etc /naoexiste > tudo.txt 2>&1             # os dois no mesmo arquivo
-ls /etc /naoexiste &> tudo2.txt                # forma abreviada do anterior
+ls /etc /naoexiste &> tudo2.txt                # forma abreviada
 
 ls /naoexiste 2> /dev/null              # descarta o erro
 ls /etc > /dev/null                     # descarta a saída
 ls /etc &> /dev/null                    # descarta tudo
-```
 
-A notação `2>&1` se lê como "mande o fluxo 2 para onde o fluxo 1 está indo". A ordem importa: `> arquivo 2>&1` funciona, mas `2>&1 > arquivo` não faz o que parece.
+wc -l < funcionarios.csv                # redirecionamento de entrada
 
-**Redirecionamento de entrada**
-
-```bash
-wc -l < funcionarios.csv
-sort < funcionarios.csv
-```
-
-O `<` alimenta o comando a partir de um arquivo em vez do teclado. Repare na diferença sutil: `wc -l arquivo.txt` mostra o nome do arquivo na saída; `wc -l < arquivo.txt` não, porque o comando nunca soube de qual arquivo veio.
-
-**O heredoc**
-
-Você já usou sem saber o nome, ao criar o README:
-
-```bash
-cat > exemplo.txt << 'EOF'
+cat > exemplo.txt << 'EOF'              # heredoc
 linha um
 linha dois
 EOF
 
-cat exemplo.txt
+ls -l | tee arquivo-visto.txt           # grava e exibe
+ls -l | tee -a arquivo-visto.txt        # acrescenta
 ```
-
-**O `tee` — gravar e exibir ao mesmo tempo**
-
-```bash
-ls -l | tee arquivo-visto.txt
-cat arquivo-visto.txt
-
-ls -l | tee -a arquivo-visto.txt    # -a acrescenta em vez de sobrescrever
-```
-
-O nome vem do encanamento: um "T" divide o fluxo em dois. É a solução para quando você quer ver o resultado e guardá-lo ao mesmo tempo.
 
 ### Registro da sessão
 
@@ -218,10 +150,8 @@ O nome vem do encanamento: um "T" divide o fluxo em dois. É a solução para qu
 | `less` | Visualizador interativo, adequado para arquivos com milhares de linhas |
 | `head` / `head -3` | As 10 primeiras linhas, ou as 3 primeiras |
 | `tail` / `tail -3` | As 10 últimas linhas, ou as 3 últimas |
-| `tail -n +2` | Da linha 2 em diante — o `+` significa "a partir de", útil para descartar cabeçalho de CSV |
-| `tail -f` | *Follow* — mantém o arquivo aberto e exibe cada linha nova assim que chega |
-
-O `tail -f` é o instrumento padrão para acompanhar a aplicação em tempo real durante o desenvolvimento e na depuração de servidores.
+| `tail -n +2` | Da linha 2 em diante — o `+` significa "a partir de" |
+| `tail -f` | *Follow* — exibe cada linha nova assim que chega |
 
 **Os três fluxos**
 
@@ -231,13 +161,7 @@ O `tail -f` é o instrumento padrão para acompanhar a aplicação em tempo real
 | `stdout` | 1 | Saída do resultado |
 | `stderr` | 2 | Saída de erro |
 
-`stdout` e `stderr` vão ambos para o terminal por padrão, e por isso parecem o mesmo canal. São fluxos distintos, que podem ser separados.
-
-**Redirecionamento de saída**
-
-O `>` direciona o `stdout` para um arquivo e **sobrescreve** o conteúdo existente. O `>>` **acrescenta** ao final. É a mesma armadilha da sobrescrita silenciosa do `cp`.
-
-Observação registrada corretamente e que vale destacar: o `>` é uma abreviação de **`1>`**. Quando nenhum número é escrito, o shell assume o fluxo 1. É por isso que `2>` redireciona apenas o erro — o número muda o fluxo afetado.
+Observação registrada corretamente: o `>` é abreviação de **`1>`**. Quando nenhum número é escrito, o shell assume o fluxo 1. É por isso que `2>` redireciona apenas o erro.
 
 ```
                 ┌─ stdout (1) ──> saida.txt
@@ -245,233 +169,88 @@ ls ─────────────┤
                 └─ stderr (2) ──> erros.txt
 ```
 
-**Descarte com `/dev/null`**
+**Heredoc** — de *here document*. O `EOF` é convenção, não obrigação; as aspas simples em `'EOF'` impedem a expansão de variáveis.
 
-| Comando | O que é descartado |
-|---|---|
-| `comando 2> /dev/null` | Apenas os erros |
-| `comando > /dev/null` | Apenas a saída normal |
-| `comando &> /dev/null` | Tudo |
-
-**Redirecionamento de entrada**
-
-O `<` alimenta o `stdin` do comando a partir de um arquivo. O `wc -l arquivo` mostra o nome do arquivo na saída; o `wc -l < arquivo` não.
-
-**Heredoc** — de *here document*
-
-Fornece várias linhas de uma vez como entrada para um comando. As linhas seguintes são tratadas como `stdin` até aparecer uma linha contendo apenas o delimitador.
-
-- O `EOF` não é obrigatório — é uma convenção, de *End Of File*. Qualquer palavra serve.
-- As aspas simples em `'EOF'` impedem que variáveis sejam expandidas dentro do texto.
-
-**`tee`**
-
-Exibe a saída no terminal e grava em arquivo ao mesmo tempo. Como o `>`, **sobrescreve** o arquivo existente; o `-a` faz acrescentar.
+**`tee`** — exibe no terminal e grava ao mesmo tempo. Sobrescreve por padrão; `-a` acrescenta.
 
 ### Correções desta sessão
 
 **Correção 29 — o que o `2>&1` realmente faz.**
 
-A anotação registra o `2>&1` como *"mande as saídas 2 E 1 para o arquivo X"*. O efeito final, naquele comando específico, é esse — mas o mecanismo é outro, e é o mecanismo que explica o comportamento que parece estranho.
-
-O `2>&1` **não menciona arquivo nenhum**. Ele diz apenas: *"faça o fluxo 2 ir para onde o fluxo 1 está indo **neste momento**"*. Quem define o arquivo é o `> tudo.txt` que vem antes.
-
-E o shell processa os redirecionamentos **da esquerda para a direita**. É isso que torna a ordem decisiva:
+O `2>&1` **não menciona arquivo nenhum**. Ele diz: *"faça o fluxo 2 ir para onde o fluxo 1 está indo **neste momento**"*. Quem define o arquivo é o `> tudo.txt` anterior. E o shell processa os redirecionamentos da esquerda para a direita:
 
 ```bash
 ls /etc /naoexiste > tudo.txt 2>&1
 # 1. "> tudo.txt"  → o fluxo 1 passa a apontar para tudo.txt
 # 2. "2>&1"        → o fluxo 2 aponta para onde o 1 está: tudo.txt
-# Resultado: os dois no arquivo
 
 ls /etc /naoexiste 2>&1 > tudo.txt
 # 1. "2>&1"        → o fluxo 2 aponta para onde o 1 está AGORA: o terminal
-# 2. "> tudo.txt"  → o fluxo 1 muda para tudo.txt; o 2 continua no terminal
-# Resultado: o erro aparece na tela
+# 2. "> tudo.txt"  → o fluxo 1 muda; o 2 continua no terminal
 ```
 
-Rode os dois e compare. O `&` antes do `1` também importa: sem ele, `2>1` criaria um **arquivo chamado `1`**. O `&` indica que o `1` é um descritor de fluxo, não um nome de arquivo.
-
-Registro corrigido para o "o que aprendi":
-
-> O `2>&1` faz o fluxo de erro (2) seguir para o mesmo destino que o fluxo de saída (1) tem naquele ponto do comando. Por isso deve vir **depois** do redirecionamento da saída.
+O `&` antes do `1` importa: sem ele, `2>1` criaria um **arquivo chamado `1`**.
 
 **Correção 30 — quem abre o arquivo no `<` é o shell, não o comando.**
-
-A anotação diz que, no `wc -l < arquivo`, *"o nome desaparece porque o **shell** recebe apenas os dados"*. É o inverso: quem abre e lê o arquivo é justamente o **shell**. Ele entrega o conteúdo pronto no `stdin` do `wc`. Quem nunca fica sabendo o nome é o **`wc`**.
 
 | Forma | Quem abre o arquivo | O `wc` conhece o nome |
 |---|---|---|
 | `wc -l arquivo` | O `wc` | Sim — e por isso o imprime |
 | `wc -l < arquivo` | O shell | Não — recebe só os dados |
 
-É a mesma lógica da expansão do asterisco na Semana 2: o shell trabalha **antes** de o comando começar, e o comando recebe o resultado já pronto.
-
-**Organização —** a nota *"o nome vem de Here Document; permite fornecer várias linhas como entrada"* estava sob o `tee`. Foi movida para a seção do heredoc, a que ela pertence.
+É a mesma lógica da expansão do asterisco na Semana 2: o shell trabalha **antes** de o comando começar.
 
 ### O que aprendi
 
 - **Os três fluxos padrão:** `stdin` (0), `stdout` (1) e `stderr` (2).
-- **`>` e `>>`:** o `>` direciona a saída e sobrescreve o arquivo; o `>>` direciona e acrescenta.
-- **`2>&1`:** faz o fluxo de erro seguir o mesmo destino que o fluxo de saída tem naquele ponto. Por isso a ordem importa.
-- **`tee`:** exibe a saída no terminal e grava em arquivo simultaneamente.
-- **`wc -l arquivo` e `wc -l < arquivo`:** no primeiro, o `wc` abre o arquivo e conhece o nome; no segundo, o shell abre e entrega só os dados, e o `wc` nunca sabe de onde vieram.
+- **`>` e `>>`:** o `>` sobrescreve; o `>>` acrescenta.
+- **`2>&1`:** faz o fluxo de erro seguir o destino que o fluxo de saída tem naquele ponto. Por isso a ordem importa.
+- **`tee`:** exibe e grava simultaneamente.
+- **`wc -l arquivo` e `wc -l < arquivo`:** no primeiro o `wc` abre o arquivo e conhece o nome; no segundo o shell abre e entrega só os dados.
 
 ---
 
 ## Sessão 2 — Terça 22/09 — Pipes e filtros — CONCLUÍDA
 
-### Curso
-
-Muller: seções sobre pipes e processamento de texto.
-
 ### Laboratório
-
-**O pipe**
-
-O `|` conecta a saída de um comando à entrada do próximo. Nenhum arquivo intermediário é criado.
 
 ```bash
 cat funcionarios.csv | wc -l
-ls /usr/bin | wc -l
 ls /etc | head -5
 history | grep ls
-```
 
-**Contar — `wc`**
-
-```bash
 wc funcionarios.csv             # linhas, palavras, bytes
-wc -l funcionarios.csv          # só linhas
-wc -w funcionarios.csv          # só palavras
-wc -c funcionarios.csv          # bytes
-wc -m funcionarios.csv          # caracteres
-```
+wc -l / -w / -c / -m
 
-Atenção à diferença entre `-c` e `-m`: em texto com acentos, um caractere pode ocupar mais de um byte.
-
-**Ordenar — `sort`**
-
-```bash
 sort funcionarios.csv
-sort -r funcionarios.csv                    # ordem inversa
-sort -t',' -k4 funcionarios.csv             # pela 4ª coluna, separador vírgula
-sort -t',' -k4 -n funcionarios.csv          # numericamente
-sort -t',' -k4 -n -r funcionarios.csv       # do maior salário para o menor
-sort -t',' -k2 funcionarios.csv             # por setor
-```
+sort -r funcionarios.csv
+sort -t',' -k4 -n funcionarios.csv
+sort -t',' -k4 -n -r funcionarios.csv
 
-A diferença entre ordem alfabética e numérica é fonte clássica de erro. Comprove:
-
-```bash
-printf "9\n100\n25\n3\n" > numeros.txt
-sort numeros.txt         # 100 vem antes de 25 — ordem alfabética
-sort -n numeros.txt      # agora sim: 3, 9, 25, 100
-```
-
-**Remover duplicatas — `uniq`**
-
-```bash
 cut -d',' -f2 funcionarios.csv | sort | uniq
-cut -d',' -f2 funcionarios.csv | sort | uniq -c        # com contagem
 cut -d',' -f2 funcionarios.csv | sort | uniq -c | sort -rn
-```
 
-**O `uniq` só remove duplicatas adjacentes.** Por isso ele quase sempre aparece depois de um `sort`. Verifique:
+cut -d',' -f1,3 funcionarios.csv
+cut -d',' -f2-4 funcionarios.csv
+cut -c1-5 funcionarios.csv
+cut -d':' -f1,7 /etc/passwd
 
-```bash
-printf "a\nb\na\nb\n" | uniq        # não remove nada
-printf "a\nb\na\nb\n" | sort | uniq # agora sim
-```
-
-**Extrair colunas — `cut`**
-
-```bash
-cut -d',' -f1 funcionarios.csv              # só os nomes
-cut -d',' -f1,3 funcionarios.csv            # nome e cargo
-cut -d',' -f2-4 funcionarios.csv            # da 2ª à 4ª coluna
-cut -c1-5 funcionarios.csv                  # por posição de caractere
-cut -d':' -f1 /etc/passwd                   # usuários do sistema
-cut -d':' -f1,7 /etc/passwd                 # usuário e shell
-```
-
-**Substituir caracteres — `tr`**
-
-```bash
 echo $PATH | tr ':' '\n'
-cat funcionarios.csv | tr ',' '\t'
 cat funcionarios.csv | tr 'a-z' 'A-Z'
-cat funcionarios.csv | tr -d ','            # remove
-```
-
-O `tr` é o único destes que **não aceita nome de arquivo** como argumento — ele só lê de `stdin`. Por isso aparece sempre depois de um pipe ou de um `<`.
-
-**Encadeando de verdade**
-
-```bash
-# Quantos usuários existem no sistema
-cut -d':' -f1 /etc/passwd | wc -l
-
-# Quais shells estão em uso e quantas vezes
-cut -d':' -f7 /etc/passwd | sort | uniq -c | sort -rn
-
-# Os três maiores salários, com nome
-tail -n +2 funcionarios.csv | sort -t',' -k4 -rn | head -3 | cut -d',' -f1,4
-```
-
-Leia o último da esquerda para a direita: descarta o cabeçalho, ordena pelo salário em ordem numérica decrescente, pega os três primeiros, extrai nome e salário. Cada etapa faz uma coisa só.
-
-### Bandit nível 8 para 9
-
-O desafio pede a única linha que aparece **uma só vez** num arquivo com muitas repetições. Os comandos são os desta sessão.
-
-```bash
-ssh bandit8@bandit.labs.overthewire.org -p 2220
-man uniq        # procure a opção -u
-```
-
-Lembre: o `uniq` precisa de entrada ordenada.
-
-**Concluído em 23/09.**
-
-```bash
-sort data.txt | uniq -u
-```
-
-**Correção 36 — o `uniq -u` não "remove as duplicatas".** A anotação diz que o `-u` *"significa exibir linhas que são totalmente exclusivas em um arquivo, remove as duplicatas"*. A primeira metade está certa; a segunda descreve outra coisa.
-
-As três formas fazem coisas diferentes:
-
-| Comando | Entrada `a a b c c c` | Resultado |
-|---|---|---|
-| `uniq` | | `a b c` — colapsa as repetições, cada valor aparece uma vez |
-| `uniq -u` | | `b` — mostra **só** o que nunca se repetiu; descarta o resto por inteiro |
-| `uniq -d` | | `a c` — mostra **só** o que se repete |
-
-O `uniq` comum **mantém** os valores repetidos, reduzidos a uma ocorrência. O `-u` os **elimina completamente** da saída. Era exatamente disso que o desafio precisava: a senha era a única linha sem duplicata.
-
-Comprove:
-
-```bash
-printf "a\na\nb\nc\nc\nc\n" | uniq
-printf "a\na\nb\nc\nc\nc\n" | uniq -u
-printf "a\na\nb\nc\nc\nc\n" | uniq -d
-printf "a\na\nb\nc\nc\nc\n" | uniq -c
+cat funcionarios.csv | tr -d ','
 ```
 
 ### Registro da sessão — 22 e 23/09
 
-**O pipe**
+**O pipe.** `cat funcionarios.csv | wc -l` devolveu **11** — as dez linhas de dados mais o cabeçalho.
 
-Lê-se como "execute o primeiro comando e entregue o resultado ao segundo". O `cat funcionarios.csv | wc -l` devolveu **11** — as dez linhas de dados mais o cabeçalho.
-
-**`wc` — contagem**
+**`wc`**
 
 ```
 wc funcionarios.csv    →    11  11  296  funcionarios.csv
 ```
 
-Três números: linhas, palavras e bytes. As 11 palavras coincidem com as 11 linhas porque nenhuma linha do CSV tem espaço — cada linha inteira conta como uma palavra só.
+As 11 palavras coincidem com as 11 linhas porque nenhuma linha do CSV tem espaço.
 
 | Opção | Conta | Origem |
 |---|---|---|
@@ -480,138 +259,42 @@ Três números: linhas, palavras e bytes. As 11 palavras coincidem com as 11 lin
 | `-c` | Bytes | *chars*, no sentido antigo de byte |
 | `-m` | Caracteres | *multibyte* |
 
-Registro correto e preciso na anotação: **`á` conta como um caractere mas ocupa dois bytes**. É essa a diferença entre `-c` e `-m`, e ela só aparece em texto acentuado.
+Registro preciso na anotação: **`á` conta como um caractere mas ocupa dois bytes**.
 
-**`sort` — ordenação**
+**`sort`**
 
 | Opção | Função |
 |---|---|
 | `-r` | Inverte a ordem |
 | `-n` | Ordena por valor numérico |
-| `-t','` | Define a vírgula como separador de campos |
+| `-t','` | Define o separador de campos |
 | `-k4` | Ordena pela quarta coluna |
 
-**`uniq` — duplicatas**
-
-Remove repetições **adjacentes**; por isso quase sempre vem depois do `sort`. O `-c`, de *count*, em vez de apenas eliminar, mostra quantas ocorrências cada valor teve.
-
-### Correções desta sessão
-
-**Correção 32 — o `sort` sem `-n` é crescente, não decrescente.**
-
-A anotação registra: *"`sort` gera o resultado em ordem decrescente porque ele compara os caracteres de cada número e não seu valor matemático"*.
-
-A justificativa está certa; a conclusão não. **As duas formas ordenam em ordem crescente.** O que muda é o critério de comparação:
-
-```bash
-printf "9\n100\n25\n3\n" > numeros.txt
-
-sort numeros.txt      # 100, 25, 3, 9
-sort -n numeros.txt   # 3, 9, 25, 100
-```
-
-O primeiro resultado parece desordenado, mas é crescente — só que em ordem **de texto**, caractere por caractere, da esquerda para a direita:
-
-| Valor | Primeiro caractere | Posição |
-|---|---|---|
-| `100` | `1` | vem primeiro |
-| `25` | `2` | segundo |
-| `3` | `3` | terceiro |
-| `9` | `9` | último |
-
-O `sort` nunca chega a olhar o segundo caractere do `100`: assim que compara `1` com `2`, já decidiu. É o mesmo critério que coloca `Ana` antes de `Bruno`.
-
-Quem inverte a ordem é o **`-r`**, e só ele:
-
-```bash
-sort -r numeros.txt     # 9, 3, 25, 100   — texto, decrescente
-sort -nr numeros.txt    # 100, 25, 9, 3   — numérico, decrescente
-```
-
-Registro corrigido:
-
-> Sem `-n`, o `sort` ordena como texto: compara caractere por caractere, então `100` vem antes de `25`. Com `-n`, compara o valor numérico. Ambos em ordem crescente; para inverter, é o `-r`.
-
-**Correção 33 — o `-k` escolhe a coluna, não separa nada.**
-
-A anotação diz *"`-k2` separa por setor"* e *"o número após o K significa o setor da coluna"*. Os dois papéis estão trocados:
-
-| Opção | Papel |
-|---|---|
-| `-t','` | **Separa** as colunas, definindo qual caractere marca a divisão |
-| `-k2` | **Escolhe** por qual coluna ordenar — aqui, a segunda |
-
-O número depois do `-k` é o **número da coluna**, não o setor. No `funcionarios.csv` a coluna 2 contém o setor, então `-k2` ordena por setor — mas isso é uma coincidência do arquivo, não o significado da opção. Em outro arquivo, `-k2` ordenaria por qualquer coisa que estivesse na segunda coluna.
-
-O `-k` vem de *key*, a chave de ordenação.
-
-**Observação — a direção do pipe.**
-
-A anotação descreve `cat funcionarios.csv | wc -l` como *"lê-se primeiro o stdin, que é `cat funcionarios.csv`"*. O `cat` não é o `stdin` de ninguém. A cadeia correta:
-
-```
-cat funcionarios.csv          wc -l
-        stdout      ──|──>     stdin
-```
-
-O pipe conecta o **`stdout` do comando à esquerda** ao **`stdin` do comando à direita**. Cada comando continua tendo seus três fluxos; o `|` só religa dois deles entre processos vizinhos.
-
-Detalhe que reforça o conceito: o `stderr` **não passa pelo pipe**. Comprove:
-
-```bash
-ls /etc /naoexiste | wc -l      # a mensagem de erro aparece na tela, fora da contagem
-ls /etc /naoexiste 2>&1 | wc -l # agora o erro entra na contagem
-```
-
-### `cut` — extração de colunas
-
-Extrai campos ou posições de cada linha.
+**`cut`**
 
 | Forma | Função |
 |---|---|
-| `-d','` | Define o delimitador (*delimiter*) |
-| `-f1` | Extrai o campo 1 (*field*) |
-| `-f1,3` | Campos 1 e 3 |
-| `-f2-4` | Do campo 2 ao 4 |
-| `-c1-5` | Por **posição de caractere**, ignorando delimitadores |
+| `-d','` | Define o delimitador |
+| `-f1` | Extrai o campo 1 |
+| `-f1,3` | Campos 1 **e** 3 |
+| `-f2-4` | Do campo 2 **ao** 4 |
+| `-c1-5` | Por posição de caractere |
 
-Distinção registrada corretamente e que vale guardar: **`-f` trabalha com campos separados por delimitador; `-c` trabalha com posições fixas na linha.** O `-c` serve para arquivos de largura fixa, onde não há separador.
+Distinção registrada corretamente: **`-f` trabalha com campos separados por delimitador; `-c` trabalha com posições fixas na linha.**
 
-### `tr` — substituição de caracteres
+**`tr`**
 
-De *translate*. Forma geral: `tr 'o-que-procurar' 'pelo-que-substituir'`.
-
-| Comando | Efeito |
-|---|---|
-| `tr ':' '\n'` | Troca cada `:` por quebra de linha |
-| `tr ',' '\t'` | Troca vírgulas por tabulação |
-| `tr 'a-z' 'A-Z'` | Converte minúsculas em maiúsculas |
-| `tr -d ','` | Remove o caractere (*delete*) |
-
-O `tr` lê exclusivamente do `stdin` — não abre arquivos. Por isso aparece sempre depois de um pipe ou de um `<`.
+De *translate*. Lê exclusivamente do `stdin` — não abre arquivos.
 
 **Detalhe que a prova explora: o `tr` opera caractere a caractere, não por palavra.**
 
 ```bash
-echo "abc" | tr 'abc' 'xyz'      # xyz — mapeia a→x, b→y, c→z
-echo "cab" | tr 'abc' 'xyz'      # zxy — cada letra é traduzida onde estiver
+echo "cab" | tr 'abc' 'xyz'      # zxy — mapeia a→x, b→y, c→z
 ```
 
-Ele **não** substitui a sequência `abc` pela sequência `xyz`. Constrói uma tabela de correspondência posição a posição e aplica a cada caractere isolado. É por isso que `tr 'a-z' 'A-Z'` funciona: são 26 caracteres mapeados um a um.
+Ele constrói uma tabela posição a posição. Para substituir palavras inteiras a ferramenta é o `sed`, fora do escopo do Essentials.
 
-Para substituir palavras inteiras, a ferramenta é o `sed`, que fica fora do escopo do Linux Essentials.
-
-### Encadeamento
-
-**Quantos usuários existem no sistema**
-
-```bash
-cut -d':' -f1 /etc/passwd | wc -l      # 33
-```
-
-Funciona, mas o `cut` aqui não faz diferença: recortar uma coluna não altera o número de linhas. O caminho direto é `wc -l /etc/passwd`, ou `wc -l < /etc/passwd` para omitir o nome. Vale o registro — em pipeline, cada etapa precisa justificar a própria existência.
-
-**Quais shells estão em uso e quantas vezes**
+**Encadeamento**
 
 ```bash
 cut -d':' -f7 /etc/passwd | sort | uniq -c | sort -rn
@@ -624,325 +307,222 @@ cut -d':' -f7 /etc/passwd | sort | uniq -c | sort -rn
       1 /bin/false
 ```
 
-Resultado consistente: 29 + 2 + 1 + 1 = 33 usuários, batendo com o comando anterior. As 29 contas com `/usr/sbin/nologin` são **contas de serviço** — existem para que programas rodem com identidade própria, e o shell `nologin` impede que alguém faça login com elas. É um assunto do Tópico 5, na Semana 6.
+Total de 33, batendo com a contagem de usuários. As 29 contas com `/usr/sbin/nologin` são **contas de serviço** — Tópico 5, Semana 6.
 
-**Os três maiores salários, com nome**
+### Correções desta sessão
 
-```bash
-tail -n +2 funcionarios.csv | sort -t',' -k4 -rn | head -3 | cut -d',' -f1,4
-```
+**Correção 32 — o `sort` sem `-n` é crescente, não decrescente.**
 
-Descrição correta na anotação, etapa por etapa: descarta o cabeçalho, ordena pelo salário em ordem numérica decrescente, pega os três primeiros, extrai nome e salário. Cada comando faz uma coisa só.
+As duas formas ordenam em ordem crescente. O que muda é o critério:
 
-### Correções desta etapa
+| Valor | Primeiro caractere | Posição |
+|---|---|---|
+| `100` | `1` | primeiro |
+| `25` | `2` | segundo |
+| `3` | `3` | terceiro |
+| `9` | `9` | último |
 
-**Correção 34 — o `-k` seleciona a coluna, não o "setor".**
+Quem inverte é o `-r`, e só ele. `sort -r` inverte a ordem de texto; `sort -nr` inverte a numérica.
 
-Reincidência da correção 33. O registro no "o que aprendi" diz: *"o `-k` seleciona o setor da tabela, por exemplo `-k2` será ordenada o setor 2 da tabela"*.
+**Correção 33 e 34 — o `-k` escolhe a coluna, não "separa" e não é "setor".**
 
-Não existe "setor 2 da tabela". O `-k2` significa **coluna 2** — e no `funcionarios.csv` acontece de a coluna 2 conter o setor. Em `/etc/passwd`, `-k2` ordenaria pela senha; em qualquer outro arquivo, por outra coisa qualquer.
+| Opção | Papel |
+|---|---|
+| `-t','` | **Separa** as colunas |
+| `-k2` | **Escolhe** a coluna 2 para ordenar |
 
-Vale trocar a palavra na cabeça: **`-k` é coluna**, sempre. O `k` vem de *key*, chave de ordenação.
+No `funcionarios.csv` a coluna 2 contém o setor — é coincidência do arquivo, não significado da opção. O `k` vem de *key*.
 
-**Correção 35 — seu pipeline traz o cabeçalho e responde outra pergunta.**
-
-```bash
-cut -d',' -f4 funcionarios.csv | sort -rn | uniq -c
-```
-
-Saída obtida:
-
-```
-      1 12000
-      1 11000
-      ...
-      2 4500
-      1 salario
-```
-
-Dois pontos:
-
-O `salario` na última linha é o **cabeçalho do CSV**, que não foi descartado. Ele foi parar no fim porque o `sort -n` trata texto não numérico como zero, e a ordem é decrescente. Conserto: `tail -n +2` na frente.
-
-E o pipeline responde *"quais salários existem e quantas vezes cada um aparece, do maior salário para o menor"*. Uma pergunta legítima — mas diferente de *"quais salários são mais frequentes"*, que exigiria contar primeiro e ordenar pela contagem depois:
+**Correção 35 — o pipeline próprio traz o cabeçalho e responde outra pergunta.**
 
 ```bash
-# Por valor do salário, do maior para o menor (o seu, corrigido)
+# Por valor do salário, do maior para o menor (corrigido)
 tail -n +2 funcionarios.csv | cut -d',' -f4 | sort -rn | uniq -c
 
 # Por frequência, do mais repetido para o menos
 tail -n +2 funcionarios.csv | cut -d',' -f4 | sort | uniq -c | sort -rn
 ```
 
-A ordem dos `sort` muda a pergunta que o pipeline responde. É o tipo de sutileza que só aparece quando se monta o próprio comando, e é por isso que este exercício estava no roteiro.
+A ordem dos `sort` muda a pergunta que o pipeline responde.
 
-**Observação —** a anotação do `cut` chama `/etc/passwd` de "diretório". É um **arquivo**.
+**Observação — a direção do pipe.**
+
+```
+cat funcionarios.csv          wc -l
+        stdout      ──|──>     stdin
+```
+
+O `stderr` **não passa pelo pipe**:
+
+```bash
+ls /etc /naoexiste | wc -l      # o erro aparece na tela, fora da contagem
+ls /etc /naoexiste 2>&1 | wc -l # agora o erro entra na contagem
+```
+
+### Bandit nível 8 para 9 — concluído em 23/09
+
+```bash
+sort data.txt | uniq -u
+```
+
+**Correção 36 — o `uniq -u` não "remove as duplicatas".**
+
+| Comando | Com entrada `a a b c c c` | Resultado |
+|---|---|---|
+| `uniq` | | `a b c` — colapsa; cada valor aparece uma vez |
+| `uniq -u` | | `b` — mostra **só** o que nunca se repetiu |
+| `uniq -d` | | `a c` — mostra **só** o que se repete |
+
+O `uniq` comum **mantém** os repetidos, reduzidos a uma ocorrência. O `-u` os **elimina por inteiro**.
 
 ### O que aprendi
 
-- **Por que o `uniq` vem depois do `sort`:** ele só elimina duplicatas adjacentes; sem ordenar antes, repetições separadas passam despercebidas.
-- **`sort` e `sort -n`:** ambos crescentes; o primeiro compara texto caractere por caractere, o segundo compara valor numérico.
-- **`-t` e `-k` no `sort`:** o `-t` define o separador de campos; o `-k` define **a coluna** pela qual ordenar.
-- **Por que o `tr` não aceita nome de arquivo:** ele lê exclusivamente do `stdin`. Quem abre o arquivo é o `cat` ou o `<`; o `tr` só recebe o fluxo.
-- **Meu pipeline:** `tail -n +2 funcionarios.csv | cut -d',' -f4 | sort -rn | uniq -c` — descarta o cabeçalho, extrai a coluna de salários, ordena do maior para o menor e conta as ocorrências de cada valor.
+- **Por que o `uniq` vem depois do `sort`:** ele só elimina duplicatas adjacentes.
+- **`sort` e `sort -n`:** ambos crescentes; texto caractere a caractere versus valor numérico.
+- **`-t` e `-k`:** separador de campos e coluna de ordenação.
+- **Por que o `tr` não aceita nome de arquivo:** lê exclusivamente do `stdin`.
+- **Meu pipeline:** `tail -n +2 funcionarios.csv | cut -d',' -f4 | sort -rn | uniq -c`
 
 ---
 
 ## Registro do curso — 23/09 — Objetivos 1.4 e 2.1
 
-Quatro aulas assistidas. Posição no curso: **aula 26 de 72**, cobrindo o Tópico 2.1.
-
-O conteúdo destas aulas pertence a objetivos já praticados nas Semanas 1 e 2. Fica registrado aqui por ordem cronológica.
+Quatro aulas assistidas. Posição: **aula 26 de 72**, no Tópico 2.1.
 
 ### Objetivo 1.4 — ICT Skills and Working in Linux
 
-**Privacidade na navegação.** O modo de navegação privada ou anônima do navegador.
+**Privacidade na navegação.**
 
-> **Nuance que a prova explora:** o modo privado impede que o **seu computador** guarde histórico, cookies e dados de formulário. Ele **não torna você anônimo na internet.** O provedor de acesso, o empregador na rede corporativa e o próprio site continuam vendo o tráfego. Para anonimato de rede seriam necessários outros recursos, como VPN ou Tor. Confundir "privado localmente" com "anônimo na rede" é erro comum.
+> **Nuance que a prova explora:** o modo privado impede que o **seu computador** guarde histórico, cookies e dados de formulário. Ele **não torna você anônimo na internet.** Provedor, empregador e o próprio site continuam vendo o tráfego.
 
 **TTY — terminais virtuais**
 
-O nome vem de *teletypewriter*, os terminais físicos de impressão dos anos 1960. Hoje designa os **consoles virtuais**: sessões de terminal independentes, cada uma com seu próprio login, funcionando sem interface gráfica.
+De *teletypewriter*. Consoles virtuais: sessões independentes, cada uma com seu login, sem interface gráfica. Alterna-se com `Ctrl+Alt+F1` a `Ctrl+Alt+F6`.
 
-| Atalho | Console |
-|---|---|
-| `Ctrl+Alt+F1` a `Ctrl+Alt+F6` | Alterna entre os terminais virtuais |
+Uso prático: quando a interface gráfica congela, um TTY dá acesso ao sistema, que continua funcionando por baixo.
 
-Em uma distribuição com interface gráfica, a sessão gráfica ocupa um desses números — no Ubuntu Desktop, normalmente o `tty1` para a tela de login e o `tty2` para a sessão do usuário — e os demais ficam como consoles de texto.
-
-**Uso prático:** quando a interface gráfica congela, alternar para um TTY dá acesso ao sistema, que continua funcionando por baixo. De lá é possível matar o processo travado ou reiniciar o servidor gráfico, sem perder o que estava aberto.
-
-Sua VM não tem interface gráfica, então ela abre direto no `tty1`.
-
-**Detalhe que vale conhecer, porque você usa todo dia:** uma conexão SSH **não** é um TTY. É um **pseudo-terminal**, ou *pty*. Verifique:
+**Detalhe que você usa todo dia:** uma conexão SSH **não** é um TTY. É um **pseudo-terminal**, ou *pty*:
 
 ```bash
 tty                  # numa sessão SSH: /dev/pts/0
-who                  # a coluna do terminal mostra pts/0
+who
 ```
 
-O `pts` vem de *pseudo-terminal slave*. Terminais virtuais reais aparecem como `/dev/tty1`; sessões remotas e emuladores de terminal aparecem como `/dev/pts/N`. É a diferença entre um console de hardware e um terminal emulado por software.
+Terminais virtuais reais aparecem como `/dev/tty1`; sessões remotas como `/dev/pts/N`.
 
-**Onde o Linux é usado.** Servidores web (Apache, nginx), cloud computing e virtualização.
-
-A sigla **LAMP** vale memorizar, porque a prova usa: **L**inux + **A**pache + **M**ySQL/MariaDB + **P**HP, Perl ou Python. A variante com nginx no lugar do Apache é chamada **LEMP** — o "E" vem da pronúncia de nginx, *engine-x*.
+**LAMP** — **L**inux + **A**pache + **M**ySQL/MariaDB + **P**HP, Perl ou Python. Com nginx vira **LEMP**, do inglês *engine-x*.
 
 ### Objetivo 2.1 — O shell
 
-**O que é.** O shell é o interpretador de comandos: o programa que lê o que você digita, interpreta e executa. O padrão na maioria das distribuições é o **Bash** — *Bourne Again Shell*, trocadilho com o `sh` original de Stephen Bourne.
-
-**Shells que a prova menciona**
+O shell é o interpretador de comandos. O padrão é o **Bash** — *Bourne Again Shell*.
 
 | Shell | Característica |
 |---|---|
-| `bash` | Padrão na maioria das distribuições Linux |
-| `sh` / `dash` | Shell mínimo, rápido; usado em scripts de sistema |
-| `zsh` | Mais recursos interativos; padrão no macOS desde 2019 |
+| `bash` | Padrão na maioria das distribuições |
+| `sh` / `dash` | Mínimo e rápido; scripts de sistema |
+| `zsh` | Mais recursos interativos; padrão no macOS |
 | `ksh` | Korn Shell |
 | `csh` / `tcsh` | Sintaxe inspirada em C |
-| `fish` | Foco em usabilidade, sintaxe incompatível com `sh` |
-
-**Trocar o shell padrão**
+| `fish` | Foco em usabilidade |
 
 ```bash
 sudo usermod -s /usr/bin/zsh davi      # como administrador
-chsh -s /usr/bin/zsh                   # o próprio usuário, sem sudo
-cat /etc/shells                        # shells autorizados no sistema
+chsh -s /usr/bin/zsh                   # o próprio usuário
+cat /etc/shells                        # shells autorizados
 ```
-
-O shell escolhido precisa constar em `/etc/shells`, ou o `chsh` recusa.
 
 ### Correções do curso
 
 **Correção 37 — a troca de shell vale no próximo login, não após reiniciar.**
 
-A anotação diz que *"o novo shell entra após reinicialização da máquina"*. O `usermod -s` altera o campo de shell do usuário em `/etc/passwd`, e esse campo é lido **no momento do login**. Basta sair e entrar de novo:
+O `usermod -s` altera `/etc/passwd`, e esse campo é lido **no login**. Basta sair e entrar:
 
 ```bash
-exit          # encerra a sessão SSH
-ssh lab       # o novo shell já está valendo
-```
-
-Reiniciar funciona porque força um novo login, mas é consequência, não requisito. A distinção importa em servidor: ninguém reinicia uma máquina de produção para trocar o shell de um usuário.
-
-Comprove sem alterar nada:
-
-```bash
-grep "^davi" /etc/passwd     # o último campo é o shell configurado
+exit
+ssh lab
 ```
 
 **Correção 38 — o `$SHELL` mostra o shell configurado, não o que está rodando.**
 
-A anotação sugere que `echo $SHELL` revela o shell em uso. Na maioria das vezes coincide, mas são coisas diferentes: o `$SHELL` é uma variável de ambiente preenchida **no login** com o valor de `/etc/passwd`. Se você abrir outro shell depois, ela não muda.
-
 ```bash
 echo $SHELL       # /bin/bash — o shell de login
 sh                # abre um shell diferente
-echo $SHELL       # continua /bin/bash — a variável não acompanhou
+echo $SHELL       # continua /bin/bash
 echo $0           # sh — este sim é o que está rodando
-ps -p $$          # confirma o processo do shell atual
+ps -p $$
 exit
 ```
 
-O `$0` guarda o nome do processo em execução, e o `$$` guarda o PID do shell atual. São os dois jeitos corretos de responder "qual shell está rodando **agora**".
-
-Isso conecta direto com a Semana 2: `$SHELL` é variável de ambiente, herdada do login; o `$0` é do processo. A mesma distinção entre variável de shell e de ambiente, vista de outro ângulo.
+O `$0` guarda o nome do processo e o `$$` o PID. Conecta com a Semana 2: `$SHELL` é variável de ambiente herdada do login; `$0` é do processo.
 
 ---
 
 ## Sessão 3 — `grep` e expressões regulares — CONCLUÍDA em 24/09
 
-Esta é a sessão mais importante da semana. O `grep` é o comando mais cobrado do objetivo 3.2, e as expressões regulares básicas são conhecimento exigido explicitamente.
-
-### Curso
-
-Muller: seções sobre `grep` e busca em arquivos.
-
 ### Laboratório
-
-**Busca simples**
 
 ```bash
 grep ERROR sistema.log
-grep -i error sistema.log           # ignora maiúsculas e minúsculas
-grep -c ERROR sistema.log           # conta as ocorrências
-grep -n ERROR sistema.log           # mostra o número da linha
-grep -v ERROR sistema.log           # INVERTE: tudo que NÃO casa
-grep -w TI funcionarios.csv         # palavra inteira
-grep -r bash /etc 2>/dev/null       # recursivo em diretórios
-grep -l bash /etc/* 2>/dev/null     # só os NOMES dos arquivos que casam
-```
+grep -i error sistema.log
+grep -c ERROR sistema.log
+grep -n ERROR sistema.log
+grep -v ERROR sistema.log
+grep -w TI funcionarios.csv
+grep -r bash /etc 2>/dev/null
+grep -l bash /etc/* 2>/dev/null
 
-O `-v` é o mais esquecido e um dos mais úteis: filtrar por exclusão.
-
-```bash
 grep -v '^#' /etc/ssh/sshd_config | grep -v '^$'
-```
 
-Esse comando mostra um arquivo de configuração **sem comentários e sem linhas em branco** — o jeito mais rápido de ver o que de fato está configurado num servidor.
-
-**Expressões regulares básicas**
-
-Aqui mora a confusão mais comum de quem acabou de aprender globbing.
-
-| Símbolo | No **globbing** (nomes de arquivo) | Na **regex** (conteúdo de texto) |
-|---|---|---|
-| `*` | Qualquer sequência de caracteres | **Zero ou mais repetições do caractere anterior** |
-| `?` | Exatamente um caractere | Zero ou uma repetição do anterior (exige `grep -E`) |
-| `.` | Um ponto literal | **Qualquer caractere, um só** |
-| `[abc]` | Um caractere entre os listados | Um caractere entre os listados (igual) |
-
-**O `*` significa coisas diferentes nos dois contextos.** No globbing, `a*` casa `abc`, `arquivo`, `azul`. Na regex, `a*` casa "zero ou mais letras a" — ou seja, casa até com uma string vazia. Comprove:
-
-```bash
 printf "a\naa\naaa\nb\nabc\n" > regex.txt
+grep 'a*' regex.txt
+grep 'aa*' regex.txt
+grep '^a' regex.txt
+grep 'a$' regex.txt
 
-grep 'a*' regex.txt        # casa TUDO, inclusive "b" — zero ocorrências de "a" conta
-grep 'aa*' regex.txt       # pelo menos um "a"
-grep '^a' regex.txt        # começa com a
-grep 'a$' regex.txt        # termina com a
+grep '^2026' sistema.log
+grep 'banco$' sistema.log
+grep 'c.rla' funcionarios.csv
+grep '^[AB]' funcionarios.csv
+grep '[0-9][0-9][0-9][0-9]' funcionarios.csv
+grep '[^0-9]' regex.txt
+
+grep -E 'ERROR|WARN' sistema.log
+grep -E 'a{2,3}' regex.txt
+grep -E 'colou?r' regex.txt
 ```
-
-**Âncoras e curingas**
-
-```bash
-grep '^2026' sistema.log            # linhas que COMEÇAM com 2026
-grep 'banco$' sistema.log           # linhas que TERMINAM com banco
-grep '^$' sistema.log               # linhas vazias
-grep 'c.rla' funcionarios.csv       # o ponto casa qualquer caractere
-grep '^[AB]' funcionarios.csv       # começa com A ou B
-grep '[0-9][0-9][0-9][0-9]' funcionarios.csv    # quatro dígitos seguidos
-grep '[^0-9]' regex.txt             # dentro de [], o ^ NEGA
-```
-
-Atenção: o `^` tem dois significados. Fora dos colchetes, ancora o início da linha; **dentro** dos colchetes, nega o conjunto.
-
-**Regex básica e estendida**
-
-```bash
-grep -E 'ERROR|WARN' sistema.log       # o | alternativo exige -E
-grep -E 'a{2,3}' regex.txt             # entre 2 e 3 repetições
-grep -E 'colou?r' regex.txt            # o ? exige -E
-egrep 'ERROR|WARN' sistema.log         # forma antiga, equivale a grep -E
-```
-
-Na regex **básica** funcionam `.`, `[]`, `*`, `^` e `$`. Para `|`, `?`, `+`, `{}` e parênteses de agrupamento é preciso o `-E`, de *extended* — ou escapá-los com barra invertida, o que fica ilegível.
-
-**Uso combinado**
-
-```bash
-grep ERROR sistema.log | wc -l
-grep ERROR sistema.log | cut -d' ' -f2
-grep -i ti funcionarios.csv | cut -d',' -f1,4 | sort -t',' -k2 -rn
-cut -d':' -f7 /etc/passwd | sort -u | grep -v nologin
-```
-
-### Bandit nível 7 para 8
-
-O desafio pede a senha que está ao lado de uma palavra específica, dentro de um arquivo com milhares de linhas. É `grep` puro.
-
-```bash
-ssh bandit7@bandit.labs.overthewire.org -p 2220
-```
-
-**Concluído em 23/09.**
-
-A senha estava ao lado da palavra `millionth`, dentro de um `data.txt` grande demais para inspeção visual com `cat`.
-
-```bash
-grep millionth data.txt
-```
-
-Registro correto: o `cat` era inviável não por falha do comando, mas porque o arquivo tem milhares de linhas. O `grep` resolve porque **filtra em vez de exibir**. Essa é a diferença de mentalidade que o Tópico 3 cobra.
 
 ### Registro da sessão
 
-**Opções do `grep`**
-
 | Opção | Origem | Função |
 |---|---|---|
-| `-i` | *ignore case* | Ignora a diferença entre maiúsculas e minúsculas |
+| `-i` | *ignore case* | Ignora maiúsculas e minúsculas |
 | `-c` | *count* | Conta **linhas** que casaram |
 | `-n` | *number* | Mostra o número da linha |
 | `-v` | *invert* | Mostra as linhas que **não** casam |
 | `-w` | *word* | Casa apenas palavras inteiras |
-| `-r` | *recursive* | Percorre diretórios e subdiretórios |
-| `-l` | *files with matches* | Mostra só os **nomes** dos arquivos que contêm o padrão |
+| `-r` | *recursive* | Percorre diretórios |
+| `-l` | *files with matches* | Só os **nomes** dos arquivos que casam |
+| `-L` | *files without match* | Só os arquivos que **não** casam |
 
-Observação precisa registrada na anotação, e que vale destacar: **o `-c` conta linhas que casaram, não ocorrências do padrão.** Se uma linha contiver `ERROR` três vezes, ela conta como **um**. Comprove:
-
-```bash
-printf "ERROR ERROR ERROR\nINFO\n" | grep -c ERROR      # 1, não 3
-printf "ERROR ERROR ERROR\nINFO\n" | grep -o ERROR | wc -l   # 3
-```
-
-O `-o`, de *only matching*, imprime cada ocorrência em uma linha separada. É assim que se conta ocorrências de verdade.
-
-**Complemento ao `-l`:** existe o par maiúsculo, `-L`, que faz o inverso — lista os arquivos que **não** contêm o padrão.
+Observação precisa registrada: **o `-c` conta linhas, não ocorrências.**
 
 ```bash
-grep -l bash /etc/* 2>/dev/null | head      # arquivos COM bash
-grep -L bash /etc/* 2>/dev/null | head      # arquivos SEM bash
+printf "ERROR ERROR ERROR\nINFO\n" | grep -c ERROR             # 1
+printf "ERROR ERROR ERROR\nINFO\n" | grep -o ERROR | wc -l      # 3
 ```
 
-**Filtrar configuração**
-
-```bash
-grep -v '^#' /etc/ssh/sshd_config | grep -v '^$'
-```
-
-O `^#` casa linhas que começam com `#`; o `-v` inverte, deixando passar tudo que não é comentário. O segundo `grep -v '^$'` remove as linhas vazias — `^$` significa "início imediatamente seguido de fim", ou seja, linha sem nenhum caractere.
+O `-o`, de *only matching*, imprime cada ocorrência em linha separada.
 
 **Regex versus globbing**
 
 | Símbolo | No globbing | Na regex |
 |---|---|---|
 | `*` | Qualquer sequência de caracteres | Zero ou mais repetições **do elemento anterior** |
-| `?` | Exatamente um caractere | Zero ou uma ocorrência do elemento anterior (exige `-E`) |
+| `?` | Exatamente um caractere | Zero ou uma ocorrência do anterior (exige `-E`) |
 | `.` | Ponto literal | Qualquer caractere, um só |
 | `[abc]` | Um caractere entre os listados | Mesmo significado |
 
-Raciocínio correto registrado sobre o `a*`: ele casa até a linha `b`, porque "zero ocorrências de `a`" satisfaz o padrão. Para exigir pelo menos um, escreve-se `aa*` — o primeiro `a` é obrigatório e o `a*` cobre as repetições seguintes.
+Raciocínio correto registrado sobre o `a*`: casa até a linha `b`, porque "zero ocorrências" satisfaz o padrão. Para exigir pelo menos um, `aa*`.
 
 **Âncoras e conjuntos**
 
@@ -953,103 +533,56 @@ Raciocínio correto registrado sobre o `a*`: ele casa até a linha `b`, porque "
 | `^$` | Linha vazia |
 | `c.rla` | `c`, qualquer caractere, `rla` — casa `Carla` |
 | `^[AB]` | Começa com `A` ou `B` |
-| `[0-9][0-9][0-9][0-9]` | Quatro dígitos consecutivos |
 | `[^0-9]` | Qualquer caractere que **não** seja dígito |
 
-**Regex estendida — `grep -E`**
-
-Ativa as *Extended Regular Expressions*. Necessário para `|`, `?`, `+`, `{}` e parênteses de agrupamento.
-
-| Padrão | Efeito |
-|---|---|
-| `ERROR\|WARN` | Uma coisa **ou** outra |
-| `a{2,3}` | Entre 2 e 3 repetições |
-| `colou?r` | O `u` é opcional: casa `color` e `colour` |
-
-O `egrep` é a forma antiga, equivalente a `grep -E`. Está formalmente obsoleto, mas ainda aparece em scripts e em questões de prova.
+**Regex estendida** — `-E` é necessário para `|`, `?`, `+`, `{}` e agrupamento. O `egrep` é a forma antiga, formalmente obsoleta.
 
 ### Correções desta sessão
 
 **Correção 39 — o `grep ERROR` não falhou por causa de maiúsculas.**
 
-A anotação diz, no item 2, que `grep ERROR sistema.log` *"não retornou nenhuma saída"*, e o item 3 explica que *"sem o `-i` o grep não encontra ERROR porque o Linux diferencia maiúsculas e minúsculas"*.
-
-Essa explicação contradiz as próprias anotações seguintes: o item 4 registra que `grep -c ERROR` **retornou 3**, e o item 5 mostra a linha encontrada por `grep -n ERROR`. Se o padrão não casasse, esses dois também teriam vindo vazios.
-
-O motivo é simples: o `sistema.log` contém `ERROR` **em maiúsculas**, exatamente como escrito no comando. A busca casa.
-
-Quem falharia é o inverso:
+O item 2 diz que não retornou saída, mas os itens 4 e 5 registram `grep -c ERROR` retornando 3 e `grep -n ERROR` mostrando a linha. O `sistema.log` contém `ERROR` **em maiúsculas**. Quem falharia é o inverso:
 
 ```bash
-grep error sistema.log      # nada — o arquivo tem ERROR, não error
+grep error sistema.log      # nada — o arquivo tem ERROR
 grep ERROR sistema.log      # 3 linhas
-grep -i error sistema.log   # 3 linhas — o -i ignora a diferença
+grep -i error sistema.log   # 3 linhas
 ```
 
-A causa provável do resultado vazio na primeira tentativa é ter rodado o comando fora do diretório `lab4`. Nesse caso a mensagem não é "nenhuma saída", e sim:
-
-```
-grep: sistema.log: No such file or directory
-```
-
-Vale refazer dentro de `~/lab4` e comparar as três formas acima. A regra a fixar: **o `grep` é sensível a maiúsculas por padrão, e o `-i` remove essa sensibilidade — mas um padrão escrito igual ao texto sempre casa.**
+Causa provável: comando rodado fora do diretório `lab4`, o que produz `No such file or directory`, não saída vazia.
 
 **Correção 40 — `-f1,4` são as colunas 1 e 4, não "de 1 a 4".**
-
-No terceiro comando combinado, a anotação diz que `cut -d',' -f1,4` *"pega as colunas de 1 a 4"*. São apenas duas colunas, a primeira e a quarta.
 
 | Forma | Significado |
 |---|---|
 | `-f1,4` | Colunas 1 **e** 4 |
 | `-f1-4` | Colunas 1 **até** 4 |
-| `-f1,3-5` | Coluna 1 e da 3 à 5 |
 
-A vírgula lista; o hífen define intervalo. Esta distinção estava **correta** nas anotações da Sessão 2 — é escorregão de redação, não de compreensão, mas é exatamente o tipo de detalhe que a prova usa para separar respostas.
+A vírgula lista; o hífen define intervalo.
 
-Comprove a diferença:
-
-```bash
-cut -d',' -f1,4 funcionarios.csv | head -3
-cut -d',' -f1-4 funcionarios.csv | head -3
-```
-
-**Observação — transcrição do padrão.** A anotação registra o exemplo do ponto como `c.arla`. O comando era `c.rla`: `c` + qualquer caractere + `rla`, que casa `Carla`. Com `c.arla` seriam seis posições, e `Carla` tem cinco — não casaria.
+**Observação —** a anotação registra `c.arla`; o comando era `c.rla`.
 
 ### O que aprendi
 
-| Símbolo | No globbing | Na regex |
-|---|---|---|
-| `*` | Qualquer sequência de caracteres | Zero ou mais repetições do elemento anterior |
-| `?` | Exatamente um caractere | Zero ou uma ocorrência do elemento anterior (exige `-E`) |
-| `.` | Ponto literal | Qualquer caractere único |
-| `[abc]` | Um caractere entre `a`, `b` e `c` | Mesmo significado |
-
-- **Os dois significados do `^`:** dentro dos colchetes nega o conjunto — `[^0-9]` casa qualquer caractere que não seja dígito; fora dos colchetes ancora o início da linha.
-- **O `-v` do `grep`:** inverte o filtro, mostrando as linhas que **não** contêm o padrão.
-- **Quando usar `grep -E`:** para `|`, `?`, `+`, `{}` e parênteses de agrupamento.
-- **Configuração sem comentários nem linhas vazias:** `grep -v '^#' arquivo | grep -v '^$'`
-- **`-c` conta linhas, não ocorrências:** para contar ocorrências, `grep -o padrão | wc -l`.
+- **Os dois significados do `^`:** dentro dos colchetes nega o conjunto; fora, ancora o início da linha.
+- **O `-v`:** inverte o filtro.
+- **Quando usar `-E`:** para `|`, `?`, `+`, `{}` e agrupamento.
+- **Configuração limpa:** `grep -v '^#' arquivo | grep -v '^$'`
+- **`-c` conta linhas, não ocorrências:** para ocorrências, `grep -o padrão | wc -l`.
 
 ---
 
-## Sessão 4 — Quinta 24/09 — Compactação e arquivamento (objetivo 3.1)
-
-### Curso
-
-Muller: seções sobre compactação e arquivos.
+## Sessão 4 — Compactação e arquivamento (objetivo 3.1) — CONCLUÍDA em 25/09
 
 ### Laboratório
 
-**Arquivar não é comprimir.** Esta é a ideia central do objetivo 3.1, e foi registrada como correção na Semana 2:
+**Arquivar não é comprimir.**
 
 | Operação | O que faz | Ferramenta |
 |---|---|---|
 | **Arquivar** | Junta muitos arquivos em um só, preservando estrutura e permissões | `tar` |
 | **Comprimir** | Reduz o tamanho de **um** arquivo | `gzip`, `bzip2`, `xz` |
-
-O `tar` sozinho gera um `.tar`, que não é menor que a soma das partes. A compressão vem de um segundo programa, acionado por flag.
-
-**Preparando material**
+| **Ambos** | Arquiva e comprime em um passo | `zip` |
 
 ```bash
 cd ~/lab4
@@ -1057,111 +590,137 @@ mkdir -p projeto/{src,docs,testes}
 echo "codigo" > projeto/src/main.py
 echo "documentacao" > projeto/docs/leiame.md
 echo "testes" > projeto/testes/test_main.py
-cp /var/log/dmesg projeto/docs/exemplo.log 2>/dev/null || \
-  seq 1 5000 > projeto/docs/exemplo.log
+seq 1 5000 > projeto/docs/exemplo.log
 du -sh projeto
-```
 
-**As opções do `tar` que a prova cobra**
+tar -cvf projeto.tar projeto/
+tar -czvf projeto.tar.gz projeto/
+tar -cjvf projeto.tar.bz2 projeto/
+tar -cJvf projeto.tar.xz projeto/
+ls -lh projeto.tar*
 
-| Opção | Significa | Função |
-|---|---|---|
-| `-c` | *create* | Cria o arquivo |
-| `-x` | *extract* | Extrai |
-| `-t` | *list* | Lista o conteúdo sem extrair |
-| `-v` | *verbose* | Mostra os arquivos processados |
-| `-f` | *file* | Indica o nome do arquivo — **sempre vem por último** |
-| `-z` | gzip | Comprime com gzip, gera `.tar.gz` |
-| `-j` | bzip2 | Comprime com bzip2, gera `.tar.bz2` |
-| `-J` | xz | Comprime com xz, gera `.tar.xz` |
+tar -tvf projeto.tar.gz
+mkdir destino && tar -xzvf projeto.tar.gz -C destino/
 
-O `-f` precisa ser a última letra do grupo porque o nome do arquivo vem logo depois dele. `tar -cfv nome.tar pasta` falha; `tar -cvf nome.tar pasta` funciona.
-
-**Criar, listar e extrair**
-
-```bash
-tar -cvf projeto.tar projeto/           # só arquiva
-ls -lh projeto.tar
-
-tar -czvf projeto.tar.gz projeto/       # arquiva e comprime com gzip
-tar -cjvf projeto.tar.bz2 projeto/      # com bzip2
-tar -cJvf projeto.tar.xz projeto/       # com xz
-
-ls -lh projeto.tar*                     # compare os tamanhos
-```
-
-Observe a diferença de tamanho e, em arquivos grandes, também de tempo. A regra geral: `gzip` é o mais rápido, `xz` comprime mais, `bzip2` fica no meio.
-
-```bash
-tar -tvf projeto.tar.gz                 # LISTA sem extrair
-
-mkdir restaurado && cd restaurado
-tar -xzvf ../projeto.tar.gz
-ls -R
-cd ..
-```
-
-Hábito de segurança: **sempre liste antes de extrair.** Um `.tar` pode conter caminhos absolutos ou espalhar dezenas de arquivos no diretório atual.
-
-**Extrair para um destino específico**
-
-```bash
-mkdir destino
-tar -xzvf projeto.tar.gz -C destino/
-ls destino
-```
-
-**Comprimir arquivos isolados**
-
-```bash
 cp projeto/docs/exemplo.log teste.log
-ls -lh teste.log
-
-gzip teste.log                  # o original é SUBSTITUÍDO por teste.log.gz
-ls -lh teste.log.gz
-gunzip teste.log.gz             # volta ao original
-ls -lh teste.log
-
-gzip -k teste.log               # -k mantém o original
-ls -lh teste.log*
-```
-
-Comportamento que surpreende: por padrão, `gzip` e `bzip2` **substituem** o arquivo original. O `-k` de *keep* preserva.
-
-**Ler comprimido sem descomprimir**
-
-```bash
+gzip teste.log
+gunzip teste.log.gz
 gzip -k teste.log
 zcat teste.log.gz | head
-zless teste.log.gz
 zgrep 100 teste.log.gz
-```
 
-Você já esbarrou nesses comandos na Semana 3, em `/usr/share/doc/tar/changelog.Debian.gz`.
-
-**O formato `zip`**
-
-```bash
 zip -r projeto.zip projeto/
-unzip -l projeto.zip            # lista
-unzip projeto.zip -d saida-zip/ # extrai em um diretório
+unzip -l projeto.zip
+unzip projeto.zip -d saida-zip/
 ```
-
-O `zip` arquiva **e** comprime num passo só, ao contrário do `tar`. É o formato de interoperabilidade com Windows; no mundo Unix, `tar.gz` é o padrão.
 
 ### Registro da sessão
 
-```bash
+**Estrutura criada**
 
 ```
+projeto/
+├── src/
+│   └── main.py
+├── docs/
+│   ├── leiame.md
+│   └── exemplo.log
+└── testes/
+    └── test_main.py
+```
+
+O `du -sh projeto` mostra o espaço ocupado: `du` de *disk usage*, `-s` de *summarize* (só o total) e `-h` de *human readable*.
+
+**Opções do `tar`**
+
+| Opção | Origem | Função |
+|---|---|---|
+| `-c` | *create* | Cria o arquivo |
+| `-x` | *extract* | Extrai |
+| `-t` | *list* | Lista sem extrair |
+| `-v` | *verbose* | Mostra os arquivos processados |
+| `-f` | *file* | Indica o nome do arquivo — vem por último |
+| `-z` | gzip | `.tar.gz` |
+| `-j` | bzip2 | `.tar.bz2` |
+| `-J` | xz | `.tar.xz` |
+| `-C` | *change directory* | Muda de diretório antes de extrair |
+
+Justificativa correta registrada para a posição do `-f`: **ele exige um argumento**, que vem imediatamente depois. Se não for a última letra do grupo, o nome do arquivo acaba consumido por outra opção.
+
+**Resultados medidos**
+
+```
+projeto.tar       60K
+projeto.tar.gz    17K
+projeto.tar.bz2    0     <- comando falhou, ver correção 41
+projeto.tar.xz    15K
+```
+
+**Comprimir arquivos isolados.** O `gzip` e o `bzip2` **substituem** o original por padrão; o `-k`, de *keep*, preserva. O `gunzip` reverte.
+
+**Ler comprimido sem descomprimir.** `zcat`, `zless` e `zgrep` são as versões do `cat`, `less` e `grep` para arquivos `.gz`.
+
+**O formato `zip`**
+
+| Comando | Função |
+|---|---|
+| `zip -r arquivo.zip pasta/` | Arquiva e comprime; `-r` por haver subdiretórios |
+| `unzip -l arquivo.zip` | Lista o conteúdo |
+| `unzip arquivo.zip -d destino/` | Extrai para um diretório específico |
+
+### Correções desta sessão
+
+**Correção 41 — o `.tar.bz2` com 0 bytes indica que o comando falhou.**
+
+```
+-rw-rw-r-- 1 davi davi   0 Sep 25 13:59 projeto.tar.bz2
+```
+
+Um arquivo comprimido de **zero bytes é impossível** — mesmo comprimindo um diretório vazio, o formato tem cabeçalho. O que aconteceu: o `tar` criou o arquivo de saída, tentou acionar o `bzip2`, não encontrou o programa, e abortou deixando o arquivo vazio.
+
+Causa mais provável: o `bzip2` não está instalado. A instalação mínima do Ubuntu Server não o inclui, ao contrário do `gzip` e do `xz`.
+
+```bash
+which bzip2                                   # sem saída = não instalado
+sudo apt install -y bzip2
+rm projeto.tar.bz2
+tar -cjvf projeto.tar.bz2 projeto/
+echo $?                                       # deve ser 0
+ls -lh projeto.tar*
+```
+
+**O aprendizado maior está em como isso passou despercebido.** O `tar -cjvf` é *verbose*: ele lista os arquivos na tela **antes** de tentar comprimir. A saída parecia normal, e a falha só apareceu no tamanho do resultado.
+
+É o cenário do código de saída, visto na Sessão 1:
+
+```bash
+tar -cjvf teste.tar.bz2 projeto/
+echo $?        # diferente de zero denuncia a falha na hora
+```
+
+Regra para o caderno: **saída na tela não é prova de sucesso.** Quando um comando produz arquivo, confira o `$?` ou o tamanho do resultado.
+
+**Correção 42 — a ordem de compressão está invertida.**
+
+A anotação registra o `bzip2` comprimindo melhor que o `xz`. É o contrário — e os próprios números provam: o `xz` gerou **15K** contra **17K** do `gzip`, e o `bzip2` nem chegou a rodar.
+
+| Formato | Velocidade | Taxa de compressão | Resultado medido |
+|---|---|---|---|
+| `gzip` | Mais rápido | Menor | 17K |
+| `bzip2` | Intermediário | Intermediária | *(não executou)* |
+| `xz` | Mais lento | **Maior** | **15K** |
+
+Regra a fixar: **quanto mais lento, mais comprime.** O tempo extra é gasto procurando padrões que os algoritmos rápidos ignoram. Por isso o `gzip` domina em transferência de rede, onde velocidade importa, e o `xz` domina em distribuição de pacotes, comprimidos uma vez e baixados milhões de vezes.
+
+Depois de instalar o `bzip2`, refaça os três e compare os tamanhos reais.
 
 ### O que aprendi
 
-- Diferença entre arquivar e comprimir:
-- Por que o `-f` vem por último:
-- Comando para listar sem extrair:
-- O que acontece com o original ao rodar `gzip arquivo`:
-- Diferença entre `tar` e `zip`:
+- **Arquivar e comprimir:** arquivar agrupa vários arquivos em um só sem reduzir o tamanho; comprimir reduz. O `tar` arquiva, `gzip`/`bzip2`/`xz` comprimem, o `zip` faz as duas coisas.
+- **Por que o `-f` vem por último:** ele exige um argumento, o nome do arquivo, que vem logo em seguida.
+- **Listar sem extrair:** `tar -tvf arquivo.tar.gz`.
+- **O que acontece com o original ao rodar `gzip arquivo`:** ele é **substituído** pelo `arquivo.gz` e deixa de existir. O `-k`, de *keep*, preserva.
+- **`tar` e `zip`:** o `tar` foi criado só para arquivar, precisando de flag para acionar um compressor; o `zip` arquiva e comprime em um passo.
 
 ---
 
@@ -1169,13 +728,10 @@ O `zip` arquiva **e** comprime num passo só, ao contrário do `tar`. É o forma
 
 ### Laboratório — `find`
 
-O `find` percorre o sistema de arquivos em tempo real, ao contrário do `locate`.
-
 ```bash
 cd ~/lab4
 
 find . -name "*.log"
-find . -name "*.LOG"                    # não encontra: é case sensitive
 find . -iname "*.LOG"                   # -i ignora maiúsculas
 
 find . -type f                          # só arquivos
@@ -1193,8 +749,6 @@ find /etc -name "*.conf" 2>/dev/null | head
 find / -name "hostname" 2>/dev/null
 ```
 
-O `2>/dev/null` deixa de ser curiosidade aqui: buscando a partir de `/`, você recebe centenas de `Permission denied` que poluem o resultado. Descartá-los é prática padrão.
-
 **Combinando condições**
 
 ```bash
@@ -1203,14 +757,14 @@ find . -type f ! -name "*.log"          # o ! nega
 find . -type f -name "*.py" -o -name "*.md"     # -o é OU
 ```
 
-**Executando ações sobre o que foi encontrado**
+**Executando ações**
 
 ```bash
 find . -name "*.log" -exec ls -lh {} \;
 find . -name "*.log" -exec wc -l {} \;
 ```
 
-O `{}` é substituído pelo caminho de cada resultado, e o `\;` encerra o comando. A barra invertida existe para impedir que o shell consuma o ponto e vírgula antes de o `find` recebê-lo.
+O `{}` é substituído pelo caminho de cada resultado, e o `\;` encerra o comando. A barra invertida impede que o shell consuma o ponto e vírgula.
 
 **`find` e `locate` lado a lado**
 
@@ -1221,33 +775,14 @@ O `{}` é substituído pelo caminho de cada resultado, e o `\;` encerra o comand
 | Atualidade | Sempre atual | Só o que existia no último `updatedb` |
 | Filtros | Tamanho, data, tipo, permissão, dono | Apenas o nome |
 
-### Bandit nível 6 para 7
-
-O desafio pede um arquivo em algum lugar do servidor, com dono, grupo e tamanho específicos. É `find` a partir de `/`, com três filtros combinados e o descarte dos erros de permissão.
-
-```bash
-ssh bandit6@bandit.labs.overthewire.org -p 2220
-man find        # procure -user e -group
-```
-
-**Concluído em 21/09, antes da sessão prevista.**
-
-```bash
-find / -user bandit7 -group bandit6 -size 33c
-cat /var/lib/dpkg/info/bandit7.password
-```
-
-Os três filtros combinados estavam certos.
-
-**Correção 31 — as linhas de `Permission denied` não eram arquivos encontrados.** A anotação diz que *"surgiram diversos arquivos, mas quase todos com permission denied, com exceção de um"*. Na verdade o `find` encontrou **um único arquivo**. As centenas de outras linhas eram **mensagens de erro** sobre diretórios em que ele não teve permissão de entrar — saíram pelo `stderr`, não pelo `stdout`.
-
-É exatamente o conteúdo da Sessão 1. Com o redirecionamento, a saída fica limpa:
+### Bandit nível 6 para 7 — concluído em 21/09
 
 ```bash
 find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+cat /var/lib/dpkg/info/bandit7.password
 ```
 
-Uma linha só, o resultado. Vale refazer o comando assim para ver a diferença com os próprios olhos — é a aplicação mais comum do `2>/dev/null` no dia a dia.
+**Correção 31 — as linhas de `Permission denied` não eram arquivos encontrados.** O `find` encontrou **um único arquivo**. As centenas de outras linhas eram mensagens de erro sobre diretórios sem permissão de entrada — saíram pelo `stderr`. Com `2>/dev/null` a saída fica limpa.
 
 ### Desafio integrador
 
@@ -1336,7 +871,7 @@ Responda sem consultar. Confira só ao final.
 4. Envia a saída padrão para o arquivo e, em seguida, redireciona o erro para o mesmo destino da saída padrão. Resultado: os dois fluxos no mesmo arquivo.
 5. `tee`.
 6. Porque o `uniq` só elimina duplicatas **adjacentes**. Sem ordenar antes, repetições separadas passam.
-7. Sem `-n`, o `sort` compara caractere por caractere, em ordem alfabética — e `100` vem antes de `25`. Com `-n`, compara valor numérico.
+7. Sem `-n`, o `sort` compara caractere por caractere — e `100` vem antes de `25`. Com `-n`, compara valor numérico. Ambos em ordem crescente.
 8. `-t` define o separador e `-k` define a coluna.
 9. `cut -d':' -f1 /etc/passwd | wc -l`, ou simplesmente `wc -l < /etc/passwd`.
 10. Porque ele lê exclusivamente da entrada padrão. Precisa de um pipe ou de `<`.
@@ -1344,8 +879,8 @@ Responda sem consultar. Confira só ao final.
 12. No globbing, qualquer sequência de caracteres. Na regex, zero ou mais repetições **do caractere anterior**.
 13. Fora dos colchetes, ancora o início da linha. Dentro dos colchetes, nega o conjunto.
 14. `grep -v '^#' arquivo | grep -v '^$'`
-15. Para `|`, `?`, `+`, `{}` e agrupamento com parênteses — os metacaracteres da regex estendida.
-16. Arquivar junta vários arquivos em um só, sem reduzir tamanho. Comprimir reduz o tamanho de um arquivo. O `tar` arquiva; `gzip`, `bzip2` e `xz` comprimem.
+15. Para `|`, `?`, `+`, `{}` e agrupamento com parênteses.
+16. Arquivar junta vários arquivos em um só, sem reduzir tamanho. Comprimir reduz o tamanho de um arquivo.
 17. `-c` cria, `-x` extrai, `-t` lista, `-v` mostra os arquivos processados, `-f` indica o nome do arquivo.
 18. Porque o nome do arquivo é o argumento que vem imediatamente após o `-f`.
 19. O original é substituído pelo `.gz`. A opção `-k`, de *keep*, preserva o original.
@@ -1367,13 +902,11 @@ cd ~ && rm -rf lab4
 
 ## Simulado diagnóstico — pendência da Semana 3
 
-Encaixe no sábado ou domingo. Uma hora, sem interrupção.
+Uma hora, sem interrupção. 40 questões, cronometrado, sem consultar nada. Use os simulados do Jason Dion.
 
-**Formato:** 40 questões, 60 minutos, cronometrado, sem consultar nada. Use os simulados do Jason Dion.
+**Expectativa:** entre 55% e 70%. Você cobriu cerca de 60% do conteúdo e ainda não estudou o Tópico 5, que vale 7 pontos.
 
-**Expectativa:** algo entre 55% e 70%. Você cobriu cerca de 60% do conteúdo até aqui e ainda não estudou o Tópico 5, que vale 7 pontos. Uma nota nessa faixa é o resultado esperado, não um problema.
-
-**O que importa não é a nota, é onde os erros se concentram.** Registre por tópico:
+**O que importa não é a nota, é onde os erros se concentram.**
 
 | Tópico | Peso | Acertos | Erros |
 |---|---|---|---|
@@ -1392,13 +925,15 @@ Encaixe no sábado ou domingo. Uma hora, sem interrupção.
 
 ## Checklist da semana
 
-- [ ] Preparação do ambiente (`lab4`, `funcionarios.csv`, `sistema.log`)
+- [x] Preparação do ambiente (`lab4`, `funcionarios.csv`, `sistema.log`)
 - [x] Sessão 1 — visualização e redirecionamento (21/09)
 - [x] Sessão 2 — pipes e filtros (22 e 23/09)
 - [x] Sessão 3 — `grep` e expressões regulares (24/09)
-- [ ] Sessão 4 — compactação e arquivamento
+- [x] Sessão 4 — compactação e arquivamento (25/09)
 - [ ] Sessão 5 — `find`, desafio integrador e autoavaliação
 - [x] Bandit níveis 6, 7 e 8 — todos concluídos (21 e 23/09)
+- [x] Curso do Muller — retomado em 23/09, aula 26 de 72
+- [ ] Instalar o `bzip2` e refazer a comparação de compressão
 - [ ] Desafio integrador — sete pipelines
 - [ ] Autoavaliação com 16 acertos ou mais
 - [ ] Simulado diagnóstico de 40 questões
@@ -1416,10 +951,10 @@ Redirecionar   >  >>  <  2>  &>  2>&1  /dev/null  tee  tee -a
 Heredoc        cat > arq << 'EOF' ... EOF
 Contar         wc  wc -l  wc -w  wc -c  wc -m
 Ordenar        sort  -r  -n  -u  -t','  -k4
-Duplicatas     uniq  uniq -c  uniq -u        (exige entrada ordenada)
-Colunas        cut -d',' -f1,3   cut -c1-5
+Duplicatas     uniq  uniq -c  uniq -u  uniq -d     (exige entrada ordenada)
+Colunas        cut -d',' -f1,3   cut -d',' -f1-3   cut -c1-5
 Substituir     tr ':' '\n'   tr 'a-z' 'A-Z'   tr -d ','
-Buscar texto   grep  -i  -c  -n  -v  -w  -r  -l  -E
+Buscar texto   grep  -i  -c  -n  -v  -w  -r  -l  -L  -o  -E
 Regex          .  [abc]  [a-z]  [^abc]  *  ^inicio  fim$     (-E para | ? + {})
 Arquivar       tar -cvf  -xvf  -tvf  -czvf  -cjvf  -cJvf  -C destino
 Comprimir      gzip  gunzip  gzip -k  bzip2  xz  zcat  zless  zgrep
