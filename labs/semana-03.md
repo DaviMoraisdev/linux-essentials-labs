@@ -1110,7 +1110,7 @@ Registro:
 - [x] Sessão 5 — autoavaliação da Semana 3 (19/09)
 - [x] Autoavaliação da Semana 2 — 14 de 15
 - [x] Autoavaliação da Semana 3 — 20 de 20
-- [ ] Bandit níveis 6 a 9 — reprogramados para a Semana 4, onde o conteúdo casa
+- [x] Bandit níveis 6 a 9 — reprogramados para a Semana 4, onde o conteúdo casa
 - [X] Cards do Notion atualizados
 
 ---
