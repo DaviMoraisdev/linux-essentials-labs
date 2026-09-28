@@ -18,7 +18,7 @@
 | **Semana 1 — Tópico 1 (peso 7)** | ✅ 05/09 — comunidade, licenças, distros, FHS |
 | **Semana 2 — Tópico 2 p1** | ✅ 13/09 — objetivos 2.1 e 2.2 |
 | **Semana 3 — Tópico 2 p2** | ✅ 19/09 — objetivos 2.3 e 2.4 |
-| **Semana 4 — Tópico 3 p1** | 🔄 fecha em 27/09 — objetivos 3.1 e 3.2 |
+| **Semana 4 — Tópico 3 p1** | ✅ 28/09 — objetivos 3.1 e 3.2; autoavaliação e simulado transferidos |
 | **Tópico 1 (peso 7)** | ✅ completo |
 | **Tópico 2 (peso 9)** | ✅ completo — os quatro objetivos |
 | **Tópico 3 (peso 9)** | 🔄 3.1 e 3.2 feitos; falta 3.3 |
@@ -32,13 +32,13 @@
 
 | Item | Prazo |
 |---|---|
-| **Simulado diagnóstico** — 40 questões, cronometrado | **Semana 5** — 4 semanas em atraso |
-| Voucher da prova | Semana 5 |
-| Sessão 5 da Semana 4 — `find` e desafio integrador | 27/09 |
+| **Simulado diagnóstico** — 40 questões, cronometrado | **domingo 04/10** — escrito, em `praticas/simulado-01-diagnostico.md` |
+| **Autoavaliação da Semana 4** — 20 questões | **terça 29/09** |
+| Voucher da prova | terça 29/09 |
 | Instalar `bzip2` e refazer a comparação de compressão | Semana 5 |
 | `.wslconfig` limitando WSL2 a 3 GB | quando houver folga |
 | Teste de restauração do snapshot | quando houver folga |
-| Limpeza: `rm 'sudo apt upgrade -y'` na home | 27/09 |
+| Limpeza: `rm 'sudo apt upgrade -y'` na home | Semana 5 |
 
 ### Cobertura estimada por tópico
 
@@ -178,9 +178,19 @@ Host lab
 | Tópicos 4 e 5 | **1.25x** | Conteúdo novo, mas com laboratório logo em seguida |
 
 ### Trilha de reforço
-**Jason Dion — LPI Linux Essentials 010-160 (Udemy, EN)**. Usar apenas na Fase 2:
-1. Os **simulados**, que são o principal valor do curso.
-2. Uma passada rápida em 1.5x para terminologia em inglês, se sobrar tempo.
+
+**Jason Dion — LPI Linux Essentials 010-160 (Udemy, EN).** Fora do plano. Os simulados eram o principal valor do curso, e eles estão atrás da plataforma paga, sem acesso. Se o curso for adquirido em algum momento, o uso indicado é só o banco de simulados; caso contrário, nada se perde — o substituto gratuito é melhor para a Fase 2, porque os quizzes do NDG são por módulo e permitem medir tópico por tópico.
+
+### Simulados e bancos de questões
+
+| Fonte | Custo | Para quê |
+|---|---|---|
+| **`praticas/` deste repositório** | — | Simulados próprios, com peso do exame e gabarito comentado. As questões atacam os erros já registrados nos cadernos |
+| **NDG Linux Essentials** (Cisco Networking Academy) | Gratuito | Quizzes por módulo e exame final de prática. A melhor fonte externa gratuita |
+| **LPI Learning Materials** (PDF no Projeto) | Gratuito | Questões de revisão ao final de cada objetivo |
+| **EDUSUM** | Gratuito | Amostra de questões no estilo LPI |
+
+Sites de dumps — ITExams, Marks4Sure, Pass4Success e semelhantes — estão fora do plano: violam o termo de confidencialidade assinado antes da prova, os gabaritos são reconstruídos de memória por terceiros e o método é o oposto do que vem funcionando aqui. Detalhes em `praticas/fontes-de-simulados.md`.
 
 ### Recursos complementares
 
@@ -262,22 +272,45 @@ A Fase 1 termina em **18/10**, com o curso fechado e todos os cinco tópicos ao 
 
 ### Semana 5 — 28/09 a 04/10 · Objetivo 3.3, shell script
 
-**Curso:** aulas 26 a 41, aproximadamente. Reduzir para **1x** ao chegar no shell script.
+**Calendário revisado em 28/09.** A segunda-feira foi consumida pela Sessão 5 da Semana 4, adiada em três dias. Os laboratórios saem de terça e sexta para **sexta e sábado**, e o simulado fecha o domingo. A partir da Semana 6 o ritmo volta ao padrão.
 
-**Prática 1 — Shell script**
+| Dia | Atividade | Tempo |
+|---|---|---|
+| Seg 28 | Sessão 5 da Semana 4 — `find` e desafio integrador | ✅ |
+| Ter 29 | Autoavaliação da Semana 4 · compra do voucher · curso, aulas 26 a 31 | 1h10 |
+| Qua 30 | Curso, aulas 32 a 37 | 45 min |
+| Qui 01/10 | Curso, aulas 38 a 43 | 45 min |
+| Sex 02 | Laboratório 1 — fundamentos de shell script | 1h |
+| Sáb 03 | Laboratório 2 — os quatro scripts | 1h |
+| Dom 04 | Simulado diagnóstico · apuração · commits | 1h35 |
+
+**Curso:** aulas 26 a 43, aproximadamente 18 aulas em três dias. Reduzir para **1x** ao chegar no shell script.
+
+**Justificativa da divisão em duas práticas.** O objetivo 3.3 tem peso 4, o maior individual do exame, e cobre shebang, variáveis, argumentos, condicionais, loops e códigos de saída. Não cabe em uma sessão com os quatro scripts no fim. A sexta cobre os fundamentos; o sábado escreve o código.
+
+**Prática 1 — Fundamentos de shell script (sexta 02/10)**
 
 - Shebang `#!/bin/bash`, `chmod +x`, `./script.sh` versus `bash script.sh`
 - Variáveis, `$1 $2 $@ $#`, `read`, aspas
 - `if/elif/else`, `test` e `[ ]`, comparadores `-eq -ne -lt -gt -f -d -z`
 - Loops `for` e `while`, `seq`
 - Códigos de saída: `$?`, `exit 0`, encadeamento `&&` e `||`
-- **Escrever 4 scripts em `scripts/`:** backup com data no nome; contar arquivos por extensão; verificar se um usuário existe; ler um arquivo linha a linha e filtrar
+**Prática 2 — Os quatro scripts (sábado 03/10)**
 
-> Este é o objetivo de **peso 4** — o maior individual do exame. Você já programa, então a sintaxe vem rápido; o que exige atenção é a diferença entre o modelo mental do shell e o de uma linguagem estruturada.
+Escrever em `scripts/`, um por vez, testando cada um antes de passar ao seguinte:
 
-**Prática 2 — Simulado diagnóstico**
+| Script | Exercita |
+|---|---|
+| Backup com a data no nome | Substituição de comando, `tar`, variáveis |
+| Contar arquivos por extensão | `for`, `find`, `wc`, pipeline dentro de script |
+| Verificar se um usuário existe | `if`, `grep -q`, `$?`, `exit` com código |
+| Ler um arquivo linha a linha e filtrar | `while read`, redirecionamento de entrada |
 
-40 questões, 60 minutos, cronometrado, sem consultar nada. Use os simulados do Jason Dion.
+> Você já programa, então a sintaxe vem rápido; o que exige atenção é a diferença entre o modelo mental do shell e o de uma linguagem estruturada. Três pontos concretos: espaços dentro de `[ ]` são obrigatórios, `=` compara texto e `-eq` compara número, e uma variável sem aspas se parte em palavras.
+
+**Simulado diagnóstico (domingo 04/10)**
+
+40 questões, 60 minutos, cronometrado, sem consultar nada. O simulado está escrito em `praticas/simulado-01-diagnostico.md`, com a distribuição de pesos do exame e gabarito comentado. Fontes gratuitas complementares em `praticas/fontes-de-simulados.md` — a principal é o NDG Linux Essentials da Cisco Networking Academy, cujos quizzes e exame final de prática são gratuitos.
 
 Esta é a pendência mais antiga do plano, com quatro semanas de atraso. Ela ocupa o lugar de uma prática porque **é** prática — e porque o resultado determina no que as práticas das Semanas 6 e 7 devem insistir.
 
