@@ -724,7 +724,9 @@ Depois de instalar o `bzip2`, refaça os três e compare os tamanhos reais.
 
 ---
 
-## Sessão 5 — Sexta 25/09 — `find`, desafio integrador e autoavaliação
+## Sessão 5 — `find`, desafio integrador e autoavaliação — REALIZADA EM 28/09, PARCIALMENTE
+
+Prevista para sexta 25/09, executada na segunda 28/09. Laboratório de `find` e desafio integrador concluídos; **autoavaliação pendente**.
 
 ### Laboratório — `find`
 
@@ -774,6 +776,69 @@ O `{}` é substituído pelo caminho de cada resultado, e o `\;` encerra o comand
 | Velocidade | Lenta | Muito rápida |
 | Atualidade | Sempre atual | Só o que existia no último `updatedb` |
 | Filtros | Tamanho, data, tipo, permissão, dono | Apenas o nome |
+
+### Registro da sessão
+
+**A anatomia do `find`.** Três partes, sempre na mesma ordem:
+
+```
+find     ONDE     O QUE FILTRAR     O QUE FAZER
+find       .        -name "*.log"     -exec wc -l {} \;
+```
+
+O `.` indica o ponto de partida, e a busca desce por todos os subdiretórios a partir dele. Observação registrada corretamente: **as aspas em `"*.log"` impedem que o shell expanda o asterisco antes de o `find` recebê-lo.** Sem elas, o shell substituiria `*.log` pelos nomes do diretório atual e o `find` receberia uma lista de arquivos em vez de um padrão. É a mesma lógica da Sessão 1 — o shell trabalha antes do comando.
+
+**Filtros por tipo**
+
+| Filtro | Seleciona |
+|---|---|
+| `-type f` | Arquivos comuns |
+| `-type d` | Diretórios |
+| `-type l` | Links simbólicos |
+
+**Filtros por nome**
+
+| Filtro | Comportamento |
+|---|---|
+| `-name` | Diferencia maiúsculas de minúsculas |
+| `-iname` | Ignora a diferença |
+
+Atenção à grafia: a opção é `-iname`, uma palavra. Não existe um `-i` isolado no `find`, ao contrário do `grep`.
+
+**Filtros por tamanho e por tempo**
+
+| Sinal | Significado |
+|---|---|
+| `+` | Maior que |
+| `-` | Menor que |
+| *(sem sinal)* | Exatamente igual |
+
+| Unidade | Vale |
+|---|---|
+| `c` | Bytes |
+| `k` | Blocos de 1024 bytes |
+| `M` | Blocos de 1 MiB |
+
+| Filtro | Janela |
+|---|---|
+| `-mtime -1` | Modificado nas últimas 24 horas |
+| `-mmin -30` | Modificado nos últimos 30 minutos |
+
+A grafia correta é `-mmin`, com dois `m` — o primeiro de *modification*, o segundo de *minutes*.
+
+**Observação — por que o `-1k` só encontra arquivos vazios.**
+
+A anotação chegou à conclusão certa, mas vale saber o mecanismo. Quando a unidade é `k`, o `find` **arredonda o tamanho do arquivo para cima**, para o próximo bloco inteiro, e só depois compara:
+
+| Arquivo | Arredondado para | `-size -1k`? |
+|---|---|---|
+| 0 bytes | 0 blocos | Sim — 0 é menor que 1 |
+| 1 byte | 1 bloco | Não |
+| 500 bytes | 1 bloco | Não |
+| 1024 bytes | 1 bloco | Não |
+| 1025 bytes | 2 blocos | Não |
+
+É por isso que `-size -1k` devolve apenas os arquivos de tamanho zero. E é por isso que a forma confiável de buscar por tamanho exato é em bytes: `-size -1024c`. A conclusão da anotação está correta.
 
 ### Bandit nível 6 para 7 — concluído em 21/09
 
@@ -826,7 +891,132 @@ Há mais de uma resposta certa para quase todos. Se a sua chegou ao mesmo result
 
 </details>
 
-### Autoavaliação da Semana 4
+### Resultado do desafio integrador — 28/09
+
+**Seis dos sete pipelines resolvidos sem consulta.** O sétimo foi resolvido com o gabarito, e a razão disso é tratada na observação ao final desta seção.
+
+| # | Situação | Observação |
+|---|---|---|
+| 1 | Correto | Igual ao gabarito |
+| 2 | Correto | `grep ERROR ... \| wc -l` — equivalente ao `grep -c` |
+| 3 | Correto | |
+| 4 | Correto | |
+| 5 | Correto | Explicação precisa de `-t`, `-k4`, `-rn` e `-f1,4` |
+| 6 | Correto | |
+| 7 | Consultado | Ver observação sobre parsing do `ls` |
+
+O pipeline 2 merece registro: a resposta própria foi `grep ERROR sistema.log | wc -l` e o gabarito traz `grep -c ERROR sistema.log`. **As duas estão certas.** A segunda é mais curta porque o `grep` já sabe contar; a primeira é mais geral, porque funciona com qualquer comando que produza linhas. Saber que existem as duas é mais útil que decorar uma.
+
+### Correções desta sessão
+
+**Correção 43 — `-size -1033c` não é "exatamente 1033 bytes".**
+
+O comando do laboratório era `find . -size 1033c`, sem sinal. A anotação escreveu `-1033c`, e o sinal muda o significado por completo:
+
+| Forma | Significa |
+|---|---|
+| `-size 1033c` | Exatamente 1033 bytes |
+| `-size -1033c` | Menos de 1033 bytes |
+| `-size +1033c` | Mais de 1033 bytes |
+
+Um caractere a mais, e a busca passa de "um arquivo específico" para "quase todos os arquivos do diretório".
+
+**Correção 44 — o `-o` não distribui os filtros anteriores. Esta é a correção importante da sessão.**
+
+A anotação diz que `find . -type f -name "*.py" -o -name "*.md"` são "duas buscas: `f -name "*.py"` e `f -name "*.md"`". Não são. O `find` tem um **e** implícito entre filtros vizinhos, e esse **e** tem precedência maior que o `-o`. O comando é lido assim:
+
+```
+( -type f  E  -name "*.py" )   OU   ( -name "*.md" )
+```
+
+O `-type f` pertence apenas ao primeiro grupo. O segundo aceita **qualquer tipo** — inclusive um diretório chamado `notas.md`, ou um link simbólico. A forma correta agrupa explicitamente:
+
+```bash
+find . -type f \( -name "*.py" -o -name "*.md" \)
+```
+
+As barras invertidas existem porque `(` e `)` são caracteres especiais do shell; sem elas o shell tentaria interpretá-los antes de entregá-los ao `find`. Mesmo motivo das aspas em `"*.log"` e da barra no `\;`.
+
+Regra para o caderno: **sempre que aparecer `-o`, use parênteses.** Não custa nada quando são dispensáveis, e evita o erro silencioso quando não são.
+
+**Correção 45 — `/etc/passwd` é um arquivo, e o último `sort -rn` ordena pela contagem, não por bytes.**
+
+Duas imprecisões na explicação do pipeline 1:
+
+```bash
+cut -d':' -f7 /etc/passwd | sort | uniq -c | sort -rn | head -5
+```
+
+Primeira: `/etc/passwd` é um **arquivo de texto**, não um diretório. É um detalhe de vocabulário, mas confundir os dois em uma questão de prova custa a questão.
+
+Segunda: o `sort -rn` final não tem relação com bytes. Ele ordena pelo **número que o `uniq -c` colocou no início de cada linha** — a contagem de repetições. A cadeia inteira faz:
+
+| Etapa | Produz |
+|---|---|
+| `cut -d':' -f7` | Um shell por linha, na ordem do arquivo |
+| `sort` | Os mesmos shells, agrupados |
+| `uniq -c` | `contagem shell` — uma linha por shell distinto |
+| `sort -rn` | As mesmas linhas, da maior contagem para a menor |
+| `head -5` | As cinco primeiras |
+
+O `-n` do segundo `sort` é obrigatório: sem ele, `10` viria antes de `2`, como na Correção 32.
+
+**Correção 46 — no `-exec`, o `wc -l` conta as linhas dentro de cada arquivo.**
+
+A anotação diz que `find . -name "*.log" -exec wc -l {} \;` "lista a quantidade de linhas que contém esse nome". Não é isso. O `find` encontra os arquivos e, **para cada um**, executa `wc -l <aquele arquivo>`:
+
+```
+./sistema.log          →  wc -l ./sistema.log          →  8 ./sistema.log
+./projeto/docs/exemplo.log → wc -l ./projeto/docs/exemplo.log → 5000 ...
+```
+
+O número é a quantidade de linhas **dentro** do arquivo. O nome não entra na contagem.
+
+**Correção 47 — o `tail -n +2` descarta o cabeçalho, e o `sort -u` não é o `uniq`.**
+
+A frase "o `tail` exige começar na segunda linha do cabeçalho" inverte a lógica. O `tail -n +2` **começa na linha 2**, ou seja, **joga fora a linha 1**, que é o cabeçalho. Nada é exigido; uma linha é descartada.
+
+Sobre a segunda parte: o comando escrito foi `sort -u`, explicado como `uniq`. O resultado é o mesmo neste caso, mas os dois não são equivalentes:
+
+| Comando | Faz |
+|---|---|
+| `sort -u` | Ordena **e** remove duplicatas, em uma passada |
+| `uniq` | Apenas colapsa duplicatas **adjacentes** — exige entrada já ordenada |
+
+`sort -u` resolve a questão sozinho; `uniq` sozinho não resolveria.
+
+**Correção 48 — o `2>/dev/null` não vem "após o pipe".**
+
+Na explicação do pipeline 6:
+
+```bash
+find /etc -name "*.conf" 2>/dev/null | wc -l
+```
+
+O `2>/dev/null` pertence ao `find` e é aplicado **antes** do pipe — na linha escrita ele aparece à esquerda do `|`, e na execução ele redireciona o fluxo 2 do `find` antes de qualquer coisa ser enviada adiante.
+
+Isso conecta com a observação da Sessão 2: **o `stderr` não passa pelo pipe.** Se o `2>/dev/null` fosse dispensável, os erros apareceriam na tela de qualquer forma — nunca na contagem do `wc -l`. O redirecionamento existe para limpar a tela, não para corrigir o número.
+
+**Observação — por que o pipeline 7 não saiu, e por que isso não é uma falha de aprendizado.**
+
+```bash
+ls -lS /usr/bin | head -11 | tail -10 | tr -s ' ' | cut -d' ' -f5,9
+```
+
+A anotação registra honestamente que este foi consultado. Vale saber a razão: **a saída do `ls` não foi projetada para ser processada por outro programa.** As colunas são alinhadas por espaços de largura variável, nomes com espaço quebram o `cut`, e a linha `total` no início é um artefato do formato. O `tr -s ' '` e o par `head -11 | tail -10` são remendos para contornar isso — idiomas que se aprendem por exposição, não por raciocínio.
+
+Entre praticantes de Unix há uma regra conhecida: *não analise a saída do `ls`*. A ferramenta certa para listar arquivos por tamanho de forma processável é outra:
+
+```bash
+find /usr/bin -maxdepth 1 -type f -printf '%s %f\n' | sort -rn | head -10
+du -ah /usr/bin --max-depth=1 | sort -rh | head -11
+```
+
+O `-printf` do `find` produz exatamente os campos pedidos, separados por um espaço só. Nenhum remendo.
+
+Nada disso está no escopo do Essentials, e o pipeline do gabarito é o que uma questão de prova cobraria. Mas o registro fica: **não ter conseguido montar esse pipeline sozinho não indica lacuna em `cut`, `tr` ou `head` — indica falta de exposição a uma gambiarra histórica.** Os seis anteriores, que saíram sem consulta, são os que medem o entendimento real.
+
+### Autoavaliação da Semana 4 — PENDENTE
 
 Responda sem consultar. Confira só ao final.
 
@@ -902,7 +1092,9 @@ cd ~ && rm -rf lab4
 
 ## Simulado diagnóstico — pendência da Semana 3
 
-Uma hora, sem interrupção. 40 questões, cronometrado, sem consultar nada. Use os simulados do Jason Dion.
+Uma hora, sem interrupção. 40 questões, cronometrado, sem consultar nada.
+
+O simulado está em `praticas/simulado-01-diagnostico.md`, fora de `labs/`. As fontes gratuitas adicionais estão em `praticas/fontes-de-simulados.md`.
 
 **Expectativa:** entre 55% e 70%. Você cobriu cerca de 60% do conteúdo e ainda não estudou o Tópico 5, que vale 7 pontos.
 
@@ -930,15 +1122,33 @@ Uma hora, sem interrupção. 40 questões, cronometrado, sem consultar nada. Use
 - [x] Sessão 2 — pipes e filtros (22 e 23/09)
 - [x] Sessão 3 — `grep` e expressões regulares (24/09)
 - [x] Sessão 4 — compactação e arquivamento (25/09)
-- [ ] Sessão 5 — `find`, desafio integrador e autoavaliação
+- [x] Sessão 5 — `find` e desafio integrador (28/09)
 - [x] Bandit níveis 6, 7 e 8 — todos concluídos (21 e 23/09)
 - [x] Curso do Muller — retomado em 23/09, aula 26 de 72
+- [x] Desafio integrador — sete pipelines (seis sem consulta)
 - [ ] Instalar o `bzip2` e refazer a comparação de compressão
-- [ ] Desafio integrador — sete pipelines
-- [ ] Autoavaliação com 16 acertos ou mais
-- [ ] Simulado diagnóstico de 40 questões
+- [ ] Autoavaliação com 16 acertos ou mais — **transferida para a Semana 5**
+- [ ] Simulado diagnóstico de 40 questões — **transferido para a Semana 5**
 - [ ] Pendências da Semana 3: arquivos ocultos e limpeza da home
 - [ ] Commits ao fim de cada sessão
+
+---
+
+## Fechamento da Semana 4
+
+**Situação: fechada com duas pendências transferidas.**
+
+As cinco sessões de laboratório foram executadas, todas com registro e correção. A semana produziu **seis correções** (43 a 48), somando **48 correções em quatro semanas**. A mais relevante de todas foi a 44 — a precedência do `-o` no `find` —, porque é o tipo de erro que não gera mensagem: o comando roda, devolve resultado, e o resultado está errado.
+
+O atraso de três dias em relação ao prazo combinado não alterou o conteúdo coberto. Alterou o calendário: a autoavaliação e o simulado entram na Semana 5, que já carrega o objetivo 3.3.
+
+| Item | Previsto | Realizado |
+|---|---|---|
+| Sessões de laboratório | 5 | 5 |
+| Fechamento | 27/09 | 28/09, parcial |
+| Autoavaliação | 27/09 | transferida |
+| Simulado diagnóstico | 27/09 | transferido |
+| Correções registradas | — | 6 (43 a 48) |
 
 ---
 
@@ -959,5 +1169,7 @@ Regex          .  [abc]  [a-z]  [^abc]  *  ^inicio  fim$     (-E para | ? + {})
 Arquivar       tar -cvf  -xvf  -tvf  -czvf  -cjvf  -cJvf  -C destino
 Comprimir      gzip  gunzip  gzip -k  bzip2  xz  zcat  zless  zgrep
 Zip            zip -r  unzip  unzip -l  unzip -d
-Buscar arquivo find . -name -iname -type -size -mtime -user ! -o -exec {} \;
+Buscar arquivo find . -name -iname -type f|d|l -size +1k|-1024c -mtime -1 -mmin -30
+               find . -user -group  ! nega  -exec cmd {} \;
+               find . -type f \( -name "*.py" -o -name "*.md" \)   <- parenteses com -o
 ```
