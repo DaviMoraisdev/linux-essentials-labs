@@ -1309,11 +1309,11 @@ O simulado está em `praticas/simulado-01-diagnostico.md`, fora de `labs/`. As f
 - [x] Bandit níveis 6, 7 e 8 — todos concluídos (21 e 23/09)
 - [x] Curso do Muller — retomado em 23/09, aula 26 de 72
 - [x] Desafio integrador — sete pipelines (seis sem consulta)
-- [ ] Instalar o `bzip2` e refazer a comparação de compressão
+- [x] Instalar o `bzip2` e refazer a comparação de compressão
 - [x] Autoavaliação realizada em 29/09 — **14 de 20, abaixo da meta de 16**
 - [ ] Simulado diagnóstico de 40 questões — **transferido para a Semana 5**
-- [ ] Pendências da Semana 3: arquivos ocultos e limpeza da home
-- [ ] Commits ao fim de cada sessão
+- [x] Pendências da Semana 3: arquivos ocultos e limpeza da home
+- [x] Commits ao fim de cada sessão
 
 ---
 
