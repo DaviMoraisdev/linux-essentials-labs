@@ -50,9 +50,9 @@ sudo poweroff
 
 ## Pendências herdadas da Semana 3
 
-- [x] Registrar as observações sobre **arquivos ocultos** (Sessão 3 da Semana 3)
+- [ ] Registrar as observações sobre **arquivos ocultos** (Sessão 3 da Semana 3)
 - [ ] **Simulado diagnóstico completo** — 40 questões, cronometrado, sem consulta. Ver seção ao final
-- [x] Remover o arquivo acidental da home: `rm 'sudo apt upgrade -y'`
+- [ ] Remover o arquivo acidental da home: `rm 'sudo apt upgrade -y'`
 
 ---
 
@@ -1016,7 +1016,7 @@ O `-printf` do `find` produz exatamente os campos pedidos, separados por um espa
 
 Nada disso está no escopo do Essentials, e o pipeline do gabarito é o que uma questão de prova cobraria. Mas o registro fica: **não ter conseguido montar esse pipeline sozinho não indica lacuna em `cut`, `tr` ou `head` — indica falta de exposição a uma gambiarra histórica.** Os seis anteriores, que saíram sem consulta, são os que medem o entendimento real.
 
-### Autoavaliação da Semana 4 — PENDENTE
+### Autoavaliação da Semana 4 — REALIZADA EM 29/09 — 14 de 20
 
 Responda sem consultar. Confira só ao final.
 
@@ -1078,9 +1078,192 @@ Responda sem consultar. Confira só ao final.
 
 </details>
 
-Nota: ___ de 20
+Nota: **14 de 20.** Meta: 16. **Abaixo da meta.**
 
-Meta: 16 de 20.
+### Resultado da autoavaliação — 29/09
+
+| Bloco | Questões | Acertos |
+|---|---|---|
+| Redirecionamento | 1 a 5 | **5 de 5** |
+| Filtros e pipes | 6 a 10 | 3 de 5 |
+| `grep` e expressões regulares | 11 a 15 | **2 de 5** |
+| Compactação | 16 a 20 | 4 de 5 |
+| **Total** | **20** | **14** |
+
+Detalhamento:
+
+| # | Situação | Observação |
+|---|---|---|
+| 1 | Correta | |
+| 2 | Correta | |
+| 3 | Correta | |
+| 4 | Correta | |
+| 5 | Correta | |
+| 6 | Imprecisa | Descreve a ordem, não a razão. Falta a palavra "adjacentes" |
+| 7 | **Errada** | Correção 50 — quarta ocorrência do mesmo erro |
+| 8 | Correta | |
+| 9 | Correta | |
+| 10 | Correta | |
+| 11 | **Errada** | Correção 49 — `-v` é *invert*, não *verbose* |
+| 12 | Correta | |
+| 13 | Imprecisa | Correção 51 — os dois significados fundidos em um |
+| 14 | **Errada** | Consequência direta da 11 |
+| 15 | Correta | |
+| 16 | Correta | Resposta acima do gabarito: identificou que o `.tar.gz` faz as duas operações |
+| 17 | Correta | |
+| 18 | **Errada** | Correção 52 |
+| 19 | Correta | |
+| 20 | Correta | |
+
+**O bloco de redirecionamento saiu inteiro**, incluindo o `2>&1`, que era o ponto mais difícil da semana e gerou a Correção 29. Oito dias depois da Sessão 1, cinco de cinco. Isso é retenção real.
+
+### Correções da autoavaliação
+
+**Correção 49 — `grep -v` é *invert*, não *verbose*. Esta é a correção mais custosa da semana.**
+
+```
+-v, --invert-match     mostra as linhas que NÃO casam com o padrão
+-V, --version          mostra a versão do grep
+```
+
+Minúsculo inverte, maiúsculo mostra a versão. No `grep` não existe opção de modo verboso.
+
+A confusão tem uma causa concreta e vale reconhecê-la: em quase todo o resto do sistema, `-v` **é** *verbose*.
+
+| Comando | O que `-v` faz |
+|---|---|
+| `tar -v` | Verbose |
+| `cp -v` | Verbose |
+| `rm -v` | Verbose |
+| `mv -v` | Verbose |
+| `grep -v` | **Invert match** |
+
+O `grep` é a exceção, e é por isso que o erro é comum. A forma de fixar é pela função, não pela letra: **o `grep` filtra; a única coisa que faz sentido inverter em um filtro é o critério.**
+
+**O custo real desse erro: ele derrubou duas questões, não uma.**
+
+A questão 14 pedia o comando que mostra um arquivo de configuração sem comentários nem linhas em branco. A resposta é `grep -v '^#' arquivo | grep -v '^$'`, e ela é **construída sobre o `-v`**. Sem saber o que o `-v` faz, a questão fica inacessível — você acertou o padrão `'^#'`, que era a parte difícil, e perdeu a questão pela parte fácil.
+
+Registro para o caderno: **uma lacuna conceitual não custa uma questão, custa todas as que dependem dela.** Foram 2 de 20 aqui, o equivalente a 5% da prova, a partir de uma única letra.
+
+**Correção 50 — o `sort` sem `-n` não inverte a ordem. Quarta ocorrência.**
+
+A resposta diz: "sem o `-n` o sort trata como texto **e inverte a ordem**". Não inverte. **As duas formas ordenam em ordem crescente.** O que muda é o critério de comparação:
+
+| Entrada | `sort` (texto) | `sort -n` (número) |
+|---|---|---|
+| `100` `25` `3` `9` | `100` `25` `3` `9` | `3` `9` `25` `100` |
+
+Na coluna do meio, `100` vem primeiro porque o caractere `1` vem antes do `2` na tabela. É ordem **crescente de texto**, não ordem decrescente. Quem inverte é o `-r`, e só ele.
+
+Segunda imprecisão na mesma resposta: "`sort -n` trata qualquer conteúdo como número". Não trata — ele lê o prefixo numérico de cada linha, e uma linha que começa com letra vale zero.
+
+**Este erro já apareceu nas Correções 32, 33 e 34 e agora na 50.** Quatro registros do mesmo conceito. Isso muda a natureza do problema: não é falta de informação, porque a informação está escrita três vezes no seu próprio caderno. Reler não vai resolver. O que resolve é executar:
+
+```bash
+printf '100\n25\n3\n9\n' | sort
+printf '100\n25\n3\n9\n' | sort -n
+printf '100\n25\n3\n9\n' | sort -r
+printf '100\n25\n3\n9\n' | sort -nr
+```
+
+Quatro comandos, quinze segundos, as quatro saídas lado a lado na tela. **Conceito que resiste a três leituras cede a uma execução.** Rode isso antes de qualquer outra coisa na próxima sessão.
+
+**Correção 51 — os dois significados do `^` são dois, e o que os distingue é a posição.**
+
+A resposta diz: "Significa erro no início da linha, por exemplo `[^0-9]` — caractere que não é dígito". As duas ideias estão presentes, mas fundidas em uma frase, como se fossem um único significado. A questão pedia justamente a separação:
+
+| Onde aparece | O que faz | Exemplo |
+|---|---|---|
+| **Fora** dos colchetes, no início do padrão | Ancora o **início da linha** | `^2026` casa linhas que começam com `2026` |
+| **Dentro** dos colchetes, como primeiro caractere | **Nega** o conjunto | `[^0-9]` casa qualquer caractere que não seja dígito |
+
+O mesmo símbolo, dois papéis, decididos pela posição. E há um terceiro caso que a prova pode explorar: dentro dos colchetes **sem ser o primeiro**, o `^` é literal — `[0^9]` casa `0`, `^` ou `9`.
+
+Sobre a palavra "erro" na resposta: não há nada de erro no `^`. Provável cruzamento com o `2>` dos fluxos, onde o número 2 é o erro. São coisas sem relação.
+
+**Correção 52 — o `-f` vem por último porque consome o argumento seguinte.**
+
+A resposta diz que o `-f` "ajuda os comandos anteriores a atingirem o arquivo desejado". Não é isso, e a razão certa está escrita no seu próprio caderno, na Sessão 4 de 25/09.
+
+O `-f` **exige um argumento**, e esse argumento é o que vier imediatamente depois do grupo de opções. Quando o `-f` não é a última letra, a letra seguinte fica entre ele e o nome do arquivo:
+
+```bash
+tar -cvf backup.tar dados/     # -f e' o ultimo -> "backup.tar" e' o nome do arquivo
+tar -cfv backup.tar dados/     # -f vem antes do -v -> o tar tenta usar "v" como nome
+```
+
+No segundo caso o `tar` cria um arquivo chamado `v` e trata `backup.tar` como algo a ser arquivado. Nenhuma mensagem de aviso.
+
+Não é uma regra arbitrária de sintaxe: é a consequência de uma opção que pede argumento estar no meio de um grupo. Vale para qualquer opção assim, não só para o `-f` do `tar`.
+
+**Observação sobre a questão 6 — a resposta descreve a ordem, não a razão.**
+
+"Porque o `sort` ordena antes do `uniq` filtrá-los" responde *o que acontece*, não *por que é necessário*. A razão é uma propriedade do `uniq`: **ele só compara cada linha com a linha imediatamente anterior.** Duplicatas separadas por outras linhas passam intactas.
+
+```bash
+printf 'a\nb\na\n' | uniq          # a b a  -> nada foi removido
+printf 'a\nb\na\n' | sort | uniq   # a b
+```
+
+O `sort` não "prepara" o `uniq` por conveniência — ele torna o `uniq` capaz de funcionar. Sem ordenação, o `uniq` não erra: ele faz exatamente o que promete, e o que promete é menos do que se imagina.
+
+Duas correções menores de vocabulário na mesma resposta: o `sort` ordena **linhas**, não "arquivos"; e o `uniq` **colapsa** duplicatas, não "filtra" — filtrar é o papel do `grep`.
+
+### Diagnóstico da autoavaliação
+
+**14 de 20, contra 14 de 15 na Semana 2 e 20 de 20 na Semana 3.** A queda é real e vale entender de onde vem, porque a explicação preguiçosa — "a semana foi mais difícil" — não sobrevive aos números.
+
+**Primeiro: os erros não estão distribuídos, estão concentrados.**
+
+| Bloco | Acertos | Sessão de origem |
+|---|---|---|
+| Redirecionamento | 5 de 5 | Sessão 1, 21/09 — a mais antiga |
+| Filtros e pipes | 3 de 5 | Sessão 2, 22 e 23/09 |
+| `grep` e regex | **2 de 5** | Sessão 3, 24/09 |
+| Compactação | 4 de 5 | Sessão 4, 25/09 — a mais recente |
+
+Se fosse decaimento por tempo, o bloco mais antigo seria o pior. É o melhor, com cinco de cinco. **O problema não é o tempo, é o `grep`.**
+
+**Segundo: três dos quatro erros são de um tipo só.**
+
+Nenhum dos quatro erros foi falta de informação. Todos os quatro conceitos estão escritos, corretamente, no seu próprio caderno:
+
+| Erro | Onde a resposta certa já estava registrada |
+|---|---|
+| 11 — `grep -v` | Sessão 3, tabela de opções: "*invert* — mostra as linhas que **não** casam" |
+| 7 — `sort` crescente | Correção 32, com tabela |
+| 18 — posição do `-f` | Sessão 4: "ele exige um argumento" |
+| 13 — os dois `^` | Sessão 3, "O que aprendi", primeiro item |
+
+Quatro conceitos registrados, quatro errados quatro dias depois. Isso não mede compreensão — mede **retenção**, e é a primeira vez que esta preparação mede retenção de verdade. As autoavaliações das Semanas 2 e 3 foram respondidas **no mesmo dia** do estudo. Esta foi respondida com quatro dias de intervalo.
+
+**Conclusão: 20 de 20 na Semana 3 não era 100% de retenção. Era 100% de memória de curto prazo.** O 14 de 20 é o primeiro número honesto da série, e é bom que tenha aparecido agora, com seis semanas de prazo, e não no simulado da véspera.
+
+**Terceiro: o que fazer, e o que não fazer.**
+
+Não refazer a semana. Não reler o caderno — os quatro conceitos já estão lá, escritos por você, e isso não bastou. Duas intervenções, ambas de custo zero em tempo de sessão:
+
+**1. O aquecimento diário desta semana é `grep` e `sort`.** Os cinco comandos de memória, até domingo, saem desta lista:
+
+```bash
+grep -v '^#' /etc/ssh/sshd_config | grep -v '^$'
+printf '100\n25\n3\n9\n' | sort ; printf '100\n25\n3\n9\n' | sort -n
+grep -c ERROR sistema.log ; grep -o ERROR sistema.log | wc -l
+grep '^[AB]' funcionarios.csv ; grep '[^0-9]' funcionarios.csv
+grep -E 'ERROR|WARN' sistema.log
+```
+
+Executar, não ler. Cinco dias, dez minutos por dia, sem uma sessão nova no calendário.
+
+**2. As questões erradas entram nos cards do Notion hoje**, nesta formulação:
+
+- `grep -v` faz o quê? (resposta: inverte o filtro)
+- `sort` sem `-n` ordena em qual sentido? (resposta: crescente, por texto)
+- Por que o `-f` do `tar` vem por último? (resposta: porque consome o argumento seguinte)
+- `^` tem quantos significados e o que os separa? (resposta: dois, a posição)
+
+**O que a autoavaliação comprou:** quatro lacunas identificadas por nome, cinco dias antes do simulado diagnóstico, por 30 minutos de trabalho. Se elas tivessem chegado intactas ao dia 09/11, custariam entre duas e quatro questões — e a margem de aprovação é de 26.
 
 ### Limpeza
 
@@ -1127,7 +1310,7 @@ O simulado está em `praticas/simulado-01-diagnostico.md`, fora de `labs/`. As f
 - [x] Curso do Muller — retomado em 23/09, aula 26 de 72
 - [x] Desafio integrador — sete pipelines (seis sem consulta)
 - [ ] Instalar o `bzip2` e refazer a comparação de compressão
-- [ ] Autoavaliação com 16 acertos ou mais — **transferida para a Semana 5**
+- [x] Autoavaliação realizada em 29/09 — **14 de 20, abaixo da meta de 16**
 - [ ] Simulado diagnóstico de 40 questões — **transferido para a Semana 5**
 - [ ] Pendências da Semana 3: arquivos ocultos e limpeza da home
 - [ ] Commits ao fim de cada sessão
@@ -1136,19 +1319,21 @@ O simulado está em `praticas/simulado-01-diagnostico.md`, fora de `labs/`. As f
 
 ## Fechamento da Semana 4
 
-**Situação: fechada com duas pendências transferidas.**
+**Situação: fechada em 29/09, com o simulado diagnóstico transferido para a Semana 5.**
 
-As cinco sessões de laboratório foram executadas, todas com registro e correção. A semana produziu **seis correções** (43 a 48), somando **48 correções em quatro semanas**. A mais relevante de todas foi a 44 — a precedência do `-o` no `find` —, porque é o tipo de erro que não gera mensagem: o comando roda, devolve resultado, e o resultado está errado.
+As cinco sessões de laboratório foram executadas, todas com registro e correção. A semana produziu **dez correções** (43 a 52), somando **52 correções em quatro semanas**.
 
-O atraso de três dias em relação ao prazo combinado não alterou o conteúdo coberto. Alterou o calendário: a autoavaliação e o simulado entram na Semana 5, que já carrega o objetivo 3.3.
+Duas delas merecem destaque, por razões opostas. A **44** — a precedência do `-o` no `find` — é o tipo de erro que não gera mensagem: o comando roda, devolve resultado, e o resultado está errado. A **50** — o `sort` sem `-n` ser crescente — é a quarta ocorrência do mesmo conceito, e o que ela revela não é o conceito, é o método: **três registros escritos não fixaram o que uma execução de quinze segundos fixa.**
 
 | Item | Previsto | Realizado |
 |---|---|---|
 | Sessões de laboratório | 5 | 5 |
-| Fechamento | 27/09 | 28/09, parcial |
-| Autoavaliação | 27/09 | transferida |
-| Simulado diagnóstico | 27/09 | transferido |
-| Correções registradas | — | 6 (43 a 48) |
+| Fechamento | 27/09 | 29/09 |
+| Autoavaliação | 27/09 | 29/09 — **14 de 20** |
+| Simulado diagnóstico | 27/09 | transferido para 04/10 |
+| Correções registradas | — | 10 (43 a 52) |
+
+**O resultado mais importante da semana não é a nota.** É o que a nota expôs: as autoavaliações das Semanas 2 e 3, respondidas no mesmo dia do estudo, mediam memória de curto prazo. Esta, respondida quatro dias depois, mediu retenção. O 14 de 20 é o primeiro número comparável da série — e, a partir daqui, a regra muda: **a autoavaliação de cada semana passa a ser respondida na semana seguinte**, nunca no dia do último laboratório.
 
 ---
 
