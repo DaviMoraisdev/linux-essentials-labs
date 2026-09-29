@@ -329,7 +329,7 @@ Esta é a pendência mais antiga do plano, com quatro semanas de atraso. Ela ocu
 - Erros concentrados em 4 e 5, ainda não estudados — o plano está funcionando.
 - Erros em 1, 2 ou 3, que estão fechados — a base pede revisão, e as práticas das semanas seguintes precisam incluí-la.
 
-**🎯 Ação da semana: comprar o voucher e agendar a prova para 09/11.**
+**Ação da semana: comprar o voucher e agendar a prova para 09/11.**
 
 Marcar antes de se sentir pronto é intencional. Prazo firme é o que impede o plano de escorregar para dezembro.
 
