@@ -18,12 +18,13 @@
 | **Semana 1 — Tópico 1 (peso 7)** | ✅ 05/09 — comunidade, licenças, distros, FHS |
 | **Semana 2 — Tópico 2 p1** | ✅ 13/09 — objetivos 2.1 e 2.2 |
 | **Semana 3 — Tópico 2 p2** | ✅ 19/09 — objetivos 2.3 e 2.4 |
-| **Semana 4 — Tópico 3 p1** | ✅ 28/09 — objetivos 3.1 e 3.2; autoavaliação e simulado transferidos |
+| **Semana 4 — Tópico 3 p1** | ✅ 29/09 — objetivos 3.1 e 3.2; 10 correções (43 a 52) |
 | **Tópico 1 (peso 7)** | ✅ completo |
 | **Tópico 2 (peso 9)** | ✅ completo — os quatro objetivos |
 | **Tópico 3 (peso 9)** | 🔄 3.1 e 3.2 feitos; falta 3.3 |
-| Autoavaliação da Semana 2 | ✅ 14 de 15 |
-| Autoavaliação da Semana 3 | ✅ 20 de 20 |
+| Autoavaliação da Semana 2 | ✅ 14 de 15 — respondida no dia do estudo |
+| Autoavaliação da Semana 3 | ✅ 20 de 20 — respondida no dia do estudo |
+| Autoavaliação da Semana 4 | ⚠️ **14 de 20** (29/09) — respondida 4 dias depois; abaixo da meta de 16 |
 | Bandit | ✅ níveis 0 a 9 |
 | Cards de revisão (Notion) | ✅ em uso desde a Semana 1 |
 | Curso do Muller | 🔄 **aula 26 de 72** (23/09) — 46 restantes |
@@ -33,8 +34,8 @@
 | Item | Prazo |
 |---|---|
 | **Simulado diagnóstico** — 40 questões, cronometrado | **domingo 04/10** — escrito, em `praticas/simulado-01-diagnostico.md` |
-| **Autoavaliação da Semana 4** — 20 questões | **terça 29/09** |
 | Voucher da prova | terça 29/09 |
+| **Refazer as 4 questões erradas da autoavaliação da Semana 4** | no aquecimento diário, até domingo |
 | Instalar `bzip2` e refazer a comparação de compressão | Semana 5 |
 | `.wslconfig` limitando WSL2 a 3 GB | quando houver folga |
 | Teste de restauração do snapshot | quando houver folga |
@@ -230,6 +231,26 @@ Para não perder isso ao reduzir as sessões, entra um ritual curto de **10 minu
 
 Cinco comandos. Dez minutos. É o que mantém o espaçamento funcionando com duas sessões formais por semana.
 
+**O aquecimento não é livre: ele é pautado pelos erros da autoavaliação anterior.** Cinco comandos escolhidos ao acaso reforçam o que já está fixado. Cinco comandos escolhidos a partir das questões erradas atacam a lacuna medida.
+
+Aquecimento da Semana 5 — `grep` e `sort`, pelos erros das questões 7, 11, 13 e 14:
+
+```bash
+grep -v '^#' /etc/ssh/sshd_config | grep -v '^$'
+printf '100\n25\n3\n9\n' | sort ; printf '100\n25\n3\n9\n' | sort -n
+grep -c ERROR sistema.log ; grep -o ERROR sistema.log | wc -l
+grep '^[AB]' funcionarios.csv ; grep '[^0-9]' funcionarios.csv
+grep -E 'ERROR|WARN' sistema.log
+```
+
+### Quando responder a autoavaliação
+
+**Regra alterada em 29/09.** As autoavaliações das Semanas 2 e 3 foram respondidas no mesmo dia do último laboratório e deram 14 de 15 e 20 de 20. A da Semana 4 foi respondida quatro dias depois e deu 14 de 20 — com todos os quatro conceitos errados já registrados corretamente no caderno, dias antes.
+
+As duas primeiras notas mediam memória de curto prazo. A terceira mediu retenção, que é o que a prova mede.
+
+**Da Semana 5 em diante, a autoavaliação de cada semana é respondida na semana seguinte**, em um dia de curso, como abertura da sessão. O intervalo mínimo é de três dias. Uma nota menor e honesta informa o plano; uma nota alta e cedo apenas o tranquiliza.
+
 ### As sessões de laboratório
 
 Sem vídeo dentro delas — o vídeo agora tem espaço próprio. A sessão inteira é teclado:
@@ -328,12 +349,6 @@ Esta é a pendência mais antiga do plano, com quatro semanas de atraso. Ela ocu
 
 - Erros concentrados em 4 e 5, ainda não estudados — o plano está funcionando.
 - Erros em 1, 2 ou 3, que estão fechados — a base pede revisão, e as práticas das semanas seguintes precisam incluí-la.
-
-**Ação da semana: comprar o voucher e agendar a prova para 09/11.**
-
-Marcar antes de se sentir pronto é intencional. Prazo firme é o que impede o plano de escorregar para dezembro.
-
-**Entregável:** `labs/semana-05.md` + 4 scripts + voucher comprado + resultado do simulado
 
 ---
 
