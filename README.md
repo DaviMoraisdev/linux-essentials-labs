@@ -61,7 +61,7 @@ Comando vira reflexo por repetição espaçada, não por tempo acumulado. Duas s
 | 1 | 01–06/09 | Tópico 1 — comunidade, licenças, distribuições e FHS | Concluída |
 | 2 | 07–13/09 | Tópico 2 — linha de comando e sistema de ajuda | Concluída |
 | 3 | 14–20/09 | Tópico 2 — arquivos, diretórios e links | Concluída |
-| 4 | 21–27/09 | Tópico 3 — redirecionamento, filtros, busca e compactação | Fechada em 28/09, com duas pendências transferidas |
+| 4 | 21–27/09 | Tópico 3 — redirecionamento, filtros, busca e compactação | Fechada em 29/09 · autoavaliação 14 de 20 |
 | 5 | 28/09–04/10 | Objetivo 3.3 — shell script · simulado diagnóstico | Em andamento |
 | 6 | 05–11/10 | Tópico 5 — usuários, grupos e permissões | Pendente |
 | 7 | 12–18/10 | Tópico 4 — hardware, processos e rede | Pendente |
@@ -76,7 +76,7 @@ A segunda-feira 28/09 foi consumida pela Sessão 5 da Semana 4, adiada em três 
 | Dia | Atividade | Tempo |
 |---|---|---|
 | Seg 28 | Sessão 5 da Semana 4 — `find` e desafio integrador | concluída |
-| Ter 29 | Autoavaliação da Semana 4 · curso, aulas 26 a 31 | 1h10 |
+| Ter 29 | Autoavaliação da Semana 4 — concluída, 14 de 20 · curso, aulas 26 a 31 | 1h10 |
 | Qua 30 | Curso, aulas 32 a 37 | 45 min |
 | Qui 01/10 | Curso, aulas 38 a 43 | 45 min |
 | Sex 02 | Laboratório — fundamentos de shell script | 1h |
@@ -107,7 +107,20 @@ Autoavaliações realizadas ao fim de cada semana, sem consulta, com gabarito co
 |---|---|---|---|
 | 2 | 15 | 14 | 12 |
 | 3 | 20 | 20 | 16 |
-| 4 | 20 | transferida para a Semana 5 | 16 |
+| 4 | 20 | 14 | 16 |
+
+A Semana 4 ficou abaixo da meta, e a comparação com as semanas anteriores só é possível com uma ressalva que mudou o método: **as autoavaliações das Semanas 2 e 3 foram respondidas no mesmo dia do último laboratório; a da Semana 4 foi respondida quatro dias depois.** As duas primeiras mediram memória de curto prazo. A terceira mediu retenção.
+
+Os quatro conceitos errados estavam registrados corretamente no próprio caderno, escritos dias antes. Isso caracteriza o problema como retenção, não compreensão, e altera a regra: **da Semana 5 em diante, a autoavaliação de cada semana é respondida na semana seguinte.** Um número menor e honesto vale mais que um número alto e cedo.
+
+| Bloco da Semana 4 | Acertos | Sessão de origem |
+|---|---|---|
+| Redirecionamento | 5 de 5 | Sessão 1, a mais antiga |
+| Filtros e pipes | 3 de 5 | Sessão 2 |
+| `grep` e expressões regulares | 2 de 5 | Sessão 3 |
+| Compactação | 4 de 5 | Sessão 4, a mais recente |
+
+A concentração no `grep` descarta a hipótese de decaimento por tempo: o bloco mais antigo foi o único perfeito. O aquecimento diário da Semana 5 foi redirecionado para `grep` e `sort`, sem custo de sessão adicional.
 
 O simulado diagnóstico de 40 questões cronometradas está escrito e disponível em `praticas/simulado-01-diagnostico.md`, com distribuição de pesos idêntica à do exame e gabarito comentado. Execução prevista para 04/10.
 
@@ -123,6 +136,8 @@ O simulado diagnóstico de 40 questões cronometradas está escrito e disponíve
 
 Todo comando é digitado, nunca copiado. Cada sessão termina com o registro do que foi executado e do que foi compreendido.
 
-Os arquivos em `labs/` incluem uma seção de **correções**, com os conceitos que foram anotados de forma incorreta e a explicação do que está certo. O registro dos erros é parte deliberada do método — até aqui são 48 correções registradas ao longo de quatro semanas, e a maioria delas revelou imprecisão de compreensão que nenhuma autoavaliação teria detectado sozinha.
+Os arquivos em `labs/` incluem uma seção de **correções**, com os conceitos que foram anotados de forma incorreta e a explicação do que está certo. O registro dos erros é parte deliberada do método — até aqui são 52 correções registradas ao longo de quatro semanas, e a maioria delas revelou imprecisão de compreensão que nenhuma autoavaliação teria detectado sozinha.
 
 A correção 44 é o exemplo mais claro do valor do método: em `find . -type f -name "*.py" -o -name "*.md"`, o `-o` tem precedência menor que o **e** implícito, e o `-type f` vale apenas para o primeiro grupo. O comando roda, não emite aviso nenhum e devolve resultado errado. Nenhuma leitura de material teria exposto isso — só a anotação do raciocínio e a conferência dela.
+
+A correção 50 ensinou algo sobre o próprio método. Ela é a quarta ocorrência do mesmo conceito — o `sort` sem `-n` ordenar em sentido crescente —, já registrado por escrito três vezes. Um conceito que resiste a três registros escritos não é resolvido por um quarto: é resolvido executando os quatro comandos e vendo as quatro saídas lado a lado. **Registrar expõe o erro; executar é o que o corrige.**
