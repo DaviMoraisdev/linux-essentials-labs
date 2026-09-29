@@ -50,9 +50,9 @@ sudo poweroff
 
 ## Pendências herdadas da Semana 3
 
-- [ ] Registrar as observações sobre **arquivos ocultos** (Sessão 3 da Semana 3)
+- [x] Registrar as observações sobre **arquivos ocultos** (Sessão 3 da Semana 3)
 - [ ] **Simulado diagnóstico completo** — 40 questões, cronometrado, sem consulta. Ver seção ao final
-- [ ] Remover o arquivo acidental da home: `rm 'sudo apt upgrade -y'`
+- [x] Remover o arquivo acidental da home: `rm 'sudo apt upgrade -y'`
 
 ---
 
