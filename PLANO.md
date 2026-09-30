@@ -549,9 +549,27 @@ Na prova: 40 questões em 60 minutos, 1,5 minuto por questão. Marcar as difíce
 
 ## 10. Depois da aprovação
 
-- **GitHub Foundations logo na sequência** (novembro/dezembro). É bem mais leve, você já usa Git e `gh` no dia a dia, e fecha 2026 com duas certificações.
-- **O Linux Essentials é a base do LPIC-1.** Manter a VM e o repositório de labs. O LPIC-1 exige dois exames, o 101-500 e o 102-500, ambos aprovados antes de qualquer certificado ser emitido, e pedirá material complementar vendor-neutral, já que os cursos específicos da Red Hat saíram do roadmap.
-- **Trilha Red Hat (RHCSA/EX200) descartada** pelo custo dos cursos e exames oficiais. Ordem confirmada: GitHub Foundations, Linux Essentials, LPIC-1, AWS Cloud Practitioner, Docker Certified Associate, AWS Developer Associate.
+### Roadmap completo — atualizado em 29/09
+
+Ordem de estudo confirmada:
+
+| # | Certificação | Situação |
+|---|---|---|
+| 1 | **LPI Linux Essentials** (010-160) | Em preparação — prova em 09/11/2026 |
+| 2 | **GitHub Foundations** | Na sequência, em novembro/dezembro |
+| 3 | **Red Hat RHCSA** (EX200) | Próxima grande certificação |
+| 4 | **LPIC-1** (101-500 e 102-500) | Duas provas; o certificado só sai com as duas aprovadas |
+| 5 | **AWS Cloud Practitioner** | |
+| 6 | **AWS AI Practitioner** | |
+| 7 | **AWS Developer Associate** | |
+| Opcional | **LFCS** — Linux Foundation Certified System Administrator | Sem data definida |
+| Opcional | **Docker Certified Associate** | Sem data definida |
+
+**Como este plano alimenta as próximas etapas**
+
+- **GitHub Foundations logo na sequência.** É bem mais leve, você já usa Git e `gh` no dia a dia, e fecha 2026 com duas certificações.
+- **O Linux Essentials é a base do RHCSA.** Manter a VM e o repositório de labs. Para o EX200, criar a segunda VM (Rocky Linux ou AlmaLinux) e considerar a trilha do RHEL Developer Subscription como alternativa gratuita ao RH124/RH134. O RHCSA é prático, feito no terminal, e o hábito construído aqui — laboratório diário, quebrar coisas de propósito, conferir o `$?` — é exatamente o que ele cobra.
+- **O LPIC-1 vem logo depois** e reaproveita boa parte do RHCSA no lado de administração. Ele exige dois exames, o 101-500 e o 102-500, e pedirá material complementar vendor-neutral com foco em Debian.
 
 ---
 
