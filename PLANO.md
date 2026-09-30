@@ -565,6 +565,18 @@ Ordem de estudo confirmada:
 | Opcional | **LFCS** — Linux Foundation Certified System Administrator | Sem data definida |
 | Opcional | **Docker Certified Associate** | Sem data definida |
 
+### Horizonte futuro — certificações que exigem proficiência e experiência
+
+Estas três ficam **fora da sequência de estudo atual**. Elas cobram experiência prática comprovada além do conteúdo de prova, então entram no roadmap como metas de longo prazo, sem data, a serem retomadas depois que as etapas 1 a 7 estiverem concluídas e houver vivência real com as tecnologias.
+
+| Certificação | Apoio no roadmap atual |
+|---|---|
+| **AWS Certified Machine Learning Engineer — Associate** | AWS Cloud Practitioner, AWS AI Practitioner e AWS Developer Associate (etapas 5 a 7) |
+| **HashiCorp Terraform Associate** | Trilha AWS (etapas 5 a 7) e a prática de infraestrutura construída no RHCSA e no LPIC-1 |
+| **CKA — Certified Kubernetes Administrator** | Linux sólido (RHCSA e LPIC-1) e o uso diário de Docker no projeto de e-commerce |
+
+A coluna da direita é apenas o caminho natural dentro do roadmap atual, não um pré-requisito oficial de nenhuma das provas.
+
 **Como este plano alimenta as próximas etapas**
 
 - **GitHub Foundations logo na sequência.** É bem mais leve, você já usa Git e `gh` no dia a dia, e fecha 2026 com duas certificações.
