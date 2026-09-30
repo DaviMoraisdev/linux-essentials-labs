@@ -4,7 +4,9 @@
 **Data da prova:** **09/11/2026, segunda-feira**
 **Repositório de labs:** https://github.com/DaviMoraisdev/linux-essentials-labs
 
-> **Estratégia revisada em 26/09.** O cronograma passa a ter **duas fases**: três semanas com o curso como atividade principal e duas práticas por semana, seguidas de três semanas de prática intensiva e simulados. Detalhamento na seção 7.
+> **Estratégia revisada em 26/09.** O cronograma tem **duas fases**: três semanas com o curso como atividade principal e duas práticas por semana, seguidas de três semanas de prática intensiva e simulados. Detalhamento na seção 7.
+>
+> **Calendário da Semana 5 revisado em 29/09.** O curso foi adiado na segunda e na terça. As 18 aulas restantes da semana passam a ser cumpridas em dois blocos, na quarta e na quinta, sem mover os laboratórios nem o simulado. Detalhamento na seção 7 e no arquivo `labs/semana-05.md`.
 
 ---
 
@@ -14,32 +16,44 @@
 
 | Item | Situação |
 |---|---|
-| **Semana 0 — Laboratório** | ✅ 26/08 — VM, SSH, snapshot, repositório |
-| **Semana 1 — Tópico 1 (peso 7)** | ✅ 05/09 — comunidade, licenças, distros, FHS |
-| **Semana 2 — Tópico 2 p1** | ✅ 13/09 — objetivos 2.1 e 2.2 |
-| **Semana 3 — Tópico 2 p2** | ✅ 19/09 — objetivos 2.3 e 2.4 |
-| **Semana 4 — Tópico 3 p1** | ✅ 29/09 — objetivos 3.1 e 3.2; 10 correções (43 a 52) |
-| **Tópico 1 (peso 7)** | ✅ completo |
-| **Tópico 2 (peso 9)** | ✅ completo — os quatro objetivos |
-| **Tópico 3 (peso 9)** | 🔄 3.1 e 3.2 feitos; falta 3.3 |
-| Autoavaliação da Semana 2 | ✅ 14 de 15 — respondida no dia do estudo |
-| Autoavaliação da Semana 3 | ✅ 20 de 20 — respondida no dia do estudo |
-| Autoavaliação da Semana 4 | ⚠️ **14 de 20** (29/09) — respondida 4 dias depois; abaixo da meta de 16 |
-| Bandit | ✅ níveis 0 a 9 |
-| Cards de revisão (Notion) | ✅ em uso desde a Semana 1 |
-| Curso do Muller | 🔄 **aula 26 de 72** (23/09) — 46 restantes |
+| **Semana 0 — Laboratório** | Concluída em 26/08 — VM, SSH, snapshot, repositório |
+| **Semana 1 — Tópico 1 (peso 7)** | Concluída em 05/09 — comunidade, licenças, distros, FHS |
+| **Semana 2 — Tópico 2, parte 1** | Concluída em 13/09 — objetivos 2.1 e 2.2 |
+| **Semana 3 — Tópico 2, parte 2** | Concluída em 19/09 — objetivos 2.3 e 2.4 |
+| **Semana 4 — Tópico 3, parte 1** | **Fechada em 29/09** — objetivos 3.1 e 3.2; 10 correções (43 a 52); simulado transferido para a Semana 5 |
+| **Tópico 1 (peso 7)** | Completo |
+| **Tópico 2 (peso 9)** | Completo — os quatro objetivos |
+| **Tópico 3 (peso 9)** | 3.1 e 3.2 feitos; falta o 3.3, em curso na Semana 5 |
+| Autoavaliação da Semana 2 | 14 de 15 — respondida no dia do estudo |
+| Autoavaliação da Semana 3 | 20 de 20 — respondida no dia do estudo |
+| Autoavaliação da Semana 4 | **14 de 20** (29/09) — respondida 4 dias depois; abaixo da meta de 16. **Correções 49 a 52 anotadas no caderno em 29/09** |
+| Bandit | Níveis 0 a 9 |
+| Cards de revisão (Notion) | Em uso desde a Semana 1 |
+| Curso do Muller | **Aula 26 de 72** (23/09) — 46 restantes. Adiado em 28 e 29/09 |
+
+### Dívidas pagas em 29/09
+
+| Dívida | Origem |
+|---|---|
+| Autoavaliação da Semana 4 realizada e corrigida | Semana 4 |
+| Instalação do `bzip2` | Semana 4 |
+| Commits da Semana 4 | Semana 4 |
+| Correções 49 a 52 anotadas | Semana 4 |
 
 ### Pendente
 
 | Item | Prazo |
 |---|---|
+| **Curso, aulas 26 a 34** (adiado duas vezes) | quarta 30/09 |
+| **Curso, aulas 35 a 43** | quinta 01/10 |
+| **Voucher da prova** e agendamento para 09/11 | quarta 30/09 (prazo original: 29/09) |
 | **Simulado diagnóstico** — 40 questões, cronometrado | **domingo 04/10** — escrito, em `praticas/simulado-01-diagnostico.md` |
-| Voucher da prova | terça 29/09 |
-| **Refazer as 4 questões erradas da autoavaliação da Semana 4** | no aquecimento diário, até domingo |
-| Instalar `bzip2` e refazer a comparação de compressão | Semana 5 |
-| `.wslconfig` limitando WSL2 a 3 GB | quando houver folga |
-| Teste de restauração do snapshot | quando houver folga |
-| Limpeza: `rm 'sudo apt upgrade -y'` na home | Semana 5 |
+| Reteste das 4 questões erradas da autoavaliação da Semana 4 | No aquecimento diário, até domingo |
+| Refazer a comparação de compressão (`bzip2` já instalado) | quarta 30/09, no aquecimento |
+| Limpeza: `rm 'sudo apt upgrade -y'` na home | quarta 30/09 |
+| Registrar as observações sobre arquivos ocultos (Semana 3) | sexta 02/10 |
+| `.wslconfig` limitando o WSL2 a 3 GB | Quando houver folga |
+| Teste de restauração do snapshot | Quando houver folga |
 
 ### Cobertura estimada por tópico
 
@@ -62,7 +76,7 @@
 | Código | 010-160, versão 1.6 |
 | Questões / tempo | 40 questões em 60 minutos |
 | Formato | Múltipla escolha e preenchimento |
-| Nota de corte | Referência comum: 500 de 800 (~65%) |
+| Nota de corte | Referência comum: 500 de 800 (~65%), ou 26 acertos |
 | Idioma | Português (Brasil) disponível |
 | Validade | Vitalícia |
 | Entrega | Centro Pearson VUE ou OnVUE |
@@ -73,11 +87,13 @@
 
 | Tópico | Peso | Onde é tratado |
 |---|---|---|
-| 2. Finding Your Way on a Linux System | **9** | ✅ Semanas 2 e 3 |
+| 2. Finding Your Way on a Linux System | **9** | Concluído nas Semanas 2 e 3 |
 | 3. The Power of the Command Line | **9** | Semana 4 (3.1, 3.2) + Semana 5 (3.3) |
 | 4. The Linux Operating System | **8** | Semana 7 |
-| 1. The Linux Community and a Career in Open Source | 7 | ✅ Semana 1 |
+| 1. The Linux Community and a Career in Open Source | 7 | Concluído na Semana 1 |
 | 5. Security and File Permissions | 7 | Semana 6 |
+
+O objetivo 3.3 (shell script) tem **peso 4**, o maior individual do exame. A lista oficial de termos inclui `#!`, `/bin/bash`, variáveis, argumentos, `for`, `echo` e exit status, além do **reconhecimento dos editores `vi` e `nano`**.
 
 ---
 
@@ -168,13 +184,13 @@ Host lab
 ## 5. Cursos e recursos
 
 ### Trilha principal
-**Matheus Muller — LPI Linux Essentials (Udemy, PT-BR)**. Passa a ser a atividade principal na Fase 1.
+**Matheus Muller — LPI Linux Essentials (Udemy, PT-BR)**. Atividade principal na Fase 1.
 
 **Velocidade recomendada por trecho:**
 
 | Conteúdo | Velocidade | Motivo |
 |---|---|---|
-| Tópicos 1, 2, 3.1 e 3.2 | **1.5x** | Já praticados, com autoavaliação de 20/20. O vídeo confirma, não ensina |
+| Tópicos 1, 2, 3.1 e 3.2 | **1.5x** | Já praticados, com autoavaliação de 20/20 na S3 e 14/20 na S4. O vídeo confirma, não ensina |
 | Objetivo **3.3 — shell script** | **1x** | Peso 4, o maior individual da prova. O vídeo entrega o modelo mental |
 | Tópicos 4 e 5 | **1.25x** | Conteúdo novo, mas com laboratório logo em seguida |
 
@@ -203,11 +219,9 @@ Sites de dumps — ITExams, Marks4Sure, Pass4Success e semelhantes — estão fo
 | **explainshell.com** | Explica cada flag de um comando complexo |
 | **tldr / tealdeer** | Exemplos práticos, complemento ao `man` |
 
-**Evitar dumps** (marks4sure, validexamdumps e similares): violam o acordo da LPI, podem anular a certificação e dão falsa sensação de preparo.
-
 ---
 
-## 6. Método de estudo — ajustado para a Fase 1
+## 6. Método de estudo
 
 O ritmo anterior era de cinco sessões semanais de laboratório. A partir da Semana 5 passa a ser **duas sessões de laboratório e o curso como atividade principal**.
 
@@ -243,13 +257,15 @@ grep '^[AB]' funcionarios.csv ; grep '[^0-9]' funcionarios.csv
 grep -E 'ERROR|WARN' sistema.log
 ```
 
+Na quinta e no sábado, o quinto item é trocado pelo teste do `-f` do `tar` (Correção 52). Os arquivos de apoio são recriados em `~/lab5`; o roteiro completo está em `labs/semana-05.md`.
+
 ### Quando responder a autoavaliação
 
 **Regra alterada em 29/09.** As autoavaliações das Semanas 2 e 3 foram respondidas no mesmo dia do último laboratório e deram 14 de 15 e 20 de 20. A da Semana 4 foi respondida quatro dias depois e deu 14 de 20 — com todos os quatro conceitos errados já registrados corretamente no caderno, dias antes.
 
 As duas primeiras notas mediam memória de curto prazo. A terceira mediu retenção, que é o que a prova mede.
 
-**Da Semana 5 em diante, a autoavaliação de cada semana é respondida na semana seguinte**, em um dia de curso, como abertura da sessão. O intervalo mínimo é de três dias. Uma nota menor e honesta informa o plano; uma nota alta e cedo apenas o tranquiliza.
+**Da Semana 5 em diante, a autoavaliação de cada semana é respondida na semana seguinte**, em um dia de curso, como abertura da sessão. O intervalo mínimo é de três dias. Uma nota menor e honesta informa o plano; uma nota alta e cedo apenas o tranquiliza. A autoavaliação da Semana 5 é elaborada depois do Laboratório 2 e respondida na quarta 07/10.
 
 ### As sessões de laboratório
 
@@ -260,6 +276,10 @@ Sem vídeo dentro delas — o vídeo agora tem espaço próprio. A sessão intei
 3. **5 min** — commit no repositório
 
 **Quebrar coisas de propósito** continua valendo. O snapshot `limpo` existe para isso.
+
+### A fila de dívidas
+
+Item adiado não some. Ele entra no início do próximo bloco de estudo e fica registrado na tabela de dívidas do arquivo da semana. Adiar tem custo visível: a Semana 5 subiu de 5h para cerca de 6h45 depois de dois dias de curso perdidos.
 
 ---
 
@@ -287,35 +307,51 @@ Semanas de **segunda a domingo**. A prova cai na segunda-feira seguinte ao fim d
 | Aquecimento diário | 1h10 na semana |
 | **Total semanal** | **~5h** — dentro do orçamento de 5 a 7h |
 
-A Fase 1 termina em **18/10**, com o curso fechado e todos os cinco tópicos ao menos estudados. Sobram **três semanas inteiras** para simulados — uma a mais do que o plano original previa.
+A Fase 1 termina em **18/10**, com o curso fechado e todos os cinco tópicos ao menos estudados. Sobram **três semanas inteiras** para simulados.
+
+### Datas do calendário que afetam o plano
+
+| Data | Evento | Efeito |
+|---|---|---|
+| Seg 12/10 | Nossa Senhora Aparecida (feriado) | Primeiro dia da Semana 7. Dia extra disponível para curso ou para uma sessão de permissões, se a conversão não sair em 3 segundos |
+| Qua 28/10 | Dia do Servidor Público | Sem efeito no plano |
+| Seg 02/11 | Finados (feriado) | Primeiro dia da Semana 10, na revisão leve |
+| Seg 09/11 | Dia da prova | Não cai em feriado |
 
 ---
 
 ### Semana 5 — 28/09 a 04/10 · Objetivo 3.3, shell script
 
-**Calendário revisado em 28/09.** A segunda-feira foi consumida pela Sessão 5 da Semana 4, adiada em três dias. Os laboratórios saem de terça e sexta para **sexta e sábado**, e o simulado fecha o domingo. A partir da Semana 6 o ritmo volta ao padrão.
+**Calendário revisado duas vezes.** Em 28/09 a segunda foi consumida pela Sessão 5 da Semana 4 e os laboratórios saíram de terça e sexta para sexta e sábado. Em 29/09 a terça foi consumida pela autoavaliação e pelas correções, e o curso perdeu os dois dias. As 18 aulas restantes (26 a 43) foram distribuídas em dois blocos de 9, na quarta e na quinta. Os laboratórios e o simulado **não mudam de dia**.
 
 | Dia | Atividade | Tempo |
 |---|---|---|
-| Seg 28 | Sessão 5 da Semana 4 — `find` e desafio integrador | ✅ |
-| Ter 29 | Autoavaliação da Semana 4 · compra do voucher · curso, aulas 26 a 31 | 1h10 |
-| Qua 30 | Curso, aulas 32 a 37 | 45 min |
-| Qui 01/10 | Curso, aulas 38 a 43 | 45 min |
-| Sex 02 | Laboratório 1 — fundamentos de shell script | 1h |
-| Sáb 03 | Laboratório 2 — os quatro scripts | 1h |
+| Seg 28 | Sessão 5 da Semana 4 — `find` e desafio integrador | concluído |
+| Ter 29 | Autoavaliação da Semana 4 · correções 49 a 52 · `bzip2` · commits | concluído |
+| Qua 30 | Voucher (10 min) · curso, aulas 26 a 34 · aquecimento | 1h25 |
+| Qui 01/10 | Curso, aulas 35 a 43 · aquecimento | 1h25 |
+| Sex 02 | Laboratório 1 — fundamentos de shell script, `vi` e `nano` · aquecimento | 1h10 |
+| Sáb 03 | Laboratório 2 — os quatro scripts · aquecimento | 1h10 |
 | Dom 04 | Simulado diagnóstico · apuração · commits | 1h35 |
 
-**Curso:** aulas 26 a 43, aproximadamente 18 aulas em três dias. Reduzir para **1x** ao chegar no shell script.
+Total a partir de quarta: **6h45**, dentro do teto de 7h, sem folga.
 
-**Justificativa da divisão em duas práticas.** O objetivo 3.3 tem peso 4, o maior individual do exame, e cobre shebang, variáveis, argumentos, condicionais, loops e códigos de saída. Não cabe em uma sessão com os quatro scripts no fim. A sexta cobre os fundamentos; o sábado escreve o código.
+**Regra de transbordo.** Se a quarta ou a quinta não fecharem as 9 aulas: (1) as aulas de shell script têm prioridade e precisam estar vistas antes do Laboratório 1; (2) as demais podem transbordar para a segunda 05/10, antes das aulas de permissões; (3) o Laboratório 2 e o simulado não são cortados nem movidos.
+
+**Curso:** aulas 26 a 43. Reduzir para **1x** ao chegar no shell script.
+
+**Justificativa da divisão em duas práticas.** O objetivo 3.3 tem peso 4 e cobre shebang, variáveis, argumentos, condicionais, loops, códigos de saída e os editores `vi` e `nano`. Não cabe em uma sessão com os quatro scripts no fim. A sexta cobre os fundamentos; o sábado escreve o código.
 
 **Prática 1 — Fundamentos de shell script (sexta 02/10)**
 
 - Shebang `#!/bin/bash`, `chmod +x`, `./script.sh` versus `bash script.sh`
-- Variáveis, `$1 $2 $@ $#`, `read`, aspas
+- Variáveis, `$1 $2 $@ $# $0`, aspas
 - `if/elif/else`, `test` e `[ ]`, comparadores `-eq -ne -lt -gt -f -d -z`
-- Loops `for` e `while`, `seq`
+- Loop `for` e `seq`
 - Códigos de saída: `$?`, `exit 0`, encadeamento `&&` e `||`
+- **`vi` e `nano`**: modos do `vi`, como gravar e sair de cada um
+- Exercício do script das frutas, do material oficial do LPI, com erros de sintaxe para corrigir
+
 **Prática 2 — Os quatro scripts (sábado 03/10)**
 
 Escrever em `scripts/`, um por vez, testando cada um antes de passar ao seguinte:
@@ -327,15 +363,17 @@ Escrever em `scripts/`, um por vez, testando cada um antes de passar ao seguinte
 | Verificar se um usuário existe | `if`, `grep -q`, `$?`, `exit` com código |
 | Ler um arquivo linha a linha e filtrar | `while read`, redirecionamento de entrada |
 
+> `while` e `read` não constam na lista oficial de termos do 3.3, mas o quarto script os exige. O que a prova cobra com certeza são `for`, argumentos, variáveis, `if` com operadores numéricos e o código de saída.
+
 > Você já programa, então a sintaxe vem rápido; o que exige atenção é a diferença entre o modelo mental do shell e o de uma linguagem estruturada. Três pontos concretos: espaços dentro de `[ ]` são obrigatórios, `=` compara texto e `-eq` compara número, e uma variável sem aspas se parte em palavras.
 
 **Simulado diagnóstico (domingo 04/10)**
 
-40 questões, 60 minutos, cronometrado, sem consultar nada. O simulado está escrito em `praticas/simulado-01-diagnostico.md`, com a distribuição de pesos do exame e gabarito comentado. Fontes gratuitas complementares em `praticas/fontes-de-simulados.md` — a principal é o NDG Linux Essentials da Cisco Networking Academy, cujos quizzes e exame final de prática são gratuitos.
+40 questões, 60 minutos, cronometrado, sem consultar nada. O simulado está em `praticas/simulado-01-diagnostico.md`, com a distribuição de pesos do exame e gabarito comentado. Fontes gratuitas complementares em `praticas/fontes-de-simulados.md` — a principal é o NDG Linux Essentials da Cisco Networking Academy, cujos quizzes e exame final de prática são gratuitos.
 
-Esta é a pendência mais antiga do plano, com quatro semanas de atraso. Ela ocupa o lugar de uma prática porque **é** prática — e porque o resultado determina no que as práticas das Semanas 6 e 7 devem insistir.
+Esta é a pendência mais antiga do plano, com quatro semanas de atraso. Ela ocupa o lugar de uma prática porque **é** prática — e porque o resultado determina no que as práticas das Semanas 6 e 7 devem insistir. As questões 18, 20, 21, 22 e 24 retestam correções já registradas (29, 33/34/50, 36, 52 e a diferença entre regex e globbing).
 
-**Expectativa:** entre 60% e 75%. Você cobriu ~65% do conteúdo e o Tópico 5 está zerado.
+**Expectativa:** entre 60% e 75%. Você cobriu ~65% do conteúdo e o Tópico 5 está zerado. Abaixo de 24 acertos, a Semana 7 ganha uma sessão de revisão e o gate da Semana 9 é revisitado.
 
 | Tópico | Peso | Acertos | Erros |
 |---|---|---|---|
@@ -350,11 +388,19 @@ Esta é a pendência mais antiga do plano, com quatro semanas de atraso. Ela ocu
 - Erros concentrados em 4 e 5, ainda não estudados — o plano está funcionando.
 - Erros em 1, 2 ou 3, que estão fechados — a base pede revisão, e as práticas das semanas seguintes precisam incluí-la.
 
+**Ação da semana: comprar o voucher e agendar a prova para 09/11**, até quarta 30/09.
+
+Marcar antes de se sentir pronto é intencional. Prazo firme é o que impede o plano de escorregar para dezembro.
+
+**Entregável:** `labs/semana-05.md` + 4 scripts + voucher comprado + resultado do simulado
+
 ---
 
 ### Semana 6 — 05 a 11/10 · Tópico 5, permissões (peso 7)
 
-**Curso:** aulas 42 a 57, aproximadamente.
+**Curso:** aulas **44 a 57**, aproximadamente. A faixa começa na 44 porque a Semana 5 fecha na 43. Aulas que tiverem transbordado da Semana 5 entram na segunda 05/10, antes de permissões.
+
+**Abertura da semana:** autoavaliação da Semana 5 (shell script), respondida na quarta 07/10, com o intervalo mínimo de 3 dias em relação ao Laboratório 2.
 
 **Prática 1 — Usuários e grupos**
 
@@ -371,7 +417,7 @@ Esta é a pendência mais antiga do plano, com quatro semanas de atraso. Ela ocu
 
 > **Esta é a semana de maior risco do novo formato.** Permissão é o conteúdo mais dependente de repetição do exame: converter `rwxr-xr--` em `754` precisa ser reflexo, e reflexo não se constrói em duas sessões.
 >
-> Por isso o **aquecimento diário desta semana é obrigatório** e sempre o mesmo: cinco conversões de permissão, de memória, sem consultar. Se ao fim da semana a conversão não sair em três segundos, a Semana 7 começa com mais uma sessão de permissões antes do Tópico 4.
+> Por isso o **aquecimento diário desta semana é obrigatório** e sempre o mesmo: cinco conversões de permissão, de memória, sem consultar. Se ao fim da semana a conversão não sair em três segundos, a Semana 7 começa com mais uma sessão de permissões antes do Tópico 4. A segunda 12/10, feriado, é o dia natural para essa sessão.
 
 **Entregável:** `labs/semana-06.md` + `cheatsheets/permissoes.md`
 
@@ -438,7 +484,7 @@ Esta é a pendência mais antiga do plano, com quatro semanas de atraso. Ela ocu
 
 ### Semana 10 — 02 a 08/11 · Revisão final
 
-- Segunda a quarta: revisão **leve** — só a cola do GitHub e os cards do Notion, 40 min/dia. Sem conteúdo novo
+- Segunda (feriado de Finados) a quarta: revisão **leve** — só a cola do GitHub e os cards do Notion, 40 min/dia. Sem conteúdo novo
 - Quinta: um simulado final. Se ≥ 85%, está pronto
 - Sexta e sábado: **descanso**. Não estudar na véspera
 
@@ -455,7 +501,9 @@ Na prova: 40 questões em 60 minutos, 1,5 minuto por questão. Marcar as difíce
 | **Perda de motricidade** | Comando vira reflexo por repetição espaçada; 2 sessões/semana espaçam menos que 5 | Aquecimento diário de 10 minutos, cinco comandos de memória |
 | **Permissões sem repetição suficiente** | É o conteúdo mais dependente de reflexo, e cai na semana de menor frequência | Aquecimento da Semana 6 dedicado só a conversão de permissões · sessão extra na Semana 7 se a conversão não sair em 3 segundos |
 | **Curso sem prática imediata** | Assistir sem digitar produz reconhecimento, não competência | As 2 práticas da semana cobrem sempre o objetivo de maior peso daquele bloco |
-| **Simulado adiado de novo** | Já atrasou 4 semanas | Ocupa formalmente o lugar de uma das duas práticas da Semana 5 |
+| **Simulado adiado de novo** | Já atrasou 4 semanas | Ocupa formalmente o lugar de uma das duas práticas da Semana 5, em data fixa: domingo 04/10 |
+| **Curso adiado repetidamente** | Segunda e terça da Semana 5 sem aulas; 46 restantes em 3 semanas | Dois blocos de 9 aulas na quarta e na quinta · regra de transbordo (shell script tem prioridade, o resto vai para segunda 05/10) · fila de dívidas registrada por semana |
+| **Retenção menor que a percebida** | A autoavaliação da Semana 4, feita 4 dias depois, deu 14/20 contra 20/20 no mesmo dia | Autoavaliação sempre na semana seguinte · aquecimento pautado pelos erros · simulado com marcação de chutes |
 
 ---
 
@@ -476,14 +524,16 @@ Na prova: 40 questões em 60 minutos, 1,5 minuto por questão. Marcar as difíce
 | Contas de serviço e `nologin` | 5.1 | 29 das 33 contas do `/etc/passwd` |
 | Repositórios e gerenciamento de pacotes | 1.2 | `resolute`, `-security`, `-updates`, `-backports` |
 | Pseudo-terminais (`pts`) versus TTY | 1.4 | A própria sessão SSH |
+| Arquivo comprimido de 0 bytes como sinal de falha | 3.1 | `tar -cjvf` sem o `bzip2` instalado |
 
 ### Erros que se repetiram e merecem atenção
 
 | Erro | Vezes | Correção |
 |---|---|---|
-| `-k` do `sort` chamado de "setor" | 2 | `-k` é **coluna**, sempre. Vem de *key* |
+| `sort` sem `-n` descrito como "invertendo a ordem" | **4** (Correções 32, 33/34 e 50) | As duas formas são **crescentes**; só o `-r` inverte. `-k` é **coluna**, vem de *key*. Reler não resolveu: o que resolve é executar os quatro comandos lado a lado |
 | `cd ..` descrito como "diretório anterior" | 3 | `cd ..` é **pai**; `cd -` é anterior |
-| Confundir o efeito com o mecanismo (`2>&1`, hard link) | 2 | O resultado certo pelo motivo errado quebra quando a pergunta muda de ângulo |
+| Confundir o efeito com o mecanismo (`2>&1`, hard link, `-f` do `tar`) | 3 | O resultado certo pelo motivo errado quebra quando a pergunta muda de ângulo |
+| `grep -v` entendido como *verbose* | 1 (Correção 49) | É *invert*. O `grep` é a exceção: em `tar`, `cp`, `rm` e `mv` o `-v` é verbose. Custou **duas** questões da autoavaliação, porque a 14 dependia dele |
 
 ### Regras de bolso
 
@@ -492,13 +542,16 @@ Na prova: 40 questões em 60 minutos, 1,5 minuto por questão. Marcar as difíce
 3. **Saída na tela não é prova de sucesso.** Quando um comando produz arquivo, confira o `$?` ou o tamanho do resultado.
 4. **Um comando por vez, verificando a saída**, sempre que estiver aprendendo algo novo.
 5. **Antes de improvisar com o comando que você já sabe, pergunte se existe um comando feito para aquilo.** `apropos` responde em segundos.
+6. **Conceito que resiste a três leituras cede a uma execução.** Quando o mesmo erro reaparece, não releia: rode.
+7. **Uma lacuna conceitual não custa uma questão, custa todas as que dependem dela.** Priorize a base (o `-v`) sobre o padrão (o `'^#'`).
 
 ---
 
 ## 10. Depois da aprovação
 
 - **GitHub Foundations logo na sequência** (novembro/dezembro). É bem mais leve, você já usa Git e `gh` no dia a dia, e fecha 2026 com duas certificações.
-- **O Linux Essentials é a base do RHCSA.** Manter a VM e o repositório de labs. Para o EX200, criar a segunda VM (Rocky Linux ou AlmaLinux) e considerar a trilha do RHEL Developer Subscription como alternativa gratuita ao RH124/RH134.
+- **O Linux Essentials é a base do LPIC-1.** Manter a VM e o repositório de labs. O LPIC-1 exige dois exames, o 101-500 e o 102-500, ambos aprovados antes de qualquer certificado ser emitido, e pedirá material complementar vendor-neutral, já que os cursos específicos da Red Hat saíram do roadmap.
+- **Trilha Red Hat (RHCSA/EX200) descartada** pelo custo dos cursos e exames oficiais. Ordem confirmada: GitHub Foundations, Linux Essentials, LPIC-1, AWS Cloud Practitioner, Docker Certified Associate, AWS Developer Associate.
 
 ---
 
