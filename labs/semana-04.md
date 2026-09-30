@@ -1,6 +1,7 @@
 # Semana 4 — Redirecionamento, filtros, busca e compactação
 
 Período: 21 a 27/09/2026 (segunda a domingo)
+**Status: FECHADA em 29/09/2026**, com as pendências transferidas para a Semana 5
 Objetivos da prova: 3.1 (Archiving Files on the Command Line) e 3.2 (Searching and Extracting Data from Files)
 Tópico 3, peso 9 de 40 — empatado com o Tópico 2 como o maior da prova
 Esta semana cobre 5 dos 9 pontos; os 4 restantes ficam na Semana 5, com shell script
@@ -50,9 +51,11 @@ sudo poweroff
 
 ## Pendências herdadas da Semana 3
 
-- [ ] Registrar as observações sobre **arquivos ocultos** (Sessão 3 da Semana 3)
-- [ ] **Simulado diagnóstico completo** — 40 questões, cronometrado, sem consulta. Ver seção ao final
-- [ ] Remover o arquivo acidental da home: `rm 'sudo apt upgrade -y'`
+Situação no fechamento, em 29/09:
+
+- [ ] Registrar as observações sobre **arquivos ocultos** (Sessão 3 da Semana 3) — transferida para a Semana 5, registro do Laboratório 1 (sexta 02/10)
+- [ ] **Simulado diagnóstico completo** — 40 questões, cronometrado, sem consulta — transferido para a Semana 5, **domingo 04/10**. Ver seção ao final
+- [ ] Remover o arquivo acidental da home: `rm 'sudo apt upgrade -y'` — transferida para a Semana 5 (quarta 30/09)
 
 ---
 
@@ -689,6 +692,8 @@ echo $?                                       # deve ser 0
 ls -lh projeto.tar*
 ```
 
+**Resolução (29/09):** o `bzip2` foi instalado. A comparação dos três formatos com os tamanhos reais foi transferida para o aquecimento de quarta 30/09, na Semana 5.
+
 **O aprendizado maior está em como isso passou despercebido.** O `tar -cjvf` é *verbose*: ele lista os arquivos na tela **antes** de tentar comprimir. A saída parecia normal, e a falha só apareceu no tamanho do resultado.
 
 É o cenário do código de saída, visto na Sessão 1:
@@ -724,9 +729,9 @@ Depois de instalar o `bzip2`, refaça os três e compare os tamanhos reais.
 
 ---
 
-## Sessão 5 — `find`, desafio integrador e autoavaliação — REALIZADA EM 28/09, PARCIALMENTE
+## Sessão 5 — `find`, desafio integrador e autoavaliação — CONCLUÍDA (laboratório em 28/09, autoavaliação em 29/09)
 
-Prevista para sexta 25/09, executada na segunda 28/09. Laboratório de `find` e desafio integrador concluídos; **autoavaliação pendente**.
+Prevista para sexta 25/09, executada na segunda 28/09. Laboratório de `find` e desafio integrador concluídos em 28/09. A autoavaliação foi realizada em 29/09.
 
 ### Laboratório — `find`
 
@@ -1073,7 +1078,7 @@ Responda sem consultar. Confira só ao final.
 16. Arquivar junta vários arquivos em um só, sem reduzir tamanho. Comprimir reduz o tamanho de um arquivo.
 17. `-c` cria, `-x` extrai, `-t` lista, `-v` mostra os arquivos processados, `-f` indica o nome do arquivo.
 18. Porque o nome do arquivo é o argumento que vem imediatamente após o `-f`.
-19. O original é substituído pelo `.gz`. A opção `-k`, de *keep*, preserva o original.
+19. O original é substituído pelo `.gz`. A opção `-k`, de *keep*, preserva.
 20. `tar -tvf arquivo.tar.gz`, ou `tar -tzvf`.
 
 </details>
@@ -1118,6 +1123,8 @@ Detalhamento:
 **O bloco de redirecionamento saiu inteiro**, incluindo o `2>&1`, que era o ponto mais difícil da semana e gerou a Correção 29. Oito dias depois da Sessão 1, cinco de cinco. Isso é retenção real.
 
 ### Correções da autoavaliação
+
+**Anotadas no caderno em 29/09.** As quatro correções abaixo (49 a 52) foram reescritas pelo aluno, cada uma com o exemplo executável, e registradas no caderno.
 
 **Correção 49 — `grep -v` é *invert*, não *verbose*. Esta é a correção mais custosa da semana.**
 
@@ -1271,15 +1278,19 @@ Executar, não ler. Cinco dias, dez minutos por dia, sem uma sessão nova no cal
 cd ~ && rm -rf lab4
 ```
 
+Como o `lab4` é removido no fim da Semana 4, os arquivos de apoio do aquecimento (`funcionarios.csv` e `sistema.log`) são recriados em `~/lab5`, conforme o roteiro do arquivo da Semana 5.
+
 ---
 
-## Simulado diagnóstico — pendência da Semana 3
+## Simulado diagnóstico — transferido para a Semana 5
 
-Uma hora, sem interrupção. 40 questões, cronometrado, sem consultar nada.
+Pendência herdada da Semana 3, ainda em aberto no fechamento desta semana. Uma hora, sem interrupção. 40 questões, cronometrado, sem consultar nada.
+
+**Nova data: domingo 04/10.** O protocolo completo, as questões que retestam as correções da Semana 4 e a tabela de resultado estão em `labs/semana-05.md`.
 
 O simulado está em `praticas/simulado-01-diagnostico.md`, fora de `labs/`. As fontes gratuitas adicionais estão em `praticas/fontes-de-simulados.md`.
 
-**Expectativa:** entre 55% e 70%. Você cobriu cerca de 60% do conteúdo e ainda não estudou o Tópico 5, que vale 7 pontos.
+**Expectativa:** entre 60% e 75%. Você cobriu cerca de 65% do conteúdo e ainda não estudou o Tópico 5, que vale 7 pontos.
 
 **O que importa não é a nota, é onde os erros se concentram.**
 
@@ -1309,21 +1320,44 @@ O simulado está em `praticas/simulado-01-diagnostico.md`, fora de `labs/`. As f
 - [x] Bandit níveis 6, 7 e 8 — todos concluídos (21 e 23/09)
 - [x] Curso do Muller — retomado em 23/09, aula 26 de 72
 - [x] Desafio integrador — sete pipelines (seis sem consulta)
-- [x] Instalar o `bzip2` e refazer a comparação de compressão
+- [x] Instalar o `bzip2` (29/09)
 - [x] Autoavaliação realizada em 29/09 — **14 de 20, abaixo da meta de 16**
-- [ ] Simulado diagnóstico de 40 questões — **transferido para a Semana 5**
-- [x] Pendências da Semana 3: arquivos ocultos e limpeza da home
-- [x] Commits ao fim de cada sessão
+- [x] Correções 49 a 52 anotadas no caderno (29/09)
+- [x] Commits da Semana 4 (29/09)
+- [ ] Refazer a comparação de compressão com o `bzip2` — **transferido para a Semana 5** (quarta 30/09)
+- [ ] Simulado diagnóstico de 40 questões — **transferido para a Semana 5** (domingo 04/10)
+- [ ] Pendências da Semana 3: arquivos ocultos e limpeza da home — **transferidas para a Semana 5**
 
 ---
 
 ## Fechamento da Semana 4
 
-**Situação: fechada em 29/09, com o simulado diagnóstico transferido para a Semana 5.**
+**Situação: fechada em 29/09, com o simulado diagnóstico e três pendências menores transferidos para a Semana 5.**
 
 As cinco sessões de laboratório foram executadas, todas com registro e correção. A semana produziu **dez correções** (43 a 52), somando **52 correções em quatro semanas**.
 
 Duas delas merecem destaque, por razões opostas. A **44** — a precedência do `-o` no `find` — é o tipo de erro que não gera mensagem: o comando roda, devolve resultado, e o resultado está errado. A **50** — o `sort` sem `-n` ser crescente — é a quarta ocorrência do mesmo conceito, e o que ela revela não é o conceito, é o método: **três registros escritos não fixaram o que uma execução de quinze segundos fixa.**
+
+### Dívidas pagas
+
+| Dívida | Data |
+|---|---|
+| Autoavaliação realizada e corrigida — 14 de 20 | 29/09 |
+| Correções 49 a 52 anotadas no caderno | 29/09 |
+| Instalação do `bzip2` | 29/09 |
+| Commits da Semana 4 | 29/09 |
+
+### Dívidas transferidas para a Semana 5
+
+| Dívida | Novo prazo |
+|---|---|
+| Refazer a comparação de compressão com o `bzip2` já instalado | Quarta 30/09, no aquecimento |
+| Simulado diagnóstico de 40 questões | **Domingo 04/10** |
+| Registrar as observações sobre arquivos ocultos | Sexta 02/10, no registro do Laboratório 1 |
+| `rm 'sudo apt upgrade -y'` na home | Quarta 30/09 |
+| Reteste das 4 questões erradas da autoavaliação | Aquecimento diário, até domingo 04/10 |
+
+### Balanço
 
 | Item | Previsto | Realizado |
 |---|---|---|
@@ -1331,9 +1365,12 @@ Duas delas merecem destaque, por razões opostas. A **44** — a precedência do
 | Fechamento | 27/09 | 29/09 |
 | Autoavaliação | 27/09 | 29/09 — **14 de 20** |
 | Simulado diagnóstico | 27/09 | transferido para 04/10 |
+| Curso do Muller | aulas 26 a 43 | Sem avanço além da aula 26; adiado em 28 e 29/09 |
 | Correções registradas | — | 10 (43 a 52) |
 
 **O resultado mais importante da semana não é a nota.** É o que a nota expôs: as autoavaliações das Semanas 2 e 3, respondidas no mesmo dia do estudo, mediam memória de curto prazo. Esta, respondida quatro dias depois, mediu retenção. O 14 de 20 é o primeiro número comparável da série — e, a partir daqui, a regra muda: **a autoavaliação de cada semana passa a ser respondida na semana seguinte**, nunca no dia do último laboratório.
+
+**Ponto de atenção que fica para a Semana 5:** o curso não avançou desde 23/09. O plano de duas fases depende dele como atividade principal, e as 46 aulas restantes não cabem em três semanas se o atraso se repetir. A regra de transbordo e a fila de dívidas do arquivo da Semana 5 existem para isso.
 
 ---
 
