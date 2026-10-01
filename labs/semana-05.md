@@ -85,8 +85,8 @@ A segunda-feira foi consumida pela Sessão 5 da Semana 4 e a terça pela autoava
 |---|---|---|
 | Seg 28 | Sessão 5 da Semana 4 — `find` e desafio integrador | concluído |
 | Ter 29 | Autoavaliação da Semana 4 · correções 49 a 52 · `bzip2` · commits | concluído |
-| **Qua 30** | Voucher (10 min) · **curso, aulas 26 a 34** · aquecimento | 1h25 |
-| **Qui 01/10** | **Curso, aulas 35 a 43** (as de shell script a 1x) · aquecimento | 1h25 |
+| **Qua 30** | Voucher (10 min) · curso, aulas 26 a 34 · aquecimento — **realizado em parte: aulas 26 a 30, checkpoint na aula 31** | 1h25 |
+| **Qui 01/10** | **Curso, aulas 31 a 43** (13 aulas; as de shell script a 1x) · aquecimento | cerca de 1h50 |
 | Sex 02 | Laboratório 1 — fundamentos de shell script, `vi` e `nano` · aquecimento | 1h10 |
 | Sáb 03 | Laboratório 2 — os quatro scripts · aquecimento | 1h10 |
 | **Dom 04** | **Simulado diagnóstico** · apuração · commits | 1h35 |
@@ -98,6 +98,8 @@ A segunda-feira foi consumida pela Sessão 5 da Semana 4 e a terça pela autoava
 1. As aulas de shell script (objetivo 3.3) têm prioridade e **precisam estar vistas antes do Laboratório 1**. Se necessário, elas passam à frente das demais.
 2. As aulas restantes das faixas 26 a 37 podem transbordar para **segunda 05/10**, primeiro dia da Semana 6, antes das aulas de permissões. Nunca para sexta, sábado ou domingo.
 3. O Laboratório 2 e o simulado **não são cortados nem movidos**.
+
+**Atualização de 30/09.** A quarta fechou **5 das 9 aulas** previstas (26 a 30). As 4 restantes (31 a 34) passaram para a quinta, que agora tem **13 aulas (31 a 43)**, cerca de 1h30 de vídeo mais o aquecimento. No pior caso a semana passa de 6h45 para cerca de 7h10, 10 minutos acima do teto. A folga vem de duas decisões: (a) subir para **2x** nas aulas que só repetem conteúdo já praticado, como a navegação de hoje, que o próprio caderno marca como "já tratado nos labs"; e (b) aplicar a regra de transbordo, em que o que não couber na quinta e não for de shell script vai para a segunda 05/10. Se na quinta à noite as aulas de shell script não estiverem vistas, o Laboratório 1 de sexta começa com 20 minutos de vídeo.
 
 ---
 
@@ -193,18 +195,19 @@ Os três `echo $?` precisam ser `0`, e os tamanhos precisam obedecer à regra **
 
 ## Curso — Matheus Muller
 
-Posição atual: **aula 26 de 72**. Restam 46 aulas; esta semana fecha 18 delas (26 a 43).
+Posição atual (30/09): **checkpoint na aula 31**, com as aulas 26 a 30 assistidas. Restam 42 aulas (31 a 72); esta semana fecha mais 13 (31 a 43).
 
 | Dia | Aulas | Velocidade | Tempo estimado |
 |---|---|---|---|
-| Qua 30/09 | 26 a 34 (9 aulas) | 1.5x | cerca de 1h05 |
-| Qui 01/10 | 35 a 43 (9 aulas) | 1.5x, e **1x nas de shell script** | cerca de 1h15 |
+| Qua 30/09 | 26 a 30 (5 aulas) — **concluídas** | 1.5x | — |
+| Qui 01/10 | 31 a 43 (13 aulas) | 1.5x; **2x** nas que repetem conteúdo já praticado; **1x** nas de shell script | cerca de 1h30 |
 
 Regras do curso:
 
 - Ao chegar nas aulas de shell script (3.3), reduza para **1x**. O vídeo entrega o modelo mental que o laboratório de sexta transforma em prática.
 - Anote no caderno **só o que o vídeo mostra e você ainda não sabia**. O que já foi praticado, o vídeo confirma e não ensina.
 - Se o número exato das aulas de shell script não cair na faixa 35 a 43, ajuste a divisão entre quarta e quinta, mas mantenha a regra: o 3.3 vem visto **antes** da sexta.
+- Aulas que só repetem o que já foi praticado (navegação, `ls`, variáveis de ambiente, comandos do Tópico 1) podem ir a **2x**. O critério é o seu próprio caderno: se ele já registra o assunto como "tratado nos labs", o vídeo é confirmação.
 - Registre a aula em que parou ao fim de cada dia, na seção de registro abaixo.
 
 ---
@@ -513,8 +516,8 @@ Depois do simulado, o resultado é registrado em `praticas/` e no plano geral.
 
 | Item | Origem | Estado | Prazo |
 |---|---|---|---|
-| Curso, aulas 26 a 34 | Semana 5, terça 29/09 | Adiado 2 dias | Qua 30/09 |
-| Curso, aulas 35 a 43 | Semana 5, quarta 30/09 | Previsto | Qui 01/10 |
+| Curso, aulas 26 a 30 | Semana 5, terça 29/09 | **Pago em 30/09** | Concluído |
+| Curso, aulas 31 a 43 | Semana 5, quarta 30/09 | 4 aulas da quarta transferidas para a quinta | Qui 01/10 |
 | Voucher da prova e agendamento para 09/11 | Semana 5 | Em aberto | Qua 30/09 |
 | Simulado diagnóstico | Semana 3 | Em aberto, 4 semanas de atraso | Dom 04/10 |
 | Reteste das 4 questões erradas da autoavaliação da Semana 4 | Semana 4 | No aquecimento diário | Até dom 04/10 |
@@ -533,8 +536,178 @@ Preencha ao fim de cada dia.
 
 | Data | Aulas assistidas | Parei na aula | Anotações novas |
 |---|---|---|---|
-| 30/09 | | | |
+| 30/09 | 26 a 30 (5 aulas) | **31 (checkpoint)** | `ls` e opções, `echo`, `$PATH`, `whoami`, `su`, `runlevel`, `init`, `uname`, navegação. Detalhe abaixo |
 | 01/10 | | | |
+
+### Registro do curso — 30/09 — aulas 26 a 30 (checkpoint na aula 31)
+
+Conteúdo: `ls`, `echo` e `$PATH`, identidade e troca de usuário, níveis de execução, `uname` e navegação. A navegação já havia sido praticada nos laboratórios das Semanas 2 e 3, e o próprio caderno registra isso; o vídeo confirma. As anotações abaixo já estão **corrigidas**, e cada ajuste é explicado na seção de correções logo adiante.
+
+**O comando `ls`**
+
+| Opção | Origem | Função |
+|---|---|---|
+| `ls` | *list* | Lista arquivos e diretórios do diretório atual ou do informado |
+| `-a` | *all* | Inclui os ocultos (nomes que começam com `.`), além das entradas `.` e `..` |
+| `-l` | *long* | Formato longo, com permissões, dono, tamanho e data. Combina com o `-a`: `ls -la` |
+| `-S` | *size* | Ordena por tamanho, do maior para o menor |
+| `-r` | *reverse* | Inverte a ordem. `ls -lSr` vai do menor para o maior |
+| `-R` | *recursive* | Desce por todos os subdiretórios. `ls -Rl` |
+| `-h` | *human-readable* | Tamanhos em K, M e G. **Só tem efeito visível junto com `-l`**: `ls -lh` |
+
+`ls -lSar` combina cinco opções: formato longo, por tamanho, incluindo ocultos, do menor para o maior.
+
+**`echo` e a variável `$PATH`**
+
+- O `echo` exibe uma string e também o conteúdo de variáveis: `echo $PATH`.
+- O `$PATH` é a **lista de diretórios, separados por `:`, onde o shell procura o programa do comando digitado**. A busca vai da esquerda para a direita e **vale o primeiro que for encontrado**. Por isso a ordem muda qual `ls` é executado.
+- `which ls` mostra qual arquivo o shell escolheu.
+
+```bash
+export PATH=$PATH:/opt        # acrescenta /opt ao final: é procurado por último
+```
+
+Prática resolvida: adicionar o `/opt` ao `$PATH` com `export PATH=$PATH:/opt`. Está correto.
+
+**Identidade e troca de usuário**
+
+| Comando | Função |
+|---|---|
+| `whoami` | Pergunta ao sistema quem é o usuário efetivo do processo |
+| `echo $USER` e `echo $LOGNAME` | Variáveis de ambiente com o nome do usuário, definidas no login |
+| `su usuario` | *Substitute user*: abre um shell como outro usuário, mantendo em boa parte o ambiente atual |
+| `su - usuario` | O mesmo, mas como **shell de login**: carrega o ambiente completo do usuário e vai para o home dele |
+| `su` (sem nome) | Troca para o `root` |
+
+Na Ubuntu a conta `root` vem, por padrão, sem senha definida. Por isso `su -` sozinho falha com *Authentication failure*; o caminho é `sudo -i` ou `sudo su -`.
+
+**Níveis de execução (runlevels)**
+
+| Nível | Significado clássico (SysV) |
+|---|---|
+| 0 | Desligar |
+| 1 | Modo monousuário (manutenção) |
+| 2 a 4 | Multiusuário, sem interface gráfica (o 3 é o mais citado) |
+| 5 | Multiusuário com interface gráfica |
+| 6 | Reiniciar |
+
+- `runlevel` imprime **dois valores**: o nível anterior e o atual. `N 5` quer dizer "sem nível anterior, atualmente 5".
+- `init 0` desliga e `init 6` reinicia. Pede `sudo`, e na VM `init 0` encerra a máquina.
+- O conceito é do *SysV init*. O systemd usa **targets**: `graphical.target` corresponde ao 5 e `multi-user.target` ao 3.
+
+**`uname`**
+
+| Opção | Mostra |
+|---|---|
+| `uname` | O nome do kernel: `Linux` |
+| `-r` | *Release*: a versão do kernel em uso |
+| `-v` | A versão de compilação do kernel, com o número da build e a data |
+| `-m` | O nome da arquitetura da máquina, como `x86_64` |
+| `-o` | O sistema operacional: `GNU/Linux` |
+| `-a` | Todos os campos: kernel, **nome da máquina**, release, versão, arquitetura e sistema operacional |
+| `--help` | A lista de opções |
+
+Práticas resolvidas: `uname -r` devolveu `7.0.0-30-generic` e `uname -m` devolveu `x86_64`. Ambos estão corretos. O `7.0.0` é a versão do kernel, o `30` a revisão da distribuição e o `generic` o tipo de kernel.
+
+**Navegação**
+
+| Comando | Função |
+|---|---|
+| `pwd` | Mostra o diretório atual (*print working directory*) |
+| `cd` | *Change directory* |
+| `.` | O diretório atual |
+| `..` | O diretório **pai**, um nível acima na árvore |
+| `cd` sem argumento, ou `cd ~` | O diretório pessoal do usuário, como `/home/davi` |
+| `cd -` | O diretório **anterior**, aquele em que você estava antes |
+
+Práticas resolvidas: `cd /var/log`, `cd`, `cd -` e `cd ~`. Todas corretas.
+
+### Correções desta sessão
+
+**Correção 53 — `..` é o diretório pai, não o "anterior". Quarta ocorrência.**
+
+A anotação diz "`..` → diretório anterior na árvore". O complemento "na árvore" mostra que a ideia está certa, mas a palavra **anterior** é justamente a que o plano reserva para outro comando:
+
+| Símbolo | Nome certo | Em que se baseia |
+|---|---|---|
+| `..` | **Pai** | Hierarquia: um nível acima |
+| `cd -` | **Anterior** | Histórico: onde eu estava antes |
+| `.` | Atual | O ponto em que estou |
+
+Partindo de `/var/log`, `cd ..` leva a `/var`, e `cd -` leva ao diretório em que você estava **antes** de entrar em `/var/log`, que pode ser qualquer um. O plano já registrava três ocorrências deste erro. A regra a fixar: **"anterior" só existe para o `cd -`; para o `..` a palavra é "pai"**.
+
+**Correção 54 — `~` e `cd` sem argumento levam ao diretório pessoal, não a `/home`.**
+
+A anotação diz "`~` ou `cd` → /home". O `/home` é o diretório que **contém** os diretórios pessoais de todos os usuários. O destino do `~` é o do usuário atual:
+
+| Usuário | `~` e `cd` levam a |
+|---|---|
+| `davi` | `/home/davi` |
+| `root` | `/root` |
+
+A variável `$HOME` guarda o mesmo caminho. `cd /home` leva ao diretório pai de todos os homes, que é outro lugar.
+
+**Correção 55 — a variável é `$PWD`, em maiúsculas, e o `cd -` depende do `$OLDPWD`.**
+
+A anotação diz que o `pwd` "busca na variável `$pwd`". O Linux diferencia maiúsculas de minúsculas, então `$pwd` é **outra variável, inexistente e vazia**. A certa é `$PWD`, que o bash atualiza a cada `cd`. Existe um par:
+
+| Variável | Guarda |
+|---|---|
+| `$PWD` | O diretório atual |
+| `$OLDPWD` | O diretório em que você estava antes |
+
+É o `$OLDPWD` que torna o `cd -` possível: o comando apenas troca os dois valores. É o mesmo cuidado com o `$SHELL` e o `$0` da Correção 38: a variável guarda um estado que o próprio shell mantém.
+
+**Correção 56 — `uname -a` não traz a distribuição, e o `-o` também não.**
+
+Três ajustes na lista do `uname`:
+
+- **`-a`:** a anotação diz "kernel, versão da distribuição, data da build e arquitetura". O `uname` **não conhece a distribuição**. Entre os campos do `-a` está o **nome da máquina** (*hostname*), que a anotação não cita.
+- **`-o`:** mostra `GNU/Linux`. Isso diz que o sistema operacional é Linux, **não qual distribuição**. Para saber o nome e a versão da distribuição, o arquivo é `/etc/os-release`. A questão 27 do simulado de domingo cobra exatamente isso.
+- **`-v` e `-m`:** o `-v` não é só "data da build": é a versão de compilação, que **contém** o número da build e a data. O `-m` não responde "32 ou 64 bits", e sim o **nome** da arquitetura (`x86_64`, `aarch64`, `i686`); o número de bits se deduz do nome.
+
+**Correção 57 — o `$PATH` não "armazena" comandos: é uma lista de onde procurar.**
+
+Três pontos:
+
+1. Os executáveis ficam nos diretórios. O `$PATH` guarda **apenas os nomes desses diretórios**.
+2. A ordem importa e o primeiro encontrado vence. `PATH=$PATH:/opt` coloca o `/opt` por último; `PATH=/opt:$PATH` o coloca primeiro, e um programa de nome igual ao de um comando do sistema passaria a ser executado no lugar dele.
+3. A alteração com `export` vale **só para a sessão atual**. Ao sair e entrar de novo, volta ao original. Para tornar permanente, a linha vai no `~/.bashrc`.
+
+Há uma armadilha de prova: escrever `PATH=/opt` **sem** o `$PATH` apaga a lista inteira, e o shell passa a responder `command not found` até para o `ls`. A forma de acrescentar sem apagar é sempre `PATH=$PATH:novo`. O mesmo mecanismo explica por que scripts rodam com `./script.sh`: o diretório atual não está no `$PATH`. Isso volta no Laboratório 1.
+
+**Correção 58 — o `runlevel` mostra o anterior e o atual, e o nível não é alterado por "comandos de desligamento".**
+
+A anotação diz que o nível "é alterado por comandos de desligamento ou reinicialização". É uma simplificação que mistura duas coisas. O que acontece é o inverso: desligar e reiniciar **são** níveis (0 e 6), e quem muda de nível é o `init N` (ou `telinit N`). Em sistemas com systemd o equivalente é trocar o *target*, e o `runlevel` existe por compatibilidade. Para ver o que a sua VM usa, rode `systemctl get-default`.
+
+**Correção 59 — `whoami` e `$USER` respondem a mesma pergunta por fontes diferentes.**
+
+As três formas aparecem como equivalentes na anotação. Em uso normal devolvem o mesmo nome, mas a origem muda:
+
+| Forma | De onde vem |
+|---|---|
+| `whoami` | Consulta o sistema: o usuário efetivo do processo naquele instante |
+| `$USER` e `$LOGNAME` | Variáveis de ambiente, definidas no login e herdadas pelos processos filhos |
+
+Quando um shell troca de usuário com `su` sem o `-`, as variáveis de ambiente podem continuar com o valor antigo, e aí os dois divergem. A fonte confiável é o `whoami`. É o mesmo princípio da Correção 38: a variável é herança do login, e o comando consulta o estado atual.
+
+### Para executar na VM — 3 minutos
+
+Conceito que resiste a leitura cede a uma execução (Correção 50). Rode e compare com o que está escrito acima:
+
+```bash
+echo $PWD ; pwd ; echo "[$pwd]"            # o último sai vazio: $pwd minúsculo não existe
+cd /var/log ; echo $OLDPWD ; cd - ; pwd    # o cd - usa o OLDPWD
+cd /home ; pwd ; cd ; pwd                  # /home não é o mesmo que o ~
+echo $PATH | tr ':' '\n'                   # um diretório por linha
+which ls ; ls -ld /bin                     # em geral /usr/bin/ls, com /bin como link
+uname -a ; uname -o ; uname -v
+head -3 /etc/os-release                    # a distribuição está aqui, não no uname
+whoami ; echo $USER $LOGNAME
+runlevel ; systemctl get-default
+```
+
+Duas verificações específicas da sua máquina: o resultado do `which ls` (a anotação traz `/bin/ls`, que é o caminho do vídeo; na Ubuntu Server recente o provável é `/usr/bin/ls`) e se o `runlevel` responde `N 5` ou `N 3`.
 
 ---
 
@@ -550,9 +723,9 @@ Preencha ao fim de cada dia.
 
 ### Correções da semana
 
-A numeração segue a série global. A última da Semana 4 foi a **Correção 52**; a próxima é a **53**.
+A numeração segue a série global. A última da Semana 4 foi a **Correção 52**. As **Correções 53 a 59** foram registradas em 30/09, nas anotações do curso. A próxima é a **60**.
 
-*A preencher.*
+*Correções dos laboratórios: a preencher.*
 
 ### Resultado do simulado — domingo 04/10
 
@@ -575,8 +748,8 @@ A numeração segue a série global. A última da Semana 4 foi a **Correção 52
 - [x] Instalação do `bzip2` (29/09)
 - [x] Commits da Semana 4 (29/09)
 - [ ] Voucher comprado e prova agendada para 09/11
-- [ ] Curso, aulas 26 a 34 (quarta)
-- [ ] Curso, aulas 35 a 43 (quinta)
+- [x] Curso, aulas 26 a 30 (quarta) — checkpoint na aula 31
+- [ ] Curso, aulas 31 a 43 (quinta)
 - [ ] Comparação de compressão refeita com o `bzip2`
 - [ ] Aquecimento diário: quarta, quinta, sexta, sábado e domingo
 - [ ] Laboratório 1 — fundamentos de shell script, `vi` e `nano` (sexta)
