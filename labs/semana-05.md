@@ -747,11 +747,10 @@ A numeração segue a série global. A última da Semana 4 foi a **Correção 52
 - [x] Correções 49 a 52 anotadas (29/09)
 - [x] Instalação do `bzip2` (29/09)
 - [x] Commits da Semana 4 (29/09)
-- [ ] Voucher comprado e prova agendada para 09/11
 - [x] Curso, aulas 26 a 30 (quarta) — checkpoint na aula 31
 - [ ] Curso, aulas 31 a 43 (quinta)
-- [ ] Comparação de compressão refeita com o `bzip2`
-- [ ] Aquecimento diário: quarta, quinta, sexta, sábado e domingo
+- [x] Comparação de compressão refeita com o `bzip2`
+- [x] Aquecimento diário: quarta, quinta, sexta, sábado e domingo
 - [ ] Laboratório 1 — fundamentos de shell script, `vi` e `nano` (sexta)
 - [ ] Laboratório 2 — os quatro scripts (sábado)
 - [ ] Simulado diagnóstico de 40 questões (domingo)
