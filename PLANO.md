@@ -29,9 +29,9 @@
 | Autoavaliação da Semana 4 | **14 de 20** (29/09) — respondida 4 dias depois; abaixo da meta de 16. **Correções 49 a 52 anotadas no caderno em 29/09** |
 | Bandit | Níveis 0 a 9 |
 | Cards de revisão (Notion) | Em uso desde a Semana 1 |
-| Curso do Muller | **Aula 26 de 72** (23/09) — 46 restantes. Adiado em 28 e 29/09 |
+| Curso do Muller | **Checkpoint na aula 31 de 72** (30/09; aulas 26 a 30 assistidas) — 42 restantes. Adiado em 28 e 29/09 |
 
-### Dívidas pagas em 29/09
+### Dívidas pagas (29 e 30/09)
 
 | Dívida | Origem |
 |---|---|
@@ -39,13 +39,13 @@
 | Instalação do `bzip2` | Semana 4 |
 | Commits da Semana 4 | Semana 4 |
 | Correções 49 a 52 anotadas | Semana 4 |
+| Curso, aulas 26 a 30 (30/09) | Semana 5 |
 
 ### Pendente
 
 | Item | Prazo |
 |---|---|
-| **Curso, aulas 26 a 34** (adiado duas vezes) | quarta 30/09 |
-| **Curso, aulas 35 a 43** | quinta 01/10 |
+| **Curso, aulas 31 a 43** (13 aulas; as aulas 26 a 30 foram concluídas em 30/09) | quinta 01/10 |
 | **Voucher da prova** e agendamento para 09/11 | quarta 30/09 (prazo original: 29/09) |
 | **Simulado diagnóstico** — 40 questões, cronometrado | **domingo 04/10** — escrito, em `praticas/simulado-01-diagnostico.md` |
 | Reteste das 4 questões erradas da autoavaliação da Semana 4 | No aquecimento diário, até domingo |
@@ -190,7 +190,7 @@ Host lab
 
 | Conteúdo | Velocidade | Motivo |
 |---|---|---|
-| Tópicos 1, 2, 3.1 e 3.2 | **1.5x** | Já praticados, com autoavaliação de 20/20 na S3 e 14/20 na S4. O vídeo confirma, não ensina |
+| Tópicos 1, 2, 3.1 e 3.2 | **1.5x**, ou **2x** se a aula só repete o que o caderno já registra como praticado | Já praticados, com autoavaliação de 20/20 na S3 e 14/20 na S4. O vídeo confirma, não ensina |
 | Objetivo **3.3 — shell script** | **1x** | Peso 4, o maior individual da prova. O vídeo entrega o modelo mental |
 | Tópicos 4 e 5 | **1.25x** | Conteúdo novo, mas com laboratório logo em seguida |
 
@@ -299,7 +299,7 @@ Semanas de **segunda a domingo**. A prova cai na segunda-feira seguinte ao fim d
 
 | Item | Número |
 |---|---|
-| Aulas restantes do curso | 46 (da 26 à 72) |
+| Aulas restantes do curso | 42 (da 31 à 72), após o checkpoint de 30/09 |
 | Semanas na Fase 1 | 3 |
 | Aulas por semana | ~15 |
 | Tempo estimado de vídeo, em 1.25–1.5x | **1h30 a 2h por semana** |
@@ -328,8 +328,8 @@ A Fase 1 termina em **18/10**, com o curso fechado e todos os cinco tópicos ao 
 |---|---|---|
 | Seg 28 | Sessão 5 da Semana 4 — `find` e desafio integrador | concluído |
 | Ter 29 | Autoavaliação da Semana 4 · correções 49 a 52 · `bzip2` · commits | concluído |
-| Qua 30 | Voucher (10 min) · curso, aulas 26 a 34 · aquecimento | 1h25 |
-| Qui 01/10 | Curso, aulas 35 a 43 · aquecimento | 1h25 |
+| Qua 30 | Voucher (10 min) · curso, aulas 26 a 34 · aquecimento — **realizado: aulas 26 a 30** | 1h25 |
+| Qui 01/10 | Curso, aulas 31 a 43 (13 aulas) · aquecimento | cerca de 1h50 |
 | Sex 02 | Laboratório 1 — fundamentos de shell script, `vi` e `nano` · aquecimento | 1h10 |
 | Sáb 03 | Laboratório 2 — os quatro scripts · aquecimento | 1h10 |
 | Dom 04 | Simulado diagnóstico · apuração · commits | 1h35 |
@@ -338,7 +338,9 @@ Total a partir de quarta: **6h45**, dentro do teto de 7h, sem folga.
 
 **Regra de transbordo.** Se a quarta ou a quinta não fecharem as 9 aulas: (1) as aulas de shell script têm prioridade e precisam estar vistas antes do Laboratório 1; (2) as demais podem transbordar para a segunda 05/10, antes das aulas de permissões; (3) o Laboratório 2 e o simulado não são cortados nem movidos.
 
-**Curso:** aulas 26 a 43. Reduzir para **1x** ao chegar no shell script.
+**Atualização de 30/09.** A quarta fechou 5 das 9 aulas previstas. As 4 restantes passaram para a quinta, que fica com 13 aulas. No pior caso a semana vai a cerca de 7h10, 10 minutos acima do teto; a folga vem de usar **2x** nas aulas que só repetem conteúdo já praticado e da regra de transbordo. Detalhes em `labs/semana-05.md`.
+
+**Curso:** aulas 26 a 43, com checkpoint na aula 31 em 30/09. Reduzir para **1x** ao chegar no shell script.
 
 **Justificativa da divisão em duas práticas.** O objetivo 3.3 tem peso 4 e cobre shebang, variáveis, argumentos, condicionais, loops, códigos de saída e os editores `vi` e `nano`. Não cabe em uma sessão com os quatro scripts no fim. A sexta cobre os fundamentos; o sábado escreve o código.
 
@@ -502,7 +504,7 @@ Na prova: 40 questões em 60 minutos, 1,5 minuto por questão. Marcar as difíce
 | **Permissões sem repetição suficiente** | É o conteúdo mais dependente de reflexo, e cai na semana de menor frequência | Aquecimento da Semana 6 dedicado só a conversão de permissões · sessão extra na Semana 7 se a conversão não sair em 3 segundos |
 | **Curso sem prática imediata** | Assistir sem digitar produz reconhecimento, não competência | As 2 práticas da semana cobrem sempre o objetivo de maior peso daquele bloco |
 | **Simulado adiado de novo** | Já atrasou 4 semanas | Ocupa formalmente o lugar de uma das duas práticas da Semana 5, em data fixa: domingo 04/10 |
-| **Curso adiado repetidamente** | Segunda e terça da Semana 5 sem aulas; 46 restantes em 3 semanas | Dois blocos de 9 aulas na quarta e na quinta · regra de transbordo (shell script tem prioridade, o resto vai para segunda 05/10) · fila de dívidas registrada por semana |
+| **Curso adiado repetidamente** | Segunda e terça da Semana 5 sem aulas; na quarta, 5 das 9 aulas previstas (26 a 30); 42 restantes (31 a 72) em 3 semanas | Quinta com as aulas 31 a 43 · 2x nas aulas que repetem conteúdo já praticado · regra de transbordo (shell script tem prioridade, o resto vai para segunda 05/10) · fila de dívidas registrada por semana |
 | **Retenção menor que a percebida** | A autoavaliação da Semana 4, feita 4 dias depois, deu 14/20 contra 20/20 no mesmo dia | Autoavaliação sempre na semana seguinte · aquecimento pautado pelos erros · simulado com marcação de chutes |
 
 ---
@@ -531,7 +533,7 @@ Na prova: 40 questões em 60 minutos, 1,5 minuto por questão. Marcar as difíce
 | Erro | Vezes | Correção |
 |---|---|---|
 | `sort` sem `-n` descrito como "invertendo a ordem" | **4** (Correções 32, 33/34 e 50) | As duas formas são **crescentes**; só o `-r` inverte. `-k` é **coluna**, vem de *key*. Reler não resolveu: o que resolve é executar os quatro comandos lado a lado |
-| `cd ..` descrito como "diretório anterior" | 3 | `cd ..` é **pai**; `cd -` é anterior |
+| `cd ..` descrito como "diretório anterior" | **4** (a quarta em 30/09, Correção 53) | `cd ..` é **pai**; `cd -` é anterior. "Anterior" só existe para o `cd -` |
 | Confundir o efeito com o mecanismo (`2>&1`, hard link, `-f` do `tar`) | 3 | O resultado certo pelo motivo errado quebra quando a pergunta muda de ângulo |
 | `grep -v` entendido como *verbose* | 1 (Correção 49) | É *invert*. O `grep` é a exceção: em `tar`, `cp`, `rm` e `mv` o `-v` é verbose. Custou **duas** questões da autoavaliação, porque a 14 dependia dele |
 
