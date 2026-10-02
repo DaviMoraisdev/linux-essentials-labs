@@ -45,7 +45,8 @@
 
 | Item | Prazo |
 |---|---|
-| **Curso, aulas 31 a 43** (13 aulas; as aulas 26 a 30 foram concluídas em 30/09) | quinta 01/10 |
+| **Curso, aulas 31 a 43** (13 aulas; as aulas 26 a 30 foram concluídas em 30/09) | sem estudo na quinta 01/10; replanejado para sex 02 e sáb 03/10, com o excedente que não for de shell script na segunda 05/10 |
+| **Laboratório 1: blocos 3 a 6 e exercício das frutas** (blocos 1 e 2 concluídos em 02/10) | blocos 3 a 5 no sábado 03/10, **antes** do Laboratório 2; bloco 6 e exercício até segunda 05/10 |
 | **Voucher da prova** e agendamento para 09/11 | quarta 30/09 (prazo original: 29/09) |
 | **Simulado diagnóstico** — 40 questões, cronometrado | **domingo 04/10** — escrito, em `praticas/simulado-01-diagnostico.md` |
 | Reteste das 4 questões erradas da autoavaliação da Semana 4 | No aquecimento diário, até domingo |

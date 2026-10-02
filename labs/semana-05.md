@@ -101,6 +101,8 @@ A segunda-feira foi consumida pela Sessão 5 da Semana 4 e a terça pela autoava
 
 **Atualização de 30/09.** A quarta fechou **5 das 9 aulas** previstas (26 a 30). As 4 restantes (31 a 34) passaram para a quinta, que agora tem **13 aulas (31 a 43)**, cerca de 1h30 de vídeo mais o aquecimento. No pior caso a semana passa de 6h45 para cerca de 7h10, 10 minutos acima do teto. A folga vem de duas decisões: (a) subir para **2x** nas aulas que só repetem conteúdo já praticado, como a navegação de hoje, que o próprio caderno marca como "já tratado nos labs"; e (b) aplicar a regra de transbordo, em que o que não couber na quinta e não for de shell script vai para a segunda 05/10. Se na quinta à noite as aulas de shell script não estiverem vistas, o Laboratório 1 de sexta começa com 20 minutos de vídeo.
 
+**Atualização de 02/10.** A quinta não teve estudo e o Laboratório 1 de sexta foi feito em parte: blocos 1 e 2 concluídos. Os blocos 3 a 5 (`if`, `for`, código de saída) passam para o **sábado, antes do Laboratório 2**, porque os quatro scripts dependem deles. O bloco 6 (`vi` e `nano`) e o exercício das frutas ficam para depois do Laboratório 2 ou até segunda 05/10. O sábado passa de cerca de 1h35 para cerca de 2h20. O simulado de domingo **continua em data fixa**.
+
 ---
 
 ## Rotina de abertura e fechamento
@@ -517,7 +519,10 @@ Depois do simulado, o resultado é registrado em `praticas/` e no plano geral.
 | Item | Origem | Estado | Prazo |
 |---|---|---|---|
 | Curso, aulas 26 a 30 | Semana 5, terça 29/09 | **Pago em 30/09** | Concluído |
-| Curso, aulas 31 a 43 | Semana 5, quarta 30/09 | 4 aulas da quarta transferidas para a quinta | Qui 01/10 |
+| Curso, aulas 31 a 43 | Semana 5, quarta 30/09 | Em aberto: sem estudo na quinta 01/10 e sem registro de avanço desde o checkpoint da aula 31 | Replanejado para sex 02 e sáb 03/10; o excedente que não for de shell script vai para seg 05/10 |
+| Laboratório 1, blocos 3 a 5 (`if`, `for`, código de saída) | Semana 5, sexta 02/10 | Em aberto; blocos 1 e 2 concluídos | Sáb 03/10, **antes** do Laboratório 2 |
+| Laboratório 1, bloco 6 (`vi` e `nano`) | Semana 5, sexta 02/10 | Em aberto | Sáb 03/10, depois do Laboratório 2, ou até seg 05/10 |
+| Exercício do script das frutas (material do LPI) | Semana 5, sexta 02/10 | Em aberto | Até seg 05/10 |
 | Voucher da prova e agendamento para 09/11 | Semana 5 | Em aberto | Qua 30/09 |
 | Simulado diagnóstico | Semana 3 | Em aberto, 4 semanas de atraso | Dom 04/10 |
 | Reteste das 4 questões erradas da autoavaliação da Semana 4 | Semana 4 | No aquecimento diário | Até dom 04/10 |
@@ -713,9 +718,201 @@ Duas verificações específicas da sua máquina: o resultado do `which ls` (a a
 
 ## Registro das sessões
 
-### Laboratório 1 — sexta 02/10
+### Laboratório 1 — sexta 02/10 — Fundamentos de shell script — PARCIAL (blocos 1 e 2)
 
-*A preencher.*
+| Bloco | Situação |
+|---|---|
+| 1. Primeiro script, shebang e execução | Concluído, com anotações |
+| 2. Variáveis e argumentos | Concluído, com anotações |
+| 3. Decisões com `if` | **Pendente** |
+| 4. Loops com `for` | **Pendente** |
+| 5. Código de saída | **Pendente** |
+| 6. Editores `vi` e `nano` | **Pendente** |
+| Exercício do script das frutas (material do LPI) | **Pendente** |
+
+As anotações cobrem apenas os blocos 1 e 2. Os blocos 3 a 6 e o exercício não trazem anotação própria e foram tratados como não realizados. Se algum deles chegou a ser executado na VM, é só avisar e o registro é ajustado.
+
+O que está registrado a seguir já está **corrigido**, e o ajuste é explicado na Correção 60 e nas observações.
+
+#### Bloco 1 — Primeiro script, shebang e execução
+
+**Vocabulário**
+
+| Termo | Definição |
+|---|---|
+| Shell | O programa que interpreta os comandos digitados |
+| `bash` | Um shell, o *Bourne Again Shell*, padrão na maioria das distribuições |
+| Shell script | Um arquivo de texto com comandos para um shell executar. Além de comandos em sequência, aceita variáveis, condições e laços |
+| Interpretador | O programa que lê e executa as instruções do script. No caso, o `bash` |
+
+**O primeiro script, sem shebang**
+
+```bash
+echo 'echo "Hello World!"' > primeiro
+```
+
+| Parte | O que faz |
+|---|---|
+| `echo` externo | Escreve o texto que vem entre as aspas simples |
+| Texto entre aspas simples | `echo "Hello World!"`. O `echo` interno **não é executado agora**: é só conteúdo |
+| `>` | Direciona esse texto para o arquivo `primeiro`, que passa a conter a linha `echo "Hello World!"` |
+
+Sequência observada:
+
+```
+./primeiro              Permission denied
+ls -l primeiro          -rw-rw-r-- 1 davi davi 19 Oct  2 13:06 primeiro
+chmod +x primeiro
+./primeiro              Hello World
+```
+
+| Comando | Função |
+|---|---|
+| `ls -l primeiro` | Inspeciona o arquivo. Não há o `x` em nenhuma das três posições |
+| `chmod +x primeiro` | `chmod` altera o modo (as permissões); `+x` acrescenta a de execução |
+
+**Por que o primeiro script funcionou sem shebang.** O arquivo não é um binário nem traz `#!`. Quando o `bash` tenta executá-lo e o sistema recusa o formato, o próprio `bash` tenta interpretá-lo como script de shell. Funciona porque quem chamou foi um `bash`; a falta do shebang deixa o resultado **dependente de quem executa**. O shebang torna explícito qual interpretador usar.
+
+**O segundo script, com shebang**
+
+```bash
+which bash                      # /usr/bin/bash
+cat > ola.sh << 'EOF'
+#!/bin/bash
+# Primeiro script com shebang e comentario.
+echo "Hello World!"
+EOF
+```
+
+| Linha | Papel |
+|---|---|
+| `#!/bin/bash` | O shebang: diz qual interpretador executa o arquivo quando ele é chamado com `./ola.sh`. Precisa ser a **primeira linha**, sem espaço, comentário ou linha vazia antes |
+| `# Primeiro script...` | Comentário, ignorado pelo interpretador |
+| `echo "Hello World!"` | O comando em si |
+
+| Parte do `cat > ola.sh << 'EOF'` | Função |
+|---|---|
+| `cat` | Lê o texto recebido e o escreve na saída |
+| `> ola.sh` | Direciona essa saída para o arquivo |
+| `<< 'EOF'` | Abre um *here-document*: o bloco de texto até a linha `EOF` vira a entrada do `cat` |
+
+**Duas formas de executar**
+
+| Forma | Exige `x`? | Quem escolhe o interpretador |
+|---|---|---|
+| `./ola.sh` | **Sim** | O shebang |
+| `bash ola.sh` | Não, só precisa de permissão de leitura | Você, ao digitar `bash` |
+
+Teste registrado, com o resultado correto:
+
+```bash
+chmod -x ola.sh
+./ola.sh          # Permission denied
+bash ola.sh       # continua funcionando
+```
+
+A extensão `.sh` é convenção e ajuda a reconhecer scripts; não altera a execução.
+
+#### Bloco 2 — Variáveis e argumentos
+
+```bash
+./saudacao.sh Davi Morais
+```
+
+| Elemento | Valor neste exemplo |
+|---|---|
+| `$0` | `./saudacao.sh` |
+| `$1` | `Davi` |
+| `$2` | `Morais` |
+| `$#` | `2` |
+| `$@` | A lista dos argumentos: `Davi Morais` |
+
+Resultados registrados e conferidos:
+
+| Chamada | Saída |
+|---|---|
+| `./saudacao.sh Davi` | `Ola, Davi!` · `Script: ./saudacao.sh` · `Total de argumentos: 1` · `Todos: Davi` |
+| `./saudacao.sh Davi Morais` | `Ola, Davi!` · `Total de argumentos: 2` · `Todos: Davi Morais` |
+| `./saudacao.sh "Davi Morais"` | `$1` passa a valer `Davi Morais`, **1 argumento** |
+| `./saudacao.sh` | `Ola, !` · `Total de argumentos: 0` · `Todos:` |
+
+- `nome=$1` copia o primeiro argumento para a variável `nome`.
+- A saudação usa só o `$1`, por isso o `Morais` não aparece. Para o nome completo, as aspas agrupam as duas palavras em um único argumento.
+- **Aspas duplas** expandem variáveis e preservam espaços; **aspas simples** mantêm o texto literal:
+
+```bash
+nome=Davi
+echo "Ola, $nome!"     # Ola, Davi!
+echo 'Ola, $nome!'     # Ola, $nome!
+```
+
+#### Correção 60 — o `./` e o `Permission denied` têm causas diferentes
+
+A anotação diz: "o `./` é usado porque o shell procura comandos nos diretórios do `PATH`, e a pasta atual não faz parte dessa lista, **ou seja**, o arquivo não tem permissão de execução (permission denied)". A primeira metade está certa. O "ou seja" liga duas coisas que não têm relação de causa:
+
+| Fato | Explicação |
+|---|---|
+| O `./` é necessário | O diretório atual não está no `$PATH`. Sem o `./`, o shell procura só nos diretórios do `$PATH` e responde **`command not found`** |
+| O `Permission denied` | O arquivo não tem o bit `x`. O erro vem **depois** de o shell já ter achado o arquivo |
+
+O `./primeiro` informa o caminho explicitamente, então o shell **não consulta o `$PATH`**. Ele encontra o arquivo e só então descobre que não pode executá-lo. Os dois erros dizem coisas diferentes:
+
+| Comando | Resultado | Significa |
+|---|---|---|
+| `primeiro` | `command not found` | O shell não achou nada com esse nome no `$PATH` |
+| `./primeiro` sem `x` | `Permission denied` | O arquivo foi achado, mas não é executável |
+| `./primeiro` com `x` | `Hello World` | Funcionou |
+
+É a mesma lógica da Correção 57, agora aplicada a um caso real.
+
+#### Observações (sem número)
+
+- **O tamanho do arquivo.** O `ls -l` mostrou 19 bytes. O conteúdo esperado, `echo "Hello World!"` mais o fim de linha, ocupa **20 bytes**: 19 caracteres e 1 newline. Um byte a menos sugere uma diferença de um caractere no texto, provavelmente o `!`, e as anotações da execução trazem `Hello World` sem ele. Se foi só abreviação nas anotações, nada a corrigir; para confirmar, `cat primeiro`. É a Regra de bolso 2: leia o arquivo de volta.
+- **O `'EOF'` entre aspas importa neste laboratório.** As aspas simples impedem o shell de expandir `$` dentro do bloco. O `saudacao.sh` tem `$1`, `$0` e `$#`: sem as aspas, o shell trocaria cada um pelo valor atual (vazio) **antes de gravar o arquivo**, e o script nasceria quebrado.
+- **O `bash ola.sh` ignora o shebang.** Dentro desse comando, a linha `#!/bin/bash` é apenas um comentário. Vale o interpretador que você digitou.
+- **O `+x` sem indicar a quem vale para todos:** dono, grupo e outros. Para só o dono seria `u+x`. As classes `u`, `g` e `o` voltam na Semana 6.
+- **Permissão `rw-rw-r--`.** É o que a Ubuntu cria por padrão para arquivos novos, resultado da `umask` 002. A questão 40 do simulado de domingo parte de `rw-r--r--`, resultado de uma `umask` de 022. O mecanismo é o mesmo, e a `umask` é conteúdo da Semana 6.
+- **Aspas curvas no caderno.** A anotação traz `“Davi Morais”` com aspas curvas, que editores de texto e o Notion inserem sozinhos. **No terminal elas não funcionam como aspas:** o shell as trata como texto comum. Ao copiar do caderno para a VM, use as aspas retas `"`.
+- **Variável vazia some em silêncio.** No `./saudacao.sh` sem argumento o `$1` vale vazio e o `echo` imprime `Ola, !`, sem erro. Isso prepara o bloco 3: dentro de `[ ]`, uma variável vazia sem aspas desaparece e o `[` fica sem operando, o que gera erro de sintaxe.
+- **Grafia.** `chmood` e `basg` nas anotações: o certo é `chmod` e `bash`.
+- **O shebang e o `which`.** O `which bash` devolveu `/usr/bin/bash` e o shebang do roteiro é `/bin/bash`. Na Ubuntu recente o `/bin` é um link para `/usr/bin`, então os dois funcionam. A prova trabalha com `/bin/bash`.
+
+#### O que aprendi
+
+- **Shell script:** um arquivo de texto com comandos para um shell executar.
+- **O shebang:** a primeira linha, `#!/bin/bash`, define qual interpretador executa o arquivo quando ele é chamado diretamente.
+- **`./script` e `bash script`:** o primeiro exige `x` e usa o shebang; o segundo não exige `x` e usa o interpretador digitado.
+- **`./` versus `Permission denied`:** o `./` evita o `$PATH`; o `Permission denied` vem da falta do `x`.
+- **Argumentos:** `$0` é o script, `$1` a `$9` são os posicionais, `$#` é a quantidade e `$@` a lista. Nomes com espaço exigem aspas.
+- **Aspas:** duplas expandem variáveis, simples mantêm o texto literal.
+
+#### Para executar na VM — 3 minutos
+
+Conceito que resiste a leitura cede a uma execução (Correção 50):
+
+```bash
+cd ~/lab5/scripts
+primeiro                          # sem ./ : command not found
+chmod -x primeiro ; ./primeiro    # Permission denied
+chmod +x primeiro ; ./primeiro    # Hello World
+wc -c primeiro ; cat primeiro     # 20 bytes esperados; confira o conteudo
+
+cat > sem-aspas.sh << EOF
+#!/bin/bash
+echo "Ola, $1"
+EOF
+cat sem-aspas.sh                  # o $1 sumiu: o shell expandiu antes de gravar
+```
+
+#### Restante do Laboratório 1 — o que falta e quando
+
+| Parte | Tempo | Quando | Por quê |
+|---|---|---|---|
+| Blocos 3, 4 e 5 (`if`, `for`, código de saída) | 20 min | **Sábado 03/10, antes do Laboratório 2** | São pré-requisito: os quatro scripts usam `if`, `for`, `$?` e `exit` |
+| Bloco 6 (`vi` e `nano`) | 10 min | Sábado, depois do Laboratório 2, ou até segunda 05/10 | É objetivo oficial, mas os scripts não dependem dele |
+| Exercício do script das frutas | 15 min | Até segunda 05/10 | Fixa os três erros de sintaxe típicos do 3.3 |
+
+Com isso o sábado passa de 1h35 para cerca de 2h20.
 
 ### Laboratório 2 — sábado 03/10
 
@@ -723,7 +920,7 @@ Duas verificações específicas da sua máquina: o resultado do `which ls` (a a
 
 ### Correções da semana
 
-A numeração segue a série global. A última da Semana 4 foi a **Correção 52**. As **Correções 53 a 59** foram registradas em 30/09, nas anotações do curso. A próxima é a **60**.
+A numeração segue a série global. A última da Semana 4 foi a **Correção 52**. As **Correções 53 a 59** foram registradas em 30/09, nas anotações do curso. A **Correção 60** foi registrada em 02/10, no Laboratório 1. A próxima é a **61**.
 
 *Correções dos laboratórios: a preencher.*
 
@@ -749,9 +946,9 @@ A numeração segue a série global. A última da Semana 4 foi a **Correção 52
 - [x] Commits da Semana 4 (29/09)
 - [x] Curso, aulas 26 a 30 (quarta) — checkpoint na aula 31
 - [ ] Curso, aulas 31 a 43 (quinta)
-- [x] Comparação de compressão refeita com o `bzip2`
-- [x] Aquecimento diário: quarta, quinta, sexta, sábado e domingo
-- [ ] Laboratório 1 — fundamentos de shell script, `vi` e `nano` (sexta)
+- [ ] Comparação de compressão refeita com o `bzip2`
+- [ ] Aquecimento diário: quarta, quinta, sexta, sábado e domingo
+- [ ] Laboratório 1 — **parcial em 02/10:** blocos 1 e 2 concluídos; faltam os blocos 3 a 6 (`if`, `for`, código de saída, `vi` e `nano`) e o exercício das frutas
 - [ ] Laboratório 2 — os quatro scripts (sábado)
 - [ ] Simulado diagnóstico de 40 questões (domingo)
 - [ ] Apuração do simulado por objetivo
