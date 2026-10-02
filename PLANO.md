@@ -561,20 +561,21 @@ Ordem de estudo confirmada:
 | 2 | **GitHub Foundations** | Na sequência, em novembro/dezembro |
 | 3 | **Red Hat RHCSA** (EX200) | Próxima grande certificação |
 | 4 | **LPIC-1** (101-500 e 102-500) | Duas provas; o certificado só sai com as duas aprovadas |
-| 5 | **AWS Cloud Practitioner** | |
-| 6 | **AWS AI Practitioner** | |
-| 7 | **AWS Developer Associate** | |
+| 5 | **Red Hat RHCE** (EX294) | Depois do LPIC-1; construída sobre o RHCSA |
+| 6 | **AWS Cloud Practitioner** | |
+| 7 | **AWS AI Practitioner** | |
+| 8 | **AWS Developer Associate** | |
 | Opcional | **LFCS** — Linux Foundation Certified System Administrator | Sem data definida |
 | Opcional | **Docker Certified Associate** | Sem data definida |
 
 ### Horizonte futuro — certificações que exigem proficiência e experiência
 
-Estas três ficam **fora da sequência de estudo atual**. Elas cobram experiência prática comprovada além do conteúdo de prova, então entram no roadmap como metas de longo prazo, sem data, a serem retomadas depois que as etapas 1 a 7 estiverem concluídas e houver vivência real com as tecnologias.
+Estas três ficam **fora da sequência de estudo atual**. Elas cobram experiência prática comprovada além do conteúdo de prova, então entram no roadmap como metas de longo prazo, sem data, a serem retomadas depois que as etapas 1 a 8 estiverem concluídas e houver vivência real com as tecnologias.
 
 | Certificação | Apoio no roadmap atual |
 |---|---|
-| **AWS Certified Machine Learning Engineer — Associate** | AWS Cloud Practitioner, AWS AI Practitioner e AWS Developer Associate (etapas 5 a 7) |
-| **HashiCorp Terraform Associate** | Trilha AWS (etapas 5 a 7) e a prática de infraestrutura construída no RHCSA e no LPIC-1 |
+| **AWS Certified Machine Learning Engineer — Associate** | AWS Cloud Practitioner, AWS AI Practitioner e AWS Developer Associate (etapas 6 a 8) |
+| **HashiCorp Terraform Associate** | Trilha AWS (etapas 6 a 8) e a prática de infraestrutura construída no RHCSA, no LPIC-1 e na RHCE |
 | **CKA — Certified Kubernetes Administrator** | Linux sólido (RHCSA e LPIC-1) e o uso diário de Docker no projeto de e-commerce |
 
 A coluna da direita é apenas o caminho natural dentro do roadmap atual, não um pré-requisito oficial de nenhuma das provas.
@@ -584,6 +585,7 @@ A coluna da direita é apenas o caminho natural dentro do roadmap atual, não um
 - **GitHub Foundations logo na sequência.** É bem mais leve, você já usa Git e `gh` no dia a dia, e fecha 2026 com duas certificações.
 - **O Linux Essentials é a base do RHCSA.** Manter a VM e o repositório de labs. Para o EX200, criar a segunda VM (Rocky Linux ou AlmaLinux) e considerar a trilha do RHEL Developer Subscription como alternativa gratuita ao RH124/RH134. O RHCSA é prático, feito no terminal, e o hábito construído aqui — laboratório diário, quebrar coisas de propósito, conferir o `$?` — é exatamente o que ele cobra.
 - **O LPIC-1 vem logo depois** e reaproveita boa parte do RHCSA no lado de administração. Ele exige dois exames, o 101-500 e o 102-500, e pedirá material complementar vendor-neutral com foco em Debian.
+- **A RHCE vem depois do LPIC-1.** É a certificação de nível engenheiro da Red Hat, construída sobre o RHCSA e centrada em automação com Ansible (exame EX294). O ambiente de laboratório montado para o RHCSA continua sendo a base.
 
 ---
 
