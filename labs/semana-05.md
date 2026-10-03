@@ -3,7 +3,7 @@
 Período: 28/09 a 04/10/2026 (segunda a domingo)
 Objetivo da prova: 3.3 (Turning Commands into a Script), peso 4 de 40 — o maior peso individual do exame
 Tópico 3, peso 9: com o 3.3 esta semana fecha os 4 pontos restantes (3.1 e 3.2 foram fechados na Semana 4)
-Carga prevista a partir de 30/09: cerca de 6h45, distribuídas em 5 dias
+Plano final (02/10, à noite): o fechamento da semana é o **domingo 04/10**, com o simulado #1 e o Laboratório 1. O Laboratório 2 e as aulas 31 a 43 passam para a Semana 6
 
 Observação sobre a natureza desta semana: até aqui cada comando foi aprendido isoladamente, e na Semana 4 eles passaram a se combinar em pipelines. O shell script é o passo seguinte: o pipeline vira um arquivo reutilizável, com variáveis, decisões e código de saída. Você já programa, então a sintaxe vem rápido. O que exige atenção é o modelo mental do shell, que difere de uma linguagem estruturada em três pontos concretos: espaços dentro de `[ ]` são obrigatórios, `=` compara texto e `-eq` compara número, e uma variável sem aspas se parte em palavras.
 
@@ -88,8 +88,8 @@ A segunda-feira foi consumida pela Sessão 5 da Semana 4 e a terça pela autoava
 | **Qua 30** | Voucher (10 min) · curso, aulas 26 a 34 · aquecimento — **realizado em parte: aulas 26 a 30, checkpoint na aula 31** | 1h25 |
 | **Qui 01/10** | **Curso, aulas 31 a 43** (13 aulas; as de shell script a 1x) · aquecimento | cerca de 1h50 |
 | Sex 02 | Laboratório 1 — fundamentos de shell script, `vi` e `nano` · aquecimento | 1h10 |
-| Sáb 03 | Laboratório 2 — os quatro scripts · aquecimento | 1h10 |
-| **Dom 04** | **Simulado diagnóstico** · apuração · commits | 1h35 |
+| Sáb 03 | ~~Laboratório 2 — os quatro scripts~~ — **transferido para a Semana 6** (terça 06/10) | — |
+| **Dom 04** | **Simulado diagnóstico** · apuração · commits — **ampliado: ver o plano final abaixo** | — |
 
 **Total a partir de quarta: 6h45**, dentro do teto de 7h do orçamento semanal, porém sem folga. O plano original previa 5h; as 1h45 a mais são o custo dos dois dias de curso perdidos.
 
@@ -101,7 +101,31 @@ A segunda-feira foi consumida pela Sessão 5 da Semana 4 e a terça pela autoava
 
 **Atualização de 30/09.** A quarta fechou **5 das 9 aulas** previstas (26 a 30). As 4 restantes (31 a 34) passaram para a quinta, que agora tem **13 aulas (31 a 43)**, cerca de 1h30 de vídeo mais o aquecimento. No pior caso a semana passa de 6h45 para cerca de 7h10, 10 minutos acima do teto. A folga vem de duas decisões: (a) subir para **2x** nas aulas que só repetem conteúdo já praticado, como a navegação de hoje, que o próprio caderno marca como "já tratado nos labs"; e (b) aplicar a regra de transbordo, em que o que não couber na quinta e não for de shell script vai para a segunda 05/10. Se na quinta à noite as aulas de shell script não estiverem vistas, o Laboratório 1 de sexta começa com 20 minutos de vídeo.
 
-**Atualização de 02/10.** A quinta não teve estudo e o Laboratório 1 de sexta foi feito em parte: blocos 1 e 2 concluídos. Os blocos 3 a 5 (`if`, `for`, código de saída) passam para o **sábado, antes do Laboratório 2**, porque os quatro scripts dependem deles. O bloco 6 (`vi` e `nano`) e o exercício das frutas ficam para depois do Laboratório 2 ou até segunda 05/10. O sábado passa de cerca de 1h35 para cerca de 2h20. O simulado de domingo **continua em data fixa**.
+**Atualização de 02/10 (superada pela atualização final logo abaixo).** A quinta não teve estudo e o Laboratório 1 de sexta foi feito em parte: blocos 1 e 2 concluídos. Os blocos 3 a 5 (`if`, `for`, código de saída) passam para o **sábado, antes do Laboratório 2**, porque os quatro scripts dependem deles. O bloco 6 (`vi` e `nano`) e o exercício das frutas ficam para depois do Laboratório 2 ou até segunda 05/10. O sábado passa de cerca de 1h35 para cerca de 2h20. O simulado de domingo **continua em data fixa**.
+
+**Atualização de 02/10, à noite — plano final da Semana 5.** O sábado deixa de ser obrigatório e o fechamento da semana passa inteiro para o **domingo 04/10**: terminar o Laboratório 1 e fazer o simulado de 40 questões. O Laboratório 2 e as aulas 31 a 43 do curso passam para a **Semana 6** (ver `labs/semana-06.md`).
+
+| Dia | Atividade | Tempo |
+|---|---|---|
+| Sáb 03 | **Opcional.** Se houver tempo, adiantar a Semana 6 nesta ordem: (1) Laboratório 1, blocos 3 a 5, 20 min; (2) aulas de shell script do curso, a 1x; (3) aquecimento | até 1h |
+| **Dom 04** | Aquecimento · **simulado #1** (60 min) · apuração (25 min) · pausa · Laboratório 1, blocos 3 a 6 e exercício das frutas (45 min) · registro (10 min) · commits (5 min) | cerca de 2h35 |
+
+**Ordem do domingo e por quê.** O simulado vem **primeiro**, com a cabeça descansada: é diagnóstico e mede o que você sabe hoje, antes de terminar o Laboratório 1. Os blocos 3 a 5 vêm logo depois porque são pré-requisito do Laboratório 2 da Semana 6. Se o tempo apertar, o corte segue esta ordem: **exercício das frutas**, depois **bloco 6** (`vi` e `nano`). Os dois vão para segunda 05/10, 25 minutos no total. O simulado e os blocos 3 a 5 não são cortados.
+
+**O que passa para a Semana 6**
+
+| Item | Novo prazo |
+|---|---|
+| Curso, aulas 31 a 43 (13 aulas) | Segunda 05/10 |
+| Laboratório 2 — os scripts `backup.sh`, `contar.sh` e `usuario.sh` (o `filtrar.sh` fica opcional) | Terça 06/10 |
+| Voucher da prova e agendamento | Quarta 07/10, 10 minutos |
+| Comparação de compressão com o `bzip2` | Terça 06/10, no aquecimento |
+| Registro das observações sobre arquivos ocultos | Segunda 05/10, 10 minutos |
+| Limpeza: `rm 'sudo apt upgrade -y'` | Segunda 05/10, 30 segundos |
+| Autoavaliação da Semana 5 | **Sexta 09/10**, em versão reduzida de 10 questões, três dias depois do Laboratório 2 |
+| Exercício das frutas e bloco 6, **se cortados no domingo** | Segunda 05/10 |
+
+**Novidade a partir desta semana: simulado geral todo domingo.** O simulado de 04/10 é o primeiro de uma série semanal. O calendário completo, as metas por simulado e a regra de adiamento da prova estão no plano geral, seções 7 e 11.
 
 ---
 
@@ -345,7 +369,9 @@ Anote no caderno o comando, o que faz e o exemplo executado. Os erros e suas cor
 
 ---
 
-## Laboratório 2 — Sábado 03/10 — Os quatro scripts
+## Laboratório 2 — Terça 06/10 (Semana 6) — Os scripts
+
+> **Transferido em 02/10 para a Semana 6.** Pré-requisito: Laboratório 1, blocos 3 a 5, feitos no domingo 04/10. Os três primeiros scripts são obrigatórios, porque exercitam exatamente o que a prova cobra: argumento, variável, `for`, `if` e código de saída. O `filtrar.sh` usa `while read`, que não consta na lista oficial, e passa a ser **opcional**.
 
 Escreva em `~/lab5/scripts`, **um por vez**, testando cada um antes de passar ao seguinte. Ao terminar cada teste, rode `echo $?`.
 
@@ -464,6 +490,8 @@ Há mais de uma resposta certa para quase todos. Se a sua chegou ao mesmo result
 
 Esta é a pendência mais antiga do plano. Ela ocupa o lugar de uma prática porque **é** prática, e o resultado determina no que as práticas das Semanas 6 e 7 devem insistir.
 
+**Este é o simulado #1 da série dominical.** A partir de agora há um simulado geral de 40 questões todo domingo. Em 04/10 ele é feito **antes** de terminar o Laboratório 1, para medir o que você sabe hoje. As metas dos próximos estão no plano geral, seção 7.
+
 | Item | Valor |
 |---|---|
 | Arquivo | `praticas/simulado-01-diagnostico.md` |
@@ -519,17 +547,18 @@ Depois do simulado, o resultado é registrado em `praticas/` e no plano geral.
 | Item | Origem | Estado | Prazo |
 |---|---|---|---|
 | Curso, aulas 26 a 30 | Semana 5, terça 29/09 | **Pago em 30/09** | Concluído |
-| Curso, aulas 31 a 43 | Semana 5, quarta 30/09 | Em aberto: sem estudo na quinta 01/10 e sem registro de avanço desde o checkpoint da aula 31 | Replanejado para sex 02 e sáb 03/10; o excedente que não for de shell script vai para seg 05/10 |
-| Laboratório 1, blocos 3 a 5 (`if`, `for`, código de saída) | Semana 5, sexta 02/10 | Em aberto; blocos 1 e 2 concluídos | Sáb 03/10, **antes** do Laboratório 2 |
-| Laboratório 1, bloco 6 (`vi` e `nano`) | Semana 5, sexta 02/10 | Em aberto | Sáb 03/10, depois do Laboratório 2, ou até seg 05/10 |
-| Exercício do script das frutas (material do LPI) | Semana 5, sexta 02/10 | Em aberto | Até seg 05/10 |
-| Voucher da prova e agendamento para 09/11 | Semana 5 | Em aberto | Qua 30/09 |
-| Simulado diagnóstico | Semana 3 | Em aberto, 4 semanas de atraso | Dom 04/10 |
+| Curso, aulas 31 a 43 | Semana 5, quarta 30/09 | Em aberto: sem registro de avanço desde o checkpoint da aula 31 | **Transferido para a Semana 6: segunda 05/10** |
+| Laboratório 1, blocos 3 a 5 (`if`, `for`, código de saída) | Semana 5, sexta 02/10 | Em aberto; blocos 1 e 2 concluídos | **Dom 04/10**, depois do simulado (sábado, se houver tempo) |
+| Laboratório 1, bloco 6 (`vi` e `nano`) | Semana 5, sexta 02/10 | Em aberto | Dom 04/10; se cortado, seg 05/10 |
+| Exercício do script das frutas (material do LPI) | Semana 5, sexta 02/10 | Em aberto | Dom 04/10; se cortado, seg 05/10 |
+| Laboratório 2 (`backup.sh`, `contar.sh`, `usuario.sh`; `filtrar.sh` opcional) | Semana 5, sábado 03/10 | **Transferido para a Semana 6** | Ter 06/10 |
+| Voucher da prova e agendamento para 09/11 | Semana 5 | Em aberto, já adiado duas vezes | **Qua 07/10** |
+| Simulado diagnóstico (simulado #1) | Semana 3 | Em aberto, 4 semanas de atraso | Dom 04/10, **primeira atividade do dia** |
 | Reteste das 4 questões erradas da autoavaliação da Semana 4 | Semana 4 | No aquecimento diário | Até dom 04/10 |
-| Comparação de compressão com o `bzip2` instalado | Semana 4 | `bzip2` instalado; falta refazer | Qua 30/09, no aquecimento |
-| Registro das observações sobre arquivos ocultos | Semana 3 | Em aberto | Sex 02/10, no registro do Laboratório 1 |
-| Limpeza: `rm 'sudo apt upgrade -y'` na home | Semana 3 | Em aberto | Qua 30/09, 30 segundos |
-| Autoavaliação da Semana 5 | Semana 5 | Elaborada após o Laboratório 2 | Qua 07/10, aberta na Semana 6 |
+| Comparação de compressão com o `bzip2` instalado | Semana 4 | `bzip2` instalado; falta refazer | Ter 06/10, no aquecimento |
+| Registro das observações sobre arquivos ocultos | Semana 3 | Em aberto, adiado outra vez | Seg 05/10, 10 minutos |
+| Limpeza: `rm 'sudo apt upgrade -y'` na home | Semana 3 | Em aberto | Seg 05/10, 30 segundos |
+| Autoavaliação da Semana 5 | Semana 5 | Reduzida a 10 questões; elaborada na quinta 08/10 | Sex 09/10 |
 | `.wslconfig` limitando o WSL2 a 3 GB | Semana 0 | Sem prazo | Quando houver folga |
 | Teste de restauração do snapshot | Semana 0 | Sem prazo | Quando houver folga |
 
@@ -908,15 +937,15 @@ cat sem-aspas.sh                  # o $1 sumiu: o shell expandiu antes de gravar
 
 | Parte | Tempo | Quando | Por quê |
 |---|---|---|---|
-| Blocos 3, 4 e 5 (`if`, `for`, código de saída) | 20 min | **Sábado 03/10, antes do Laboratório 2** | São pré-requisito: os quatro scripts usam `if`, `for`, `$?` e `exit` |
-| Bloco 6 (`vi` e `nano`) | 10 min | Sábado, depois do Laboratório 2, ou até segunda 05/10 | É objetivo oficial, mas os scripts não dependem dele |
-| Exercício do script das frutas | 15 min | Até segunda 05/10 | Fixa os três erros de sintaxe típicos do 3.3 |
+| Blocos 3, 4 e 5 (`if`, `for`, código de saída) | 20 min | **Domingo 04/10, depois do simulado** (ou sábado, se houver tempo) | São pré-requisito: os scripts do Laboratório 2 usam `if`, `for`, `$?` e `exit` |
+| Bloco 6 (`vi` e `nano`) | 10 min | Domingo 04/10, depois dos blocos 3 a 5. Se cortado, segunda 05/10 | É objetivo oficial, mas os scripts não dependem dele |
+| Exercício do script das frutas | 15 min | Domingo 04/10, por último. Se cortado, segunda 05/10 | Fixa os três erros de sintaxe típicos do 3.3 |
 
-Com isso o sábado passa de 1h35 para cerca de 2h20.
+Com isso o domingo fecha em cerca de 2h35: simulado e apuração (1h25) mais Laboratório 1, registro e commits (1h10). *Atualizado em 02/10, à noite: o Laboratório 2 saiu da Semana 5.*
 
-### Laboratório 2 — sábado 03/10
+### Laboratório 2 — terça 06/10 (Semana 6)
 
-*A preencher.*
+*A preencher na Semana 6.*
 
 ### Correções da semana
 
@@ -944,23 +973,24 @@ A numeração segue a série global. A última da Semana 4 foi a **Correção 52
 - [x] Correções 49 a 52 anotadas (29/09)
 - [x] Instalação do `bzip2` (29/09)
 - [x] Commits da Semana 4 (29/09)
+- [ ] Voucher comprado e prova agendada para 09/11 — **transferido: quarta 07/10**
 - [x] Curso, aulas 26 a 30 (quarta) — checkpoint na aula 31
-- [ ] Curso, aulas 31 a 43 (quinta)
-- [ ] Comparação de compressão refeita com o `bzip2`
+- [ ] Curso, aulas 31 a 43 — **transferido: segunda 05/10 (Semana 6)**
+- [ ] Comparação de compressão refeita com o `bzip2` — **transferido: terça 06/10**
 - [ ] Aquecimento diário: quarta, quinta, sexta, sábado e domingo
-- [ ] Laboratório 1 — **parcial em 02/10:** blocos 1 e 2 concluídos; faltam os blocos 3 a 6 (`if`, `for`, código de saída, `vi` e `nano`) e o exercício das frutas
-- [ ] Laboratório 2 — os quatro scripts (sábado)
-- [ ] Simulado diagnóstico de 40 questões (domingo)
+- [ ] Laboratório 1 — **parcial em 02/10:** blocos 1 e 2 concluídos; faltam os blocos 3 a 6 (`if`, `for`, código de saída, `vi` e `nano`) e o exercício das frutas — **domingo 04/10, depois do simulado**
+- [ ] Laboratório 2 — **transferido para terça 06/10 (Semana 6)**; `filtrar.sh` opcional
+- [ ] Simulado #1, diagnóstico de 40 questões (domingo 04/10, **primeira atividade do dia**)
 - [ ] Apuração do simulado por objetivo
-- [ ] Observações sobre arquivos ocultos registradas
-- [ ] Limpeza da home
+- [ ] Observações sobre arquivos ocultos registradas — **transferido: segunda 05/10**
+- [ ] Limpeza da home — **transferido: segunda 05/10**
 - [ ] Commits ao fim de cada sessão
 
 ---
 
 ## Entregável
 
-`labs/semana-05.md` preenchido, os **4 scripts** em `scripts/`, voucher comprado com a prova agendada e o resultado do simulado registrado.
+`labs/semana-05.md` com o Laboratório 1 completo, o **resultado do simulado #1** registrado e a apuração por objetivo. Os scripts do Laboratório 2 e o voucher passam para a Semana 6.
 
 ---
 
