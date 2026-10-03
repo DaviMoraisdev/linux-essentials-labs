@@ -1,6 +1,6 @@
 # Fontes de simulados e questões — 010-160
 
-Levantamento feito em 28/09/2026, com foco em material gratuito e legítimo.
+Levantamento feito em 28/09/2026, com foco em material gratuito e legítimo. Atualizado em 02/10/2026 para a série de simulados dominicais.
 
 ## Recomendadas
 
@@ -40,13 +40,23 @@ Simulado gratuito de acesso direto, sem cadastro. Menor e mais simples que os an
 
 ### 5. Os simulados deste repositório
 
-Escritos sob medida, com distribuição de pesos idêntica à do exame e gabarito comentado. A vantagem sobre os anteriores é que as questões atacam **os pontos em que você já errou** — as 48 correções registradas nos cadernos viram questões.
+Escritos sob medida, com distribuição de pesos idêntica à do exame e gabarito comentado. A vantagem sobre os anteriores é que as questões atacam **os pontos em que você já errou** — as correções registradas nos cadernos (60 até 02/10) viram questões.
 
-| Arquivo | Conteúdo | Situação |
-|---|---|---|
-| `simulado-01-diagnostico.md` | 40 questões, todos os tópicos | Pronto |
-| `simulado-02-*.md` | 40 questões, ênfase nos Tópicos 4 e 5 | Semana 8 |
-| `simulado-03-*.md` | 40 questões, revisão geral | Semana 9 |
+**Série dominical (regra de 02/10).** Todo domingo há um simulado geral de 40 questões, cronometrado. Só o primeiro existe. Os demais são produzidos **sob pedido**, com pelo menos três dias de antecedência. O próximo, `simulado-02`, deve ser pedido até quinta 08/10.
+
+| # | Data | Arquivo ou fonte | Situação |
+|---|---|---|---|
+| 1 | Dom 04/10 | `simulado-01-diagnostico.md` | Pronto |
+| 2 | Dom 11/10 | `simulado-02-*.md` | A pedir até qui 08/10 |
+| 3 | Dom 18/10 | `simulado-03-*.md` | A pedir até qui 15/10 |
+| 4 | Qui 22/10 | Exame final de prática do NDG | Fonte externa, gratuita |
+| 5 | Dom 25/10 | `simulado-05-*.md` | A pedir até qui 22/10 |
+| 6 | Ter 27/10 | `simulado-06-*.md` | A pedir até sáb 24/10 |
+| 7 | Qui 29/10 | `simulado-07-*.md` | A pedir até ter 27/10 |
+| 8 | Dom 01/11 | `simulado-08-*.md` (gate) | A pedir até qui 29/10 |
+| 9 | Qui 05/11 | `simulado-09-*.md` (final) | A pedir até dom 01/11 |
+
+O calendário completo, as metas e a regra de adiamento da prova estão em `plano-linux-essentials-010-160.md`, seções 7 e 11.
 
 ## Sobre os sites de dumps
 
@@ -56,16 +66,16 @@ A busca por "simulado 010-160" devolve muitos sites que anunciam "questões reai
 
 **Segunda: o conteúdo é frequentemente errado.** As questões são reconstruídas de memória por terceiros, e os gabaritos vêm de votação em fórum. Uma resposta errada memorizada é pior que uma lacuna reconhecida — a lacuna você estuda, o erro memorizado você defende.
 
-**Terceira, e a que mais importa para você:** decorar pares de pergunta e resposta não produz o que a sua preparação está produzindo. O seu diferencial nestas quatro semanas foram as 48 correções — cada uma nasceu de um erro de compreensão que nenhuma memorização teria exposto. Dump é o caminho oposto desse método.
+**Terceira, e a que mais importa para você:** decorar pares de pergunta e resposta não produz o que a sua preparação está produzindo. O seu diferencial nestas semanas foram as correções com mecanismo — cada uma nasceu de um erro de compreensão que nenhuma memorização teria exposto. Dump é o caminho oposto desse método.
 
 ## Ordem de uso sugerida
 
 | Momento | O que usar |
 |---|---|
-| Semana 5 | `simulado-01-diagnostico.md` deste repositório, cronometrado |
-| Semanas 6 e 7 | Quizzes do NDG por módulo, ao fim de cada tópico estudado |
-| Semana 8 | Exame final de prática do NDG, cronometrado, e `simulado-02` |
-| Semana 9 | `simulado-03` e repetição dos simulados anteriores, só das questões erradas |
-| Semana 10 | Questões de revisão do PDF oficial da LPI, objetivo por objetivo |
+| Semana 5 | `simulado-01-diagnostico.md` deste repositório, cronometrado, no domingo 04/10 |
+| Semanas 6 e 7 | Simulado dominical (`simulado-02` e `simulado-03`) e, ao fim de cada tópico estudado, os quizzes do NDG por módulo |
+| Semana 8 | Exame final de prática do NDG (quinta 22/10) e simulado dominical (25/10) |
+| Semana 9 | Três simulados (27/10, 29/10 e 01/11) e repetição só das questões erradas dos anteriores |
+| Semana 10 | Simulado final na quinta 05/11. Questões de revisão do PDF oficial da LPI, objetivo por objetivo, de segunda a quarta |
 
 Uma regra para as Semanas 8 a 10: **refazer um simulado inteiro é desperdício.** Refaça apenas as questões erradas e as marcadas como chute. O acerto que você já teve duas vezes não ensina nada na terceira.
