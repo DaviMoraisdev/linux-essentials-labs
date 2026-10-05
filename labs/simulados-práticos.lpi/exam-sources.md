@@ -1,6 +1,6 @@
 # Fontes de simulados e questões — 010-160
 
-Levantamento feito em 28/09/2026, com foco em material gratuito e legítimo. Atualizado em 02/10/2026 para a série de simulados dominicais.
+Levantamento feito em 28/09/2026, com foco em material gratuito e legítimo. Atualizado em 02/10/2026 para a série de simulados dominicais e em 04/10/2026 (o simulado #1 passou para a segunda 05/10).
 
 ## Recomendadas
 
@@ -46,7 +46,7 @@ Escritos sob medida, com distribuição de pesos idêntica à do exame e gabarit
 
 | # | Data | Arquivo ou fonte | Situação |
 |---|---|---|---|
-| 1 | Dom 04/10 | `simulado-01-diagnostico.md` | Pronto |
+| 1 | **Seg 05/10** (adiado do dom 04/10) | `simulado-01-diagnostico.md` | Pronto |
 | 2 | Dom 11/10 | `simulado-02-*.md` | A pedir até qui 08/10 |
 | 3 | Dom 18/10 | `simulado-03-*.md` | A pedir até qui 15/10 |
 | 4 | Qui 22/10 | Exame final de prática do NDG | Fonte externa, gratuita |
@@ -72,7 +72,7 @@ A busca por "simulado 010-160" devolve muitos sites que anunciam "questões reai
 
 | Momento | O que usar |
 |---|---|
-| Semana 5 | `simulado-01-diagnostico.md` deste repositório, cronometrado, no domingo 04/10 |
+| Semana 5 | `simulado-01-diagnostico.md` deste repositório, cronometrado. Adiado do domingo 04/10 para a segunda 05/10 |
 | Semanas 6 e 7 | Simulado dominical (`simulado-02` e `simulado-03`) e, ao fim de cada tópico estudado, os quizzes do NDG por módulo |
 | Semana 8 | Exame final de prática do NDG (quinta 22/10) e simulado dominical (25/10) |
 | Semana 9 | Três simulados (27/10, 29/10 e 01/11) e repetição só das questões erradas dos anteriores |
