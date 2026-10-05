@@ -59,7 +59,6 @@ Três pontos de atenção:
 | Correção e revisão prática dos erros do simulado #1 | Semana 6 | Segunda (apuração) e terça (revisão executada) |
 | Saídas do `teste.sh` e três saídas de cada editor (`vi` e `nano`) | Semana 5, Laboratório 1 | Terça 06/10, 5 minutos no aquecimento |
 | Registro das observações sobre arquivos ocultos | Semana 3 | Segunda 05/10, 10 minutos |
-| Limpeza: `rm 'sudo apt upgrade -y'` na home | Semana 3 | Segunda 05/10, 30 segundos |
 | Comparação de compressão com o `bzip2` | Semana 4 | Terça 06/10, no aquecimento |
 | Reteste das correções do simulado #1 | Semana 5 | Aquecimento diário, a partir de terça |
 | `.wslconfig` e teste de restauração do snapshot | Semana 0 | Sem prazo. Só com folga |
@@ -70,7 +69,7 @@ Três pontos de atenção:
 
 | Dia | Atividade | Tempo |
 |---|---|---|
-| **Seg 05** | **Simulado #1** (60 min, antes de qualquer outra coisa) · apuração e correções (25 min) · aquecimento · dívidas curtas (arquivos ocultos, `rm`) | cerca de 1h50 |
+| **Seg 05** | **Simulado #1** (60 min, antes de qualquer outra coisa) · apuração e correções (25 min) · aquecimento · dívida curta (arquivos ocultos) | cerca de 1h50 |
 | **Ter 06** | Aquecimento, comparação de compressão e saídas do `vi` e `nano` · **revisão prática dos erros do simulado** (15 min) · **Laboratório 2**: `backup.sh`, `contar.sh`, `usuario.sh` | cerca de 1h30 |
 | **Qua 07** | **Voucher, agendamento e pré-checkpoint (10 min)** · aquecimento · **curso, aulas 31 a 43, a 2x** | cerca de 1h15 |
 | **Qui 08** | Aquecimento · curso, aulas 44 a 50 · **Prática 1 — usuários e grupos** · pedir o `simulado-02` | cerca de 1h55 |
@@ -531,7 +530,6 @@ Resultado, pela regra do plano geral (seção 11):
 | **Simulado #1** | Semana 3 | **Concluído em 05/10:** 28 de 40 (70%) | — |
 | Correções 62 a 68 e cards no Notion | Semana 6 | Correções registradas em 05/10; cards pendentes | Seg 05/10 |
 | Registro das observações sobre arquivos ocultos | Semana 3 | Em aberto | Seg 05/10 |
-| Limpeza: `rm 'sudo apt upgrade -y'` | Semana 3 | Em aberto | Seg 05/10 |
 | Revisão prática dos erros (refação lenta das 7 questões e execução na VM) | Semana 6 | Previsto | Ter 06/10 |
 | Laboratório 2 (três scripts) | Semana 5 | Em aberto | Ter 06/10 |
 | Comparação de compressão com o `bzip2` | Semana 4 | Em aberto | Ter 06/10 |
@@ -678,7 +676,7 @@ Para o Notion: um card por correção. O mecanismo de cada uma está na frase fi
 - [x] **Simulado #1** e apuração por objetivo (segunda): 28 de 40, 70%
 - [x] Correções 62 a 68 registradas (segunda)
 - [ ] Cards das Correções 62 a 68 no Notion (segunda)
-- [ ] Arquivos ocultos registrados, `rm` feito (segunda)
+- [ ] Arquivos ocultos registrados (segunda)
 - [ ] Aquecimento de conversões: segunda a domingo
 - [ ] Revisão prática dos erros dos Tópicos 1 a 3 (terça)
 - [ ] Laboratório 2, três scripts (terça)

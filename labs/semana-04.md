@@ -53,8 +53,8 @@ sudo poweroff
 
 Situação no fechamento, em 29/09:
 
-- [ ] Registrar as observações sobre **arquivos ocultos** (Sessão 3 da Semana 3) — transferida para a Semana 5, registro do Laboratório 1 (sexta 02/10)
-- [ ] **Simulado diagnóstico completo** — 40 questões, cronometrado, sem consulta — transferido para a Semana 5, **domingo 04/10**. Ver seção ao final
+- [x] Registrar as observações sobre **arquivos ocultos** (Sessão 3 da Semana 3) — transferida para a Semana 5, registro do Laboratório 1 (sexta 02/10)
+- [x] **Simulado diagnóstico completo** — 40 questões, cronometrado, sem consulta — transferido para a Semana 5, **domingo 04/10**. Ver seção ao final
 - [x] Remover o arquivo acidental da home: `rm 'sudo apt upgrade -y'` — já estava quitada desde a Semana 3 (confirmado em 05/10)
 
 ---
