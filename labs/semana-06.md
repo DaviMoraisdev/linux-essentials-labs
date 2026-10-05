@@ -56,9 +56,8 @@ Três pontos de atenção:
 | Autoavaliação da Semana 5, 10 questões | Semana 5 | Sexta 09/10 |
 | Curso, aulas 31 a 43 | Semana 5 | Quarta 07/10, a 2x |
 | Voucher da prova e agendamento | Semana 5, adiado duas vezes | Quarta 07/10, com o pré-checkpoint |
-| Correção e revisão prática dos erros do simulado #1 | Semana 6 | Segunda (apuração) e terça (revisão executada) |
+| Revisão prática dos erros do simulado #1 (a apuração e as correções foram concluídas em 05/10) | Semana 6 | Terça 06/10, 15 minutos, executada na VM |
 | Saídas do `teste.sh` e três saídas de cada editor (`vi` e `nano`) | Semana 5, Laboratório 1 | Terça 06/10, 5 minutos no aquecimento |
-| Registro das observações sobre arquivos ocultos | Semana 3 | Segunda 05/10, 10 minutos |
 | Comparação de compressão com o `bzip2` | Semana 4 | Terça 06/10, no aquecimento |
 | Reteste das correções do simulado #1 | Semana 5 | Aquecimento diário, a partir de terça |
 | `.wslconfig` e teste de restauração do snapshot | Semana 0 | Sem prazo. Só com folga |
@@ -69,7 +68,7 @@ Três pontos de atenção:
 
 | Dia | Atividade | Tempo |
 |---|---|---|
-| **Seg 05** | **Simulado #1** (60 min, antes de qualquer outra coisa) · apuração e correções (25 min) · aquecimento · dívida curta (arquivos ocultos) | cerca de 1h50 |
+| **Seg 05** | **Simulado #1** (60 min, antes de qualquer outra coisa) · apuração e correções (25 min) · aquecimento | cerca de 1h50 |
 | **Ter 06** | Aquecimento, comparação de compressão e saídas do `vi` e `nano` · **revisão prática dos erros do simulado** (15 min) · **Laboratório 2**: `backup.sh`, `contar.sh`, `usuario.sh` | cerca de 1h30 |
 | **Qua 07** | **Voucher, agendamento e pré-checkpoint (10 min)** · aquecimento · **curso, aulas 31 a 43, a 2x** | cerca de 1h15 |
 | **Qui 08** | Aquecimento · curso, aulas 44 a 50 · **Prática 1 — usuários e grupos** · pedir o `simulado-02` | cerca de 1h55 |
@@ -528,8 +527,7 @@ Resultado, pela regra do plano geral (seção 11):
 | Item | Origem | Estado | Prazo |
 |---|---|---|---|
 | **Simulado #1** | Semana 3 | **Concluído em 05/10:** 28 de 40 (70%) | — |
-| Correções 62 a 68 e cards no Notion | Semana 6 | Correções registradas em 05/10; cards pendentes | Seg 05/10 |
-| Registro das observações sobre arquivos ocultos | Semana 3 | Em aberto | Seg 05/10 |
+| Correções 62 a 68 e cards no Notion | Semana 6 | **Concluído em 05/10**: correções registradas e cards anotados | — |
 | Revisão prática dos erros (refação lenta das 7 questões e execução na VM) | Semana 6 | Previsto | Ter 06/10 |
 | Laboratório 2 (três scripts) | Semana 5 | Em aberto | Ter 06/10 |
 | Comparação de compressão com o `bzip2` | Semana 4 | Em aberto | Ter 06/10 |
@@ -664,7 +662,7 @@ A numeração segue a série global. A última registrada na Semana 5 foi a **61
 | 67 | `man` é o manual; `--manual` não existe no `cp` | Q16 |
 | 68 | `chmod` muda permissões, `chown` muda dono | Q38 |
 
-Para o Notion: um card por correção. O mecanismo de cada uma está na frase final da tabela de cada correção.
+Os cards das Correções 62 a 68 foram anotados no Notion em 05/10.
 
 *A preencher.*
 
@@ -672,11 +670,11 @@ Para o Notion: um card por correção. O mecanismo de cada uma está na frase fi
 
 ## Checklist da semana
 
-- [ ] Abertura: tabela de dívidas conferida
+- [x] Abertura: tabela de dívidas conferida
 - [x] **Simulado #1** e apuração por objetivo (segunda): 28 de 40, 70%
 - [x] Correções 62 a 68 registradas (segunda)
-- [ ] Cards das Correções 62 a 68 no Notion (segunda)
-- [ ] Arquivos ocultos registrados (segunda)
+- [x] Cards das Correções 62 a 68 no Notion (05/10)
+- [x] Arquivos ocultos: dívida encerrada em 05/10, a pedido (comandos já dominados)
 - [ ] Aquecimento de conversões: segunda a domingo
 - [ ] Revisão prática dos erros dos Tópicos 1 a 3 (terça)
 - [ ] Laboratório 2, três scripts (terça)
