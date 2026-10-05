@@ -120,7 +120,6 @@ A segunda-feira foi consumida pela Sessão 5 da Semana 4 e a terça pela autoava
 | Laboratório 2 — os scripts `backup.sh`, `contar.sh` e `usuario.sh` (o `filtrar.sh` fica opcional) | Terça 06/10 |
 | Voucher da prova e agendamento | Quarta 07/10, 10 minutos |
 | Comparação de compressão com o `bzip2` | Terça 06/10, no aquecimento |
-| Registro das observações sobre arquivos ocultos | Segunda 05/10, 10 minutos |
 | Autoavaliação da Semana 5 | **Sexta 09/10**, em versão reduzida de 10 questões, três dias depois do Laboratório 2 |
 | Exercício das frutas e bloco 6, **se cortados no domingo** | Segunda 05/10 |
 
@@ -570,7 +569,6 @@ Depois do simulado, o resultado é registrado em `praticas/` e no plano geral.
 | Simulado diagnóstico (simulado #1) | Semana 3 | Em aberto, adiado de novo: não coube no domingo | **Seg 05/10**, primeira atividade do dia |
 | Reteste das 4 questões erradas da autoavaliação da Semana 4 | Semana 4 | No aquecimento diário; as questões 18, 20, 21, 22 e 24 do simulado #1 também retestam | Seg 05/10 |
 | Comparação de compressão com o `bzip2` instalado | Semana 4 | `bzip2` instalado; falta refazer | Ter 06/10, no aquecimento |
-| Registro das observações sobre arquivos ocultos | Semana 3 | Em aberto, adiado outra vez | Seg 05/10, 10 minutos |
 | Autoavaliação da Semana 5 | Semana 5 | Reduzida a 10 questões; elaborada na quinta 08/10 | Sex 09/10 |
 | `.wslconfig` limitando o WSL2 a 3 GB | Semana 0 | Sem prazo | Quando houver folga |
 | Teste de restauração do snapshot | Semana 0 | Sem prazo | Quando houver folga |
@@ -1168,7 +1166,7 @@ A numeração segue a série global. A última da Semana 4 foi a **Correção 52
 | 60 | O `./` e o `Permission denied` têm causas diferentes | Laboratório 1, bloco 1 |
 | 61 | O `2` do `2>` e o `2` do `$?` não têm relação | Laboratório 1, bloco 5 |
 
-Para o Notion: um card para a Correção 61, com a frase do mecanismo: o fluxo diz **onde** a mensagem sai, o código diz **como** o programa terminou.
+Os cards das Correções 60 e 61 no Notion foram anotados (confirmado em 05/10). Mecanismo da 61: o fluxo diz **onde** a mensagem sai, o código diz **como** o programa terminou.
 
 ### Resultado do simulado #1
 
@@ -1183,20 +1181,20 @@ Transferido para a **segunda 05/10**. O resultado, a apuração por objetivo e a
 - [x] Correções 49 a 52 anotadas (29/09)
 - [x] Instalação do `bzip2` (29/09)
 - [x] Commits da Semana 4 (29/09)
-- [x] Voucher comprado e prova agendada para 09/11 — **transferido: quarta 07/10**
+- [ ] Voucher comprado e prova agendada para 09/11 — **transferido: quarta 07/10**
 - [x] Curso, aulas 26 a 30 (quarta) — checkpoint na aula 31
 - [ ] Curso, aulas 31 a 43 — **transferido: quarta 07/10 (Semana 6)**
-- [x] Comparação de compressão refeita com o `bzip2` — **transferido: terça 06/10**
-- [x] Aquecimento diário: quarta, quinta, sexta, sábado e domingo
+- [ ] Comparação de compressão refeita com o `bzip2` — **transferido: terça 06/10**
+- [ ] Aquecimento diário: quarta, quinta, sexta, sábado e domingo
 - [x] Laboratório 1 — blocos 1 e 2 (02/10) e blocos 3 a 6 (04/10)
 - [x] Exercício do script das frutas (04/10)
 - [x] Correções 60 e 61 registradas
 - [ ] Laboratório 2 — **transferido para terça 06/10 (Semana 6)**; `filtrar.sh` opcional
-- [x] Simulado #1, diagnóstico de 40 questões — **transferido: segunda 05/10, primeira atividade do dia**
-- [x] Apuração do simulado por objetivo — **segunda 05/10**
-- [ ] Observações sobre arquivos ocultos registradas — **transferido: segunda 05/10**
+- [ ] Simulado #1, diagnóstico de 40 questões — **transferido: segunda 05/10, primeira atividade do dia**
+- [ ] Apuração do simulado por objetivo — **segunda 05/10**
+- [x] Observações sobre arquivos ocultos — dívida encerrada em 05/10, a pedido (comandos já dominados)
 - [x] Limpeza da home — já estava quitada desde a Semana 3 (confirmado em 05/10)
-- [x] Commits ao fim de cada sessão
+- [ ] Commits ao fim de cada sessão
 
 ---
 
