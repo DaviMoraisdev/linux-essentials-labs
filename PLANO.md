@@ -61,7 +61,6 @@
 | ~~**Simulado #1 (diagnóstico)**~~ | **Concluído em 05/10: 28 de 40 (70%), 560 de 800.** Prova corrigida em `praticas/simulado-01-diagnostico-resultado.md` |
 | Reteste das 4 questões erradas da autoavaliação da Semana 4 | No aquecimento diário. As questões 18, 20, 21, 22 e 24 do simulado #1 também retestam |
 | Refazer a comparação de compressão (`bzip2` já instalado) | terça 06/10, no aquecimento |
-| Limpeza: `rm 'sudo apt upgrade -y'` na home | segunda 05/10 |
 | Registrar as observações sobre arquivos ocultos (Semana 3) | segunda 05/10 |
 | **Checkpoint A** — decisão sobre manter 09/11 | domingo 11/10 (seção 11) |
 | `.wslconfig` limitando o WSL2 a 3 GB | Quando houver folga |
@@ -465,7 +464,7 @@ Marcar antes de se sentir pronto é intencional. Prazo firme é o que impede o p
 
 | Dia | Atividade |
 |---|---|
-| Seg 05 | **Simulado #1** · apuração e correções · dívidas curtas (arquivos ocultos, `rm`) |
+| Seg 05 | **Simulado #1** · apuração e correções · dívida curta (arquivos ocultos) |
 | Ter 06 | Revisão prática dos erros do simulado · Laboratório 2 — `backup.sh`, `contar.sh`, `usuario.sh` · comparação de compressão |
 | Qua 07 | **Voucher, agendamento e pré-checkpoint** · aulas 31 a 43, a 2x |
 | Qui 08 | Aulas 44 a 50 · Prática 1 — usuários e grupos · pedir o `simulado-02` |
