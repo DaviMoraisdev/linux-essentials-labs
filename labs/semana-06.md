@@ -152,7 +152,7 @@ A regra de conversão é uma só: `r` vale 4, `w` vale 2, `x` vale 1, e cada dí
 | Sáb 10 | Cronometrado, sem pausa: (a) `754` · (b) `rw-rw----` · (c) `4750` em símbolos · (d) `1770` em símbolos · (e) `chmod 2755` em um diretório, e como aparece no `ls -l` |
 | Dom 11 | Os cinco comandos habituais, pautados pelos erros do simulado #1 |
 
-A partir de terça, acrescente ao fim do aquecimento **três comandos tirados dos erros do simulado #1**. O que errar vira card no Notion na hora. Se ao fim da semana a conversão ainda não sair em 3 segundos, a Semana 7 abre com uma sessão extra de permissões, e o feriado de segunda 12/10 é o dia natural para ela.
+A partir de terça, acrescente ao fim do aquecimento **três itens tirados dos erros do simulado #1**. Fila fixa até domingo: `cd /tmp ; cd /var ; cd - ; pwd` (a Correção 64 é a quinta do par `cd ..` e `cd -`); `man cp` contra `cp --help`; `chown` contra `chmod`. O que errar vira card no Notion na hora. Se ao fim da semana a conversão ainda não sair em 3 segundos, a Semana 7 abre com uma sessão extra de permissões, e o feriado de segunda 12/10 é o dia natural para ela.
 
 ---
 
@@ -171,21 +171,23 @@ Protocolo de sempre: **marcar cada chute**, abrir o gabarito só depois, apurar 
 
 | Tópico | Peso | Questões | Acertos | Chutes acertados |
 |---|---|---|---|---|
-| 1. Comunidade e open source | 7 | 1 a 7 | | |
-| 2. Encontrando seu caminho | 9 | 8 a 16 | | |
-| 3. Poder da linha de comando | 9 | 17 a 25 | | |
-| 4. Sistema operacional | 8 | 26 a 33 | | |
-| 5. Segurança e permissões | 7 | 34 a 40 | | |
-| **Total** | **40** | | | |
+| 1. Comunidade e open source | 7 | 1 a 7 | 5 | 0 |
+| 2. Encontrando seu caminho | 9 | 8 a 16 | 5 | 0 |
+| 3. Poder da linha de comando | 9 | 17 a 25 | 9 | 1 |
+| 4. Sistema operacional | 8 | 26 a 33 | 6 | 1 |
+| 5. Segurança e permissões | 7 | 34 a 40 | 3 | 3 |
+| **Total** | **40** | | **28** | **5** |
 
 | Campo | Valor |
 |---|---|
-| Data | |
-| Tempo gasto | |
-| Acertos | de 40 |
-| Percentual | |
-| Equivalente na escala LPI | acertos × 20 = pontos de 800 |
-| Questões marcadas como chute | |
+| Data | 05/10/2026 |
+| Tempo gasto | 20 min 31 s (restaram 39:29 dos 60 minutos) |
+| Acertos | **28** de 40 |
+| Percentual | **70%** |
+| Equivalente na escala LPI | 28 × 20 = **560 de 800**, acima do corte de 500 (26 acertos) |
+| Questões marcadas como chute | **10**: 22, 28, 29, 33, 34, 35, 36, 37, 39 e 40. Cinco acertadas (22, 33, 34, 36, 39) e cinco erradas (28, 29, 35, 37, 40) |
+
+A prova corrigida, questão por questão, está em `praticas/simulado-01-diagnostico-resultado.md`.
 
 ### Correção e revisão prática
 
@@ -202,6 +204,50 @@ Esta é a resposta ao ponto que a Semana 5 deixou aberto: corrigir o que ficou e
 - **Erros concentrados nos Tópicos 4 e 5:** esperado. O plano está funcionando.
 - **Erros nos Tópicos 1, 2 ou 3:** a base pede revisão. A revisão executada de terça ganha mais tempo e o tema entra no simulado #2.
 - **Abaixo de 24 acertos:** o Checkpoint A já nasce amarelo e o gate da Semana 9 é revisitado.
+
+### Resultado de 05/10 e leitura
+
+**28 de 40 (70%), 560 de 800.** Está acima do corte de 26 acertos e na parte alta da expectativa (de 24 a 30). Com a reserva de que **5 dos 28 acertos foram chutes**: sem eles são **23 acertos firmes (57,5%)**.
+
+| Tópico | Acertos | % | Leitura |
+|---|---|---|---|
+| 1. Comunidade e open source | 5 de 7 | 71% | Dois erros com convicção (Q3, Q7) |
+| 2. Encontrando seu caminho | 5 de 9 | 56% | **Quatro erros com convicção** (Q10, Q14, Q15, Q16) |
+| 3. Poder da linha de comando | **9 de 9** | 100% | Shell script, redirecionamento e filtros sustentaram. Uma questão acertada por chute (Q22) |
+| 4. Sistema operacional | 6 de 8 | 75% | Os dois erros foram chutes (Q28, Q29), em tópico ainda não estudado |
+| 5. Segurança e permissões | 3 de 7 | 43% | **Os três acertos foram chutes.** Acertos firmes: zero. Três erros foram chutes e um foi com convicção (Q38) |
+
+**O que o resultado diz:**
+
+1. **O Tópico 3 se sustentou.** As questões 18, 20, 21 e 24 retestavam correções antigas e foram acertadas sem chute. A 22 (Correção 52, `-f` do `tar`) foi acertada **por chute** e continua sem confirmação.
+2. **A fragilidade está nos Tópicos 1 e 2, os "fechados".** Seis dos sete erros com convicção caem neles, em 16 questões. Esses tópicos foram estudados nas Semanas 1 a 3 e só foram medidos por autoavaliações feitas no mesmo dia (14 de 15 e 20 de 20). É a regra de retenção da Semana 4, agora com um segundo dado.
+3. **A calibração foi boa onde ainda não há estudo.** Todos os cinco erros marcados como chute estão nos Tópicos 4 e 5. Nos Tópicos 1 e 2 a confiança foi maior que o acerto.
+4. **Tempo: 20 min 31 s de 60**, cerca de 31 segundos por questão. O exame dá 90 segundos por questão. Parte dos erros com convicção (Q10, Q15 e Q16) cobre conteúdo que você já praticou, e isso sugere pressa e não lacuna. Há um teste simples, no passo 1 da revisão de terça abaixo.
+
+**Para o simulado #2:** use **pelo menos 45 minutos** e reserve os últimos 15 para uma segunda passada nas questões marcadas e naquelas em que o enunciado traz uma pegadinha de comando.
+
+**Questão 40 (`umask`).** Foi escrita para este simulado, mas o `umask` **não consta na lista oficial** do objetivo 5.3. No exame real ela pode não aparecer. Trate como baixa prioridade; a Q37 (conversão `rw-r--r--` para 644) é a que importa.
+
+### Revisão prática de terça (15 minutos, antes do Laboratório 2)
+
+1. **Refaça, devagar e sem consultar, as 7 questões com convicção:** 3, 7, 10, 14, 15, 16 e 38. Classifique cada uma: **acertou** significa que era pressa; **errou de novo** significa lacuna.
+2. **Execute na VM** o que dá para executar:
+
+```bash
+cd /tmp ; cd /var ; cd - ; pwd ; echo $OLDPWD      # cd - volta ao anterior
+cd .. ; pwd                                         # .. sobe um nível
+ls /proc | head                                     # um diretório por PID
+cat /proc/$$/status | head -3                       # $$ é o PID do seu shell
+ls /dev | head
+ls /usr ; ls /home                                  # o que mora em cada um
+cp --manual a b ; echo $?                           # opção que não existe
+cp --help | head -3                                 # resumo
+man cp | head -5                                    # manual completo
+touch t ; chmod davi:financeiro t ; echo $?         # leia a mensagem
+uname -r                                            # na VM; repita dentro do container Rocky e compare
+```
+
+3. **As duas questões do Tópico 1 (Q3 e Q7) não se executam**, então viram card no Notion, sem reler o caderno.
 
 ---
 
@@ -435,13 +481,17 @@ Protocolo de sempre: cronometrar, **marcar cada chute**, abrir o gabarito só de
 | 5. Segurança e permissões | 7 | | |
 | **Total** | **40** | | |
 
-Compare com o simulado #1: o que errava e agora acerta, e o que continua errando. Esse é o dado mais útil da semana.
+Compare com o simulado #1 (28 de 40): o que errava e agora acerta, e o que continua errando. Esse é o dado mais útil da semana.
+
+**Tempo.** No simulado #1 você usou 20 dos 60 minutos. No #2, use **pelo menos 45** e reserve os últimos 15 para uma segunda passada nas questões marcadas e nas que tenham pegadinha de comando.
 
 ---
 
 ## Pré-checkpoint — Quarta 07/10 (decisão do voucher)
 
 Uma pergunta só: **o simulado #1 (segunda) e o Laboratório 2 (terça) estão feitos?**
+
+**Situação em 05/10, à noite:** o simulado #1 está feito (28 de 40). Falta só o Laboratório 2, amanhã.
 
 | Resposta | Decisão |
 |---|---|
@@ -478,11 +528,11 @@ Resultado, pela regra do plano geral (seção 11):
 
 | Item | Origem | Estado | Prazo |
 |---|---|---|---|
-| **Simulado #1** | Semana 3 | Em aberto, adiado de novo | **Seg 05/10**, primeira atividade |
-| Apuração, correções (a partir da 62) e cards | Semana 6 | Previsto | Seg 05/10 |
+| **Simulado #1** | Semana 3 | **Concluído em 05/10:** 28 de 40 (70%) | — |
+| Correções 62 a 68 e cards no Notion | Semana 6 | Correções registradas em 05/10; cards pendentes | Seg 05/10 |
 | Registro das observações sobre arquivos ocultos | Semana 3 | Em aberto | Seg 05/10 |
 | Limpeza: `rm 'sudo apt upgrade -y'` | Semana 3 | Em aberto | Seg 05/10 |
-| Revisão prática dos erros dos Tópicos 1 a 3 | Semana 6 | Previsto | Ter 06/10 |
+| Revisão prática dos erros (refação lenta das 7 questões e execução na VM) | Semana 6 | Previsto | Ter 06/10 |
 | Laboratório 2 (três scripts) | Semana 5 | Em aberto | Ter 06/10 |
 | Comparação de compressão com o `bzip2` | Semana 4 | Em aberto | Ter 06/10 |
 | Saídas do `teste.sh` e três saídas de `vi` e `nano` | Semana 5 | Em aberto | Ter 06/10 |
@@ -503,7 +553,92 @@ Resultado, pela regra do plano geral (seção 11):
 
 ### Simulado #1 — segunda 05/10
 
-*Resultado na seção "Simulado #1", acima. Correções e observações a preencher.*
+**28 de 40 (70%), 560 de 800, em 20 min 31 s.** Resultado, tabelas e leitura na seção "Simulado #1", acima. As correções abaixo são dos **sete erros com convicção** (os que não foram marcados como chute). Os cinco erros marcados como chute entram na tabela de lacunas conhecidas, mais abaixo.
+
+#### Correção 62 — "mantida pela comunidade" não é o critério de *upstream* (Q3)
+
+Marcou **Debian**; a resposta é **Fedora**. O enunciado traz duas pistas: "mantida pela comunidade" e "upstream do RHEL". A primeira não separa as opções, porque Debian, Fedora e openSUSE são comunitárias. A que decide é a segunda. **Upstream** é de onde o código vem **antes** de chegar à distribuição de baixo:
+
+| Linhagem | Cadeia | Pacotes |
+|---|---|---|
+| Debian | Debian → Ubuntu → Mint | `dpkg` e `apt` |
+| Red Hat | Fedora → CentOS Stream → RHEL → Rocky e AlmaLinux | `rpm` e `dnf` |
+
+O Debian é upstream do Ubuntu, não do RHEL. Esta cadeia também é o começo do seu RHCSA.
+
+#### Correção 63 — contêiner compartilha o kernel; máquina virtual tem o seu (Q7)
+
+Marcou **contêineres**; a resposta é **virtualização por hipervisor**. A palavra-chave do enunciado é "cada um com seu **próprio kernel**".
+
+| Tecnologia | Kernel |
+|---|---|
+| Virtualização por hipervisor | Cada máquina virtual roda **seu próprio** kernel e um sistema completo |
+| Contêiner | Todos **compartilham o kernel do hospedeiro**. O que se isola são processos, rede e arquivos |
+
+Para ver: `uname -r` na VM e dentro do container Rocky, se ele roda dentro da VM. O número é o mesmo.
+
+#### Correção 64 — `..` sobe na árvore, `-` volta no histórico (Q10)
+
+Marcou que `cd -` vai para o **diretório pai**; a resposta é "volta ao diretório em que estava antes". É a **quinta** ocorrência da família `cd ..` e `cd -`: nas quatro primeiras você chamou o `cd ..` de "anterior", e agora chamou o `cd -` de "pai". Os dois estão **trocados quando aparecem juntos**: na Q9 você acertou o `cd ..` isolado.
+
+| Símbolo | Eixo | O que faz |
+|---|---|---|
+| `..` | **Espaço**: a árvore de diretórios | Um nível **acima**, o pai |
+| `-` | **Tempo**: de onde você veio | Volta ao diretório **anterior**, guardado em `$OLDPWD` |
+
+Mnemônico: **ponto-ponto sobe, traço volta**. Quatro correções escritas não resolveram. Reler não conserta isto; o que conserta é executar todo dia, e por isso o par está fixo no aquecimento até domingo.
+
+#### Correção 65 — `/usr` não é *user* (Q14)
+
+Marcou **User**; a resposta é **Unix System Resources**. O nome induz ao erro. Os arquivos pessoais ficam em `/home`; o `/usr` guarda programas e bibliotecas do sistema. Para ver: `ls /usr ; ls /home`.
+
+#### Correção 66 — `/proc` é de *processos*, `/dev` é de *dispositivos* (Q15)
+
+Marcou **/dev**; a resposta é **/proc**. A pista do enunciado é "informações sobre os processos": **proc** vem de *process*. O `/dev` guarda os arquivos de dispositivo (`sda`, `tty`, `null`). Para ver: `ls /proc | head` mostra um diretório numerado por PID, e `ls /dev | head` mostra dispositivos.
+
+#### Correção 67 — a documentação completa é o `man`; o `--manual` não existe no `cp` (Q16)
+
+Marcou **`cp --manual`**; a resposta é **`man cp`**. A opção tem um nome plausível, e é por isso que funciona bem como distrator.
+
+| Forma | O que entrega |
+|---|---|
+| `man cp` | O manual **completo**, com todas as opções |
+| `cp --help` | Um **resumo** de uso |
+| `help cd` | Só funciona para comandos **internos** do shell |
+| `cp --manual` | Não existe. O `cp` responde com erro de opção |
+
+Quem entrega a documentação são **programas** (`man`, `info`), e não uma opção que valha para todo comando. Opção com nome plausível se testa executando.
+
+#### Correção 68 — `chmod` muda permissões; `chown` muda dono (Q38)
+
+Marcou **`chmod davi:financeiro`**; a resposta é **`chown davi:financeiro`**. Este erro **não** foi marcado como chute: foi convicção.
+
+| Comando | Nome vem de | O que altera |
+|---|---|---|
+| `chmod` | *change **mod**e* | As **permissões** (`rwx`, `644`) |
+| `chown` | *change **own**er* | O **dono** e, com `:`, o **grupo** |
+| `chgrp` | *change **gr**ou**p*** | Só o **grupo** |
+
+A sintaxe `dono:grupo` pertence ao `chown`. Para ver: `touch t ; chmod davi:financeiro t` responde com erro de modo inválido. A Prática 2, bloco 3, aplica `chown` e `chgrp`.
+
+#### Lacunas conhecidas — os cinco erros marcados como chute
+
+Você sabia que não sabia, e o simulado confirmou. Não geram correção agora; definem a ênfase.
+
+| Q | Tema | Resposta | Onde será estudado |
+|---|---|---|---|
+| 28 | Processos em tempo real | `top` (o `free -h` mostra memória) | Semana 7, Prática 1 |
+| 29 | Sinal padrão do `kill` | `SIGTERM` (15). O `SIGKILL` (9) só com `kill -9` | Semana 7, Prática 1 |
+| 35 | Último campo do `/etc/passwd` | O **shell de login**, 7º campo. O GID é o 4º | Semana 6, Prática 1, bloco 2 |
+| 37 | `rw-r--r--` em octal | **644**. O `664` é `rw-rw-r--`, que é o padrão da sua VM | Aquecimento de conversões |
+| 40 | Quem retira permissões de arquivo novo | `umask` | Baixa prioridade: fora da lista oficial |
+
+A Q37 merece atenção: você marcou **664**, e `rw-rw-r--` é justamente o que os arquivos novos recebem na sua VM. Pode ter sido o que você já vê no terminal, e não a conversão do enunciado.
+
+#### Observações (sem número)
+
+- **A Q11** foi respondida `PATH`, com um sublinhado na frente. No exame real, em campo de preenchimento, escreva **só a palavra**.
+- **Erros com convicção são os mais caros.** Dos 12 erros, 7 foram com convicção e 5 com chute. Os 7 são os mais caros: erro sabido se estuda, erro confiante se defende.
 
 ### Laboratório 2 — terça 06/10
 
@@ -519,7 +654,19 @@ Resultado, pela regra do plano geral (seção 11):
 
 ### Correções da semana
 
-A numeração segue a série global. A última registrada na Semana 5 foi a **61** (o `2` do `2>` não é o `2` do `$?`). **A próxima é a 62**, a partir da apuração do simulado #1.
+A numeração segue a série global. A última registrada na Semana 5 foi a **61** (o `2` do `2>` não é o `2` do `$?`). Em 05/10, o simulado #1 gerou as **Correções 62 a 68**. **A próxima é a 69.**
+
+| # | Tema | Origem |
+|---|---|---|
+| 62 | *Upstream* do RHEL é o Fedora, não o Debian | Q3 |
+| 63 | Contêiner compartilha o kernel; VM tem o seu | Q7 |
+| 64 | `..` sobe na árvore, `-` volta no histórico (5ª ocorrência) | Q10 |
+| 65 | `/usr` não é *user* | Q14 |
+| 66 | `/proc` é de processos, `/dev` de dispositivos | Q15 |
+| 67 | `man` é o manual; `--manual` não existe no `cp` | Q16 |
+| 68 | `chmod` muda permissões, `chown` muda dono | Q38 |
+
+Para o Notion: um card por correção. O mecanismo de cada uma está na frase final da tabela de cada correção.
 
 *A preencher.*
 
@@ -528,8 +675,9 @@ A numeração segue a série global. A última registrada na Semana 5 foi a **61
 ## Checklist da semana
 
 - [ ] Abertura: tabela de dívidas conferida
-- [ ] **Simulado #1** e apuração por objetivo (segunda)
-- [ ] Correções a partir da 62 e cards no Notion (segunda)
+- [x] **Simulado #1** e apuração por objetivo (segunda): 28 de 40, 70%
+- [x] Correções 62 a 68 registradas (segunda)
+- [ ] Cards das Correções 62 a 68 no Notion (segunda)
 - [ ] Arquivos ocultos registrados, `rm` feito (segunda)
 - [ ] Aquecimento de conversões: segunda a domingo
 - [ ] Revisão prática dos erros dos Tópicos 1 a 3 (terça)
