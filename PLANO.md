@@ -38,7 +38,7 @@
 | Cards de revisão (Notion) | Em uso desde a Semana 1 |
 | Curso do Muller | **Checkpoint na aula 31 de 72** (30/09; aulas 26 a 30 assistidas) — 42 restantes. Adiado em 28 e 29/09 |
 
-### Dívidas pagas (29 e 30/09)
+### Dívidas pagas (29/09 a 05/10)
 
 | Dívida | Origem |
 |---|---|
@@ -47,6 +47,9 @@
 | Commits da Semana 4 | Semana 4 |
 | Correções 49 a 52 anotadas | Semana 4 |
 | Curso, aulas 26 a 30 (30/09) | Semana 5 |
+| Limpeza da home (`rm 'sudo apt upgrade -y'`): já quitada desde a Semana 3 (confirmado em 05/10) | Semana 3 |
+| Registro das observações sobre arquivos ocultos: **encerrada em 05/10**, a pedido (comandos já dominados; os arquivos da sessão não existem mais) | Semana 3 |
+| Cards das Correções 60 a 68 no Notion (05/10) | Semanas 5 e 6 |
 
 ### Pendente
 
@@ -55,13 +58,12 @@
 | **Curso, aulas 31 a 43** (13 aulas; as aulas 26 a 30 foram concluídas em 30/09) | **quarta 07/10** (Semana 6), a 2x, porque o Laboratório 1 já praticou o 3.3 |
 | Registrar as saídas do `teste.sh` e as três saídas de `vi` e `nano` (Laboratório 1) | terça 06/10, no aquecimento |
 | **Laboratório 2** — `backup.sh`, `contar.sh`, `usuario.sh` (`filtrar.sh` opcional) | **terça 06/10** (Semana 6) |
-| **Revisão prática** dos erros do simulado #1 (correções 62 a 68 já registradas em 05/10) | terça 06/10, 15 minutos, executada na VM; cards no Notion na segunda |
+| **Revisão prática** dos erros do simulado #1 (Correções 62 a 68 registradas e cards no Notion anotados em 05/10) | terça 06/10, 15 minutos, executada na VM |
 | **Autoavaliação da Semana 5** — 10 questões | sexta 09/10 |
 | **Voucher da prova** e agendamento (09/11 ou 16/11, conforme o pré-checkpoint), com a janela de remarcação anotada | **quarta 07/10** (prazos anteriores: 29/09 e 30/09) |
 | ~~**Simulado #1 (diagnóstico)**~~ | **Concluído em 05/10: 28 de 40 (70%), 560 de 800.** Prova corrigida em `praticas/simulado-01-diagnostico-resultado.md` |
 | Reteste das 4 questões erradas da autoavaliação da Semana 4 | No aquecimento diário. As questões 18, 20, 21, 22 e 24 do simulado #1 também retestam |
 | Refazer a comparação de compressão (`bzip2` já instalado) | terça 06/10, no aquecimento |
-| Registrar as observações sobre arquivos ocultos (Semana 3) | segunda 05/10 |
 | **Checkpoint A** — decisão sobre manter 09/11 | domingo 11/10 (seção 11) |
 | `.wslconfig` limitando o WSL2 a 3 GB | Quando houver folga |
 | Teste de restauração do snapshot | Quando houver folga |
@@ -464,7 +466,7 @@ Marcar antes de se sentir pronto é intencional. Prazo firme é o que impede o p
 
 | Dia | Atividade |
 |---|---|
-| Seg 05 | **Simulado #1** · apuração e correções · dívida curta (arquivos ocultos) |
+| Seg 05 | **Simulado #1** · apuração e correções |
 | Ter 06 | Revisão prática dos erros do simulado · Laboratório 2 — `backup.sh`, `contar.sh`, `usuario.sh` · comparação de compressão |
 | Qua 07 | **Voucher, agendamento e pré-checkpoint** · aulas 31 a 43, a 2x |
 | Qui 08 | Aulas 44 a 50 · Prática 1 — usuários e grupos · pedir o `simulado-02` |
