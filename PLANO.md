@@ -1,12 +1,14 @@
 # Plano de Preparação — LPI Linux Essentials (010-160)
 
 **Aluno:** Davi (@DaviMoraisdev) · **Ritmo:** 5–7h/semana
-**Data da prova:** **09/11/2026, segunda-feira**
+**Data da prova:** **09/11/2026, segunda-feira** (ou 16/11, se o pré-checkpoint de 07/10 mandar; seção 11)
 **Repositório de labs:** https://github.com/DaviMoraisdev/linux-essentials-labs
 
 > **Estratégia revisada em 26/09.** O cronograma tem **duas fases**: três semanas com o curso como atividade principal e duas práticas por semana, seguidas de três semanas de prática intensiva e simulados. Detalhamento na seção 7.
 >
 > **Atualização de 02/10, à noite.** Três mudanças: (1) **simulado geral de 40 questões todo domingo**, a partir de 04/10 (seção 7); (2) o fechamento da Semana 5 passa para o **domingo 04/10** (Laboratório 1 e simulado #1), e o Laboratório 2 e as aulas 31 a 43 passam para a Semana 6 (`labs/semana-06.md`); (3) nova **regra de adiamento da prova**, com checkpoints e datas alternativas (seção 11).
+>
+> **Atualização de 04/10.** O Laboratório 1 e o exercício das frutas foram concluídos. O **simulado #1 passou para a segunda 05/10**, o Laboratório 2 para a terça 06/10 e as aulas 31 a 43 para a quarta 07/10. A Semana 6 foi reorganizada (`labs/semana-06.md`). Um novo **pré-checkpoint, na quarta 07/10**, decide se a prova é agendada para 09/11 ou direto para 16/11 (seção 11).
 >
 > **Calendário da Semana 5 revisado em 29/09.** O curso foi adiado na segunda e na terça. As 18 aulas restantes da semana passam a ser cumpridas em dois blocos, na quarta e na quinta, sem mover os laboratórios nem o simulado. Detalhamento na seção 7 e no arquivo `labs/semana-05.md`.
 
@@ -23,9 +25,10 @@
 | **Semana 2 — Tópico 2, parte 1** | Concluída em 13/09 — objetivos 2.1 e 2.2 |
 | **Semana 3 — Tópico 2, parte 2** | Concluída em 19/09 — objetivos 2.3 e 2.4 |
 | **Semana 4 — Tópico 3, parte 1** | **Fechada em 29/09** — objetivos 3.1 e 3.2; 10 correções (43 a 52); simulado transferido para a Semana 5 |
+| **Semana 5 — Objetivo 3.3, parte prática** | **Laboratório 1 concluído em 04/10** (blocos 1 e 2 em 02/10; blocos 3 a 6 e exercício das frutas em 04/10); Correções 60 e 61. Faltam o Laboratório 2 e o simulado #1 |
 | **Tópico 1 (peso 7)** | Completo |
 | **Tópico 2 (peso 9)** | Completo — os quatro objetivos |
-| **Tópico 3 (peso 9)** | 3.1 e 3.2 feitos; falta o 3.3, em curso na Semana 5 |
+| **Tópico 3 (peso 9)** | 3.1 e 3.2 feitos; 3.3 praticado no Laboratório 1 (04/10); faltam o Laboratório 2 e o simulado |
 | Autoavaliação da Semana 2 | 14 de 15 — respondida no dia do estudo |
 | Autoavaliação da Semana 3 | 20 de 20 — respondida no dia do estudo |
 | Autoavaliação da Semana 4 | **14 de 20** (29/09) — respondida 4 dias depois; abaixo da meta de 16. **Correções 49 a 52 anotadas no caderno em 29/09** |
@@ -47,12 +50,14 @@
 
 | Item | Prazo |
 |---|---|
-| **Curso, aulas 31 a 43** (13 aulas; as aulas 26 a 30 foram concluídas em 30/09) | **segunda 05/10** (Semana 6) |
-| **Laboratório 1: blocos 3 a 6 e exercício das frutas** (blocos 1 e 2 concluídos em 02/10) | **domingo 04/10**, depois do simulado (sábado, se houver tempo). Se cortados: bloco 6 e exercício na segunda 05/10 |
+| **Curso, aulas 31 a 43** (13 aulas; as aulas 26 a 30 foram concluídas em 30/09) | **quarta 07/10** (Semana 6), a 2x, porque o Laboratório 1 já praticou o 3.3 |
+| Registrar as saídas do `teste.sh` e as três saídas de `vi` e `nano` (Laboratório 1) | terça 06/10, no aquecimento |
 | **Laboratório 2** — `backup.sh`, `contar.sh`, `usuario.sh` (`filtrar.sh` opcional) | **terça 06/10** (Semana 6) |
-| **Voucher da prova** e agendamento para 09/11, com a data-limite de remarcação anotada | **quarta 07/10** (prazos anteriores: 29/09 e 30/09) |
-| **Simulado diagnóstico** — 40 questões, cronometrado | **domingo 04/10, primeira atividade do dia** — simulado #1 da série dominical, em `praticas/simulado-01-diagnostico.md` |
-| Reteste das 4 questões erradas da autoavaliação da Semana 4 | No aquecimento diário, até domingo |
+| **Correção e revisão prática** dos erros do simulado #1 | segunda 05/10 (correções, a partir da 62) e terça 06/10 (revisão executada na VM) |
+| **Autoavaliação da Semana 5** — 10 questões | sexta 09/10 |
+| **Voucher da prova** e agendamento (09/11 ou 16/11, conforme o pré-checkpoint), com a janela de remarcação anotada | **quarta 07/10** (prazos anteriores: 29/09 e 30/09) |
+| **Simulado #1 (diagnóstico)** — 40 questões, cronometrado | **segunda 05/10, primeira atividade do dia**, em `praticas/simulado-01-diagnostico.md`. Adiado do domingo 04/10 |
+| Reteste das 4 questões erradas da autoavaliação da Semana 4 | No aquecimento diário. As questões 18, 20, 21, 22 e 24 do simulado #1 também retestam |
 | Refazer a comparação de compressão (`bzip2` já instalado) | terça 06/10, no aquecimento |
 | Limpeza: `rm 'sudo apt upgrade -y'` na home | segunda 05/10 |
 | Registrar as observações sobre arquivos ocultos (Semana 3) | segunda 05/10 |
@@ -66,7 +71,7 @@
 |---|---|---|
 | 1. Comunidade e open source | 7 | 100% |
 | 2. Encontrando seu caminho | 9 | 100% |
-| 3. Poder da linha de comando | 9 | 55% — falta o 3.3 |
+| 3. Poder da linha de comando | 9 | 3.1 e 3.2 completos; 3.3 em prática (Laboratório 1 concluído) |
 | 4. Sistema operacional | 8 | 30% |
 | 5. Segurança e permissões | 7 | 0% |
 
@@ -342,11 +347,11 @@ A Fase 1 ainda termina em **18/10**, com o curso fechado e os cinco tópicos est
 
 ### Série de simulados dominicais
 
-Um simulado geral de 40 questões todo domingo, mais os extras de Fase 2. Distribuição de pesos do exame. Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
+Um simulado geral de 40 questões todo domingo, mais os extras de Fase 2. Distribuição de pesos do exame. O #1, previsto para domingo 04/10, foi para a **segunda 05/10**. Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 
 | # | Data | Semana | Fonte | Meta |
 |---|---|---|---|---|
-| 1 | Dom 04/10 | 5 | `simulado-01-diagnostico` (pronto) | Diagnóstico. Esperado: 24 a 30 |
+| 1 | **Seg 05/10** (adiado do dom 04/10) | 5 | `simulado-01-diagnostico` (pronto) | Diagnóstico. Esperado: 24 a 30 |
 | 2 | Dom 11/10 | 6 | `simulado-02` | **24 ou mais** (Checkpoint A) |
 | 3 | Dom 18/10 | 7 | `simulado-03` | **28 ou mais** (Checkpoint B) |
 | 4 | Qui 22/10 | 8 | Exame final de prática do NDG | 28 ou mais |
@@ -374,7 +379,7 @@ Um simulado geral de 40 questões todo domingo, mais os extras de Fase 2. Distri
 | Qui 01/10 | Curso, aulas 31 a 43 (13 aulas) · aquecimento | cerca de 1h50 |
 | Sex 02 | Laboratório 1 — fundamentos de shell script, `vi` e `nano` · aquecimento | 1h10 |
 | Sáb 03 | **Opcional** — adiantar a Semana 6: Laboratório 1, blocos 3 a 5, e aulas de shell script | até 1h |
-| **Dom 04** | Aquecimento · **simulado #1** · apuração · Laboratório 1, blocos 3 a 6 e exercício das frutas · registro · commits | cerca de 2h35 |
+| **Dom 04** | Laboratório 1, blocos 3 a 6 e exercício das frutas — **realizado**. Simulado #1 não realizado: passou para a segunda 05/10 | — |
 
 Total previsto em 29/09 a partir de quarta: 6h45. **Substituído pelo plano final abaixo.**
 
@@ -382,9 +387,11 @@ Total previsto em 29/09 a partir de quarta: 6h45. **Substituído pelo plano fina
 
 **Atualização de 30/09.** A quarta fechou 5 das 9 aulas previstas. As 4 restantes passaram para a quinta, que fica com 13 aulas. No pior caso a semana vai a cerca de 7h10, 10 minutos acima do teto; a folga vem de usar **2x** nas aulas que só repetem conteúdo já praticado e da regra de transbordo. Detalhes em `labs/semana-05.md`.
 
-**Atualização de 02/10, à noite — plano final.** A quinta não teve estudo e o Laboratório 1 de sexta foi feito em parte (blocos 1 e 2). O sábado deixa de ser obrigatório e o fechamento da semana passa para o **domingo 04/10**: simulado #1 **primeiro**, com a cabeça descansada, e depois o restante do Laboratório 1. O Laboratório 2 e as aulas 31 a 43 passam para a Semana 6. Se o tempo apertar no domingo, cortam-se, nesta ordem, o exercício das frutas e o bloco 6 (segunda 05/10); o simulado e os blocos 3 a 5 não se cortam.
+**Atualização de 04/10 — fechamento.** O domingo rendeu o Laboratório 1 inteiro e o exercício das frutas; o simulado #1 não coube e foi para a segunda 05/10. A Semana 5 fecha com as Correções 60 e 61. Detalhes em `labs/semana-05.md`.
 
-**Curso:** aulas 26 a 30 concluídas em 30/09; **31 a 43 transferidas para a segunda 05/10**. Reduzir para **1x** ao chegar no shell script.
+**Atualização de 02/10, à noite — plano (superado pela atualização de 04/10, acima).** A quinta não teve estudo e o Laboratório 1 de sexta foi feito em parte (blocos 1 e 2). O sábado deixa de ser obrigatório e o fechamento da semana passa para o **domingo 04/10**: simulado #1 **primeiro**, com a cabeça descansada, e depois o restante do Laboratório 1. O Laboratório 2 e as aulas 31 a 43 passam para a Semana 6. Se o tempo apertar no domingo, cortam-se, nesta ordem, o exercício das frutas e o bloco 6 (segunda 05/10); o simulado e os blocos 3 a 5 não se cortam.
+
+**Curso:** aulas 26 a 30 concluídas em 30/09; **31 a 43 transferidas para a quarta 07/10**, a 2x. Como o Laboratório 1 já praticou o 3.3, o vídeo confirma e não ensina.
 
 **Justificativa da divisão em duas práticas.** O objetivo 3.3 tem peso 4 e cobre shebang, variáveis, argumentos, condicionais, loops, códigos de saída e os editores `vi` e `nano`. Não cabe em uma sessão com os quatro scripts no fim. A sexta cobre os fundamentos; o sábado escreve o código.
 
@@ -413,7 +420,7 @@ Escrever em `scripts/`, um por vez, testando cada um antes de passar ao seguinte
 
 > Você já programa, então a sintaxe vem rápido; o que exige atenção é a diferença entre o modelo mental do shell e o de uma linguagem estruturada. Três pontos concretos: espaços dentro de `[ ]` são obrigatórios, `=` compara texto e `-eq` compara número, e uma variável sem aspas se parte em palavras.
 
-**Simulado diagnóstico (domingo 04/10) — simulado #1 da série dominical**
+**Simulado diagnóstico (segunda 05/10, adiado do domingo 04/10) — simulado #1 da série**
 
 40 questões, 60 minutos, cronometrado, sem consultar nada. O simulado está em `praticas/simulado-01-diagnostico.md`, com a distribuição de pesos do exame e gabarito comentado. Fontes gratuitas complementares em `praticas/fontes-de-simulados.md` — a principal é o NDG Linux Essentials da Cisco Networking Academy, cujos quizzes e exame final de prática são gratuitos.
 
@@ -434,31 +441,33 @@ Esta é a pendência mais antiga do plano, com quatro semanas de atraso. Ela ocu
 - Erros concentrados em 4 e 5, ainda não estudados — o plano está funcionando.
 - Erros em 1, 2 ou 3, que estão fechados — a base pede revisão, e as práticas das semanas seguintes precisam incluí-la.
 
-**Ação da semana: comprar o voucher e agendar a prova para 09/11.** Prazos anteriores: 29/09 e 30/09. **Novo prazo: quarta 07/10.** Na compra, confirmar e anotar a janela de remarcação sem custo e a validade do voucher (seção 11).
+**Ação da semana: comprar o voucher e agendar a prova para 09/11.** Prazos anteriores: 29/09 e 30/09. **Novo prazo: quarta 07/10.** Antes da compra, o **pré-checkpoint de quarta 07/10** (seção 11) decide se a data é 09/11 ou 16/11. Na compra, confirmar e anotar a janela de remarcação sem custo e a validade do voucher.
 
 Marcar antes de se sentir pronto é intencional. Prazo firme é o que impede o plano de escorregar para dezembro.
 
-**Entregável:** `labs/semana-05.md` com o Laboratório 1 completo + resultado do simulado #1 apurado por objetivo. Scripts e voucher passam para a Semana 6
+**Entregável:** `labs/semana-05.md` com o **Laboratório 1 completo**, o exercício das frutas e as Correções 60 e 61, entregue em 04/10. Simulado #1, scripts, autoavaliação e voucher passam para a Semana 6
 
 ---
 
 ### Semana 6 — 05 a 11/10 · Tópico 5, permissões (peso 7)
 
-**Arquivo detalhado:** `labs/semana-06.md` (calendário dia a dia, exercícios, gabarito do aquecimento, ordem de corte e Checkpoint A).
+**Arquivo detalhado:** `labs/semana-06.md` (calendário dia a dia, exercícios, gabarito do aquecimento, ordem de corte, pré-checkpoint e Checkpoint A).
 
-**Curso:** aulas **31 a 43** (transferidas da Semana 5) na segunda 05/10 e aulas **44 a 57** na quarta 07 e na sexta 09/10.
+**Curso:** aulas **31 a 43** (transferidas da Semana 5) na quarta 07/10, a 2x, porque o Laboratório 1 já praticou o 3.3; aulas **44 a 50** na quinta 08 e **51 a 57** na sexta 09/10.
 
-**Carga:** cerca de 9h nominais, acima do teto de 7h. Ordem de corte, se faltar tempo: `filtrar.sh`; aulas 51 a 57 para a segunda 12/10 (feriado); autoavaliação a 5 questões; aulas fora do shell script a 2x. Não se cortam: simulado #2, aulas de shell script, Laboratório 2 (três scripts), Prática 2 e o aquecimento.
+**Carga:** cerca de 10h35 nominais, acima do teto de 7h. Ordem de corte, se faltar tempo: `filtrar.sh`; revisão prática de terça; autoavaliação a 5 questões; aulas 51 a 57 e Prática 1 para a segunda 12/10 (feriado). Com os cortes, cerca de 8h25. Não se cortam: simulados #1 e #2, Laboratório 2 (três scripts), Prática 2, voucher e aquecimento.
 
 | Dia | Atividade |
 |---|---|
-| Seg 05 | Aulas 31 a 43 · dívidas curtas (arquivos ocultos, `rm`, frutas e bloco 6 se cortados) |
-| Ter 06 | Laboratório 2 — `backup.sh`, `contar.sh`, `usuario.sh` · comparação de compressão |
-| Qua 07 | **Voucher e agendamento** · aulas 44 a 50 |
-| Qui 08 | Prática 1 — usuários e grupos · pedir o `simulado-02` |
+| Seg 05 | **Simulado #1** · apuração e correções · dívidas curtas (arquivos ocultos, `rm`) |
+| Ter 06 | Revisão prática dos erros do simulado · Laboratório 2 — `backup.sh`, `contar.sh`, `usuario.sh` · comparação de compressão |
+| Qua 07 | **Voucher, agendamento e pré-checkpoint** · aulas 31 a 43, a 2x |
+| Qui 08 | Aulas 44 a 50 · Prática 1 — usuários e grupos · pedir o `simulado-02` |
 | Sex 09 | Autoavaliação da Semana 5 (10 questões) · aulas 51 a 57 |
 | Sáb 10 | Prática 2 — permissões |
 | **Dom 11** | **Simulado #2** · apuração · **Checkpoint A** |
+
+**Correção e revisão prática.** Depois do simulado #1, os erros são apurados por objetivo e viram correções com mecanismo, a partir da 62. Para cada objetivo dos Tópicos 1 a 3 com erro, a terça traz uma revisão de 15 minutos **executada na VM**, sem reler o caderno. Os erros alimentam o aquecimento dos dias seguintes.
 
 **Autoavaliação da Semana 5:** reduzida a 10 questões, respondida na sexta 09/10, três dias depois do Laboratório 2.
 
@@ -481,7 +490,7 @@ Marcar antes de se sentir pronto é intencional. Prazo firme é o que impede o p
 
 **Checkpoint A (domingo 11/10):** cinco critérios (curso até a aula 57, Laboratório 2, as duas práticas, simulado #2 com 24 ou mais acertos, voucher e agendamento). Resultado verde, amarelo ou vermelho decide se 09/11 se mantém (seção 11).
 
-**Entregável:** `labs/semana-06.md` + `cheatsheets/permissoes.md` + os três scripts + resultado do simulado #2
+**Entregável:** `labs/semana-06.md` + `cheatsheets/permissoes.md` + os três scripts + resultados dos simulados #1 e #2
 
 ---
 
@@ -508,7 +517,7 @@ Marcar antes de se sentir pronto é intencional. Prazo firme é o que impede o p
 
 > Boa parte deste tópico já foi encostada na prática: LVM e partições na Semana 0, `/proc` e `/dev` na Semana 3, portas e serviços na Semana 1, gerenciadores de pacotes no curso. A cobertura parte de ~30%, não de zero.
 
-**Segunda 12/10 (feriado):** sessão extra de permissões, se a conversão ainda não sai em 3 segundos, ou as aulas 51 a 57 que tenham sido cortadas na Semana 6.
+**Segunda 12/10 (feriado):** sessão extra de permissões, se a conversão ainda não sai em 3 segundos, ou as aulas 51 a 57 e a Prática 1 (usuários e grupos), se tiverem sido cortadas na Semana 6.
 
 **Sexta 16/10:** autoavaliação da Semana 6 (Tópico 5), 10 questões.
 
@@ -569,9 +578,9 @@ Na prova: 40 questões em 60 minutos, 1,5 minuto por questão. Marcar as difíce
 | **Perda de motricidade** | Comando vira reflexo por repetição espaçada; 2 sessões/semana espaçam menos que 5 | Aquecimento diário de 10 minutos, cinco comandos de memória |
 | **Permissões sem repetição suficiente** | É o conteúdo mais dependente de reflexo, e cai na semana de menor frequência | Aquecimento da Semana 6 dedicado só a conversão de permissões · sessão extra na Semana 7 se a conversão não sair em 3 segundos |
 | **Curso sem prática imediata** | Assistir sem digitar produz reconhecimento, não competência | As 2 práticas da semana cobrem sempre o objetivo de maior peso daquele bloco |
-| **Simulado adiado de novo** | Já atrasou 4 semanas | Ocupa formalmente o lugar de uma das duas práticas da Semana 5, em data fixa: domingo 04/10, como **primeira** atividade do dia, antes do Laboratório 1 |
+| **Simulado adiado de novo** | Já atrasou 4 semanas | Ocupa formalmente o lugar de uma das duas práticas da Semana 5, em data fixa: domingo 04/10. **Não coube no domingo**; passou para a segunda 05/10, como **primeira** atividade do dia, antes do curso e de qualquer outra coisa |
 | **Curso adiado repetidamente** | Segunda e terça da Semana 5 sem aulas; na quarta, 5 das 9 aulas previstas (26 a 30); 42 restantes (31 a 72) em 3 semanas | Quinta com as aulas 31 a 43 · 2x nas aulas que repetem conteúdo já praticado · regra de transbordo (shell script tem prioridade, o resto vai para segunda 05/10) · fila de dívidas registrada por semana |
-| **Carga acima do teto nas Semanas 6 e 7** | As dívidas da Semana 5 (cerca de 2h) e o simulado dominical (cerca de 1h35) somam-se a um orçamento de 5 a 7h | Ordem de corte escrita de antemão no arquivo da Semana 6 · feriado de 12/10 como dia extra · Checkpoints A e B |
+| **Carga acima do teto nas Semanas 6 e 7** | As dívidas da Semana 5 (cerca de 3h30: simulado #1, Laboratório 2 e curso) e o simulado dominical (cerca de 1h35) somam-se a um orçamento de 5 a 7h. A Semana 6 sai com cerca de 10h35 nominais | Ordem de corte escrita de antemão no arquivo da Semana 6 (cerca de 8h25 com os cortes) · feriado de 12/10 como dia extra · pré-checkpoint de 07/10 · Checkpoints A e B |
 | **Prova marcada sem margem** | 09/11 deixa três semanas de Fase 2, e qualquer atraso da Fase 1 consome essas semanas | Seção 11: checkpoints com critérios objetivos, datas alternativas (16/11, 23/11) e limite absoluto em 30/11 |
 | **Retenção menor que a percebida** | A autoavaliação da Semana 4, feita 4 dias depois, deu 14/20 contra 20/20 no mesmo dia | Autoavaliação sempre na semana seguinte · aquecimento pautado pelos erros · simulado com marcação de chutes |
 
@@ -674,6 +683,17 @@ A coluna da direita é apenas o caminho natural dentro do roadmap atual, não um
 
 O Checkpoint A só pesa de verdade se o voucher e o agendamento já existirem. Sem eles, a decisão de remarcar vira um problema novo, e é por isso que o voucher é o critério 5.
 
+### Pré-checkpoint — quarta 07/10
+
+**Criado em 04/10**, porque o simulado #1 e o Laboratório 2 escorregaram para o começo da Semana 6 e o voucher ainda não foi comprado. Uma pergunta só: **o simulado #1 (segunda) e o Laboratório 2 (terça) estão feitos?**
+
+| Resposta | Decisão |
+|---|---|
+| Os dois estão feitos | Comprar o voucher e agendar **09/11** |
+| Qualquer um dos dois não está | Agendar direto para **16/11** |
+
+Como o voucher ainda não existe, agendar para 16/11 não custa remarcação nem troca. Com 16/11 como data, os Checkpoints A, B e Gate mantêm as datas e os critérios, e o resultado "vermelho" passa a significar remarcar para **23/11**. A série de simulados dominicais continua igual, e a Fase 2 ganha uma semana.
+
 ### Datas alternativas
 
 | Cenário | Data | O que muda |
@@ -689,7 +709,7 @@ Nas semanas extras, a série dominical continua. A única exceção é sempre a 
 
 ### Voucher e agendamento
 
-- Comprar o voucher e agendar a prova para 09/11 **até quarta 07/10**. Marcar antes de se sentir pronto é intencional: prazo firme é o que impede o plano de escorregar.
+- Comprar o voucher e agendar a prova **até quarta 07/10**, para 09/11 ou, se o pré-checkpoint mandar, para 16/11. Marcar antes de se sentir pronto é intencional: prazo firme é o que impede o plano de escorregar.
 - No ato da compra, **confirmar e anotar aqui**: (a) até quando é possível remarcar sem custo; (b) a validade do voucher; (c) se há vaga em 16/11 no centro escolhido. Não assumo valores: a regra vale a que estiver escrita na confirmação do agendamento.
 - Registrar a janela de remarcação: ____________
 
