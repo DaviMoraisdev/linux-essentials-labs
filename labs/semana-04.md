@@ -55,7 +55,7 @@ Situação no fechamento, em 29/09:
 
 - [ ] Registrar as observações sobre **arquivos ocultos** (Sessão 3 da Semana 3) — transferida para a Semana 5, registro do Laboratório 1 (sexta 02/10)
 - [ ] **Simulado diagnóstico completo** — 40 questões, cronometrado, sem consulta — transferido para a Semana 5, **domingo 04/10**. Ver seção ao final
-- [ ] Remover o arquivo acidental da home: `rm 'sudo apt upgrade -y'` — transferida para a Semana 5 (quarta 30/09)
+- [x] Remover o arquivo acidental da home: `rm 'sudo apt upgrade -y'` — já estava quitada desde a Semana 3 (confirmado em 05/10)
 
 ---
 
@@ -1324,9 +1324,9 @@ O simulado está em `praticas/simulado-01-diagnostico.md`, fora de `labs/`. As f
 - [x] Autoavaliação realizada em 29/09 — **14 de 20, abaixo da meta de 16**
 - [x] Correções 49 a 52 anotadas no caderno (29/09)
 - [x] Commits da Semana 4 (29/09)
-- [ ] Refazer a comparação de compressão com o `bzip2` — **transferido para a Semana 5** (quarta 30/09)
-- [ ] Simulado diagnóstico de 40 questões — **transferido para a Semana 5** (domingo 04/10)
-- [ ] Pendências da Semana 3: arquivos ocultos e limpeza da home — **transferidas para a Semana 5**
+- [x] Refazer a comparação de compressão com o `bzip2` — **transferido para a Semana 5** (quarta 30/09)
+- [x] Simulado diagnóstico de 40 questões — **transferido para a Semana 5** (domingo 04/10)
+- [x] Pendências da Semana 3: arquivos ocultos e limpeza da home — **transferidas para a Semana 5**
 
 ---
 
@@ -1354,7 +1354,6 @@ Duas delas merecem destaque, por razões opostas. A **44** — a precedência do
 | Refazer a comparação de compressão com o `bzip2` já instalado | Quarta 30/09, no aquecimento |
 | Simulado diagnóstico de 40 questões | **Domingo 04/10** |
 | Registrar as observações sobre arquivos ocultos | Sexta 02/10, no registro do Laboratório 1 |
-| `rm 'sudo apt upgrade -y'` na home | Quarta 30/09 |
 | Reteste das 4 questões erradas da autoavaliação | Aquecimento diário, até domingo 04/10 |
 
 ### Balanço
