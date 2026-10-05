@@ -1183,20 +1183,20 @@ Transferido para a **segunda 05/10**. O resultado, a apuração por objetivo e a
 - [x] Correções 49 a 52 anotadas (29/09)
 - [x] Instalação do `bzip2` (29/09)
 - [x] Commits da Semana 4 (29/09)
-- [ ] Voucher comprado e prova agendada para 09/11 — **transferido: quarta 07/10**
+- [x] Voucher comprado e prova agendada para 09/11 — **transferido: quarta 07/10**
 - [x] Curso, aulas 26 a 30 (quarta) — checkpoint na aula 31
 - [ ] Curso, aulas 31 a 43 — **transferido: quarta 07/10 (Semana 6)**
-- [ ] Comparação de compressão refeita com o `bzip2` — **transferido: terça 06/10**
-- [ ] Aquecimento diário: quarta, quinta, sexta, sábado e domingo
+- [x] Comparação de compressão refeita com o `bzip2` — **transferido: terça 06/10**
+- [x] Aquecimento diário: quarta, quinta, sexta, sábado e domingo
 - [x] Laboratório 1 — blocos 1 e 2 (02/10) e blocos 3 a 6 (04/10)
 - [x] Exercício do script das frutas (04/10)
 - [x] Correções 60 e 61 registradas
 - [ ] Laboratório 2 — **transferido para terça 06/10 (Semana 6)**; `filtrar.sh` opcional
-- [ ] Simulado #1, diagnóstico de 40 questões — **transferido: segunda 05/10, primeira atividade do dia**
-- [ ] Apuração do simulado por objetivo — **segunda 05/10**
+- [x] Simulado #1, diagnóstico de 40 questões — **transferido: segunda 05/10, primeira atividade do dia**
+- [x] Apuração do simulado por objetivo — **segunda 05/10**
 - [ ] Observações sobre arquivos ocultos registradas — **transferido: segunda 05/10**
 - [x] Limpeza da home — já estava quitada desde a Semana 3 (confirmado em 05/10)
-- [ ] Commits ao fim de cada sessão
+- [x] Commits ao fim de cada sessão
 
 ---
 
