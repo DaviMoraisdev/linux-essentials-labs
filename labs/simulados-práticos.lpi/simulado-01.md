@@ -1,11 +1,13 @@
-# Simulado 01 — Diagnóstico
+# Simulado 01 — Diagnóstico — resultado de 05/10/2026
+
+**28 de 40 acertos (70%), equivalente a 560 de 800.** Tempo usado: 20 min 31 s (restaram 39:29 dos 60 minutos). As respostas marcadas por você estão preservadas abaixo, na própria prova.
 
 Simulado no formato do exame LPI Linux Essentials 010-160, versão 1.6.
 
 ## Regras
 
 | Item | Valor |
-|---|---|
+| --- | --- |
 | Questões | 40 |
 | Tempo | 60 minutos, cronometrados |
 | Consulta | Nenhuma. Sem terminal, sem caderno, sem internet |
@@ -19,7 +21,7 @@ Anote as respostas em papel ou em um arquivo separado antes de abrir o gabarito.
 Reproduz o peso oficial do exame.
 
 | Tópico | Peso | Questões |
-|---|---|---|
+| --- | --- | --- |
 | 1. A comunidade Linux e uma carreira em open source | 7 | 1 a 7 |
 | 2. Encontrando seu caminho em um sistema Linux | 9 | 8 a 16 |
 | 3. O poder da linha de comando | 9 | 17 a 25 |
@@ -34,19 +36,19 @@ Reproduz o peso oficial do exame.
 
 - A) MIT
 - B) Apache 2.0
-- C) GPLv3
+- [x]  C) GPLv3
 - D) BSD de três cláusulas
 
 **2.** Qual afirmação sobre licenças copyleft é correta?
 
 - A) Proíbem a venda do software licenciado
-- B) Exigem que trabalhos derivados sejam distribuídos sob a mesma licença
+- [x]  B) Exigem que trabalhos derivados sejam distribuídos sob a mesma licença
 - C) Impedem a modificação do código-fonte
 - D) Aplicam-se apenas a software sem finalidade comercial
 
 **3.** Qual distribuição é mantida pela comunidade e serve como base de desenvolvimento upstream para o Red Hat Enterprise Linux?
 
-- A) Debian
+- [x]  A) Debian
 - B) Fedora
 - C) openSUSE
 - D) Ubuntu
@@ -55,13 +57,13 @@ Reproduz o peso oficial do exame.
 
 - A) Debian e `rpm`
 - B) Fedora e `dpkg`
-- C) Ubuntu e `apt`
+- [x]  C) Ubuntu e `apt`
 - D) Rocky Linux e `apt`
 
 **5.** O sistema operacional Android é construído sobre qual kernel?
 
 - A) BSD
-- B) Linux
+- [x]  B) Linux
 - C) Mach
 - D) Windows NT
 
@@ -69,12 +71,12 @@ Reproduz o peso oficial do exame.
 
 - A) Anonimato completo na internet
 - B) Que o provedor de acesso não consegue identificar os sites visitados
-- C) Que histórico, cookies e dados de formulário não são gravados no computador local
+- [x]  C) Que histórico, cookies e dados de formulário não são gravados no computador local
 - D) Que todo o tráfego passa a ser criptografado de ponta a ponta
 
 **7.** Qual tecnologia permite executar vários sistemas operacionais isolados sobre um único hardware físico, cada um com seu próprio kernel?
 
-- A) Contêineres
+- [x]  A) Contêineres
 - B) Virtualização por hipervisor
 - C) `chroot`
 - D) Ambiente gráfico
@@ -86,52 +88,52 @@ Reproduz o peso oficial do exame.
 **8.** Qual comando exibe o diretório de trabalho atual?
 
 - A) `cd`
-- B) `pwd`
+- [x]  B) `pwd`
 - C) `ls -d`
 - D) `whereis`
 
 **9.** Um usuário está em `/home/davi/projetos/app`. Qual comando o leva para `/home/davi/projetos`?
 
 - A) `cd -`
-- B) `cd ..`
+- [x]  B) `cd ..`
 - C) `cd ~`
 - D) `cd /`
 
 **10.** O que o comando `cd -` faz?
 
-- A) Vai para o diretório pai
+- [x]  A) Vai para o diretório pai
 - B) Vai para o diretório pessoal do usuário
 - C) Volta ao diretório em que o usuário estava antes
 - D) Produz erro de sintaxe
 
 **11.** Escreva o nome da variável de ambiente que o shell consulta para localizar o executável de um comando digitado. Responda apenas com o nome da variável, sem o sinal `$`.
 
-`____________`
+`_PATH ___________`
 
 **12.** Qual comando revela se `ls` é um alias, um comando interno do shell ou um programa externo?
 
 - A) `which ls`
-- B) `type ls`
+- [x]  B) `type ls`
 - C) `whereis ls`
 - D) `file ls`
 
 **13.** De acordo com o FHS, qual diretório contém os arquivos de configuração do sistema?
 
 - A) `/var`
-- B) `/etc`
+- [x]  B) `/etc`
 - C) `/usr`
 - D) `/opt`
 
 **14.** No FHS, o nome do diretório `/usr` é a abreviação de:
 
-- A) *User*
+- [x]  A) *User*
 - B) *Unix System Resources*
 - C) *User Services and Resources*
 - D) *Universal Storage*
 
 **15.** Qual diretório é um sistema de arquivos virtual que expõe informações sobre os processos em execução?
 
-- A) `/dev`
+- [x]  A) `/dev`
 - B) `/proc`
 - C) `/boot`
 - D) `/run`
@@ -140,7 +142,7 @@ Reproduz o peso oficial do exame.
 
 - A) `help cp`
 - B) `man cp`
-- C) `cp --manual`
+- [x]  C) `cp --manual`
 - D) `info -m cp`
 
 ---
@@ -150,7 +152,7 @@ Reproduz o peso oficial do exame.
 **17.** Qual comando conta quantas linhas o arquivo `dados.txt` possui?
 
 - A) `wc -w dados.txt`
-- B) `wc -l dados.txt`
+- [x]  B) `wc -l dados.txt`
 - C) `wc -c dados.txt`
 - D) `count -l dados.txt`
 
@@ -158,12 +160,12 @@ Reproduz o peso oficial do exame.
 
 - A) Grava a saída padrão em `saida.txt` e envia os erros ao terminal
 - B) Grava os erros em `saida.txt` e a saída padrão no terminal
-- C) Grava a saída padrão e os erros em `saida.txt`
+- [x]  C) Grava a saída padrão e os erros em `saida.txt`
 - D) Cria dois arquivos, `saida.txt` e `1`
 
 **19.** Qual comando extrai o sétimo campo de `/etc/passwd`, usando `:` como delimitador?
 
-- A) `cut -d':' -f7 /etc/passwd`
+- [x]  A) `cut -d':' -f7 /etc/passwd`
 - B) `cut -c7 /etc/passwd`
 - C) `cut -d7 -f':' /etc/passwd`
 - D) `cut -f':' -d7 /etc/passwd`
@@ -172,41 +174,41 @@ Reproduz o peso oficial do exame.
 
 - A) O separador de campos
 - B) As três primeiras linhas do arquivo
-- C) A coluna usada como critério de ordenação
+- [x]  C) A coluna usada como critério de ordenação
 - D) Ordem decrescente
 
 **21.** Um arquivo contém as linhas `a`, `a`, `b`, `c`, `c`, nessa ordem. Qual é a saída de `uniq -u arquivo`?
 
 - A) `a`, `b`, `c`
 - B) `a`, `c`
-- C) `b`
+- [x]  C) `b`
 - D) `a`, `a`, `b`, `c`, `c`
 
 **22.** Qual comando cria o arquivo compactado `backup.tar.gz` a partir do diretório `dados/`?
 
 - A) `tar -cvf backup.tar.gz dados/`
-- B) `tar -czvf backup.tar.gz dados/`
+- [x]  CHUTE - B) `tar -czvf backup.tar.gz dados/`
 - C) `tar -xzvf backup.tar.gz dados/`
 - D) `gzip -r dados/ backup.tar.gz`
 
 **23.** O que acontece ao executar `gzip relatorio.txt`?
 
 - A) É criado `relatorio.txt.gz` e o original é mantido
-- B) É criado `relatorio.txt.gz` e o original deixa de existir
+- [x]  B) É criado `relatorio.txt.gz` e o original deixa de existir
 - C) O arquivo é compactado sem alteração de nome
 - D) O comando falha, porque o `gzip` só aceita diretórios
 
 **24.** Na expressão regular `ab*c`, o que o `*` significa?
 
 - A) Qualquer sequência de caracteres
-- B) Zero ou mais ocorrências da letra `b`
+- [x]  B) Zero ou mais ocorrências da letra `b`
 - C) Uma ou mais ocorrências da letra `b`
 - D) Um único caractere qualquer
 
 **25.** Qual linha deve ser a primeira de um arquivo de script para que o sistema o interprete com o Bash?
 
 - A) `# bash`
-- B) `#!/bin/bash`
+- [x]  B) `#!/bin/bash`
 - C) `#!bash`
 - D) `/bin/bash`
 
@@ -216,7 +218,7 @@ Reproduz o peso oficial do exame.
 
 **26.** Qual comando exibe a versão do kernel em execução?
 
-- A) `uname -r`
+- [x]  A) `uname -r`
 - B) `uptime`
 - C) `cat /etc/hostname`
 - D) `lsmod`
@@ -224,7 +226,7 @@ Reproduz o peso oficial do exame.
 **27.** Qual arquivo identifica o nome e a versão da distribuição instalada?
 
 - A) `/etc/hostname`
-- B) `/etc/os-release`
+- [x]  B) `/etc/os-release`
 - C) `/etc/fstab`
 - D) `/proc/cpuinfo`
 
@@ -233,18 +235,18 @@ Reproduz o peso oficial do exame.
 - A) `ps aux`
 - B) `top`
 - C) `jobs`
-- D) `free -h`
+- [x]  - CHUTE - D) `free -h`
 
 **29.** Qual sinal o comando `kill` envia por padrão, quando nenhum sinal é especificado?
 
-- A) `SIGKILL` (9)
+- [x]  CHUTE - A) `SIGKILL` (9)
 - B) `SIGTERM` (15)
 - C) `SIGHUP` (1)
 - D) `SIGSTOP` (19)
 
 **30.** Qual comando exibe os endereços IP configurados nas interfaces de rede do sistema?
 
-- A) `ip addr`
+- [x]  A) `ip addr`
 - B) `ping`
 - C) `route add`
 - D) `dig`
@@ -252,20 +254,20 @@ Reproduz o peso oficial do exame.
 **31.** No diretório `/dev`, o que o arquivo `sda` representa?
 
 - A) Um subdiretório de dispositivos de armazenamento
-- B) O primeiro disco do tipo SATA ou SCSI reconhecido pelo sistema
+- [x]  B) O primeiro disco do tipo SATA ou SCSI reconhecido pelo sistema
 - C) A primeira partição do primeiro disco
 - D) Um pseudo-terminal
 
 **32.** Qual comando instala o pacote `htop` em uma distribuição baseada em Debian?
 
 - A) `yum install htop`
-- B) `apt install htop`
+- [x]  B) `apt install htop`
 - C) `rpm -i htop`
 - D) `dnf install htop`
 
 **33.** Segundo o FHS, em qual diretório ficam os arquivos de log do sistema?
 
-- A) `/var/log`
+- [x]  CHUTE A) `/var/log`
 - B) `/etc/log`
 - C) `/usr/log`
 - D) `/tmp/log`
@@ -277,7 +279,7 @@ Reproduz o peso oficial do exame.
 **34.** Em sistemas Linux modernos, qual arquivo armazena as senhas criptografadas dos usuários?
 
 - A) `/etc/passwd`
-- B) `/etc/shadow`
+- [x]  -CHUTE B) `/etc/shadow`
 - C) `/etc/group`
 - D) `/etc/sudoers`
 
@@ -286,11 +288,11 @@ Reproduz o peso oficial do exame.
 - A) A senha do usuário
 - B) O shell de login
 - C) O diretório pessoal
-- D) O grupo primário
+- [x]  CHUTE D) O grupo primário
 
 **36.** Um arquivo tem as permissões `rwxr-xr--`. O que isso significa?
 
-- A) Dono: ler, escrever e executar. Grupo: ler e executar. Outros: ler
+- [x]  CHUTE A) Dono: ler, escrever e executar. Grupo: ler e executar. Outros: ler
 - B) Dono: ler, escrever e executar. Grupo: ler. Outros: ler e executar
 - C) Dono: ler e executar. Grupo: ler, escrever e executar. Outros: ler
 - D) Dono: ler e escrever. Grupo: ler e executar. Outros: nenhuma
@@ -299,12 +301,12 @@ Reproduz o peso oficial do exame.
 
 - A) 755
 - B) 644
-- C) 664
+- [x]  CHUTE C) 664
 - D) 600
 
 **38.** Qual comando altera o dono para `davi` e o grupo para `financeiro` no arquivo `relatorio.txt`?
 
-- A) `chmod davi:financeiro relatorio.txt`
+- [x]  A) `chmod davi:financeiro relatorio.txt`
 - B) `chown davi:financeiro relatorio.txt`
 - C) `chgrp davi financeiro relatorio.txt`
 - D) `usermod -o davi -g financeiro relatorio.txt`
@@ -312,7 +314,7 @@ Reproduz o peso oficial do exame.
 **39.** Em um **diretório**, o que a permissão de execução (`x`) concede?
 
 - A) O direito de executar os arquivos contidos nele
-- B) O direito de entrar no diretório e acessar seu conteúdo pelo nome
+- [x]  CHUTE B) O direito de entrar no diretório e acessar seu conteúdo pelo nome
 - C) O direito de listar os nomes dos arquivos contidos nele
 - D) O direito de criar novos arquivos dentro dele
 
@@ -320,7 +322,7 @@ Reproduz o peso oficial do exame.
 
 - A) O `chmod` padrão do sistema
 - B) A `umask`
-- C) O conteúdo de `/etc/shadow`
+- [x]  CHUTE C) O conteúdo de `/etc/shadow`
 - D) O *sticky bit*
 
 ---
@@ -423,7 +425,7 @@ dono    grupo    outros
 **39 — B.** Em um diretório, os três bits têm significados que não são intuitivos:
 
 | Bit | Em um diretório concede |
-|---|---|
+| --- | --- |
 | `r` | Listar os nomes das entradas |
 | `w` | Criar, remover e renomear entradas |
 | `x` | Entrar no diretório e acessar as entradas pelo nome |
@@ -439,13 +441,13 @@ Sem o `x` não se pode nem entrar, mesmo com `r`. E com `x` sem `r` é possível
 Preencha depois de conferir o gabarito.
 
 | Tópico | Peso | Questões | Acertos | Chutes acertados |
-|---|---|---|---|---|
-| 1. Comunidade e open source | 7 | 7 | | |
-| 2. Encontrando seu caminho | 9 | 9 | | |
-| 3. Poder da linha de comando | 9 | 9 | | |
-| 4. Sistema operacional | 8 | 8 | | |
-| 5. Segurança e permissões | 7 | 7 | | |
-| **Total** | **40** | **40** | | |
+| --- | --- | --- | --- | --- |
+| 1. Comunidade e open source | 7 | 7 | 5 | 0 |
+| 2. Encontrando seu caminho | 9 | 9 | 5 | 0 |
+| 3. Poder da linha de comando | 9 | 9 | 9 | 1 |
+| 4. Sistema operacional | 8 | 8 | 6 | 1 |
+| 5. Segurança e permissões | 7 | 7 | 3 | 3 |
+| **Total** | **40** | **40** | **28** | **5** |
 
 ## Como ler o resultado
 
@@ -460,12 +462,69 @@ O número total importa menos que a distribuição. Três leituras possíveis:
 ## Registro
 
 | Campo | Valor |
-|---|---|
-| Data | |
-| Tempo gasto | |
-| Acertos | de 40 |
-| Percentual | |
-| Equivalente na escala LPI | acertos × 20 = pontos de 800 |
-| Questões marcadas como chute | |
+| --- | --- |
+| Data | 05/10/2026 |
+| Tempo gasto | 20 min 31 s (restaram 39:29) |
+| Acertos | **28** de 40 |
+| Percentual | **70%** |
+| Equivalente na escala LPI | 28 × 20 = **560 de 800**, acima do corte de 500 (26 acertos) |
+| Questões marcadas como chute | **10**: 22, 28, 29, 33, 34, 35, 36, 37, 39 e 40. Cinco acertadas (22, 33, 34, 36, 39) e cinco erradas (28, 29, 35, 37, 40) |
 
 A conversão é aproximada: o exame real usa pontuação de 200 a 800, com corte em 500. Vinte pontos por questão é uma aproximação linear suficiente para acompanhar a evolução.
+
+---
+
+# Correção por questão
+
+| Q | Tópico | Sua resposta | Gabarito | Resultado | Chute |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 1 | C | C | Certo |  |
+| 2 | 1 | B | B | Certo |  |
+| 3 | 1 | A | B | **Errado** |  |
+| 4 | 1 | C | C | Certo |  |
+| 5 | 1 | B | B | Certo |  |
+| 6 | 1 | C | C | Certo |  |
+| 7 | 1 | A | B | **Errado** |  |
+| 8 | 2 | B | B | Certo |  |
+| 9 | 2 | B | B | Certo |  |
+| 10 | 2 | A | C | **Errado** |  |
+| 11 | 2 | PATH | PATH | Certo |  |
+| 12 | 2 | B | B | Certo |  |
+| 13 | 2 | B | B | Certo |  |
+| 14 | 2 | A | B | **Errado** |  |
+| 15 | 2 | A | B | **Errado** |  |
+| 16 | 2 | C | B | **Errado** |  |
+| 17 | 3 | B | B | Certo |  |
+| 18 | 3 | C | C | Certo |  |
+| 19 | 3 | A | A | Certo |  |
+| 20 | 3 | C | C | Certo |  |
+| 21 | 3 | C | C | Certo |  |
+| 22 | 3 | B | B | Certo | Sim |
+| 23 | 3 | B | B | Certo |  |
+| 24 | 3 | B | B | Certo |  |
+| 25 | 3 | B | B | Certo |  |
+| 26 | 4 | A | A | Certo |  |
+| 27 | 4 | B | B | Certo |  |
+| 28 | 4 | D | B | **Errado** | Sim |
+| 29 | 4 | A | B | **Errado** | Sim |
+| 30 | 4 | A | A | Certo |  |
+| 31 | 4 | B | B | Certo |  |
+| 32 | 4 | B | B | Certo |  |
+| 33 | 4 | A | A | Certo | Sim |
+| 34 | 5 | B | B | Certo | Sim |
+| 35 | 5 | D | B | **Errado** | Sim |
+| 36 | 5 | A | A | Certo | Sim |
+| 37 | 5 | C | B | **Errado** | Sim |
+| 38 | 5 | A | B | **Errado** |  |
+| 39 | 5 | B | B | Certo | Sim |
+| 40 | 5 | C | B | **Errado** | Sim |
+
+**Erros com convicção (sem marca de chute):** 3, 7, 10, 14, 15, 16 e 38. São os que viram correção com mecanismo (62 a 68, no arquivo da Semana 6).
+
+**Erros marcados como chute:** 28, 29, 35, 37 e 40. Todos nos Tópicos 4 e 5, ainda não estudados. Definem a ênfase das Semanas 6 e 7.
+
+**Acertos por chute:** 22, 33, 34, 36 e 39. Contam como erro para efeito de estudo. Acertos firmes: **23 de 40 (57,5%)**.
+
+**Retestes das correções antigas:** as questões 18, 20, 21 e 24 foram acertadas sem chute, e as correções 29, 33/34/50, 36 e a de regex contra globbing se sustentaram. A 22 (Correção 52, `-f` do `tar` por último) foi acertada **por chute** e não está confirmada.
+
+**Observação sobre a 11:** a resposta foi `PATH`. No campo de preenchimento do exame real, escreva só a palavra, sem sublinhado ou outro caractere.
