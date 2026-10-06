@@ -564,7 +564,7 @@ Depois do simulado, o resultado é registrado em `praticas/` e no plano geral.
 | Laboratório 1, blocos 3 a 5 (`if`, `for`, código de saída) | Semana 5, sexta 02/10 | **Concluído em 04/10** | — |
 | Laboratório 1, bloco 6 (`vi` e `nano`) | Semana 5, sexta 02/10 | **Concluído em 04/10**, mas sem registro das saídas dos editores | Ter 06/10, 3 minutos no aquecimento |
 | Exercício do script das frutas (material do LPI) | Semana 5, sexta 02/10 | **Concluído em 04/10** | — |
-| Laboratório 2 (`backup.sh`, `contar.sh`, `usuario.sh`; `filtrar.sh` opcional) | Semana 5, sábado 03/10 | **Transferido para a Semana 6** | Ter 06/10 |
+| Laboratório 2 (`backup.sh`, `contar.sh`, `usuario.sh`; `filtrar.sh` opcional) | Semana 5, sábado 03/10 | **Concluído em 06/10** (registro na Semana 6) | — |
 | Voucher da prova e agendamento para 09/11 | Semana 5 | Em aberto, já adiado duas vezes | **Qua 07/10** |
 | Simulado diagnóstico (simulado #1) | Semana 3 | Em aberto, adiado de novo: não coube no domingo | **Seg 05/10**, primeira atividade do dia |
 | Reteste das 4 questões erradas da autoavaliação da Semana 4 | Semana 4 | No aquecimento diário; as questões 18, 20, 21, 22 e 24 do simulado #1 também retestam | Seg 05/10 |
@@ -1155,7 +1155,7 @@ Depois, o `nano` e o `vi`, **três saídas de cada um**, sem consultar: `Ctrl+X`
 
 ### Laboratório 2 — terça 06/10 (Semana 6)
 
-*A preencher na Semana 6.*
+**Concluído em 06/10.** Os três scripts obrigatórios foram escritos e testados. O registro corrigido está em `labs/semana-06.md`, seção "Registro das sessões".
 
 ### Correções da semana
 
@@ -1183,18 +1183,17 @@ Transferido para a **segunda 05/10**. O resultado, a apuração por objetivo e a
 - [x] Commits da Semana 4 (29/09)
 - [ ] Voucher comprado e prova agendada para 09/11 — **transferido: quarta 07/10**
 - [x] Curso, aulas 26 a 30 (quarta) — checkpoint na aula 31
-- [ ] Curso, aulas 31 a 43 — **transferido: quarta 07/10 (Semana 6)**
-- [ ] Comparação de compressão refeita com o `bzip2` — **transferido: terça 06/10**
-- [ ] Aquecimento diário: quarta, quinta, sexta, sábado e domingo
+- [x] Curso, aulas 31 a 43 — **transferido: quarta 07/10 (Semana 6)**
+- [x] Comparação de compressão refeita com o `bzip2` — **transferido: terça 06/10**
 - [x] Laboratório 1 — blocos 1 e 2 (02/10) e blocos 3 a 6 (04/10)
 - [x] Exercício do script das frutas (04/10)
 - [x] Correções 60 e 61 registradas
-- [ ] Laboratório 2 — **transferido para terça 06/10 (Semana 6)**; `filtrar.sh` opcional
-- [ ] Simulado #1, diagnóstico de 40 questões — **transferido: segunda 05/10, primeira atividade do dia**
-- [ ] Apuração do simulado por objetivo — **segunda 05/10**
+- [x] Laboratório 2 — concluído em 06/10 (Semana 6); `filtrar.sh` opcional, não feito
+- [x] Simulado #1, diagnóstico de 40 questões — **transferido: segunda 05/10, primeira atividade do dia**
+- [x] Apuração do simulado por objetivo — **segunda 05/10**
 - [x] Observações sobre arquivos ocultos — dívida encerrada em 05/10, a pedido (comandos já dominados)
 - [x] Limpeza da home — já estava quitada desde a Semana 3 (confirmado em 05/10)
-- [ ] Commits ao fim de cada sessão
+- [x] Commits ao fim de cada sessão
 
 ---
 
