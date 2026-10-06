@@ -2,7 +2,7 @@
 
 Período: 05/10 a 11/10/2026 (segunda a domingo)
 Objetivos da prova: 5.1, 5.2, 5.3 e 5.4 — Tópico 5, peso 7 de 40
-Carga nominal: cerca de 10h35, acima do teto de 7h; cerca de 8h25 com os quatro primeiros cortes. A seção "Carga da semana e ordem de corte" explica o motivo e o que sai primeiro
+Carga nominal: cerca de 11h00 (atualizada em 06/10), acima do teto de 7h; cerca de 8h30 com os cortes. A seção "Carga da semana e ordem de corte" explica o motivo e o que sai primeiro
 Marco da semana: **Checkpoint A, domingo 11/10**, com decisão objetiva sobre manter ou remarcar a prova de 09/11
 
 Observação sobre a natureza desta semana: ela carrega duas coisas ao mesmo tempo. De um lado, conteúdo novo e dependente de repetição, porque converter `rwxr-xr--` em `754` precisa virar reflexo. De outro, as dívidas que a Semana 5 não fechou: o simulado #1, o Laboratório 2, as aulas 31 a 43 e o voucher. Por isso o aquecimento diário desta semana é **obrigatório e dedicado a permissões**, e a ordem de corte está escrita de antemão. Decidir o que cortar com a semana já atrasada é como os dias se perderam na Semana 5.
@@ -34,11 +34,13 @@ Três pontos de atenção:
 |---|---|
 | **Simulado geral todo domingo** | O simulado #2 é domingo 11/10. O calendário completo da série está no plano geral, seção 7 |
 | **Checkpoint A** | Domingo 11/10, com critérios e resultado definidos antes. Detalhe no plano geral, seção 11 |
+| **Regras de revisão e correção (06/10)** | Erros antigos de comandos já dominados passam para a **retaguarda** e saem do aquecimento. Nos simulados, só se **anotam as questões erradas**; a correção fica por conta do Notion. Ver a seção "Regras de revisão e correção" |
+| **Mais prática de simulado (06/10)** | Questões da LPI no fim das Práticas 1 e 2 (20 minutos cada) e simulados mais difíceis. Ver a seção "Mais prática de simulado" |
 | **Simulado #1 na segunda 05/10** | Não coube no domingo 04/10. É a primeira atividade da semana, antes do curso |
 | **Laboratório 1 e frutas concluídos** | Feitos em 04/10. A Semana 5 fecha com as Correções 60 e 61 |
 | **Laboratório 2 transferido da Semana 5** | Terça 06/10, três scripts obrigatórios. O `filtrar.sh` é opcional |
 | **Curso 31 a 43 passa para quarta 07/10, a 2x** | O conteúdo já foi praticado no Laboratório 1, então o vídeo confirma e não ensina |
-| **Correção e revisão prática** | Depois do simulado #1, os erros viram correção com mecanismo e uma revisão **executada** na VM, não relida |
+| **Correção e revisão** | Em 05/10 os erros do simulado #1 viraram as Correções 62 a 68. Em 06/10 a revisão prática foi cancelada e a correção de simulados passou para o Notion (ver "Regras de revisão e correção") |
 | **Pré-checkpoint de quarta 07/10** | Decide se o voucher é para 09/11 ou direto para 16/11 |
 | **Autoavaliação da Semana 5 reduzida** | 10 questões em vez de 20, sexta 09/10, três dias depois do Laboratório 2 |
 | **Aquecimento dedicado a permissões** | Cinco conversões por dia, de memória. Os exercícios e o gabarito estão abaixo |
@@ -56,10 +58,10 @@ Três pontos de atenção:
 | Autoavaliação da Semana 5, 10 questões | Semana 5 | Sexta 09/10 |
 | Curso, aulas 31 a 43 | Semana 5 | Quarta 07/10, a 2x |
 | Voucher da prova e agendamento | Semana 5, adiado duas vezes | Quarta 07/10, com o pré-checkpoint |
-| Revisão prática dos erros do simulado #1 (a apuração e as correções foram concluídas em 05/10) | Semana 6 | Terça 06/10, 15 minutos, executada na VM |
+| Revisão prática dos erros do simulado #1 (a apuração e as correções foram concluídas em 05/10) | Semana 6 | Cancelada em 06/10; vai para a retaguarda |
 | Saídas do `teste.sh` e três saídas de cada editor (`vi` e `nano`) | Semana 5, Laboratório 1 | Terça 06/10, 5 minutos no aquecimento |
 | Comparação de compressão com o `bzip2` | Semana 4 | Terça 06/10, no aquecimento |
-| Reteste das correções do simulado #1 | Semana 5 | Aquecimento diário, a partir de terça |
+| Reteste das correções do simulado #1 e da Semana 4 | Semana 5 | **Retaguarda** desde 06/10 (os simulados continuam medindo) | — |
 | `.wslconfig` e teste de restauração do snapshot | Semana 0 | Sem prazo. Só com folga |
 
 ---
@@ -69,14 +71,14 @@ Três pontos de atenção:
 | Dia | Atividade | Tempo |
 |---|---|---|
 | **Seg 05** | **Simulado #1** (60 min, antes de qualquer outra coisa) · apuração e correções (25 min) · aquecimento | cerca de 1h50 |
-| **Ter 06** | Aquecimento, comparação de compressão e saídas do `vi` e `nano` · **revisão prática dos erros do simulado** (15 min) · **Laboratório 2**: `backup.sh`, `contar.sh`, `usuario.sh` | cerca de 1h30 |
+| **Ter 06** | Aquecimento · **Laboratório 2**: `backup.sh`, `contar.sh`, `usuario.sh` (**concluído**) · comparação de compressão e saídas do `vi` e `nano` (sem registro em 06/10) | cerca de 1h15 |
 | **Qua 07** | **Voucher, agendamento e pré-checkpoint (10 min)** · aquecimento · **curso, aulas 31 a 43, a 2x** | cerca de 1h15 |
-| **Qui 08** | Aquecimento · curso, aulas 44 a 50 · **Prática 1 — usuários e grupos** · pedir o `simulado-02` | cerca de 1h55 |
+| **Qui 08** | Aquecimento · curso, aulas 44 a 50 · **Prática 1 — usuários e grupos**, com **20 min de questões da LPI** no fim · pedir o `simulado-02` | cerca de 2h15 |
 | **Sex 09** | Aquecimento · **autoavaliação da Semana 5** (10 questões) e correção · curso, aulas 51 a 57 | cerca de 1h20 |
-| **Sáb 10** | Aquecimento · **Prática 2 — permissões** · limpeza dos usuários de teste | cerca de 1h10 |
+| **Sáb 10** | Aquecimento · **Prática 2 — permissões**, com **20 min de questões da LPI** no fim · limpeza dos usuários de teste | cerca de 1h30 |
 | **Dom 11** | Aquecimento · **simulado #2** (60 min) · apuração · commits · **Checkpoint A** | cerca de 1h35 |
 
-**Total nominal: cerca de 10h35.**
+**Total nominal: cerca de 11h00** (10h35 antes de 06/10, menos 15 min da revisão cancelada, mais 40 min das questões da LPI).
 
 ### Carga da semana e ordem de corte
 
@@ -95,12 +97,12 @@ A carga passa muito do teto de 7h por uma razão simples: a Semana 5 devolveu ce
 | Ordem | Corte | Tempo liberado | Para onde vai |
 |---|---|---|---|
 | 1 | `filtrar.sh` (já é opcional; fora da conta nominal) | 15 min | Fica sem data |
-| 2 | Revisão prática de terça, reduzida aos erros dos Tópicos 1 a 3 | 15 min | Aquecimento dos dias seguintes |
+| 2 | Comparação de compressão e saídas do `teste.sh`, `vi` e `nano` (dívidas antigas, sem registro em 06/10) | cerca de 15 min | Retaguarda |
 | 3 | Autoavaliação da Semana 5 reduzida a 5 questões | 10 min | Mesmo dia, sexta 09/10 |
 | 4 | Aulas 51 a 57 | 45 min | **Segunda 12/10** (feriado, dia extra da Semana 7) |
-| 5 | Prática 1 — usuários e grupos | 1h | **Segunda 12/10** |
+| 5 | Prática 1 — usuários e grupos, **inclusive os 20 min de questões da LPI** | 1h20 | **Segunda 12/10** |
 
-Com os cortes 2 a 5 a semana cai de cerca de 10h35 para **cerca de 8h25**. Se as aulas 51 a 57 forem cortadas, leia antes da Prática 2 as lições 5.3 e 5.4 do PDF oficial, em cerca de 20 minutos, no lugar do vídeo.
+Com os cortes 2 a 5 a semana cai de cerca de 11h00 para **cerca de 8h30**. Os tempos são estimativas. Se as aulas 51 a 57 forem cortadas, leia antes da Prática 2 as lições 5.3 e 5.4 do PDF oficial, em cerca de 20 minutos, no lugar do vídeo.
 
 Se a quarta à noite chegar com **menos de 3h30 acumuladas** (o nominal de segunda a quarta é cerca de 4h35), o Checkpoint A de domingo já nasce amarelo. Isso não é falha: é informação antecipada.
 
@@ -150,7 +152,7 @@ A regra de conversão é uma só: `r` vale 4, `w` vale 2, `x` vale 1, e cada dí
 | Sáb 10 | Cronometrado, sem pausa: (a) `754` · (b) `rw-rw----` · (c) `4750` em símbolos · (d) `1770` em símbolos · (e) `chmod 2755` em um diretório, e como aparece no `ls -l` |
 | Dom 11 | Os cinco comandos habituais, pautados pelos erros do simulado #1 |
 
-A partir de terça, acrescente ao fim do aquecimento **três itens tirados dos erros do simulado #1**. Fila fixa até domingo: `cd /tmp ; cd /var ; cd - ; pwd` (a Correção 64 é a quinta do par `cd ..` e `cd -`); `man cp` contra `cp --help`; `chown` contra `chmod`. O que errar vira card no Notion na hora. Se ao fim da semana a conversão ainda não sair em 3 segundos, a Semana 7 abre com uma sessão extra de permissões, e o feriado de segunda 12/10 é o dia natural para ela.
+**Atualização de 06/10:** os itens fixos tirados dos erros antigos do simulado #1 (`cd -`, `man cp`) **saíram do aquecimento** e foram para a retaguarda. Fica só o que é conteúdo desta semana: **`chown` contra `chmod`** (Q38), mais o que travar nas conversões e nos bits especiais. O que errar vira card no Notion na hora. Se ao fim da semana a conversão ainda não sair em 3 segundos, a Semana 7 abre com uma sessão extra de permissões, e o feriado de segunda 12/10 é o dia natural para ela.
 
 ---
 
@@ -165,7 +167,7 @@ A partir de terça, acrescente ao fim do aquecimento **três itens tirados dos e
 | Meta | Não há. É um diagnóstico. Esperado: de 24 a 30 acertos (60% a 75%) |
 | Observação | Com o Laboratório 1 completo, o simulado mede o shell script **depois** da prática |
 
-Protocolo de sempre: **marcar cada chute**, abrir o gabarito só depois, apurar **por objetivo** e abrir correção com mecanismo para cada erro conceitual. As questões 18, 20, 21, 22 e 24 retestam correções já registradas; errar qualquer uma devolve o card do Notion correspondente à fila do aquecimento.
+Protocolo aplicado em 05/10: **marcar cada chute**, abrir o gabarito só depois e apurar **por objetivo**. As questões 18, 20, 21, 22 e 24 retestavam correções já registradas, e as quatro marcadas com firmeza foram acertadas. Daqui em diante vale o protocolo da seção "Regras de revisão e correção", que é mais enxuto.
 
 | Tópico | Peso | Questões | Acertos | Chutes acertados |
 |---|---|---|---|---|
@@ -187,20 +189,26 @@ Protocolo de sempre: **marcar cada chute**, abrir o gabarito só depois, apurar 
 
 A prova corrigida, questão por questão, está em `praticas/simulado-01-diagnostico-resultado.md`.
 
-### Correção e revisão prática
+### Regras de revisão e correção
 
-Esta é a resposta ao ponto que a Semana 5 deixou aberto: corrigir o que ficou e trocar leitura por execução.
+**Atualizadas em 06/10, a pedido.** A primeira versão desta seção, de 05/10, mandava corrigir cada erro com mecanismo e revisar os Tópicos 1 a 3 com execução na VM. Duas decisões mudaram isso.
 
-1. **Segunda, na apuração:** liste os erros **por objetivo**, não por questão. Chutes acertados contam como erro.
-2. **Cada erro conceitual vira correção com mecanismo**, a partir da **62**, e um card no Notion.
-3. **Terça, 15 minutos, antes do Laboratório 2:** para cada objetivo dos **Tópicos 1 a 3** com erro, **execute** o comando na VM e anote o que viu. Não releia o caderno. É a lição do `sort` (Correção 50) aplicada em série.
-4. **Erros dos Tópicos 4 e 5** não geram revisão agora, porque ainda não foram estudados. Eles definem a ênfase das Semanas 6 e 7.
-5. **Aquecimento:** os três comandos finais de cada dia, a partir de terça, vêm dos erros do simulado.
+**1. Erros antigos de comandos já dominados vão para a retaguarda.** Revisitar todo dia o que já foi estudado compete com o conteúdo novo da prova, e hoje o tempo é o recurso mais escasso. O que vale:
+
+- Saem do aquecimento diário e da fila de pendências: o reteste das questões erradas da autoavaliação da Semana 4, o reteste das questões 18, 20, 21, 22 e 24 do simulado #1, os itens fixos `cd -` e `man cp`, e a **revisão prática de terça** (cancelada).
+- Esses itens ficam numa **fila de retaguarda** (plano geral, seção 9). Voltam só em dois momentos: **nos próprios simulados**, que continuam medindo se o erro voltou a acontecer, e **na revisão leve da Semana 10**, pelos cards do Notion.
+- O que **não** vai para a retaguarda é conteúdo **atual**: o que for do Tópico 5 (esta semana) e do Tópico 4 (próxima) continua no aquecimento e nas práticas. Por isso o par `chown` e `chmod`, que é do objetivo 5.3, permanece.
+
+**2. Simulados: só se anotam as questões erradas.** O que fica registrado nos arquivos é a **apuração por tópico** (acertos e chutes acertados) e a **lista das questões erradas**, com tópico e objetivo. A **correção em si**, a explicação do mecanismo, fica por conta dos seus cards no Notion. Não se abre mais a série numerada de correções para erros de simulado. A numeração continua valendo para erros de laboratório e de curso, e a próxima é a **69**.
+
+Em resumo, o fluxo de cada simulado passa a ser: **1.** responder cronometrado e marcar os chutes; **2.** abrir o gabarito e conferir; **3.** apurar por tópico; **4.** listar as questões erradas e as chutadas; **5.** corrigir no Notion, com as suas palavras.
+
+As Correções 62 a 68, de 05/10, ficam como estão: já foram registradas e anotadas no Notion.
 
 **Como ler o resultado:**
 
 - **Erros concentrados nos Tópicos 4 e 5:** esperado. O plano está funcionando.
-- **Erros nos Tópicos 1, 2 ou 3:** a base pede revisão. A revisão executada de terça ganha mais tempo e o tema entra no simulado #2.
+- **Erros nos Tópicos 1, 2 ou 3:** a base pede atenção, mas, pela decisão de 06/10, os erros antigos vão para a retaguarda e os simulados seguintes dizem se voltam a acontecer.
 - **Abaixo de 24 acertos:** o Checkpoint A já nasce amarelo e o gate da Semana 9 é revisitado.
 
 ### Resultado de 05/10 e leitura
@@ -220,16 +228,18 @@ Esta é a resposta ao ponto que a Semana 5 deixou aberto: corrigir o que ficou e
 1. **O Tópico 3 se sustentou.** As questões 18, 20, 21 e 24 retestavam correções antigas e foram acertadas sem chute. A 22 (Correção 52, `-f` do `tar`) foi acertada **por chute** e continua sem confirmação.
 2. **A fragilidade está nos Tópicos 1 e 2, os "fechados".** Seis dos sete erros com convicção caem neles, em 16 questões. Esses tópicos foram estudados nas Semanas 1 a 3 e só foram medidos por autoavaliações feitas no mesmo dia (14 de 15 e 20 de 20). É a regra de retenção da Semana 4, agora com um segundo dado.
 3. **A calibração foi boa onde ainda não há estudo.** Todos os cinco erros marcados como chute estão nos Tópicos 4 e 5. Nos Tópicos 1 e 2 a confiança foi maior que o acerto.
-4. **Tempo: 20 min 31 s de 60**, cerca de 31 segundos por questão. O exame dá 90 segundos por questão. Parte dos erros com convicção (Q10, Q15 e Q16) cobre conteúdo que você já praticou, e isso sugere pressa e não lacuna. Há um teste simples, no passo 1 da revisão de terça abaixo.
+4. **Tempo: 20 min 31 s de 60**, cerca de 31 segundos por questão. O exame dá 90 segundos por questão. Parte dos erros com convicção (Q10, Q15 e Q16) cobre conteúdo que você já praticou, e isso sugere pressa e não lacuna. Há um teste simples, no passo 1 da revisão de retaguarda abaixo.
 
 **Para o simulado #2:** use **pelo menos 45 minutos** e reserve os últimos 15 para uma segunda passada nas questões marcadas e naquelas em que o enunciado traz uma pegadinha de comando.
 
 **Questão 40 (`umask`).** Foi escrita para este simulado, mas o `umask` **não consta na lista oficial** do objetivo 5.3. No exame real ela pode não aparecer. Trate como baixa prioridade; a Q37 (conversão `rw-r--r--` para 644) é a que importa.
 
-### Revisão prática de terça (15 minutos, antes do Laboratório 2)
+### Revisão prática de terça (cancelada em 06/10; fica como retaguarda)
+
+Por decisão de 06/10 (seção "Regras de revisão e correção"), esta revisão **não é mais uma atividade da semana**. O conteúdo permanece aqui como material de retaguarda, para usar só se sobrar tempo ou na revisão leve da Semana 10.
 
 1. **Refaça, devagar e sem consultar, as 7 questões com convicção:** 3, 7, 10, 14, 15, 16 e 38. Classifique cada uma: **acertou** significa que era pressa; **errou de novo** significa lacuna.
-2. **Execute na VM** o que dá para executar:
+2. **Execute na VM** o que dá para executar (a Q38, de `chmod` e `chown`, é conteúdo desta semana e já entra na Prática 2, bloco 3):
 
 ```bash
 cd /tmp ; cd /var ; cd - ; pwd ; echo $OLDPWD      # cd - volta ao anterior
@@ -263,6 +273,8 @@ As especificações dos quatro scripts e as soluções de referência estão no 
 | `filtrar.sh` (`while read`) | Opcional: `while` e `read` não constam na lista oficial |
 
 Regras de sempre: escreva **digitando**, um script por vez, rode `echo $?` depois de cada teste, e **quebre de propósito** pelo menos um (sem argumento, diretório inexistente, usuário que não existe).
+
+**Situação: concluído em 06/10.** Os três scripts obrigatórios foram escritos, testados e registrados. O `filtrar.sh`, opcional, não foi feito e fica sem data. O registro corrigido está em "Registro das sessões", mais abaixo.
 
 Registro: caderno da Semana 6, seção "Registro das sessões". Se aparecer erro conceitual, abra uma nova correção na série global.
 
@@ -330,6 +342,10 @@ Registre a regra com o **mecanismo**: sem `-a`, o `-G` **substitui** a lista de 
 Um experimento a mais: repita o `useradd` sem o `-m` em um usuário descartável e veja com `ls -ld /home/<nome>` se o diretório pessoal foi criado. O resultado depende da distribuição. Anote o que **a sua VM** fez.
 
 **Não apague os usuários agora.** A Prática 2 usa `alice`, `bob` e o grupo `dev`. A limpeza é no sábado.
+
+### Questões oficiais da LPI (20 min, ao fim da sessão)
+
+Responda no **LPI Learning Material** (PDF do Projeto) os **Exercícios Guiados** e os **Exploratórios** das lições 5.1 e 5.2, **sem consultar o texto**. As páginas estão no sumário do PDF. Só depois abra "Respostas aos Exercícios". Anote apenas as questões erradas. Se não couber nos 20 minutos, faça os Guiados e deixe os Exploratórios para a segunda 12/10.
 
 ### Para o caderno
 
@@ -434,6 +450,10 @@ rm -r ~/lab6
 
 Se qualquer coisa sair do controle, o snapshot `limpo` existe para isso.
 
+### Questões oficiais da LPI (20 min, ao fim da sessão)
+
+Exercícios Guiados e Exploratórios das lições 5.3 (páginas 416 a 423 do sumário do PDF) e 5.4 (páginas 434 a 440), **sem consultar o texto**. Depois, as respostas. Anote só as questões erradas e corrija-as no Notion.
+
 ### Para o caderno
 
 - Tabela octal ↔ simbólico preenchida de memória.
@@ -452,7 +472,7 @@ Dez questões sobre shell script (objetivo 3.3), respondidas **sem consultar**, 
 |---|---|
 | Acertos | de 10 |
 | Meta | 8 ou mais |
-| Erros viram | correção com mecanismo e card no Notion |
+| Erros viram | lista das questões erradas aqui; a correção fica no Notion |
 
 ---
 
@@ -468,7 +488,9 @@ Dez questões sobre shell script (objetivo 3.3), respondidas **sem consultar**, 
 
 Expectativa: o Tópico 4 ainda não foi estudado, então as questões dele pesam contra. O que vale ler com cuidado são os Tópicos 1 a 3 (já fechados) e o Tópico 5 (estudado nesta semana).
 
-Protocolo de sempre: cronometrar, **marcar cada chute**, abrir o gabarito só depois, apurar **por objetivo** e não por questão, e abrir correções com mecanismo para os erros conceituais.
+Protocolo (atualizado em 06/10): cronometrar, **marcar cada chute**, abrir o gabarito só depois, apurar **por tópico** e **anotar apenas as questões erradas e as chutadas**, com o tópico de cada uma. A correção é feita por você no Notion; não se abrem correções numeradas.
+
+**Dificuldade e fonte.** Peça o `simulado-02` com a instrução de ficar **mais próximo do exame**: enunciados com cenário, pegadinhas de comando, questões de escolher mais de uma resposta e de preencher, e distratores plausíveis. Ele é escrito sob medida, e não é composto de questões reais do exame. As questões da LPI são as das Práticas 1 e 2 e as do NDG (ver "Mais prática de simulado").
 
 | Tópico | Peso | Acertos | Chutes acertados |
 |---|---|---|---|
@@ -485,11 +507,28 @@ Compare com o simulado #1 (28 de 40): o que errava e agora acerta, e o que conti
 
 ---
 
+## Mais prática de simulado — decisão de 06/10
+
+Você pediu mais prática de simulado, com **questões reais da LPI** e **dificuldade próxima da prova**. O que existe de verdade, e o que foi decidido:
+
+| Fonte | O que é | Uso |
+|---|---|---|
+| **LPI Learning Material** (PDF do Projeto) | Escrito pela própria LPI: Exercícios Guiados e Exploratórios por lição, com respostas | Vinte minutos no fim de cada prática, a partir de hoje |
+| **NDG Linux Essentials** (Cisco Networking Academy) | Quizzes por capítulo e exame final de prática, gratuitos, no formato do exame | Quizzes dos Tópicos 4 e 5 na Semana 7; exame final na quinta 22/10 |
+| **Simulados escritos aqui** | Questões modeladas sobre os objetivos oficiais, não questões reais | `simulado-02` e seguintes, **mais difíceis** que o #1 |
+| **Questões "reais do exame"** | Não existe simulado oficial gratuito da LPI que eu tenha encontrado; as que circulam em sites de dumps são vazadas | **Fora do plano**, pelo termo de confidencialidade e porque os gabaritos não são confiáveis |
+
+**Sobre a dificuldade.** No simulado #1 você usou 20 dos 60 minutos e fez 70%. Para o #2 em diante, o pedido é: enunciados com cenário, pegadinhas de comando, escolha de mais de uma resposta, preenchimento e distratores plausíveis; e a regra de **usar pelo menos 45 minutos**, com segunda passada.
+
+**Carga.** São 40 minutos a mais nesta semana (20 na quinta e 20 no sábado), e a revisão de terça, de 15 minutos, saiu. Se a semana apertar, os 20 minutos da Prática 1 são os primeiros a ir para a segunda 12/10. Os simulados de domingo e os de Fase 2 (22/10, 27/10, 29/10 e 05/11) permanecem como estão no plano geral.
+
+---
+
 ## Pré-checkpoint — Quarta 07/10 (decisão do voucher)
 
 Uma pergunta só: **o simulado #1 (segunda) e o Laboratório 2 (terça) estão feitos?**
 
-**Situação em 05/10, à noite:** o simulado #1 está feito (28 de 40). Falta só o Laboratório 2, amanhã.
+**Situação em 06/10, à noite:** o simulado #1 está feito (28 de 40) e o **Laboratório 2 está concluído** (três scripts). **As duas condições estão cumpridas.** Pela regra, na quarta 07/10 você **compra o voucher e agenda 09/11**.
 
 | Resposta | Decisão |
 |---|---|
@@ -509,7 +548,7 @@ Marque os cinco critérios com base no que está registrado neste arquivo, não 
 | # | Critério | Cumprido |
 |---|---|---|
 | 1 | Curso até a aula 57 (ou ao menos até a 50, com 51 a 57 marcadas para 12/10) | |
-| 2 | Laboratório 2 com os três scripts obrigatórios | |
+| 2 | Laboratório 2 com os três scripts obrigatórios | **Sim (06/10)** |
 | 3 | Práticas 1 e 2 feitas | |
 | 4 | Simulado #2 com **24 ou mais** acertos | |
 | 5 | Voucher comprado e prova agendada | |
@@ -528,18 +567,19 @@ Resultado, pela regra do plano geral (seção 11):
 |---|---|---|---|
 | **Simulado #1** | Semana 3 | **Concluído em 05/10:** 28 de 40 (70%) | — |
 | Correções 62 a 68 e cards no Notion | Semana 6 | **Concluído em 05/10**: correções registradas e cards anotados | — |
-| Revisão prática dos erros (refação lenta das 7 questões e execução na VM) | Semana 6 | Previsto | Ter 06/10 |
-| Laboratório 2 (três scripts) | Semana 5 | Em aberto | Ter 06/10 |
-| Comparação de compressão com o `bzip2` | Semana 4 | Em aberto | Ter 06/10 |
-| Saídas do `teste.sh` e três saídas de `vi` e `nano` | Semana 5 | Em aberto | Ter 06/10 |
+| ~~Revisão prática dos erros do simulado #1~~ | Semana 6 | **Cancelada em 06/10** (retaguarda) | — |
+| Laboratório 2 (três scripts) | Semana 5 | **Concluído em 06/10** | — |
+| Comparação de compressão com o `bzip2` | Semana 4 | Sem registro em 06/10; primeiro corte da fila | Retaguarda, se não houver folga |
+| Saídas do `teste.sh` e três saídas de `vi` e `nano` | Semana 5 | Sem registro em 06/10; primeiro corte da fila | Retaguarda, se não houver folga |
 | Voucher, agendamento e pré-checkpoint | Semana 5 | Em aberto, adiado duas vezes | **Qua 07/10** |
 | Curso, aulas 31 a 43 (a 2x) | Semana 5 | Em aberto | Qua 07/10 |
 | Curso, aulas 44 a 50 | Semana 6 | Previsto | Qui 08/10 |
 | Prática 1 — usuários e grupos | Semana 6 | Previsto | Qui 08/10 |
 | Pedir o `simulado-02` | Semana 6 | Previsto | Até qui 08/10 |
+| Questões oficiais da LPI, 5.1 e 5.2 (20 min) | Semana 6 | Novo em 06/10 | Qui 08/10, fim da Prática 1 |
 | Autoavaliação da Semana 5 (10 questões) | Semana 5 | Previsto | Sex 09/10 |
 | Curso, aulas 51 a 57 | Semana 6 | Previsto | Sex 09/10 |
-| Prática 2 — permissões | Semana 6 | Previsto | Sáb 10/10 |
+| Prática 2 — permissões, com questões oficiais da LPI 5.3 e 5.4 (20 min) | Semana 6 | Previsto | Sáb 10/10 |
 | Simulado #2 | Semana 6 | Previsto | Dom 11/10 |
 | `.wslconfig` e teste do snapshot | Semana 0 | Sem prazo | Com folga |
 
@@ -636,9 +676,152 @@ A Q37 merece atenção: você marcou **664**, e `rw-rw-r--` é justamente o que 
 - **A Q11** foi respondida `PATH`, com um sublinhado na frente. No exame real, em campo de preenchimento, escreva **só a palavra**.
 - **Erros com convicção são os mais caros.** Dos 12 erros, 7 foram com convicção e 5 com chute. Os 7 são os mais caros: erro sabido se estuda, erro confiante se defende.
 
-### Laboratório 2 — terça 06/10
+### Laboratório 2 — terça 06/10 — CONCLUÍDO
 
-*A preencher.*
+Os três scripts obrigatórios foram escritos, testados e funcionaram com os códigos de saída pedidos (0, 1 e 2). O `filtrar.sh`, opcional, não foi feito e fica sem data.
+
+**Avaliação.** As três soluções cumprem a especificação e **vão além da solução de referência**: validam se o diretório existe, mandam as mensagens de erro para o `stderr` (`>&2`), protegem o argumento com `--`, usam `if comando` para testar o código de saída, e o `usuario.sh` usa `grep -Fxq` em vez de `grep -q "^$1:"`, o que evita que um nome com `.` seja lido como expressão regular. Não há erro conceitual, por isso **nenhuma correção numerada** foi aberta. O que segue são ajustes de caderno e dois testes opcionais.
+
+#### `backup.sh`
+
+```bash
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "Uso: $0 <diretorio>" >&2
+    exit 1
+fi
+
+if [ ! -d "$1" ]; then
+    echo "Erro: diretorio inexistente: $1" >&2
+    exit 1
+fi
+
+data=$(date +%Y-%m-%d)
+destino="backup-${data}.tar.gz"
+
+if tar -czf "$destino" -- "$1"; then
+    echo "Backup criado: $destino"
+    exit 0
+else
+    echo "Erro: nao foi possivel concluir o backup." >&2
+    exit 1
+fi
+```
+
+O que cada parte faz:
+
+| Trecho | Mecanismo |
+|---|---|
+| `[ "$#" -ne 1 ]` | `-ne` é "numericamente diferente". Compara **números**; para texto seria `!=` |
+| `[ ! -d "$1" ]` | `-d` testa se é um diretório; o `!` inverte |
+| `data=$(date +%Y-%m-%d)` | A substituição de comando guarda a **saída** do `date` na variável |
+| `"backup-${data}.tar.gz"` | As chaves separam o nome da variável do texto vizinho |
+| `if tar ...; then` | O `if` testa o **código de saída** do `tar`: 0 é sucesso |
+| `--` | Encerra as opções: um diretório chamado `-x` não é lido como opção |
+| `>&2` | Manda a mensagem para o `stderr`, o fluxo de erro |
+
+Testes registrados: com `~/lab5` o código foi `0`, com a mensagem de confirmação e a listagem do `tar -tzf`; sem argumento, saiu `Uso: /home/davi/lab5/scripts/backup.sh <diretorio>` com código `1`.
+
+Ajustes de caderno:
+
+1. **A frase "criei um diretório para os backups" não descreve o script.** Ele não cria diretório; cria o arquivo `.tar.gz` no **diretório atual**. Reescreva: "Saída `0`: o backup foi criado e a mensagem de confirmação apareceu."
+2. **O ponto mais valioso da sua anotação está certo:** o arquivo nasce no diretório onde se executa, e uma nova execução **no mesmo dia** usa o mesmo nome e **substitui** o anterior, em silêncio. O motivo é que o `tar -c` cria o arquivo de saída do zero, apagando o que tinha o mesmo nome. Para guardar duas cópias no mesmo dia, o nome precisaria de hora: `date +%Y-%m-%d_%H%M%S`.
+3. **A listagem começa em `home/davi/...`, sem a barra inicial.** É o `tar` removendo a `/` do começo do caminho (ele avisa `Removing leading '/' from member names`), para que a extração não sobrescreva caminhos absolutos.
+4. **A listagem traz dois itens que não deveriam estar num backup:** `scripts/backup-2026-10-06.tar.gz`, ou seja, um backup anterior **dentro** do novo, e `scripts/.ola.sh.swp`. O primeiro mostra que o destino estava dentro da origem; a regra prática é gerar o backup **fora** da árvore que está sendo copiada (por exemplo, executando a partir de `~`). O segundo é o arquivo temporário do `vi` ainda aberto ou interrompido em `ola.sh`; o `vi` o apaga ao sair normalmente (`:q`, `:wq` ou `ZZ`). Antes de apagar, confira que não há `vi` aberto (`jobs` e `pgrep -a vi`); depois, `rm ~/lab5/scripts/.ola.sh.swp`. Se ficar, o próximo `vi ola.sh` avisará que o arquivo de swap já existe.
+5. No `nano`, `Ctrl+O` grava e `Enter` confirma o nome. Falta anotar o `Ctrl+X`, que **sai**.
+
+#### `contar.sh`
+
+```bash
+#!/bin/bash
+
+set -o pipefail
+
+if [ "$#" -ne 1 ]; then
+    echo "Uso: $0 <diretorio>" >&2
+    exit 1
+fi
+
+if [ ! -d "$1" ]; then
+    echo "Erro: diretorio inexistente: $1" >&2
+    exit 1
+fi
+
+for ext in txt log conf; do
+    if total=$(find "$1" -type f -name "*.$ext" | wc -l); then
+        echo "$ext: $total"
+    else
+        echo "Erro: a contagem de $ext ficou incompleta." >&2
+        exit 1
+    fi
+done
+
+exit 0
+```
+
+| Trecho | Mecanismo |
+|---|---|
+| `for ext in txt log conf` | O laço roda três vezes; em cada uma, `$ext` vale uma extensão |
+| `find "$1" -type f -name "*.$ext"` | Procura no diretório recebido e em todas as subpastas; `-type f` só arquivos regulares; `-name` filtra pelo nome |
+| `"*.$ext"` entre aspas | O shell **não expande o `*`** antes de o `find` recebê-lo (a mesma lógica da Semana 4), mas expande o `$ext` |
+| `\| wc -l` | O `find` imprime um caminho por linha; o `wc -l` conta as linhas |
+| `if total=$(...)` | O `if` testa o **código de saída** da substituição de comando |
+| `set -o pipefail` | Sem ele, o código de um pipeline é o do **último** comando (o `wc`, quase sempre 0). Com ele, vale o primeiro código diferente de zero, e uma falha do `find` deixa de ficar escondida |
+
+Teste registrado: com `a.txt`, `b.txt`, `subpasta/c.txt`, `app.log` e `config.conf`, a saída foi `txt: 3`, `log: 1`, `conf: 1` e código `0`. Está correto: o `c.txt` na subpasta entra na contagem.
+
+Ajustes de caderno:
+
+1. No caderno, `type f` e `name "*.txt"` aparecem **sem o traço**. No terminal são `-type f` e `-name`. É provável que seja formatação do Notion; confira.
+2. **Faltou explicar o `set -o pipefail` e o `if total=$(...)`**, que são as duas decisões menos comuns do script. A tabela acima traz o mecanismo. O `pipefail` não consta na lista oficial da prova; vale pelo entendimento de código de saída.
+3. **Teste de aceitação não registrado:** a especificação pede `./contar.sh /etc`. **Previsão a confirmar:** como usuário comum, o `find` encontra diretórios que não pode ler e termina com código 1; com o `pipefail`, o `if` entra no `else`, o script imprime `Erro: a contagem de txt ficou incompleta.` e **sai sem contar** `log` e `conf`. A solução de referência descarta os erros com `2>/dev/null` e conta o que consegue ler. Não é erro seu: é uma escolha, mais rigorosa. Se quiser que `/etc` funcione, acrescente `2>/dev/null` ao `find`, ou aceite o comportamento e anote-o.
+
+#### `usuario.sh`
+
+```bash
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "Uso: $0 <nome>" >&2
+    exit 2
+fi
+
+if cut -d: -f1 /etc/passwd | grep -Fxq -- "$1"; then
+    echo "O usuario $1 existe"
+    exit 0
+else
+    echo "O usuario $1 nao existe"
+    exit 1
+fi
+```
+
+| Trecho | Mecanismo |
+|---|---|
+| `cut -d: -f1 /etc/passwd` | `-d:` usa `:` como separador; `-f1` fica com o primeiro campo, o nome |
+| `grep -F` | Trata o nome como **texto literal**, não como expressão regular |
+| `grep -x` | Exige que a **linha inteira** seja igual ao nome, então `davi` não casa com `davidson` |
+| `grep -q` | Não imprime nada; o resultado vem só pelo código de saída |
+| `--` | Encerra as opções, protegendo um nome que comece com `-` |
+| `exit 2` | Falta de argumento. O 1 fica para "usuário não existe" |
+
+Testes registrados: `./usuario.sh "$(id -un)"` saiu com `0`, `./usuario.sh fantasma` com `1` e `./usuario.sh` sem argumento com `2`. Os três códigos batem com a especificação.
+
+Ajustes de caderno:
+
+1. **`echo$?` está sem espaço.** No terminal, o shell trocaria `$?` pelo valor e procuraria um comando como `echo0`, que não existe. O correto é `echo $?`.
+2. **As mensagens anotadas diferem das do script.** O script imprime `O usuario davi existe` e `O usuario fantasma nao existe`, e o anotado traz "já existe" e "não existe". Copie a saída real: o caderno vale como evidência do que rodou.
+3. **O `grep -Fxq -- "$1"` aparece com travessão e aspas curvas** (`— “$1”`). São correções automáticas do editor; no terminal só funcionam `--` e aspas retas `"`.
+4. **Este script não usa `pipefail`, e isso é uma boa decisão.** O `grep -q` termina no primeiro acerto e fecha o pipe; o `cut` pode então encerrar por **SIGPIPE** (código 141). Com `pipefail`, o `if` poderia ver esse 141 e dizer que o usuário **não existe**, mesmo ele existindo. No `contar.sh` o `pipefail` faz sentido; neste, atrapalharia.
+
+#### Testes opcionais, 3 minutos
+
+```bash
+./contar.sh /etc ; echo $?                              # confirma a previsão do pipefail
+mkdir "dir com espaco" ; ./backup.sh "dir com espaco"   # a armadilha das aspas
+cd ~ ; ./lab5/scripts/backup.sh ~/lab5 ; tar -tzf backup-*.tar.gz | grep backup-   # o backup fora da origem não se inclui
+```
+
 
 ### Prática 1 — quinta 08/10
 
@@ -662,7 +845,7 @@ A numeração segue a série global. A última registrada na Semana 5 foi a **61
 | 67 | `man` é o manual; `--manual` não existe no `cp` | Q16 |
 | 68 | `chmod` muda permissões, `chown` muda dono | Q38 |
 
-Os cards das Correções 62 a 68 foram anotados no Notion em 05/10.
+Os cards das Correções 62 a 68 foram anotados no Notion em 05/10. O Laboratório 2 de 06/10 **não gerou correção numerada**: não houve erro conceitual, só ajustes de caderno. A partir de 06/10, erros de simulado não geram correção numerada. **A próxima, para erros de laboratório e de curso, é a 69.**
 
 *A preencher.*
 
@@ -670,23 +853,23 @@ Os cards das Correções 62 a 68 foram anotados no Notion em 05/10.
 
 ## Checklist da semana
 
-- [x] Abertura: tabela de dívidas conferida
+- [ ] Abertura: tabela de dívidas conferida
 - [x] **Simulado #1** e apuração por objetivo (segunda): 28 de 40, 70%
 - [x] Correções 62 a 68 registradas (segunda)
 - [x] Cards das Correções 62 a 68 no Notion (05/10)
 - [x] Arquivos ocultos: dívida encerrada em 05/10, a pedido (comandos já dominados)
 - [ ] Aquecimento de conversões: segunda a domingo
-- [ ] Revisão prática dos erros dos Tópicos 1 a 3 (terça)
-- [ ] Laboratório 2, três scripts (terça)
-- [ ] Comparação de compressão refeita; saídas do `teste.sh`, do `vi` e do `nano` registradas (terça)
+- [x] ~~Revisão prática dos erros dos Tópicos 1 a 3 (terça)~~: cancelada em 06/10 (retaguarda)
+- [x] Laboratório 2, três scripts (terça 06/10)
+- [ ] Comparação de compressão refeita; saídas do `teste.sh`, do `vi` e do `nano` registradas: sem registro em 06/10, primeiro corte da fila
 - [ ] **Voucher, agendamento e pré-checkpoint**, com a janela de remarcação anotada (quarta)
 - [ ] Curso, aulas 31 a 43 (quarta)
 - [ ] Curso, aulas 44 a 50 (quinta)
-- [ ] Prática 1, usuários e grupos (quinta)
+- [ ] Prática 1, usuários e grupos, e questões oficiais da LPI 5.1 e 5.2 (quinta)
 - [ ] `simulado-02` pedido (até quinta)
 - [ ] Autoavaliação da Semana 5 e correção (sexta)
 - [ ] Curso, aulas 51 a 57 (sexta, ou segunda 12/10 se cortadas)
-- [ ] Prática 2, permissões, e limpeza dos usuários de teste (sábado)
+- [ ] Prática 2, permissões, questões oficiais da LPI 5.3 e 5.4 e limpeza dos usuários de teste (sábado)
 - [ ] `cheatsheets/permissoes.md` escrito à mão
 - [ ] Simulado #2 e apuração por objetivo (domingo)
 - [ ] Checkpoint A preenchido
