@@ -28,7 +28,7 @@
 | **Semana 1 — Tópico 1 (peso 7)** | Concluída em 05/09 — comunidade, licenças, distros, FHS |
 | **Semana 2 — Tópico 2, parte 1** | Concluída em 13/09 — objetivos 2.1 e 2.2 |
 | **Semana 3 — Tópico 2, parte 2** | Concluída em 19/09 — objetivos 2.3 e 2.4 |
-| **Semana 4 — Tópico 3, parte 1** | **Fechada em 29/09** — objetivos 3.1 e 3.2; 10 correções (43 a 52); simulado transferido para a Semana 5 |
+| **Semana 4 — Tópico 3, parte 1** | **Fechada em 29/09** — objetivos 3.1 e 3.2; 24 correções (29 a 52); simulado transferido para a Semana 5 |
 | **Semana 5 — Objetivo 3.3, parte prática** | **Laboratório 1 concluído em 04/10** (blocos 1 e 2 em 02/10; blocos 3 a 6 e exercício das frutas em 04/10); Correções 60 e 61. **Simulado #1 feito em 05/10 (28 de 40).** **Laboratório 2 concluído em 06/10** (três scripts) |
 | **Tópico 1 (peso 7)** | Completo |
 | **Tópico 2 (peso 9)** | Completo — os quatro objetivos |
@@ -304,6 +304,12 @@ Item adiado não some. Ele entra no início do próximo bloco de estudo e fica r
 
 **Regra de 06/10.** Erros de comandos passados e já dominados deixam de ocupar o aquecimento, as pendências e a rotina diária. Ficam numa fila de retaguarda (seção 9) e voltam em dois momentos: **nos simulados**, que continuam testando esses pontos de forma natural, e na **revisão leve da Semana 10**, pelos cards do Notion. O que não vai para a retaguarda é o conteúdo **atual**: Tópico 5 agora, Tópico 4 em seguida.
 
+### Dicas recorrentes de prova (06/10)
+
+Dicas de candidatos, de fonte não oficial, conferidas contra o PDF da LPI: permissões (r = 4, w = 2, x = 1), `tar` e compressão, redirecionamento (`>`, `>>`, `2>`, `<<`), diretórios `/proc`, `/sys`, `/dev` e `/var`, e **atenção às questões de preencher a lacuna**. Todas constam do material oficial. O plano já cobria permissões, `tar` e `/proc` e `/dev`; as lacunas reais eram o `<<` como conceito, o `/sys` e o **formato de lacuna**, nunca treinado (a Q11 do simulado #1 foi respondida com um sublinhado na frente de `PATH`).
+
+Como entram, sem aumentar a carga: (1) **mínimo de questões por tema em todo simulado a partir do #2**: permissões 4, `tar` 2, redirecionamento 3 (com `<<`), diretórios 3, **lacunas 5**; (2) **mini-simulados de reforço de 20 questões e 25 minutos**: R1 na terça 13/10 e R2 na terça 20/10, no lugar do aquecimento do dia; (3) a partir de 19/10, o aquecimento diário gira pelas cinco frentes (segunda permissões, terça `tar`, quarta redirecionamento, quinta diretórios, sexta lacunas). O detalhe, a cola e o R1 com gabarito estão em `praticas-reforco-dicas-recorrentes.md`; o desempenho por tema é registrado em `praticas-resultados-simulados-e-correcoes.md`.
+
 ### O simulado dominical
 
 **Regra criada em 02/10:** todo domingo, um simulado geral de 40 questões, 60 minutos, sem consulta, com a distribuição de pesos do exame. É o termômetro semanal e o treino da condição de prova. A série completa, com datas, fontes e metas, está na seção 7.
@@ -377,9 +383,11 @@ Um simulado geral de 40 questões todo domingo, mais os extras de Fase 2. Distri
 
 **Gate:** dois simulados consecutivos com 34 ou mais entre os de 27/10, 29/10 e 01/11.
 
+**Dicas recorrentes (06/10).** Cada simulado a partir do #2 traz o mínimo de questões por tema (permissões 4, `tar` 2, redirecionamento 3, diretórios 3, lacunas 5) e uma tabela de temas no gabarito. Mini-simulados de reforço: R1 em 13/10 e R2 em 20/10 (seção 6, "Dicas recorrentes de prova").
+
 **Mais prática de simulado (06/10).** Além da série, a Semana 6 ganha 20 minutos de **questões oficiais da LPI** no fim de cada prática (quinta, lições 5.1 e 5.2; sábado, lições 5.3 e 5.4), e a Semana 7 faz os quizzes do NDG dos Tópicos 4 e 5. As questões do exame real não estão disponíveis legitimamente (seção 5).
 
-**Produção.** Só o `simulado-01` existe. Os demais são escritos sob medida, com os erros já registrados virando questões, e precisam estar prontos **três dias antes** do uso. O próximo, `simulado-02`, deve ser pedido até **quinta 08/10**. O NDG é a fonte externa gratuita (`praticas/fontes-de-simulados.md`).
+**Produção.** Só o `simulado-01` existe. Os demais são escritos sob medida, com os erros já registrados virando questões, e precisam estar prontos **três dias antes** do uso. O próximo, `simulado-02`, deve ser pedido até **quinta 08/10**. O NDG é a fonte externa gratuita (`praticas/fontes-de-simulados.md`). **Resultados, questões erradas e índice das correções de cada simulado ficam em `praticas-resultados-simulados-e-correcoes.md` (criado em 06/10).**
 
 ---
 
@@ -520,6 +528,8 @@ Marcar antes de se sentir pronto é intencional. Prazo firme é o que impede o p
 
 **Questões da LPI e do NDG (decisão de 06/10):** 20 minutos no fim de cada prática, com os Exercícios Guiados e Exploratórios do PDF da LPI (lições do Tópico 4) e os quizzes do NDG dos Tópicos 4 e 5. Anotar só as questões erradas e corrigi-las no Notion.
 
+**Reforço das dicas recorrentes (06/10):** **R1 na terça 13/10** (20 questões, 25 min, mais 10 de apuração, no lugar do aquecimento) e, na Prática 1, o **mapa dos diretórios virtuais** (`/proc`, `/sys` e `/dev` lado a lado, lendo um arquivo de cada). **R2** será pedido até **sexta 16/10**, para a terça 20/10.
+
 **Prática 1 — Hardware, armazenamento e processos**
 
 - `lscpu`, `lsblk`, `lspci`, `lsusb`, `free -h`, `df -h`, `du -sh`, `dmesg`
@@ -558,6 +568,7 @@ Marcar antes de se sentir pronto é intencional. Prazo firme é o que impede o p
 - **2 simulados completos**, cronometrados, em dias diferentes: **quinta 22/10** (exame final de prática do NDG) e **domingo 25/10** (série dominical)
 - Após cada um, anotar as **questões erradas e as chutadas**, com o tópico de cada uma, e corrigi-las no Notion
 - Revisão dirigida **apenas** nos objetivos com erro — não revisar o que já acerta
+- **Terça 20/10: mini-simulado R2** (dicas recorrentes, com `/sys`, processos e rede). A partir de 19/10, o aquecimento diário gira pelas cinco frentes (seção 6, "Dicas recorrentes de prova")
 - Laboratório de reforço nos dois objetivos mais fracos
 
 **Meta:** ≥ 75% (30 de 40) no simulado de domingo 25/10. A partir desta semana o simulado substitui a autoavaliação por tópico.
@@ -658,7 +669,7 @@ Ordem de estudo confirmada:
 
 | # | Certificação | Situação |
 |---|---|---|
-| 1 | **LPI Linux Essentials** (010-160) | Em preparação — prova em 2026 |
+| 1 | **LPI Linux Essentials** (010-160) | Em preparação — prova em 09/11/2026 |
 | 2 | **GitHub Foundations** | Na sequência, em novembro/dezembro |
 | 3 | **Red Hat RHCSA** (EX200) | Próxima grande certificação |
 | 4 | **LPIC-1** (101-500 e 102-500) | Duas provas; o certificado só sai com as duas aprovadas |
@@ -666,7 +677,6 @@ Ordem de estudo confirmada:
 | 6 | **AWS Cloud Practitioner** | |
 | 7 | **AWS AI Practitioner** | |
 | 8 | **AWS Developer Associate** | |
-| 9 | **Machine Learning Associate** | |
 | Opcional | **LFCS** — Linux Foundation Certified System Administrator | Sem data definida |
 | Opcional | **Docker Certified Associate** | Sem data definida |
 
