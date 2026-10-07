@@ -107,6 +107,20 @@ Os critérios completos estão na seção 11 do plano geral.
 | Gate | Dom 01/11 | Dois simulados consecutivos com 34 ou mais entre os de 27/10, 29/10 e 01/11; laboratório integrador | | |
 | Final | Qui 05/11 | 34 ou mais: ir. De 30 a 33: ir com revisão leve. Abaixo de 30: remarcar, se a janela permitir | | |
 
+### 2.5 Dicas recorrentes de prova, por tema
+
+Temas que aparecem com frequência nos relatos de candidatos (ver `praticas-reforco-dicas-recorrentes.md`). Formato: acertos de questões do tema. O simulado #1 não tinha esta marcação por tema, então só os mini-simulados de reforço e os simulados a partir do #2 preenchem a tabela.
+
+| Tema | Mínimo por simulado | R1 (13/10) | #2 (11/10) | R2 (20/10) | #3 (18/10) | #5 | #7 | #8 | #9 |
+|---|---|---|---|---|---|---|---|---|---|
+| Permissões | 4 | /5 | | | | | | | |
+| `tar` e compressão | 2 | /4 | | | | | | | |
+| Redirecionamento (com `<<`) | 3 | /5 | | | | | | | |
+| Diretórios virtuais e `/var` | 3 | /4 | | | | | | | |
+| **Questões de preencher a lacuna** | 5 | /6 | | | | | | | |
+
+Regra de leitura: um tema abaixo de 60% em um reforço ou simulado vira o foco do aquecimento da semana seguinte. Nas lacunas, anote também se o erro foi de **conteúdo** ou de **forma** (sublinhado, caminho, flag a mais, caixa).
+
 ---
 
 ## 3. Simulado #1 — 05/10/2026
@@ -234,6 +248,18 @@ Chutes acertados: Q, tópico, tema.
 Comparação com o simulado anterior: o que errava e agora acerta, o que continua errando, o que apareceu de novo.
 
 Decisão ou checkpoint associado: .
+
+### Mini-simulado de reforço R1 — 13/10/2026
+
+| Campo | Valor |
+|---|---|
+| Fonte | `praticas-reforco-dicas-recorrentes.md`, seção 6 |
+| Tempo gasto | |
+| Acertos | de 20 (meta: 15) |
+| Chutes marcados | |
+| Erros de forma nas lacunas | |
+
+*A preencher na terça 13/10. A apuração por tema vai na tabela da seção 2.5.*
 
 ### Simulado #2 — 11/10/2026
 
@@ -407,3 +433,4 @@ Itens antigos de conteúdo já estudado, tirados da rotina diária em 06/10 para
 | Data | Alteração |
 |---|---|
 | 06/10/2026 | Criação. Reúne o simulado #1, as autoavaliações, os checkpoints, o índice das correções 1 a 68, os erros recorrentes e a fila de retaguarda. Registra as regras de 06/10 (só anotar questões erradas; correção no Notion; retaguarda de erros antigos) |
+| 06/10/2026 | Acrescentadas a seção 2.5 (dicas recorrentes por tema) e o registro do mini-simulado de reforço R1 na seção 4 |
