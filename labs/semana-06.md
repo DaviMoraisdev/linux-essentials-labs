@@ -520,6 +520,8 @@ Você pediu mais prática de simulado, com **questões reais da LPI** e **dificu
 
 **Sobre a dificuldade.** No simulado #1 você usou 20 dos 60 minutos e fez 70%. Para o #2 em diante, o pedido é: enunciados com cenário, pegadinhas de comando, escolha de mais de uma resposta, preenchimento e distratores plausíveis; e a regra de **usar pelo menos 45 minutos**, com segunda passada.
 
+**Dicas recorrentes (06/10).** Peça o `simulado-02` incluindo o mínimo de questões por tema (permissões 4, `tar` 2, redirecionamento 3 com `<<`, diretórios 3) e **5 questões de preencher a lacuna**, com uma tabela de temas no gabarito. A cola, as regras de lacuna e o mini-simulado R1 (terça 13/10) estão em `praticas-reforco-dicas-recorrentes.md`. Esta semana não ganha tempo novo: o reforço começa no simulado #2 de domingo.
+
 **Carga.** São 40 minutos a mais nesta semana (20 na quinta e 20 no sábado), e a revisão de terça, de 15 minutos, saiu. Se a semana apertar, os 20 minutos da Prática 1 são os primeiros a ir para a segunda 12/10. Os simulados de domingo e os de Fase 2 (22/10, 27/10, 29/10 e 05/11) permanecem como estão no plano geral.
 
 ---
@@ -834,6 +836,8 @@ cd ~ ; ./lab5/scripts/backup.sh ~/lab5 ; tar -tzf backup-*.tar.gz | grep backup-
 ### Correções da semana
 
 A numeração segue a série global. A última registrada na Semana 5 foi a **61** (o `2` do `2>` não é o `2` do `$?`). Em 05/10, o simulado #1 gerou as **Correções 62 a 68**. **A próxima é a 69.**
+
+O painel de resultados, a lista de questões erradas e o índice das Correções 1 a 68 estão em `praticas-resultados-simulados-e-correcoes.md`.
 
 | # | Tema | Origem |
 |---|---|---|
