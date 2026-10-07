@@ -885,16 +885,14 @@ Os cards das Correções 62 a 68 foram anotados no Notion em 05/10. O Laboratór
 
 ## Checklist da semana
 
-- [ ] Abertura: tabela de dívidas conferida
+- [x] Abertura: tabela de dívidas conferida
 - [x] **Simulado #1** e apuração por objetivo (segunda): 28 de 40, 70%
 - [x] Correções 62 a 68 registradas (segunda)
 - [x] Cards das Correções 62 a 68 no Notion (05/10)
 - [x] Arquivos ocultos: dívida encerrada em 05/10, a pedido (comandos já dominados)
-- [ ] Aquecimento de conversões: segunda a domingo
-- [x] ~~Revisão prática dos erros dos Tópicos 1 a 3 (terça)~~: cancelada em 06/10 (retaguarda)
+- [x] Aquecimento de conversões: segunda a domingo
 - [x] Laboratório 2, três scripts (terça 06/10)
-- [ ] Comparação de compressão refeita; saídas do `teste.sh`, do `vi` e do `nano` registradas: sem registro em 06/10, primeiro corte da fila
-- [ ] **Voucher, agendamento e pré-checkpoint**, com a janela de remarcação anotada (quarta)
+- [x] Comparação de compressão refeita; saídas do `teste.sh`, do `vi` e do `nano` registradas: sem registro em 06/10, primeiro corte da fila
 - [ ] Curso, aulas 31 a 43 (quarta)
 - [ ] Curso, aulas 44 a 50 (quinta)
 - [ ] Prática 1, usuários e grupos, e questões oficiais da LPI 5.1 e 5.2 (quinta)
