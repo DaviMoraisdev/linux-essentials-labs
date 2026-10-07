@@ -80,6 +80,10 @@ A busca por "simulado 010-160" devolve muitos sites que anunciam "questões reai
 
 **Terceira, e a que mais importa para você:** decorar pares de pergunta e resposta não produz o que a sua preparação está produzindo. O seu diferencial nestas semanas foram as correções com mecanismo — cada uma nasceu de um erro de compreensão que nenhuma memorização teria exposto. Dump é o caminho oposto desse método.
 
+## Dicas recorrentes de candidatos (06/10)
+
+Dicas de fonte não oficial (permissões, `tar`, redirecionamento incluindo `<<`, `/proc`, `/sys`, `/dev`, `/var`, e questões de preencher a lacuna) foram conferidas contra o PDF da LPI e aparecem nele. Entram como **reforço**, e não como fonte de questões: ver `praticas-reforco-dicas-recorrentes.md`, com mini-simulados R1 (13/10) e R2 (20/10).
+
 ## Ordem de uso sugerida
 
 | Momento | O que usar |
