@@ -36,9 +36,7 @@
 | Autoavaliação da Semana 2 | 14 de 15 — respondida no dia do estudo |
 | Autoavaliação da Semana 3 | 20 de 20 — respondida no dia do estudo |
 | Autoavaliação da Semana 4 | **14 de 20** (29/09) — respondida 4 dias depois; abaixo da meta de 16. **Correções 49 a 52 anotadas no caderno em 29/09** |
-| Bandit | Níveis 0 a 9 |
 | Cards de revisão (Notion) | Em uso desde a Semana 1 |
-| Curso do Muller | **Checkpoint na aula 31 de 72** (30/09; aulas 26 a 30 assistidas) — 42 restantes. Adiado em 28 e 29/09 |
 
 ### Dívidas pagas (29/09 a 06/10)
 
