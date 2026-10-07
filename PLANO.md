@@ -278,6 +278,8 @@ grep -E 'ERROR|WARN' sistema.log
 
 Na quinta e no sábado, o quinto item é trocado pelo teste do `-f` do `tar` (Correção 52). Os arquivos de apoio são recriados em `~/lab5`; o roteiro completo está em `labs/semana-05.md`.
 
+**Regra de 07/10 — aquecimento depois do conteúdo.** O aquecimento de permissões da Semana 6 pedia conversão de memória antes de o assunto ser ensinado (as aulas e a Prática 2 vêm depois). Você estudou por conta própria na quarta 07/10, e o resultado de 5 de 5 conta como **estudo**, não como retenção. A regra passa a ser: a primeira aparição de um assunto no aquecimento é leitura de 5 minutos mais cinco questões, e o reteste cego vem no dia seguinte. A régua de 3 segundos só vale para o que já foi estudado. Vale para todo tópico novo, inclusive os da Semana 7.
+
 ### Quando responder a autoavaliação
 
 **Regra alterada em 29/09.** As autoavaliações das Semanas 2 e 3 foram respondidas no mesmo dia do último laboratório e deram 14 de 15 e 20 de 20. A da Semana 4 foi respondida quatro dias depois e deu 14 de 20 — com todos os quatro conceitos errados já registrados corretamente no caderno, dias antes.

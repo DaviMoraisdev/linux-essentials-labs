@@ -154,6 +154,8 @@ A regra de conversão é uma só: `r` vale 4, `w` vale 2, `x` vale 1, e cada dí
 
 **Atualização de 06/10:** os itens fixos tirados dos erros antigos do simulado #1 (`cd -`, `man cp`) **saíram do aquecimento** e foram para a retaguarda. Fica só o que é conteúdo desta semana: **`chown` contra `chmod`** (Q38), mais o que travar nas conversões e nos bits especiais. O que errar vira card no Notion na hora. Se ao fim da semana a conversão ainda não sair em 3 segundos, a Semana 7 abre com uma sessão extra de permissões, e o feriado de segunda 12/10 é o dia natural para ela.
 
+**Atualização de 07/10 — o aquecimento veio antes do conteúdo.** Você registrou que as permissões nunca tinham sido estudadas, nem nos laboratórios nem no curso: o aquecimento pedia conversão "de memória" de algo que ainda não tinha sido ensinado. O erro foi do plano, não seu. A decisão: **a primeira vez que um assunto aparece no aquecimento conta como estudo**, e a leitura da seção correspondente da cola rápida (5 minutos, abaixo) vem **antes** das cinco questões. A quarta 07/10 foi assim, e seu estudo extra foi exatamente o certo. Daqui em diante: **quinta 08/10**, leia antes a linha SUID, SGID e sticky bit da cola rápida (os bits especiais só são ensinados nas aulas e na Prática 2); **sexta 09/10 abre com um reteste cego de 3 minutos** com dois itens do tipo de quarta (`chmod` simbólico sobre octal), sem consulta, para medir se ficou. A régua dos 3 segundos por item só vale para os itens já estudados.
+
 ---
 
 ## Simulado #1 — Segunda 05/10
@@ -825,6 +827,32 @@ cd ~ ; ./lab5/scripts/backup.sh ~/lab5 ; tar -tzf backup-*.tar.gz | grep backup-
 ```
 
 
+### Aquecimento de permissões — quarta 07/10
+
+Estudo prévio feito por conta própria, antes de responder (o conteúdo ainda não tinha sido ensinado; ver a atualização de 07/10 acima), seguido de prática no terminal em `lab6/permissoes`.
+
+**Resultado das cinco questões: 5 de 5**, todas conferidas no terminal com `stat -c '%n: %a (%A)'`. Como foi estudo assistido, o resultado **não conta como medida de retenção**.
+
+| Questão | Comando | Resultado | Conferência |
+|---|---|---|---|
+| (a) `644` | `chmod u+x` | `744` (`rwxr--r--`) | Correto |
+| (b) `755` | `chmod g-x,o-x` | `744` | Correto |
+| (c) `640` | `chmod o+r` | `644` | Correto |
+| (d) `600` | `chmod g+rw` | `660` | Correto |
+| (e) `755` | `chmod a-x` | `644` | Correto |
+
+**Conteúdo coberto nas anotações:** leitura do octal por categoria (dono, grupo, outros), tabela de 0 a 7, `chmod` simbólico (`u`, `g`, `o`, `a`; `+`, `-`; vírgula para duas alterações), leitura do `ls -l`, `stat -c` com `%n`, `%a` e `%A`, e a diferença entre `chmod` e `chown` (com `id -un` e `id -gn` para descobrir os nomes).
+
+**Ajustes de caderno (sem correção numerada, não há erro conceitual):**
+
+1. Nas questões (c) e (d), "Outros: `--`" e "Grupo: `--`" têm **três** posições: `---`. Em `640`, os outros são `---`; em `600`, o grupo é `---`.
+2. "Somente a posição dos outros usuários muda" (falta o `e` em "Somente").
+3. `rw- r-- r—`: o último traço é um travessão; deve ser `r--`, com dois hífens.
+4. Acrescentar ao quadro do `chown`: **só o root muda o dono** (por isso o `sudo`); o usuário comum só pode mudar o **grupo**, e só para um grupo de que faça parte (`chgrp`). `chown :grupo arquivo` muda só o grupo.
+5. A data aparece como `Oct 7` e `out 7` nas listagens: o idioma do terminal variou entre as sessões. Não afeta nada, mas explica a diferença se aparecer na prova.
+
+**Pontos fortes:** a conferência por `stat -c` ligou o octal ao símbolo nos dois sentidos, e a explicação de cada parte do `chmod u+x` está correta.
+
 ### Prática 1 — quinta 08/10
 
 *A preencher.*
@@ -862,8 +890,11 @@ Os cards das Correções 62 a 68 foram anotados no Notion em 05/10. O Laboratór
 - [x] Correções 62 a 68 registradas (segunda)
 - [x] Cards das Correções 62 a 68 no Notion (05/10)
 - [x] Arquivos ocultos: dívida encerrada em 05/10, a pedido (comandos já dominados)
+- [ ] Aquecimento de conversões: segunda a domingo
+- [x] ~~Revisão prática dos erros dos Tópicos 1 a 3 (terça)~~: cancelada em 06/10 (retaguarda)
 - [x] Laboratório 2, três scripts (terça 06/10)
-- [x] Comparação de compressão refeita; saídas do `teste.sh`, do `vi` e do `nano` registradas: sem registro em 06/10, primeiro corte da fila
+- [ ] Comparação de compressão refeita; saídas do `teste.sh`, do `vi` e do `nano` registradas: sem registro em 06/10, primeiro corte da fila
+- [ ] **Voucher, agendamento e pré-checkpoint**, com a janela de remarcação anotada (quarta)
 - [ ] Curso, aulas 31 a 43 (quarta)
 - [ ] Curso, aulas 44 a 50 (quinta)
 - [ ] Prática 1, usuários e grupos, e questões oficiais da LPI 5.1 e 5.2 (quinta)
