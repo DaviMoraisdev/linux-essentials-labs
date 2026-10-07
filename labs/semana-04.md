@@ -54,7 +54,7 @@ sudo poweroff
 Situação no fechamento, em 29/09:
 
 - [x] Registrar as observações sobre **arquivos ocultos** (Sessão 3 da Semana 3) — dívida encerrada em 05/10, a pedido (comandos já dominados)
-- [ ] **Simulado diagnóstico completo** — 40 questões, cronometrado, sem consulta — transferido para a Semana 5, **domingo 04/10**. Ver seção ao final
+- [x] **Simulado diagnóstico completo** — 40 questões, cronometrado, sem consulta — transferido para a Semana 5, **domingo 04/10**. Ver seção ao final
 - [x] Remover o arquivo acidental da home: `rm 'sudo apt upgrade -y'` — já estava quitada desde a Semana 3 (confirmado em 05/10)
 
 ---
