@@ -1,6 +1,6 @@
 # Fontes de simulados e questões — 010-160
 
-Levantamento feito em 28/09/2026, com foco em material gratuito e legítimo. Atualizado em 02/10/2026 para a série de simulados dominicais e em 04/10/2026 (o simulado #1 passou para a segunda 05/10).
+Levantamento feito em 28/09/2026, com foco em material gratuito e legítimo. Atualizado em 02/10/2026 para a série de simulados dominicais, em 04/10/2026 (o simulado #1 passou para a segunda 05/10) e em 06/10/2026 (questões da LPI e dificuldade; ver a seção "Questões reais da LPI").
 
 ## Recomendadas
 
@@ -22,7 +22,7 @@ Para o seu caso o uso indicado é cirúrgico: **ignorar as aulas e fazer só os 
 
 ### 2. LPI Learning Materials — o PDF que você já tem
 
-O material oficial da LPI traz **questões de revisão ao final de cada objetivo**, além de exercícios guiados e exercícios exploratórios. Você já tem o arquivo no Projeto: `LPI-Learning-Material-010-160-pt.pdf`.
+O material oficial da LPI traz **Exercícios Guiados e Exploratórios ao final de cada lição, com as respostas logo depois**. Você já tem o arquivo no Projeto: `LPI-Learning-Material-010-160-pt.pdf`.
 
 Este é o material mais alinhado ao exame que existe, porque é escrito pela mesma organização que o redige. As questões não são um simulado cronometrado, e por isso servem para outra função: **verificar objetivo por objetivo** depois de cada laboratório.
 
@@ -40,7 +40,7 @@ Simulado gratuito de acesso direto, sem cadastro. Menor e mais simples que os an
 
 ### 5. Os simulados deste repositório
 
-Escritos sob medida, com distribuição de pesos idêntica à do exame e gabarito comentado. A vantagem sobre os anteriores é que as questões atacam **os pontos em que você já errou** — as correções registradas nos cadernos (60 até 02/10) viram questões.
+Escritos sob medida, com distribuição de pesos idêntica à do exame e gabarito comentado. A partir do #2, com dificuldade maior (ver a seção "Questões reais da LPI"). A vantagem sobre os anteriores é que as questões atacam **os pontos em que você já errou** — as correções registradas nos cadernos (60 até 02/10) viram questões.
 
 **Série dominical (regra de 02/10).** Todo domingo há um simulado geral de 40 questões, cronometrado. Só o primeiro existe. Os demais são produzidos **sob pedido**, com pelo menos três dias de antecedência. O próximo, `simulado-02`, deve ser pedido até quinta 08/10.
 
@@ -57,6 +57,18 @@ Escritos sob medida, com distribuição de pesos idêntica à do exame e gabarit
 | 9 | Qui 05/11 | `simulado-09-*.md` (final) | A pedir até dom 01/11 |
 
 O calendário completo, as metas e a regra de adiamento da prova estão em `plano-linux-essentials-010-160.md`, seções 7 e 11.
+
+## Questões reais da LPI — o que existe e o que foi decidido
+
+Em 06/10 você pediu mais prática de simulado, com questões reais da LPI e dificuldade próxima da prova. O levantamento deu três conclusões.
+
+**Primeira: não há simulado oficial gratuito da LPI para o 010-160 que eu tenha encontrado.** O que a LPI divulga para o exame é o Learning Material, e os relatos publicados no próprio site da LPI sobre como estudar citam o PDF e a prática em VM, não um simulado oficial.
+
+**Segunda: as "questões reais" que circulam são vazadas.** É o que os sites de dumps vendem (seção abaixo). Ficam fora.
+
+**Terceira: a prática com questões da LPI, no sentido que importa, é o PDF oficial.** Os Exercícios Guiados e Exploratórios foram escritos pela LPI. A decisão foi incluir **20 minutos deles no fim das Práticas 1 e 2 da Semana 6** e das práticas do Tópico 4 na Semana 7, **sem consultar o texto**, anotando só as questões erradas e corrigindo-as no Notion. Somam-se os quizzes e o exame final do NDG, que seguem o formato do exame.
+
+**Dificuldade.** Os simulados escritos para este plano passam a ser mais difíceis a partir do #2: enunciados com cenário, pegadinhas de comando, escolha de mais de uma resposta, preenchimento e distratores plausíveis. Eles são **modelados** sobre os objetivos oficiais e **não são questões reais do exame**.
 
 ## Sobre os sites de dumps
 
