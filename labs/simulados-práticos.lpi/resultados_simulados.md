@@ -57,7 +57,7 @@ O exame real aprova com **500 de 800 pontos**, cerca de 65%, ou 26 acertos. A es
 | # | Data | Fonte | Meta | Acertos | % | Chutes acertados | Acertos firmes | Tempo | Situação |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | Seg 05/10 | `simulado-01-diagnostico` | Diagnóstico (esperado de 24 a 30) | **28** | **70%** | 5 | **23** | 20 min 31 s | **Concluído** |
-| 2 | Dom 11/10 | `simulado-02` (pedir até qui 08/10) | **24 ou mais** (Checkpoint A) | | | | | | A fazer |
+| 2 | **Sex 09/10** (antecipado de dom 11/10) | `simulado-02` (pedido em 07/10, pronto na qui 08/10) | **24 ou mais** (Checkpoint A) | | | | | | A fazer |
 | 3 | Dom 18/10 | `simulado-03` | **28 ou mais** (Checkpoint B) | | | | | | A fazer |
 | 4 | Qui 22/10 | Exame final de prática do NDG | 28 ou mais | | | | | | A fazer |
 | 5 | Dom 25/10 | `simulado-05` | **30 ou mais** | | | | | | A fazer |
@@ -90,7 +90,7 @@ As autoavaliações medem a retenção do conteúdo de uma semana. Desde a Seman
 | Semana 2 | Conteúdo da Semana 2 | 14/09 | 15 | **14** | 12 | Respondida no dia do estudo. O único erro foi a Q9, sobre o `export` |
 | Semana 3 | Arquivos, links e pacotes | 19/09 | 20 | **20** | 16 | Respondida no dia do estudo. Gerou as Correções 27 e 28 (justificativas) |
 | Semana 4 | Objetivos 3.1 e 3.2, filtros e compactação | 29/09 | 20 | **14** | 16 | Abaixo da meta. Respondida quatro dias depois do estudo. Gerou as Correções 49 a 52 |
-| Semana 5 | Shell script | Sex 09/10 | 10 | | **8** | A fazer. Versão reduzida |
+| Semana 5 | Shell script | Dom 11/10 (movida de sexta em 07/10) | 10 | | **8** | A fazer. Versão reduzida |
 | Semana 6 | Tópico 5, permissões | Sex 16/10 | 10 | | A definir | A fazer |
 
 Leitura: a de 29/09 (14/20, quatro dias depois do estudo) e o simulado #1 são os dados de retenção mais distantes do estudo disponíveis até aqui.
@@ -111,7 +111,7 @@ Os critérios completos estão na seção 11 do plano geral.
 
 Temas que aparecem com frequência nos relatos de candidatos (ver `praticas-reforco-dicas-recorrentes.md`). Formato: acertos de questões do tema. O simulado #1 não tinha esta marcação por tema, então só os mini-simulados de reforço e os simulados a partir do #2 preenchem a tabela.
 
-| Tema | Mínimo por simulado | R1 (13/10) | #2 (11/10) | R2 (20/10) | #3 (18/10) | #5 | #7 | #8 | #9 |
+| Tema | Mínimo por simulado | R1 (13/10) | #2 (09/10) | R2 (20/10) | #3 (18/10) | #5 | #7 | #8 | #9 |
 |---|---|---|---|---|---|---|---|---|---|
 | Permissões | 4 | /5 | | | | | | | |
 | `tar` e compressão | 2 | /4 | | | | | | | |
@@ -261,7 +261,7 @@ Decisão ou checkpoint associado: .
 
 *A preencher na terça 13/10. A apuração por tema vai na tabela da seção 2.5.*
 
-### Simulado #2 — 11/10/2026
+### Simulado #2 — 09/10/2026 (antecipado de 11/10)
 
 | Campo | Valor |
 |---|---|
@@ -270,7 +270,7 @@ Decisão ou checkpoint associado: .
 | Acertos | de 40 |
 | Meta | **24 ou mais** (Checkpoint A) |
 
-*A preencher no domingo 11/10.*
+*A preencher na sexta 09/10. Observação: o Tópico 5 estará só parcialmente estudado (Prática 2 e aulas 51 a 57 ficam para o sábado), então a leitura do resultado deve separar as questões de permissões.*
 
 ---
 
@@ -424,7 +424,7 @@ Itens antigos de conteúdo já estudado, tirados da rotina diária em 06/10 para
 |---|---|
 | Correções 60 a 68 | Cards anotados em 05/10, conforme informado |
 | Questões erradas do simulado #1 | Correções 62 a 68 anotadas; os cinco chutes errados viram ênfase de estudo, sem card |
-| Questões erradas do simulado #2 | A corrigir no Notion no mesmo dia do simulado (11/10) |
+| Questões erradas do simulado #2 | A corrigir no Notion no mesmo dia do simulado (09/10) |
 
 ---
 
