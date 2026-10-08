@@ -36,7 +36,9 @@
 | Autoavaliação da Semana 2 | 14 de 15 — respondida no dia do estudo |
 | Autoavaliação da Semana 3 | 20 de 20 — respondida no dia do estudo |
 | Autoavaliação da Semana 4 | **14 de 20** (29/09) — respondida 4 dias depois; abaixo da meta de 16. **Correções 49 a 52 anotadas no caderno em 29/09** |
+| Bandit | Níveis 0 a 9 |
 | Cards de revisão (Notion) | Em uso desde a Semana 1 |
+| Curso do Muller | **Checkpoint na aula 31 de 72** (30/09; aulas 26 a 30 assistidas) — 42 restantes. Adiado em 28 e 29/09 |
 
 ### Dívidas pagas (29/09 a 06/10)
 
@@ -59,7 +61,7 @@
 | **Curso, aulas 31 a 43** (13 aulas; as aulas 26 a 30 foram concluídas em 30/09) | **quarta 07/10** (Semana 6), a 2x, porque o Laboratório 1 já praticou o 3.3 |
 | Registrar as saídas do `teste.sh` e as três saídas de `vi` e `nano` (Laboratório 1) | sem registro em 06/10; retaguarda, primeiro corte da fila |
 | **Questões oficiais da LPI** (Exercícios Guiados e Exploratórios), lições 5.1 e 5.2 e depois 5.3 e 5.4, 20 min cada | quinta 08/10 e sábado 10/10, no fim das Práticas 1 e 2 |
-| **Autoavaliação da Semana 5** — 10 questões | sexta 09/10 |
+| **Autoavaliação da Semana 5** — 10 questões | domingo 11/10 (movida de sexta em 07/10) |
 | **Voucher da prova** e agendamento, com a janela de remarcação anotada. **Condições do pré-checkpoint cumpridas em 06/10: agendar 09/11** | **quarta 07/10** (prazos anteriores: 29/09 e 30/09) |
 | ~~**Simulado #1 (diagnóstico)**~~ | **Concluído em 05/10: 28 de 40 (70%), 560 de 800.** Prova corrigida em `praticas/simulado-01-diagnostico-resultado.md` |
 | Reteste das 4 questões erradas da autoavaliação da Semana 4 e das questões 18, 20, 21, 22 e 24 do simulado #1 | **Retaguarda** desde 06/10; os simulados seguintes medem se o erro volta |
@@ -372,7 +374,7 @@ Um simulado geral de 40 questões todo domingo, mais os extras de Fase 2. Distri
 | # | Data | Semana | Fonte | Meta |
 |---|---|---|---|---|
 | 1 | **Seg 05/10** (adiado do dom 04/10) | 5 | `simulado-01-diagnostico` | **Feito: 28 de 40 (70%), 23 firmes.** Esperado era 24 a 30 |
-| 2 | Dom 11/10 | 6 | `simulado-02` | **24 ou mais** (Checkpoint A) |
+| 2 | **Sex 09/10** (antecipado de dom 11/10 em 07/10) | 6 | `simulado-02` | **24 ou mais** (Checkpoint A) |
 | 3 | Dom 18/10 | 7 | `simulado-03` | **28 ou mais** (Checkpoint B) |
 | 4 | Qui 22/10 | 8 | Exame final de prática do NDG | 28 ou mais |
 | 5 | Dom 25/10 | 8 | `simulado-05` | **30 ou mais** |
@@ -387,7 +389,7 @@ Um simulado geral de 40 questões todo domingo, mais os extras de Fase 2. Distri
 
 **Mais prática de simulado (06/10).** Além da série, a Semana 6 ganha 20 minutos de **questões oficiais da LPI** no fim de cada prática (quinta, lições 5.1 e 5.2; sábado, lições 5.3 e 5.4), e a Semana 7 faz os quizzes do NDG dos Tópicos 4 e 5. As questões do exame real não estão disponíveis legitimamente (seção 5).
 
-**Produção.** Só o `simulado-01` existe. Os demais são escritos sob medida, com os erros já registrados virando questões, e precisam estar prontos **três dias antes** do uso. O próximo, `simulado-02`, deve ser pedido até **quinta 08/10**. O NDG é a fonte externa gratuita (`praticas/fontes-de-simulados.md`). **Resultados, questões erradas e índice das correções de cada simulado ficam em `praticas-resultados-simulados-e-correcoes.md` (criado em 06/10).**
+**Produção.** Só o `simulado-01` existe. Os demais são escritos sob medida, com os erros já registrados virando questões, e precisam estar prontos **três dias antes** do uso. O `simulado-02`, antecipado para **sexta 09/10**, foi pedido em **07/10** e precisa estar pronto na quinta à noite (a regra de três dias fica suspensa para ele). O NDG é a fonte externa gratuita (`praticas/fontes-de-simulados.md`). **Resultados, questões erradas e índice das correções de cada simulado ficam em `praticas-resultados-simulados-e-correcoes.md` (criado em 06/10).**
 
 ---
 
@@ -481,7 +483,7 @@ Marcar antes de se sentir pronto é intencional. Prazo firme é o que impede o p
 
 **Arquivo detalhado:** `labs/semana-06.md` (calendário dia a dia, exercícios, gabarito do aquecimento, ordem de corte, pré-checkpoint e Checkpoint A).
 
-**Curso:** aulas **31 a 43** (transferidas da Semana 5) na quarta 07/10, a 2x, porque o Laboratório 1 já praticou o 3.3; aulas **44 a 50** na quinta 08 e **51 a 57** na sexta 09/10.
+**Curso (replanejado em 07/10):** aulas **31 a 43** (transferidas da Semana 5), adiadas da quarta para a **quinta 08/10**, a 2x, porque o Laboratório 1 já praticou o 3.3; aulas **44 a 50** também na quinta 08; aulas **51 a 57** no **sábado 10/10**, antes da Prática 2.
 
 **Carga:** cerca de 11h00 nominais (estimativa de 06/10), acima do teto de 7h. Ordem de corte, se faltar tempo: `filtrar.sh`; dívidas antigas sem registro (comparação de compressão, saídas do `vi` e `nano`); autoavaliação a 5 questões; aulas 51 a 57 e Prática 1 para a segunda 12/10 (feriado). Com os cortes, cerca de 8h30. Não se cortam: simulados #1 e #2, Laboratório 2 (três scripts), Prática 2, voucher e aquecimento.
 
@@ -489,15 +491,15 @@ Marcar antes de se sentir pronto é intencional. Prazo firme é o que impede o p
 |---|---|
 | Seg 05 | **Simulado #1** · apuração e correções — **concluído** |
 | Ter 06 | Laboratório 2 — `backup.sh`, `contar.sh`, `usuario.sh` — **concluído** |
-| Qua 07 | **Voucher, agendamento e pré-checkpoint** · aulas 31 a 43, a 2x |
-| Qui 08 | Aulas 44 a 50 · Prática 1 — usuários e grupos, com 20 min de questões da LPI · pedir o `simulado-02` |
-| Sex 09 | Autoavaliação da Semana 5 (10 questões) · aulas 51 a 57 |
-| Sáb 10 | Prática 2 — permissões, com 20 min de questões da LPI |
-| **Dom 11** | **Simulado #2** · apuração · **Checkpoint A** |
+| Qua 07 | **Voucher, agendamento e pré-checkpoint** · aquecimento · aulas 31 a 43 adiadas |
+| Qui 08 | Aulas 31 a 43 e 44 a 50 · Prática 1 — usuários e grupos, com 20 min de questões da LPI · receber o `simulado-02` |
+| Sex 09 | **Simulado #2** (antecipado) · apuração |
+| Sáb 10 | Aulas 51 a 57 · Prática 2 — permissões, com 20 min de questões da LPI |
+| **Dom 11** | Autoavaliação da Semana 5 (10 questões) · **Checkpoint A** |
 
 **Correção e revisão.** O simulado #1 gerou as **Correções 62 a 68** (sete erros com convicção; os cinco chutes errados definem a ênfase das Semanas 6 e 7). A revisão prática de terça, de 15 minutos, **foi cancelada em 06/10**: os erros antigos vão para a retaguarda. Daqui em diante, erros de simulado só são anotados e corrigidos no Notion.
 
-**Autoavaliação da Semana 5:** reduzida a 10 questões, respondida na sexta 09/10, três dias depois do Laboratório 2.
+**Autoavaliação da Semana 5:** reduzida a 10 questões, respondida no **domingo 11/10** (movida da sexta em 07/10), cinco dias depois do Laboratório 2.
 
 **Prática 1 — Usuários e grupos**
 
@@ -516,7 +518,7 @@ Marcar antes de se sentir pronto é intencional. Prazo firme é o que impede o p
 >
 > Por isso o **aquecimento diário desta semana é obrigatório** e sempre o mesmo: cinco conversões de permissão, de memória, sem consultar. Se ao fim da semana a conversão não sair em três segundos, a Semana 7 começa com mais uma sessão de permissões antes do Tópico 4. A segunda 12/10, feriado, é o dia natural para essa sessão.
 
-**Checkpoint A (domingo 11/10):** cinco critérios (curso até a aula 57, Laboratório 2, as duas práticas, simulado #2 com 24 ou mais acertos, voucher e agendamento). Resultado verde, amarelo ou vermelho decide se 09/11 se mantém (seção 11).
+**Checkpoint A (domingo 11/10; o simulado #2 já terá sido feito na sexta 09/10):** cinco critérios (curso até a aula 57, Laboratório 2, as duas práticas, simulado #2 com 24 ou mais acertos, voucher e agendamento). Resultado verde, amarelo ou vermelho decide se 09/11 se mantém (seção 11).
 
 **Entregável:** `labs/semana-06.md` + `cheatsheets/permissoes.md` + os três scripts + resultados dos simulados #1 e #2
 
