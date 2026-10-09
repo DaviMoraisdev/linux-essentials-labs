@@ -9,7 +9,7 @@ Arquivos relacionados:
 | Arquivo | O que traz |
 |---|---|
 | `praticas-simulado-01-resultado-05-10.md` | A prova do simulado #1 corrigida, questão por questão |
-| `semana-06-permissoes.md` | O texto completo das Correções 62 a 72 |
+| `semana-06-permissoes.md` | O texto completo das Correções 62 a 74 |
 | `plano-linux-essentials-010-160.md` | Seção 7 (série de simulados), seção 9 (erros recorrentes) e seção 11 (checkpoints) |
 | `praticas-fontes-de-simulados.md` | De onde vêm as questões |
 
@@ -23,7 +23,7 @@ Arquivos relacionados:
 
 **Erros antigos de comandos já dominados vão para a retaguarda.** Eles saem do aquecimento diário e das pendências. Voltam de duas formas: nos próprios simulados, que continuam medindo se o erro reaparece, e na revisão leve da Semana 10, pelos cards do Notion. A lista está na seção 7.
 
-**A numeração das correções continua para laboratório e curso.** A próxima é a **73**.
+**A numeração das correções continua para laboratório e curso.** A próxima é a **75**.
 
 ### 1.2 Rotina após cada simulado
 
@@ -274,9 +274,9 @@ Decisão ou checkpoint associado: .
 
 ---
 
-## 5. Índice de correções (1 a 72)
+## 5. Índice de correções (1 a 74)
 
-Total: **72 correções** em cinco semanas. O texto completo de cada uma está no arquivo da semana indicada. A numeração é global e contínua; a próxima é a **73**.
+Total: **74 correções** em cinco semanas. O texto completo de cada uma está no arquivo da semana indicada. A numeração é global e contínua; a próxima é a **75**.
 
 | Semana | Correções | Quantidade |
 |---|---|---|
@@ -284,7 +284,7 @@ Total: **72 correções** em cinco semanas. O texto completo de cada uma está n
 | 3 | 17 a 28 | 12 |
 | 4 | 29 a 52 | 24 |
 | 5 | 53 a 61 | 9 |
-| 6 (simulado #1 e curso) | 62 a 72 | 11 |
+| 6 (simulado #1 e curso) | 62 a 74 | 13 |
 
 Nota de 06/10: o fechamento da Semana 4 dizia "dez correções (43 a 52)". As correções da Semana 4 são, na verdade, 29 a 52, num total de 24, e a soma de 52 correções até a Semana 4 confere.
 
@@ -383,6 +383,8 @@ Nota de 06/10: o fechamento da Semana 4 dizia "dez correções (43 a 52)". As co
 | 70 | `?` casa um caractere qualquer; `{}` não é globbing (2ª ocorrência da Correção 11) | Curso, 08/10 |
 | 71 | Variáveis exportadas são herdadas por processos filhos; `set` mostra tudo, `env` só as exportadas (2ª ocorrência da Correção 12) | Curso, 08/10 |
 | 72 | `\` escapa um caractere e não produz `\n`; aspas duplas ainda expandem | Curso, 08/10 |
+| 73 | `updatedb` refaz o índice inteiro; `locate` lê o índice e `find` olha o disco | Curso, 09/10 |
+| 74 | `type` mostra como o shell interpreta um nome, não "o tipo de binário" | Curso, 09/10 |
 
 O Laboratório 2 (06/10) não gerou correção numerada: não houve erro conceitual.
 
@@ -430,7 +432,7 @@ Itens antigos de conteúdo já estudado, tirados da rotina diária em 06/10 para
 |---|---|
 | Correções 60 a 68 | Cards anotados em 05/10, conforme informado |
 | Questões erradas do simulado #1 | Correções 62 a 68 anotadas; os cinco chutes errados viram ênfase de estudo, sem card |
-| Correções 69 a 72 (curso, 08/10) | A anotar no Notion |
+| Correções 69 a 74 (curso, 08/10 e 09/10) | A anotar no Notion |
 | Questões erradas do simulado #2 | A corrigir no Notion no mesmo dia do simulado (11/10) |
 
 ---
@@ -442,3 +444,4 @@ Itens antigos de conteúdo já estudado, tirados da rotina diária em 06/10 para
 | 06/10/2026 | Criação. Reúne o simulado #1, as autoavaliações, os checkpoints, o índice das correções 1 a 68, os erros recorrentes e a fila de retaguarda. Registra as regras de 06/10 (só anotar questões erradas; correção no Notion; retaguarda de erros antigos) |
 | 06/10/2026 | Acrescentadas a seção 2.5 (dicas recorrentes por tema) e o registro do mini-simulado de reforço R1 na seção 4 |
 | 08/10/2026 | Correções 69 a 72 (curso, 08/10); pré-checkpoint com a compra do voucher adiada (gatilho: média dos três últimos simulados ≥ 30); simulado #2 de volta ao domingo 11/10; autoavaliação da Semana 5 na sexta 09/10 |
+| 09/10/2026 | Correções 73 e 74 (curso, 09/10) |
