@@ -42,12 +42,12 @@ Simulado gratuito de acesso direto, sem cadastro. Menor e mais simples que os an
 
 Escritos sob medida, com distribuição de pesos idêntica à do exame e gabarito comentado. A partir do #2, com dificuldade maior (ver a seção "Questões reais da LPI"). A vantagem sobre os anteriores é que as questões atacam **os pontos em que você já errou** — as correções registradas nos cadernos (60 até 02/10) viram questões.
 
-**Série dominical (regra de 02/10).** Todo domingo há um simulado geral de 40 questões, cronometrado. Só o primeiro existe. Os demais são produzidos **sob pedido**, com pelo menos três dias de antecedência. O `simulado-02` foi antecipado para sexta 09/10 e precisa estar pronto na quinta 08/10 à noite.
+**Série dominical (regra de 02/10).** Todo domingo há um simulado geral de 40 questões, cronometrado. Só o primeiro existe. Os demais são produzidos **sob pedido**, com pelo menos três dias de antecedência. O próximo, `simulado-02`, deve ser pedido em quinta 08/10 e estar pronto na sexta 09/10 à noite.
 
 | # | Data | Arquivo ou fonte | Situação |
 |---|---|---|---|
 | 1 | **Seg 05/10** (adiado do dom 04/10) | `simulado-01-diagnostico.md` | Pronto |
-| 2 | **Sex 09/10** (antecipado de dom 11/10) | `simulado-02-*.md` | Pedido em 07/10 |
+| 2 | Dom 11/10 | `simulado-02-*.md` | A pedir em qui 08/10 |
 | 3 | Dom 18/10 | `simulado-03-*.md` | A pedir até qui 15/10 |
 | 4 | Qui 22/10 | Exame final de prática do NDG | Fonte externa, gratuita |
 | 5 | Dom 25/10 | `simulado-05-*.md` | A pedir até qui 22/10 |
