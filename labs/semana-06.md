@@ -117,7 +117,7 @@ Posição na abertura da semana: **checkpoint na aula 31** (30/09). Sem registro
 |---|---|---|---|
 | ~~Qua 07~~ | ~~31 a 43~~ | Adiadas para quinta 08/10 (pedido de 07/10) | — |
 | Qui 08 | **31 a 35 (5 aulas, feitas); checkpoint na 36** | Retomada do curso em 08/10 | — |
-| Sex 09 | 36 a 50 (15 aulas): a **2x** até a 43 (o 3.3 já foi praticado), **1.25x** da 44 à 50 (início do Tópico 5) | Mais aulas na sexta, pedido de 08/10 | cerca de 1h15 |
+| Sex 09 | **36 a 40 (5 aulas, feitas até agora)**; 41 a 50 (10 aulas) ainda previstas para hoje, a **2x** até a 43 e **1.25x** da 44 à 50 | Mais aulas na sexta, pedido de 08/10 | cerca de 1h15 no total |
 | Sáb 10 | 51 a 57 (7 aulas), **antes da Prática 2** | 1.25x | cerca de 45 min |
 
 As faixas de 44 a 57 são aproximadas: o número exato das aulas de cada objetivo do Tópico 5 só aparece ao chegar nelas. Se a faixa de permissões (5.3) terminar antes ou depois da 57, ajuste a divisão entre quarta e sexta, mantendo a regra: **as aulas de usuários e grupos vêm antes da Prática 1 (quinta, no mesmo dia) e as de permissões e bits especiais vêm antes da Prática 2 (sábado).**
@@ -134,7 +134,7 @@ Regras do curso:
 |---|---|---|---|
 | Qua 07/10 | — | — | Adiada para 08/10 |
 | Qui 08/10 | 31 a 35 | **35** (checkpoint na 36) | Ver "Curso, aulas 31 a 35" nos registros |
-| Sex 09/10 | | | |
+| Sex 09/10 | 36 a 40 (parcial) | **40** até agora (checkpoint provisório na 41) | Ver "Curso, aulas 36 a 40" nos registros |
 | Sáb 10/10 | | | |
 
 ---
@@ -471,13 +471,40 @@ Entregável: `cheatsheets/permissoes.md`, com a cola rápida desta semana reescr
 
 ## Autoavaliação da Semana 5 — Sexta 09/10
 
-Dez questões sobre shell script (objetivo 3.3), respondidas **sem consultar**, três dias depois do Laboratório 2. Mede a retenção, como na regra da Semana 4. Elabore-as na sexta 09/10, antes de responder, a partir do caderno da Semana 5: variáveis e aspas, argumentos (`$1`, `$#`, `$@`), `if` com `-eq` e `=`, `for`, `exit` e `$?`, `#!` e `chmod +x`, `vi` e `nano`.
+Dez questões sobre shell script (objetivo 3.3), respondidas **sem consultar**, três dias depois do Laboratório 2. Mede a retenção, como na regra da Semana 4. As questões foram escritas em 09/10 a partir do caderno da Semana 5 e da cola rápida de shell script. **Responda primeiro, confira só ao final.** Escreva as respostas à mão, como na prova, e use a segunda coluna do gabarito só depois.
+
+1. O que é o *shebang*, como se escreve e em que posição do arquivo ele precisa estar?
+2. Um script chamado `s.sh` pode ser executado de duas formas: `./s.sh` e `bash s.sh`. Qual delas exige a permissão de execução (`x`) e por quê?
+3. Qual destas atribuições está correta, e o que há de errado nas outras? (a) `nome = Davi` (b) `nome=Davi` (c) `$nome=Davi`
+4. O script é chamado com `./s.sh Davi Morais`. Quanto valem `$0`, `$1`, `$2` e `$#`?
+5. Com `nome=Davi`, o que imprimem `echo "Ola, $nome"` e `echo 'Ola, $nome'`?
+6. Escreva um `if` que imprima `erro` quando o número de argumentos for diferente de 2.
+7. No teste `[ ... ]`, qual a diferença entre `-eq` e `=`? Escreva um exemplo de cada.
+8. O que o `$?` guarda? O que significam `exit 0` e `exit 1`, e o que fazem `&&` e `||` entre dois comandos?
+9. Escreva um `for` que imprima os números de 1 a 5, de duas formas.
+10. No `vi`, qual sequência entra no modo de inserção, grava e sai? Como sair **sem** gravar? E no `nano`, como gravar e sair?
 
 | Campo | Valor |
 |---|---|
 | Acertos | de 10 |
 | Meta | 8 ou mais |
 | Erros viram | lista das questões erradas aqui; a correção fica no Notion |
+
+<details>
+<summary>Gabarito (abra só depois de responder)</summary>
+
+1. É a primeira linha do script, no formato `#!/bin/bash`: os **dois primeiros caracteres** são `#!`, sem espaço, comentário ou linha vazia antes. Diz qual interpretador executa o arquivo quando ele é chamado com `./`.
+2. `./s.sh` exige o `x`, porque o sistema executa o arquivo diretamente. `bash s.sh` só precisa de permissão de **leitura**, porque o `bash` é quem executa e o arquivo é só dado de entrada.
+3. A (b) `nome=Davi`. Em (a), os espaços ao redor do `=` fazem o shell tratar `nome` como um comando. Em (c), o `$` só se usa para **ler** a variável, não para atribuir.
+4. `$0` vale `./s.sh`, `$1` vale `Davi`, `$2` vale `Morais` e `$#` vale `2`.
+5. A primeira imprime `Ola, Davi` (aspas duplas expandem a variável). A segunda imprime `Ola, $nome` (aspas simples são literais).
+6. `if [ $# -ne 2 ]; then echo "erro"; fi` (em várias linhas é equivalente). Os espaços dentro dos colchetes são obrigatórios.
+7. `-eq` compara **números** (`[ $a -eq 5 ]`); `=` compara **texto** (`[ "$a" = "Davi" ]`). Para números também existem `-ne`, `-lt`, `-le`, `-gt` e `-ge`.
+8. `$?` guarda o **código de saída** do último comando. `exit 0` indica sucesso e `exit 1` (ou outro valor diferente de 0) indica erro. `&&` executa o segundo comando só se o primeiro der 0; `||` executa o segundo só se o primeiro der diferente de 0.
+9. `for i in 1 2 3 4 5; do echo $i; done` e `for i in $(seq 1 5); do echo $i; done`.
+10. No `vi`: `i` (inserir), `Esc` (voltar ao modo de comando), `:wq` (gravar e sair). Sair sem gravar: `:q!`. No `nano`: `Ctrl+O` grava e `Ctrl+X` sai.
+
+</details>
 
 ---
 
@@ -945,6 +972,57 @@ O caderno diz que a contra-barra serve para "tratar o próximo dígito como norm
 
 Para ver: `NOME=Davi ; echo "$NOME" '$NOME' \$NOME` imprime `Davi $NOME $NOME`.
 
+### Curso, aulas 36 a 40 — sexta 09/10 (parcial)
+
+Aulas 36 a 40 assistidas até agora. Você ainda vai ver mais aulas hoje; registre onde parou ao fim do dia.
+
+**Conteúdo registrado**
+
+| Tema | O que ficou anotado |
+|---|---|
+| Prompt e hostname | O prompt mostra o usuário e o nome da máquina; `/etc/hostname`; `sudo hostnamectl set-hostname davi18` |
+| Usuário comum e root | `$` é usuário comum; `#` é root; `sudo su` troca para root |
+| Encontrar arquivos | `locate` (índice em cache), `sudo updatedb`, `find`, `type`, `whereis` |
+| Prática | `find / -iname "*.txt"`; `touch teste.txt`, `sudo updatedb`, `locate teste.txt` |
+| Documentação | `man`, seções do manual, `man -k tty`, `apropos`, `man -f`, `whatis`, `man 5` |
+| `info` | Páginas do GNU, nem todo comando tem; hiperlinks e navegação |
+
+**Ajustes de caderno (sem correção numerada)**
+
+1. `find / -iname “*.txt”` está com aspas curvas; use aspas **retas**. Rodando em `/`, o `find` imprime muitas linhas de `Permission denied` (Correção 31). Use `find / -iname "*.txt" 2>/dev/null`. As aspas ao redor do `*.txt` existem para que o **shell não expanda** o curinga antes do `find` (Correção 72).
+2. "Sessões" do manual é **seções**. As principais: 1 comandos de usuário, 2 chamadas de sistema, 3 bibliotecas, 4 arquivos especiais (`/dev`), 5 formatos de arquivo, 6 jogos, 7 diversos, 8 administração. Para abrir uma seção específica, informe o comando: `man 5 passwd` (formato do arquivo `/etc/passwd`) contra `man passwd` (o comando, seção 1). Só o número, como está no caderno, não basta.
+3. `man -k` e `apropos` buscam a palavra no **nome e na descrição** (podem trazer muitos resultados); `man -f` e `whatis` mostram a descrição de **um nome exato**.
+4. Sobre o `info`: sem argumento, `info` abre o **diretório** de todos os manuais disponíveis; `info ls` abre o manual do `ls`. A navegação por links usa `Enter` no link, `n` e `p` para o próximo e o anterior e `q` para sair. Nem todo comando tem página `info`; quando não tem, o `info` mostra a página do `man`.
+5. O prompt mostra `usuário@hostname`. O hostname novo aparece em **terminais novos**; o `hostnamectl` não precisa de reinício.
+6. `sudo su` funciona; as formas mais comuns são `sudo -i` e `su -`, que também carregam o ambiente do root. `exit` volta ao usuário comum.
+7. Erros de digitação: "cimando", "omandos".
+
+**Pontos fortes:** a prática de `touch`, `updatedb` e `locate` mostra a diferença entre os dois comandos de busca; o exemplo de `man -k tty` ligado à seção 4 do manual está correto.
+
+#### Correção 73 — o `updatedb` refaz o índice inteiro, não "atualiza o arquivo adicionado"; o `locate` lê o índice e o `find` olha o disco
+
+O caderno diz que `sudo updatedb` "atualiza o arquivo que foi adicionado no cache". O `updatedb` percorre o sistema de arquivos e **reconstrói o banco de dados inteiro** que o `locate` consulta. Por isso a diferença entre os dois comandos:
+
+| Comando | Como procura | Arquivo criado há 1 minuto aparece? |
+|---|---|---|
+| `locate` | Consulta um **banco de dados** (índice) pronto; é muito rápido | **Não**, até rodar `sudo updatedb` |
+| `find` | **Percorre os diretórios na hora**; é mais lento e aceita filtros (nome, tipo, tamanho, data) | **Sim**, imediatamente |
+
+Para ver: `touch teste.txt ; locate teste.txt` (nada, ou só resultados antigos) ; `sudo updatedb ; locate teste.txt` (agora aparece) ; `find . -name teste.txt` (aparece sem o `updatedb`).
+
+#### Correção 74 — o `type` mostra como o shell interpreta um nome, não "o tipo de binário"
+
+O caderno diz que `type` "identifica o tipo de binário que estamos utilizando". O `type` é um comando **interno do shell** que responde "o que o shell faz com este nome?". As respostas possíveis:
+
+| Resposta | Exemplo |
+|---|---|
+| Alias | `type ls` pode dar `ls is aliased to 'ls --color=auto'` (como na Correção 8) |
+| Comando interno do shell (*builtin*) | `type cd` dá `cd is a shell builtin` |
+| Palavra reservada | `type if` dá `if is a shell keyword` |
+| Programa em arquivo | `type cp` dá `cp is /usr/bin/cp` |
+
+Compare com os outros dois: `which` mostra só o caminho dentro do `PATH`; `whereis` mostra o **binário, o código-fonte e as páginas de manual**. `type -a` lista **todas** as ocorrências (por exemplo, `echo` é interno e também existe em `/usr/bin/echo`). Confirmado no terminal.
+
 ### Prática 1 — sábado 10/10
 
 *A preencher.*
@@ -955,7 +1033,7 @@ Para ver: `NOME=Davi ; echo "$NOME" '$NOME' \$NOME` imprime `Davi $NOME $NOME`.
 
 ### Correções da semana
 
-A numeração segue a série global. A última registrada na Semana 5 foi a **61** (o `2` do `2>` não é o `2` do `$?`). Em 05/10, o simulado #1 gerou as **Correções 62 a 68**. **A próxima é a 73.** Em 08/10, o curso gerou as Correções 69 a 72.
+A numeração segue a série global. A última registrada na Semana 5 foi a **61** (o `2` do `2>` não é o `2` do `$?`). Em 05/10, o simulado #1 gerou as **Correções 62 a 68**. **A próxima é a 75.** Em 08/10, o curso gerou as Correções 69 a 72; em 09/10, as 73 e 74.
 
 O painel de resultados, a lista de questões erradas e o índice das Correções 1 a 68 estão em `praticas-resultados-simulados-e-correcoes.md`.
 
@@ -972,6 +1050,8 @@ O painel de resultados, a lista de questões erradas e o índice das Correções
 | 70 | `?` casa um caractere qualquer; as chaves `{}` não são globbing (2ª ocorrência da Correção 11) | Curso, 08/10 |
 | 71 | Variáveis exportadas são herdadas por processos filhos; `set` mostra tudo, `env` só as exportadas (2ª ocorrência da Correção 12) | Curso, 08/10 |
 | 72 | `\` escapa um caractere e não produz `\n`; aspas duplas ainda expandem | Curso, 08/10 |
+| 73 | `updatedb` refaz o índice inteiro; `locate` lê o índice e `find` olha o disco | Curso, 09/10 |
+| 74 | `type` mostra como o shell interpreta um nome, não "o tipo de binário" | Curso, 09/10 |
 
 Os cards das Correções 62 a 68 foram anotados no Notion em 05/10. O Laboratório 2 de 06/10 **não gerou correção numerada**: não houve erro conceitual, só ajustes de caderno. A partir de 06/10, erros de simulado não geram correção numerada. **A próxima, para erros de laboratório e de curso, é a 69.**
 
@@ -986,11 +1066,13 @@ Os cards das Correções 62 a 68 foram anotados no Notion em 05/10. O Laboratór
 - [x] Correções 62 a 68 registradas (segunda)
 - [x] Cards das Correções 62 a 68 no Notion (05/10)
 - [x] Arquivos ocultos: dívida encerrada em 05/10, a pedido (comandos já dominados)
-- [x] Aquecimento de conversões: segunda a domingo
-- [x] Laboratório 2, três scripts (terça 06/10 )
+- [ ] Aquecimento de conversões: segunda a domingo
+- [x] ~~Revisão prática dos erros dos Tópicos 1 a 3 (terça)~~: cancelada em 06/10 (retaguarda)
+- [x] Laboratório 2, três scripts (terça 06/10)
+- [ ] Comparação de compressão refeita; saídas do `teste.sh`, do `vi` e do `nano` registradas: sem registro em 06/10, primeiro corte da fila
 - [x] **Pré-checkpoint** feito; **voucher adiado** por decisão de 08/10 (gatilho: média dos três últimos simulados ≥ 30; primeira avaliação em 22/10)
 - [x] Curso, aulas 31 a 35 (quinta 08/10; checkpoint na 36)
-- [ ] Curso, aulas 36 a 50 (sexta 09/10)
+- [ ] Curso, aulas 36 a 50 (sexta 09/10): 36 a 40 feitas até agora
 - [ ] Prática 1, usuários e grupos, e questões oficiais da LPI 5.1 e 5.2 (sábado 10/10)
 - [ ] `simulado-02` pedido (quinta 08/10) e pronto (sexta à noite)
 - [ ] Autoavaliação da Semana 5 e correção (sexta 09/10)
