@@ -38,7 +38,7 @@
 | Autoavaliação da Semana 4 | **14 de 20** (29/09) — respondida 4 dias depois; abaixo da meta de 16. **Correções 49 a 52 anotadas no caderno em 29/09** |
 | Bandit | Níveis 0 a 9 |
 | Cards de revisão (Notion) | Em uso desde a Semana 1 |
-| Curso do Muller | **Checkpoint na aula 36 de 72** (08/10; aulas 31 a 35 assistidas) — 37 restantes. Aulas 26 a 30 em 30/09 |
+| Curso do Muller | **Aulas 36 a 40 assistidas em 09/10 (parcial; checkpoint provisório na 41)** — 32 restantes. Em 08/10: aulas 31 a 35 |
 
 ### Dívidas pagas (29/09 a 06/10)
 
@@ -58,7 +58,7 @@
 
 | Item | Prazo |
 |---|---|
-| **Curso, aulas 36 a 72** (37 aulas; as 31 a 35 foram concluídas em 08/10) | aulas 36 a 50 na **sexta 09/10**, 51 a 57 no sábado 10/10 e 58 a 72 na Semana 7 |
+| **Curso, aulas 41 a 72** (32 aulas; as 36 a 40 foram vistas em 09/10, e mais aulas estão previstas para a mesma sexta) | aulas 41 a 50 na **sexta 09/10**, 51 a 57 no sábado 10/10 e 58 a 72 na Semana 7 |
 | Registrar as saídas do `teste.sh` e as três saídas de `vi` e `nano` (Laboratório 1) | sem registro em 06/10; retaguarda, primeiro corte da fila |
 | **Questões oficiais da LPI** (Exercícios Guiados e Exploratórios), lições 5.1 e 5.2 e depois 5.3 e 5.4, 20 min cada | sábado 10/10 e domingo 11/10, no fim das Práticas 1 e 2 |
 | **Autoavaliação da Semana 5** — 10 questões | sexta 09/10 |
