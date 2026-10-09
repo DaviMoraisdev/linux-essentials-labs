@@ -41,7 +41,7 @@ Os temas se sobrepõem às questões dos cinco tópicos; não são questões ext
 | Quando | O que | Tempo |
 |---|---|---|
 | Qui 08/10 | Pedir o `simulado-02` com as quatro exigências da seção 3 | 2 min |
-| Sex 09/10 | Simulado #2 (antecipado em 07/10) já traz o mínimo da seção 2.1; apurar o desempenho por tema | dentro do simulado |
+| Dom 11/10 | Simulado #2 já traz o mínimo da seção 2.1; apurar o desempenho por tema | dentro do simulado |
 | **Ter 13/10** | **Mini-simulado R1** (20 questões, 25 min) e apuração (10 min). Substitui o aquecimento do dia | 35 min, sendo 25 novos |
 | Prática 1 da Semana 7 | Mapa dos diretórios virtuais: `/proc`, `/sys`, `/dev` lado a lado, com `cat` de um arquivo de cada | dentro da Prática 1 |
 | **Ter 20/10** | **Mini-simulado R2**, pedido até sex 16/10: inclui `/sys`, rede e processos da Semana 7 | 35 min |
