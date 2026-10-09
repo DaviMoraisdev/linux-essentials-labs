@@ -9,7 +9,7 @@ Arquivos relacionados:
 | Arquivo | O que traz |
 |---|---|
 | `praticas-simulado-01-resultado-05-10.md` | A prova do simulado #1 corrigida, questão por questão |
-| `semana-06-permissoes.md` | O texto completo das Correções 62 a 68 |
+| `semana-06-permissoes.md` | O texto completo das Correções 62 a 72 |
 | `plano-linux-essentials-010-160.md` | Seção 7 (série de simulados), seção 9 (erros recorrentes) e seção 11 (checkpoints) |
 | `praticas-fontes-de-simulados.md` | De onde vêm as questões |
 
@@ -23,7 +23,7 @@ Arquivos relacionados:
 
 **Erros antigos de comandos já dominados vão para a retaguarda.** Eles saem do aquecimento diário e das pendências. Voltam de duas formas: nos próprios simulados, que continuam medindo se o erro reaparece, e na revisão leve da Semana 10, pelos cards do Notion. A lista está na seção 7.
 
-**A numeração das correções continua para laboratório e curso.** A próxima é a **69**.
+**A numeração das correções continua para laboratório e curso.** A próxima é a **73**.
 
 ### 1.2 Rotina após cada simulado
 
@@ -57,7 +57,7 @@ O exame real aprova com **500 de 800 pontos**, cerca de 65%, ou 26 acertos. A es
 | # | Data | Fonte | Meta | Acertos | % | Chutes acertados | Acertos firmes | Tempo | Situação |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | Seg 05/10 | `simulado-01-diagnostico` | Diagnóstico (esperado de 24 a 30) | **28** | **70%** | 5 | **23** | 20 min 31 s | **Concluído** |
-| 2 | **Sex 09/10** (antecipado de dom 11/10) | `simulado-02` (pedido em 07/10, pronto na qui 08/10) | **24 ou mais** (Checkpoint A) | | | | | | A fazer |
+| 2 | Dom 11/10 | `simulado-02` (pedir qui 08/10, pronto sex 09/10) | **24 ou mais** (Checkpoint A) | | | | | | A fazer |
 | 3 | Dom 18/10 | `simulado-03` | **28 ou mais** (Checkpoint B) | | | | | | A fazer |
 | 4 | Qui 22/10 | Exame final de prática do NDG | 28 ou mais | | | | | | A fazer |
 | 5 | Dom 25/10 | `simulado-05` | **30 ou mais** | | | | | | A fazer |
@@ -90,7 +90,7 @@ As autoavaliações medem a retenção do conteúdo de uma semana. Desde a Seman
 | Semana 2 | Conteúdo da Semana 2 | 14/09 | 15 | **14** | 12 | Respondida no dia do estudo. O único erro foi a Q9, sobre o `export` |
 | Semana 3 | Arquivos, links e pacotes | 19/09 | 20 | **20** | 16 | Respondida no dia do estudo. Gerou as Correções 27 e 28 (justificativas) |
 | Semana 4 | Objetivos 3.1 e 3.2, filtros e compactação | 29/09 | 20 | **14** | 16 | Abaixo da meta. Respondida quatro dias depois do estudo. Gerou as Correções 49 a 52 |
-| Semana 5 | Shell script | Dom 11/10 (movida de sexta em 07/10) | 10 | | **8** | A fazer. Versão reduzida |
+| Semana 5 | Shell script | Sex 09/10 | 10 | | **8** | A fazer. Versão reduzida |
 | Semana 6 | Tópico 5, permissões | Sex 16/10 | 10 | | A definir | A fazer |
 
 Leitura: a de 29/09 (14/20, quatro dias depois do estudo) e o simulado #1 são os dados de retenção mais distantes do estudo disponíveis até aqui.
@@ -101,8 +101,8 @@ Os critérios completos estão na seção 11 do plano geral.
 
 | Checkpoint | Data | Critérios | Situação | Resultado e decisão |
 |---|---|---|---|---|
-| Pré-checkpoint | Qua 07/10 | Simulado #1 feito e Laboratório 2 feito | **Os dois cumpridos em 06/10** | Comprar o voucher e agendar **09/11** |
-| A | Dom 11/10 | Curso até a aula 57; Laboratório 2; Práticas 1 e 2; simulado #2 com 24 ou mais; voucher e agendamento | **Critério 2 cumprido em 06/10** | |
+| Pré-checkpoint | Qua 07/10 | Simulado #1 feito e Laboratório 2 feito | **Os dois cumpridos em 06/10** | **Compra do voucher adiada em 08/10** (decisão de Davi). Gatilho: média dos três últimos simulados com 30 ou mais; primeira avaliação em 22/10. Data-alvo 09/11, sem agendamento |
+| A | Dom 11/10 | Curso até a aula 57; Laboratório 2; Práticas 1 e 2; simulado #2 com 24 ou mais; **gatilho do voucher registrado** (substituiu "voucher e agendamento" em 08/10) | **Critérios 2 e 5 cumpridos** (06/10 e 08/10) | |
 | B | Dom 18/10 | Curso fechado (aula 72); práticas feitas; simulado #3 com 28 ou mais | | |
 | Gate | Dom 01/11 | Dois simulados consecutivos com 34 ou mais entre os de 27/10, 29/10 e 01/11; laboratório integrador | | |
 | Final | Qui 05/11 | 34 ou mais: ir. De 30 a 33: ir com revisão leve. Abaixo de 30: remarcar, se a janela permitir | | |
@@ -111,7 +111,7 @@ Os critérios completos estão na seção 11 do plano geral.
 
 Temas que aparecem com frequência nos relatos de candidatos (ver `praticas-reforco-dicas-recorrentes.md`). Formato: acertos de questões do tema. O simulado #1 não tinha esta marcação por tema, então só os mini-simulados de reforço e os simulados a partir do #2 preenchem a tabela.
 
-| Tema | Mínimo por simulado | R1 (13/10) | #2 (09/10) | R2 (20/10) | #3 (18/10) | #5 | #7 | #8 | #9 |
+| Tema | Mínimo por simulado | R1 (13/10) | #2 (11/10) | R2 (20/10) | #3 (18/10) | #5 | #7 | #8 | #9 |
 |---|---|---|---|---|---|---|---|---|---|
 | Permissões | 4 | /5 | | | | | | | |
 | `tar` e compressão | 2 | /4 | | | | | | | |
@@ -261,7 +261,7 @@ Decisão ou checkpoint associado: .
 
 *A preencher na terça 13/10. A apuração por tema vai na tabela da seção 2.5.*
 
-### Simulado #2 — 09/10/2026 (antecipado de 11/10)
+### Simulado #2 — 11/10/2026
 
 | Campo | Valor |
 |---|---|
@@ -270,13 +270,13 @@ Decisão ou checkpoint associado: .
 | Acertos | de 40 |
 | Meta | **24 ou mais** (Checkpoint A) |
 
-*A preencher na sexta 09/10. Observação: o Tópico 5 estará só parcialmente estudado (Prática 2 e aulas 51 a 57 ficam para o sábado), então a leitura do resultado deve separar as questões de permissões.*
+*A preencher no domingo 11/10. Observação: o simulado vem antes da Prática 2 (permissões), então separe as questões de permissões na leitura.*
 
 ---
 
-## 5. Índice de correções (1 a 68)
+## 5. Índice de correções (1 a 72)
 
-Total: **68 correções** em cinco semanas. O texto completo de cada uma está no arquivo da semana indicada. A numeração é global e contínua; a próxima é a **69**.
+Total: **72 correções** em cinco semanas. O texto completo de cada uma está no arquivo da semana indicada. A numeração é global e contínua; a próxima é a **73**.
 
 | Semana | Correções | Quantidade |
 |---|---|---|
@@ -284,7 +284,7 @@ Total: **68 correções** em cinco semanas. O texto completo de cada uma está n
 | 3 | 17 a 28 | 12 |
 | 4 | 29 a 52 | 24 |
 | 5 | 53 a 61 | 9 |
-| 6 (simulado #1) | 62 a 68 | 7 |
+| 6 (simulado #1 e curso) | 62 a 72 | 11 |
 
 Nota de 06/10: o fechamento da Semana 4 dizia "dez correções (43 a 52)". As correções da Semana 4 são, na verdade, 29 a 52, num total de 24, e a soma de 52 correções até a Semana 4 confere.
 
@@ -368,7 +368,7 @@ Nota de 06/10: o fechamento da Semana 4 dizia "dez correções (43 a 52)". As co
 | 60 | O `./` e o `Permission denied` têm causas diferentes | Laboratório 1, bloco 1, 02/10 |
 | 61 | O `2` do `2>` e o `2` do `$?` não têm relação | Laboratório 1, bloco 5, 04/10 |
 
-### Semana 6 — arquivo `semana-06-permissoes.md` (simulado #1)
+### Semana 6 — arquivo `semana-06-permissoes.md` (simulado #1 e curso)
 
 | # | Tema | Questão |
 |---|---|---|
@@ -379,6 +379,10 @@ Nota de 06/10: o fechamento da Semana 4 dizia "dez correções (43 a 52)". As co
 | 66 | `/proc` é de processos, `/dev` é de dispositivos | Q15 |
 | 67 | `man` é o manual; o `--manual` não existe no `cp` | Q16 |
 | 68 | `chmod` muda permissões, `chown` muda o dono | Q38 |
+| 69 | `~/.bashrc` é de shell interativo sem login, e a diferença é login ou não | Curso, 08/10 |
+| 70 | `?` casa um caractere qualquer; `{}` não é globbing (2ª ocorrência da Correção 11) | Curso, 08/10 |
+| 71 | Variáveis exportadas são herdadas por processos filhos; `set` mostra tudo, `env` só as exportadas (2ª ocorrência da Correção 12) | Curso, 08/10 |
+| 72 | `\` escapa um caractere e não produz `\n`; aspas duplas ainda expandem | Curso, 08/10 |
 
 O Laboratório 2 (06/10) não gerou correção numerada: não houve erro conceitual.
 
@@ -391,6 +395,8 @@ O Laboratório 2 (06/10) não gerou correção numerada: não houve erro conceit
 | `cd ..` e `cd -` trocados | **5** | 1, 53 e 64 | `..` é o pai (espaço); `-` é o anterior (tempo) |
 | `sort` sem `-n` descrito como "invertendo a ordem" | **4** | 32, 33 e 34, 50 | As duas formas são crescentes; só o `-r` inverte; `-k` é coluna |
 | Resultado certo pelo motivo errado (`2>&1`, hard link, `-f` do `tar`) | 3 | 29, 27, 52 | O resultado certo pelo motivo errado quebra quando a pergunta muda de ângulo |
+| Direção da herança de variáveis (pai para filho) | 2 | 12 e 71 | A variável exportada vai para o **processo filho**, nunca para "outras sessões" |
+| `{}` tratado como globbing | 2 | 11 e 70 | A expansão de chaves cria nomes antes do comando, sem olhar o disco; o globbing só enxerga o que já existe |
 | `grep -v` entendido como *verbose* | 1 | 49 | É *invert*; no `grep` é a exceção, nos demais comandos o `-v` é *verbose* |
 
 **Padrão novo, do simulado #1:** nos Tópicos 1 e 2, a confiança foi maior que o acerto. Seis dos sete erros com convicção caíram neles.
@@ -424,7 +430,8 @@ Itens antigos de conteúdo já estudado, tirados da rotina diária em 06/10 para
 |---|---|
 | Correções 60 a 68 | Cards anotados em 05/10, conforme informado |
 | Questões erradas do simulado #1 | Correções 62 a 68 anotadas; os cinco chutes errados viram ênfase de estudo, sem card |
-| Questões erradas do simulado #2 | A corrigir no Notion no mesmo dia do simulado (09/10) |
+| Correções 69 a 72 (curso, 08/10) | A anotar no Notion |
+| Questões erradas do simulado #2 | A corrigir no Notion no mesmo dia do simulado (11/10) |
 
 ---
 
@@ -434,3 +441,4 @@ Itens antigos de conteúdo já estudado, tirados da rotina diária em 06/10 para
 |---|---|
 | 06/10/2026 | Criação. Reúne o simulado #1, as autoavaliações, os checkpoints, o índice das correções 1 a 68, os erros recorrentes e a fila de retaguarda. Registra as regras de 06/10 (só anotar questões erradas; correção no Notion; retaguarda de erros antigos) |
 | 06/10/2026 | Acrescentadas a seção 2.5 (dicas recorrentes por tema) e o registro do mini-simulado de reforço R1 na seção 4 |
+| 08/10/2026 | Correções 69 a 72 (curso, 08/10); pré-checkpoint com a compra do voucher adiada (gatilho: média dos três últimos simulados ≥ 30); simulado #2 de volta ao domingo 11/10; autoavaliação da Semana 5 na sexta 09/10 |
