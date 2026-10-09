@@ -32,8 +32,8 @@ Três pontos de atenção:
 
 | Mudança | Detalhe |
 |---|---|
-| **Simulado geral todo domingo** | **O simulado #2 foi antecipado em 07/10 para sexta 09/10** (era domingo 11/10). Os seguintes continuam aos domingos. O calendário completo da série está no plano geral, seção 7 |
-| **Replanejamento de 07/10** | As aulas 31 a 43 foram adiadas da quarta para a quinta 08/10 (junto com as 44 a 50). O simulado #2 vai para a sexta 09/10. A autoavaliação da Semana 5 e as aulas 51 a 57 foram movidas: aulas para o sábado 10/10, autoavaliação para o domingo 11/10 |
+| **Simulado geral todo domingo** | O simulado #2 **continua no domingo 11/10** (foi antecipado para sexta em 07/10 e voltou ao domingo em 08/10). O calendário completo da série está no plano geral, seção 7 |
+| **Replanejamento de 07 e 08/10** | **08/10:** curso retomado (aulas 31 a 35, checkpoint na 36); sexta 09/10 fica para mais aulas (36 a 50) e a autoavaliação da Semana 5; as práticas vão para o fim de semana, **Prática 1 no sábado e Prática 2 no domingo, com ênfase no domingo**; o simulado #2 fica no domingo. **O voucher só será comprado depois que a média dos simulados melhorar** (ver "Pré-checkpoint") |
 | **Checkpoint A** | Domingo 11/10, com critérios e resultado definidos antes. Detalhe no plano geral, seção 11 |
 | **Regras de revisão e correção (06/10)** | Erros antigos de comandos já dominados passam para a **retaguarda** e saem do aquecimento. Nos simulados, só se **anotam as questões erradas**; a correção fica por conta do Notion. Ver a seção "Regras de revisão e correção" |
 | **Mais prática de simulado (06/10)** | Questões da LPI no fim das Práticas 1 e 2 (20 minutos cada) e simulados mais difíceis. Ver a seção "Mais prática de simulado" |
@@ -43,7 +43,7 @@ Três pontos de atenção:
 | **Curso 31 a 43 passa para quarta 07/10, a 2x** | O conteúdo já foi praticado no Laboratório 1, então o vídeo confirma e não ensina |
 | **Correção e revisão** | Em 05/10 os erros do simulado #1 viraram as Correções 62 a 68. Em 06/10 a revisão prática foi cancelada e a correção de simulados passou para o Notion (ver "Regras de revisão e correção") |
 | **Pré-checkpoint de quarta 07/10** | Decide se o voucher é para 09/11 ou direto para 16/11 |
-| **Autoavaliação da Semana 5 reduzida** | 10 questões em vez de 20, **domingo 11/10** (movida em 07/10), cinco dias depois do Laboratório 2 |
+| **Autoavaliação da Semana 5 reduzida** | 10 questões em vez de 20, **sexta 09/10**, três dias depois do Laboratório 2 |
 | **Aquecimento dedicado a permissões** | Cinco conversões por dia, de memória. Os exercícios e o gabarito estão abaixo |
 
 ---
@@ -56,7 +56,7 @@ Três pontos de atenção:
 |---|---|---|
 | **Simulado #1** (40 questões) | Semana 3, adiado de novo | **Segunda 05/10**, primeira atividade do dia |
 | Laboratório 2 — `backup.sh`, `contar.sh`, `usuario.sh` (`filtrar.sh` opcional) | Semana 5 | Terça 06/10 |
-| Autoavaliação da Semana 5, 10 questões | Semana 5 | Dom 11/10 (movida em 07/10) |
+| Autoavaliação da Semana 5, 10 questões | Semana 5 | Sexta 09/10 |
 | Curso, aulas 31 a 43 | Semana 5 | Quarta 07/10, a 2x |
 | Voucher da prova e agendamento | Semana 5, adiado duas vezes | Quarta 07/10, com o pré-checkpoint |
 | Revisão prática dos erros do simulado #1 (a apuração e as correções foram concluídas em 05/10) | Semana 6 | Cancelada em 06/10; vai para a retaguarda |
@@ -73,13 +73,13 @@ Três pontos de atenção:
 |---|---|---|
 | **Seg 05** | **Simulado #1** (60 min, antes de qualquer outra coisa) · apuração e correções (25 min) · aquecimento | cerca de 1h50 |
 | **Ter 06** | Aquecimento · **Laboratório 2**: `backup.sh`, `contar.sh`, `usuario.sh` (**concluído**) · comparação de compressão e saídas do `vi` e `nano` (sem registro em 06/10) | cerca de 1h15 |
-| **Qua 07** | **Voucher, agendamento e pré-checkpoint (10 min)** · aquecimento (feito, com estudo prévio) · aulas 31 a 43 **adiadas para quinta** | cerca de 20 min |
-| **Qui 08** | Aquecimento (com leitura da cola dos bits especiais) · **curso, aulas 31 a 43 a 2x e 44 a 50** · **Prática 1 — usuários e grupos**, com **20 min de questões da LPI** no fim · receber o `simulado-02` | cerca de 3h15 |
-| **Sex 09** | Aquecimento e reteste cego (13 min) · **simulado #2** (60 min, antecipado de domingo) · apuração e questões erradas no Notion (25 a 30 min) | cerca de 1h45 |
-| **Sáb 10** | Aquecimento · **curso, aulas 51 a 57** (antes da prática) · **Prática 2 — permissões**, com **20 min de questões da LPI** no fim · limpeza dos usuários de teste | cerca de 2h20 |
-| **Dom 11** | Aquecimento · **autoavaliação da Semana 5** (10 questões) e correção · commits · **Checkpoint A** | cerca de 1h00 |
+| **Qua 07** | Voucher e pré-checkpoint (**compra adiada**, ver o pré-checkpoint) · aquecimento (feito, com estudo prévio) | cerca de 20 min |
+| **Qui 08** | Aquecimento (com leitura da cola dos bits especiais) · **curso retomado: aulas 31 a 35**, checkpoint na 36 · pedir o `simulado-02` | cerca de 1h30 |
+| **Sex 09** | Aquecimento e reteste cego (13 min) · **curso, aulas 36 a 50** (mais aulas) · **autoavaliação da Semana 5** (10 questões) e correção | cerca de 2h15 |
+| **Sáb 10** | Aquecimento · **Prática 1 — usuários e grupos**, com **20 min de questões da LPI** no fim · **curso, aulas 51 a 57**, antes da Prática 2 | cerca de 2h20 |
+| **Dom 11** | Aquecimento · **simulado #2** (60 min, primeira atividade) · apuração · **Prática 2 — permissões**, com **20 min de questões da LPI** e limpeza dos usuários de teste (**ênfase do fim de semana**) · **Checkpoint A** | cerca de 3h40 |
 
-**Total nominal: cerca de 11h00** (10h35 antes de 06/10, menos 15 min da revisão cancelada, mais 40 min das questões da LPI). O replanejamento de 07/10 só realoca atividades: o total não muda, mas **quinta (3h15) e sábado (2h20) ficam pesadas** e sexta e domingo ficam leves.
+**Total nominal: cerca de 11h00** (10h35 antes de 06/10, menos 15 min da revisão cancelada, mais 40 min das questões da LPI). O replanejamento de 07 e 08/10 só realoca atividades: o total não muda, mas **sexta (2h15), sábado (2h20) e sobretudo domingo (3h40) ficam pesados**, e quarta e quinta ficam leves. Se o domingo apertar, a limpeza dos usuários de teste e os 20 minutos da LPI da Prática 2 vão para a segunda 12/10. **O simulado #2 e a Prática 2 não se cortam.**
 
 ### Carga da semana e ordem de corte
 
@@ -99,7 +99,7 @@ A carga passa muito do teto de 7h por uma razão simples: a Semana 5 devolveu ce
 |---|---|---|---|
 | 1 | `filtrar.sh` (já é opcional; fora da conta nominal) | 15 min | Fica sem data |
 | 2 | Comparação de compressão e saídas do `teste.sh`, `vi` e `nano` (dívidas antigas, sem registro em 06/10) | cerca de 15 min | Retaguarda |
-| 3 | Autoavaliação da Semana 5 reduzida a 5 questões | 10 min | Mesmo dia, domingo 11/10 |
+| 3 | Autoavaliação da Semana 5 reduzida a 5 questões | 10 min | Mesmo dia, sexta 09/10 |
 | 4 | Aulas 51 a 57 | 45 min | **Segunda 12/10** (feriado, dia extra da Semana 7) |
 | 5 | Prática 1 — usuários e grupos, **inclusive os 20 min de questões da LPI** | 1h20 | **Segunda 12/10** |
 
@@ -116,9 +116,8 @@ Posição na abertura da semana: **checkpoint na aula 31** (30/09). Sem registro
 | Dia | Aulas | Velocidade | Tempo estimado |
 |---|---|---|---|
 | ~~Qua 07~~ | ~~31 a 43~~ | Adiadas para quinta 08/10 (pedido de 07/10) | — |
-| Qui 08 | 31 a 43 (13 aulas) | **2x**, porque o Laboratório 1 já praticou o 3.3. Reduza para 1x só em uma aula que traga algo que o laboratório não mostrou | cerca de 50 min a 1h |
-| Qui 08 | 44 a 50 (7 aulas), início do Tópico 5 | 1.25x | cerca de 45 min |
-| ~~Sex 09~~ | ~~51 a 57~~ | Movidas para o sábado 10/10 | — |
+| Qui 08 | **31 a 35 (5 aulas, feitas); checkpoint na 36** | Retomada do curso em 08/10 | — |
+| Sex 09 | 36 a 50 (15 aulas): a **2x** até a 43 (o 3.3 já foi praticado), **1.25x** da 44 à 50 (início do Tópico 5) | Mais aulas na sexta, pedido de 08/10 | cerca de 1h15 |
 | Sáb 10 | 51 a 57 (7 aulas), **antes da Prática 2** | 1.25x | cerca de 45 min |
 
 As faixas de 44 a 57 são aproximadas: o número exato das aulas de cada objetivo do Tópico 5 só aparece ao chegar nelas. Se a faixa de permissões (5.3) terminar antes ou depois da 57, ajuste a divisão entre quarta e sexta, mantendo a regra: **as aulas de usuários e grupos vêm antes da Prática 1 (quinta, no mesmo dia) e as de permissões e bits especiais vêm antes da Prática 2 (sábado).**
@@ -133,8 +132,9 @@ Regras do curso:
 
 | Data | Aulas assistidas | Parei na aula | Anotações novas |
 |---|---|---|---|
-| Qua 07/10 | | | |
-| Qui 08/10 | | | |
+| Qua 07/10 | — | — | Adiada para 08/10 |
+| Qui 08/10 | 31 a 35 | **35** (checkpoint na 36) | Ver "Curso, aulas 31 a 35" nos registros |
+| Sex 09/10 | | | |
 | Sáb 10/10 | | | |
 
 ---
@@ -285,7 +285,7 @@ Registro: caderno da Semana 6, seção "Registro das sessões". Se aparecer erro
 
 ---
 
-## Prática 1 — Usuários e grupos — Quinta 08/10
+## Prática 1 — Usuários e grupos — Sábado 10/10 (movida de quinta em 08/10)
 
 Objetivos 5.1 e 5.2. Pré-requisito: aulas de usuários e grupos já vistas. Quarenta e cinco minutos de teclado, 10 de registro, 5 de commit. Prediga o resultado **antes** de executar e anote.
 
@@ -360,7 +360,7 @@ Responda no **LPI Learning Material** (PDF do Projeto) os **Exercícios Guiados*
 
 ---
 
-## Prática 2 — Permissões — Sábado 10/10
+## Prática 2 — Permissões — Domingo 11/10 (movida de sábado em 08/10; ênfase do fim de semana)
 
 Objetivos 5.3 e 5.4. Pré-requisito: aulas de permissões e bits especiais já vistas. Quarenta e cinco minutos de teclado, 10 de registro, 5 de commit. Em todos os blocos: **prediga, execute, compare**.
 
@@ -469,9 +469,9 @@ Entregável: `cheatsheets/permissoes.md`, com a cola rápida desta semana reescr
 
 ---
 
-## Autoavaliação da Semana 5 — Domingo 11/10 (movida de sexta em 07/10)
+## Autoavaliação da Semana 5 — Sexta 09/10
 
-Dez questões sobre shell script (objetivo 3.3), respondidas **sem consultar**, cinco dias depois do Laboratório 2. Mede a retenção, como na regra da Semana 4. Elabore-as no sábado 10/10, depois da Prática 2, a partir do caderno da Semana 5: variáveis e aspas, argumentos (`$1`, `$#`, `$@`), `if` com `-eq` e `=`, `for`, `exit` e `$?`, `#!` e `chmod +x`, `vi` e `nano`.
+Dez questões sobre shell script (objetivo 3.3), respondidas **sem consultar**, três dias depois do Laboratório 2. Mede a retenção, como na regra da Semana 4. Elabore-as na sexta 09/10, antes de responder, a partir do caderno da Semana 5: variáveis e aspas, argumentos (`$1`, `$#`, `$@`), `if` com `-eq` e `=`, `for`, `exit` e `$?`, `#!` e `chmod +x`, `vi` e `nano`.
 
 | Campo | Valor |
 |---|---|
@@ -481,17 +481,17 @@ Dez questões sobre shell script (objetivo 3.3), respondidas **sem consultar**, 
 
 ---
 
-## Simulado #2 — Sexta 09/10 (antecipado de domingo 11/10 em 07/10)
+## Simulado #2 — Domingo 11/10
 
 | Item | Valor |
 |---|---|
-| Arquivo | `praticas/simulado-02-*.md`, a ser produzido. **Precisa estar pronto na quinta 08/10 à noite**, um dia antes do uso (a regra de três dias fica suspensa para este simulado) |
+| Arquivo | `praticas/simulado-02-*.md`, a ser produzido. **Peça hoje, quinta 08/10**; precisa estar pronto até sexta 09/10 à noite |
 | Formato | 40 questões, 60 minutos, distribuição de pesos do exame |
 | Consulta | Nenhuma |
 | Meta | **24 ou mais acertos (60%)** — é o critério de aprovação do Checkpoint A |
 | Objetivo de longo prazo | 65% ou mais |
 
-Expectativa: o Tópico 4 ainda não foi estudado, então as questões dele pesam contra. **Na sexta, o Tópico 5 estará só parcialmente estudado** (Prática 1 feita; aulas 51 a 57 e Prática 2 só no sábado), então as questões de permissões também pesam contra. Isso torna a meta de 24 mais apertada do que no domingo. O que vale ler com cuidado são os Tópicos 1 a 3 (já fechados), as questões de usuários e grupos (5.1 e 5.2) e as de conversão de permissões que o aquecimento já cobriu.
+Expectativa: o Tópico 4 ainda não foi estudado, então as questões dele pesam contra. **No domingo, o simulado vem antes da Prática 2** (permissões), então as questões de permissões também podem pesar, embora as aulas 51 a 57 já tenham sido vistas no sábado. Separe as questões de permissões na leitura. O que vale ler com cuidado são os Tópicos 1 a 3 (já fechados), as questões de usuários e grupos (5.1 e 5.2, praticadas no sábado) e as de conversão de permissões que o aquecimento já cobriu.
 
 Protocolo (atualizado em 06/10): cronometrar, **marcar cada chute**, abrir o gabarito só depois, apurar **por tópico** e **anotar apenas as questões erradas e as chutadas**, com o tópico de cada uma. A correção é feita por você no Notion; não se abrem correções numeradas.
 
@@ -527,11 +527,23 @@ Você pediu mais prática de simulado, com **questões reais da LPI** e **dificu
 
 **Dicas recorrentes (06/10).** Peça o `simulado-02` incluindo o mínimo de questões por tema (permissões 4, `tar` 2, redirecionamento 3 com `<<`, diretórios 3) e **5 questões de preencher a lacuna**, com uma tabela de temas no gabarito. A cola, as regras de lacuna e o mini-simulado R1 (terça 13/10) estão em `praticas-reforco-dicas-recorrentes.md`. Esta semana não ganha tempo novo: o reforço começa no simulado #2 de domingo.
 
-**Carga.** São 40 minutos a mais nesta semana (20 na quinta e 20 no sábado), e a revisão de terça, de 15 minutos, saiu. Se a semana apertar, os 20 minutos da Prática 1 são os primeiros a ir para a segunda 12/10. Os simulados de domingo e os de Fase 2 (22/10, 27/10, 29/10 e 05/11) permanecem como estão no plano geral.
+**Carga.** São 40 minutos a mais nesta semana (20 no sábado e 20 no domingo), e a revisão de terça, de 15 minutos, saiu. Se a semana apertar, os 20 minutos da Prática 1 são os primeiros a ir para a segunda 12/10. Os simulados de domingo e os de Fase 2 (22/10, 27/10, 29/10 e 05/11) permanecem como estão no plano geral.
 
 ---
 
 ## Pré-checkpoint — Quarta 07/10 (decisão do voucher)
+
+**Atualização de 08/10 — a compra foi adiada por decisão sua.** As duas condições do pré-checkpoint estavam cumpridas, mas você decidiu comprar o voucher **só depois que a média dos simulados melhorar**. Registro:
+
+| Item | Decisão |
+|---|---|
+| Gatilho de compra | **Média dos três últimos simulados com 30 ou mais acertos (75%)** |
+| Primeira avaliação possível | Quinta 22/10, com os simulados #2 (11/10), #3 (18/10) e #4 (22/10). A seguinte seria no domingo 25/10, com #3, #4 e #5 |
+| Data da prova | **09/11 continua sendo a data-alvo, mas não está agendada** |
+| Fica em aberto | A antecedência mínima de agendamento no centro Pearson VUE e a disponibilidade de vaga em 09/11 e 16/11. **Não sei esses valores**: consulte os horários disponíveis no site da Pearson VUE antes de depender de 09/11 (ver a página sem comprar não custa nada) |
+| Proposta minha, ajuste se quiser | Se o gatilho não for atingido até o domingo 25/10, a data-alvo passa para 16/11 |
+
+O texto abaixo é o original de 06/10, mantido como registro.
 
 Uma pergunta só: **o simulado #1 (segunda) e o Laboratório 2 (terça) estão feitos?**
 
@@ -550,7 +562,7 @@ Anote na hora do agendamento: data escolhida ____________ · janela de remarcaç
 
 ## Checkpoint A — Domingo 11/10, à noite
 
-*Nota de 07/10:* o simulado #2 (critério 4) já terá sido feito na sexta 09/10, e a autoavaliação da Semana 5 acontece no domingo, antes da decisão.
+*Nota de 08/10:* o critério 5 (voucher) foi substituído pelo registro do gatilho de compra. O simulado #2 e a Prática 2 acontecem no próprio domingo, antes desta decisão.
 
 Marque os cinco critérios com base no que está registrado neste arquivo, não na sensação.
 
@@ -560,7 +572,7 @@ Marque os cinco critérios com base no que está registrado neste arquivo, não 
 | 2 | Laboratório 2 com os três scripts obrigatórios | **Sim (06/10)** |
 | 3 | Práticas 1 e 2 feitas | |
 | 4 | Simulado #2 com **24 ou mais** acertos | |
-| 5 | Voucher comprado e prova agendada | |
+| 5 | **Gatilho do voucher registrado** (decisão de 08/10: compra depois que a média dos três últimos simulados chegar a 30 ou mais) | **Sim (08/10)** |
 
 Resultado, pela regra do plano geral (seção 11):
 
@@ -580,16 +592,17 @@ Resultado, pela regra do plano geral (seção 11):
 | Laboratório 2 (três scripts) | Semana 5 | **Concluído em 06/10** | — |
 | Comparação de compressão com o `bzip2` | Semana 4 | Sem registro em 06/10; primeiro corte da fila | Retaguarda, se não houver folga |
 | Saídas do `teste.sh` e três saídas de `vi` e `nano` | Semana 5 | Sem registro em 06/10; primeiro corte da fila | Retaguarda, se não houver folga |
-| Voucher, agendamento e pré-checkpoint | Semana 5 | Em aberto, adiado duas vezes | **Qua 07/10** |
+| Voucher, agendamento e pré-checkpoint | Semana 5 | **Adiado em 08/10**: compra só depois que a média dos três últimos simulados chegar a 30 ou mais | Primeira avaliação: qui 22/10 |
 | Curso, aulas 31 a 43 (a 2x) | Semana 5 | Em aberto | Qua 07/10 |
-| Curso, aulas 31 a 43 (adiadas de qua 07/10) e 44 a 50 | Semana 6 | Previsto | Qui 08/10 |
-| Prática 1 — usuários e grupos | Semana 6 | Previsto | Qui 08/10 |
-| Pedir o `simulado-02` | Semana 6 | Previsto | **Hoje, qua 07/10**: precisa estar pronto na quinta à noite |
-| Questões oficiais da LPI, 5.1 e 5.2 (20 min) | Semana 6 | Novo em 06/10 | Qui 08/10, fim da Prática 1 |
-| Autoavaliação da Semana 5 (10 questões) | Semana 5 | Previsto | Dom 11/10 (movida em 07/10) |
-| Curso, aulas 51 a 57 | Semana 6 | Previsto | Sáb 10/10 (movidas de sexta em 07/10) |
-| Prática 2 — permissões, com questões oficiais da LPI 5.3 e 5.4 (20 min) | Semana 6 | Previsto | Sáb 10/10 |
-| Simulado #2 | Semana 6 | Previsto | **Sex 09/10** (antecipado de domingo em 07/10) |
+| Curso, aulas 31 a 35 (checkpoint na 36) | Semana 6 | **Concluído em 08/10** | — |
+| Curso, aulas 36 a 50 | Semana 6 | Previsto | Sex 09/10 |
+| Prática 1 — usuários e grupos | Semana 6 | Previsto | **Sáb 10/10** (movida de quinta em 08/10) |
+| Pedir o `simulado-02` | Semana 6 | Previsto | **Hoje, qui 08/10**; pronto até sex 09/10 à noite |
+| Questões oficiais da LPI, 5.1 e 5.2 (20 min) | Semana 6 | Novo em 06/10 | Sáb 10/10, fim da Prática 1 |
+| Autoavaliação da Semana 5 (10 questões) | Semana 5 | Previsto | Sex 09/10 |
+| Curso, aulas 51 a 57 | Semana 6 | Previsto | Sáb 10/10 |
+| Prática 2 — permissões, com questões oficiais da LPI 5.3 e 5.4 (20 min) | Semana 6 | Previsto | **Dom 11/10** (ênfase; movida de sábado em 08/10) |
+| Simulado #2 | Semana 6 | Previsto | Dom 11/10 |
 | `.wslconfig` e teste do snapshot | Semana 0 | Sem prazo | Com folga |
 
 ---
@@ -858,17 +871,91 @@ Estudo prévio feito por conta própria, antes de responder (o conteúdo ainda n
 
 **Pontos fortes:** a conferência por `stat -c` ligou o octal ao símbolo nos dois sentidos, e a explicação de cada parte do `chmod u+x` está correta.
 
-### Prática 1 — quinta 08/10
+### Curso, aulas 31 a 35 — quinta 08/10
+
+Retomada do curso (Udemy, Matheus Muller). Aulas 31 a 35 assistidas; **checkpoint na aula 36**. Anotações e prática no terminal.
+
+**Conteúdo registrado**
+
+| Tema | O que ficou anotado |
+|---|---|
+| Histórico do Bash | `history` lista os comandos; `~/.bash_history` guarda; `HISTFILE`, `HISTFILESIZE`, `HISTSIZE` e `HISTCONTROL`; `!NNN` reexecuta a linha NNN |
+| Prática do histórico | `history`; `!331` (rodou `uname -a`); `export HISTSIZE=50` |
+| Scripts de inicialização | `/etc/bash.bashrc`, `.bashrc`, `/etc/profile` e a ordem de busca `bash_profile`, `bash_login`, `profile` |
+| Prática de inicialização | `cat .bash_history`; criar a variável `NOME` em todo terminal novo, pelo `.bashrc` |
+| Variáveis | Locais contra globais; `set`, `env`, `export` |
+| File globbing | `*`, `?`, `[ ]`; prática com `ls *.txt`, `touch file{1,2,3,4}.txt` e `ls [Tt]este` |
+| Aspas | Duplas, simples e contra-barra |
+
+**Ajustes de caderno (sem correção numerada)**
+
+1. Os nomes das variáveis são **em maiúsculas**: `HISTFILE`, `HISTFILESIZE`, `HISTSIZE`, `HISTCONTROL` (o caderno tem `histifile`, `histfilesize` etc.). E em "history_file aramzena" falta o `m` de "armazena".
+2. O comando da prática de inicialização está incompleto e com aspas curvas: `echo ‘export NOME=”TESTE” >> .bashrc`. O correto, com aspas **retas** e a aspa simples de fechamento, é `echo 'export NOME="TESTE"' >> ~/.bashrc`. A variável só aparece em um terminal **novo** ou depois de `source ~/.bashrc`; confira com `echo $NOME`.
+3. O caminho do arquivo da pasta pessoal é `~/.bashrc`. O `/etc/bash.bashrc` é o nome em Debian e Ubuntu; em Red Hat e derivadas é `/etc/bashrc`.
+4. "Dígito" aparece onde o termo é **caractere** (`?` casa um caractere, não um dígito).
+5. Falta registrar o `!!`, que repete o último comando, e o `!NNN` com o **nome** `history expansion`.
+6. A frase "Pode-se combinar difentes arquivos... arquivo s]" está truncada.
+
+**Pontos fortes:** a prática de `history` com `!331` e a tabela de arquivos de inicialização; o reconhecimento de que o globbing já foi tratado nos laboratórios; e a escolha de `export HISTSIZE=50` na prática.
+
+#### Correção 69 — o `~/.bashrc` é de shell interativo sem login, não de shell "não interativo"
+
+O caderno diz: "`.bashrc` → arquivo local para shell não interativo". A palavra errada é **não**. A distinção que importa é *login* contra *sem login*:
+
+| Tipo de shell | Quando acontece | Arquivos lidos |
+|---|---|---|
+| Shell de **login** | Entrada por `ssh`, console ou `bash -l` | `/etc/profile`, depois **o primeiro que existir** entre `~/.bash_profile`, `~/.bash_login` e `~/.profile` |
+| Shell **interativo sem login** | Abrir um terminal na janela ou digitar `bash` | `/etc/bash.bashrc` (Debian e Ubuntu) e `~/.bashrc` |
+
+O `/etc/profile` vem primeiro nos shells de login, e em muitas distribuições ele mesmo chama o `/etc/bash.bashrc`. Para ver: `shopt -q login_shell && echo login || echo sem-login` em um terminal da janela e depois em `bash -l`.
+
+#### Correção 70 — `?` é um caractere qualquer, e as chaves `{}` não são globbing
+
+O caderno diz que o `?` casa "um dígito somente". O `?` casa **um caractere qualquer** (letra, número, símbolo). Os três curingas:
+
+| Curinga | Casa | Exemplo |
+|---|---|---|
+| `*` | **Zero ou mais** caracteres | `ls *.txt` |
+| `?` | **Exatamente um** caractere | `ls ?.txt` lista `a.txt` e `1.txt`, mas não `ab.txt` |
+| `[ ]` | **Um** caractere do conjunto ou da faixa | `ls [Tt]este`, `ls [0-9].txt` |
+
+O `touch file{1,2,3,4}.txt`, que apareceu na prática de globbing, é **expansão de chaves** (*brace expansion*), e não globbing: ela **cria** os nomes antes de o comando rodar, sem olhar o disco. O globbing só enxerga arquivos que **já existem**. Para ver: `echo f{1,2}.txt` imprime `f1.txt f2.txt` mesmo sem nenhum arquivo. É a **segunda ocorrência** do tema da Correção 11.
+
+#### Correção 71 — variáveis exportadas são herdadas por processos filhos, não por "outras sessões"
+
+O caderno diz que as variáveis globais são as que "outras sessões filhas também podem enxergar". O termo certo é **variável de ambiente** (exportada): quem a herda é o **processo filho** iniciado a partir do shell, e nada que esteja ao lado ou acima.
+
+| Comando | O que mostra |
+|---|---|
+| `set` | **Todas** as variáveis do shell, locais **e** exportadas, mais as funções (não são só as locais) |
+| `env` | **Somente** as exportadas, ou seja, o ambiente |
+| `export VAR` | Marca a variável para ser herdada pelos filhos |
+
+Teste, no terminal: `X=1 ; export Y=2 ; bash -c 'echo X=[$X] Y=[$Y]'` mostra `X=[] Y=[2]`. Lembre da Correção 12: a direção é do **pai para o filho**. É a **segunda ocorrência** desse tema.
+
+#### Correção 72 — a contra-barra não produz `\n`, e as aspas duplas ainda expandem
+
+O caderno diz que a contra-barra serve para "tratar o próximo dígito como normal e quebrar linha `\n`". A contra-barra **escapa o próximo caractere** (tira o significado especial dele) e, no fim de uma linha, **continua o comando na linha de baixo**. Ela não produz `\n`: `echo "a\nb"` imprime `a\nb`.
+
+| Aspas | Efeito |
+|---|---|
+| Duplas `" "` | Agrupam palavras e preservam os espaços; ainda expandem `$VAR`, `$(...)` e a contra-barra; **impedem** o globbing |
+| Simples `' '` | Tudo é literal, inclusive o `$` |
+| `\` | Escapa **um** caractere; no fim da linha, continua o comando |
+
+Para ver: `NOME=Davi ; echo "$NOME" '$NOME' \$NOME` imprime `Davi $NOME $NOME`.
+
+### Prática 1 — sábado 10/10
 
 *A preencher.*
 
-### Prática 2 — sábado 10/10
+### Prática 2 — domingo 11/10
 
 *A preencher.*
 
 ### Correções da semana
 
-A numeração segue a série global. A última registrada na Semana 5 foi a **61** (o `2` do `2>` não é o `2` do `$?`). Em 05/10, o simulado #1 gerou as **Correções 62 a 68**. **A próxima é a 69.**
+A numeração segue a série global. A última registrada na Semana 5 foi a **61** (o `2` do `2>` não é o `2` do `$?`). Em 05/10, o simulado #1 gerou as **Correções 62 a 68**. **A próxima é a 73.** Em 08/10, o curso gerou as Correções 69 a 72.
 
 O painel de resultados, a lista de questões erradas e o índice das Correções 1 a 68 estão em `praticas-resultados-simulados-e-correcoes.md`.
 
@@ -881,6 +968,10 @@ O painel de resultados, a lista de questões erradas e o índice das Correções
 | 66 | `/proc` é de processos, `/dev` de dispositivos | Q15 |
 | 67 | `man` é o manual; `--manual` não existe no `cp` | Q16 |
 | 68 | `chmod` muda permissões, `chown` muda dono | Q38 |
+| 69 | `~/.bashrc` é de shell interativo sem login; a diferença é login ou não | Curso, 08/10 |
+| 70 | `?` casa um caractere qualquer; as chaves `{}` não são globbing (2ª ocorrência da Correção 11) | Curso, 08/10 |
+| 71 | Variáveis exportadas são herdadas por processos filhos; `set` mostra tudo, `env` só as exportadas (2ª ocorrência da Correção 12) | Curso, 08/10 |
+| 72 | `\` escapa um caractere e não produz `\n`; aspas duplas ainda expandem | Curso, 08/10 |
 
 Os cards das Correções 62 a 68 foram anotados no Notion em 05/10. O Laboratório 2 de 06/10 **não gerou correção numerada**: não houve erro conceitual, só ajustes de caderno. A partir de 06/10, erros de simulado não geram correção numerada. **A próxima, para erros de laboratório e de curso, é a 69.**
 
@@ -899,15 +990,16 @@ Os cards das Correções 62 a 68 foram anotados no Notion em 05/10. O Laboratór
 - [x] ~~Revisão prática dos erros dos Tópicos 1 a 3 (terça)~~: cancelada em 06/10 (retaguarda)
 - [x] Laboratório 2, três scripts (terça 06/10)
 - [ ] Comparação de compressão refeita; saídas do `teste.sh`, do `vi` e do `nano` registradas: sem registro em 06/10, primeiro corte da fila
-- [ ] **Voucher, agendamento e pré-checkpoint**, com a janela de remarcação anotada (quarta)
-- [ ] Curso, aulas 31 a 43 (adiadas de quarta para quinta 08/10) e 44 a 50 (quinta)
-- [ ] Prática 1, usuários e grupos, e questões oficiais da LPI 5.1 e 5.2 (quinta)
-- [ ] `simulado-02` pedido (quarta 07/10) e pronto (quinta à noite)
-- [ ] Autoavaliação da Semana 5 e correção (domingo 11/10, movida de sexta)
-- [ ] Curso, aulas 51 a 57 (sábado 10/10, movidas de sexta; ou segunda 12/10 se cortadas)
-- [ ] Prática 2, permissões, questões oficiais da LPI 5.3 e 5.4 e limpeza dos usuários de teste (sábado)
+- [x] **Pré-checkpoint** feito; **voucher adiado** por decisão de 08/10 (gatilho: média dos três últimos simulados ≥ 30; primeira avaliação em 22/10)
+- [x] Curso, aulas 31 a 35 (quinta 08/10; checkpoint na 36)
+- [ ] Curso, aulas 36 a 50 (sexta 09/10)
+- [ ] Prática 1, usuários e grupos, e questões oficiais da LPI 5.1 e 5.2 (sábado 10/10)
+- [ ] `simulado-02` pedido (quinta 08/10) e pronto (sexta à noite)
+- [ ] Autoavaliação da Semana 5 e correção (sexta 09/10)
+- [ ] Curso, aulas 51 a 57 (sábado 10/10; ou segunda 12/10 se cortadas)
+- [ ] Prática 2, permissões, questões oficiais da LPI 5.3 e 5.4 e limpeza dos usuários de teste (domingo 11/10)
 - [ ] `cheatsheets/permissoes.md` escrito à mão
-- [ ] Simulado #2 e apuração por objetivo (**sexta 09/10**, antecipado de domingo)
+- [ ] Simulado #2 e apuração por objetivo (domingo 11/10)
 - [ ] Checkpoint A preenchido
 - [ ] Commits ao fim de cada sessão
 
