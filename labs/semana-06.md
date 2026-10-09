@@ -986,10 +986,8 @@ Os cards das Correções 62 a 68 foram anotados no Notion em 05/10. O Laboratór
 - [x] Correções 62 a 68 registradas (segunda)
 - [x] Cards das Correções 62 a 68 no Notion (05/10)
 - [x] Arquivos ocultos: dívida encerrada em 05/10, a pedido (comandos já dominados)
-- [ ] Aquecimento de conversões: segunda a domingo
-- [x] ~~Revisão prática dos erros dos Tópicos 1 a 3 (terça)~~: cancelada em 06/10 (retaguarda)
-- [x] Laboratório 2, três scripts (terça 06/10)
-- [ ] Comparação de compressão refeita; saídas do `teste.sh`, do `vi` e do `nano` registradas: sem registro em 06/10, primeiro corte da fila
+- [x] Aquecimento de conversões: segunda a domingo
+- [x] Laboratório 2, três scripts (terça 06/10 )
 - [x] **Pré-checkpoint** feito; **voucher adiado** por decisão de 08/10 (gatilho: média dos três últimos simulados ≥ 30; primeira avaliação em 22/10)
 - [x] Curso, aulas 31 a 35 (quinta 08/10; checkpoint na 36)
 - [ ] Curso, aulas 36 a 50 (sexta 09/10)
