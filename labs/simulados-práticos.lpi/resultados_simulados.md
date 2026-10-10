@@ -64,7 +64,7 @@ O exame real aprova com **500 de 800 pontos**, cerca de 65%, ou 26 acertos. A es
 | 6 | Ter 27/10 | `simulado-06` | Acompanhar | | | | | | A fazer |
 | 7 | Qui 29/10 | `simulado-07` | 34 ou mais | | | | | | A fazer |
 | 8 | Dom 01/11 | `simulado-08` | **34 ou mais** (Gate) | | | | | | A fazer |
-| 9 | Qui 05/11 | `simulado-09` | 34 ou mais (final) | | | | | | A fazer |
+| 9 | Qui 05/11 | `simulado-09` | 34 ou mais (final se a prova for 09/11; se for 16/11, o final passa a ser o #10 na qui 12/11) | | | | | | A fazer |
 
 Não há simulado no domingo 08/11, véspera da prova.
 
@@ -101,11 +101,11 @@ Os critérios completos estão na seção 11 do plano geral.
 
 | Checkpoint | Data | Critérios | Situação | Resultado e decisão |
 |---|---|---|---|---|
-| Pré-checkpoint | Qua 07/10 | Simulado #1 feito e Laboratório 2 feito | **Os dois cumpridos em 06/10** | **Compra do voucher adiada em 08/10** (decisão de Davi). Gatilho: média dos três últimos simulados com 30 ou mais; primeira avaliação em 22/10. Data-alvo 09/11, sem agendamento |
+| Pré-checkpoint | Qua 07/10 | Simulado #1 feito e Laboratório 2 feito | **Os dois cumpridos em 06/10** | **Compra do voucher adiada em 08/10** (decisão de Davi). Gatilho: média dos três últimos simulados com 30 ou mais; primeira avaliação em 22/10. **Em 10/10, a data principal passou a ser 16/11**; 09/11 é a meta ousada. Nenhuma agendada |
 | A | Dom 11/10 | Curso até a aula 57; Laboratório 2; Práticas 1 e 2; simulado #2 com 24 ou mais; **gatilho do voucher registrado** (substituiu "voucher e agendamento" em 08/10) | **Critérios 2 e 5 cumpridos** (06/10 e 08/10) | |
 | B | Dom 18/10 | Curso fechado (aula 72); práticas feitas; simulado #3 com 28 ou mais | | |
 | Gate | Dom 01/11 | Dois simulados consecutivos com 34 ou mais entre os de 27/10, 29/10 e 01/11; laboratório integrador | | |
-| Final | Qui 05/11 | 34 ou mais: ir. De 30 a 33: ir com revisão leve. Abaixo de 30: remarcar, se a janela permitir | | |
+| Final | Qui 12/11 (prova 16/11) ou qui 05/11 (prova 09/11) | 34 ou mais: ir. De 30 a 33: ir com revisão leve. Abaixo de 30: remarcar, se a janela permitir | | |
 
 ### 2.5 Dicas recorrentes de prova, por tema
 
@@ -445,3 +445,4 @@ Itens antigos de conteúdo já estudado, tirados da rotina diária em 06/10 para
 | 06/10/2026 | Acrescentadas a seção 2.5 (dicas recorrentes por tema) e o registro do mini-simulado de reforço R1 na seção 4 |
 | 08/10/2026 | Correções 69 a 72 (curso, 08/10); pré-checkpoint com a compra do voucher adiada (gatilho: média dos três últimos simulados ≥ 30); simulado #2 de volta ao domingo 11/10; autoavaliação da Semana 5 na sexta 09/10 |
 | 09/10/2026 | Correções 73 e 74 (curso, 09/10) |
+| 10/10/2026 | Replanejamento: data principal da prova 16/11 (09/11 como meta ousada); meta de 9h por semana até 01/11; Prática 2 e aulas 58 em diante na segunda 12/10; autoavaliação da Semana 6 cortada |
