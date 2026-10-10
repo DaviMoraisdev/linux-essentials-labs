@@ -1,6 +1,6 @@
 # Plano de Preparação — LPI Linux Essentials (010-160)
 
-**Aluno:** Davi (@DaviMoraisdev) · **Ritmo:** 5–7h/semana
+**Aluno:** Davi (@DaviMoraisdev) · **Ritmo:** 5–7h/semana até 09/10; **cerca de 9h/semana de 10/10 a 01/11**
 **Data da prova:** **09/11/2026, segunda-feira** (ou 16/11, se o pré-checkpoint de 07/10 mandar; seção 11)
 **Repositório de labs:** https://github.com/DaviMoraisdev/linux-essentials-labs
 
@@ -58,10 +58,10 @@
 
 | Item | Prazo |
 |---|---|
-| **Curso, aulas 41 a 72** (32 aulas; as 36 a 40 foram vistas em 09/10, e mais aulas estão previstas para a mesma sexta) | aulas 41 a 50 na **sexta 09/10**, 51 a 57 no sábado 10/10 e 58 a 72 na Semana 7 |
+| **Curso, aulas 41 a 72** (32 aulas; as 36 a 40 foram vistas em 09/10) | aulas 41 a 50 no **sábado 10/10**, 51 a 57 no **domingo 11/10**, 58 a 72 de segunda 12/10 a quarta 14/10 |
 | Registrar as saídas do `teste.sh` e as três saídas de `vi` e `nano` (Laboratório 1) | sem registro em 06/10; retaguarda, primeiro corte da fila |
-| **Questões oficiais da LPI** (Exercícios Guiados e Exploratórios), lições 5.1 e 5.2 e depois 5.3 e 5.4, 20 min cada | sábado 10/10 e domingo 11/10, no fim das Práticas 1 e 2 |
-| **Autoavaliação da Semana 5** — 10 questões | sexta 09/10 |
+| **Questões oficiais da LPI** (Exercícios Guiados e Exploratórios), lições 5.1 e 5.2 e depois 5.3 e 5.4, 20 min cada | sábado 10/10 e segunda 12/10, no fim das Práticas 1 e 2 |
+| **Autoavaliação da Semana 5** — 10 questões | sábado 10/10, primeira atividade |
 | **Voucher da prova** e agendamento. **Adiado em 08/10 por decisão sua:** a compra só acontece depois que a **média dos três últimos simulados chegar a 30 ou mais** (75%). Primeira avaliação possível: quinta 22/10 | **gatilho numérico** (seção 11); 09/11 segue como data-alvo, **sem agendamento** |
 | ~~**Simulado #1 (diagnóstico)**~~ | **Concluído em 05/10: 28 de 40 (70%), 560 de 800.** Prova corrigida em `praticas/simulado-01-diagnostico-resultado.md` |
 | Reteste das 4 questões erradas da autoavaliação da Semana 4 e das questões 18, 20, 21, 22 e 24 do simulado #1 | **Retaguarda** desde 06/10; os simulados seguintes medem se o erro volta |
@@ -325,7 +325,7 @@ Como entram, sem aumentar a carga: (1) **mínimo de questões por tema em todo s
 7. **Exceção:** domingo 08/11, véspera da prova, não tem simulado. O final é na quinta 05/11.
 8. **Dificuldade (06/10):** do #2 em diante os simulados escritos aqui ficam mais próximos do exame: enunciados com cenário, pegadinhas de comando, escolha de mais de uma resposta, preenchimento e distratores plausíveis. Use pelo menos 45 minutos e reserve os últimos 15 para uma segunda passada nas marcadas.
 
-**Relação com a autoavaliação semanal.** Nas Semanas 6 e 7 a autoavaliação por tópico continua, reduzida a 10 questões, porque mede retenção do tópico da semana anterior. A partir da Semana 8, com os cinco tópicos estudados, o simulado a substitui.
+**Relação com a autoavaliação semanal.** A autoavaliação da Semana 5 (sábado 10/10) continua, em 10 questões. **A da Semana 6 foi cortada em 10/10**: o simulado #3 (18/10) já traz 7 questões do Tópico 5. A partir da Semana 8, com os cinco tópicos estudados, o simulado substitui a autoavaliação.
 
 ---
 
@@ -339,7 +339,7 @@ Semanas de **segunda a domingo**. A prova cai na segunda-feira seguinte ao fim d
 |---|---|---|---|
 | **Fase 1 — Curso** | 5, 6, 7 | 28/09 a 18/10 | Fechar as 42 aulas restantes (31 a 72) · 2 práticas/semana · simulado todo domingo |
 | **Fase 2 — Prática e simulados** | 8, 9, 10 | 19/10 a 08/11 | Simulados em condição de prova (inclusive os de domingo) · laboratório integrador |
-| **Prova** | — | **09/11** | — |
+| **Prova** | — | **16/11 (data principal desde 10/10)**; 09/11 só se o gatilho do voucher vier até 25/10 e houver vaga | — |
 
 ### A conta
 
@@ -355,6 +355,8 @@ Semanas de **segunda a domingo**. A prova cai na segunda-feira seguinte ao fim d
 | **Total semanal** | **Semana 6: ~9h nominal**, acima do teto de 7h, com ordem de corte escrita · **Semana 7: ~7h** |
 
 A Fase 1 ainda termina em **18/10**, com o curso fechado e os cinco tópicos estudados, **se** a Semana 6 cumprir o plano. A conta antiga, de 5h por semana, não vale mais: as dívidas da Semana 5 e o simulado dominical a derrubaram. É por isso que existem a ordem de corte da Semana 6 e os checkpoints da seção 11. Sobram três semanas para simulados, e elas são a margem que absorve um atraso pequeno.
+
+**Atualização de 10/10.** A sexta 09/10 rendeu cerca de 1h (aulas 36 a 40), e a autoavaliação da Semana 5 e as aulas 41 a 50 passaram para o sábado. O fim de semana e o feriado de segunda 12/10 carregam o fechamento do Tópico 5. **Meta semanal de cerca de 9h até 01/11**, com 1h por dia útil em horário fixo e dois blocos de 2h30 a 3h no fim de semana, **em vez de concentrar tudo no sábado e no domingo**. Para caber: a autoavaliação da Semana 6 foi cortada (o simulado #3 já cobre o Tópico 5), os vídeos vão a 2x quando o conteúdo já foi praticado, e o `filtrar.sh` segue opcional. O registro das horas reais está na tabela "Horas da semana" do arquivo da Semana 6.
 
 ### Datas do calendário que afetam o plano
 
@@ -381,7 +383,8 @@ Um simulado geral de 40 questões todo domingo, mais os extras de Fase 2. Distri
 | 6 | Ter 27/10 | 9 | `simulado-06` | Acompanhar |
 | 7 | Qui 29/10 | 9 | `simulado-07` | 34 ou mais |
 | 8 | Dom 01/11 | 9 | `simulado-08` | **34 ou mais** (Gate) |
-| 9 | Qui 05/11 | 10 | `simulado-09` | 34 ou mais |
+| 9 | Qui 05/11 (prova 09/11) ou dom 08/11 (prova 16/11) | 10 | `simulado-09` | 34 ou mais |
+| 10 | Qui 12/11 (só se a prova for 16/11) | 11 | `simulado-10` | 34 ou mais (final) |
 
 **Gate:** dois simulados consecutivos com 34 ou mais entre os de 27/10, 29/10 e 01/11.
 
@@ -493,13 +496,14 @@ Marcar antes de se sentir pronto é intencional. Prazo firme é o que impede o p
 | Ter 06 | Laboratório 2 — `backup.sh`, `contar.sh`, `usuario.sh` — **concluído** |
 | Qua 07 | Pré-checkpoint (**voucher adiado**) · aquecimento |
 | Qui 08 | Curso retomado: aulas 31 a 35 · pedir o `simulado-02` |
-| Sex 09 | Aulas 36 a 50 · autoavaliação da Semana 5 (10 questões) |
-| Sáb 10 | **Prática 1** (usuários e grupos, com 20 min de questões da LPI) · aulas 51 a 57 |
-| **Dom 11** | **Simulado #2** · apuração · **Prática 2** (permissões, ênfase do fim de semana, com 20 min de questões da LPI) · **Checkpoint A** |
+| Sex 09 | Aulas 36 a 40 (feitas); autoavaliação e aulas 41 a 50 passaram para o sábado |
+| Sáb 10 | **Autoavaliação da Semana 5** (primeira atividade) · aulas 41 a 50 · **Prática 1** (usuários e grupos, com 20 min de questões da LPI) |
+| **Dom 11** | **Simulado #2** · apuração · aulas 51 a 57 · **Checkpoint A** (provavelmente amarelo) |
+| **Seg 12 (feriado)** | **Prática 2** (permissões, ênfase, com 20 min de questões da LPI) · sessão extra de conversões · aulas 58 em diante |
 
 **Correção e revisão.** O simulado #1 gerou as **Correções 62 a 68** (sete erros com convicção; os cinco chutes errados definem a ênfase das Semanas 6 e 7). A revisão prática de terça, de 15 minutos, **foi cancelada em 06/10**: os erros antigos vão para a retaguarda. Daqui em diante, erros de simulado só são anotados e corrigidos no Notion.
 
-**Autoavaliação da Semana 5:** reduzida a 10 questões, respondida na **sexta 09/10**, três dias depois do Laboratório 2.
+**Autoavaliação da Semana 5:** reduzida a 10 questões, respondida no **sábado 10/10** como primeira atividade (movida de sexta em 10/10), quatro dias depois do Laboratório 2.
 
 **Prática 1 — Usuários e grupos**
 
@@ -551,9 +555,21 @@ Marcar antes de se sentir pronto é intencional. Prazo firme é o que impede o p
 
 > Boa parte deste tópico já foi encostada na prática: LVM e partições na Semana 0, `/proc` e `/dev` na Semana 3, portas e serviços na Semana 1, gerenciadores de pacotes no curso. A cobertura parte de ~30%, não de zero.
 
-**Segunda 12/10 (feriado):** sessão extra de permissões, se a conversão ainda não sai em 3 segundos, ou as aulas 51 a 57 e a Prática 1 (usuários e grupos), se tiverem sido cortadas na Semana 6.
+**Calendário replanejado em 10/10 (Semana 7 enxuta).** A segunda 12/10 fecha a Semana 6 (Prática 2 e sessão extra de permissões) e abre o Tópico 4.
 
-**Sexta 16/10:** autoavaliação da Semana 6 (Tópico 5), 10 questões.
+| Dia | Atividade | Tempo |
+|---|---|---|
+| Seg 12 (feriado) | Prática 2 do Tópico 5 · sessão extra de conversões · aulas 58 em diante | cerca de 3h |
+| Ter 13 | **Mini-simulado R1** (25 min) e apuração (10 min) · aulas seguintes do Tópico 4 | cerca de 1h15 |
+| Qua 14 | Aquecimento · aulas até a 72 (**fechamento do curso**) | cerca de 1h |
+| Qui 15 | **Prática 1 do Tópico 4** (hardware, armazenamento, processos) com mapa dos diretórios virtuais e 20 min de questões | cerca de 1h30 |
+| Sex 16 | Quizzes do NDG dos Tópicos 4 e 5, e anotar só as questões erradas (a autoavaliação da Semana 6 foi cortada) | cerca de 1h |
+| Sáb 17 | **Prática 2 do Tópico 4** (rede e distribuições) com 20 min de questões | cerca de 1h30 |
+| Dom 18 | **Simulado #3** · apuração · **Checkpoint B** | cerca de 2h |
+
+Total da Semana 7, de terça a domingo: cerca de 8h20, dentro da meta de 9h. Se uma prática escorregar, o sábado 17 absorve; o domingo não recebe dívidas.
+
+**Sexta 16/10:** autoavaliação da Semana 6 **cortada em 10/10** (ver a tabela acima).
 
 **Domingo 18/10:** **simulado #3** (meta: 28 ou mais) e **Checkpoint B** (seção 11).
 
@@ -600,7 +616,9 @@ Marcar antes de se sentir pronto é intencional. Prazo firme é o que impede o p
 - Quinta 05/11: simulado final (#9). Se ≥ 85%, está pronto
 - Sexta, sábado e domingo: **descanso**. Não estudar na véspera. **A série dominical não tem simulado em 08/11**
 
-**Prova: segunda-feira 09/11.** Chegar 30 minutos antes, levar dois documentos com foto.
+**Se a prova for 16/11 (data principal desde 10/10):** a Semana 10 vira prática, com **dois simulados** (quinta 05/11 e domingo 08/11, sem a regra de "sem simulado na véspera" porque a prova é uma semana depois); a Semana 11 (09 a 15/11) é a revisão leve, o simulado final é na **quinta 12/11** e sexta a domingo é descanso.
+
+**Prova: segunda-feira 09/11 (meta ousada) ou 16/11 (data principal).** Chegar 30 minutos antes, levar dois documentos com foto.
 
 Na prova: 40 questões em 60 minutos, 1,5 minuto por questão. Marcar as difíceis e voltar. Nas de preenchimento, escrever **só o comando**, sem caminho e sem flags, salvo se pedido.
 
@@ -708,16 +726,16 @@ A coluna da direita é apenas o caminho natural dentro do roadmap atual, não um
 
 ### Princípio
 
-**09/11 continua sendo a meta, mas não está agendada** (decisão de 08/10: o voucher só será comprado quando a média dos simulados atingir o gatilho da seção "Voucher e agendamento"). A data só se mantém se os checkpoints forem cumpridos. Contam números (aulas assistidas, laboratórios feitos, acertos em simulado), não a sensação de estar pronto.
+**A data principal é 16/11 (decisão de 10/10); 09/11 é a meta ousada e só vale se o gatilho do voucher vier até 25/10 e houver vaga. Nenhuma das duas está agendada** (decisão de 08/10: o voucher só será comprado quando a média dos simulados atingir o gatilho da seção "Voucher e agendamento"). A data só se mantém se os checkpoints forem cumpridos. Contam números (aulas assistidas, laboratórios feitos, acertos em simulado), não a sensação de estar pronto.
 
 ### Checkpoints
 
 | Checkpoint | Data | Critérios | Resultado |
 |---|---|---|---|
-| **A** | Dom 11/10 | 1. Curso até a aula 57 (ou até a 50, com 51 a 57 marcadas para 12/10) · 2. Laboratório 2, três scripts · 3. Práticas 1 e 2 · 4. Simulado #2 com **24 ou mais** acertos · 5. **Gatilho do voucher registrado** (cumprido em 08/10) | **Verde:** todos cumpridos, mantém 09/11. **Amarelo:** um falhou, mantém, e o item vira obrigatório na segunda 12/10. **Vermelho:** dois ou mais falharam, ou simulado #2 abaixo de 20, **remarcar para 16/11** |
-| **B** | Dom 18/10 | 1. Curso fechado (aula 72) · 2. Quatro práticas da Fase 1 feitas, com a sessão extra de permissões se a conversão passa de 3 s · 3. Simulado #3 com **28 ou mais** acertos | **Verde:** mantém. **Amarelo:** um falhou, mantém, mas o gate de 01/11 passa a não ter folga. **Vermelho:** dois ou mais falharam, ou curso não fechado, **remarcar para 16/11** |
-| **Gate** | Dom 01/11 | Dois simulados consecutivos com **34 ou mais** entre os de 27/10, 29/10 e 01/11 · laboratório integrador feito | **Cumprido:** mantém 09/11. **Não cumprido:** remarcar para 16/11 |
-| **Final** | Qui 05/11 | Simulado #9 | **34 ou mais:** vai. **30 a 33:** vai, com revisão leve dos erros. **Abaixo de 30:** remarcar, se a janela do agendamento ainda permitir |
+| **A** | Dom 11/10 | 1. Curso até a aula 57 (ou até a 50, com 51 a 57 marcadas para 12/10) · 2. Laboratório 2, três scripts · 3. Práticas 1 e 2 · 4. Simulado #2 com **24 ou mais** acertos · 5. **Gatilho do voucher registrado** (cumprido em 08/10) | **Verde:** todos cumpridos, mantém a data principal (16/11). **Amarelo:** um falhou, mantém, e o item vira obrigatório na segunda 12/10 (**esperado em 11/10**, porque a Prática 2 cai na segunda). **Vermelho:** dois ou mais falharam, ou simulado #2 abaixo de 20, **mover a data principal para 23/11** |
+| **B** | Dom 18/10 | 1. Curso fechado (aula 72) · 2. Quatro práticas da Fase 1 feitas, com a sessão extra de permissões se a conversão passa de 3 s · 3. Simulado #3 com **28 ou mais** acertos | **Verde:** mantém. **Amarelo:** um falhou, mantém, mas o gate de 01/11 passa a não ter folga. **Vermelho:** dois ou mais falharam, ou curso não fechado, **mover a data principal para 23/11** |
+| **Gate** | Dom 01/11 | Dois simulados consecutivos com **34 ou mais** entre os de 27/10, 29/10 e 01/11 · laboratório integrador feito | **Cumprido:** mantém a data principal. **Não cumprido:** mover a data principal para 23/11 |
+| **Final** | Qui 12/11 (prova em 16/11) ou qui 05/11 (prova em 09/11) | Simulado final | **34 ou mais:** vai. **30 a 33:** vai, com revisão leve dos erros. **Abaixo de 30:** remarcar, se a janela do agendamento ainda permitir |
 
 Antes de 08/10, o Checkpoint A só pesava de verdade com voucher e agendamento, porque "remarcar" depois de agendado é um problema novo. **Com o voucher adiado, o risco muda de lado:** sem um agendamento, não há prazo firme, e o plano pode escorregar sem que nada o force. A mitigação é o gatilho numérico: ele precisa ser avaliado nas datas fixadas (22/10 e 25/10), e o resultado registrado, mesmo que seja "ainda não".
 
@@ -751,7 +769,7 @@ Nas semanas extras, a série dominical continua. A única exceção é sempre a 
 
 - **Regra vigente (08/10):** comprar o voucher e agendar a prova **depois que a média dos três últimos simulados chegar a 30 ou mais (75%)**. Primeira avaliação: quinta 22/10 (simulados #2, #3 e #4); a seguinte, domingo 25/10 (#3, #4 e #5).
 - **Antes da compra, sem custo:** consultar no site da Pearson VUE os horários disponíveis para 09/11 e 16/11 e a antecedência mínima exigida. Eu não conheço esses valores; a decisão sobre a data depende deles.
-- **Proposta minha, ajuste se quiser:** se o gatilho não for atingido até o domingo 25/10, a data-alvo passa para 16/11; o Gate de 01/11 continua valendo como último critério antes da prova.
+- **Decisão de 10/10:** se o gatilho for atingido até o domingo 25/10 e houver vaga em 09/11, comprar e agendar para 09/11; caso contrário, **16/11**. Reservas: 23/11 e 30/11 (limite). **Novembro fica garantido.** O Gate de 01/11 continua valendo como último critério antes da prova.
 - (Regra original, de 07/10, substituída: comprar e agendar até a quarta 07/10, para 09/11 ou 16/11. A razão era o prazo firme; a troca foi uma decisão sua em 08/10.)
 - No ato da compra, **confirmar e anotar aqui**: (a) até quando é possível remarcar sem custo; (b) a validade do voucher; (c) se há vaga em 16/11 no centro escolhido. Não assumo valores: a regra vale a que estiver escrita na confirmação do agendamento.
 - Registrar a janela de remarcação: ____________
