@@ -40,14 +40,14 @@ Os temas se sobrepõem às questões dos cinco tópicos; não são questões ext
 
 | Quando | O que | Tempo |
 |---|---|---|
-| Qui 08/10 | Pedir o `simulado-02` com as quatro exigências da seção 3 | 2 min |
-| Dom 11/10 | Simulado #2 já traz o mínimo da seção 2.1; apurar o desempenho por tema | dentro do simulado |
-| **Ter 13/10** | **Mini-simulado R1** (20 questões, 25 min) e apuração (10 min). Substitui o aquecimento do dia | 35 min, sendo 25 novos |
-| Prática 1 da Semana 7 | Mapa dos diretórios virtuais: `/proc`, `/sys`, `/dev` lado a lado, com `cat` de um arquivo de cada | dentro da Prática 1 |
-| **Ter 20/10** | **Mini-simulado R2**, pedido até sex 16/10: inclui `/sys`, rede e processos da Semana 7 | 35 min |
-| Semanas 8 e 9 | Aquecimento rotativo pelas cinco frentes (seção 2.3) | 10 min/dia, como hoje |
+| Sáb 17/10 | Simulado 02 já traz o mínimo da seção 2.1 (escrito em 13/10); apurar o desempenho por tema | dentro do simulado |
+| Seg 19/10 | Prática 3 (Semana 8): mapa dos diretórios virtuais, `/proc`, `/sys` e `/dev` lado a lado | dentro da Prática 3 |
+| Qui 22/10 | Here document estudado como conceito, no bloco curto da Semana 8 | 15 min |
+| **Sex 23/10** | **Mini-simulado R1** (20 questões, 25 min) e apuração (10 min) | 35 min |
+| **Ter 27/10** | **Mini-simulado R2**, escrito até sáb 24/10: inclui `/sys`, rede e processos | 35 min |
+| Semanas 9 a 11 | Aquecimento rotativo pelas cinco frentes (seção 2.3), nos dias sem simulado | 10 min/dia |
 
-### 2.3 Aquecimento rotativo (a partir de 19/10)
+### 2.3 Aquecimento rotativo (a partir de 26/10)
 
 | Dia | Frente do aquecimento |
 |---|---|
@@ -138,7 +138,7 @@ Mnemônico: **proc de processos, dev de dispositivos, sys de hardware organizado
 
 ---
 
-## 6. Mini-simulado R1 — Terça 13/10
+## 6. Mini-simulado R1 — Sexta 23/10 (movido de 13/10 em 13/10)
 
 **Regras:** 20 questões, 25 minutos, sem consulta, **marcando cada chute**. Nas questões de preenchimento (marcadas com **[lacuna]**), escreva só a resposta, seguindo a seção 4. Aberto o gabarito, anote apenas as erradas e as chutadas, corrija no Notion e registre o resultado em `praticas-resultados-simulados-e-correcoes.md`, seções 2.5 e 4.
 
@@ -296,9 +296,9 @@ A) `/dev/cpu` · B) `/var/cpuinfo` · C) `/proc/cpuinfo` · D) `/etc/cpuinfo`
 
 ---
 
-## 8. R2 — Terça 20/10 (a pedir até sexta 16/10)
+## 8. R2 — Terça 27/10 (a escrever até sábado 24/10)
 
-Mesmo formato, 20 questões, 25 minutos. Conteúdo: as quatro frentes de novo, com **`/sys` incluído** e questões sobre `top`, `kill` e sinais, `free` e rede da Semana 7, mais 6 lacunas. Peça com a mesma instrução da seção 3.
+Mesmo formato, 20 questões, 25 minutos. Conteúdo: as quatro frentes de novo, com **`/sys` incluído** e questões sobre `top`, `kill` e sinais, `free` e rede da Semana 8, mais 6 lacunas. Peça com a mesma instrução da seção 3.
 
 ---
 
@@ -307,3 +307,4 @@ Mesmo formato, 20 questões, 25 minutos. Conteúdo: as quatro frentes de novo, c
 | Data | Alteração |
 |---|---|
 | 06/10/2026 | Criação, a partir das dicas recorrentes trazidas por Davi. Verificação contra o PDF oficial; mini-simulado R1; regras de lacuna; cola das quatro frentes |
+| 13/10/2026 | Nova estratégia (prova em 23/11): R1 movido para sex 23/10, depois do Tópico 4; R2 para ter 27/10; aquecimento rotativo a partir de 26/10; simulado 02 escrito com os mínimos por tema |
