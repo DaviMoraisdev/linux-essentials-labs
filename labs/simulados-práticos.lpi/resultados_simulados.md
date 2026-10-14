@@ -1,6 +1,6 @@
 # Resultados dos simulados e correções — LPI Linux Essentials (010-160)
 
-**Aluno:** Davi · **Prova:** 09/11/2026 (confirmação no pré-checkpoint de 07/10) · **Criado em:** 06/10/2026 · **Última atualização:** 06/10/2026
+**Aluno:** Davi · **Prova:** 23/11/2026 (definida em 13/10) · **Criado em:** 06/10/2026 · **Última atualização:** 13/10/2026
 
 Este arquivo reúne, em um só lugar, **todos os números de desempenho** do plano: os simulados, as autoavaliações por tópico, os checkpoints e as correções registradas desde a Semana 2. Ele não substitui o plano geral (`plano-linux-essentials-010-160.md`) nem os arquivos semanais; ele os resume e os mantém comparáveis.
 
@@ -54,32 +54,36 @@ O exame real aprova com **500 de 800 pontos**, cerca de 65%, ou 26 acertos. A es
 
 ### 2.1 Série de simulados
 
+Calendário revisto em 13/10 para a prova de 23/11 (`PLANO.md`, seção 7).
+
 | # | Data | Fonte | Meta | Acertos | % | Chutes acertados | Acertos firmes | Tempo | Situação |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | Seg 05/10 | `simulado-01-diagnostico` | Diagnóstico (esperado de 24 a 30) | **28** | **70%** | 5 | **23** | 20 min 31 s | **Concluído** |
-| 2 | Dom 11/10 | `simulado-02` (pedir qui 08/10, pronto sex 09/10) | **24 ou mais** (Checkpoint A) | | | | | | A fazer |
-| 3 | Dom 18/10 | `simulado-03` | **28 ou mais** (Checkpoint B) | | | | | | A fazer |
-| 4 | Qui 22/10 | Exame final de prática do NDG | 28 ou mais | | | | | | A fazer |
-| 5 | Dom 25/10 | `simulado-05` | **30 ou mais** | | | | | | A fazer |
-| 6 | Ter 27/10 | `simulado-06` | Acompanhar | | | | | | A fazer |
-| 7 | Qui 29/10 | `simulado-07` | 34 ou mais | | | | | | A fazer |
-| 8 | Dom 01/11 | `simulado-08` | **34 ou mais** (Gate) | | | | | | A fazer |
-| 9 | Qui 05/11 | `simulado-09` | 34 ou mais (final se a prova for 09/11; se for 16/11, o final passa a ser o #10 na qui 12/11) | | | | | | A fazer |
+| 1 | Seg 05/10 | `simulado-01` | Diagnóstico (esperado de 24 a 30) | **28** | **70%** | 5 | **23** | 20 min 31 s | **Concluído** |
+| 2 | **Sáb 17/10** | `simulado-02` (escrito em 13/10) | **24 ou mais** (Checkpoint A) | | | | | | A fazer (dívida) |
+| 3 | Dom 25/10 | `simulado-03` | **28 ou mais** (Checkpoint B) | | | | | | A fazer |
+| 4 | Qui 29/10 | Exame final de prática do NDG | 28 ou mais | | | | | | A fazer |
+| 5 | Dom 01/11 | `simulado-05` | **30 ou mais** | | | | | | A fazer |
+| 6 | Ter 03/11 | `simulado-06` | Acompanhar | | | | | | A fazer |
+| 7 | Qui 05/11 | `simulado-07` | 34 ou mais | | | | | | A fazer |
+| 8 | Dom 08/11 | `simulado-08` | **34 ou mais** (Gate) | | | | | | A fazer |
+| 9 | Ter 10/11 | `simulado-09` | 34 ou mais | | | | | | A fazer |
+| 10 | Dom 15/11 | `simulado-10` | 34 ou mais | | | | | | A fazer |
+| 11 | Qui 19/11 | `simulado-11` | **34 ou mais** (final) | | | | | | A fazer |
 
-Não há simulado no domingo 08/11, véspera da prova.
+Mini-simulados de reforço (20 questões): **R1 na sexta 23/10** e **R2 na terça 27/10**. Não há simulado no domingo 22/11, véspera da prova.
 
 ### 2.2 Acertos por tópico, simulado a simulado
 
 Formato: acertos de questões, e entre parênteses os chutes acertados. Copie a coluna do simulado novo conforme ele for feito.
 
-| Tópico | Peso | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 1. Comunidade e open source | 7 | 5/7 (0) | | | | | | | | |
-| 2. Encontrando seu caminho | 9 | 5/9 (0) | | | | | | | | |
-| 3. Poder da linha de comando | 9 | 9/9 (1) | | | | | | | | |
-| 4. Sistema operacional | 8 | 6/8 (1) | | | | | | | | |
-| 5. Segurança e permissões | 7 | 3/7 (3) | | | | | | | | |
-| **Total** | **40** | **28/40 (5)** | | | | | | | | |
+| Tópico | Peso | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1. Comunidade e open source | 7 | 5/7 (0) | | | | | | | | | | |
+| 2. Encontrando seu caminho | 9 | 5/9 (0) | | | | | | | | | | |
+| 3. Poder da linha de comando | 9 | 9/9 (1) | | | | | | | | | | |
+| 4. Sistema operacional | 8 | 6/8 (1) | | | | | | | | | | |
+| 5. Segurança e permissões | 7 | 3/7 (3) | | | | | | | | | | |
+| **Total** | **40** | **28/40 (5)** | | | | | | | | | | |
 
 ### 2.3 Autoavaliações por tópico
 
@@ -90,34 +94,35 @@ As autoavaliações medem a retenção do conteúdo de uma semana. Desde a Seman
 | Semana 2 | Conteúdo da Semana 2 | 14/09 | 15 | **14** | 12 | Respondida no dia do estudo. O único erro foi a Q9, sobre o `export` |
 | Semana 3 | Arquivos, links e pacotes | 19/09 | 20 | **20** | 16 | Respondida no dia do estudo. Gerou as Correções 27 e 28 (justificativas) |
 | Semana 4 | Objetivos 3.1 e 3.2, filtros e compactação | 29/09 | 20 | **14** | 16 | Abaixo da meta. Respondida quatro dias depois do estudo. Gerou as Correções 49 a 52 |
-| Semana 5 | Shell script | Sex 09/10 | 10 | | **8** | A fazer. Versão reduzida |
-| Semana 6 | Tópico 5, permissões | Sex 16/10 | 10 | | A definir | A fazer |
+| Semana 5 | Shell script | **Ter 13/10** | 10 | | **8** | Dívida da Etapa 1. Questões em `labs/semana-06.md` |
+| Semana 6 | Tópico 5, usuários e permissões | **Dom 18/10** | 10 | | **8** | Dívida da Etapa 1, devolvida ao plano em 13/10. Questões em `labs/semana-07.md`, seção 7 |
 
 Leitura: a de 29/09 (14/20, quatro dias depois do estudo) e o simulado #1 são os dados de retenção mais distantes do estudo disponíveis até aqui.
 
 ### 2.4 Checkpoints
 
-Os critérios completos estão na seção 11 do plano geral.
+Critérios revistos em 13/10 (`PLANO.md`, seção 11). Os checkpoints anteriores ficam como registro.
 
 | Checkpoint | Data | Critérios | Situação | Resultado e decisão |
 |---|---|---|---|---|
-| Pré-checkpoint | Qua 07/10 | Simulado #1 feito e Laboratório 2 feito | **Os dois cumpridos em 06/10** | **Compra do voucher adiada em 08/10** (decisão de Davi). Gatilho: média dos três últimos simulados com 30 ou mais; primeira avaliação em 22/10. **Em 10/10, a data principal passou a ser 16/11**; 09/11 é a meta ousada. Nenhuma agendada |
-| A | Dom 11/10 | Curso até a aula 57; Laboratório 2; Práticas 1 e 2; simulado #2 com 24 ou mais; **gatilho do voucher registrado** (substituiu "voucher e agendamento" em 08/10) | **Critérios 2 e 5 cumpridos** (06/10 e 08/10) | |
-| B | Dom 18/10 | Curso fechado (aula 72); práticas feitas; simulado #3 com 28 ou mais | | |
-| Gate | Dom 01/11 | Dois simulados consecutivos com 34 ou mais entre os de 27/10, 29/10 e 01/11; laboratório integrador | | |
-| Final | Qui 12/11 (prova 16/11) ou qui 05/11 (prova 09/11) | 34 ou mais: ir. De 30 a 33: ir com revisão leve. Abaixo de 30: remarcar, se a janela permitir | | |
+| Pré-checkpoint | Qua 07/10 | Simulado 01 e Laboratório 2 | Cumpridos em 06/10 | Compra do voucher adiada em 08/10; data principal 16/11 em 10/10; **prova definida para 23/11 em 13/10** |
+| A (original) | Dom 11/10 | Curso até a 57; Laboratório 2; Práticas 1 e 2; simulado 02; gatilho do voucher | Substituído em 13/10 | Não aplicado; os itens abertos viraram as dívidas da Etapa 1 |
+| **A** | **Dom 18/10** | Práticas 1 e 2; simulado 02 com 24 ou mais; autoavaliações das Semanas 5 e 6; curso até a aula 72 | | |
+| **B** | **Dom 25/10** | Curso fechado; Práticas 3, 4 e 5; simulado 03 com 28 ou mais | | |
+| **Gate** | **Dom 08/11** | Dois simulados consecutivos com 34 ou mais entre o 06, o 07 e o 08 | | |
+| **Final** | **Qui 19/11** | Simulado 11: 34 ou mais, ir; de 30 a 33, ir com revisão leve; abaixo de 30, remarcar para 30/11 | | |
 
 ### 2.5 Dicas recorrentes de prova, por tema
 
-Temas que aparecem com frequência nos relatos de candidatos (ver `praticas-reforco-dicas-recorrentes.md`). Formato: acertos de questões do tema. O simulado #1 não tinha esta marcação por tema, então só os mini-simulados de reforço e os simulados a partir do #2 preenchem a tabela.
+Temas que aparecem com frequência nos relatos de candidatos (ver `praticas_simulados.md`). Formato: acertos e total de questões do tema. O simulado 01 não tinha esta marcação por tema; a tabela começa no simulado 02.
 
-| Tema | Mínimo por simulado | R1 (13/10) | #2 (11/10) | R2 (20/10) | #3 (18/10) | #5 | #7 | #8 | #9 |
+| Tema | Mínimo por simulado | #2 (17/10) | R1 (23/10) | #3 (25/10) | R2 (27/10) | #5 | #7 | #8 | #11 |
 |---|---|---|---|---|---|---|---|---|---|
-| Permissões | 4 | /5 | | | | | | | |
-| `tar` e compressão | 2 | /4 | | | | | | | |
-| Redirecionamento (com `<<`) | 3 | /5 | | | | | | | |
-| Diretórios virtuais e `/var` | 3 | /4 | | | | | | | |
-| **Questões de preencher a lacuna** | 5 | /6 | | | | | | | |
+| Permissões | 4 | /5 | /5 | | | | | | |
+| `tar` e compressão | 2 | /2 | /4 | | | | | | |
+| Redirecionamento (com `<<`) | 3 | /3 | /5 | | | | | | |
+| Diretórios virtuais e `/var` | 3 | /3 | /4 | | | | | | |
+| **Questões de preencher a lacuna** | 5 | /5 | /6 | | | | | | |
 
 Regra de leitura: um tema abaixo de 60% em um reforço ou simulado vira o foco do aquecimento da semana seguinte. Nas lacunas, anote também se o erro foi de **conteúdo** ou de **forma** (sublinhado, caminho, flag a mais, caixa).
 
@@ -249,7 +254,7 @@ Comparação com o simulado anterior: o que errava e agora acerta, o que continu
 
 Decisão ou checkpoint associado: .
 
-### Mini-simulado de reforço R1 — 13/10/2026
+### Mini-simulado de reforço R1 — 23/10/2026
 
 | Campo | Valor |
 |---|---|
@@ -259,18 +264,18 @@ Decisão ou checkpoint associado: .
 | Chutes marcados | |
 | Erros de forma nas lacunas | |
 
-*A preencher na terça 13/10. A apuração por tema vai na tabela da seção 2.5.*
+*A preencher na sexta 23/10. A apuração por tema vai na tabela da seção 2.5.*
 
-### Simulado #2 — 11/10/2026
+### Simulado #2 — 17/10/2026
 
 | Campo | Valor |
 |---|---|
-| Fonte | `simulado-02` |
+| Fonte | `simulado-02.md` (escrito em 13/10) |
 | Tempo gasto | |
 | Acertos | de 40 |
 | Meta | **24 ou mais** (Checkpoint A) |
 
-*A preencher no domingo 11/10. Observação: o simulado vem antes da Prática 2 (permissões), então separe as questões de permissões na leitura.*
+*A preencher no sábado 17/10. O simulado vem depois das Práticas 1 e 2 e antes do estudo do Tópico 4: separe as questões 26 a 33 na leitura. O registro completo fica no próprio `simulado-02.md`.*
 
 ---
 
@@ -409,20 +414,15 @@ O Laboratório 2 (06/10) não gerou correção numerada: não houve erro conceit
 
 ## 7. Fila de retaguarda
 
-Itens antigos de conteúdo já estudado, tirados da rotina diária em 06/10 para não competir com o conteúdo novo. Cada item volta **nos simulados** e na **revisão leve da Semana 10** (segunda 02/11 a quarta 04/11), pelos cards do Notion.
+**Revista em 13/10.** Ficam só os erros de conteúdo já estudado. Eles não têm atividade própria: voltam **nos simulados** (o simulado 02 retesta oito deles) e na **revisão leve da Semana 12** (16 a 18/11), pelos cards do Notion.
 
 | Item | Origem | Observação |
 |---|---|---|
-| Correções 62 a 67 (Tópicos 1 e 2 do simulado #1) | Semana 6 | A Correção 68 (`chmod` e `chown`) é do Tópico 5 e continua ativa |
+| Correções 62 a 67 (Tópicos 1 e 2 do simulado 01) | Semana 6 | A Correção 68 (`chmod` e `chown`) é do Tópico 5 e fica ativa até a Prática 2 |
 | `cd ..` e `cd -` | Correções 1, 53 e 64 | Quinta ocorrência; o simulado mede se volta |
-| Reteste das quatro questões erradas da autoavaliação da Semana 4 | Semana 4 | Correções 49 a 52 |
-| Reteste das questões 18, 20, 21, 22 e 24 do simulado #1 | Semana 5 | A 22 foi acerto por chute |
-| Comparação de compressão com o `bzip2` | Semana 4 | Primeiro corte da fila; sem registro em 06/10 |
-| Saídas do `teste.sh` e das três saídas de `vi` e `nano` | Semana 5 | Primeiro corte da fila; sem registro em 06/10 |
-| `.wslconfig` limitando o WSL2 a 3 GB | Semana 0 | Sem prazo |
-| Teste de restauração do snapshot | Semana 0 | Sem prazo |
+| `sort`, `-k` e `uniq` | Correções 32 a 36 e 50 | Retestados pelos simulados 01 e 02 |
 
-**O que não está na retaguarda:** o conteúdo atual. Tópico 5 (Semana 6) e Tópico 4 (Semana 7) permanecem no aquecimento e nas práticas, inclusive os chutes errados e o par `chmod` e `chown`.
+**Retirados do plano em 13/10:** reteste das quatro questões erradas da autoavaliação da Semana 4; reteste das questões 18, 20, 21, 22 e 24 do simulado 01; comparação de compressão com o `bzip2`; saídas do `teste.sh`, do `vi` e do `nano`; `.wslconfig`; teste de restauração do snapshot. O motivo está em `labs/semana-07.md`, seção 4.
 
 ---
 
@@ -432,8 +432,8 @@ Itens antigos de conteúdo já estudado, tirados da rotina diária em 06/10 para
 |---|---|
 | Correções 60 a 68 | Cards anotados em 05/10, conforme informado |
 | Questões erradas do simulado #1 | Correções 62 a 68 anotadas; os cinco chutes errados viram ênfase de estudo, sem card |
-| Correções 69 a 74 (curso, 08/10 e 09/10) | A anotar no Notion |
-| Questões erradas do simulado #2 | A corrigir no Notion no mesmo dia do simulado (11/10) |
+| Correções 69 a 74 (curso, 08/10 e 09/10) | No seu fluxo do Notion; deixou de ser pendência do plano em 13/10 |
+| Questões erradas do simulado 02 | A corrigir no Notion no mesmo dia do simulado (17/10) |
 
 ---
 
@@ -446,3 +446,4 @@ Itens antigos de conteúdo já estudado, tirados da rotina diária em 06/10 para
 | 08/10/2026 | Correções 69 a 72 (curso, 08/10); pré-checkpoint com a compra do voucher adiada (gatilho: média dos três últimos simulados ≥ 30); simulado #2 de volta ao domingo 11/10; autoavaliação da Semana 5 na sexta 09/10 |
 | 09/10/2026 | Correções 73 e 74 (curso, 09/10) |
 | 10/10/2026 | Replanejamento: data principal da prova 16/11 (09/11 como meta ousada); meta de 9h por semana até 01/11; Prática 2 e aulas 58 em diante na segunda 12/10; autoavaliação da Semana 6 cortada |
+| 13/10/2026 | Nova estratégia: prova em 23/11; série de simulados redistribuída (02 a 11); R1 em 23/10 e R2 em 27/10; checkpoints A (18/10), B (25/10), Gate (08/11) e Final (19/11); autoavaliação da Semana 6 devolvida ao plano; retaguarda reduzida aos erros de conteúdo; simulado 02 escrito |
