@@ -5,6 +5,8 @@ Objetivos da prova: 5.1, 5.2, 5.3 e 5.4 — Tópico 5, peso 7 de 40
 Carga nominal: cerca de 11h00 (atualizada em 06/10), acima do teto de 7h; cerca de 8h30 com os cortes. A seção "Carga da semana e ordem de corte" explica o motivo e o que sai primeiro
 Marco da semana: **Checkpoint A, domingo 11/10**, com decisão objetiva sobre a data da prova (data principal **16/11** desde 10/10; 09/11 é a meta ousada). A semana se encerra na **segunda 12/10 (feriado)**, dia extra para fechar o Tópico 5
 
+> **Fechamento em 13/10.** A semana terminou com o simulado 01, o Laboratório 2, o aquecimento de conversões e as aulas 31 a 40. As dívidas que ficaram abertas foram para `labs/semana-07.md`, por decisão sua: **Prática 1** (terça 13/10), **Prática 2** (quarta 14/10), **simulado 02** (sábado 17/10) e as **autoavaliações das Semanas 5 e 6** (terça 13/10 e domingo 18/10). Os roteiros das duas práticas e a autoavaliação da Semana 5 continuam neste arquivo. Os demais itens antigos da fila saíram do plano (ver "Pendências e fila de dívidas"). A prova passou para **23/11**.
+
 Observação sobre a natureza desta semana: ela carrega duas coisas ao mesmo tempo. De um lado, conteúdo novo e dependente de repetição, porque converter `rwxr-xr--` em `754` precisa virar reflexo. De outro, as dívidas que a Semana 5 não fechou: o simulado #1, o Laboratório 2, as aulas 31 a 43 e o voucher. Por isso o aquecimento diário desta semana é **obrigatório e dedicado a permissões**, e a ordem de corte está escrita de antemão. Decidir o que cortar com a semana já atrasada é como os dias se perderam na Semana 5.
 
 ---
@@ -63,7 +65,7 @@ Três pontos de atenção:
 | Revisão prática dos erros do simulado #1 (a apuração e as correções foram concluídas em 05/10) | Semana 6 | Cancelada em 06/10; vai para a retaguarda |
 | Saídas do `teste.sh` e três saídas de cada editor (`vi` e `nano`) | Semana 5, Laboratório 1 | Terça 06/10, 5 minutos no aquecimento |
 | Comparação de compressão com o `bzip2` | Semana 4 | Terça 06/10, no aquecimento |
-| Reteste das correções do simulado #1 e da Semana 4 | Semana 5 | **Retaguarda** desde 06/10 (os simulados continuam medindo) | — |
+| Reteste das correções do simulado #1 e da Semana 4 | Semana 5 | **Retaguarda** desde 06/10 (os simulados continuam medindo) |
 | `.wslconfig` e teste de restauração do snapshot | Semana 0 | Sem prazo. Só com folga |
 
 ---
@@ -291,7 +293,7 @@ Registro: caderno da Semana 6, seção "Registro das sessões". Se aparecer erro
 
 ---
 
-## Prática 1 — Usuários e grupos — Sábado 10/10 (movida de quinta em 08/10)
+## Prática 1 — Usuários e grupos — Terça 13/10 (dívida, executada na Semana 7)
 
 Objetivos 5.1 e 5.2. Pré-requisito: aulas de usuários e grupos já vistas. Quarenta e cinco minutos de teclado, 10 de registro, 5 de commit. Prediga o resultado **antes** de executar e anote.
 
@@ -352,11 +354,11 @@ Registre a regra com o **mecanismo**: sem `-a`, o `-G` **substitui** a lista de 
 
 Um experimento a mais: repita o `useradd` sem o `-m` em um usuário descartável e veja com `ls -ld /home/<nome>` se o diretório pessoal foi criado. O resultado depende da distribuição. Anote o que **a sua VM** fez.
 
-**Não apague os usuários agora.** A Prática 2 usa `alice`, `bob` e o grupo `dev`. A limpeza é no sábado.
+**Não apague os usuários agora.** A Prática 2 (quarta 14/10) usa `alice`, `bob` e o grupo `dev`. A limpeza é no fim da Prática 2.
 
 ### Questões oficiais da LPI (20 min, ao fim da sessão)
 
-Responda no **LPI Learning Material** (PDF do Projeto) os **Exercícios Guiados** e os **Exploratórios** das lições 5.1 e 5.2, **sem consultar o texto**. As páginas estão no sumário do PDF. Só depois abra "Respostas aos Exercícios". Anote apenas as questões erradas. Se não couber nos 20 minutos, faça os Guiados e deixe os Exploratórios para a segunda 12/10.
+Responda no **LPI Learning Material** (PDF do Projeto) os **Exercícios Guiados** e os **Exploratórios** das lições 5.1 e 5.2, **sem consultar o texto**. As páginas estão no sumário do PDF. Só depois abra "Respostas aos Exercícios". Anote apenas as questões erradas. Se não couber nos 20 minutos, faça os Guiados e deixe os Exploratórios para depois da Prática 2.
 
 ### Para o caderno
 
@@ -366,7 +368,7 @@ Responda no **LPI Learning Material** (PDF do Projeto) os **Exercícios Guiados*
 
 ---
 
-## Prática 2 — Permissões — Segunda 12/10 (feriado; movida de sábado em 08/10 e de domingo em 10/10; ênfase)
+## Prática 2 — Permissões — Quarta 14/10 (dívida, executada na Semana 7)
 
 Objetivos 5.3 e 5.4. Pré-requisito: aulas de permissões e bits especiais já vistas. Quarenta e cinco minutos de teclado, 10 de registro, 5 de commit. Em todos os blocos: **prediga, execute, compare**.
 
@@ -475,7 +477,7 @@ Entregável: `cheatsheets/permissoes.md`, com a cola rápida desta semana reescr
 
 ---
 
-## Autoavaliação da Semana 5 — Sábado 10/10 (movida de sexta em 10/10)
+## Autoavaliação da Semana 5 — Terça 13/10 (dívida, executada na Semana 7)
 
 Dez questões sobre shell script (objetivo 3.3), respondidas **sem consultar**, quatro dias depois do Laboratório 2. **Faça-a no início da sessão de sábado, antes de estudar qualquer coisa nova.** Mede a retenção, como na regra da Semana 4. As questões foram escritas em 09/10 a partir do caderno da Semana 5 e da cola rápida de shell script. **Responda primeiro, confira só ao final.** Escreva as respostas à mão, como na prova, e use a segunda coluna do gabarito só depois.
 
@@ -514,7 +516,9 @@ Dez questões sobre shell script (objetivo 3.3), respondidas **sem consultar**, 
 
 ---
 
-## Simulado #2 — Domingo 11/10
+## Simulado #2 — Sábado 17/10 (dívida, executado na Semana 7)
+
+**Atualização de 13/10:** o simulado foi escrito e está em `labs/simulados-práticos.lpi/simulado-02.md`. A data passou para o **sábado 17/10**. O texto abaixo é o original.
 
 | Item | Valor |
 |---|---|
@@ -595,6 +599,8 @@ Anote na hora do agendamento: data escolhida ____________ · janela de remarcaç
 
 ## Checkpoint A — Domingo 11/10, à noite
 
+**Substituído em 13/10** pelo Checkpoint A de domingo 18/10, com critérios revistos (`labs/semana-07.md`, seção 8). O texto abaixo fica como registro.
+
 *Nota de 10/10:* a Prática 2 cai na segunda 12/10, então o critério 3 (Práticas 1 e 2) deve falhar no domingo e o resultado esperado é **amarelo**; a regra já prevê o item obrigatório na segunda. **Não mova o checkpoint para esconder o amarelo.**
 
 *Nota de 08/10:* o critério 5 (voucher) foi substituído pelo registro do gatilho de compra. O simulado #2 e a Prática 2 acontecem no próprio domingo, antes desta decisão.
@@ -619,27 +625,26 @@ Resultado, pela regra do plano geral (seção 11):
 
 ## Pendências e fila de dívidas
 
-| Item | Origem | Estado | Prazo |
+**Fechada em 13/10.** O que estava aberto foi transferido para a Semana 7 ou retirado do plano.
+
+| Item | Origem | Estado em 13/10 | Destino |
 |---|---|---|---|
-| **Simulado #1** | Semana 3 | **Concluído em 05/10:** 28 de 40 (70%) | — |
-| Correções 62 a 68 e cards no Notion | Semana 6 | **Concluído em 05/10**: correções registradas e cards anotados | — |
-| ~~Revisão prática dos erros do simulado #1~~ | Semana 6 | **Cancelada em 06/10** (retaguarda) | — |
+| **Simulado 01** | Semana 3 | **Concluído em 05/10:** 28 de 40 (70%) | — |
+| Correções 62 a 68 e cards no Notion | Semana 6 | **Concluído em 05/10** | — |
 | Laboratório 2 (três scripts) | Semana 5 | **Concluído em 06/10** | — |
-| Comparação de compressão com o `bzip2` | Semana 4 | Sem registro em 06/10; primeiro corte da fila | Retaguarda, se não houver folga |
-| Saídas do `teste.sh` e três saídas de `vi` e `nano` | Semana 5 | Sem registro em 06/10; primeiro corte da fila | Retaguarda, se não houver folga |
-| Voucher, agendamento e pré-checkpoint | Semana 5 | **Adiado em 08/10**: compra só depois que a média dos três últimos simulados chegar a 30 ou mais | Primeira avaliação: qui 22/10 |
-| Curso, aulas 31 a 43 (a 2x) | Semana 5 | Em aberto | Qua 07/10 |
-| Curso, aulas 31 a 35 (checkpoint na 36) | Semana 6 | **Concluído em 08/10** | — |
-| Curso, aulas 36 a 40 | Semana 6 | **Concluído em 09/10** | — |
-| Curso, aulas 41 a 50 | Semana 6 | Previsto | **Sáb 10/10** |
-| Prática 1 — usuários e grupos | Semana 6 | Previsto | **Sáb 10/10** |
-| Pedir o `simulado-02` | Semana 6 | Previsto | **Hoje, qui 08/10**; pronto até sex 09/10 à noite |
-| Questões oficiais da LPI, 5.1 e 5.2 (20 min) | Semana 6 | Novo em 06/10 | Sáb 10/10, fim da Prática 1 |
-| Autoavaliação da Semana 5 (10 questões) | Semana 5 | Previsto | **Sáb 10/10**, primeira atividade |
-| Curso, aulas 51 a 57 | Semana 6 | Previsto | **Dom 11/10** |
-| Prática 2 — permissões, com questões oficiais da LPI 5.3 e 5.4 (20 min) | Semana 6 | Previsto | **Seg 12/10** (feriado; ênfase) |
-| Simulado #2 | Semana 6 | Previsto | Dom 11/10 |
-| `.wslconfig` e teste do snapshot | Semana 0 | Sem prazo | Com folga |
+| Curso, aulas 31 a 40 | Semana 6 | **Concluído em 08 e 09/10** | — |
+| **Prática 1** — usuários e grupos, com Exercícios da LPI 5.1 e 5.2 | Semana 6 | Dívida | **Semana 7, ter 13/10** |
+| **Prática 2** — permissões, com Exercícios da LPI 5.3 e 5.4 | Semana 6 | Dívida | **Semana 7, qua 14/10** |
+| **Autoavaliação da Semana 5** (10 questões) | Semana 5 | Dívida | **Semana 7, ter 13/10**, primeira atividade |
+| **Simulado 02** | Semana 6 | Dívida; escrito em 13/10 (`labs/simulados-práticos.lpi/simulado-02.md`) | **Semana 7, sáb 17/10** |
+| **Autoavaliação da Semana 6** | Semana 6 | Cortada em 10/10, **devolvida ao plano em 13/10** | **Semana 7, dom 18/10** (questões em `labs/semana-07.md`) |
+| Curso, aulas 41 a 72 | Semanas 6 e 7 | Conteúdo não estudado | **Semana 7**, de 15 a 18/10 |
+| Voucher e agendamento | Semana 5 | Prova definida para **23/11** em 13/10 | `PLANO.md`, seção 11 |
+| ~~Revisão prática dos erros do simulado 01~~ | Semana 6 | Cancelada em 06/10 | **Retirada do plano** |
+| ~~Comparação de compressão com o `bzip2`~~ | Semana 4 | Sem registro | **Retirada do plano** em 13/10 |
+| ~~Saídas do `teste.sh` e três saídas de `vi` e `nano`~~ | Semana 5 | Sem registro | **Retirada do plano** em 13/10 |
+| ~~`filtrar.sh`~~ | Semana 5 | Opcional, não feito | **Retirado do plano** em 13/10 |
+| ~~`.wslconfig` e teste do snapshot~~ | Semana 0 | Sem prazo | **Retirados do plano** em 13/10 |
 
 ---
 
@@ -1089,32 +1094,28 @@ Registre o tempo real de cada dia. É com esses números que o plano será calib
 
 ## Checklist da semana
 
-- [ ] Abertura: tabela de dívidas conferida
-- [x] **Simulado #1** e apuração por objetivo (segunda): 28 de 40, 70%
+**Fechado em 13/10.** Os itens abertos foram para o checklist de `labs/semana-07.md`.
+
+- [x] **Simulado 01** e apuração por objetivo (segunda): 28 de 40, 70%
 - [x] Correções 62 a 68 registradas (segunda)
 - [x] Cards das Correções 62 a 68 no Notion (05/10)
 - [x] Arquivos ocultos: dívida encerrada em 05/10, a pedido (comandos já dominados)
 - [x] Laboratório 2, três scripts (terça 06/10)
-- [x] Comparação de compressão refeita; saídas do `teste.sh`, do `vi` e do `nano` registradas: sem registro em 06/10, primeiro corte da fila
-- [x] **Pré-checkpoint** feito; **voucher adiado** por decisão de 08/10 (gatilho: média dos três últimos simulados ≥ 30; primeira avaliação em 22/10)
+- [x] Comparação de compressão e saídas do `teste.sh`, do `vi` e do `nano`: retiradas do plano em 13/10
+- [x] **Pré-checkpoint** feito; voucher adiado em 08/10; prova definida para 23/11 em 13/10
 - [x] Curso, aulas 31 a 35 (quinta 08/10; checkpoint na 36)
 - [x] Curso, aulas 36 a 40 (sexta 09/10)
-- [ ] Curso, aulas 41 a 50 (sábado 10/10)
-- [ ] Prática 1, usuários e grupos, e questões oficiais da LPI 5.1 e 5.2 (sábado 10/10)
-- [ ] `simulado-02` pedido (quinta 08/10) e pronto (sexta à noite)
-- [ ] Autoavaliação da Semana 5 e correção (sábado 10/10, primeira atividade)
-- [ ] Curso, aulas 51 a 57 (domingo 11/10)
-- [ ] Prática 2, permissões, questões oficiais da LPI 5.3 e 5.4 e limpeza dos usuários de teste (segunda 12/10)
-- [ ] `cheatsheets/permissoes.md` escrito à mão
-- [ ] Simulado #2 e apuração por objetivo (domingo 11/10)
-- [ ] Checkpoint A preenchido
-- [ ] Commits ao fim de cada sessão
+- [x] `simulado-02` escrito (13/10)
+- [ ] Prática 1 e Prática 2: transferidas para a Semana 7
+- [ ] Autoavaliações das Semanas 5 e 6: transferidas para a Semana 7
+- [ ] Simulado 02: transferido para a Semana 7 (sábado 17/10)
+- [ ] Curso, aulas 41 a 72: transferidas para a Semana 7
 
 ---
 
 ## Entregável
 
-`labs/semana-06.md` preenchido, `cheatsheets/permissoes.md`, os três scripts do Laboratório 2 em `scripts/`, voucher comprado com a prova agendada, resultados dos simulados #1 e #2 e o Checkpoint A preenchido.
+`labs/semana-06.md` com o simulado 01, o Laboratório 2 e o curso até a aula 40. O restante do entregável original (Práticas 1 e 2, `cheatsheets/permissoes.md`, simulado 02 e Checkpoint A) passou para a Semana 7.
 
 ---
 
