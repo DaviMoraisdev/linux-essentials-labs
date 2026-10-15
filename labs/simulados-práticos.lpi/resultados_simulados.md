@@ -21,7 +21,7 @@ Arquivos relacionados:
 
 **Simulados: só se anotam as questões erradas.** Para cada simulado, este arquivo guarda a apuração por tópico, a lista das questões erradas e das chutadas, e a comparação com o simulado anterior. A **correção em si**, a explicação do mecanismo, é feita por você nos cards do Notion. Não se abre mais correção numerada para erro de simulado.
 
-**Erros antigos de comandos já dominados vão para a retaguarda.** Eles saem do aquecimento diário e das pendências. Voltam de duas formas: nos próprios simulados, que continuam medindo se o erro reaparece, e na revisão leve da Semana 10, pelos cards do Notion. A lista está na seção 7.
+**Erros antigos de conteúdo já estudado não entram no aquecimento.** Voltam de duas formas: nos próprios simulados, que medem se o erro reaparece, e na revisão leve da Semana 12, pelos cards do Notion. A lista está na seção 7.
 
 **A numeração das correções continua para laboratório e curso.** A próxima é a **75**.
 
@@ -59,7 +59,7 @@ Calendário revisto em 13/10 para a prova de 23/11 (`PLANO.md`, seção 7).
 | # | Data | Fonte | Meta | Acertos | % | Chutes acertados | Acertos firmes | Tempo | Situação |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | Seg 05/10 | `simulado-01` | Diagnóstico (esperado de 24 a 30) | **28** | **70%** | 5 | **23** | 20 min 31 s | **Concluído** |
-| 2 | **Sáb 17/10** | `simulado-02` (escrito em 13/10) | **24 ou mais** (Checkpoint A) | | | | | | A fazer (dívida) |
+| 2 | **Sáb 17/10** | `simulado-02` (escrito em 13/10) | **24 ou mais** (Checkpoint A) | | | | | | A fazer |
 | 3 | Dom 25/10 | `simulado-03` | **28 ou mais** (Checkpoint B) | | | | | | A fazer |
 | 4 | Qui 29/10 | Exame final de prática do NDG | 28 ou mais | | | | | | A fazer |
 | 5 | Dom 01/11 | `simulado-05` | **30 ou mais** | | | | | | A fazer |
@@ -94,8 +94,8 @@ As autoavaliações medem a retenção do conteúdo de uma semana. Desde a Seman
 | Semana 2 | Conteúdo da Semana 2 | 14/09 | 15 | **14** | 12 | Respondida no dia do estudo. O único erro foi a Q9, sobre o `export` |
 | Semana 3 | Arquivos, links e pacotes | 19/09 | 20 | **20** | 16 | Respondida no dia do estudo. Gerou as Correções 27 e 28 (justificativas) |
 | Semana 4 | Objetivos 3.1 e 3.2, filtros e compactação | 29/09 | 20 | **14** | 16 | Abaixo da meta. Respondida quatro dias depois do estudo. Gerou as Correções 49 a 52 |
-| Semana 5 | Shell script | **Ter 13/10** | 10 | | **8** | Dívida da Etapa 1. Questões em `labs/semana-06.md` |
-| Semana 6 | Tópico 5, usuários e permissões | **Dom 18/10** | 10 | | **8** | Dívida da Etapa 1, devolvida ao plano em 13/10. Questões em `labs/semana-07.md`, seção 7 |
+| Semana 5 | Shell script | **13 e 14/10** | 10 | | **8** | Em andamento: 7 de 10 respondidas. Questões em `labs/semana-06.md` |
+| Semana 6 | Tópico 5, usuários e permissões | **Dom 18/10** | 10 | | **8** | Questões em `labs/semana-07.md`, seção 6 |
 
 Leitura: a de 29/09 (14/20, quatro dias depois do estudo) e o simulado #1 são os dados de retenção mais distantes do estudo disponíveis até aqui.
 
@@ -302,8 +302,8 @@ Nota de 06/10: o fechamento da Semana 4 dizia "dez correções (43 a 52)". As co
 | 3 | `ls` lista o conteúdo do diretório atual; `ls -R` entra nos subdiretórios | Sessão 1 |
 | 4 | `ls -h` sozinho não muda a listagem | Sessão 1 |
 | 5 | `echo` exibe qualquer texto (o shell expande `$VAR` antes) | Sessão 1 |
-| 6 | `/log` não existe: é `/var/log` | Pendência de 09/09 |
-| 7 | O `echo $?` deve vir logo após o comando | Pendência de 09/09 |
+| 6 | `/log` não existe: é `/var/log` | Sessão 1, 09/09 |
+| 7 | O `echo $?` deve vir logo após o comando | Sessão 1, 09/09 |
 | 8 | `type ls` = alias | Sessão 3, 10/09 |
 | 9 | O `which ls` devolve `/usr/bin/ls`, com a barra inicial | Sessão 3 |
 | 10 | Digitação: `/usr/share/doc`, não `/usr/share/odc` | Sessão 3 |
@@ -408,21 +408,19 @@ O Laboratório 2 (06/10) não gerou correção numerada: não houve erro conceit
 
 **Padrão novo, do simulado #1:** nos Tópicos 1 e 2, a confiança foi maior que o acerto. Seis dos sete erros com convicção caíram neles.
 
-**Situação desde 06/10:** estes erros estão na retaguarda (seção 7). Os simulados dizem se eles voltam.
+Os simulados dizem se estes erros voltam (seção 7).
 
 ---
 
-## 7. Fila de retaguarda
+## 7. Erros antigos acompanhados pelos simulados
 
-**Revista em 13/10.** Ficam só os erros de conteúdo já estudado. Eles não têm atividade própria: voltam **nos simulados** (o simulado 02 retesta oito deles) e na **revisão leve da Semana 12** (16 a 18/11), pelos cards do Notion.
+São erros de conteúdo já estudado. Eles não têm atividade própria: voltam **nos simulados** (o simulado 02 retesta oito deles) e na **revisão leve da Semana 12** (16 a 18/11), pelos cards do Notion.
 
 | Item | Origem | Observação |
 |---|---|---|
 | Correções 62 a 67 (Tópicos 1 e 2 do simulado 01) | Semana 6 | A Correção 68 (`chmod` e `chown`) é do Tópico 5 e fica ativa até a Prática 2 |
 | `cd ..` e `cd -` | Correções 1, 53 e 64 | Quinta ocorrência; o simulado mede se volta |
 | `sort`, `-k` e `uniq` | Correções 32 a 36 e 50 | Retestados pelos simulados 01 e 02 |
-
-**Retirados do plano em 13/10:** reteste das quatro questões erradas da autoavaliação da Semana 4; reteste das questões 18, 20, 21, 22 e 24 do simulado 01; comparação de compressão com o `bzip2`; saídas do `teste.sh`, do `vi` e do `nano`; `.wslconfig`; teste de restauração do snapshot. O motivo está em `labs/semana-07.md`, seção 4.
 
 ---
 
@@ -432,7 +430,7 @@ O Laboratório 2 (06/10) não gerou correção numerada: não houve erro conceit
 |---|---|
 | Correções 60 a 68 | Cards anotados em 05/10, conforme informado |
 | Questões erradas do simulado #1 | Correções 62 a 68 anotadas; os cinco chutes errados viram ênfase de estudo, sem card |
-| Correções 69 a 74 (curso, 08/10 e 09/10) | No seu fluxo do Notion; deixou de ser pendência do plano em 13/10 |
+| Correções 69 a 74 (curso, 08/10 e 09/10) | No seu fluxo do Notion |
 | Questões erradas do simulado 02 | A corrigir no Notion no mesmo dia do simulado (17/10) |
 
 ---
