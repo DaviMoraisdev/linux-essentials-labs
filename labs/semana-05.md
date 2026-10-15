@@ -3,7 +3,7 @@
 Período: 28/09 a 04/10/2026 (segunda a domingo)
 Objetivo da prova: 3.3 (Turning Commands into a Script), peso 4 de 40 — o maior peso individual do exame
 Tópico 3, peso 9: com o 3.3 esta semana fecha os 4 pontos restantes (3.1 e 3.2 foram fechados na Semana 4)
-Fechamento em 04/10: **Laboratório 1 completo** e **exercício das frutas feito**. O simulado #1, o Laboratório 2, a autoavaliação e as aulas 31 a 43 passam para a Semana 6
+Fechamento em 04/10: **Laboratório 1 completo** e **exercício das frutas feito**. O Laboratório 2 e o simulado 01 estão registrados no caderno da Semana 6
 
 Observação sobre a natureza desta semana: até aqui cada comando foi aprendido isoladamente, e na Semana 4 eles passaram a se combinar em pipelines. O shell script é o passo seguinte: o pipeline vira um arquivo reutilizável, com variáveis, decisões e código de saída. Você já programa, então a sintaxe vem rápido. O que exige atenção é o modelo mental do shell, que difere de uma linguagem estruturada em três pontos concretos: espaços dentro de `[ ]` são obrigatórios, `=` compara texto e `-eq` compara número, e uma variável sem aspas se parte em palavras.
 
@@ -30,115 +30,7 @@ Fonte: LPI Learning Material, versão 1.6, objetivo 3.3.
 Dois pontos de atenção que o plano anterior não destacava:
 
 1. **Os editores `vi` e `nano` fazem parte do objetivo.** A prova pode perguntar como se entra no modo de inserção do `vi` ou como se sai do `nano`. Isso entra no Laboratório 1, em 10 minutos.
-2. **`while` e `read` não constam na lista oficial.** São úteis e entram no Laboratório 2 porque o quarto script os exige, mas o que a prova cobra com certeza são `for`, argumentos, variáveis, `if` com operadores numéricos e o código de saída.
-
----
-
-## A estratégia em vigor
-
-Esta é a estratégia consolidada nas Semanas 4 e 5. Ela vale até a prova.
-
-| Elemento | Como funciona |
-|---|---|
-| **Duas fases** | Fase 1 (Semanas 5 a 7, até 18/10): fechar o curso, com 2 laboratórios por semana. Fase 2 (Semanas 8 a 10, até 08/11): simulados em condição de prova e laboratório integrador |
-| **Curso como atividade principal** | Velocidade de 1.5x nos tópicos já praticados, 1x no objetivo 3.3, 1.25x nos tópicos novos (4 e 5) |
-| **Duas sessões de laboratório por semana** | Sessão inteira de teclado: 45 min digitando (nunca copiando), 10 min de registro no caderno, 5 min de commit |
-| **Aquecimento diário de 10 minutos** | Cinco comandos de memória, sem consultar. O que travar vira card no Notion na hora |
-| **Aquecimento pautado pelos erros** | Os comandos vêm das questões erradas da autoavaliação anterior, não do acaso |
-| **Autoavaliação na semana seguinte** | Respondida em um dia de curso, como abertura da sessão, com intervalo mínimo de 3 dias. Mede retenção, não memória de curto prazo |
-| **Executar em vez de reler** | Conceito que resistiu a três leituras cede a uma execução de 15 segundos (lição do `sort`, Correção 50) |
-| **Correção com mecanismo** | Cada erro é registrado com o motivo, não só com a resposta certa. O resultado certo pelo motivo errado quebra quando a pergunta muda de ângulo |
-| **Marcar os chutes** | No simulado, toda questão acertada por eliminação conta como erro para efeito de estudo |
-| **Fila de dívidas** | Item adiado não some: entra no início do próximo bloco e fica registrado na tabela de dívidas abaixo |
-| **Gate de aprovação** | Dois simulados seguidos com 85% ou mais na Semana 9. Sem isso, a prova é adiada em uma semana |
-| **Sem dumps** | ITExams, Marks4Sure e semelhantes violam o acordo de confidencialidade da LPI |
-
----
-
-## Situação na abertura — 29/09
-
-### Concluído
-
-| Item | Data |
-|---|---|
-| Sessão 5 da Semana 4 (`find` e desafio integrador) | 28/09 |
-| Autoavaliação da Semana 4 — 14 de 20 | 29/09 |
-| Correções 49 a 52 anotadas no caderno | 29/09 |
-| Instalação do `bzip2` | 29/09 |
-| Commits da Semana 4 | 29/09 |
-
-### Adiado e ainda em aberto
-
-| Item | Situação |
-|---|---|
-| **Curso, aulas 26 a 31** | Previsto para terça 29/09. Foi adiado na segunda e na terça |
-| **Simulado diagnóstico** | Pendência mais antiga do plano, com quatro semanas de atraso. Data fixa: domingo 04/10 |
-| **Voucher da prova** | Prazo original: 29/09 |
-
----
-
-## Calendário revisado — segunda revisão, em 29/09
-
-A segunda-feira foi consumida pela Sessão 5 da Semana 4 e a terça pela autoavaliação e pelas correções. O curso perdeu os dois dias. Em vez de criar um quarto dia de curso, as 18 aulas restantes (26 a 43) foram distribuídas em **dois blocos de 9 aulas**, na quarta e na quinta. Os laboratórios de sexta e sábado e o simulado de domingo **não mudam de dia**.
-
-| Dia | Atividade | Tempo |
-|---|---|---|
-| Seg 28 | Sessão 5 da Semana 4 — `find` e desafio integrador | concluído |
-| Ter 29 | Autoavaliação da Semana 4 · correções 49 a 52 · `bzip2` · commits | concluído |
-| **Qua 30** | Voucher (10 min) · curso, aulas 26 a 34 · aquecimento — **realizado em parte: aulas 26 a 30, checkpoint na aula 31** | 1h25 |
-| **Qui 01/10** | **Curso, aulas 31 a 43** (13 aulas; as de shell script a 1x) · aquecimento | cerca de 1h50 |
-| Sex 02 | Laboratório 1 — fundamentos de shell script, `vi` e `nano` · aquecimento | 1h10 |
-| Sáb 03 | ~~Laboratório 2 — os quatro scripts~~ — **transferido para a Semana 6** (terça 06/10) | — |
-| **Dom 04** | Laboratório 1, blocos 3 a 6 e exercício das frutas — **realizado**. Simulado #1 **não realizado**: passou para a segunda 05/10 | — |
-
-**Total a partir de quarta: 6h45**, dentro do teto de 7h do orçamento semanal, porém sem folga. O plano original previa 5h; as 1h45 a mais são o custo dos dois dias de curso perdidos.
-
-**Regra de transbordo.** Se a quarta ou a quinta não fecharem as 9 aulas do dia:
-
-1. As aulas de shell script (objetivo 3.3) têm prioridade e **precisam estar vistas antes do Laboratório 1**. Se necessário, elas passam à frente das demais.
-2. As aulas restantes das faixas 26 a 37 podem transbordar para **segunda 05/10**, primeiro dia da Semana 6, antes das aulas de permissões. Nunca para sexta, sábado ou domingo.
-3. O Laboratório 2 e o simulado **não são cortados nem movidos**.
-
-**Atualização de 30/09.** A quarta fechou **5 das 9 aulas** previstas (26 a 30). As 4 restantes (31 a 34) passaram para a quinta, que agora tem **13 aulas (31 a 43)**, cerca de 1h30 de vídeo mais o aquecimento. No pior caso a semana passa de 6h45 para cerca de 7h10, 10 minutos acima do teto. A folga vem de duas decisões: (a) subir para **2x** nas aulas que só repetem conteúdo já praticado, como a navegação de hoje, que o próprio caderno marca como "já tratado nos labs"; e (b) aplicar a regra de transbordo, em que o que não couber na quinta e não for de shell script vai para a segunda 05/10. Se na quinta à noite as aulas de shell script não estiverem vistas, o Laboratório 1 de sexta começa com 20 minutos de vídeo.
-
-**Atualização de 02/10 (superada pela atualização final logo abaixo).** A quinta não teve estudo e o Laboratório 1 de sexta foi feito em parte: blocos 1 e 2 concluídos. Os blocos 3 a 5 (`if`, `for`, código de saída) passam para o **sábado, antes do Laboratório 2**, porque os quatro scripts dependem deles. O bloco 6 (`vi` e `nano`) e o exercício das frutas ficam para depois do Laboratório 2 ou até segunda 05/10. O sábado passa de cerca de 1h35 para cerca de 2h20. O simulado de domingo **continua em data fixa**.
-
-**Atualização de 02/10, à noite — plano da Semana 5 (superada pela atualização de 04/10, abaixo).** O sábado deixa de ser obrigatório e o fechamento da semana passa inteiro para o **domingo 04/10**: terminar o Laboratório 1 e fazer o simulado de 40 questões. O Laboratório 2 e as aulas 31 a 43 do curso passam para a **Semana 6** (ver `labs/semana-06.md`).
-
-| Dia | Atividade | Tempo |
-|---|---|---|
-| Sáb 03 | **Opcional.** Se houver tempo, adiantar a Semana 6 nesta ordem: (1) Laboratório 1, blocos 3 a 5, 20 min; (2) aulas de shell script do curso, a 1x; (3) aquecimento | até 1h |
-| **Dom 04** | Aquecimento · **simulado #1** (60 min) · apuração (25 min) · pausa · Laboratório 1, blocos 3 a 6 e exercício das frutas (45 min) · registro (10 min) · commits (5 min) | cerca de 2h35 |
-
-**Ordem do domingo e por quê.** O simulado vem **primeiro**, com a cabeça descansada: é diagnóstico e mede o que você sabe hoje, antes de terminar o Laboratório 1. Os blocos 3 a 5 vêm logo depois porque são pré-requisito do Laboratório 2 da Semana 6. Se o tempo apertar, o corte segue esta ordem: **exercício das frutas**, depois **bloco 6** (`vi` e `nano`). Os dois vão para segunda 05/10, 25 minutos no total. O simulado e os blocos 3 a 5 não são cortados.
-
-**O que passa para a Semana 6**
-
-| Item | Novo prazo |
-|---|---|
-| Curso, aulas 31 a 43 (13 aulas) | Segunda 05/10 |
-| Laboratório 2 — os scripts `backup.sh`, `contar.sh` e `usuario.sh` (o `filtrar.sh` fica opcional) | Terça 06/10 |
-| Voucher da prova e agendamento | Quarta 07/10, 10 minutos |
-| Comparação de compressão com o `bzip2` | Terça 06/10, no aquecimento |
-| Autoavaliação da Semana 5 | **Sexta 09/10**, em versão reduzida de 10 questões, três dias depois do Laboratório 2 |
-| Exercício das frutas e bloco 6, **se cortados no domingo** | Segunda 05/10 |
-
-**Novidade a partir desta semana: simulado geral todo domingo.** O primeiro da série, o simulado #1, estava previsto para 04/10 e passou para a **segunda 05/10**. O calendário completo, as metas por simulado e a regra de adiamento da prova estão no plano geral, seções 7 e 11.
-
-**Atualização de 04/10 — fechamento da Semana 5.** O domingo rendeu o Laboratório 1 inteiro e o exercício das frutas. O simulado não coube. A Semana 5 fecha assim:
-
-| Item | Situação em 04/10 |
-|---|---|
-| Laboratório 1, blocos 1 e 2 | Concluídos em 02/10 |
-| Laboratório 1, blocos 3 a 6 | **Concluídos em 04/10**, com anotações |
-| Exercício do script das frutas | **Concluído em 04/10**, com os quatro erros corrigidos |
-| Simulado #1 (40 questões) | **Não realizado.** Segunda 05/10, primeira atividade do dia |
-| Laboratório 2 | Transferido para terça 06/10 |
-| Autoavaliação da Semana 5 | Transferida para sexta 09/10, em versão de 10 questões |
-| Curso, aulas 31 a 43 | Transferido para quarta 07/10, a 2x, porque o conteúdo já foi praticado no Laboratório 1 |
-| Correção das semanas e revisão prática | Entra na Semana 6, depois da apuração do simulado #1 (ver `labs/semana-06.md`) |
-
-O que mudou na prática: o simulado #1 agora mede o shell script **depois** do Laboratório 1 completo, e não antes. Isso é menos limpo como diagnóstico do 3.3, mas mede melhor o que importa: quanto ficou depois de praticar.
+2. **`while` e `read` não constam na lista oficial.** O que a prova cobra com certeza são `for`, argumentos, variáveis, `if` com operadores numéricos e o código de saída.
 
 ---
 
@@ -163,7 +55,7 @@ sudo poweroff
 
 ---
 
-## Aquecimento diário — todos os dias até domingo
+## Aquecimento — `grep`, `sort` e o `-f` do `tar`
 
 Dez minutos, de memória, digitando, na VM. Os cinco comandos saem dos erros das questões 7, 11, 13 e 14 da autoavaliação da Semana 4. Execute; não leia.
 
@@ -217,37 +109,6 @@ tar -cfv errado.tar t/       # -f antes do v: o tar usa "v" como nome do arquivo
 ls -l certo.tar v errado.tar 2>&1
 rm -f v certo.tar errado.tar
 ```
-
-**Item pendente da Semana 4**, uma única vez, no aquecimento de quarta: refazer a comparação de compressão agora que o `bzip2` existe.
-
-```bash
-seq 1 5000 > exemplo.log
-tar -czf ex.tar.gz exemplo.log ; echo $?
-tar -cjf ex.tar.bz2 exemplo.log ; echo $?
-tar -cJf ex.tar.xz exemplo.log ; echo $?
-ls -lh ex.tar.*
-```
-
-Os três `echo $?` precisam ser `0`, e os tamanhos precisam obedecer à regra **quanto mais lento, mais comprime**: `gzip` maior, `bzip2` no meio, `xz` menor.
-
----
-
-## Curso — Matheus Muller
-
-Posição atual (30/09): **checkpoint na aula 31**, com as aulas 26 a 30 assistidas. Restam 42 aulas (31 a 72); esta semana fecha mais 13 (31 a 43).
-
-| Dia | Aulas | Velocidade | Tempo estimado |
-|---|---|---|---|
-| Qua 30/09 | 26 a 30 (5 aulas) — **concluídas** | 1.5x | — |
-| Qui 01/10 | 31 a 43 (13 aulas) | 1.5x; **2x** nas que repetem conteúdo já praticado; **1x** nas de shell script | cerca de 1h30 |
-
-Regras do curso:
-
-- Ao chegar nas aulas de shell script (3.3), reduza para **1x**. O vídeo entrega o modelo mental que o laboratório de sexta transforma em prática.
-- Anote no caderno **só o que o vídeo mostra e você ainda não sabia**. O que já foi praticado, o vídeo confirma e não ensina.
-- Se o número exato das aulas de shell script não cair na faixa 35 a 43, ajuste a divisão entre quarta e quinta, mas mantenha a regra: o 3.3 vem visto **antes** da sexta.
-- Aulas que só repetem o que já foi praticado (navegação, `ls`, variáveis de ambiente, comandos do Tópico 1) podem ir a **2x**. O critério é o seu próprio caderno: se ele já registra o assunto como "tratado nos labs", o vídeo é confirmação.
-- Registre a aula em que parou ao fim de cada dia, na seção de registro abaixo.
 
 ---
 
@@ -382,9 +243,9 @@ Anote no caderno o comando, o que faz e o exemplo executado. Os erros e suas cor
 
 ---
 
-## Laboratório 2 — Terça 06/10 (Semana 6) — Os scripts
+## Laboratório 2 — Terça 06/10 — Os scripts
 
-> **Transferido em 02/10 para a Semana 6.** Pré-requisito: Laboratório 1, blocos 3 a 5, feitos no domingo 04/10. Os três primeiros scripts são obrigatórios, porque exercitam exatamente o que a prova cobra: argumento, variável, `for`, `if` e código de saída. O `filtrar.sh` usa `while read`, que não consta na lista oficial, e passa a ser **opcional**.
+> Executado em 06/10. O registro, com as três soluções escritas por você, está no caderno da Semana 6.
 
 Escreva em `~/lab5/scripts`, **um por vez**, testando cada um antes de passar ao seguinte. Ao terminar cada teste, rode `echo $?`.
 
@@ -393,14 +254,12 @@ Escreva em `~/lab5/scripts`, **um por vez**, testando cada um antes de passar ao
 | 1 | Backup com a data no nome | Substituição de comando, `tar`, variáveis, argumento |
 | 2 | Contar arquivos por extensão | `for`, `find`, `wc`, pipeline dentro de script |
 | 3 | Verificar se um usuário existe | `if`, `grep -q`, `$?`, `exit` com código |
-| 4 | Ler um arquivo linha a linha e filtrar | `while read`, redirecionamento de entrada |
 
 **Especificações**
 
 1. `backup.sh <diretorio>` cria `backup-AAAA-MM-DD.tar.gz` no diretório atual. Sem argumento, imprime o uso e sai com código 1. Ao final imprime o nome do arquivo criado.
 2. `contar.sh <diretorio>` imprime, para `txt`, `log` e `conf`, quantos arquivos com cada extensão existem abaixo do diretório, no formato `txt: 3`.
 3. `usuario.sh <nome>` sai com **0** se o usuário existe em `/etc/passwd`, **1** se não existe e **2** se faltar o argumento. Sempre imprime uma frase dizendo o que encontrou.
-4. `filtrar.sh <arquivo> <palavra>` lê o arquivo linha a linha e imprime só as linhas que contêm a palavra, numeradas.
 
 **Testes de aceitação**
 
@@ -416,9 +275,6 @@ Escreva em `~/lab5/scripts`, **um por vez**, testando cada um antes de passar ao
 ./usuario.sh davi ; echo $?                 # 0
 ./usuario.sh fantasma ; echo $?             # 1
 ./usuario.sh ; echo $?                      # 2
-
-# 4
-./filtrar.sh ~/lab5/sistema.log ERROR
 ```
 
 **Armadilhas conhecidas**
@@ -426,7 +282,6 @@ Escreva em `~/lab5/scripts`, **um por vez**, testando cada um antes de passar ao
 - Script 1: separe a variável do texto vizinho com chaves, `${data}`, e coloque as variáveis entre aspas duplas. Um diretório com espaço no nome quebra o `tar` sem aspas.
 - Script 2: no `find`, as aspas em `"*.$ext"` impedem o shell de expandir o asterisco antes de o `find` recebê-lo. É a mesma lógica da Semana 4.
 - Script 3: `grep -q "^$1:"` evita que `davi` case com `davidson`. O `-q` não imprime nada, e o resultado vem só pelo código de saída.
-- Script 4: `while IFS= read -r linha; do ... done < "$1"`. O redirecionamento de entrada fica **depois** do `done`.
 
 <details>
 <summary>Soluções de referência — só depois de tentar</summary>
@@ -476,113 +331,19 @@ else
 fi
 ```
 
-```bash
-# filtrar.sh
-#!/bin/bash
-# Uso: ./filtrar.sh <arquivo> <palavra>
-n=0
-while IFS= read -r linha
-do
-  n=$((n + 1))
-  if echo "$linha" | grep -q "$2"
-  then
-    echo "$n: $linha"
-  fi
-done < "$1"
-```
-
 Há mais de uma resposta certa para quase todos. Se a sua chegou ao mesmo resultado por outro caminho, está correta.
 
 </details>
 
-**Depois dos quatro scripts:** uma leitura crítica de dois minutos por script. Cada variável está entre aspas? Cada `[ ]` tem espaços? O código de saída é o que a especificação pede?
-
----
-
-## Simulado diagnóstico (#1) — transferido de domingo 04/10 para Segunda 05/10
-
-Esta é a pendência mais antiga do plano. Ela ocupa o lugar de uma prática porque **é** prática, e o resultado determina no que as práticas das Semanas 6 e 7 devem insistir.
-
-**Este é o simulado #1 da série.** Não foi feito no domingo 04/10 e passou para a **segunda 05/10**, como primeira atividade do dia. Como o Laboratório 1 já está completo, ele mede o shell script depois da prática. Dali em diante a série segue aos domingos, com as metas do plano geral, seção 7. **O resultado é registrado no arquivo da Semana 6.**
-
-| Item | Valor |
-|---|---|
-| Arquivo | `praticas/simulado-01-diagnostico.md` |
-| Questões e tempo | 40 questões, 60 minutos, cronometrado |
-| Consulta | Nenhuma. Sem terminal, sem caderno, sem internet |
-| Corte do exame real | 500 de 800, cerca de 65%, ou **26 acertos** |
-| Expectativa | Entre 60% e 75% (24 a 30 acertos) |
-| Onde | Fora da VM, em papel ou em um arquivo separado |
-
-**Como aplicar**
-
-1. Cronometre 60 minutos e responda tudo, com o gabarito fechado.
-2. Marque **cada questão em que chutou**, mesmo acertando.
-3. Só depois abra o gabarito, confira e preencha a apuração no arquivo do simulado.
-4. Passe o resultado para a tabela abaixo e liste os erros **por objetivo**, não por questão.
-
-**Questões que retestam correções já registradas.** Aqui o simulado mede se o que foi corrigido ficou:
-
-| Questão | Retesta |
-|---|---|
-| 18 | Correção 29 — a ordem em `> arquivo 2>&1` |
-| 20 | Correções 33, 34 e 50 — `-k` escolhe a coluna do `sort` |
-| 21 | Correção 36 — `uniq -u` mostra só o que nunca se repetiu |
-| 22 | Correção 52 — `-f` do `tar` por último |
-| 24 | Regex versus globbing — o `*` |
-
-Se errar qualquer uma dessas cinco, o card do Notion correspondente volta para a fila do aquecimento.
-
-**Tabela de resultado**
-
-| Tópico | Peso | Questões | Acertos | Chutes acertados |
-|---|---|---|---|---|
-| 1. Comunidade e open source | 7 | 1 a 7 | | |
-| 2. Encontrando seu caminho | 9 | 8 a 16 | | |
-| 3. Poder da linha de comando | 9 | 17 a 25 | | |
-| 4. Sistema operacional | 8 | 26 a 33 | | |
-| 5. Segurança e permissões | 7 | 34 a 40 | | |
-| **Total** | **40** | | | |
-
-**Como ler o resultado**
-
-- **Erros concentrados nos Tópicos 4 e 5**, ainda não estudados: é o esperado, e o plano está funcionando. As Semanas 6 e 7 endereçam esses tópicos.
-- **Erros nos Tópicos 1, 2 ou 3**, que estão fechados: as autoavaliações mediram o que acabou de ser estudado, não o que ficou. Sinal para revisar antes de avançar, e as práticas das Semanas 6 e 7 passam a incluir esses objetivos.
-- **Chutes acertados** contam como erro para efeito de estudo. A coluna existe para isso.
-- **Abaixo de 24 acertos (60%)**: a Fase 1 precisa de uma sessão de revisão adicional na Semana 7, e o gate da Semana 9 é revisitado.
-
-Depois do simulado, o resultado é registrado em `praticas/` e no plano geral.
-
----
-
-## Pendências e fila de dívidas
-
-| Item | Origem | Estado | Prazo |
-|---|---|---|---|
-| Curso, aulas 26 a 30 | Semana 5, terça 29/09 | **Pago em 30/09** | Concluído |
-| Curso, aulas 31 a 43 | Semana 5, quarta 30/09 | Em aberto: sem registro de avanço desde o checkpoint da aula 31 | **Transferido para a Semana 6: quarta 07/10**, a 2x |
-| Laboratório 1, blocos 3 a 5 (`if`, `for`, código de saída) | Semana 5, sexta 02/10 | **Concluído em 04/10** | — |
-| Laboratório 1, bloco 6 (`vi` e `nano`) | Semana 5, sexta 02/10 | **Concluído em 04/10**, mas sem registro das saídas dos editores | Ter 06/10, 3 minutos no aquecimento |
-| Exercício do script das frutas (material do LPI) | Semana 5, sexta 02/10 | **Concluído em 04/10** | — |
-| Laboratório 2 (`backup.sh`, `contar.sh`, `usuario.sh`; `filtrar.sh` opcional) | Semana 5, sábado 03/10 | **Concluído em 06/10** (registro na Semana 6) | — |
-| Voucher da prova e agendamento para 09/11 | Semana 5 | Em aberto, já adiado duas vezes | **Qua 07/10** |
-| Simulado diagnóstico (simulado #1) | Semana 3 | Em aberto, adiado de novo: não coube no domingo | **Seg 05/10**, primeira atividade do dia |
-| Reteste das 4 questões erradas da autoavaliação da Semana 4 | Semana 4 | No aquecimento diário; as questões 18, 20, 21, 22 e 24 do simulado #1 também retestam | Seg 05/10 |
-| Comparação de compressão com o `bzip2` instalado | Semana 4 | `bzip2` instalado; falta refazer | Ter 06/10, no aquecimento |
-| Autoavaliação da Semana 5 | Semana 5 | Reduzida a 10 questões; elaborada na quinta 08/10 | Sex 09/10 |
-| `.wslconfig` limitando o WSL2 a 3 GB | Semana 0 | Sem prazo | Quando houver folga |
-| Teste de restauração do snapshot | Semana 0 | Sem prazo | Quando houver folga |
+**Depois dos três scripts:** uma leitura crítica de dois minutos por script. Cada variável está entre aspas? Cada `[ ]` tem espaços? O código de saída é o que a especificação pede?
 
 ---
 
 ## Registro do curso
 
-Preencha ao fim de cada dia.
-
 | Data | Aulas assistidas | Parei na aula | Anotações novas |
 |---|---|---|---|
 | 30/09 | 26 a 30 (5 aulas) | **31 (checkpoint)** | `ls` e opções, `echo`, `$PATH`, `whoami`, `su`, `runlevel`, `init`, `uname`, navegação. Detalhe abaixo |
-| 01/10 | | | |
 
 ### Registro do curso — 30/09 — aulas 26 a 30 (checkpoint na aula 31)
 
@@ -767,7 +528,7 @@ Duas verificações específicas da sua máquina: o resultado do `which ls` (a a
 | 3. Decisões com `if` | Concluído em 04/10, com anotações |
 | 4. Loops com `for` | Concluído em 04/10, com anotações |
 | 5. Código de saída | Concluído em 04/10, com anotações. **Correção 61** |
-| 6. Editores `vi` e `nano` | Concluído em 04/10, com anotações. Saídas dos editores sem registro |
+| 6. Editores `vi` e `nano` | Concluído em 04/10, com anotações |
 | Exercício do script das frutas (material do LPI) | Concluído em 04/10, quatro erros corrigidos |
 
 O registro dos blocos 1 e 2 já está **corrigido**, e o ajuste é explicado na Correção 60 e nas observações. Os blocos 3 a 6 e o exercício das frutas vêm depois da seção "Para executar na VM — 3 minutos", mais abaixo. **Observação sobre o caderno:** o seu arquivo de domingo ainda traz, nos blocos 1 e 2, o texto original, com o "ou seja" da Correção 60. Vale ajustar a anotação no Notion.
@@ -968,7 +729,7 @@ fi
 
 Operadores numéricos: `-eq` igual, `-ne` diferente, `-lt` menor, `-le` menor ou igual, `-gt` maior, `-ge` maior ou igual. Para texto, `=`. Para arquivos, `-f` (arquivo comum) e `-d` (diretório). Para texto vazio, `-z`.
 
-O `teste.sh` do roteiro começa com uma **guarda**: `[ $# -ne 2 ]` confere se vieram exatamente dois argumentos e, se não vieram, imprime o uso e sai com `exit 1`, antes de tocar em `$1` e `$2`. Saídas esperadas das quatro chamadas, que as anotações **não registram**; confira na VM:
+O `teste.sh` do roteiro começa com uma **guarda**: `[ $# -ne 2 ]` confere se vieram exatamente dois argumentos e, se não vieram, imprime o uso e sai com `exit 1`, antes de tocar em `$1` e `$2`. Saídas esperadas das quatro chamadas:
 
 | Chamada | Saída esperada | Código |
 |---|---|---|
@@ -1044,8 +805,6 @@ Teclas de transição do `vi`, que as anotações **não trazem** e a prova cobr
 | Normal | Linha de comando | `:` |
 
 Comandos: `:w` grava, `:q` sai, `:wq` grava e sai, `:q!` sai **sem** gravar. No `nano` não há modos; os atalhos aparecem no rodapé, com `^` significando `Ctrl`.
-
-O roteiro pedia **sair de cada editor três vezes, sem consultar**. As anotações não registram isso. Fica no "Para executar na VM" abaixo.
 
 #### Exercício das frutas — o script `frutas.sh`
 
@@ -1127,10 +886,6 @@ fi
 Conceito que resiste a leitura cede a uma execução (Correção 50):
 
 ```bash
-cd ~/lab5/scripts
-./teste.sh 3 1 ; echo $?
-./teste.sh 1 ; echo $?                          # uso e código 1
-
 ls /etc > /dev/null ; echo $? ; echo $?         # 0 e depois 0: o segundo $? é do echo
 ls /naoexiste 2> /dev/null ; echo $? ; echo $?  # 2 e depois 0
 grep -q xyz /etc/passwd ; echo $?               # 1, sem mensagem nenhuma
@@ -1139,8 +894,6 @@ x= ; [ $x -gt 1 ] ; echo $?                     # leia a mensagem exata
 [ "$x" -gt 1 ] ; echo $?                        # e agora? A mensagem muda
 ```
 
-Depois, o `nano` e o `vi`, **três saídas de cada um**, sem consultar: `Ctrl+X` no `nano`; `Esc` e `:q!` no `vi`; `Esc` e `:wq` no `vi`.
-
 ### Fechamento do Laboratório 1
 
 | Parte | Situação |
@@ -1148,18 +901,14 @@ Depois, o `nano` e o `vi`, **três saídas de cada um**, sem consultar: `Ctrl+X`
 | Blocos 1 a 6 | Concluídos, com anotações |
 | Exercício das frutas | Concluído |
 | Correções do laboratório | **60** e **61** |
-| Execuções pendentes | Os dois blocos "Para executar na VM" (3 e 5 minutos) |
-| Registro das saídas do `teste.sh` e das três saídas de cada editor | Pendente |
 
-*Atualizado em 04/10: o Laboratório 1 está completo. O Laboratório 2 saiu da Semana 5 e foi para a Semana 6.*
-
-### Laboratório 2 — terça 06/10 (Semana 6)
+### Laboratório 2 — terça 06/10
 
 **Concluído em 06/10.** Os três scripts obrigatórios foram escritos e testados. O registro corrigido está em `labs/semana-06.md`, seção "Registro das sessões".
 
 ### Correções da semana
 
-A numeração segue a série global. A última da Semana 4 foi a **Correção 52**. As **Correções 53 a 59** foram registradas em 30/09, nas anotações do curso. A **Correção 60** foi registrada em 02/10, no bloco 2 do Laboratório 1, e a **Correção 61** em 04/10, no bloco 5. **A próxima é a 62.** As correções que o simulado #1 gerar continuam a série a partir daí.
+A numeração segue a série global. A última da Semana 4 foi a **Correção 52**. As **Correções 53 a 59** foram registradas em 30/09, nas anotações do curso. A **Correção 60** foi registrada em 02/10, no bloco 2 do Laboratório 1, e a **Correção 61** em 04/10, no bloco 5. A série continua no caderno da Semana 6, a partir da 62.
 
 | # | Tema | Origem |
 |---|---|---|
@@ -1170,36 +919,23 @@ Os cards das Correções 60 e 61 no Notion foram anotados (confirmado em 05/10).
 
 ### Resultado do simulado #1
 
-Transferido para a **segunda 05/10**. O resultado, a apuração por objetivo e as correções são registrados no arquivo da **Semana 6** (`labs/semana-06.md`), seção "Simulado #1".
+**28 de 40 (70%)**, em 05/10. A apuração por tópico e as Correções 62 a 68 estão no caderno da Semana 6, seção "Simulado #1".
 
 ---
 
 ## Checklist da semana
 
-- [x] Sessão 5 da Semana 4 — `find` e desafio integrador (28/09)
-- [x] Autoavaliação da Semana 4 — 14 de 20 (29/09)
-- [x] Correções 49 a 52 anotadas (29/09)
-- [x] Instalação do `bzip2` (29/09)
-- [x] Commits da Semana 4 (29/09)
-- [ ] Voucher comprado e prova agendada para 09/11 — **transferido: quarta 07/10**
-- [x] Curso, aulas 26 a 30 (quarta) — checkpoint na aula 31
-- [x] Curso, aulas 31 a 43 — **transferido: quarta 07/10 (Semana 6)**
-- [x] Comparação de compressão refeita com o `bzip2` — **transferido: terça 06/10**
+- [x] Curso, aulas 26 a 30 (30/09)
 - [x] Laboratório 1 — blocos 1 e 2 (02/10) e blocos 3 a 6 (04/10)
 - [x] Exercício do script das frutas (04/10)
-- [x] Correções 60 e 61 registradas
-- [x] Laboratório 2 — concluído em 06/10 (Semana 6); `filtrar.sh` opcional, não feito
-- [x] Simulado #1, diagnóstico de 40 questões — **transferido: segunda 05/10, primeira atividade do dia**
-- [x] Apuração do simulado por objetivo — **segunda 05/10**
-- [x] Observações sobre arquivos ocultos — dívida encerrada em 05/10, a pedido (comandos já dominados)
-- [x] Limpeza da home — já estava quitada desde a Semana 3 (confirmado em 05/10)
-- [x] Commits ao fim de cada sessão
+- [x] Correções 53 a 61 registradas
+- [x] Laboratório 2 — três scripts (06/10, registro na Semana 6)
 
 ---
 
 ## Entregável
 
-`labs/semana-05.md` com o **Laboratório 1 completo** e o exercício das frutas, e as Correções 60 e 61. **Entregue em 04/10.** O simulado #1, os scripts do Laboratório 2, a autoavaliação e o voucher passam para a Semana 6.
+`labs/semana-05.md` com o **Laboratório 1 completo**, o exercício das frutas e as Correções 53 a 61. Entregue em 04/10.
 
 ---
 
