@@ -1,13 +1,12 @@
-# Semana 6 — Tópico 5, usuários e permissões, e o fechamento das dívidas da Semana 5
+# Semana 6 — Tópico 5, usuários e permissões, simulado 01 e scripts do 3.3
 
 Período: 05/10 a 11/10/2026 (segunda a domingo)
 Objetivos da prova: 5.1, 5.2, 5.3 e 5.4 — Tópico 5, peso 7 de 40
-Carga nominal: cerca de 11h00 (atualizada em 06/10), acima do teto de 7h; cerca de 8h30 com os cortes. A seção "Carga da semana e ordem de corte" explica o motivo e o que sai primeiro
-Marco da semana: **Checkpoint A, domingo 11/10**, com decisão objetiva sobre a data da prova (data principal **16/11** desde 10/10; 09/11 é a meta ousada). A semana se encerra na **segunda 12/10 (feriado)**, dia extra para fechar o Tópico 5
+Conteúdo do caderno: simulado 01 e Correções 62 a 68; Laboratório 2 (scripts do 3.3); aquecimento de conversões de permissão; curso, aulas 31 a 40, e Correções 69 a 74; roteiros das Práticas 1 e 2 e da autoavaliação da Semana 5
 
-> **Fechamento em 13/10.** A semana terminou com o simulado 01, o Laboratório 2, o aquecimento de conversões e as aulas 31 a 40. As dívidas que ficaram abertas foram para `labs/semana-07.md`, por decisão sua: **Prática 1** (terça 13/10), **Prática 2** (quarta 14/10), **simulado 02** (sábado 17/10) e as **autoavaliações das Semanas 5 e 6** (terça 13/10 e domingo 18/10). Os roteiros das duas práticas e a autoavaliação da Semana 5 continuam neste arquivo. Os demais itens antigos da fila saíram do plano (ver "Pendências e fila de dívidas"). A prova passou para **23/11**.
+> As Práticas 1 e 2 e a autoavaliação da Semana 5 foram executadas na Semana 7. Os roteiros ficam aqui, junto do conteúdo do Tópico 5; o registro das sessões está em `labs/semana-07.md`.
 
-Observação sobre a natureza desta semana: ela carrega duas coisas ao mesmo tempo. De um lado, conteúdo novo e dependente de repetição, porque converter `rwxr-xr--` em `754` precisa virar reflexo. De outro, as dívidas que a Semana 5 não fechou: o simulado #1, o Laboratório 2, as aulas 31 a 43 e o voucher. Por isso o aquecimento diário desta semana é **obrigatório e dedicado a permissões**, e a ordem de corte está escrita de antemão. Decidir o que cortar com a semana já atrasada é como os dias se perderam na Semana 5.
+Converter `rwxr-xr--` em `754` precisa virar reflexo. Por isso este caderno traz, além das práticas, um aquecimento diário de conversões, com gabarito no fim.
 
 ---
 
@@ -30,142 +29,20 @@ Três pontos de atenção:
 
 ---
 
-## O que mudou em relação ao plano anterior
-
-| Mudança | Detalhe |
-|---|---|
-| **Simulado geral todo domingo** | O simulado #2 **continua no domingo 11/10** (foi antecipado para sexta em 07/10 e voltou ao domingo em 08/10). O calendário completo da série está no plano geral, seção 7 |
-| **Replanejamento de 07 e 08/10** | **08/10:** curso retomado (aulas 31 a 35, checkpoint na 36); sexta 09/10 fica para mais aulas (36 a 50) e a autoavaliação da Semana 5; as práticas vão para o fim de semana, **Prática 1 no sábado e Prática 2 no domingo, com ênfase no domingo**; o simulado #2 fica no domingo. **O voucher só será comprado depois que a média dos simulados melhorar** (ver "Pré-checkpoint") |
-| **Replanejamento de 10/10** | **Sexta 09/10 não rendeu** (aulas 36 a 40 e nada da autoavaliação). O fim de semana e o feriado passam a carregar o fechamento: **sábado** com autoavaliação, aulas 41 a 50 e Prática 1; **domingo** com simulado #2, aulas 51 a 57 e Checkpoint A (provavelmente amarelo); **segunda 12/10** com Prática 2, sessão extra de permissões e as primeiras aulas do Tópico 4. **Meta semanal de cerca de 9h até 01/11**, com 1h por dia útil em horário fixo. **Data principal da prova: 16/11**; 09/11 só segue viva se o gatilho do voucher vier até 25/10 e houver vaga |
-| **Checkpoint A** | Domingo 11/10, com critérios e resultado definidos antes. Detalhe no plano geral, seção 11 |
-| **Regras de revisão e correção (06/10)** | Erros antigos de comandos já dominados passam para a **retaguarda** e saem do aquecimento. Nos simulados, só se **anotam as questões erradas**; a correção fica por conta do Notion. Ver a seção "Regras de revisão e correção" |
-| **Mais prática de simulado (06/10)** | Questões da LPI no fim das Práticas 1 e 2 (20 minutos cada) e simulados mais difíceis. Ver a seção "Mais prática de simulado" |
-| **Simulado #1 na segunda 05/10** | Não coube no domingo 04/10. É a primeira atividade da semana, antes do curso |
-| **Laboratório 1 e frutas concluídos** | Feitos em 04/10. A Semana 5 fecha com as Correções 60 e 61 |
-| **Laboratório 2 transferido da Semana 5** | Terça 06/10, três scripts obrigatórios. O `filtrar.sh` é opcional |
-| **Curso 31 a 43 passa para quarta 07/10, a 2x** | O conteúdo já foi praticado no Laboratório 1, então o vídeo confirma e não ensina |
-| **Correção e revisão** | Em 05/10 os erros do simulado #1 viraram as Correções 62 a 68. Em 06/10 a revisão prática foi cancelada e a correção de simulados passou para o Notion (ver "Regras de revisão e correção") |
-| **Pré-checkpoint de quarta 07/10** | Decide se o voucher é para 09/11 ou direto para 16/11 |
-| **Autoavaliação da Semana 5 reduzida** | 10 questões em vez de 20, **sábado 10/10** (movida de sexta em 10/10), quatro dias depois do Laboratório 2 |
-| **Aquecimento dedicado a permissões** | Cinco conversões por dia, de memória. Os exercícios e o gabarito estão abaixo |
-
----
-
-## Situação na abertura — 05/10
-
-**Concluído em 04/10:** Laboratório 1 (blocos 3 a 6) e exercício das frutas. A Semana 5 fechou com as Correções 60 e 61. O que ficou aberto passa para esta semana:
-
-| Item | Origem | Destino nesta semana |
-|---|---|---|
-| **Simulado #1** (40 questões) | Semana 3, adiado de novo | **Segunda 05/10**, primeira atividade do dia |
-| Laboratório 2 — `backup.sh`, `contar.sh`, `usuario.sh` (`filtrar.sh` opcional) | Semana 5 | Terça 06/10 |
-| Autoavaliação da Semana 5, 10 questões | Semana 5 | Sáb 10/10 (movida de sexta em 10/10) |
-| Curso, aulas 31 a 43 | Semana 5 | Quarta 07/10, a 2x |
-| Voucher da prova e agendamento | Semana 5, adiado duas vezes | Quarta 07/10, com o pré-checkpoint |
-| Revisão prática dos erros do simulado #1 (a apuração e as correções foram concluídas em 05/10) | Semana 6 | Cancelada em 06/10; vai para a retaguarda |
-| Saídas do `teste.sh` e três saídas de cada editor (`vi` e `nano`) | Semana 5, Laboratório 1 | Terça 06/10, 5 minutos no aquecimento |
-| Comparação de compressão com o `bzip2` | Semana 4 | Terça 06/10, no aquecimento |
-| Reteste das correções do simulado #1 e da Semana 4 | Semana 5 | **Retaguarda** desde 06/10 (os simulados continuam medindo) |
-| `.wslconfig` e teste de restauração do snapshot | Semana 0 | Sem prazo. Só com folga |
-
----
-
-## Calendário da semana
-
-| Dia | Atividade | Tempo |
-|---|---|---|
-| **Seg 05** | **Simulado #1** (60 min, antes de qualquer outra coisa) · apuração e correções (25 min) · aquecimento | cerca de 1h50 |
-| **Ter 06** | Aquecimento · **Laboratório 2**: `backup.sh`, `contar.sh`, `usuario.sh` (**concluído**) · comparação de compressão e saídas do `vi` e `nano` (sem registro em 06/10) | cerca de 1h15 |
-| **Qua 07** | Voucher e pré-checkpoint (**compra adiada**, ver o pré-checkpoint) · aquecimento (feito, com estudo prévio) | cerca de 20 min |
-| **Qui 08** | Aquecimento (com leitura da cola dos bits especiais) · **curso retomado: aulas 31 a 35**, checkpoint na 36 · pedir o `simulado-02` | cerca de 1h30 |
-| **Sex 09** | Aquecimento · aulas 36 a 40 (**feito**); autoavaliação e aulas 41 a 50 **não foram feitas** e passaram para o sábado | cerca de 1h |
-| **Sáb 10** | **Autoavaliação da Semana 5 primeiro** (30 min, sem consultar) · aquecimento · **curso, aulas 41 a 50** a 1.5x ou 2x · **Prática 1 — usuários e grupos**, com **20 min de questões da LPI** | cerca de 3h |
-| **Dom 11** | Aquecimento · **simulado #2** (60 min, primeira atividade) · apuração (25 min) · **curso, aulas 51 a 57** · **Checkpoint A** (provavelmente amarelo) | cerca de 2h30 |
-| **Seg 12 (feriado)** | **Prática 2 — permissões**, com **20 min de questões da LPI** e limpeza dos usuários de teste (**ênfase**) · sessão extra de conversões cronometradas (20 min) · **curso, aulas 58 em diante** (Tópico 4) | cerca de 3h |
-
-**Total nominal: cerca de 11h00**, agora distribuído de sexta a segunda. O fim de semana prolongado (sábado, domingo e segunda) carrega cerca de **8h30**. Se algo apertar, a ordem de corte abaixo continua valendo. **O simulado #2 e a Prática 2 não se cortam.** Registro das horas reais na tabela "Horas da semana".
-
-### Carga da semana e ordem de corte
-
-A carga passa muito do teto de 7h por uma razão simples: a Semana 5 devolveu cerca de 3h30 de dívidas (simulado #1, Laboratório 2 e curso) e o simulado dominical acrescenta 1h35. Existem duas saídas honestas: estender a semana ou cortar com critério. O plano faz as duas, nesta ordem.
-
-**O que não se corta**, em hipótese nenhuma:
-
-1. Simulado #1 de segunda e simulado #2 de domingo.
-2. O Laboratório 2, nos três scripts obrigatórios.
-3. A Prática 2, de permissões.
-4. O voucher e o pré-checkpoint de quarta.
-5. O aquecimento de conversões, que leva 10 minutos.
-
-**Se o tempo faltar, corte nesta ordem:**
-
-| Ordem | Corte | Tempo liberado | Para onde vai |
-|---|---|---|---|
-| 1 | `filtrar.sh` (já é opcional; fora da conta nominal) | 15 min | Fica sem data |
-| 2 | Comparação de compressão e saídas do `teste.sh`, `vi` e `nano` (dívidas antigas, sem registro em 06/10) | cerca de 15 min | Retaguarda |
-| 3 | Autoavaliação da Semana 5 reduzida a 5 questões | 10 min | Mesmo dia, sábado 10/10 |
-| 4 | Aulas 51 a 57 | 45 min | **Segunda 12/10** (feriado) |
-| 5 | Prática 1 — usuários e grupos, **inclusive os 20 min de questões da LPI** | 1h20 | **Segunda 12/10** |
-
-Com os cortes 2 a 5 a semana cai de cerca de 11h00 para **cerca de 8h30**. Os tempos são estimativas. Se as aulas 51 a 57 forem cortadas, leia antes da Prática 2 as lições 5.3 e 5.4 do PDF oficial, em cerca de 20 minutos, no lugar do vídeo.
-
-Se a quarta à noite chegar com **menos de 3h30 acumuladas** (o nominal de segunda a quarta é cerca de 4h35), o Checkpoint A de domingo já nasce amarelo. Isso não é falha: é informação antecipada.
-
----
-
-## Curso — Matheus Muller
-
-Posição na abertura da semana: **checkpoint na aula 31** (30/09). Sem registro de avanço desde então. Restam 42 aulas (31 a 72).
-
-| Dia | Aulas | Velocidade | Tempo estimado |
-|---|---|---|---|
-| ~~Qua 07~~ | ~~31 a 43~~ | Adiadas para quinta 08/10 (pedido de 07/10) | — |
-| Qui 08 | **31 a 35 (5 aulas, feitas); checkpoint na 36** | Retomada do curso em 08/10 | — |
-| Sex 09 | **36 a 40 (5 aulas, feitas)**; 41 a 50 ficaram para o sábado | Mais aulas na sexta, pedido de 08/10 | cerca de 30 min |
-| Sáb 10 | 41 a 50 (10 aulas): a **2x** até a 43 (o 3.3 já foi praticado), **1.25x** ou **1.5x** da 44 à 50 (início do Tópico 5) | Antes da Prática 1 | cerca de 45 min |
-| Dom 11 | 51 a 57 (7 aulas), **antes da Prática 2** | 1.25x ou 1.5x | cerca de 45 min |
-| Seg 12 | 58 em diante (Tópico 4) | 2x onde o conteúdo já foi praticado | cerca de 45 min |
-
-As faixas de 44 a 57 são aproximadas: o número exato das aulas de cada objetivo do Tópico 5 só aparece ao chegar nelas. Se a faixa de permissões (5.3) terminar antes ou depois da 57, ajuste a divisão entre quarta e sexta, mantendo a regra: **as aulas de usuários e grupos vêm antes da Prática 1 (quinta, no mesmo dia) e as de permissões e bits especiais vêm antes da Prática 2 (sábado).**
-
-Regras do curso:
-
-- Anote no caderno **só o que o vídeo mostra e você ainda não sabia**.
-- Em permissões, pause o vídeo e **converta de cabeça antes de o professor mostrar a resposta**.
-- Registre a aula em que parou ao fim de cada dia, na tabela abaixo.
-
-### Registro do curso
-
-| Data | Aulas assistidas | Parei na aula | Anotações novas |
-|---|---|---|---|
-| Qua 07/10 | — | — | Adiada para 08/10 |
-| Qui 08/10 | 31 a 35 | **35** (checkpoint na 36) | Ver "Curso, aulas 31 a 35" nos registros |
-| Sex 09/10 | 36 a 40 | **40** (checkpoint na 41) | Ver "Curso, aulas 36 a 40" nos registros |
-| Sáb 10/10 | | | |
-| Dom 11/10 | | | |
-| Seg 12/10 | | | |
-
----
-
 ## Aquecimento diário — conversões de permissão
 
 Dez minutos por dia, de memória, **sem consultar**. Responda no papel ou em voz alta, cronometrando. A meta é converter em **menos de 3 segundos por item**. Só depois confira no gabarito, no fim deste arquivo.
 
 A regra de conversão é uma só: `r` vale 4, `w` vale 2, `x` vale 1, e cada dígito soma os valores do seu grupo (dono, grupo, outros).
 
-| Dia | Cinco exercícios |
+| Série | Cinco exercícios |
 |---|---|
-| Seg 05 | (a) `rwxr-xr-x` · (b) `644` · (c) `rwx------` · (d) `664` · (e) `r--r-----` |
-| Ter 06 | (a) `750` · (b) `rw-------` · (c) `777` · (d) `rw-r-----` · (e) `711` |
-| Qua 07 | Qual a permissão final, em octal, de um arquivo `644` depois de: (a) `chmod u+x` · (b) em um `755`, `chmod g-x,o-x` · (c) em um `640`, `chmod o+r` · (d) em um `600`, `chmod g+rw` · (e) em um `755`, `chmod a-x` |
-| Qui 08 | Bits especiais: (a) `4755` em símbolos · (b) `2755` em símbolos · (c) `1777` em símbolos · (d) `drwxrwsr-t` em octal · (e) `4644` em símbolos |
-| Sex 09 | (a) `rwxrwxr-x` · (b) `2770` em símbolos · (c) `rw-r--r--` depois de `chmod g+w` · (d) `555` · (e) `r--------` |
-| Sáb 10 | Cronometrado, sem pausa: (a) `754` · (b) `rw-rw----` · (c) `4750` em símbolos · (d) `1770` em símbolos · (e) `chmod 2755` em um diretório, e como aparece no `ls -l` |
-| Dom 11 | Os cinco comandos habituais, pautados pelos erros do simulado #1 |
-
-**Atualização de 06/10:** os itens fixos tirados dos erros antigos do simulado #1 (`cd -`, `man cp`) **saíram do aquecimento** e foram para a retaguarda. Fica só o que é conteúdo desta semana: **`chown` contra `chmod`** (Q38), mais o que travar nas conversões e nos bits especiais. O que errar vira card no Notion na hora. Se ao fim da semana a conversão ainda não sair em 3 segundos, a Semana 7 abre com uma sessão extra de permissões, e o feriado de segunda 12/10 é o dia natural para ela.
-
-**Atualização de 07/10 — o aquecimento veio antes do conteúdo.** Você registrou que as permissões nunca tinham sido estudadas, nem nos laboratórios nem no curso: o aquecimento pedia conversão "de memória" de algo que ainda não tinha sido ensinado. O erro foi do plano, não seu. A decisão: **a primeira vez que um assunto aparece no aquecimento conta como estudo**, e a leitura da seção correspondente da cola rápida (5 minutos, abaixo) vem **antes** das cinco questões. A quarta 07/10 foi assim, e seu estudo extra foi exatamente o certo. Daqui em diante: **quinta 08/10**, leia antes a linha SUID, SGID e sticky bit da cola rápida (os bits especiais só são ensinados nas aulas e na Prática 2); **sexta 09/10 abre com um reteste cego de 3 minutos** com dois itens do tipo de quarta (`chmod` simbólico sobre octal), sem consulta, para medir se ficou. A régua dos 3 segundos por item só vale para os itens já estudados.
+| 1 | (a) `rwxr-xr-x` · (b) `644` · (c) `rwx------` · (d) `664` · (e) `r--r-----` |
+| 2 | (a) `750` · (b) `rw-------` · (c) `777` · (d) `rw-r-----` · (e) `711` |
+| 3 | Qual a permissão final, em octal, de um arquivo `644` depois de: (a) `chmod u+x` · (b) em um `755`, `chmod g-x,o-x` · (c) em um `640`, `chmod o+r` · (d) em um `600`, `chmod g+rw` · (e) em um `755`, `chmod a-x` |
+| 4 | Bits especiais: (a) `4755` em símbolos · (b) `2755` em símbolos · (c) `1777` em símbolos · (d) `drwxrwsr-t` em octal · (e) `4644` em símbolos |
+| 5 | (a) `rwxrwxr-x` · (b) `2770` em símbolos · (c) `rw-r--r--` depois de `chmod g+w` · (d) `555` · (e) `r--------` |
+| 6 | Cronometrado, sem pausa: (a) `754` · (b) `rw-rw----` · (c) `4750` em símbolos · (d) `1770` em símbolos · (e) `chmod 2755` em um diretório, e como aparece no `ls -l` |
 
 ---
 
@@ -173,14 +50,13 @@ A regra de conversão é uma só: `r` vale 4, `w` vale 2, `x` vale 1, e cada dí
 
 | Item | Valor |
 |---|---|
-| Arquivo | `praticas/simulado-01-diagnostico.md` |
-| Quando | **Primeira atividade do dia**, antes do curso e de qualquer outra coisa |
+| Arquivo | `labs/simulados-práticos.lpi/simulado-01.md` |
 | Formato | 40 questões, 60 minutos, cronometrado, sem terminal, sem caderno, sem internet |
 | Apuração | Cerca de 25 minutos, logo em seguida |
 | Meta | Não há. É um diagnóstico. Esperado: de 24 a 30 acertos (60% a 75%) |
 | Observação | Com o Laboratório 1 completo, o simulado mede o shell script **depois** da prática |
 
-Protocolo aplicado em 05/10: **marcar cada chute**, abrir o gabarito só depois e apurar **por objetivo**. As questões 18, 20, 21, 22 e 24 retestavam correções já registradas, e as quatro marcadas com firmeza foram acertadas. Daqui em diante vale o protocolo da seção "Regras de revisão e correção", que é mais enxuto.
+Protocolo aplicado em 05/10: **marcar cada chute**, abrir o gabarito só depois e apurar **por objetivo**. As questões 18, 20, 21, 22 e 24 retestavam correções já registradas, e as quatro marcadas com firmeza foram acertadas.
 
 | Tópico | Peso | Questões | Acertos | Chutes acertados |
 |---|---|---|---|---|
@@ -200,29 +76,7 @@ Protocolo aplicado em 05/10: **marcar cada chute**, abrir o gabarito só depois 
 | Equivalente na escala LPI | 28 × 20 = **560 de 800**, acima do corte de 500 (26 acertos) |
 | Questões marcadas como chute | **10**: 22, 28, 29, 33, 34, 35, 36, 37, 39 e 40. Cinco acertadas (22, 33, 34, 36, 39) e cinco erradas (28, 29, 35, 37, 40) |
 
-A prova corrigida, questão por questão, está em `praticas/simulado-01-diagnostico-resultado.md`.
-
-### Regras de revisão e correção
-
-**Atualizadas em 06/10, a pedido.** A primeira versão desta seção, de 05/10, mandava corrigir cada erro com mecanismo e revisar os Tópicos 1 a 3 com execução na VM. Duas decisões mudaram isso.
-
-**1. Erros antigos de comandos já dominados vão para a retaguarda.** Revisitar todo dia o que já foi estudado compete com o conteúdo novo da prova, e hoje o tempo é o recurso mais escasso. O que vale:
-
-- Saem do aquecimento diário e da fila de pendências: o reteste das questões erradas da autoavaliação da Semana 4, o reteste das questões 18, 20, 21, 22 e 24 do simulado #1, os itens fixos `cd -` e `man cp`, e a **revisão prática de terça** (cancelada).
-- Esses itens ficam numa **fila de retaguarda** (plano geral, seção 9). Voltam só em dois momentos: **nos próprios simulados**, que continuam medindo se o erro voltou a acontecer, e **na revisão leve da Semana 10**, pelos cards do Notion.
-- O que **não** vai para a retaguarda é conteúdo **atual**: o que for do Tópico 5 (esta semana) e do Tópico 4 (próxima) continua no aquecimento e nas práticas. Por isso o par `chown` e `chmod`, que é do objetivo 5.3, permanece.
-
-**2. Simulados: só se anotam as questões erradas.** O que fica registrado nos arquivos é a **apuração por tópico** (acertos e chutes acertados) e a **lista das questões erradas**, com tópico e objetivo. A **correção em si**, a explicação do mecanismo, fica por conta dos seus cards no Notion. Não se abre mais a série numerada de correções para erros de simulado. A numeração continua valendo para erros de laboratório e de curso, e a próxima é a **69**.
-
-Em resumo, o fluxo de cada simulado passa a ser: **1.** responder cronometrado e marcar os chutes; **2.** abrir o gabarito e conferir; **3.** apurar por tópico; **4.** listar as questões erradas e as chutadas; **5.** corrigir no Notion, com as suas palavras.
-
-As Correções 62 a 68, de 05/10, ficam como estão: já foram registradas e anotadas no Notion.
-
-**Como ler o resultado:**
-
-- **Erros concentrados nos Tópicos 4 e 5:** esperado. O plano está funcionando.
-- **Erros nos Tópicos 1, 2 ou 3:** a base pede atenção, mas, pela decisão de 06/10, os erros antigos vão para a retaguarda e os simulados seguintes dizem se voltam a acontecer.
-- **Abaixo de 24 acertos:** o Checkpoint A já nasce amarelo e o gate da Semana 9 é revisitado.
+A prova corrigida, questão por questão, está em `labs/simulados-práticos.lpi/simulado-01.md`.
 
 ### Resultado de 05/10 e leitura
 
@@ -241,40 +95,15 @@ As Correções 62 a 68, de 05/10, ficam como estão: já foram registradas e ano
 1. **O Tópico 3 se sustentou.** As questões 18, 20, 21 e 24 retestavam correções antigas e foram acertadas sem chute. A 22 (Correção 52, `-f` do `tar`) foi acertada **por chute** e continua sem confirmação.
 2. **A fragilidade está nos Tópicos 1 e 2, os "fechados".** Seis dos sete erros com convicção caem neles, em 16 questões. Esses tópicos foram estudados nas Semanas 1 a 3 e só foram medidos por autoavaliações feitas no mesmo dia (14 de 15 e 20 de 20). É a regra de retenção da Semana 4, agora com um segundo dado.
 3. **A calibração foi boa onde ainda não há estudo.** Todos os cinco erros marcados como chute estão nos Tópicos 4 e 5. Nos Tópicos 1 e 2 a confiança foi maior que o acerto.
-4. **Tempo: 20 min 31 s de 60**, cerca de 31 segundos por questão. O exame dá 90 segundos por questão. Parte dos erros com convicção (Q10, Q15 e Q16) cobre conteúdo que você já praticou, e isso sugere pressa e não lacuna. Há um teste simples, no passo 1 da revisão de retaguarda abaixo.
+4. **Tempo: 20 min 31 s de 60**, cerca de 31 segundos por questão. O exame dá 90 segundos por questão. Parte dos erros com convicção (Q10, Q15 e Q16) cobre conteúdo que você já praticou, e isso sugere pressa e não lacuna.
 
 **Para o simulado #2:** use **pelo menos 45 minutos** e reserve os últimos 15 para uma segunda passada nas questões marcadas e naquelas em que o enunciado traz uma pegadinha de comando.
 
 **Questão 40 (`umask`).** Foi escrita para este simulado, mas o `umask` **não consta na lista oficial** do objetivo 5.3. No exame real ela pode não aparecer. Trate como baixa prioridade; a Q37 (conversão `rw-r--r--` para 644) é a que importa.
 
-### Revisão prática de terça (cancelada em 06/10; fica como retaguarda)
-
-Por decisão de 06/10 (seção "Regras de revisão e correção"), esta revisão **não é mais uma atividade da semana**. O conteúdo permanece aqui como material de retaguarda, para usar só se sobrar tempo ou na revisão leve da Semana 10.
-
-1. **Refaça, devagar e sem consultar, as 7 questões com convicção:** 3, 7, 10, 14, 15, 16 e 38. Classifique cada uma: **acertou** significa que era pressa; **errou de novo** significa lacuna.
-2. **Execute na VM** o que dá para executar (a Q38, de `chmod` e `chown`, é conteúdo desta semana e já entra na Prática 2, bloco 3):
-
-```bash
-cd /tmp ; cd /var ; cd - ; pwd ; echo $OLDPWD      # cd - volta ao anterior
-cd .. ; pwd                                         # .. sobe um nível
-ls /proc | head                                     # um diretório por PID
-cat /proc/$$/status | head -3                       # $$ é o PID do seu shell
-ls /dev | head
-ls /usr ; ls /home                                  # o que mora em cada um
-cp --manual a b ; echo $?                           # opção que não existe
-cp --help | head -3                                 # resumo
-man cp | head -5                                    # manual completo
-touch t ; chmod davi:financeiro t ; echo $?         # leia a mensagem
-uname -r                                            # na VM; repita dentro do container Rocky e compare
-```
-
-3. **As duas questões do Tópico 1 (Q3 e Q7) não se executam**, então viram card no Notion, sem reler o caderno.
-
----
-
 ## Laboratório 2 — Terça 06/10 — Os scripts
 
-As especificações dos quatro scripts e as soluções de referência estão no arquivo da Semana 5 (`labs/semana-05.md`, seção "Laboratório 2"). Este arquivo não as repete.
+As especificações dos três scripts e as soluções de referência estão no arquivo da Semana 5 (`labs/semana-05.md`, seção "Laboratório 2"). Este arquivo não as repete.
 
 **Pré-requisito:** Laboratório 1, blocos 3 a 5 (`if`, `for`, código de saída), **concluídos em 04/10**.
 
@@ -283,17 +112,14 @@ As especificações dos quatro scripts e as soluções de referência estão no 
 | `backup.sh` | Obrigatório |
 | `contar.sh` | Obrigatório |
 | `usuario.sh` | Obrigatório |
-| `filtrar.sh` (`while read`) | Opcional: `while` e `read` não constam na lista oficial |
 
 Regras de sempre: escreva **digitando**, um script por vez, rode `echo $?` depois de cada teste, e **quebre de propósito** pelo menos um (sem argumento, diretório inexistente, usuário que não existe).
 
-**Situação: concluído em 06/10.** Os três scripts obrigatórios foram escritos, testados e registrados. O `filtrar.sh`, opcional, não foi feito e fica sem data. O registro corrigido está em "Registro das sessões", mais abaixo.
-
-Registro: caderno da Semana 6, seção "Registro das sessões". Se aparecer erro conceitual, abra uma nova correção na série global.
+**Situação: concluído em 06/10.** Os três scripts obrigatórios foram escritos, testados e registrados. O registro corrigido está em "Registro das sessões", mais abaixo.
 
 ---
 
-## Prática 1 — Usuários e grupos — Terça 13/10 (dívida, executada na Semana 7)
+## Prática 1 — Usuários e grupos
 
 Objetivos 5.1 e 5.2. Pré-requisito: aulas de usuários e grupos já vistas. Quarenta e cinco minutos de teclado, 10 de registro, 5 de commit. Prediga o resultado **antes** de executar e anote.
 
@@ -354,11 +180,11 @@ Registre a regra com o **mecanismo**: sem `-a`, o `-G` **substitui** a lista de 
 
 Um experimento a mais: repita o `useradd` sem o `-m` em um usuário descartável e veja com `ls -ld /home/<nome>` se o diretório pessoal foi criado. O resultado depende da distribuição. Anote o que **a sua VM** fez.
 
-**Não apague os usuários agora.** A Prática 2 (quarta 14/10) usa `alice`, `bob` e o grupo `dev`. A limpeza é no fim da Prática 2.
+**Não apague os usuários agora.** A Prática 2 usa `alice`, `bob` e o grupo `dev`. A limpeza é no fim da Prática 2.
 
 ### Questões oficiais da LPI (20 min, ao fim da sessão)
 
-Responda no **LPI Learning Material** (PDF do Projeto) os **Exercícios Guiados** e os **Exploratórios** das lições 5.1 e 5.2, **sem consultar o texto**. As páginas estão no sumário do PDF. Só depois abra "Respostas aos Exercícios". Anote apenas as questões erradas. Se não couber nos 20 minutos, faça os Guiados e deixe os Exploratórios para depois da Prática 2.
+Responda no **LPI Learning Material** (PDF do Projeto) os **Exercícios Guiados** e os **Exploratórios** das lições 5.1 e 5.2, **sem consultar o texto**. As páginas estão no sumário do PDF. Só depois abra "Respostas aos Exercícios". Anote apenas as questões erradas.
 
 ### Para o caderno
 
@@ -368,7 +194,7 @@ Responda no **LPI Learning Material** (PDF do Projeto) os **Exercícios Guiados*
 
 ---
 
-## Prática 2 — Permissões — Quarta 14/10 (dívida, executada na Semana 7)
+## Prática 2 — Permissões
 
 Objetivos 5.3 e 5.4. Pré-requisito: aulas de permissões e bits especiais já vistas. Quarenta e cinco minutos de teclado, 10 de registro, 5 de commit. Em todos os blocos: **prediga, execute, compare**.
 
@@ -477,9 +303,9 @@ Entregável: `cheatsheets/permissoes.md`, com a cola rápida desta semana reescr
 
 ---
 
-## Autoavaliação da Semana 5 — Terça 13/10 (dívida, executada na Semana 7)
+## Autoavaliação da Semana 5
 
-Dez questões sobre shell script (objetivo 3.3), respondidas **sem consultar**, quatro dias depois do Laboratório 2. **Faça-a no início da sessão de sábado, antes de estudar qualquer coisa nova.** Mede a retenção, como na regra da Semana 4. As questões foram escritas em 09/10 a partir do caderno da Semana 5 e da cola rápida de shell script. **Responda primeiro, confira só ao final.** Escreva as respostas à mão, como na prova, e use a segunda coluna do gabarito só depois.
+Dez questões sobre shell script (objetivo 3.3), respondidas **sem consultar**, alguns dias depois do Laboratório 2. **Faça-a no início da sessão, antes de estudar qualquer coisa nova.** Mede a retenção, como na regra da Semana 4. As questões foram escritas em 09/10 a partir do caderno da Semana 5 e da cola rápida de shell script. **Responda primeiro, confira só ao final.** Escreva as respostas à mão, como na prova, e use a segunda coluna do gabarito só depois.
 
 1. O que é o *shebang*, como se escreve e em que posição do arquivo ele precisa estar?
 2. Um script chamado `s.sh` pode ser executado de duas formas: `./s.sh` e `bash s.sh`. Qual delas exige a permissão de execução (`x`) e por quê?
@@ -513,138 +339,6 @@ Dez questões sobre shell script (objetivo 3.3), respondidas **sem consultar**, 
 10. No `vi`: `i` (inserir), `Esc` (voltar ao modo de comando), `:wq` (gravar e sair). Sair sem gravar: `:q!`. No `nano`: `Ctrl+O` grava e `Ctrl+X` sai.
 
 </details>
-
----
-
-## Simulado #2 — Sábado 17/10 (dívida, executado na Semana 7)
-
-**Atualização de 13/10:** o simulado foi escrito e está em `labs/simulados-práticos.lpi/simulado-02.md`. A data passou para o **sábado 17/10**. O texto abaixo é o original.
-
-| Item | Valor |
-|---|---|
-| Arquivo | `praticas/simulado-02-*.md`, a ser produzido. **Ainda não foi produzido (10/10).** Precisa estar pronto até a noite de sábado 10/10, para o domingo 11/10 |
-| Formato | 40 questões, 60 minutos, distribuição de pesos do exame |
-| Consulta | Nenhuma |
-| Meta | **24 ou mais acertos (60%)** — é o critério de aprovação do Checkpoint A |
-| Objetivo de longo prazo | 65% ou mais |
-
-Expectativa: o Tópico 4 ainda não foi estudado, então as questões dele pesam contra. **No domingo, o simulado vem antes da Prática 2** (permissões), então as questões de permissões também podem pesar, embora as aulas 51 a 57 já tenham sido vistas no sábado. Separe as questões de permissões na leitura. O que vale ler com cuidado são os Tópicos 1 a 3 (já fechados), as questões de usuários e grupos (5.1 e 5.2, praticadas no sábado) e as de conversão de permissões que o aquecimento já cobriu.
-
-Protocolo (atualizado em 06/10): cronometrar, **marcar cada chute**, abrir o gabarito só depois, apurar **por tópico** e **anotar apenas as questões erradas e as chutadas**, com o tópico de cada uma. A correção é feita por você no Notion; não se abrem correções numeradas.
-
-**Dificuldade e fonte.** Peça o `simulado-02` com a instrução de ficar **mais próximo do exame**: enunciados com cenário, pegadinhas de comando, questões de escolher mais de uma resposta e de preencher, e distratores plausíveis. Ele é escrito sob medida, e não é composto de questões reais do exame. As questões da LPI são as das Práticas 1 e 2 e as do NDG (ver "Mais prática de simulado").
-
-| Tópico | Peso | Acertos | Chutes acertados |
-|---|---|---|---|
-| 1. Comunidade e open source | 7 | | |
-| 2. Encontrando seu caminho | 9 | | |
-| 3. Poder da linha de comando | 9 | | |
-| 4. Sistema operacional | 8 | | |
-| 5. Segurança e permissões | 7 | | |
-| **Total** | **40** | | |
-
-Compare com o simulado #1 (28 de 40): o que errava e agora acerta, e o que continua errando. Esse é o dado mais útil da semana.
-
-**Tempo.** No simulado #1 você usou 20 dos 60 minutos. No #2, use **pelo menos 45** e reserve os últimos 15 para uma segunda passada nas questões marcadas e nas que tenham pegadinha de comando.
-
----
-
-## Mais prática de simulado — decisão de 06/10
-
-Você pediu mais prática de simulado, com **questões reais da LPI** e **dificuldade próxima da prova**. O que existe de verdade, e o que foi decidido:
-
-| Fonte | O que é | Uso |
-|---|---|---|
-| **LPI Learning Material** (PDF do Projeto) | Escrito pela própria LPI: Exercícios Guiados e Exploratórios por lição, com respostas | Vinte minutos no fim de cada prática, a partir de hoje |
-| **NDG Linux Essentials** (Cisco Networking Academy) | Quizzes por capítulo e exame final de prática, gratuitos, no formato do exame | Quizzes dos Tópicos 4 e 5 na Semana 7; exame final na quinta 22/10 |
-| **Simulados escritos aqui** | Questões modeladas sobre os objetivos oficiais, não questões reais | `simulado-02` e seguintes, **mais difíceis** que o #1 |
-| **Questões "reais do exame"** | Não existe simulado oficial gratuito da LPI que eu tenha encontrado; as que circulam em sites de dumps são vazadas | **Fora do plano**, pelo termo de confidencialidade e porque os gabaritos não são confiáveis |
-
-**Sobre a dificuldade.** No simulado #1 você usou 20 dos 60 minutos e fez 70%. Para o #2 em diante, o pedido é: enunciados com cenário, pegadinhas de comando, escolha de mais de uma resposta, preenchimento e distratores plausíveis; e a regra de **usar pelo menos 45 minutos**, com segunda passada.
-
-**Dicas recorrentes (06/10).** Peça o `simulado-02` incluindo o mínimo de questões por tema (permissões 4, `tar` 2, redirecionamento 3 com `<<`, diretórios 3) e **5 questões de preencher a lacuna**, com uma tabela de temas no gabarito. A cola, as regras de lacuna e o mini-simulado R1 (terça 13/10) estão em `praticas-reforco-dicas-recorrentes.md`. Esta semana não ganha tempo novo: o reforço começa no simulado #2 de domingo.
-
-**Carga.** São 40 minutos a mais nesta semana (20 no sábado e 20 no domingo), e a revisão de terça, de 15 minutos, saiu. Se a semana apertar, os 20 minutos da Prática 1 são os primeiros a ir para a segunda 12/10. Os simulados de domingo e os de Fase 2 (22/10, 27/10, 29/10 e 05/11) permanecem como estão no plano geral.
-
----
-
-## Pré-checkpoint — Quarta 07/10 (decisão do voucher)
-
-**Atualização de 08/10 — a compra foi adiada por decisão sua.** As duas condições do pré-checkpoint estavam cumpridas, mas você decidiu comprar o voucher **só depois que a média dos simulados melhorar**. Registro:
-
-| Item | Decisão |
-|---|---|
-| Gatilho de compra | **Média dos três últimos simulados com 30 ou mais acertos (75%)** |
-| Primeira avaliação possível | Quinta 22/10, com os simulados #2 (11/10), #3 (18/10) e #4 (22/10). A seguinte seria no domingo 25/10, com #3, #4 e #5 |
-| Data da prova | **Data principal 16/11 (decisão de 10/10); 09/11 é a meta ousada**, só viva se o gatilho vier até 25/10 e houver vaga. Nenhuma das duas está agendada |
-| Fica em aberto | A antecedência mínima de agendamento no centro Pearson VUE e a disponibilidade de vaga em 09/11 e 16/11. **Não sei esses valores**: consulte os horários disponíveis no site da Pearson VUE antes de depender de 09/11 (ver a página sem comprar não custa nada) |
-| Decisão de 10/10 | Gatilho atingido até o domingo 25/10 e vaga em 09/11: compra e agendamento para 09/11. Caso contrário: **16/11**. Reservas: 23/11 e 30/11 (limite). **Novembro fica garantido** |
-
-O texto abaixo é o original de 06/10, mantido como registro.
-
-Uma pergunta só: **o simulado #1 (segunda) e o Laboratório 2 (terça) estão feitos?**
-
-**Situação em 06/10, à noite:** o simulado #1 está feito (28 de 40) e o **Laboratório 2 está concluído** (três scripts). **As duas condições estão cumpridas.** Pela regra, na quarta 07/10 você **compra o voucher e agenda 09/11**.
-
-| Resposta | Decisão |
-|---|---|
-| Os dois estão feitos | Compre o voucher e agende **09/11** |
-| Qualquer um dos dois não está | Agende direto para **16/11** |
-
-O voucher ainda não foi comprado, então agendar para 16/11 não custa remarcação nem troca. Com 16/11 como data, os Checkpoints A, B e Gate mantêm as datas e os critérios, e o resultado "vermelho" passa a significar remarcar para **23/11**. A série de simulados dominicais continua igual. O procedimento completo está no plano geral, seção 11.
-
-Anote na hora do agendamento: data escolhida ____________ · janela de remarcação sem custo ____________ · validade do voucher ____________.
-
----
-
-## Checkpoint A — Domingo 11/10, à noite
-
-**Substituído em 13/10** pelo Checkpoint A de domingo 18/10, com critérios revistos (`labs/semana-07.md`, seção 8). O texto abaixo fica como registro.
-
-*Nota de 10/10:* a Prática 2 cai na segunda 12/10, então o critério 3 (Práticas 1 e 2) deve falhar no domingo e o resultado esperado é **amarelo**; a regra já prevê o item obrigatório na segunda. **Não mova o checkpoint para esconder o amarelo.**
-
-*Nota de 08/10:* o critério 5 (voucher) foi substituído pelo registro do gatilho de compra. O simulado #2 e a Prática 2 acontecem no próprio domingo, antes desta decisão.
-
-Marque os cinco critérios com base no que está registrado neste arquivo, não na sensação.
-
-| # | Critério | Cumprido |
-|---|---|---|
-| 1 | Curso até a aula 57 (ou ao menos até a 50, com 51 a 57 marcadas para 12/10) | |
-| 2 | Laboratório 2 com os três scripts obrigatórios | **Sim (06/10)** |
-| 3 | Práticas 1 e 2 feitas | |
-| 4 | Simulado #2 com **24 ou mais** acertos | |
-| 5 | **Gatilho do voucher registrado** (decisão de 08/10: compra depois que a média dos três últimos simulados chegar a 30 ou mais) | **Sim (08/10)** |
-
-Resultado, pela regra do plano geral (seção 11):
-
-- **Verde**, todos cumpridos: mantém a data principal (16/11) e a meta ousada de 09/11.
-- **Amarelo**, um critério falhou: mantém a data principal. O item vira pendência obrigatória na segunda 12/10 e o Checkpoint B de 18/10 passa a valer como decisão final.
-- **Vermelho**, dois ou mais critérios falharam, ou simulado #2 abaixo de 20 acertos: **mover a data principal para 23/11** na própria segunda 12/10, enquanto a mudança é simples.
-
----
-
-## Pendências e fila de dívidas
-
-**Fechada em 13/10.** O que estava aberto foi transferido para a Semana 7 ou retirado do plano.
-
-| Item | Origem | Estado em 13/10 | Destino |
-|---|---|---|---|
-| **Simulado 01** | Semana 3 | **Concluído em 05/10:** 28 de 40 (70%) | — |
-| Correções 62 a 68 e cards no Notion | Semana 6 | **Concluído em 05/10** | — |
-| Laboratório 2 (três scripts) | Semana 5 | **Concluído em 06/10** | — |
-| Curso, aulas 31 a 40 | Semana 6 | **Concluído em 08 e 09/10** | — |
-| **Prática 1** — usuários e grupos, com Exercícios da LPI 5.1 e 5.2 | Semana 6 | Dívida | **Semana 7, ter 13/10** |
-| **Prática 2** — permissões, com Exercícios da LPI 5.3 e 5.4 | Semana 6 | Dívida | **Semana 7, qua 14/10** |
-| **Autoavaliação da Semana 5** (10 questões) | Semana 5 | Dívida | **Semana 7, ter 13/10**, primeira atividade |
-| **Simulado 02** | Semana 6 | Dívida; escrito em 13/10 (`labs/simulados-práticos.lpi/simulado-02.md`) | **Semana 7, sáb 17/10** |
-| **Autoavaliação da Semana 6** | Semana 6 | Cortada em 10/10, **devolvida ao plano em 13/10** | **Semana 7, dom 18/10** (questões em `labs/semana-07.md`) |
-| Curso, aulas 41 a 72 | Semanas 6 e 7 | Conteúdo não estudado | **Semana 7**, de 15 a 18/10 |
-| Voucher e agendamento | Semana 5 | Prova definida para **23/11** em 13/10 | `PLANO.md`, seção 11 |
-| ~~Revisão prática dos erros do simulado 01~~ | Semana 6 | Cancelada em 06/10 | **Retirada do plano** |
-| ~~Comparação de compressão com o `bzip2`~~ | Semana 4 | Sem registro | **Retirada do plano** em 13/10 |
-| ~~Saídas do `teste.sh` e três saídas de `vi` e `nano`~~ | Semana 5 | Sem registro | **Retirada do plano** em 13/10 |
-| ~~`filtrar.sh`~~ | Semana 5 | Opcional, não feito | **Retirado do plano** em 13/10 |
-| ~~`.wslconfig` e teste do snapshot~~ | Semana 0 | Sem prazo | **Retirados do plano** em 13/10 |
 
 ---
 
@@ -685,7 +379,7 @@ Marcou que `cd -` vai para o **diretório pai**; a resposta é "volta ao diretó
 | `..` | **Espaço**: a árvore de diretórios | Um nível **acima**, o pai |
 | `-` | **Tempo**: de onde você veio | Volta ao diretório **anterior**, guardado em `$OLDPWD` |
 
-Mnemônico: **ponto-ponto sobe, traço volta**. Quatro correções escritas não resolveram. Reler não conserta isto; o que conserta é executar todo dia, e por isso o par está fixo no aquecimento até domingo.
+Mnemônico: **ponto-ponto sobe, traço volta**. Quatro correções escritas não resolveram. Reler não conserta isto; o que conserta é executar.
 
 #### Correção 65 — `/usr` não é *user* (Q14)
 
@@ -726,9 +420,9 @@ Você sabia que não sabia, e o simulado confirmou. Não geram correção agora;
 
 | Q | Tema | Resposta | Onde será estudado |
 |---|---|---|---|
-| 28 | Processos em tempo real | `top` (o `free -h` mostra memória) | Semana 7, Prática 1 |
-| 29 | Sinal padrão do `kill` | `SIGTERM` (15). O `SIGKILL` (9) só com `kill -9` | Semana 7, Prática 1 |
-| 35 | Último campo do `/etc/passwd` | O **shell de login**, 7º campo. O GID é o 4º | Semana 6, Prática 1, bloco 2 |
+| 28 | Processos em tempo real | `top` (o `free -h` mostra memória) | Semana 8, Prática 4 |
+| 29 | Sinal padrão do `kill` | `SIGTERM` (15). O `SIGKILL` (9) só com `kill -9` | Semana 8, Prática 4 |
+| 35 | Último campo do `/etc/passwd` | O **shell de login**, 7º campo. O GID é o 4º | Prática 1, bloco 2 |
 | 37 | `rw-r--r--` em octal | **644**. O `664` é `rw-rw-r--`, que é o padrão da sua VM | Aquecimento de conversões |
 | 40 | Quem retira permissões de arquivo novo | `umask` | Baixa prioridade: fora da lista oficial |
 
@@ -741,7 +435,7 @@ A Q37 merece atenção: você marcou **664**, e `rw-rw-r--` é justamente o que 
 
 ### Laboratório 2 — terça 06/10 — CONCLUÍDO
 
-Os três scripts obrigatórios foram escritos, testados e funcionaram com os códigos de saída pedidos (0, 1 e 2). O `filtrar.sh`, opcional, não foi feito e fica sem data.
+Os três scripts obrigatórios foram escritos, testados e funcionaram com os códigos de saída pedidos (0, 1 e 2).
 
 **Avaliação.** As três soluções cumprem a especificação e **vão além da solução de referência**: validam se o diretório existe, mandam as mensagens de erro para o `stderr` (`>&2`), protegem o argumento com `--`, usam `if comando` para testar o código de saída, e o `usuario.sh` usa `grep -Fxq` em vez de `grep -q "^$1:"`, o que evita que um nome com `.` seja lido como expressão regular. Não há erro conceitual, por isso **nenhuma correção numerada** foi aberta. O que segue são ajustes de caderno e dois testes opcionais.
 
@@ -877,18 +571,9 @@ Ajustes de caderno:
 3. **O `grep -Fxq -- "$1"` aparece com travessão e aspas curvas** (`— “$1”`). São correções automáticas do editor; no terminal só funcionam `--` e aspas retas `"`.
 4. **Este script não usa `pipefail`, e isso é uma boa decisão.** O `grep -q` termina no primeiro acerto e fecha o pipe; o `cut` pode então encerrar por **SIGPIPE** (código 141). Com `pipefail`, o `if` poderia ver esse 141 e dizer que o usuário **não existe**, mesmo ele existindo. No `contar.sh` o `pipefail` faz sentido; neste, atrapalharia.
 
-#### Testes opcionais, 3 minutos
-
-```bash
-./contar.sh /etc ; echo $?                              # confirma a previsão do pipefail
-mkdir "dir com espaco" ; ./backup.sh "dir com espaco"   # a armadilha das aspas
-cd ~ ; ./lab5/scripts/backup.sh ~/lab5 ; tar -tzf backup-*.tar.gz | grep backup-   # o backup fora da origem não se inclui
-```
-
-
 ### Aquecimento de permissões — quarta 07/10
 
-Estudo prévio feito por conta própria, antes de responder (o conteúdo ainda não tinha sido ensinado; ver a atualização de 07/10 acima), seguido de prática no terminal em `lab6/permissoes`.
+Estudo prévio feito por conta própria, antes de responder (o conteúdo ainda não tinha sido ensinado), seguido de prática no terminal em `lab6/permissoes`.
 
 **Resultado das cinco questões: 5 de 5**, todas conferidas no terminal com `stat -c '%n: %a (%A)'`. Como foi estudo assistido, o resultado **não conta como medida de retenção**.
 
@@ -986,9 +671,9 @@ O caderno diz que a contra-barra serve para "tratar o próximo dígito como norm
 
 Para ver: `NOME=Davi ; echo "$NOME" '$NOME' \$NOME` imprime `Davi $NOME $NOME`.
 
-### Curso, aulas 36 a 40 — sexta 09/10 (parcial)
+### Curso, aulas 36 a 40 — sexta 09/10
 
-Aulas 36 a 40 assistidas até agora. Você ainda vai ver mais aulas hoje; registre onde parou ao fim do dia.
+Aulas 36 a 40 assistidas; **checkpoint na aula 41**.
 
 **Conteúdo registrado**
 
@@ -1037,19 +722,9 @@ O caderno diz que `type` "identifica o tipo de binário que estamos utilizando".
 
 Compare com os outros dois: `which` mostra só o caminho dentro do `PATH`; `whereis` mostra o **binário, o código-fonte e as páginas de manual**. `type -a` lista **todas** as ocorrências (por exemplo, `echo` é interno e também existe em `/usr/bin/echo`). Confirmado no terminal.
 
-### Prática 1 — sábado 10/10
-
-*A preencher.*
-
-### Prática 2 — segunda 12/10 (feriado)
-
-*A preencher.*
-
 ### Correções da semana
 
-A numeração segue a série global. A última registrada na Semana 5 foi a **61** (o `2` do `2>` não é o `2` do `$?`). Em 05/10, o simulado #1 gerou as **Correções 62 a 68**. **A próxima é a 75.** Em 08/10, o curso gerou as Correções 69 a 72; em 09/10, as 73 e 74.
-
-O painel de resultados, a lista de questões erradas e o índice das Correções 1 a 68 estão em `praticas-resultados-simulados-e-correcoes.md`.
+A numeração segue a série global. O simulado 01 gerou as **Correções 62 a 68**; o curso, as **69 a 74**. O Laboratório 2 não gerou correção numerada: não houve erro conceitual. O índice das Correções 1 a 74 está em `labs/simulados-práticos.lpi/resultados_simulados.md`.
 
 | # | Tema | Origem |
 |---|---|---|
@@ -1067,55 +742,21 @@ O painel de resultados, a lista de questões erradas e o índice das Correções
 | 73 | `updatedb` refaz o índice inteiro; `locate` lê o índice e `find` olha o disco | Curso, 09/10 |
 | 74 | `type` mostra como o shell interpreta um nome, não "o tipo de binário" | Curso, 09/10 |
 
-Os cards das Correções 62 a 68 foram anotados no Notion em 05/10. O Laboratório 2 de 06/10 **não gerou correção numerada**: não houve erro conceitual, só ajustes de caderno. A partir de 06/10, erros de simulado não geram correção numerada. **A próxima, para erros de laboratório e de curso, é a 69.**
-
-*A preencher.*
-
----
-
-## Horas da semana
-
-Registre o tempo real de cada dia. É com esses números que o plano será calibrado, em vez de supor.
-
-| Dia | Previsto | Real | Observação |
-|---|---|---|---|
-| Seg 05 | 1h50 | | Simulado #1 |
-| Ter 06 | 1h15 | | Laboratório 2 |
-| Qua 07 | 20 min | | Aquecimento com estudo prévio |
-| Qui 08 | 1h30 | | Aulas 31 a 35 |
-| Sex 09 | 1h | | Aulas 36 a 40 |
-| Sáb 10 | 3h | | |
-| Dom 11 | 2h30 | | |
-| Seg 12 | 3h | | |
-
-**Meta de 10/10 a 01/11: cerca de 9h por semana**, com 1h por dia útil em horário fixo e dois blocos de 2h30 a 3h no fim de semana.
-
 ---
 
 ## Checklist da semana
 
-**Fechado em 13/10.** Os itens abertos foram para o checklist de `labs/semana-07.md`.
-
-- [x] **Simulado 01** e apuração por objetivo (segunda): 28 de 40, 70%
-- [x] Correções 62 a 68 registradas (segunda)
-- [x] Cards das Correções 62 a 68 no Notion (05/10)
-- [x] Arquivos ocultos: dívida encerrada em 05/10, a pedido (comandos já dominados)
-- [x] Laboratório 2, três scripts (terça 06/10)
-- [x] Comparação de compressão e saídas do `teste.sh`, do `vi` e do `nano`: retiradas do plano em 13/10
-- [x] **Pré-checkpoint** feito; voucher adiado em 08/10; prova definida para 23/11 em 13/10
-- [x] Curso, aulas 31 a 35 (quinta 08/10; checkpoint na 36)
-- [x] Curso, aulas 36 a 40 (sexta 09/10)
-- [x] `simulado-02` escrito (13/10)
-- [ ] Prática 1 e Prática 2: transferidas para a Semana 7
-- [ ] Autoavaliações das Semanas 5 e 6: transferidas para a Semana 7
-- [ ] Simulado 02: transferido para a Semana 7 (sábado 17/10)
-- [ ] Curso, aulas 41 a 72: transferidas para a Semana 7
+- [x] Simulado 01 e apuração por tópico (05/10): 28 de 40, 70%
+- [x] Correções 62 a 68 registradas e anotadas no Notion (05/10)
+- [x] Laboratório 2, três scripts (06/10)
+- [x] Aquecimento de conversões de permissão (07/10)
+- [x] Curso, aulas 31 a 40, e Correções 69 a 74 (08 e 09/10)
 
 ---
 
 ## Entregável
 
-`labs/semana-06.md` com o simulado 01, o Laboratório 2 e o curso até a aula 40. O restante do entregável original (Práticas 1 e 2, `cheatsheets/permissoes.md`, simulado 02 e Checkpoint A) passou para a Semana 7.
+`labs/semana-06.md` com o simulado 01, o Laboratório 2, o aquecimento de conversões, o curso até a aula 40 e os roteiros do Tópico 5.
 
 ---
 
@@ -1169,14 +810,14 @@ Maiúsculo (`S`, `T`) significa bit ligado **sem** o `x` correspondente.
 
 **Não abra antes de responder.**
 
-| Dia | Respostas |
+| Série | Respostas |
 |---|---|
-| Seg 05 | (a) 755 · (b) `rw-r--r--` · (c) 700 · (d) `rw-rw-r--` · (e) 440 |
-| Ter 06 | (a) `rwxr-x---` · (b) 600 · (c) `rwxrwxrwx` · (d) 640 · (e) `rwx--x--x` |
-| Qua 07 | (a) 744 · (b) 744 · (c) 644 · (d) 660 · (e) 644 |
-| Qui 08 | (a) `rwsr-xr-x` · (b) `rwxr-sr-x` · (c) `rwxrwxrwt` · (d) 3775 · (e) `rwSr--r--` |
-| Sex 09 | (a) 775 · (b) `rwxrws---` · (c) 664 · (d) `r-xr-xr-x` · (e) 400 |
-| Sáb 10 | (a) `rwxr-xr--` · (b) 660 · (c) `rwsr-x---` · (d) `rwxrwx--T` · (e) `drwxr-sr-x` |
+| 1 | (a) 755 · (b) `rw-r--r--` · (c) 700 · (d) `rw-rw-r--` · (e) 440 |
+| 2 | (a) `rwxr-x---` · (b) 600 · (c) `rwxrwxrwx` · (d) 640 · (e) `rwx--x--x` |
+| 3 | (a) 744 · (b) 744 · (c) 644 · (d) 660 · (e) 644 |
+| 4 | (a) `rwsr-xr-x` · (b) `rwxr-sr-x` · (c) `rwxrwxrwt` · (d) 3775 · (e) `rwSr--r--` |
+| 5 | (a) 775 · (b) `rwxrws---` · (c) 664 · (d) `r-xr-xr-x` · (e) 400 |
+| 6 | (a) `rwxr-xr--` · (b) 660 · (c) `rwsr-x---` · (d) `rwxrwx--T` · (e) `drwxr-sr-x` |
 
 **Bloco 4 — diretório e operações** (assumindo que o arquivo `arq` tem permissão de leitura)
 
