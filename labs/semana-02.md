@@ -51,7 +51,7 @@ sudo poweroff
 
 ---
 
-## Pendência herdada da Semana 1
+## Bandit nível 5 para 6
 
 **Bandit nível 5 para 6.** O desafio pede um arquivo com três características simultâneas: legível por humano, 1033 bytes, e não executável.
 
@@ -62,7 +62,7 @@ man find
 
 Procure no manual por `-size`, `-type`, `-readable` e `-executable`. O `!` nega uma condição e tamanho em bytes leva o sufixo `c`. Monte o comando sem consultar solução pronta.
 
-**Concluído em 13/09.**
+**Resolvido em 13/09.**
 
 O diretório `inhere` continha muitos arquivos espalhados por subdiretórios, inviabilizando a inspeção manual. A solução foi filtrar pelas três características simultâneas:
 
@@ -201,7 +201,7 @@ cd -             # volta ao diretório anterior
 
 **Caminho com e sem a barra inicial.** `ls etc` procura uma pasta chamada `etc` **dentro do diretório atual** (caminho relativo). `ls /etc` parte da **raiz** do sistema (caminho absoluto).
 
-**Código de saída.** Pendente — rodar `ls /naoexiste` seguido de `echo $?` e comparar com o retorno de um comando bem-sucedido.
+**Código de saída.** Ver a seção "Código de saída e dois argumentos", logo abaixo.
 
 ### Correções desta sessão
 
@@ -250,9 +250,9 @@ O `type echo` revela algo útil: o `echo` é um **shell builtin**, embutido no B
 
 ---
 
-### Pendências quitadas em 09/09
+### Código de saída e dois argumentos
 
-**Comando com dois argumentos — concluído**
+**Comando com dois argumentos**
 
 ```bash
 ls -lh /etc
@@ -285,13 +285,6 @@ echo $?          # 2 — falhou em um dos dois argumentos
 Convenção dos códigos: `0` sempre significa sucesso; qualquer valor diferente de zero significa erro, e o número indica o tipo. O `ls` usa `1` para problemas menores e `2` para erro grave, como argumento inexistente.
 
 Esse mecanismo é a base do `&&` e do `||`, que aparecem na Semana 5 — e é exatamente o que aconteceu no `apt update && apr upgrade` durante a montagem do laboratório: o `update` retornou `0`, então o shell executou o segundo comando, que não existia.
-
-### Dívidas Pagas:
-
-- [x] Refazer a sequência acima com o `echo $?` imediatamente após cada comando
-- [x] `echo $OLDPWD` — confirmar como o `cd -` funciona
-
----
 
 ## Sessão 2 — Quarta 09/09 — Caminhos absolutos e relativos — CONCLUÍDA
 
@@ -890,14 +883,14 @@ cd ~ && rm -rf /tmp/teste-expansao
 
 **Correção 16 — o `history` não é só da sessão atual.** Ele lê o arquivo `~/.bash_history`, que persiste entre sessões. Por isso comandos de dias anteriores aparecem na lista.
 
-### Dividas Pagas: 
+### Experimento: `echo *.txt` contra `ls *.txt`
 
-- [x] O experimento que fecha o conceito da semana — rodar e comparar:
-  ```bash
-  echo *.txt
-  ls *.txt
-  ```
-  O `echo` mostra **exatamente o que o `ls` recebe**. Quem expande o asterisco é o shell, antes de o comando existir; o `ls` nunca vê um `*`.
+```bash
+echo *.txt
+ls *.txt
+```
+
+O `echo` mostra **exatamente o que o `ls` recebe**. Quem expande o asterisco é o shell, antes de o comando existir; o `ls` nunca vê um `*`.
 
 ---
 
@@ -1079,14 +1072,14 @@ Card para o Notion: *"O que `export` faz? → Marca a variável para ser herdada
 - [x] Sessão 3 — sistema de ajuda (10/09)
 - [x] Sessão 4 — variáveis, aspas e globbing (13/09)
 - [x] Sessão 5 — histórico, atalhos e aliases (13/09)
-- [x] Bandit nível 5 para 6 (pendência da Semana 1)
+- [x] Bandit nível 5 para 6
 - [x] Autoavaliação — realizada em 14/09, nota 14 de 15
 - [x] Curso do Muller — nenhum avanço nesta semana
 - [x] Cards do Notion atualizados
 
 ## Fechamento da Semana 2
 
-**Concluída em 13/09, no último dia do prazo.** As cinco sessões foram cumpridas, mas com duas sessões comprimidas no domingo, o que gerou dívidas.
+**Concluída em 13/09, no último dia do prazo.** As cinco sessões foram cumpridas, duas delas no domingo.
 
 **Objetivos cobertos:** 2.1 (Command Line Basics) e 2.2 (Using the Command Line to Get Help) — 5 dos 9 pontos do Tópico 2.
 
