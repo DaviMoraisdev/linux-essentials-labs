@@ -482,7 +482,7 @@ file ./*
 
 Ele lê os primeiros bytes de cada arquivo (os *magic numbers*) e diz o que é: `ASCII text`, `data`, `ELF executable`, `PNG image`. Num diretório com 10 arquivos, resolve em um comando. Cat em arquivo binário, além de não ajudar, bagunça o terminal — se acontecer, o conserto é `reset`.
 
-**Nível 5 — transferido para a Semana 2.** O desafio pede um arquivo com três características simultâneas: legível por humano, **1033 bytes**, e **não executável**. O `find` aceita filtros para exatamente isso:
+**Nível 5 — resolvido na Semana 2.** O desafio pede um arquivo com três características simultâneas: legível por humano, **1033 bytes**, e **não executável**. O `find` aceita filtros para exatamente isso:
 
 ```bash
 man find
@@ -531,10 +531,7 @@ Os níveis 3 e 4 foram inicialmente resolvidos com `find` e com `cat` em todos o
 - [x] Cards de revisão criados no Notion
 - [x] Verificação dos diretórios do FHS na própria VM
 - [x] Níveis 3 e 4 do Bandit refeitos com `ls -a` e `file`
-
-**Transferido para a Semana 2:**
-
-- [ ] Bandit nível 5 → 6 (`find` com filtros de tamanho e permissão)
+- [x] Bandit nível 5 → 6 (`find` com filtros de tamanho e permissão), resolvido na Semana 2
 
 ---
 
