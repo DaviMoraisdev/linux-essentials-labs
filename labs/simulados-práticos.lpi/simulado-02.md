@@ -406,7 +406,7 @@ Os temas são os das dicas recorrentes (`praticas_simulados.md`, seção 2.1). U
 
 ## Questões que retestam correções antigas
 
-São da retaguarda: não se estudam de novo, mas o simulado diz se o erro voltou.
+São erros antigos: não se estudam de novo, mas o simulado diz se voltaram.
 
 | Q | Correção |
 |---|---|
