@@ -5,18 +5,6 @@
 **Repositório de labs:** https://github.com/DaviMoraisdev/linux-essentials-labs
 
 > **Atualização de 13/10 — nova estratégia até 23/11.** A prova passou para **segunda 23/11**. O plano tem agora três etapas: (1) **pagar as dívidas** escolhidas (Práticas 1 e 2, simulado 02, autoavaliações das Semanas 5 e 6) até o domingo 18/10; (2) **estudar o conteúdo que falta**, com o curso fechado até 18/10 e o Tópico 4 em três práticas de laboratório na Semana 8; (3) **simulados** de 23/10 a 19/11. As dívidas antigas sem motivo para serem feitas agora saíram do plano. Detalhe na seção 1, no cronograma (seção 7) e em `labs/semana-07.md`.
->
-> **Estratégia revisada em 26/09.** O cronograma tem **duas fases**: três semanas com o curso como atividade principal e duas práticas por semana, seguidas de três semanas de prática intensiva e simulados. Detalhamento na seção 7.
->
-> **Atualização de 02/10, à noite.** Três mudanças: (1) **simulado geral de 40 questões todo domingo**, a partir de 04/10 (seção 7); (2) o fechamento da Semana 5 passa para o **domingo 04/10** (Laboratório 1 e simulado #1), e o Laboratório 2 e as aulas 31 a 43 passam para a Semana 6 (`labs/semana-06.md`); (3) nova **regra de adiamento da prova**, com checkpoints e datas alternativas (seção 11).
->
-> **Atualização de 06/10.** O **Laboratório 2 foi concluído** (três scripts, sem erro conceitual). Com ele, as duas condições do pré-checkpoint estão cumpridas: na quarta 07/10, comprar o voucher e agendar **09/11**. Três decisões novas: (1) **erros antigos de comandos já dominados vão para a retaguarda** e saem do aquecimento (seções 6 e 9); (2) nos simulados, **só se anotam as questões erradas** e a correção fica no Notion; (3) **mais prática de simulado**, com questões da LPI no fim das Práticas 1 e 2 e simulados mais difíceis (seções 5 e 7).
->
-> **Atualização de 05/10.** O **simulado #1 foi feito: 28 de 40 (70%), 560 de 800**, acima do corte, mas com 5 acertos por chute (23 firmes). Tópico 3 em 9 de 9; seis dos sete erros com convicção caíram nos Tópicos 1 e 2. Correções 62 a 68 em `labs/semana-06.md`. Falta o Laboratório 2 (terça 06/10) para o pré-checkpoint de quarta.
-
-> **Atualização de 04/10.** O Laboratório 1 e o exercício das frutas foram concluídos. O **simulado #1 passou para a segunda 05/10**, o Laboratório 2 para a terça 06/10 e as aulas 31 a 43 para a quarta 07/10. A Semana 6 foi reorganizada (`labs/semana-06.md`). Um novo **pré-checkpoint, na quarta 07/10**, decide se a prova é agendada para 09/11 ou direto para 16/11 (seção 11).
->
-> **Calendário da Semana 5 revisado em 29/09.** O curso foi adiado na segunda e na terça. As 18 aulas restantes da semana passam a ser cumpridas em dois blocos, na quarta e na quinta, sem mover os laboratórios nem o simulado. Detalhamento na seção 7 e no arquivo `labs/semana-05.md`.
 
 ---
 
@@ -42,13 +30,13 @@
 
 As únicas dívidas que continuam no plano. Depois delas, o plano só tem conteúdo não estudado e simulados.
 
-| Dívida | Roteiro | Data |
-|---|---|---|
-| Autoavaliação da Semana 5 (10 questões, shell script) | `labs/semana-06.md` | Ter 13/10, primeira atividade |
-| Prática 1 — usuários e grupos, com Exercícios da LPI 5.1 e 5.2 | `labs/semana-06.md` | Ter 13/10 |
-| Prática 2 — permissões, com Exercícios da LPI 5.3 e 5.4 | `labs/semana-06.md` | Qua 14/10 |
-| Simulado 02 (40 questões) | `labs/simulados-práticos.lpi/simulado-02.md` | Sáb 17/10 |
-| Autoavaliação da Semana 6 (10 questões, Tópico 5) | `labs/semana-07.md`, seção 7 | Dom 18/10, primeira atividade |
+| Dívida | Roteiro | Data | Situação em 14/10 |
+|---|---|---|---|
+| Autoavaliação da Semana 5 (10 questões, shell script) | `labs/semana-06.md` | Ter 13/10 | 7 de 10 respondidas; faltam 8, 9 e 10 |
+| Prática 1 — usuários e grupos, com Exercícios da LPI 5.1 e 5.2 | `labs/semana-06.md` | Ter 13/10 | Blocos 1 e 2 anotados; faltam o bloco 3 e os Exercícios |
+| Prática 2 — permissões, com Exercícios da LPI 5.3 e 5.4 | `labs/semana-06.md` | Qua 14/10 | A fazer |
+| Simulado 02 (40 questões) | `labs/simulados-práticos.lpi/simulado-02.md` | Sáb 17/10 | A fazer |
+| Autoavaliação da Semana 6 (10 questões, Tópico 5) | `labs/semana-07.md`, seção 6 | Dom 18/10 | A fazer |
 
 ### Conteúdo ainda não estudado — Etapa 2, de 15/10 a 25/10
 
@@ -59,10 +47,6 @@ As únicas dívidas que continuam no plano. Depois delas, o plano só tem conte�
 | 4.1, here document (`<<`) e quizzes do NDG | 22/10 |
 
 A lista completa, objetivo por objetivo, está em `labs/semana-07.md`, seção 2.
-
-### Retirado do plano em 13/10
-
-Comparação de compressão com o `bzip2`; registro das saídas do `teste.sh`, do `vi` e do `nano`; `filtrar.sh`; retestes da autoavaliação da Semana 4 e das questões 18, 20, 21, 22 e 24 do simulado 01; revisão prática dos erros do simulado 01; `.wslconfig`; teste de restauração do snapshot; laboratório integrador da Semana 9; cards das Correções 69 a 74 como pendência do plano. Motivo e detalhe em `labs/semana-07.md`, seção 4. O que esses itens mediam continua sendo medido pelos simulados.
 
 ### Voucher e agendamento
 
@@ -218,7 +202,7 @@ Host lab
 
 | Fonte | Custo | Para quê |
 |---|---|---|
-| **`praticas/` deste repositório** | — | Simulados próprios, com peso do exame e gabarito comentado. As questões atacam os erros já registrados nos cadernos. Série dominical: ver seção 7 |
+| **`labs/simulados-práticos.lpi/` deste repositório** | — | Simulados próprios, com peso do exame e gabarito comentado. As questões atacam os erros já registrados nos cadernos. Série dominical: ver seção 7 |
 | **NDG Linux Essentials** (Cisco Networking Academy) | Gratuito | Quizzes por módulo e exame final de prática. A melhor fonte externa gratuita |
 | **LPI Learning Materials** (PDF no Projeto) | Gratuito | Exercícios Guiados e Exploratórios de cada lição, com respostas. É o único material de questões **escrito pela própria LPI** |
 | **EDUSUM** | Gratuito | Amostra de questões no estilo LPI |
@@ -263,23 +247,15 @@ Para não perder isso ao reduzir as sessões, entra um ritual curto de **10 minu
 
 Cinco comandos. Dez minutos. É o que mantém o espaçamento funcionando com duas sessões formais por semana.
 
-**Desde 06/10, o aquecimento só carrega conteúdo atual.** Erros antigos de comandos já dominados vão para a retaguarda (seção 9) e saem daqui, porque competiam com o conteúdo novo da prova. Abaixo, o texto original de 28/09, que vale para o conteúdo da semana.
+**O aquecimento é pautado pelo conteúdo atual e pelos erros medidos.** Cinco comandos escolhidos ao acaso reforçam o que já está fixado; cinco escolhidos a partir da prática anterior ou das questões erradas atacam a lacuna medida. Erros antigos de comandos já dominados não entram aqui: os simulados medem se voltam.
 
-**O aquecimento não é livre: ele é pautado pelos erros da autoavaliação anterior.** Cinco comandos escolhidos ao acaso reforçam o que já está fixado. Cinco comandos escolhidos a partir das questões erradas atacam a lacuna medida.
+| Período | Conteúdo do aquecimento |
+|---|---|
+| Semanas 7 e 8 | O conteúdo da prática anterior (Tópico 5, depois Tópico 4) |
+| A partir de 26/10 | Rodízio pelas cinco frentes das dicas recorrentes: segunda permissões, terça `tar`, quarta redirecionamento, quinta diretórios, sexta lacunas |
+| Dias de simulado | Sem aquecimento: o simulado o substitui |
 
-Aquecimento da Semana 5 — `grep` e `sort`, pelos erros das questões 7, 11, 13 e 14:
-
-```bash
-grep -v '^#' /etc/ssh/sshd_config | grep -v '^$'
-printf '100\n25\n3\n9\n' | sort ; printf '100\n25\n3\n9\n' | sort -n
-grep -c ERROR sistema.log ; grep -o ERROR sistema.log | wc -l
-grep '^[AB]' funcionarios.csv ; grep '[^0-9]' funcionarios.csv
-grep -E 'ERROR|WARN' sistema.log
-```
-
-Na quinta e no sábado, o quinto item é trocado pelo teste do `-f` do `tar` (Correção 52). Os arquivos de apoio são recriados em `~/lab5`; o roteiro completo está em `labs/semana-05.md`.
-
-**Regra de 07/10 — aquecimento depois do conteúdo.** O aquecimento de permissões da Semana 6 pedia conversão de memória antes de o assunto ser ensinado (as aulas e a Prática 2 vêm depois). Você estudou por conta própria na quarta 07/10, e o resultado de 5 de 5 conta como **estudo**, não como retenção. A regra passa a ser: a primeira aparição de um assunto no aquecimento é leitura de 5 minutos mais cinco questões, e o reteste cego vem no dia seguinte. A régua de 3 segundos só vale para o que já foi estudado. Vale para todo tópico novo, inclusive os da Semana 7.
+**Assunto novo entra no aquecimento só depois de estudado.** A primeira aparição é leitura de 5 minutos mais cinco questões; o reteste cego vem no dia seguinte. A régua de 3 segundos por item vale só para o que já foi estudado.
 
 ### Quando responder a autoavaliação
 
@@ -287,7 +263,7 @@ Na quinta e no sábado, o quinto item é trocado pelo teste do `-f` do `tar` (Co
 
 As duas primeiras notas mediam memória de curto prazo. A terceira mediu retenção, que é o que a prova mede.
 
-**Da Semana 5 em diante, a autoavaliação de cada semana é respondida na semana seguinte**, em um dia de curso, como abertura da sessão. O intervalo mínimo é de três dias. Uma nota menor e honesta informa o plano; uma nota alta e cedo apenas o tranquiliza. A autoavaliação da Semana 5 é elaborada na quinta 08/10 e respondida na **sexta 09/10**, em versão reduzida de 10 questões, três dias depois do Laboratório 2, que foi transferido para a terça 06/10.
+**Da Semana 5 em diante, a autoavaliação de cada semana é respondida na semana seguinte**, em um dia de curso, como abertura da sessão. O intervalo mínimo é de três dias. Uma nota menor e honesta informa o plano; uma nota alta e cedo apenas o tranquiliza.
 
 ### As sessões de laboratório
 
@@ -299,17 +275,13 @@ Sem vídeo dentro delas — o vídeo agora tem espaço próprio. A sessão intei
 
 **Quebrar coisas de propósito** continua valendo. O snapshot `limpo` existe para isso.
 
-### A fila de dívidas
+### Dívidas
 
-**Regra de 13/10:** depois de pagas as dívidas da Etapa 1, a fila só recebe conteúdo da prova ainda não estudado e simulados. O texto abaixo é o original.
+Desde 13/10 só existem as dívidas da Etapa 1 (seção 1). Depois de pagas, um item adiado só volta ao plano se for conteúdo da prova ainda não estudado ou simulado; o resto sai.
 
-Item adiado não some. Ele entra no início do próximo bloco de estudo e fica registrado na tabela de dívidas do arquivo da semana. Adiar tem custo visível: a Semana 5 subiu de 5h para cerca de 6h45 depois de dois dias de curso perdidos.
+### Erros antigos de conteúdo já estudado
 
-### A retaguarda de erros antigos
-
-**Atualização de 13/10:** os itens de ambiente e de registro retroativo que estavam na retaguarda saíram do plano (seção 1). Ficam só os erros de conteúdo, medidos pelos simulados. Abaixo, o texto de 06/10.
-
-**Regra de 06/10.** Erros de comandos passados e já dominados deixam de ocupar o aquecimento, as pendências e a rotina diária. Ficam numa fila de retaguarda (seção 9) e voltam em dois momentos: **nos simulados**, que continuam testando esses pontos de forma natural, e na **revisão leve da Semana 10**, pelos cards do Notion. O que não vai para a retaguarda é o conteúdo **atual**: Tópico 5 agora, Tópico 4 em seguida.
+Os erros recorrentes da seção 9 não têm atividade própria. Voltam em dois momentos: **nos simulados**, que continuam testando esses pontos, e na **revisão leve da Semana 12**, pelos cards do Notion.
 
 ### Dicas recorrentes de prova (06/10)
 
@@ -317,22 +289,20 @@ Dicas de candidatos, de fonte não oficial, conferidas contra o PDF da LPI: perm
 
 Como entram, sem aumentar a carga: (1) **mínimo de questões por tema em todo simulado a partir do #2**: permissões 4, `tar` 2, redirecionamento 3 (com `<<`), diretórios 3, **lacunas 5**; (2) **mini-simulados de reforço de 20 questões e 25 minutos**: R1 na sexta 23/10 e R2 na terça 27/10 (datas de 13/10); (3) a partir de 26/10, o aquecimento diário gira pelas cinco frentes (segunda permissões, terça `tar`, quarta redirecionamento, quinta diretórios, sexta lacunas). O detalhe, a cola e o R1 com gabarito estão em `praticas-reforco-dicas-recorrentes.md`; o desempenho por tema é registrado em `praticas-resultados-simulados-e-correcoes.md`.
 
-### O simulado dominical
+### Os simulados
 
-**Atualização de 13/10:** a série deixou de ser só dominical. Da Semana 9 em diante há dois ou três simulados por semana; as datas estão na seção 7.
-
-**Regra criada em 02/10:** todo domingo, um simulado geral de 40 questões, 60 minutos, sem consulta, com a distribuição de pesos do exame. É o termômetro semanal e o treino da condição de prova. A série completa, com datas, fontes e metas, está na seção 7.
+Um simulado geral de 40 questões, 60 minutos, sem consulta, com a distribuição de pesos do exame. É o termômetro e o treino da condição de prova. Da Semana 9 em diante há dois ou três por semana; a série completa, com datas, fontes e metas, está na seção 7.
 
 1. Cronometrado, sem terminal, sem caderno, sem internet.
 2. **Marcar cada chute**, mesmo acertando.
 3. Apuração **por tópico** e **lista das questões erradas e das chutadas**, com o tópico de cada uma. **Desde 06/10 não se abre correção numerada para erro de simulado:** a correção fica por conta dos seus cards no Notion.
 4. Cada simulado é um conjunto **novo**. As questões erradas voltam só pelo aquecimento, nunca refazendo o simulado inteiro.
 5. O resultado entra na tabela da série e alimenta os checkpoints da seção 11.
-6. Carga: cerca de 1h35 por domingo (60 min de prova, 20 a 25 de apuração, commits).
+6. Carga: cerca de 1h35 por simulado (60 min de prova, 20 a 25 de apuração, commits).
 7. **Exceção:** a véspera da prova (domingo 22/11) não tem simulado. O final é na quinta 19/11.
 8. **Dificuldade (06/10):** do #2 em diante os simulados escritos aqui ficam mais próximos do exame: enunciados com cenário, pegadinhas de comando, escolha de mais de uma resposta, preenchimento e distratores plausíveis. Use pelo menos 45 minutos e reserve os últimos 15 para uma segunda passada nas marcadas.
 
-**Relação com a autoavaliação semanal (13/10).** As autoavaliações das Semanas 5 e 6 são dívidas da Etapa 1: a da Semana 5 na terça 13/10 e a da Semana 6, **devolvida ao plano em 13/10**, no domingo 18/10. A partir da Semana 8, com os cinco tópicos estudados, o simulado substitui a autoavaliação.
+**Relação com a autoavaliação semanal.** As autoavaliações das Semanas 5 e 6 são as últimas: a da Semana 5 em 13 e 14/10 e a da Semana 6 no domingo 18/10. A partir da Semana 8, com os cinco tópicos estudados, o simulado substitui a autoavaliação.
 
 ---
 
@@ -412,7 +382,7 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 
 ### Semana 8 — 19 a 25/10 · Etapa 2, Tópico 4
 
-**Roteiros:** `labs/semana-07.md`, seção 9. **Registro:** `labs/semana-08.md`.
+**Roteiros:** `labs/semana-07.md`, seção 8. **Registro:** `labs/semana-08.md`.
 
 | Dia | Atividade |
 |---|---|
@@ -467,12 +437,9 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 | Risco | Por que existe | Mitigação |
 |---|---|---|
 | **Perda de motricidade** | Comando vira reflexo por repetição espaçada; 2 sessões/semana espaçam menos que 5 | Aquecimento diário de 10 minutos, cinco comandos de memória |
-| **Permissões sem repetição suficiente** | É o conteúdo mais dependente de reflexo, e cai na semana de menor frequência | Aquecimento da Semana 6 dedicado só a conversão de permissões · sessão extra na Semana 7 se a conversão não sair em 3 segundos |
+| **Permissões sem repetição suficiente** | É o conteúdo mais dependente de reflexo, e cai na semana de menor frequência | Aquecimento de conversões nas Semanas 6 e 7 · cinco questões de permissões em todo simulado |
 | **Curso sem prática imediata** | Assistir sem digitar produz reconhecimento, não competência | As 2 práticas da semana cobrem sempre o objetivo de maior peso daquele bloco |
-| **Simulado adiado de novo** | Já atrasou 4 semanas | Ocupa formalmente o lugar de uma das duas práticas da Semana 5, em data fixa: domingo 04/10. **Não coube no domingo**; passou para a segunda 05/10, como **primeira** atividade do dia, antes do curso e de qualquer outra coisa |
-| **Curso adiado repetidamente** | Segunda e terça da Semana 5 sem aulas; na quarta, 5 das 9 aulas previstas (26 a 30); 42 restantes (31 a 72) em 3 semanas | Quinta com as aulas 31 a 43 · 2x nas aulas que repetem conteúdo já praticado · regra de transbordo (shell script tem prioridade, o resto vai para segunda 05/10) · fila de dívidas registrada por semana |
-| **Carga acima do teto nas Semanas 6 e 7** | As dívidas da Semana 5 (cerca de 3h30: simulado #1, Laboratório 2 e curso) e o simulado dominical (cerca de 1h35) somam-se a um orçamento de 5 a 7h. A Semana 6 sai com cerca de 10h35 nominais | Ordem de corte escrita de antemão no arquivo da Semana 6 (cerca de 8h25 com os cortes) · feriado de 12/10 como dia extra · pré-checkpoint de 07/10 · Checkpoints A e B |
-| **Dívidas acumuladas sobre o conteúdo novo** | Em 13/10, quatro dívidas e 32 aulas disputavam a mesma semana | Etapas em ordem fixa (dívidas, conteúdo, simulados) · dívidas antigas retiradas do plano em 13/10 · ordem de corte escrita em `labs/semana-07.md` |
+| **Dívidas acumuladas sobre o conteúdo novo** | Em 13/10, quatro dívidas e 32 aulas disputavam a mesma semana | Etapas em ordem fixa (dívidas, conteúdo, simulados) · ordem de corte escrita em `labs/semana-07.md` |
 | **Prova marcada sem margem (atualizado em 13/10)** | Com 23/11, sobram quatro semanas de simulados depois do conteúdo | Checkpoints A, B, Gate e Final na seção 11 · limite absoluto em 30/11 |
 | **Retenção menor que a percebida** | A autoavaliação da Semana 4, feita 4 dias depois, deu 14/20 contra 20/20 no mesmo dia | Autoavaliação sempre na semana seguinte · aquecimento pautado pelos erros · simulado com marcação de chutes |
 
@@ -499,12 +466,12 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 
 ### Erros que se repetiram e merecem atenção
 
-**Desde 06/10, esta tabela é a fila de retaguarda.** Os erros abaixo são de comandos já estudados e saíram do aquecimento diário; os simulados continuam medindo se voltam, e a revisão leve da Semana 12 passa por eles nos cards do Notion. Entram na retaguarda, além destes, as Correções 62 a 67 (Tópicos 1 e 2). Os demais itens que estavam aqui (reteste da autoavaliação da Semana 4, comparação de compressão, saídas do `teste.sh`, do `vi` e do `nano`, `.wslconfig` e teste do snapshot) **saíram do plano em 13/10**. A Correção 68 (`chmod` e `chown`) é do Tópico 5 e continua ativa até a Prática 2.
+Os erros abaixo são de comandos já estudados e não entram no aquecimento; os simulados continuam medindo se voltam, e a revisão leve da Semana 12 passa por eles nos cards do Notion. Valem o mesmo para as Correções 62 a 67 (Tópicos 1 e 2). A Correção 68 (`chmod` e `chown`) é do Tópico 5 e continua ativa até a Prática 2.
 
 | Erro | Vezes | Correção |
 |---|---|---|
 | `sort` sem `-n` descrito como "invertendo a ordem" | **4** (Correções 32, 33/34 e 50) | As duas formas são **crescentes**; só o `-r` inverte. `-k` é **coluna**, vem de *key*. Reler não resolveu: o que resolve é executar os quatro comandos lado a lado |
-| `cd ..` e `cd -` trocados | **5** (a quarta em 30/09, Correção 53; a quinta em 05/10, Correção 64, agora com o `cd -` chamado de "pai") | `cd ..` é **pai** (espaço); `cd -` é **anterior** (tempo). Era fixo no aquecimento; passou para a retaguarda em 06/10. O simulado mede se voltou |
+| `cd ..` e `cd -` trocados | **5** (a quarta em 30/09, Correção 53; a quinta em 05/10, Correção 64, agora com o `cd -` chamado de "pai") | `cd ..` é **pai** (espaço); `cd -` é **anterior** (tempo). O simulado mede se voltou |
 | Confundir o efeito com o mecanismo (`2>&1`, hard link, `-f` do `tar`) | 3 | O resultado certo pelo motivo errado quebra quando a pergunta muda de ângulo |
 | `grep -v` entendido como *verbose* | 1 (Correção 49) | É *invert*. O `grep` é a exceção: em `tar`, `cp`, `rm` e `mv` o `-v` é verbose. Custou **duas** questões da autoavaliação, porque a 14 dependia dele |
 | Direção da herança de variáveis (pai para filho) e `{}` tratado como globbing | **2 cada** (Correções 12 e 71; Correções 11 e 70) | Variável exportada vai para o **processo filho**, nunca para o que está ao lado ou acima; `{1,2}` expande antes e sem olhar o disco, o globbing só vê o que já existe |
@@ -596,7 +563,7 @@ A coluna da direita é apenas o caminho natural dentro do roadmap atual, não um
 | Gate | 08/11 | | | |
 | Final | 19/11 | | | |
 
-Histórico: o Checkpoint A original (11/10) e o pré-checkpoint de 07/10 estão registrados em `labs/semana-06.md`. A decisão de 08/10 adiou a compra do voucher; a de 10/10 fez de 16/11 a data principal; a de 13/10 fixou **23/11**.
+Histórico das decisões: em 08/10 a compra do voucher foi adiada; em 10/10 a data principal passou a 16/11; em 13/10 a prova foi fixada em **23/11**.
 
 ---
 
