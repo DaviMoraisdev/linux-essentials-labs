@@ -5,7 +5,7 @@ Objetivos da prova: 2.3 (Using Directories and Listing Files) e 2.4 (Creating, M
 Tópico 2, peso 9 de 40 — esta semana fecha os 4 pontos restantes do tópico
 Carga prevista: 5 sessões de aproximadamente 1 hora
 
-Esta semana tem uma característica diferente das anteriores: **a Sessão 1 é inteiramente dedicada a quitar dívidas da Semana 2**. Isso é deliberado. As dívidas acumuladas são pequenas individualmente, mas duas delas são medições — sem elas não há como saber se o aprendizado está acontecendo.
+A Sessão 1 reúne a autoavaliação da Semana 2 e cinco experimentos complementares: código de saída, `cd -` e `$OLDPWD`, expansão do asterisco, `locate` e a documentação em `/usr/share/doc`.
 
 ---
 
@@ -51,7 +51,7 @@ sudo poweroff
 
 ---
 
-## Sessão 1 — Segunda 14/09 — Quitação de dívidas e autoavaliação — CONCLUÍDA
+## Sessão 1 — Segunda 14/09 — Autoavaliação da Semana 2 e experimentos complementares — CONCLUÍDA
 
 Sessão curta em comandos e alta em valor. Faça na ordem.
 
@@ -59,7 +59,7 @@ Sessão curta em comandos e alta em valor. Faça na ordem.
 
 Abra `labs/semana-02.md`, vá até a seção de autoavaliação e responda as 15 questões **sem consultar nada**. Só depois confira o gabarito.
 
-Esta é a dívida mais importante das seis. As outras cinco são experimentos; esta é a **única medição** de quanto do conteúdo das semanas 1 e 2 realmente ficou. Sem ela, entramos na Semana 4 sem saber se a base está sólida.
+É a **única medição** de quanto do conteúdo das Semanas 1 e 2 realmente ficou.
 
 **Resultado: 14 de 15.** Meta era 12.
 
@@ -76,7 +76,7 @@ Este conceito estava correto nas anotações da Sessão 4 da Semana 2, com diagr
 
 **Observação — questão 3.** O caminho absoluto foi `/home/davi/documentos/arquivo.txt` e o relativo `documentos/arquivos.txt`. O conceito está certo, mas os nomes divergem no plural, então não apontam para o mesmo arquivo. Não conta como erro, mas vale atenção: em questão de preenchimento, um caractere a mais invalida a resposta.
 
-### Parte 2 — Os experimentos pendentes (20 min)
+### Parte 2 — Experimentos complementares (20 min)
 
 **Código de saída — o `echo $?` colado no comando testado:**
 
@@ -189,13 +189,7 @@ zless /usr/share/doc/tar/NEWS.gz
 
 Os comandos `zcat`, `zless` e `zgrep` operam direto sobre arquivos `gzip`. Conteúdo do objetivo 3.1, na Semana 4.
 
-**`Permission denied`.** Não concluído — ver observação acima. Pendente para a Sessão 2.
-
-### Pendente
-
-- [x] Refazer `cp /etc/hostname .` em `/var/log`, **com o ponto**, e registrar a mensagem de permissão
-
----
+**`Permission denied`.** Registrado na Sessão 2, seção "O `Permission denied` em `/var/log`".
 
 ## Sessão 2 — Terça 15/09 — Criar, copiar, mover e remover (objetivo 2.4) — CONCLUÍDA
 
@@ -456,7 +450,7 @@ O `rmdir` só apaga diretórios vazios — é uma proteção deliberada. Para re
 
 **Case sensitivity.** `Arquivo.txt`, `arquivo.txt` e `ARQUIVO.txt` coexistem como três arquivos distintos. O Linux diferencia maiúsculas de minúsculas em nomes de arquivos e diretórios.
 
-### Dívida quitada — o `Permission denied`
+### O `Permission denied` em `/var/log`
 
 Refeito com o ponto, e agora com o erro correto:
 
@@ -1054,7 +1048,6 @@ Na questão 18, faltou a razão de fundo: a numeração de inodes **só é váli
 
 **Realizado:**
 
-- Oito dívidas da Semana 2, todas quitadas até 15/09
 - Autoavaliação da Semana 2: 14 de 15
 - Criação, cópia, movimentação e remoção, incluindo as armadilhas de sobrescrita silenciosa
 - Hard links, links simbólicos e inodes, com o teste de remoção do original
@@ -1064,12 +1057,6 @@ Na questão 18, faltou a razão de fundo: a numeração de inodes **só é váli
 - Autoavaliação da Semana 3: 20 de 20
 
 **Correções registradas na semana:** 12, numeradas de 17 a 28. Duas foram conceituais de fato — o hard link como cópia e o `-f` como força. As demais foram imprecisão de redação ou conteúdo desatualizado do curso.
-
-**Pendências transferidas para a Semana 4:**
-
-- Bandit níveis 6 a 9, realocados de propósito: eles exercitam `find`, `grep`, `sort` e `uniq`, que são o conteúdo do objetivo 3.2
-- Registro das observações sobre arquivos ocultos, da Sessão 3
-- Simulado diagnóstico completo, de 40 questões
 
 ### Limpeza
 
@@ -1081,34 +1068,15 @@ cd ~ && rm -rf lab3
 
 ## Checklist da semana
 
-- [x] Sessão 1 — dívidas e autoavaliação da Semana 2 (14/09) — nota 14 de 15
+- [x] Sessão 1 — autoavaliação da Semana 2 e experimentos complementares (14/09) — nota 14 de 15
 - [x] Sessão 2 — criar, copiar, mover e remover (15/09) — com retomada do curso
-- [x] Sessão 3 — links e inodes (16/09) — parte de arquivos ocultos sem registro
+- [x] Sessão 3 — links e inodes (16/09)
 - [x] Sessão 4 — FHS aprofundado e opções do `ls` (17/09) — com curso de `.rpm`/`yum`
 - [x] Sessão 5 — autoavaliação da Semana 3 (19/09)
 - [x] Autoavaliação da Semana 2 — 14 de 15
 - [x] Autoavaliação da Semana 3 — 20 de 20
-- [x] Bandit níveis 6 a 9 — reprogramados para a Semana 4, onde o conteúdo casa
+- [x] Bandit níveis 6 a 9 — feitos na Semana 4, junto com `find`, `grep`, `sort` e `uniq`
 - [X] Cards do Notion atualizados
-
----
-
-## Dívidas da Semana 2 — lista consolidada
-
-| # | Dívida | Onde foi absorvida |
-|---|---|---|
-| # | Dívida | Situação |
-|---|---|---|
-| 1 | Autoavaliação da Semana 2 (15 questões) | Quitada em 14/09 — 14 de 15 |
-| 2 | `echo $?` imediatamente após o comando testado | Quitada em 14/09 |
-| 3 | `echo $OLDPWD` e o mecanismo do `cd -` | Quitada em 14/09 |
-| 4 | Experimento `echo *.txt` versus `ls *.txt` | Quitada em 14/09 |
-| 5 | Experimento do `Permission denied` em `/var/log` | Quitada em 15/09 |
-| 6 | Instalar e testar `locate` com `updatedb` | Quitada em 14/09 |
-| 7 | Navegar em `/usr/share/doc/` | Quitada em 14/09 |
-| 8 | Avanço no curso do Muller | Quitada em 15/09 — gerenciamento de pacotes |
-
-**Todas as oito dívidas da Semana 2 foram quitadas até 15/09.**
 
 ---
 
