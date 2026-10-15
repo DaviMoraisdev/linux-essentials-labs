@@ -20,7 +20,7 @@ A prova passou para **23/11**. O plano a partir de hoje tem três etapas, nesta 
 
 Regras que valem a partir de agora:
 
-1. **Depois de pagas as dívidas, dívida antiga não volta.** O que não é conteúdo da prova ainda não estudado, nem simulado, sai do plano. A lista do que foi retirado está na seção 4.
+1. **Depois de pagas as dívidas, dívida antiga não volta.** O que não é conteúdo da prova ainda não estudado, nem simulado, sai do plano.
 2. **O curso é feito junto com as dívidas, não depois.** As aulas 41 a 72 ocupam os dias de semana; as práticas e o simulado, os dias mais longos.
 3. **Erro de simulado se anota e se corrige no Notion**, como desde 06/10. Erro de laboratório e de curso continua com correção numerada; a próxima é a **75**.
 
@@ -38,7 +38,7 @@ Levantamento feito em 13/10 a partir do plano, dos cadernos das Semanas 1 a 6 e 
 | Restante | **Aulas 41 a 72**, 32 aulas |
 | Plano | 41 a 57 de quinta 15/10 a sexta 16/10; 58 a 72 no fim de semana 17 e 18/10 |
 
-Se você assistiu a alguma aula depois de 09/10 sem registrar, anote na tabela "Registro do curso" (seção 6) e desconte da conta.
+Se você assistiu a alguma aula depois de 09/10 sem registrar, anote na tabela "Curso — Matheus Muller" (seção 5) e desconte da conta.
 
 ### 2.2 Tópico 5 — Segurança e permissões de arquivo (peso 7)
 
@@ -102,41 +102,19 @@ Dois ajustes nos roteiros, por causa da ordem nova:
 
 ---
 
-## 4. Dívidas retiradas do plano em 13/10
-
-Itens que estavam na fila de dívidas ou na retaguarda e saem do plano, por decisão sua. Não são conteúdo novo da prova nem prática por simulado. O que eles mediam continua sendo medido pelos próprios simulados.
-
-| Item retirado | Origem | Por que sai |
-|---|---|---|
-| Comparação de compressão com o `bzip2` | Semana 4 | O conteúdo (`gzip`, `bzip2`, `xz`) já foi estudado; os simulados testam |
-| Registro das saídas do `teste.sh` e das três saídas de `vi` e `nano` | Semana 5, Laboratório 1 | Registro retroativo de algo já praticado |
-| `filtrar.sh` (`while read`) | Semana 5, Laboratório 2 | Era opcional; `while` e `read` não constam na lista oficial do 3.3 |
-| Reteste das quatro questões erradas da autoavaliação da Semana 4 | Semana 4 | Os simulados medem se o erro voltou |
-| Reteste das questões 18, 20, 21, 22 e 24 do simulado 01 | Semana 5 | Idem |
-| Revisão prática dos erros do simulado 01 (Q3, Q7, Q10, Q14, Q15, Q16) | Semana 6 | Já cancelada em 06/10; as Correções 62 a 67 estão no Notion |
-| Aquecimento diário com roteiro fixo por dia | Semana 6 | Substituído: nos dias sem simulado, os 10 minutos de aquecimento passam a ser do conteúdo da prática anterior (seção 5) |
-| `.wslconfig` limitando o WSL2 a 3 GB | Semana 0 | Configuração de ambiente, sem relação com a prova |
-| Teste de restauração do snapshot | Semana 0 | Idem |
-| Laboratório integrador da Semana 9 | Plano de 26/09 | A Etapa 3 é de simulados; o integrador volta, se quiser, como preparação para o RHCSA |
-| Cards das Correções 69 a 74 no Notion como pendência do plano | Semana 6 | Continuam no seu fluxo do Notion, sem prazo cobrado aqui |
-
-**O que não foi retirado**, porque é conteúdo novo ou prática por questões: as Práticas 1 e 2, as autoavaliações das Semanas 5 e 6, os Exercícios da LPI no fim das práticas, os quizzes do NDG, os mini-simulados R1 e R2 e a série de simulados.
-
----
-
-## 5. Calendário da semana
+## 4. Calendário da semana
 
 | Dia | Atividade | Tempo |
 |---|---|---|
 | Seg 12 (feriado) | Sem registro de estudo | — |
 | **Ter 13** | **Autoavaliação da Semana 5** (30 min, primeira atividade, sem consultar) · leitura das lições 5.1 e 5.2 do PDF (15 min) · **Prática 1 — usuários e grupos**, com 20 min de Exercícios da LPI | cerca de 2h05 |
-| **Qua 14** | Aquecimento (5 min: `-g` contra `-G` e o `-a` do `usermod`) · leitura das lições 5.3 e 5.4 do PDF (15 min) · **Prática 2 — permissões**, com 20 min de Exercícios da LPI e limpeza | cerca de 1h40 |
+| **Qua 14** | **Primeiro, o que ficou de terça:** questões 8, 9 e 10 da autoavaliação (10 min) e Prática 1, bloco 3 e Exercícios da LPI (40 min) · depois, leitura das lições 5.3 e 5.4 do PDF (15 min) e **Prática 2 — permissões** | cerca de 2h20 |
 | Qui 15 | Aquecimento (cinco conversões, 5 min) · **curso, aulas 41 a 49** | cerca de 1h |
 | Sex 16 | Aquecimento (SUID, SGID e sticky, 5 min) · **curso, aulas 50 a 57** | cerca de 1h |
 | **Sáb 17** | **Simulado 02** (60 min, primeira atividade) · apuração (25 min) · **curso, aulas 58 a 64** | cerca de 2h25 |
 | **Dom 18** | **Autoavaliação da Semana 6** (30 min, primeira atividade) · **curso, aulas 65 a 72** (fechamento) · **Checkpoint A** (10 min) | cerca de 1h50 |
 
-**Total de terça a domingo: cerca de 10h.** Fica acima da meta de 9h porque a semana carrega as quatro dívidas e o fechamento do curso. Se faltar tempo, corte nesta ordem:
+**Total de terça a domingo: cerca de 10h.** Se a quarta 14/10 não comportar a Prática 2 inteira, ela termina na quinta 15/10, antes das aulas 41 a 49, e as aulas que não couberem passam para a sexta. Fica acima da meta de 9h porque a semana carrega as quatro dívidas e o fechamento do curso. Se faltar tempo, corte nesta ordem:
 
 | Ordem | Corte | Para onde vai |
 |---|---|---|
@@ -150,7 +128,7 @@ Velocidade do curso: **2x** onde o vídeo repete o que já foi praticado (shell 
 
 ---
 
-## 6. Curso — Matheus Muller
+## 5. Curso — Matheus Muller
 
 | Data | Aulas previstas | Aulas assistidas | Parei na aula | Anotações novas |
 |---|---|---|---|---|
@@ -163,7 +141,7 @@ Regras de sempre: anote só o que o vídeo mostra e você ainda não sabia; em p
 
 ---
 
-## 7. Autoavaliação da Semana 6 — Domingo 18/10
+## 6. Autoavaliação da Semana 6 — Domingo 18/10
 
 Dez questões sobre o Tópico 5 (objetivos 5.1 a 5.4), respondidas **sem consultar**, quatro dias depois da Prática 2. **Primeira atividade do domingo**, antes do curso. Escreva as respostas à mão e só depois abra o gabarito.
 
@@ -203,7 +181,7 @@ Dez questões sobre o Tópico 5 (objetivos 5.1 a 5.4), respondidas **sem consult
 
 ---
 
-## 8. Checkpoint A — Domingo 18/10, à noite
+## 7. Checkpoint A — Domingo 18/10, à noite
 
 Critérios revistos em 13/10 para a nova estratégia. Marque com base no que está registrado nos arquivos, não na sensação.
 
@@ -224,7 +202,7 @@ Uma autoavaliação abaixo de 8 não reprova o checkpoint: as questões erradas 
 
 ---
 
-## 9. Etapa 2 — Laboratórios do Tópico 4 (Semana 8, 19 a 25/10)
+## 8. Etapa 2 — Laboratórios do Tópico 4 (Semana 8, 19 a 25/10)
 
 Os roteiros ficam escritos aqui, para que a Semana 8 comece sem depender de preparação. O registro das sessões vai em `labs/semana-08.md`, que será aberto na segunda 19/10.
 
@@ -504,15 +482,63 @@ Para o caderno: o `<<` alimenta a **entrada padrão** do comando com as linhas s
 
 ---
 
-## 10. Registro das sessões
+## 9. Registro das sessões
 
-### Autoavaliação da Semana 5 — terça 13/10
+### Autoavaliação da Semana 5 — terça 13/10 (em andamento)
 
-*A preencher.* Acertos: de 10. Questões erradas:
+**7 de 10 respondidas em 13/10; faltam as questões 8, 9 e 10.** Acertos até aqui: **6 firmes de 7** (a 6 foi respondida com consulta).
 
-### Prática 1 — terça 13/10
+| Q | Situação | Observação |
+|---|---|---|
+| 1 a 5 | Certas | — |
+| 6 | **Respondida com consulta** | O `if` está correto, mas pesquisado: não conta como acerto firme |
+| 7 | Certa no conceito | No exemplo de texto, saiu `[ "$nome" - "Davi" ]`; o operador é `=`. Na prova, um caractere errado invalida a resposta |
+| 8 a 10 | A responder | — |
 
-*A preencher.*
+Questões a levar ao Notion: 6 (o `if` com `$#`, escrito de memória). Nas respostas 6 e 7, as aspas saíram curvas (`“ ”`); no terminal, só as retas funcionam.
+
+### Prática 1 — terça 13/10 (em andamento)
+
+**Blocos 1 e 2 anotados em 13/10.** Faltam o bloco 3 (criar, alterar e quebrar) e os 20 minutos de Exercícios da LPI (lições 5.1 e 5.2).
+
+**Vocabulário anotado:** UID, GID, grupo primário (registrado no `/etc/passwd`) e grupos secundários. Correto.
+
+#### Bloco 1 — Quem sou eu e quem está logado
+
+| Comando | Resultado registrado |
+|---|---|
+| `whoami` | `davi`: o usuário efetivo |
+| `id` | `uid=1000(davi) gid=1000(davi)`, e os grupos `adm`, `cdrom`, `sudo`, `dip`, `plugdev`, `users` e `lxd` |
+| `id root` | UID **0** |
+| `who` e `w` | O `who` mostra as sessões (usuário e terminal); o `w` acrescenta o que cada sessão está fazendo: comando atual, tempo ocioso e uso de CPU |
+| `last \| head` | Histórico de logins, do mais recente, nas 10 primeiras linhas |
+| `sudo whoami` | `root`: o comando roda como root, e o shell volta a ser do `davi` |
+
+Faltam duas respostas do roteiro:
+
+1. **De qual arquivo o `last` lê?** Do `/var/log/wtmp`, o registro binário de logins e logouts. (O `who` lê o `/var/run/utmp`, que guarda só as sessões abertas agora.)
+2. **`su - alice`, `sudo -i` e `sudo su`:** o `su - alice` abre um shell de login como `alice` e pede a **senha da alice**; o `sudo -i` abre um shell de login do **root** e pede a **sua** senha; o `sudo su` também vira root com a sua senha, mas sem o ambiente de login do root (o `sudo su -` teria).
+
+#### Bloco 2 — Os arquivos de contas
+
+| Arquivo | Linha lida | O que mostra |
+|---|---|---|
+| `/etc/passwd` | `root:x:0:0:root:/root:/bin/bash` | 7 campos; as contas `daemon` e `bin` têm shell `/usr/sbin/nologin`, porque são de sistema |
+| `/etc/shadow` | `root:*:20563:0:99999:7:::` | 9 campos; hash da senha e prazos |
+| `/etc/group` | `root:x:0:` | 4 campos; definição dos grupos e membros |
+| `/etc/gshadow` | — | Senha de grupo e administradores do grupo, protegido como o `shadow` |
+| `/etc/login.defs` | `UID_MIN 1000` | O primeiro UID de usuário comum, que é o do `davi` |
+
+Permissões registradas: `passwd` e `group` com `-rw-r--r--` (`root root`, legíveis por todos); `shadow` e `gshadow` com `-rw-r-----` (`root shadow`, só root e grupo `shadow` leem).
+
+Ajustes de caderno:
+
+1. **Faltam os 7 campos do `/etc/passwd`, um por um**, como o roteiro pede: usuário, `x`, UID, GID, comentário, diretório pessoal e shell de login. É o conteúdo da Q35 do simulado 01, errada por chute.
+2. **Falta responder por que o `/etc/passwd` é legível por todos e não guarda a senha:** vários programas precisam traduzir UID em nome; por isso a senha foi para o `/etc/shadow`, e o `x` do segundo campo indica isso.
+3. **O `*` no segundo campo do `shadow`** significa que a conta **não tem senha válida**: não dá para entrar com senha. É o caso das contas de sistema. O `20563` é a data da última troca de senha, contada em dias desde 01/01/1970; `0`, `99999` e `7` são o mínimo e o máximo de dias entre trocas e o aviso antes de expirar.
+4. **No `/etc/group`, os 4 campos:** nome, `x`, GID e lista de membros. Em `root:x:0:` a lista está vazia.
+5. Na listagem do `ls -l`, a primeira linha saiu `rw-r--r--`, sem o `-` do tipo de arquivo. É de cópia, mas na prova o primeiro caractere conta: `-` arquivo, `d` diretório, `l` link.
+6. O `#SYS_UID_MIN 101` está comentado (começa com `#`), então vale o padrão do sistema. O `SUB_UID_MIN` é de outro assunto (contêineres sem root) e não cai na prova.
 
 ### Prática 2 — quarta 14/10
 
@@ -536,7 +562,7 @@ A numeração segue a série global. **A próxima é a 75.** Erros de simulado e
 
 ---
 
-## 11. Horas da semana
+## 10. Horas da semana
 
 | Dia | Previsto | Real | Observação |
 |---|---|---|---|
@@ -549,7 +575,7 @@ A numeração segue a série global. **A próxima é a 75.** Erros de simulado e
 
 ---
 
-## 12. Checklist da semana
+## 11. Checklist da semana
 
 - [ ] Autoavaliação da Semana 5 respondida e conferida (terça 13/10)
 - [ ] Prática 1, com Exercícios da LPI 5.1 e 5.2 (terça 13/10)
