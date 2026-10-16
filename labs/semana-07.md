@@ -90,39 +90,41 @@ São as quatro dívidas que você escolheu pagar para entrar na nova estratégia
 
 | # | Dívida | Roteiro | Quando |
 |---|---|---|---|
-| 1 | **Prática 1** — usuários e grupos, com 20 min de Exercícios da LPI (lições 5.1 e 5.2) | `labs/semana-06.md`, seção "Prática 1" | **Terça 13/10** |
-| 2 | **Prática 2** — permissões, com 20 min de Exercícios da LPI (lições 5.3 e 5.4) e limpeza dos usuários de teste | `labs/semana-06.md`, seção "Prática 2" | **Quarta 14/10** |
+| 1 | **Prática 1** — usuários e grupos, com 20 min de Exercícios da LPI (lições 5.1 e 5.2) | `labs/semana-06.md`, seção "Prática 1" | **Feita em 13 e 15/10**; faltam os Exercícios da LPI 5.1 e 5.2 (domingo 18/10) |
+| 2 | **Prática 2** — permissões, com 20 min de Exercícios da LPI (lições 5.3 e 5.4) e limpeza dos usuários de teste | `labs/semana-06.md`, seção "Prática 2" | **Sexta 16/10** |
 | 3 | **Simulado 02** — 40 questões, 60 minutos | `labs/simulados-práticos.lpi/simulado-02.md` | **Sábado 17/10** |
-| 4 | **Autoavaliação da Semana 5** (10 questões, shell script) e **Autoavaliação da Semana 6** (10 questões, Tópico 5) | S5: `labs/semana-06.md`, seção "Autoavaliação da Semana 5" · S6: seção 7 deste arquivo | S5: **terça 13/10**, primeira atividade · S6: **domingo 18/10**, primeira atividade |
+| 4 | **Autoavaliação da Semana 5** (10 questões, shell script) e **Autoavaliação da Semana 6** (10 questões, Tópico 5) | S5: `labs/semana-06.md`, seção "Autoavaliação da Semana 5" · S6: seção 6 deste arquivo | S5: **feita em 13 e 15/10 (9 de 10)** · S6: **segunda 19/10**, primeira atividade |
 
 Dois ajustes nos roteiros, por causa da ordem nova:
 
 - **As práticas vêm antes das aulas do Tópico 5.** Para não praticar às cegas, leia antes de cada prática a lição correspondente do PDF oficial (cerca de 15 minutos): lições 5.1 e 5.2 antes da Prática 1, e 5.3 e 5.4 antes da Prática 2. O vídeo, depois, confirma.
-- **A autoavaliação da Semana 6 volta ao plano**, a seu pedido. Ela fica no domingo 18/10, quatro dias depois da Prática 2, para medir retenção e não memória de curto prazo (regra de 29/09). O simulado 02, no sábado, não a substitui: ele mede a prova inteira, e ela mede só o Tópico 5, com perguntas abertas.
+- **A autoavaliação da Semana 6 volta ao plano**, a seu pedido. Ela fica na segunda 19/10, três dias depois da Prática 2, para medir retenção e não memória de curto prazo (regra de 29/09). O simulado 02, no sábado, não a substitui: ele mede a prova inteira, e ela mede só o Tópico 5, com perguntas abertas.
 
 ---
 
 ## 4. Calendário da semana
 
+**Replanejado em 15/10.** A quarta 14/10 ficou sem estudo, e a Prática 2 e as aulas 41 a 57 escorregaram. As linhas de 13 a 15/10 registram o que foi feito.
+
 | Dia | Atividade | Tempo |
 |---|---|---|
-| Seg 12 (feriado) | Sem registro de estudo | — |
-| **Ter 13** | **Autoavaliação da Semana 5** (30 min, primeira atividade, sem consultar) · leitura das lições 5.1 e 5.2 do PDF (15 min) · **Prática 1 — usuários e grupos**, com 20 min de Exercícios da LPI | cerca de 2h05 |
-| **Qua 14** | **Primeiro, o que ficou de terça:** questões 8, 9 e 10 da autoavaliação (10 min) e Prática 1, bloco 3 e Exercícios da LPI (40 min) · depois, leitura das lições 5.3 e 5.4 do PDF (15 min) e **Prática 2 — permissões** | cerca de 2h20 |
-| Qui 15 | Aquecimento (cinco conversões, 5 min) · **curso, aulas 41 a 49** | cerca de 1h |
-| Sex 16 | Aquecimento (SUID, SGID e sticky, 5 min) · **curso, aulas 50 a 57** | cerca de 1h |
-| **Sáb 17** | **Simulado 02** (60 min, primeira atividade) · apuração (25 min) · **curso, aulas 58 a 64** | cerca de 2h25 |
-| **Dom 18** | **Autoavaliação da Semana 6** (30 min, primeira atividade) · **curso, aulas 65 a 72** (fechamento) · **Checkpoint A** (10 min) | cerca de 1h50 |
+| Ter 13 | Autoavaliação da Semana 5, questões 1 a 7 · Prática 1, blocos 1 e 2 | **feito** |
+| Qua 14 | Sem estudo | — |
+| Qui 15 | Autoavaliação da Semana 5, questões 8 a 10 · Prática 1, bloco 3 e experimento sem `-m` | **feito** |
+| **Sex 16** | Leitura das lições 5.3 e 5.4 do PDF (15 min) · **Prática 2 — permissões** (1h), com 20 min de Exercícios da LPI 5.3 e 5.4 e a limpeza · **curso, aulas 41 a 46** (2x) | cerca de 2h10 |
+| **Sáb 17** | **Simulado 02** (60 min, primeira atividade) · apuração (25 min) · **curso, aulas 47 a 58** | cerca de 2h35 |
+| **Dom 18** | Exercícios da LPI 5.1 e 5.2 (20 min, o que faltou da Prática 1) · **curso, aulas 59 a 72** (fechamento) · **Checkpoint A** (10 min) | cerca de 2h |
+| Seg 19 | **Autoavaliação da Semana 6** (30 min, primeira atividade, três dias depois da Prática 2) · Prática 3 (Semana 8) | ver Semana 8 |
 
-**Total de terça a domingo: cerca de 10h.** Se a quarta 14/10 não comportar a Prática 2 inteira, ela termina na quinta 15/10, antes das aulas 41 a 49, e as aulas que não couberem passam para a sexta. Fica acima da meta de 9h porque a semana carrega as quatro dívidas e o fechamento do curso. Se faltar tempo, corte nesta ordem:
+**Total de sexta a domingo: cerca de 6h45.** É o fim de semana mais pesado do plano, porque carrega o que a quarta deixou. Se faltar tempo, corte nesta ordem:
 
 | Ordem | Corte | Para onde vai |
 |---|---|---|
-| 1 | Aquecimentos de quinta e sexta | Saem; o simulado mede |
-| 2 | Exploratórios da LPI (mantendo os Guiados) | Saem |
-| 3 | Aulas 65 a 72 | Segunda 19/10, antes da Prática 3 |
+| 1 | Exploratórios da LPI (mantendo os Guiados) | Saem |
+| 2 | Aulas de sexta (41 a 46) | Sábado, depois da apuração |
+| 3 | Aulas que não couberem no domingo | Segunda 19/10 e terça 20/10, 30 minutos antes da prática do dia |
 
-**Não se cortam:** as duas práticas, o simulado 02 e as duas autoavaliações. São as dívidas.
+**Não se cortam:** a Prática 2 e o simulado 02.
 
 Velocidade do curso: **2x** onde o vídeo repete o que já foi praticado (shell script, Tópico 5 depois das práticas); **1.25x** no Tópico 4, que é conteúdo novo.
 
@@ -141,9 +143,9 @@ Regras de sempre: anote só o que o vídeo mostra e você ainda não sabia; em p
 
 ---
 
-## 6. Autoavaliação da Semana 6 — Domingo 18/10
+## 6. Autoavaliação da Semana 6 — Segunda 19/10
 
-Dez questões sobre o Tópico 5 (objetivos 5.1 a 5.4), respondidas **sem consultar**, quatro dias depois da Prática 2. **Primeira atividade do domingo**, antes do curso. Escreva as respostas à mão e só depois abra o gabarito.
+Dez questões sobre o Tópico 5 (objetivos 5.1 a 5.4), respondidas **sem consultar**, três dias depois da Prática 2. **Primeira atividade da segunda 19/10**, antes da Prática 3. Escreva as respostas à mão e só depois abra o gabarito.
 
 1. Quais são os três tipos de conta em um sistema Linux? Como o UID ajuda a distingui-los, e onde se confere a partir de qual número começam os usuários comuns na sua VM?
 2. Quantos campos tem cada linha do `/etc/passwd`, qual o separador, e o que guardam o **terceiro**, o **sexto** e o **sétimo** campos?
@@ -189,7 +191,7 @@ Critérios revistos em 13/10 para a nova estratégia. Marque com base no que est
 |---|---|---|
 | 1 | Práticas 1 e 2 feitas e registradas | |
 | 2 | Simulado 02 com **24 ou mais** acertos | |
-| 3 | Autoavaliações das Semanas 5 e 6 feitas (meta: 8 de 10 em cada) | |
+| 3 | Autoavaliações das Semanas 5 e 6 feitas (meta: 8 de 10 em cada) | Semana 5: **sim, 9 de 10**. Semana 6: na segunda 19/10 |
 | 4 | Curso até a aula 72 (ou até a 64, com 65 a 72 marcadas para a segunda 19/10) | |
 
 | Resultado | Condição | Decisão |
@@ -197,6 +199,8 @@ Critérios revistos em 13/10 para a nova estratégia. Marque com base no que est
 | **Verde** | Os quatro cumpridos | Segue para a Etapa 2 na segunda 19/10 |
 | **Amarelo** | Um critério falhou | Segue; o item vira a primeira atividade da segunda 19/10 |
 | **Vermelho** | Dois ou mais falharam, ou simulado 02 abaixo de 20 | A semana de 19/10 abre com as dívidas restantes e o Checkpoint B (25/10) passa a decidir a data |
+
+**Previsão de 15/10: amarelo.** O critério 3 falha no domingo por desenho, porque a autoavaliação da Semana 6 precisa de três dias depois da Prática 2. Pela regra, ela vira a primeira atividade da segunda 19/10, que é onde já está. Se mais um critério falhar (Prática 2 ou simulado 02), o resultado passa a vermelho.
 
 Uma autoavaliação abaixo de 8 não reprova o checkpoint: as questões erradas viram o aquecimento da Etapa 2.
 
@@ -218,7 +222,7 @@ sudo apt update && sudo apt install -y pciutils usbutils net-tools bind9-dnsutil
 
 | Dia | Atividade | Tempo |
 |---|---|---|
-| Seg 19 | **Prática 3** — hardware, discos e o mapa dos diretórios (4.2 e 4.3), com Exercícios da LPI 4.2 | cerca de 1h20 |
+| Seg 19 | **Autoavaliação da Semana 6** (30 min, primeira atividade) · **Prática 3** — hardware, discos e o mapa dos diretórios (4.2 e 4.3), com Exercícios da LPI 4.2 | cerca de 1h50 |
 | Ter 20 | **Prática 4** — processos, memória e logs (4.3), com Exercícios da LPI 4.3 | cerca de 1h20 |
 | Qua 21 | **Prática 5** — rede (4.4), com Exercícios da LPI 4.4 | cerca de 1h20 |
 | Qui 22 | **Bloco curto** — leitura do 4.1 e Exercícios da LPI 4.1 (30 min) · here document (15 min) · quizzes do NDG dos Tópicos 4 e 5 (30 min) | cerca de 1h15 |
@@ -484,22 +488,32 @@ Para o caderno: o `<<` alimenta a **entrada padrão** do comando com as linhas s
 
 ## 9. Registro das sessões
 
-### Autoavaliação da Semana 5 — terça 13/10 (em andamento)
+### Autoavaliação da Semana 5 — 13 e 15/10 — CONCLUÍDA
 
-**7 de 10 respondidas em 13/10; faltam as questões 8, 9 e 10.** Acertos até aqui: **6 firmes de 7** (a 6 foi respondida com consulta).
+**Resultado: 9 de 10 acertos firmes. Meta: 8.** Questões 1 a 7 em 13/10 e 8 a 10 em 15/10, nove e onze dias depois do Laboratório 2.
 
 | Q | Situação | Observação |
 |---|---|---|
 | 1 a 5 | Certas | — |
-| 6 | **Respondida com consulta** | O `if` está correto, mas pesquisado: não conta como acerto firme |
-| 7 | Certa no conceito | No exemplo de texto, saiu `[ "$nome" - "Davi" ]`; o operador é `=`. Na prova, um caractere errado invalida a resposta |
-| 8 a 10 | A responder | — |
+| 6 | **Respondida com consulta** | O `if` está correto, mas foi pesquisado: não conta como acerto firme |
+| 7 | Certa no conceito | No exemplo de texto saiu `[ "$nome" - "Davi" ]`; o operador é `=` |
+| 8 | Certa | Completa: `$?`, `exit 0`, `exit 1`, `&&` e `\|\|` |
+| 9 | Certa | As duas formas valem: a lista `1 2 3 4 5` e a expansão de chaves `{1..5}`. O gabarito usava `$(seq 1 5)`; vale saber as três, porque a prova pode mostrar qualquer uma |
+| 10 | Certa | `i`, `Esc`, `:wq` e `:q!` no `vi`; `Ctrl+O`, `Enter` e `Ctrl+X` no `nano` |
 
-Questões a levar ao Notion: 6 (o `if` com `$#`, escrito de memória). Nas respostas 6 e 7, as aspas saíram curvas (`“ ”`); no terminal, só as retas funcionam.
+**Leitura.** Retenção boa: onze dias depois do laboratório, o shell script (peso 4, o maior objetivo da prova) segurou nove de dez sem consulta. A única lacuna é escrever o `if` de memória.
 
-### Prática 1 — terça 13/10 (em andamento)
+**Para o Notion:** questão 6, o `if [ $# -ne 2 ]; then echo "erro"; fi`, escrito de memória até sair sem pensar.
 
-**Blocos 1 e 2 anotados em 13/10.** Faltam o bloco 3 (criar, alterar e quebrar) e os 20 minutos de Exercícios da LPI (lições 5.1 e 5.2).
+**Ajustes de forma (sem número):**
+
+1. **Aspas curvas** (`“ ”`) nas respostas 6, 7 e 9. No terminal, só as retas (`"`) funcionam; numa questão de preencher, aspa curva invalida a resposta.
+2. **`Crtl` em vez de `Ctrl`** na questão 10. É a segunda vez (já aparecia no caderno da Semana 5).
+3. Na questão 10, "o `Esc` volta ao modo em que você digita comandos": o `Esc` volta ao **modo normal** (o de navegação, que o material também chama de modo de comando). Os comandos com `:`, como `:wq`, são digitados no **modo de linha de comando**, que se abre com `:` a partir do normal. Na prova, os nomes que aparecem são **inserção** e **comando** (ou normal).
+
+### Prática 1 — 13 e 15/10 — CONCLUÍDA (falta só a parte dos Exercícios da LPI)
+
+**Blocos 1 e 2 anotados em 13/10; bloco 3, experimento sem `-m` e "Para o caderno" em 15/10.** Faltam os 20 minutos de Exercícios da LPI (lições 5.1 e 5.2), remarcados para o domingo 18/10.
 
 **Vocabulário anotado:** UID, GID, grupo primário (registrado no `/etc/passwd`) e grupos secundários. Correto.
 
@@ -516,8 +530,8 @@ Questões a levar ao Notion: 6 (o `if` com `$#`, escrito de memória). Nas respo
 
 Faltam duas respostas do roteiro:
 
-1. **De qual arquivo o `last` lê?** Do `/var/log/wtmp`, o registro binário de logins e logouts. (O `who` lê o `/var/run/utmp`, que guarda só as sessões abertas agora.)
-2. **`su - alice`, `sudo -i` e `sudo su`:** o `su - alice` abre um shell de login como `alice` e pede a **senha da alice**; o `sudo -i` abre um shell de login do **root** e pede a **sua** senha; o `sudo su` também vira root com a sua senha, mas sem o ambiente de login do root (o `sudo su -` teria).
+1. **De qual arquivo o `last` lê?** Ainda sem resposta no caderno de 15/10. Do `/var/log/wtmp`, o registro binário de logins e logouts. (O `who` lê o `/var/run/utmp`, que guarda só as sessões abertas agora.)
+2. **`su - alice`, `sudo -i` e `sudo su`:** a diferença entre `su` e `sudo` foi respondida em 15/10 ("Para o caderno", abaixo). O detalhe das três formas: o `su - alice` abre um shell de login como `alice` e pede a **senha da alice**; o `sudo -i` abre um shell de login do **root** e pede a **sua** senha; o `sudo su` também vira root com a sua senha, mas sem o ambiente de login do root (o `sudo su -` teria).
 
 #### Bloco 2 — Os arquivos de contas
 
@@ -533,14 +547,44 @@ Permissões registradas: `passwd` e `group` com `-rw-r--r--` (`root root`, legí
 
 Ajustes de caderno:
 
-1. **Faltam os 7 campos do `/etc/passwd`, um por um**, como o roteiro pede: usuário, `x`, UID, GID, comentário, diretório pessoal e shell de login. É o conteúdo da Q35 do simulado 01, errada por chute.
+1. **Ainda faltam os 7 campos do `/etc/passwd`, um por um** (o bloco 2 não mudou em 15/10), como o roteiro pede: usuário, `x`, UID, GID, comentário, diretório pessoal e shell de login. É o conteúdo da Q35 do simulado 01, errada por chute.
 2. **Falta responder por que o `/etc/passwd` é legível por todos e não guarda a senha:** vários programas precisam traduzir UID em nome; por isso a senha foi para o `/etc/shadow`, e o `x` do segundo campo indica isso.
 3. **O `*` no segundo campo do `shadow`** significa que a conta **não tem senha válida**: não dá para entrar com senha. É o caso das contas de sistema. O `20563` é a data da última troca de senha, contada em dias desde 01/01/1970; `0`, `99999` e `7` são o mínimo e o máximo de dias entre trocas e o aviso antes de expirar.
 4. **No `/etc/group`, os 4 campos:** nome, `x`, GID e lista de membros. Em `root:x:0:` a lista está vazia.
 5. Na listagem do `ls -l`, a primeira linha saiu `rw-r--r--`, sem o `-` do tipo de arquivo. É de cópia, mas na prova o primeiro caractere conta: `-` arquivo, `d` diretório, `l` link.
 6. O `#SYS_UID_MIN 101` está comentado (começa com `#`), então vale o padrão do sistema. O `SUB_UID_MIN` é de outro assunto (contêineres sem root) e não cai na prova.
 
-### Prática 2 — quarta 14/10
+#### Bloco 3 — Criar, alterar e quebrar
+
+| O que foi anotado | Revisão |
+|---|---|
+| `groupadd` cria o grupo, e os grupos precisam existir antes de aparecer nas opções do `useradd` | Correto. Sem o grupo, o `useradd -G dev` falha com `group 'dev' does not exist` |
+| `-m` cria o diretório pessoal; `-s /bin/bash` define o shell de login; `-g ops` define o grupo primário; `-G dev` define os grupos secundários | Correto |
+| `passwd` define a senha do usuário; `useradd` cria a conta; `/etc/skel` é o modelo do diretório pessoal | Correto |
+| "`/home/alice` e `/home/bob` → grupo primário" | **Errado. Ver Correção 75** |
+
+**A quebra de propósito.** Correto: sem o `-a`, o `usermod -G ops alice` **substituiu** a lista e tirou a `alice` do `dev`; o grupo primário não muda; o `usermod -aG dev alice` devolveu o `dev` mantendo o `ops`. Os GIDs anotados conferem: `dev` é 1001 e `ops` é 1002, porque foram os dois primeiros grupos criados depois do `davi` (1000).
+
+**Os números da VM fecham.** Os usuários receberam UIDs em ordem (`alice` 1001, `bob` 1002, `carol` 1003, `teste_sem_nome` 1004). Os grupos: `dev` 1001, `ops` 1002, `alice` 1003, `bob` 1004 e `teste_sem_nome` 1005. A `carol` **não** ganhou grupo próprio, porque o `-g ops` já deu a ela um grupo primário. É por isso que o `teste_sem_nome` ficou com GID 1005, e não 1004.
+
+**Experimento sem `-m` — registrado.** O `id` mostra a conta criada (`uid=1004`), o `ls -ld /home/teste_sem_nome` responde `No such file or directory`, e mesmo assim o `/etc/passwd` traz `/home/teste_sem_nome` no sexto campo. Conclusão certa, e vale escrever o mecanismo: **o `useradd` grava o caminho do diretório pessoal no `/etc/passwd`, mas só cria a pasta com `-m`**. No Ubuntu, o padrão é não criar (no Red Hat é o contrário). Uma conta assim abre a sessão em `/`, com aviso de que a home não existe. O `adduser`, interativo, cria a home sempre.
+
+**Para o caderno — revisão.** As três respostas estão corretas: `-g` primário e `-G` secundários, com o `-G` sozinho substituindo e o `-aG` acrescentando; o `/etc/skel` como modelo do diretório pessoal; o `su` com a senha do usuário de destino e o `sudo` com a senha de quem o invoca, conforme a política do `sudoers`.
+
+**Atenção para a Prática 2:** o `teste_sem_nome` não está na limpeza original. A limpeza da Prática 2 foi atualizada no caderno da Semana 6 para incluí-lo.
+
+#### Correção 75 — o `/home/alice` é o diretório pessoal, não o grupo primário
+
+A anotação diz "`/home/alice` e `/home/bob` → grupo primário". São coisas de campos diferentes do `/etc/passwd`:
+
+| Campo do `/etc/passwd` | Exemplo da `alice` | O que é |
+|---|---|---|
+| 4º, GID | `1003` | O **grupo primário**: um grupo com o mesmo nome do usuário (`alice`), criado junto com a conta |
+| 6º, diretório pessoal | `/home/alice` | A **pasta** do usuário, criada pelo `-m` com o conteúdo do `/etc/skel` |
+
+Na sua VM: o grupo primário da `alice` é `alice`, o do `bob` é `bob` e o da `carol` é `ops` (por causa do `-g`). Para ver: `id -gn alice ; id -gn carol ; grep '^alice:' /etc/passwd | cut -d: -f4,6`.
+
+### Prática 2 — sexta 16/10
 
 *A preencher.*
 
@@ -548,17 +592,17 @@ Ajustes de caderno:
 
 *A preencher.* Registre também em `labs/simulados-práticos.lpi/resultados_simulados.md`.
 
-### Autoavaliação da Semana 6 — domingo 18/10
+### Autoavaliação da Semana 6 — segunda 19/10
 
 *A preencher.* Acertos: de 10. Questões erradas:
 
 ### Correções da semana
 
-A numeração segue a série global. **A próxima é a 75.** Erros de simulado e de autoavaliação não geram correção numerada; vão para o Notion.
+A numeração segue a série global. **A próxima é a 76.** Erros de simulado e de autoavaliação não geram correção numerada; vão para o Notion.
 
 | # | Tema | Origem |
 |---|---|---|
-| | | |
+| 75 | `/home/alice` é o diretório pessoal (6º campo), não o grupo primário (4º campo) | Prática 1, bloco 3, 15/10 |
 
 ---
 
@@ -566,25 +610,26 @@ A numeração segue a série global. **A próxima é a 75.** Erros de simulado e
 
 | Dia | Previsto | Real | Observação |
 |---|---|---|---|
-| Ter 13 | 2h05 | | Autoavaliação S5 e Prática 1 |
-| Qua 14 | 1h40 | | Prática 2 |
-| Qui 15 | 1h | | Aulas 41 a 49 |
-| Sex 16 | 1h | | Aulas 50 a 57 |
-| Sáb 17 | 2h25 | | Simulado 02 e aulas 58 a 64 |
-| Dom 18 | 1h50 | | Autoavaliação S6, aulas 65 a 72, Checkpoint A |
+| Ter 13 | 2h05 | | Autoavaliação S5 (1 a 7) e Prática 1, blocos 1 e 2 |
+| Qua 14 | 2h20 | 0 | Sem estudo |
+| Qui 15 | 1h | | Autoavaliação S5 (8 a 10) e Prática 1, bloco 3 |
+| Sex 16 | 2h10 | | Prática 2 e aulas 41 a 46 |
+| Sáb 17 | 2h35 | | Simulado 02 e aulas 47 a 58 |
+| Dom 18 | 2h | | Exercícios da LPI 5.1 e 5.2, aulas 59 a 72 e Checkpoint A |
 
 ---
 
 ## 11. Checklist da semana
 
-- [ ] Autoavaliação da Semana 5 respondida e conferida (terça 13/10)
-- [ ] Prática 1, com Exercícios da LPI 5.1 e 5.2 (terça 13/10)
-- [ ] Prática 2, com Exercícios da LPI 5.3 e 5.4 e limpeza dos usuários de teste (quarta 14/10)
+- [x] Autoavaliação da Semana 5 respondida e conferida (13 e 15/10): 9 de 10
+- [x] Prática 1, blocos 1 a 3 e experimento (13 e 15/10)
+- [ ] Exercícios da LPI 5.1 e 5.2 (domingo 18/10)
+- [ ] Prática 2, com Exercícios da LPI 5.3 e 5.4 e limpeza dos usuários de teste (sexta 16/10)
 - [ ] `cheatsheets/permissoes.md` escrito à mão, nos 10 minutos de registro da Prática 2
-- [ ] Curso, aulas 41 a 57 (quinta e sexta)
+- [ ] Curso, aulas 41 a 46 (sexta)
 - [ ] Simulado 02 e apuração por tópico e por tema (sábado 17/10)
-- [ ] Curso, aulas 58 a 72 (sábado e domingo)
-- [ ] Autoavaliação da Semana 6 respondida e conferida (domingo 18/10)
+- [ ] Curso, aulas 47 a 72 (sábado e domingo)
+- [ ] Autoavaliação da Semana 6 respondida e conferida (segunda 19/10)
 - [ ] Checkpoint A preenchido
 - [ ] Commits ao fim de cada sessão
 
