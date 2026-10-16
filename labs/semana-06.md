@@ -281,6 +281,7 @@ Responda: qual desses diretórios é esvaziado na inicialização? Por que o `ca
 
 ```bash
 for u in alice bob carol; do sudo userdel -r "$u"; done
+sudo userdel teste_sem_nome          # o do experimento sem -m; não tem home, então sem o -r
 sudo groupdel dev
 sudo groupdel ops
 sudo rm -r /srv/Box
