@@ -30,13 +30,13 @@
 
 As únicas dívidas que continuam no plano. Depois delas, o plano só tem conteúdo não estudado e simulados.
 
-| Dívida | Roteiro | Data | Situação em 14/10 |
+| Dívida | Roteiro | Data | Situação em 15/10 |
 |---|---|---|---|
-| Autoavaliação da Semana 5 (10 questões, shell script) | `labs/semana-06.md` | Ter 13/10 | 7 de 10 respondidas; faltam 8, 9 e 10 |
-| Prática 1 — usuários e grupos, com Exercícios da LPI 5.1 e 5.2 | `labs/semana-06.md` | Ter 13/10 | Blocos 1 e 2 anotados; faltam o bloco 3 e os Exercícios |
-| Prática 2 — permissões, com Exercícios da LPI 5.3 e 5.4 | `labs/semana-06.md` | Qua 14/10 | A fazer |
+| Autoavaliação da Semana 5 (10 questões, shell script) | `labs/semana-06.md` | 13 e 15/10 | **Feita: 9 de 10** (meta 8) |
+| Prática 1 — usuários e grupos, com Exercícios da LPI 5.1 e 5.2 | `labs/semana-06.md` | 13 e 15/10 | **Feita**; faltam os Exercícios da LPI 5.1 e 5.2 (dom 18/10) |
+| Prática 2 — permissões, com Exercícios da LPI 5.3 e 5.4 | `labs/semana-06.md` | **Sex 16/10** | A fazer |
 | Simulado 02 (40 questões) | `labs/simulados-práticos.lpi/simulado-02.md` | Sáb 17/10 | A fazer |
-| Autoavaliação da Semana 6 (10 questões, Tópico 5) | `labs/semana-07.md`, seção 6 | Dom 18/10 | A fazer |
+| Autoavaliação da Semana 6 (10 questões, Tópico 5) | `labs/semana-07.md`, seção 6 | **Seg 19/10** | A fazer (três dias depois da Prática 2) |
 
 ### Conteúdo ainda não estudado — Etapa 2, de 15/10 a 25/10
 
@@ -63,9 +63,9 @@ A lista completa, objetivo por objetivo, está em `labs/semana-07.md`, seção 2
 | 2. Encontrando seu caminho | 9 | 100% |
 | 3. Poder da linha de comando | 9 | 100% (falta o here document como conceito, 22/10) |
 | 4. Sistema operacional | 8 | 30% |
-| 5. Segurança e permissões | 7 | 20% (conversões praticadas; Práticas 1 e 2 em 13 e 14/10) |
+| 5. Segurança e permissões | 7 | 50% (5.1 e 5.2 praticados na Prática 1; 5.3 e 5.4 na Prática 2, sex 16/10) |
 
-**Progresso geral: aproximadamente 70% do conteúdo da prova.**
+**Progresso geral: aproximadamente 75% do conteúdo da prova.**
 
 ---
 
@@ -373,12 +373,11 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 
 | Dia | Atividade |
 |---|---|
-| Ter 13 | Autoavaliação da Semana 5 · Prática 1 |
-| Qua 14 | Prática 2 |
-| Qui 15 | Curso, aulas 41 a 49 |
-| Sex 16 | Curso, aulas 50 a 57 |
-| Sáb 17 | **Simulado 02** · curso, aulas 58 a 64 |
-| Dom 18 | Autoavaliação da Semana 6 · curso, aulas 65 a 72 · **Checkpoint A** |
+| Ter 13 e Qui 15 | Autoavaliação da Semana 5 (9 de 10) · Prática 1 — **feitas** |
+| Qua 14 | Sem estudo |
+| Sex 16 | Prática 2 · curso, aulas 41 a 46 |
+| Sáb 17 | **Simulado 02** · curso, aulas 47 a 58 |
+| Dom 18 | Exercícios da LPI 5.1 e 5.2 · curso, aulas 59 a 72 · **Checkpoint A** (previsto amarelo) |
 
 ### Semana 8 — 19 a 25/10 · Etapa 2, Tópico 4
 
@@ -386,7 +385,7 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 
 | Dia | Atividade |
 |---|---|
-| Seg 19 | Prática 3 — hardware, discos e o mapa dos diretórios (4.2 e 4.3) |
+| Seg 19 | Autoavaliação da Semana 6 · Prática 3 — hardware, discos e o mapa dos diretórios (4.2 e 4.3) |
 | Ter 20 | Prática 4 — processos, memória e logs (4.3) |
 | Qua 21 | Prática 5 — rede (4.4) |
 | Qui 22 | Leitura do 4.1 · here document · quizzes do NDG dos Tópicos 4 e 5 |
