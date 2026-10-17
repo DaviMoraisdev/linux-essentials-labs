@@ -95,7 +95,7 @@ As autoavaliações medem a retenção do conteúdo de uma semana. Desde a Seman
 | Semana 3 | Arquivos, links e pacotes | 19/09 | 20 | **20** | 16 | Respondida no dia do estudo. Gerou as Correções 27 e 28 (justificativas) |
 | Semana 4 | Objetivos 3.1 e 3.2, filtros e compactação | 29/09 | 20 | **14** | 16 | Abaixo da meta. Respondida quatro dias depois do estudo. Gerou as Correções 49 a 52 |
 | Semana 5 | Shell script | 13 e 15/10 | 10 | **9** | 8 | Nove a onze dias depois do Laboratório 2. A Q6 foi respondida com consulta |
-| Semana 6 | Tópico 5, usuários e permissões | **Seg 19/10** | 10 | | **8** | Questões em `labs/semana-07.md`, seção 6 |
+| Semana 6 | Tópico 5, usuários e permissões | **Qui 22/10** | 10 | | **8** | Questões em `labs/semana-07.md`, seção 6 |
 
 Leitura: a de 29/09 (14/20, quatro dias depois do estudo) e o simulado #1 são os dados de retenção mais distantes do estudo disponíveis até aqui.
 
