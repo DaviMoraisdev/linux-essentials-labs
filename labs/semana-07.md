@@ -91,40 +91,41 @@ São as quatro dívidas que você escolheu pagar para entrar na nova estratégia
 | # | Dívida | Roteiro | Quando |
 |---|---|---|---|
 | 1 | **Prática 1** — usuários e grupos, com 20 min de Exercícios da LPI (lições 5.1 e 5.2) | `labs/semana-06.md`, seção "Prática 1" | **Feita em 13 e 15/10**; faltam os Exercícios da LPI 5.1 e 5.2 (domingo 18/10) |
-| 2 | **Prática 2** — permissões, com 20 min de Exercícios da LPI (lições 5.3 e 5.4) e limpeza dos usuários de teste | `labs/semana-06.md`, seção "Prática 2" | **Sexta 16/10** |
+| 2 | **Prática 2** — permissões, com 20 min de Exercícios da LPI (lições 5.3 e 5.4) e limpeza dos usuários de teste | `labs/semana-06.md`, seção "Prática 2" | **Domingo 18/10** |
 | 3 | **Simulado 02** — 40 questões, 60 minutos | `labs/simulados-práticos.lpi/simulado-02.md` | **Sábado 17/10** |
-| 4 | **Autoavaliação da Semana 5** (10 questões, shell script) e **Autoavaliação da Semana 6** (10 questões, Tópico 5) | S5: `labs/semana-06.md`, seção "Autoavaliação da Semana 5" · S6: seção 6 deste arquivo | S5: **feita em 13 e 15/10 (9 de 10)** · S6: **segunda 19/10**, primeira atividade |
+| 4 | **Autoavaliação da Semana 5** (10 questões, shell script) e **Autoavaliação da Semana 6** (10 questões, Tópico 5) | S5: `labs/semana-06.md`, seção "Autoavaliação da Semana 5" · S6: seção 6 deste arquivo | S5: **feita em 13 e 15/10 (9 de 10)** · S6: **quinta 22/10**, primeira atividade |
 
 Dois ajustes nos roteiros, por causa da ordem nova:
 
 - **As práticas vêm antes das aulas do Tópico 5.** Para não praticar às cegas, leia antes de cada prática a lição correspondente do PDF oficial (cerca de 15 minutos): lições 5.1 e 5.2 antes da Prática 1, e 5.3 e 5.4 antes da Prática 2. O vídeo, depois, confirma.
-- **A autoavaliação da Semana 6 volta ao plano**, a seu pedido. Ela fica na segunda 19/10, três dias depois da Prática 2, para medir retenção e não memória de curto prazo (regra de 29/09). O simulado 02, no sábado, não a substitui: ele mede a prova inteira, e ela mede só o Tópico 5, com perguntas abertas.
+- **A autoavaliação da Semana 6 volta ao plano**, a seu pedido. Ela fica na quinta 22/10, quatro dias depois da Prática 2, para medir retenção e não memória de curto prazo (regra de 29/09). O simulado 02, no sábado, não a substitui: ele mede a prova inteira, e ela mede só o Tópico 5, com perguntas abertas.
 
 ---
 
 ## 4. Calendário da semana
 
-**Replanejado em 15/10.** A quarta 14/10 ficou sem estudo, e a Prática 2 e as aulas 41 a 57 escorregaram. As linhas de 13 a 15/10 registram o que foi feito.
+**Replanejado em 15/10 e de novo em 16/10.** A quarta 14/10 e a sexta 16/10 ficaram sem estudo. A Prática 2 passa para o domingo, que fecha todas as dívidas da semana. As aulas de sexta vão para o sábado, para o domingo não passar de 3h30.
 
 | Dia | Atividade | Tempo |
 |---|---|---|
 | Ter 13 | Autoavaliação da Semana 5, questões 1 a 7 · Prática 1, blocos 1 e 2 | **feito** |
 | Qua 14 | Sem estudo | — |
 | Qui 15 | Autoavaliação da Semana 5, questões 8 a 10 · Prática 1, bloco 3 e experimento sem `-m` | **feito** |
-| **Sex 16** | Leitura das lições 5.3 e 5.4 do PDF (15 min) · **Prática 2 — permissões** (1h), com 20 min de Exercícios da LPI 5.3 e 5.4 e a limpeza · **curso, aulas 41 a 46** (2x) | cerca de 2h10 |
-| **Sáb 17** | **Simulado 02** (60 min, primeira atividade) · apuração (25 min) · **curso, aulas 47 a 58** | cerca de 2h35 |
-| **Dom 18** | Exercícios da LPI 5.1 e 5.2 (20 min, o que faltou da Prática 1) · **curso, aulas 59 a 72** (fechamento) · **Checkpoint A** (10 min) | cerca de 2h |
-| Seg 19 | **Autoavaliação da Semana 6** (30 min, primeira atividade, três dias depois da Prática 2) · Prática 3 (Semana 8) | ver Semana 8 |
+| Sex 16 | Sem estudo; a Prática 2 foi para o domingo | — |
+| **Sáb 17** | **Simulado 02** (60 min, primeira atividade) · apuração (25 min) · **curso, aulas 41 a 58** (2x até o fim do Tópico 5) | cerca de 3h10 |
+| **Dom 18** | **Fechamento das dívidas:** leitura das lições 5.3 e 5.4 do PDF (15 min) · **Prática 2 — permissões** (1h) com Exercícios da LPI 5.3 e 5.4 (20 min) e a limpeza · Exercícios da LPI 5.1 e 5.2 e o que faltou da Prática 1: os 7 campos do `/etc/passwd` e o arquivo do `last` (25 min) · **curso, aulas 59 a 72** (fechamento) · **Checkpoint A** (10 min) | cerca de 3h30 |
 
-**Total de sexta a domingo: cerca de 6h45.** É o fim de semana mais pesado do plano, porque carrega o que a quarta deixou. Se faltar tempo, corte nesta ordem:
+**Total do fim de semana: cerca de 6h40.** A vantagem da troca: as aulas do Tópico 5 chegam **antes** da Prática 2, e não depois. Se faltar tempo, corte nesta ordem:
 
 | Ordem | Corte | Para onde vai |
 |---|---|---|
 | 1 | Exploratórios da LPI (mantendo os Guiados) | Saem |
-| 2 | Aulas de sexta (41 a 46) | Sábado, depois da apuração |
+| 2 | Aulas que não couberem no sábado | Domingo, depois da Prática 2 |
 | 3 | Aulas que não couberem no domingo | Segunda 19/10 e terça 20/10, 30 minutos antes da prática do dia |
 
 **Não se cortam:** a Prática 2 e o simulado 02.
+
+**A autoavaliação da Semana 6 não cabe no domingo.** Ela mede retenção e precisa de três dias depois da Prática 2 (regra de 29/09); feita no mesmo dia, daria uma nota alta e falsa, como os 20 de 20 da Semana 3. Por isso vai para a **quinta 22/10**, como primeira atividade.
 
 Velocidade do curso: **2x** onde o vídeo repete o que já foi praticado (shell script, Tópico 5 depois das práticas); **1.25x** no Tópico 4, que é conteúdo novo.
 
@@ -143,9 +144,9 @@ Regras de sempre: anote só o que o vídeo mostra e você ainda não sabia; em p
 
 ---
 
-## 6. Autoavaliação da Semana 6 — Segunda 19/10
+## 6. Autoavaliação da Semana 6 — Quinta 22/10
 
-Dez questões sobre o Tópico 5 (objetivos 5.1 a 5.4), respondidas **sem consultar**, três dias depois da Prática 2. **Primeira atividade da segunda 19/10**, antes da Prática 3. Escreva as respostas à mão e só depois abra o gabarito.
+Dez questões sobre o Tópico 5 (objetivos 5.1 a 5.4), respondidas **sem consultar**, quatro dias depois da Prática 2. **Primeira atividade da quinta 22/10**, antes do bloco curto. Escreva as respostas à mão e só depois abra o gabarito.
 
 1. Quais são os três tipos de conta em um sistema Linux? Como o UID ajuda a distingui-los, e onde se confere a partir de qual número começam os usuários comuns na sua VM?
 2. Quantos campos tem cada linha do `/etc/passwd`, qual o separador, e o que guardam o **terceiro**, o **sexto** e o **sétimo** campos?
@@ -191,7 +192,7 @@ Critérios revistos em 13/10 para a nova estratégia. Marque com base no que est
 |---|---|---|
 | 1 | Práticas 1 e 2 feitas e registradas | |
 | 2 | Simulado 02 com **24 ou mais** acertos | |
-| 3 | Autoavaliações das Semanas 5 e 6 feitas (meta: 8 de 10 em cada) | Semana 5: **sim, 9 de 10**. Semana 6: na segunda 19/10 |
+| 3 | Autoavaliações das Semanas 5 e 6 feitas (meta: 8 de 10 em cada) | Semana 5: **sim, 9 de 10**. Semana 6: na quinta 22/10 |
 | 4 | Curso até a aula 72 (ou até a 64, com 65 a 72 marcadas para a segunda 19/10) | |
 
 | Resultado | Condição | Decisão |
@@ -200,7 +201,7 @@ Critérios revistos em 13/10 para a nova estratégia. Marque com base no que est
 | **Amarelo** | Um critério falhou | Segue; o item vira a primeira atividade da segunda 19/10 |
 | **Vermelho** | Dois ou mais falharam, ou simulado 02 abaixo de 20 | A semana de 19/10 abre com as dívidas restantes e o Checkpoint B (25/10) passa a decidir a data |
 
-**Previsão de 15/10: amarelo.** O critério 3 falha no domingo por desenho, porque a autoavaliação da Semana 6 precisa de três dias depois da Prática 2. Pela regra, ela vira a primeira atividade da segunda 19/10, que é onde já está. Se mais um critério falhar (Prática 2 ou simulado 02), o resultado passa a vermelho.
+**Previsão de 16/10: amarelo.** O critério 3 falha no domingo por desenho: a autoavaliação da Semana 6 precisa de três dias depois da Prática 2 e fica para a quinta 22/10. Se mais um critério falhar (Prática 2, simulado 02 ou curso), o resultado passa a vermelho.
 
 Uma autoavaliação abaixo de 8 não reprova o checkpoint: as questões erradas viram o aquecimento da Etapa 2.
 
@@ -222,10 +223,10 @@ sudo apt update && sudo apt install -y pciutils usbutils net-tools bind9-dnsutil
 
 | Dia | Atividade | Tempo |
 |---|---|---|
-| Seg 19 | **Autoavaliação da Semana 6** (30 min, primeira atividade) · **Prática 3** — hardware, discos e o mapa dos diretórios (4.2 e 4.3), com Exercícios da LPI 4.2 | cerca de 1h50 |
+| Seg 19 | **Prática 3** — hardware, discos e o mapa dos diretórios (4.2 e 4.3), com Exercícios da LPI 4.2 | cerca de 1h20 |
 | Ter 20 | **Prática 4** — processos, memória e logs (4.3), com Exercícios da LPI 4.3 | cerca de 1h20 |
 | Qua 21 | **Prática 5** — rede (4.4), com Exercícios da LPI 4.4 | cerca de 1h20 |
-| Qui 22 | **Bloco curto** — leitura do 4.1 e Exercícios da LPI 4.1 (30 min) · here document (15 min) · quizzes do NDG dos Tópicos 4 e 5 (30 min) | cerca de 1h15 |
+| Qui 22 | **Autoavaliação da Semana 6** (30 min, primeira atividade) · **Bloco curto** — leitura do 4.1 e Exercícios da LPI 4.1 (30 min) · here document (15 min) · quizzes do NDG dos Tópicos 4 e 5 (30 min) | cerca de 1h45 |
 | Sex 23 | **Mini-simulado R1** (20 questões, 25 min) e apuração (10 min) | 35 min |
 | Sáb 24 | Reposição, se algo escorregou. Sem atividade nova | — |
 | **Dom 25** | **Simulado 03** (60 min) · apuração · **Checkpoint B** | cerca de 1h40 |
@@ -584,7 +585,7 @@ A anotação diz "`/home/alice` e `/home/bob` → grupo primário". São coisas 
 
 Na sua VM: o grupo primário da `alice` é `alice`, o do `bob` é `bob` e o da `carol` é `ops` (por causa do `-g`). Para ver: `id -gn alice ; id -gn carol ; grep '^alice:' /etc/passwd | cut -d: -f4,6`.
 
-### Prática 2 — sexta 16/10
+### Prática 2 — domingo 18/10
 
 *A preencher.*
 
@@ -592,7 +593,7 @@ Na sua VM: o grupo primário da `alice` é `alice`, o do `bob` é `bob` e o da `
 
 *A preencher.* Registre também em `labs/simulados-práticos.lpi/resultados_simulados.md`.
 
-### Autoavaliação da Semana 6 — segunda 19/10
+### Autoavaliação da Semana 6 — quinta 22/10
 
 *A preencher.* Acertos: de 10. Questões erradas:
 
@@ -613,9 +614,9 @@ A numeração segue a série global. **A próxima é a 76.** Erros de simulado e
 | Ter 13 | 2h05 | | Autoavaliação S5 (1 a 7) e Prática 1, blocos 1 e 2 |
 | Qua 14 | 2h20 | 0 | Sem estudo |
 | Qui 15 | 1h | | Autoavaliação S5 (8 a 10) e Prática 1, bloco 3 |
-| Sex 16 | 2h10 | | Prática 2 e aulas 41 a 46 |
-| Sáb 17 | 2h35 | | Simulado 02 e aulas 47 a 58 |
-| Dom 18 | 2h | | Exercícios da LPI 5.1 e 5.2, aulas 59 a 72 e Checkpoint A |
+| Sex 16 | 2h10 | 0 | Sem estudo; Prática 2 para o domingo |
+| Sáb 17 | 3h10 | | Simulado 02 e aulas 41 a 58 |
+| Dom 18 | 3h30 | | Prática 2, Exercícios da LPI 5.1 a 5.4, aulas 59 a 72 e Checkpoint A |
 
 ---
 
@@ -624,12 +625,12 @@ A numeração segue a série global. **A próxima é a 76.** Erros de simulado e
 - [x] Autoavaliação da Semana 5 respondida e conferida (13 e 15/10): 9 de 10
 - [x] Prática 1, blocos 1 a 3 e experimento (13 e 15/10)
 - [ ] Exercícios da LPI 5.1 e 5.2 (domingo 18/10)
-- [ ] Prática 2, com Exercícios da LPI 5.3 e 5.4 e limpeza dos usuários de teste (sexta 16/10)
+- [ ] Prática 2, com Exercícios da LPI 5.3 e 5.4 e limpeza dos usuários de teste (domingo 18/10)
 - [ ] `cheatsheets/permissoes.md` escrito à mão, nos 10 minutos de registro da Prática 2
-- [ ] Curso, aulas 41 a 46 (sexta)
+- [ ] Curso, aulas 41 a 58 (sábado)
 - [ ] Simulado 02 e apuração por tópico e por tema (sábado 17/10)
-- [ ] Curso, aulas 47 a 72 (sábado e domingo)
-- [ ] Autoavaliação da Semana 6 respondida e conferida (segunda 19/10)
+- [ ] Curso, aulas 59 a 72 (domingo)
+- [ ] Autoavaliação da Semana 6 respondida e conferida (quinta 22/10)
 - [ ] Checkpoint A preenchido
 - [ ] Commits ao fim de cada sessão
 
