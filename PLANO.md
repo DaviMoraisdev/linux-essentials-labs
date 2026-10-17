@@ -34,9 +34,9 @@ As únicas dívidas que continuam no plano. Depois delas, o plano só tem conte�
 |---|---|---|---|
 | Autoavaliação da Semana 5 (10 questões, shell script) | `labs/semana-06.md` | 13 e 15/10 | **Feita: 9 de 10** (meta 8) |
 | Prática 1 — usuários e grupos, com Exercícios da LPI 5.1 e 5.2 | `labs/semana-06.md` | 13 e 15/10 | **Feita**; faltam os Exercícios da LPI 5.1 e 5.2 (dom 18/10) |
-| Prática 2 — permissões, com Exercícios da LPI 5.3 e 5.4 | `labs/semana-06.md` | **Sex 16/10** | A fazer |
+| Prática 2 — permissões, com Exercícios da LPI 5.3 e 5.4 | `labs/semana-06.md` | **Dom 18/10** | A fazer |
 | Simulado 02 (40 questões) | `labs/simulados-práticos.lpi/simulado-02.md` | Sáb 17/10 | A fazer |
-| Autoavaliação da Semana 6 (10 questões, Tópico 5) | `labs/semana-07.md`, seção 6 | **Seg 19/10** | A fazer (três dias depois da Prática 2) |
+| Autoavaliação da Semana 6 (10 questões, Tópico 5) | `labs/semana-07.md`, seção 6 | **Qui 22/10** | A fazer (quatro dias depois da Prática 2) |
 
 ### Conteúdo ainda não estudado — Etapa 2, de 15/10 a 25/10
 
@@ -375,9 +375,9 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 |---|---|
 | Ter 13 e Qui 15 | Autoavaliação da Semana 5 (9 de 10) · Prática 1 — **feitas** |
 | Qua 14 | Sem estudo |
-| Sex 16 | Prática 2 · curso, aulas 41 a 46 |
-| Sáb 17 | **Simulado 02** · curso, aulas 47 a 58 |
-| Dom 18 | Exercícios da LPI 5.1 e 5.2 · curso, aulas 59 a 72 · **Checkpoint A** (previsto amarelo) |
+| Sex 16 | Sem estudo |
+| Sáb 17 | **Simulado 02** · curso, aulas 41 a 58 |
+| Dom 18 | **Fechamento das dívidas:** Prática 2 · Exercícios da LPI 5.1 a 5.4 · curso, aulas 59 a 72 · **Checkpoint A** (previsto amarelo) |
 
 ### Semana 8 — 19 a 25/10 · Etapa 2, Tópico 4
 
@@ -385,10 +385,10 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 
 | Dia | Atividade |
 |---|---|
-| Seg 19 | Autoavaliação da Semana 6 · Prática 3 — hardware, discos e o mapa dos diretórios (4.2 e 4.3) |
+| Seg 19 | Prática 3 — hardware, discos e o mapa dos diretórios (4.2 e 4.3) |
 | Ter 20 | Prática 4 — processos, memória e logs (4.3) |
 | Qua 21 | Prática 5 — rede (4.4) |
-| Qui 22 | Leitura do 4.1 · here document · quizzes do NDG dos Tópicos 4 e 5 |
+| Qui 22 | Autoavaliação da Semana 6 · leitura do 4.1 · here document · quizzes do NDG dos Tópicos 4 e 5 |
 | Sex 23 | **R1** |
 | Sáb 24 | Reposição |
 | Dom 25 | **Simulado 03** · **Checkpoint B** |
