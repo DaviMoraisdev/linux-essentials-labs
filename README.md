@@ -2,7 +2,7 @@
 
 Caderno de laboratório da minha preparação para a certificação **LPI Linux Essentials (010-160)**.
 
-Prova agendada para **09/11/2026**. Estudo em ritmo de 5 a 7 horas por semana, com registro diário dos comandos executados e do que foi aprendido.
+Prova em **23/11/2026**. Estudo em ritmo de cerca de 9 horas por semana, com registro diário dos comandos executados e do que foi aprendido.
 
 ## Ambiente
 
@@ -15,7 +15,7 @@ Containers Docker (Rocky Linux, Debian, Alpine) para comparação entre distribu
 | Caminho | Conteúdo |
 |---|---|
 | `labs/` | Diário de estudo. Um arquivo por semana: comandos executados, saídas, correções e o que aprendi |
-| `praticas/` | Simulados no formato do exame, com gabarito comentado e apuração por tópico |
+| `labs/simulados-práticos.lpi/` | Simulados no formato do exame, com gabarito comentado, apuração por tópico e painel de resultados |
 | `cheatsheets/` | Referência destilada por tema. Só a forma final correta, sem o processo |
 | `scripts/` | Shell scripts escritos durante o estudo |
 | `PLANO.md` | Plano de estudos completo, cronograma e registro de aprendizados |
@@ -23,35 +23,20 @@ Containers Docker (Rocky Linux, Debian, Alpine) para comparação entre distribu
 
 A distinção entre `labs/` e `cheatsheets/` é deliberada: o primeiro registra **como** o aprendizado aconteceu, incluindo os erros; o segundo registra **o que** ficou, em forma consultável. Na revisão final, o segundo é o que se lê.
 
-## Estratégia em duas fases
+## Estratégia até a prova
 
-O cronograma foi revisado em 26/09. As quatro primeiras semanas priorizaram prática diária, com cinco sessões de laboratório por semana. Isso acelerou a cobertura dos Tópicos 1, 2 e parte do 3, mas deixou o curso em vídeo para trás.
+O cronograma foi revisado três vezes: em 26/09 (curso como atividade principal), em 02/10 (simulado semanal e checkpoints) e em 13/10, quando a prova passou para **23/11**. A estratégia vigente tem três etapas, em ordem fixa:
 
-A partir da Semana 5 o plano inverte a proporção:
-
-| Fase | Semanas | Período | Foco |
-|---|---|---|---|
-| **1 — Curso** | 5 a 7 | 28/09 a 18/10 | Fechar as 46 aulas restantes · duas práticas por semana |
-| **2 — Prática e simulados** | 8 a 10 | 19/10 a 08/11 | Simulados em condição de prova · laboratórios integradores |
-| **Prova** | — | 09/11 | — |
-
-### Ritmo semanal da Fase 1
-
-| Dia | Atividade | Tempo |
+| Etapa | Período | Foco |
 |---|---|---|
-| Segunda | Curso | ~40 min |
-| **Terça** | **Laboratório** | 1h |
-| Quarta | Curso | ~40 min |
-| Quinta | Curso | ~40 min |
-| **Sexta** | **Laboratório** | 1h |
-| Sábado | Curso ou reposição | ~40 min |
-| Domingo | Fechamento e commits | ~30 min |
+| **1 — Dívidas** | 13/10 a 18/10 | Práticas de usuários, grupos e permissões · simulado 02 · autoavaliações das Semanas 5 e 6 · curso fechado em paralelo |
+| **2 — Conteúdo restante** | 15/10 a 25/10 | Tópico 4 em três práticas de laboratório: hardware e diretórios, processos e logs, rede |
+| **3 — Simulados** | 23/10 a 19/11 | Um simulado completo a cada dois ou três dias, com revisão dirigida só nos erros |
+| **Prova** | 23/11 | — |
 
-Todos os dias começam com um **aquecimento de 10 minutos**: cinco comandos refeitos de memória, sem consulta. O que travar vira card de revisão.
+Depois das dívidas da Etapa 1, o plano só admite conteúdo da prova ainda não estudado e simulados. Itens antigos de registro retroativo e de ambiente saíram do plano em 13/10.
 
-A Semana 5 é uma exceção a esse ritmo, por carregar duas pendências da Semana 4. O calendário corrigido está na seção seguinte.
-
-Comando vira reflexo por repetição espaçada, não por tempo acumulado. Duas sessões longas por semana ensinam menos motricidade do que cinco curtas — o aquecimento diário existe para preservar o espaçamento com menos sessões formais.
+Todos os dias de estudo sem simulado começam com um **aquecimento de 10 minutos**: cinco comandos refeitos de memória, sem consulta. O que travar vira card de revisão. Comando vira reflexo por repetição espaçada, não por tempo acumulado.
 
 ## Cronograma
 
@@ -61,27 +46,15 @@ Comando vira reflexo por repetição espaçada, não por tempo acumulado. Duas s
 | 1 | 01–06/09 | Tópico 1 — comunidade, licenças, distribuições e FHS | Concluída |
 | 2 | 07–13/09 | Tópico 2 — linha de comando e sistema de ajuda | Concluída |
 | 3 | 14–20/09 | Tópico 2 — arquivos, diretórios e links | Concluída |
-| 4 | 21–27/09 | Tópico 3 — redirecionamento, filtros, busca e compactação | Fechada em 29/09 · autoavaliação 14 de 20 |
-| 5 | 28/09–04/10 | Objetivo 3.3 — shell script · simulado diagnóstico | Em andamento |
-| 6 | 05–11/10 | Tópico 5 — usuários, grupos e permissões | Pendente |
-| 7 | 12–18/10 | Tópico 4 — hardware, processos e rede | Pendente |
-| 8 | 19–25/10 | Simulados e revisão dirigida | Pendente |
-| 9 | 26/10–01/11 | Simulados e laboratório integrador | Pendente |
-| 10 | 02–08/11 | Revisão final | Pendente |
-
-### Semana 5 em detalhe
-
-A segunda-feira 28/09 foi consumida pela Sessão 5 da Semana 4, adiada em três dias. O calendário da semana foi refeito em torno disso: os dois laboratórios saem de terça e sexta para sexta e sábado, e o simulado fecha o domingo. A partir da Semana 6 o ritmo volta ao padrão de terça e sexta.
-
-| Dia | Atividade | Tempo |
-|---|---|---|
-| Seg 28 | Sessão 5 da Semana 4 — `find` e desafio integrador | concluída |
-| Ter 29 | Autoavaliação da Semana 4 — concluída, 14 de 20 · curso, aulas 26 a 31 | 1h10 |
-| Qua 30 | Curso, aulas 32 a 37 | 45 min |
-| Qui 01/10 | Curso, aulas 38 a 43 | 45 min |
-| Sex 02 | Laboratório — fundamentos de shell script | 1h |
-| Sáb 03 | Laboratório — os quatro scripts do objetivo 3.3 | 1h |
-| Dom 04 | Simulado diagnóstico cronometrado · apuração · commits | 1h35 |
+| 4 | 21–27/09 | Tópico 3 — redirecionamento, filtros, busca e compactação | Concluída · autoavaliação 14 de 20 |
+| 5 | 28/09–04/10 | Objetivo 3.3 — shell script | Concluída |
+| 6 | 05–11/10 | Simulado diagnóstico · scripts do 3.3 · abertura do Tópico 5 | Concluída · simulado 01: 28 de 40 |
+| 7 | 12–18/10 | Tópico 5 em prática · simulado 02 · fechamento do curso | Em andamento |
+| 8 | 19–25/10 | Tópico 4 — hardware, processos, logs e rede · simulado 03 | Pendente |
+| 9 | 26/10–01/11 | Simulados 04 e 05 · reforço R2 | Pendente |
+| 10 | 02–08/11 | Simulados 06, 07 e 08 · gate | Pendente |
+| 11 | 09–15/11 | Simulados 09 e 10 | Pendente |
+| 12 | 16–22/11 | Revisão leve · simulado final em 19/11 · descanso | Pendente |
 
 ## Cobertura por tópico do exame
 
@@ -91,13 +64,11 @@ O exame tem 40 questões distribuídas por peso entre cinco tópicos. A estimati
 |---|---|---|---|
 | 1. Comunidade Linux e carreira em open source | 7 | 100% | Concluído e revisado |
 | 2. Encontrando seu caminho em um sistema Linux | 9 | 100% | Concluído — os quatro objetivos |
-| 3. O poder da linha de comando | 9 | 55% | Objetivos 3.1 e 3.2 concluídos; falta o 3.3 |
-| 4. O sistema operacional Linux | 8 | 30% | Parcial: FHS, LVM, `/proc`, `/dev`, portas e pacotes |
-| 5. Segurança e permissões de arquivo | 7 | 0% | Não iniciado |
+| 3. O poder da linha de comando | 9 | 100% | Concluído, com quatro scripts escritos no objetivo 3.3 |
+| 4. O sistema operacional Linux | 8 | 30% | Parcial: FHS, LVM, `/proc`, `/dev`, portas e pacotes · práticas na Semana 8 |
+| 5. Segurança e permissões de arquivo | 7 | 50% | Usuários e grupos praticados (Prática 1) · permissões na Prática 2 |
 
-**Progresso geral estimado: aproximadamente 65% do conteúdo do exame.**
-
-Restam seis semanas até a prova, sendo três de conteúdo novo e três de revisão e simulados.
+**Progresso geral estimado: aproximadamente 75% do conteúdo do exame.**
 
 ## Medições
 
@@ -108,6 +79,8 @@ Autoavaliações realizadas ao fim de cada semana, sem consulta, com gabarito co
 | 2 | 15 | 14 | 12 |
 | 3 | 20 | 20 | 16 |
 | 4 | 20 | 14 | 16 |
+| 5 | 10 | 9 | 8 |
+| 6 | 10 | a responder em 19/10 | 8 |
 
 A Semana 4 ficou abaixo da meta, e a comparação com as semanas anteriores só é possível com uma ressalva que mudou o método: **as autoavaliações das Semanas 2 e 3 foram respondidas no mesmo dia do último laboratório; a da Semana 4 foi respondida quatro dias depois.** As duas primeiras mediram memória de curto prazo. A terceira mediu retenção.
 
@@ -122,7 +95,7 @@ Os quatro conceitos errados estavam registrados corretamente no próprio caderno
 
 A concentração no `grep` descarta a hipótese de decaimento por tempo: o bloco mais antigo foi o único perfeito. O aquecimento diário da Semana 5 foi redirecionado para `grep` e `sort`, sem custo de sessão adicional.
 
-O simulado diagnóstico de 40 questões cronometradas está escrito e disponível em `praticas/simulado-01-diagnostico.md`, com distribuição de pesos idêntica à do exame e gabarito comentado. Execução prevista para 04/10.
+**Simulado diagnóstico (05/10):** 28 de 40 (70%), acima do corte de 26, com 23 acertos firmes. O Tópico 3 fechou em 9 de 9; seis dos sete erros com convicção caíram nos Tópicos 1 e 2. A série completa de simulados, com metas e checkpoints, está em `labs/simulados-práticos.lpi/resultados_simulados.md`.
 
 ## Prática complementar
 
@@ -136,7 +109,7 @@ O simulado diagnóstico de 40 questões cronometradas está escrito e disponíve
 
 Todo comando é digitado, nunca copiado. Cada sessão termina com o registro do que foi executado e do que foi compreendido.
 
-Os arquivos em `labs/` incluem uma seção de **correções**, com os conceitos que foram anotados de forma incorreta e a explicação do que está certo. O registro dos erros é parte deliberada do método — até aqui são 52 correções registradas ao longo de quatro semanas, e a maioria delas revelou imprecisão de compreensão que nenhuma autoavaliação teria detectado sozinha.
+Os arquivos em `labs/` incluem uma seção de **correções**, com os conceitos que foram anotados de forma incorreta e a explicação do que está certo. O registro dos erros é parte deliberada do método — até aqui são 74 correções registradas ao longo de seis semanas, e a maioria delas revelou imprecisão de compreensão que nenhuma autoavaliação teria detectado sozinha.
 
 A correção 44 é o exemplo mais claro do valor do método: em `find . -type f -name "*.py" -o -name "*.md"`, o `-o` tem precedência menor que o **e** implícito, e o `-type f` vale apenas para o primeiro grupo. O comando roda, não emite aviso nenhum e devolve resultado errado. Nenhuma leitura de material teria exposto isso — só a anotação do raciocínio e a conferência dela.
 
