@@ -2,7 +2,7 @@
 
 **Criado em:** 06/10/2026 · **Origem das dicas:** relato de candidatos, encontrado por você na internet (fonte não oficial)
 
-Este arquivo reúne as quatro dicas recorrentes, o que o plano já cobre de cada uma, as regras para as questões de preenchimento e o primeiro **mini-simulado de reforço (R1)**, com 20 questões e gabarito comentado. O resultado de cada reforço é registrado em `praticas-resultados-simulados-e-correcoes.md`, seções 2.5 e 4.
+Este arquivo reúne as quatro dicas recorrentes, o que o plano já cobre de cada uma, as regras para as questões de preenchimento e o primeiro **mini-simulado de reforço (R1)**, com 20 questões e gabarito comentado. O resultado de cada reforço é registrado em `resultados_simulados.md`, seções 2.5 e 4.
 
 ---
 
@@ -140,7 +140,7 @@ Mnemônico: **proc de processos, dev de dispositivos, sys de hardware organizado
 
 ## 6. Mini-simulado R1 — Sexta 23/10 (movido de 13/10 em 13/10)
 
-**Regras:** 20 questões, 25 minutos, sem consulta, **marcando cada chute**. Nas questões de preenchimento (marcadas com **[lacuna]**), escreva só a resposta, seguindo a seção 4. Aberto o gabarito, anote apenas as erradas e as chutadas, corrija no Notion e registre o resultado em `praticas-resultados-simulados-e-correcoes.md`, seções 2.5 e 4.
+**Regras:** 20 questões, 25 minutos, sem consulta, **marcando cada chute**. Nas questões de preenchimento (marcadas com **[lacuna]**), escreva só a resposta, seguindo a seção 4. Aberto o gabarito, anote apenas as erradas e as chutadas, corrija no Notion e registre o resultado em `resultados_simulados.md`, seções 2.5 e 4.
 
 **Metas:** 15 de 20 (75%) é o mínimo. A leitura mais importante é o **acerto por tema**: um tema abaixo de 60% vira o foco do aquecimento da semana seguinte.
 
@@ -296,9 +296,178 @@ A) `/dev/cpu` · B) `/var/cpuinfo` · C) `/proc/cpuinfo` · D) `/etc/cpuinfo`
 
 ---
 
-## 8. R2 — Terça 27/10 (a escrever até sábado 24/10)
+## 8. Mini-simulado R2 — Terça 27/10
 
-Mesmo formato, 20 questões, 25 minutos. Conteúdo: as quatro frentes de novo, com **`/sys` incluído** e questões sobre `top`, `kill` e sinais, `free` e rede da Semana 8, mais 6 lacunas. Peça com a mesma instrução da seção 3.
+**Regras:** as mesmas do R1. 20 questões, 25 minutos, sem consulta, **marcando cada chute**. Nas questões **[lacuna]**, escreva só a resposta, seguindo a seção 4. Registre o resultado em `resultados_simulados.md`, seções 2.5 e 4.
+
+**Metas:** 15 de 20. Além das quatro frentes, o R2 cobre o que a Semana 8 acrescentou: `/sys`, processos e rede. Nenhuma questão repete o R1.
+
+### Permissões
+
+**1.** Depois de `chmod 750 projeto`, em que `projeto` é um diretório, como ele aparece no `ls -ld`?
+
+- A) `drwxr-x---`
+- B) `drwxr-xr-x`
+- C) `drwx-----x`
+- D) `drw-r-x---`
+
+**2. [lacuna]** Em um diretório com sticky bit, se os outros têm permissão de execução, a letra que aparece no lugar do `x` deles é: ______
+
+**3.** O que significa o `S` maiúsculo em `-rwSr--r--`?
+
+- A) O SGID está ligado e o grupo tem `x`
+- B) O SUID está ligado, mas o dono não tem `x`
+- C) O arquivo é um socket
+- D) O sticky bit está ligado
+
+**4.** Um arquivo tem permissão `755`. Qual é a permissão depois de `chmod o-rwx arquivo`?
+
+- A) `700`
+- B) `750`
+- C) `754`
+- D) `705`
+
+### `tar` e compressão
+
+**5.** Qual comando extrai `site.tar.gz` **dentro do diretório** `/tmp/site`, sem precisar entrar nele antes?
+
+- A) `tar -xzf site.tar.gz /tmp/site`
+- B) `tar -xzf site.tar.gz -C /tmp/site`
+- C) `tar -czf site.tar.gz -C /tmp/site`
+- D) `tar -xzf /tmp/site site.tar.gz`
+
+**6. [lacuna]** O comando que descomprime um arquivo `.gz`, o par do `gzip`, é: ______
+
+**7.** Qual comando cria o arquivo `docs.zip` com o diretório `docs` e tudo o que há dentro dele?
+
+- A) `zip docs.zip docs`
+- B) `zip -r docs.zip docs`
+- C) `unzip -r docs.zip docs`
+- D) `tar -zip docs.zip docs`
+
+### Redirecionamento
+
+**8.** O que faz `ls /etc /naoexiste &> tudo.txt`?
+
+- A) Grava só a listagem de `/etc` em `tudo.txt`
+- B) Grava só a mensagem de erro em `tudo.txt`
+- C) Grava a listagem e a mensagem de erro em `tudo.txt`
+- D) Executa o `ls` em segundo plano e grava a saída em `tudo.txt`
+
+**9.** O que faz `sort < nomes.txt > ordenados.txt`?
+
+- A) Ordena `ordenados.txt` e grava em `nomes.txt`
+- B) Lê `nomes.txt`, ordena e grava o resultado em `ordenados.txt`
+- C) Dá erro: não se pode usar `<` e `>` no mesmo comando
+- D) Acrescenta `nomes.txt` ao final de `ordenados.txt`
+
+**10. [lacuna]** O operador que entrega a um comando várias linhas escritas no próprio script, até uma palavra delimitadora, é: ______
+
+### Diretórios
+
+**11.** Em qual caminho cada interface de rede aparece como um subdiretório, organizado pelo kernel?
+
+- A) `/proc/net/dev`
+- B) `/sys/class/net`
+- C) `/dev/net`
+- D) `/etc/network`
+
+**12. [lacuna]** O diretório que guarda o kernel e o `initramfs` é: /______
+
+**13.** Em uma distribuição Debian, onde fica o banco de dados que registra os pacotes instalados?
+
+- A) `/etc/apt`
+- B) `/var/cache/apt`
+- C) `/var/lib/dpkg`
+- D) `/usr/share/doc`
+
+### Processos
+
+**14.** Dentro do `top`, qual tecla ordena os processos por uso de memória?
+
+- A) `P`
+- B) `M`
+- C) `k`
+- D) `q`
+
+**15.** Qual é a diferença entre `kill 1234` e `kill -9 1234`?
+
+- A) Nenhuma: os dois enviam `SIGKILL`
+- B) O primeiro envia `SIGTERM`, que o processo pode tratar; o segundo envia `SIGKILL`, que não pode ser tratado nem ignorado
+- C) O primeiro suspende o processo; o segundo o encerra
+- D) O primeiro encerra o processo 1234; o segundo encerra os 9 primeiros processos
+
+**16. [lacuna]** O comando que lista os trabalhos (*jobs*) iniciados no shell atual é: ______
+
+**17.** No `free -h`, o que a coluna `available` representa?
+
+- A) A memória que nunca foi usada desde o boot
+- B) A memória que pode ser entregue a novos programas sem recorrer à swap, contando o cache que pode ser liberado
+- C) O tamanho da swap
+- D) A memória reservada para o kernel
+
+### Rede
+
+**18.** O `/etc/resolv.conf` da VM tem a linha `nameserver 127.0.0.53`. O que ela significa?
+
+- A) O DNS da VM está desligado
+- B) As consultas de DNS vão para um resolvedor local, que roda na própria máquina
+- C) A VM só consegue resolver os nomes do `/etc/hosts`
+- D) O IP da VM é `127.0.0.53`
+
+**19.** Qual é a diferença entre `host lpi.org` e `ping -c 1 lpi.org`?
+
+- A) Nenhuma: os dois só consultam o DNS
+- B) O `host` consulta o DNS e mostra o endereço; o `ping` resolve o nome e testa se a máquina responde
+- C) O `host` testa a conectividade; o `ping` consulta o DNS
+- D) O `ping` só funciona com endereços IP
+
+**20. [lacuna]** O comando atual que substitui o `ifconfig` e o `route` é: ______
+
+---
+
+### Gabarito comentado do R2
+
+<details>
+<summary>Abra só depois de responder</summary>
+
+| Q | Tema | Tópico | Resposta | Por quê |
+|---|---|---|---|---|
+| 1 | Permissões | 5.3 | **A** | 7 = `rwx`, 5 = `r-x`, 0 = `---`, com o `d` de diretório |
+| 2 | Permissões | 5.4 | **t** | `t` minúsculo: sticky ligado e `x` presente. Sem o `x`, seria `T` |
+| 3 | Permissões | 5.3 | **B** | `S` maiúsculo no lugar do `x` do dono: SUID ligado sem permissão de execução |
+| 4 | Permissões | 5.3 | **B** | Os outros perdem tudo: `r-x` vira `---` |
+| 5 | tar | 3.1 | **B** | O `-C` muda para o diretório antes de extrair. Na A, `/tmp/site` seria tratado como um item a extrair |
+| 6 | Compressão | 3.1 | **gunzip** | Equivale a `gzip -d` |
+| 7 | Compressão | 3.1 | **B** | O `zip` precisa do `-r` para entrar no diretório. O `unzip` extrai |
+| 8 | Redirecionamento | 3.2 | **C** | O `&>` manda os fluxos 1 e 2 para o mesmo arquivo, como `> tudo.txt 2>&1` |
+| 9 | Redirecionamento | 3.2 | **B** | O shell abre `nomes.txt` como entrada e `ordenados.txt` como saída antes de o `sort` rodar |
+| 10 | Redirecionamento | 3.2 | **<<** | O *here document*. Não confundir com `<`, que lê de um arquivo |
+| 11 | Diretórios | 4.3 | **B** | `/sys/class/net` traz um diretório por interface (`lo`, `enp0s3`) |
+| 12 | Diretórios | 4.3 | **boot** | A barra já está no enunciado |
+| 13 | Diretórios | 4.3 | **C** | O `/var/cache/apt` guarda os `.deb` baixados, não o registro do que está instalado |
+| 14 | Processos | 4.3 | **B** | `M` memória, `P` CPU, `k` encerra, `q` sai |
+| 15 | Processos | 4.3 | **B** | Sem número, o `kill` envia `SIGTERM` (15) |
+| 16 | Processos | 4.3 | **jobs** | — |
+| 17 | Processos | 4.3 | **B** | O `free` coloca no `available` também o cache que o kernel libera quando precisa |
+| 18 | Rede | 4.4 | **B** | No Ubuntu, `127.0.0.53` é o `systemd-resolved`, que repassa as consultas aos servidores reais |
+| 19 | Rede | 4.4 | **B** | O `ping` também resolve o nome, mas o objetivo dele é testar a conectividade |
+| 20 | Rede | 4.4 | **ip** | `ip addr show` substitui o `ifconfig`; `ip route show` substitui o `route` |
+
+### Apuração por tema
+
+| Tema | Questões | Acertos | Chutes acertados |
+|---|---|---|---|
+| Permissões | 1 a 4 | /4 | |
+| `tar` e compressão | 5 a 7 | /3 | |
+| Redirecionamento | 8 a 10 | /3 | |
+| Diretórios virtuais e `/var` | 11 a 13 | /3 | |
+| Processos | 14 a 17 | /4 | |
+| Rede | 18 a 20 | /3 | |
+| **Todas as questões [lacuna]** | 2, 6, 10, 12, 16, 20 | /6 | |
+| **Total** | | /20 | |
+
+</details>
 
 ---
 
@@ -308,3 +477,4 @@ Mesmo formato, 20 questões, 25 minutos. Conteúdo: as quatro frentes de novo, c
 |---|---|
 | 06/10/2026 | Criação, a partir das dicas recorrentes trazidas por Davi. Verificação contra o PDF oficial; mini-simulado R1; regras de lacuna; cola das quatro frentes |
 | 13/10/2026 | Nova estratégia (prova em 23/11): R1 movido para sex 23/10, depois do Tópico 4; R2 para ter 27/10; aquecimento rotativo a partir de 26/10; simulado 02 escrito com os mínimos por tema |
+| 18/10/2026 | Mini-simulado R2 escrito, com processos, rede e `/sys` |
