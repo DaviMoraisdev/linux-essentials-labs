@@ -302,7 +302,7 @@ Um simulado geral de 40 questões, 60 minutos, sem consulta, com a distribuiçã
 7. **Exceção:** a véspera da prova (domingo 22/11) não tem simulado. O final é na quinta 19/11.
 8. **Dificuldade (06/10):** do #2 em diante os simulados escritos aqui ficam mais próximos do exame: enunciados com cenário, pegadinhas de comando, escolha de mais de uma resposta, preenchimento e distratores plausíveis. Use pelo menos 45 minutos e reserve os últimos 15 para uma segunda passada nas marcadas.
 
-**Relação com a autoavaliação semanal.** As autoavaliações das Semanas 5 e 6 são as últimas: a da Semana 5 em 13 e 14/10 e a da Semana 6 no domingo 18/10. A partir da Semana 8, com os cinco tópicos estudados, o simulado substitui a autoavaliação.
+**Relação com a autoavaliação semanal.** Restam duas: a da Semana 6 (Tópico 5) na quinta 22/10 e a da Semana 8 (Tópico 4) no sábado 24/10, a última do plano. A partir da Semana 8, com os cinco tópicos estudados, o simulado substitui a autoavaliação.
 
 ---
 
@@ -348,8 +348,8 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 | 1 | Seg 05/10 | 6 | `simulado-01` | **Feito: 28 de 40 (70%), 23 firmes** |
 | 2 | **Sáb 17/10** | 7 | `simulado-02` (pronto) | **24 ou mais** (Checkpoint A) |
 | R1 | Sex 23/10 | 8 | Reforço, 20 questões (`praticas_simulados.md`) | 15 de 20 |
-| 3 | **Dom 25/10** | 8 | `simulado-03` | **28 ou mais** (Checkpoint B) |
-| R2 | Ter 27/10 | 9 | Reforço, 20 questões (a escrever até 24/10) | 15 de 20 |
+| 3 | **Dom 25/10** | 8 | `simulado-03` (pronto) | **28 ou mais** (Checkpoint B) |
+| R2 | Ter 27/10 | 9 | Reforço, 20 questões (pronto, `praticas_simulados.md`, seção 8) | 15 de 20 |
 | 4 | Qui 29/10 | 9 | Exame final de prática do NDG | 28 ou mais |
 | 5 | Dom 01/11 | 9 | `simulado-05` | **30 ou mais** |
 | 6 | Ter 03/11 | 10 | `simulado-06` | Acompanhar |
@@ -381,7 +381,7 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 
 ### Semana 8 — 19 a 25/10 · Etapa 2, Tópico 4
 
-**Roteiros:** `labs/semana-07.md`, seção 8. **Registro:** `labs/semana-08.md`.
+**Arquivo detalhado:** `labs/semana-08.md` (roteiros, autoavaliação do Tópico 4, Checkpoint B e cola rápida).
 
 | Dia | Atividade |
 |---|---|
@@ -390,7 +390,7 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 | Qua 21 | Prática 5 — rede (4.4) |
 | Qui 22 | Autoavaliação da Semana 6 · leitura do 4.1 · here document · quizzes do NDG dos Tópicos 4 e 5 |
 | Sex 23 | **R1** |
-| Sáb 24 | Reposição |
+| Sáb 24 | **Autoavaliação da Semana 8** (Tópico 4, a última do plano) · reposição |
 | Dom 25 | **Simulado 03** · **Checkpoint B** |
 
 **Marco:** ao fim desta semana, o curso está fechado e os cinco tópicos foram estudados.
