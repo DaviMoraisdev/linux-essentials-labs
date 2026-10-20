@@ -40,11 +40,11 @@ Os temas se sobrepõem às questões dos cinco tópicos; não são questões ext
 
 | Quando | O que | Tempo |
 |---|---|---|
-| Sáb 17/10 | Simulado 02 já traz o mínimo da seção 2.1 (escrito em 13/10); apurar o desempenho por tema | dentro do simulado |
-| Seg 19/10 | Prática 3 (Semana 8): mapa dos diretórios virtuais, `/proc`, `/sys` e `/dev` lado a lado | dentro da Prática 3 |
-| Qui 22/10 | Here document estudado como conceito, no bloco curto da Semana 8 | 15 min |
-| **Sex 23/10** | **Mini-simulado R1** (20 questões, 25 min) e apuração (10 min) | 35 min |
-| **Ter 27/10** | **Mini-simulado R2**, escrito até sáb 24/10: inclui `/sys`, rede e processos | 35 min |
+| Sáb 24/10 | Simulado 02 já traz o mínimo da seção 2.1; apurar o desempenho por tema | dentro do simulado |
+| Qua 21/10 | Prática 3 (Semana 8): mapa dos diretórios virtuais, `/proc`, `/sys` e `/dev` lado a lado | dentro da Prática 3 |
+| Seg 26/10 | Here document estudado como conceito, no bloco curto | 15 min |
+| **Ter 27/10** | **Mini-simulado R2** (seção 8): inclui `/sys`, rede e processos | 35 min |
+| **Qua 28/10** | **Mini-simulado R1** (20 questões, 25 min) e apuração (10 min) | 35 min |
 | Semanas 9 a 11 | Aquecimento rotativo pelas cinco frentes (seção 2.3), nos dias sem simulado | 10 min/dia |
 
 ### 2.3 Aquecimento rotativo (a partir de 26/10)
@@ -138,7 +138,7 @@ Mnemônico: **proc de processos, dev de dispositivos, sys de hardware organizado
 
 ---
 
-## 6. Mini-simulado R1 — Sexta 23/10 (movido de 13/10 em 13/10)
+## 6. Mini-simulado R1 — Quarta 28/10
 
 **Regras:** 20 questões, 25 minutos, sem consulta, **marcando cada chute**. Nas questões de preenchimento (marcadas com **[lacuna]**), escreva só a resposta, seguindo a seção 4. Aberto o gabarito, anote apenas as erradas e as chutadas, corrija no Notion e registre o resultado em `resultados_simulados.md`, seções 2.5 e 4.
 
@@ -478,3 +478,4 @@ A) `/dev/cpu` · B) `/var/cpuinfo` · C) `/proc/cpuinfo` · D) `/etc/cpuinfo`
 | 06/10/2026 | Criação, a partir das dicas recorrentes trazidas por Davi. Verificação contra o PDF oficial; mini-simulado R1; regras de lacuna; cola das quatro frentes |
 | 13/10/2026 | Nova estratégia (prova em 23/11): R1 movido para sex 23/10, depois do Tópico 4; R2 para ter 27/10; aquecimento rotativo a partir de 26/10; simulado 02 escrito com os mínimos por tema |
 | 18/10/2026 | Mini-simulado R2 escrito, com processos, rede e `/sys` |
+| 19/10/2026 | R1 remarcado para qua 28/10, depois do R2, para o simulado 02 caber no sábado 24/10 |
