@@ -26,17 +26,18 @@
 | Bandit | Níveis 0 a 9 |
 | Cards de revisão (Notion) | Em uso desde a Semana 1 |
 
-### Dívidas a pagar — Etapa 1, de 13/10 a 18/10
+### Dívidas da Etapa 1 — situação em 19/10
 
-As únicas dívidas que continuam no plano. Depois delas, o plano só tem conteúdo não estudado e simulados.
+O Checkpoint A (18/10) deu **vermelho**: o que não fechou na Semana 7 entrou no calendário da Semana 8, e o Checkpoint B (25/10) decide a data da prova.
 
-| Dívida | Roteiro | Data | Situação em 15/10 |
-|---|---|---|---|
-| Autoavaliação da Semana 5 (10 questões, shell script) | `labs/semana-06.md` | 13 e 15/10 | **Feita: 9 de 10** (meta 8) |
-| Prática 1 — usuários e grupos, com Exercícios da LPI 5.1 e 5.2 | `labs/semana-06.md` | 13 e 15/10 | **Feita**; faltam os Exercícios da LPI 5.1 e 5.2 (dom 18/10) |
-| Prática 2 — permissões, com Exercícios da LPI 5.3 e 5.4 | `labs/semana-06.md` | **Dom 18/10** | A fazer |
-| Simulado 02 (40 questões) | `labs/simulados-práticos.lpi/simulado-02.md` | Sáb 17/10 | A fazer |
-| Autoavaliação da Semana 6 (10 questões, Tópico 5) | `labs/semana-07.md`, seção 6 | **Qui 22/10** | A fazer (quatro dias depois da Prática 2) |
+| Dívida | Situação | Nova data |
+|---|---|---|
+| Autoavaliação da Semana 5 | **Feita: 9 de 10** | — |
+| Prática 1 | **Feita**; faltam os Exercícios da LPI 5.1 e 5.2 | Ter 20/10 |
+| Prática 2 | Blocos 1 a 4 feitos em 19/10; faltam o bloco 5 (resultados), o bloco 6, a limpeza e os Exercícios da LPI 5.3 e 5.4 | Ter 20/10 |
+| Simulado 02 | Não feito | **Sáb 24/10** |
+| Autoavaliação da Semana 6 | A fazer | Qui 22/10 |
+| Curso, aulas 41 a 72 | Parado na aula 40 | Ter 20, sáb 24 e dom 25/10 |
 
 ### Conteúdo ainda não estudado — Etapa 2, de 15/10 a 25/10
 
@@ -287,7 +288,7 @@ Os erros recorrentes da seção 9 não têm atividade própria. Voltam em dois m
 
 Dicas de candidatos, de fonte não oficial, conferidas contra o PDF da LPI: permissões (r = 4, w = 2, x = 1), `tar` e compressão, redirecionamento (`>`, `>>`, `2>`, `<<`), diretórios `/proc`, `/sys`, `/dev` e `/var`, e **atenção às questões de preencher a lacuna**. Todas constam do material oficial. O plano já cobria permissões, `tar` e `/proc` e `/dev`; as lacunas reais eram o `<<` como conceito, o `/sys` e o **formato de lacuna**, nunca treinado (a Q11 do simulado #1 foi respondida com um sublinhado na frente de `PATH`).
 
-Como entram, sem aumentar a carga: (1) **mínimo de questões por tema em todo simulado a partir do #2**: permissões 4, `tar` 2, redirecionamento 3 (com `<<`), diretórios 3, **lacunas 5**; (2) **mini-simulados de reforço de 20 questões e 25 minutos**: R1 na sexta 23/10 e R2 na terça 27/10 (datas de 13/10); (3) a partir de 26/10, o aquecimento diário gira pelas cinco frentes (segunda permissões, terça `tar`, quarta redirecionamento, quinta diretórios, sexta lacunas). O detalhe, a cola e o R1 com gabarito estão em `praticas-reforco-dicas-recorrentes.md`; o desempenho por tema é registrado em `praticas-resultados-simulados-e-correcoes.md`.
+Como entram, sem aumentar a carga: (1) **mínimo de questões por tema em todo simulado a partir do #2**: permissões 4, `tar` 2, redirecionamento 3 (com `<<`), diretórios 3, **lacunas 5**; (2) **mini-simulados de reforço de 20 questões e 25 minutos**: R2 na terça 27/10 e R1 na quarta 28/10; (3) a partir de 26/10, o aquecimento diário gira pelas cinco frentes (segunda permissões, terça `tar`, quarta redirecionamento, quinta diretórios, sexta lacunas). O detalhe, a cola e o R1 com gabarito estão em `praticas-reforco-dicas-recorrentes.md`; o desempenho por tema é registrado em `praticas-resultados-simulados-e-correcoes.md`.
 
 ### Os simulados
 
@@ -346,10 +347,10 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 | # | Data | Semana | Fonte | Meta |
 |---|---|---|---|---|
 | 1 | Seg 05/10 | 6 | `simulado-01` | **Feito: 28 de 40 (70%), 23 firmes** |
-| 2 | **Sáb 17/10** | 7 | `simulado-02` (pronto) | **24 ou mais** (Checkpoint A) |
-| R1 | Sex 23/10 | 8 | Reforço, 20 questões (`praticas_simulados.md`) | 15 de 20 |
+| 2 | **Sáb 24/10** | 8 | `simulado-02` (pronto; não feito em 17/10) | 24 ou mais |
 | 3 | **Dom 25/10** | 8 | `simulado-03` (pronto) | **28 ou mais** (Checkpoint B) |
 | R2 | Ter 27/10 | 9 | Reforço, 20 questões (pronto, `praticas_simulados.md`, seção 8) | 15 de 20 |
+| R1 | Qua 28/10 | 9 | Reforço, 20 questões (pronto, `praticas_simulados.md`, seção 6) | 15 de 20 |
 | 4 | Qui 29/10 | 9 | Exame final de prática do NDG | 28 ou mais |
 | 5 | Dom 01/11 | 9 | `simulado-05` | **30 ou mais** |
 | 6 | Ter 03/11 | 10 | `simulado-06` | Acompanhar |
@@ -367,39 +368,32 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 
 ---
 
-### Semana 7 — 12 a 18/10 · Etapa 1, dívidas, e fechamento do curso
+### Semana 7 — 12 a 18/10 · Etapa 1, dívidas
 
-**Arquivo detalhado:** `labs/semana-07.md`.
+**Arquivo detalhado:** `labs/semana-07.md`. Feito: autoavaliação da Semana 5 (9 de 10), Prática 1 e, na segunda 19/10, a Prática 2 até o bloco 4. Não feito: simulado 02 e curso. **Checkpoint A: vermelho.**
 
-| Dia | Atividade |
-|---|---|
-| Ter 13 e Qui 15 | Autoavaliação da Semana 5 (9 de 10) · Prática 1 — **feitas** |
-| Qua 14 | Sem estudo |
-| Sex 16 | Sem estudo |
-| Sáb 17 | **Simulado 02** · curso, aulas 41 a 58 |
-| Dom 18 | **Fechamento das dívidas:** Prática 2 · Exercícios da LPI 5.1 a 5.4 · curso, aulas 59 a 72 · **Checkpoint A** (previsto amarelo) |
+### Semana 8 — 19 a 25/10 · Dívidas da Semana 7 e Tópico 4
 
-### Semana 8 — 19 a 25/10 · Etapa 2, Tópico 4
-
-**Arquivo detalhado:** `labs/semana-08.md` (roteiros, autoavaliação do Tópico 4, Checkpoint B e cola rápida).
+**Arquivo detalhado:** `labs/semana-08.md` (roteiros, autoavaliação do Tópico 4, Checkpoint B e cola rápida). Calendário refeito em 19/10.
 
 | Dia | Atividade |
 |---|---|
-| Seg 19 | Prática 3 — hardware, discos e o mapa dos diretórios (4.2 e 4.3) |
-| Ter 20 | Prática 4 — processos, memória e logs (4.3) |
-| Qua 21 | Prática 5 — rede (4.4) |
-| Qui 22 | Autoavaliação da Semana 6 · leitura do 4.1 · here document · quizzes do NDG dos Tópicos 4 e 5 |
-| Sex 23 | **R1** |
-| Sáb 24 | **Autoavaliação da Semana 8** (Tópico 4, a última do plano) · reposição |
-| Dom 25 | **Simulado 03** · **Checkpoint B** |
+| Ter 20 | Fechar a Prática 2 · Exercícios da LPI 5.1 a 5.4 · aulas 41 a 46 |
+| Qua 21 | Prática 3 — hardware, discos e o mapa dos diretórios (4.2 e 4.3) |
+| Qui 22 | Autoavaliação da Semana 6 · Prática 4 — processos, memória e logs (4.3) |
+| Sex 23 | Prática 5 — rede (4.4) |
+| Sáb 24 | **Simulado 02** · aulas 47 a 60 |
+| Dom 25 | **Simulado 03** · aulas 61 a 72 · **Checkpoint B** (decide a data da prova) |
 
-**Marco:** ao fim desta semana, o curso está fechado e os cinco tópicos foram estudados.
+**Marco:** ao fim desta semana, os cinco tópicos foram estudados e o curso está fechado.
 
 ### Semana 9 — 26/10 a 01/11 · Etapa 3, simulados
 
 | Dia | Atividade |
 |---|---|
+| Seg 26 | Autoavaliação da Semana 8 (Tópico 4) · bloco curto: 4.1 e here document |
 | Ter 27 | **R2** |
+| Qua 28 | **R1** |
 | Qui 29 | **Simulado 04** (exame final de prática do NDG) |
 | Dom 01/11 | **Simulado 05** |
 | Demais dias | Revisão dirigida dos erros (30 min) e aquecimento rotativo pelas cinco frentes |
@@ -557,12 +551,12 @@ A coluna da direita é apenas o caminho natural dentro do roadmap atual, não um
 
 | Checkpoint | Data | Critérios cumpridos | Resultado | Decisão |
 |---|---|---|---|---|
-| A | 18/10 | | | |
+| A | 18/10 | Nenhum dos quatro (Prática 2 em parte; simulado 02 não feito; autoavaliação S6 pendente; curso na aula 40) | **Vermelho** | A Semana 8 abre com as dívidas; o Checkpoint B decide a data |
 | B | 25/10 | | | |
 | Gate | 08/11 | | | |
 | Final | 19/11 | | | |
 
-Histórico das decisões: em 08/10 a compra do voucher foi adiada; em 10/10 a data principal passou a 16/11; em 13/10 a prova foi fixada em **23/11**.
+Histórico das decisões: em 08/10 a compra do voucher foi adiada; em 10/10 a data principal passou a 16/11; em 13/10 a prova foi fixada em **23/11**; em 19/10 o Checkpoint A deu vermelho, e a data passou a depender do Checkpoint B.
 
 ---
 
