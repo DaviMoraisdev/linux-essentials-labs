@@ -104,7 +104,7 @@ Dois ajustes nos roteiros, por causa da ordem nova:
 
 ## 4. Calendário da semana
 
-**Replanejado em 15/10 e de novo em 16/10.** A quarta 14/10 e a sexta 16/10 ficaram sem estudo. A Prática 2 passa para o domingo, que fecha todas as dívidas da semana. As aulas de sexta vão para o sábado, para o domingo não passar de 3h30.
+**Fechamento em 19/10.** A quarta 14/10, a sexta 16/10 e o fim de semana ficaram sem estudo; a Prática 2 começou na segunda 19/10. O que não fechou foi para o calendário da Semana 8 (`labs/semana-08.md`).
 
 | Dia | Atividade | Tempo |
 |---|---|---|
@@ -112,20 +112,9 @@ Dois ajustes nos roteiros, por causa da ordem nova:
 | Qua 14 | Sem estudo | — |
 | Qui 15 | Autoavaliação da Semana 5, questões 8 a 10 · Prática 1, bloco 3 e experimento sem `-m` | **feito** |
 | Sex 16 | Sem estudo; a Prática 2 foi para o domingo | — |
-| **Sáb 17** | **Simulado 02** (60 min, primeira atividade) · apuração (25 min) · **curso, aulas 41 a 58** (2x até o fim do Tópico 5) | cerca de 3h10 |
-| **Dom 18** | **Fechamento das dívidas:** leitura das lições 5.3 e 5.4 do PDF (15 min) · **Prática 2 — permissões** (1h) com Exercícios da LPI 5.3 e 5.4 (20 min) e a limpeza · Exercícios da LPI 5.1 e 5.2 e o que faltou da Prática 1: os 7 campos do `/etc/passwd` e o arquivo do `last` (25 min) · **curso, aulas 59 a 72** (fechamento) · **Checkpoint A** (10 min) | cerca de 3h30 |
-
-**Total do fim de semana: cerca de 6h40.** A vantagem da troca: as aulas do Tópico 5 chegam **antes** da Prática 2, e não depois. Se faltar tempo, corte nesta ordem:
-
-| Ordem | Corte | Para onde vai |
-|---|---|---|
-| 1 | Exploratórios da LPI (mantendo os Guiados) | Saem |
-| 2 | Aulas que não couberem no sábado | Domingo, depois da Prática 2 |
-| 3 | Aulas que não couberem no domingo | Segunda 19/10 e terça 20/10, 30 minutos antes da prática do dia |
-
-**Não se cortam:** a Prática 2 e o simulado 02.
-
-**A autoavaliação da Semana 6 não cabe no domingo.** Ela mede retenção e precisa de três dias depois da Prática 2 (regra de 29/09); feita no mesmo dia, daria uma nota alta e falsa, como os 20 de 20 da Semana 3. Por isso vai para a **quinta 22/10**, como primeira atividade.
+| Sáb 17 | Sem estudo; o simulado 02 foi para o sábado 24/10 | — |
+| Dom 18 | Sem estudo | — |
+| Seg 19 | Prática 2, blocos 1 a 4 e parte do 5 | **feito** |
 
 Velocidade do curso: **2x** onde o vídeo repete o que já foi praticado (shell script, Tópico 5 depois das práticas); **1.25x** no Tópico 4, que é conteúdo novo.
 
@@ -190,10 +179,10 @@ Critérios revistos em 13/10 para a nova estratégia. Marque com base no que est
 
 | # | Critério | Cumprido |
 |---|---|---|
-| 1 | Práticas 1 e 2 feitas e registradas | |
-| 2 | Simulado 02 com **24 ou mais** acertos | |
-| 3 | Autoavaliações das Semanas 5 e 6 feitas (meta: 8 de 10 em cada) | Semana 5: **sim, 9 de 10**. Semana 6: na quinta 22/10 |
-| 4 | Curso até a aula 72 (ou até a 64, com 65 a 72 marcadas para a segunda 19/10) | |
+| 1 | Práticas 1 e 2 feitas e registradas | **Não**: a Prática 2 ficou em parte (19/10) |
+| 2 | Simulado 02 com **24 ou mais** acertos | **Não**: não foi feito |
+| 3 | Autoavaliações das Semanas 5 e 6 feitas (meta: 8 de 10 em cada) | Semana 5: **sim, 9 de 10**. Semana 6: **não**, marcada para a quinta 22/10 |
+| 4 | Curso até a aula 72 (ou até a 64, com 65 a 72 marcadas para a segunda 19/10) | **Não**: parado na aula 40 |
 
 | Resultado | Condição | Decisão |
 |---|---|---|
@@ -201,7 +190,7 @@ Critérios revistos em 13/10 para a nova estratégia. Marque com base no que est
 | **Amarelo** | Um critério falhou | Segue; o item vira a primeira atividade da segunda 19/10 |
 | **Vermelho** | Dois ou mais falharam, ou simulado 02 abaixo de 20 | A semana de 19/10 abre com as dívidas restantes e o Checkpoint B (25/10) passa a decidir a data |
 
-**Previsão de 16/10: amarelo.** O critério 3 falha no domingo por desenho: a autoavaliação da Semana 6 precisa de três dias depois da Prática 2 e fica para a quinta 22/10. Se mais um critério falhar (Prática 2, simulado 02 ou curso), o resultado passa a vermelho.
+**Resultado registrado em 19/10: VERMELHO.** Os quatro critérios falharam. Pela regra, a Semana 8 abre com as dívidas restantes e **o Checkpoint B, no domingo 25/10, passa a decidir a data da prova**: verde ou amarelo mantêm 23/11; vermelho move para **30/11**, o limite absoluto.
 
 Uma autoavaliação abaixo de 8 não reprova o checkpoint: as questões erradas viram o aquecimento da Etapa 2.
 
@@ -311,9 +300,77 @@ A anotação diz "`/home/alice` e `/home/bob` → grupo primário". São coisas 
 
 Na sua VM: o grupo primário da `alice` é `alice`, o do `bob` é `bob` e o da `carol` é `ops` (por causa do `-g`). Para ver: `id -gn alice ; id -gn carol ; grep '^alice:' /etc/passwd | cut -d: -f4,6`.
 
-### Prática 2 — domingo 18/10
+### Prática 2 — segunda 19/10 (em andamento)
 
-*A preencher.*
+**Blocos 1 a 4 anotados em 19/10; bloco 5 em parte.** Faltam: os resultados do bloco 5, o bloco 6, a limpeza, os Exercícios da LPI 5.3 e 5.4 e o `cheatsheets/permissoes.md`.
+
+#### Bloco 1 — Ler as permissões
+
+Listagem registrada: `/etc/shadow` com `-rw-r-----` (`root shadow`), `/home` com `drwxr-xr-x`, `/tmp` com `drwxrwxrwt` e `/usr/bin/passwd` com `-rwsr-xr-x`. As tabelas de `u`, `g`, `o` e `a` e de `r`, `w` e `x` em arquivo e em diretório estão corretas.
+
+Ajustes:
+
+1. **Na linha do `/tmp`, o dono saiu `rwr`.** O certo é `rwx`: `drwxrwxrwt` se lê `d` · `rwx` · `rwx` · `rwt`.
+2. **Onde aparecem o `s` e o `t`**, que o roteiro pedia: o `s` do `/usr/bin/passwd` está no lugar do `x` do **dono** (SUID: o programa roda como root, que é quem pode gravar no `/etc/shadow`); o `t` do `/tmp` está no lugar do `x` dos **outros** (sticky bit).
+3. A primeira linha da listagem saiu `- rw-r-----`: o `-` do tipo virou marcador de lista no editor. No caderno, coloque a listagem em bloco de código para o `-` não sumir.
+4. O `/etc/shadow` passou de 942 para 1129 bytes desde a Prática 1: são as linhas da `alice`, do `bob`, da `carol` e do `teste_sem_nome`.
+
+#### Bloco 2 — `chmod` em octal e simbólico
+
+| Comando, na ordem | Octal | Simbólico | Revisão |
+|---|---|---|---|
+| `chmod 640 teste` | 640 | `rw-r-----` | Certo |
+| `chmod u+x teste` | 740 | `rwxr-----` | Certo |
+| `chmod g=rw,o= teste` | 760 | `rwxrw----` | Certo |
+| `chmod a-x teste` | 660 | `rw-rw----` | Certo |
+| `chmod 4644 teste` | **4644** | `rwSr--r--` | No caderno saiu **4664**. O simbólico está certo, e ele mostra o erro: `r--` no grupo vale 4, não 6 |
+| `chmod u+x teste` | 4744 | `rwsr--r--` | Certo |
+
+A regra do `s` e do `S` está registrada com o mecanismo certo: minúsculo é bit especial com `x`; maiúsculo é bit especial sem `x`. O mesmo vale para `t` e `T`.
+
+#### Bloco 3 — `chown` e `chgrp`
+
+Correto em todos os passos: `chown bob:dev` troca dono e grupo; `chown :ops` troca só o grupo; `chgrp dev` também só o grupo; resultado final `bob` e `dev`. A tabela de quem pode o quê está certa: só o root troca o dono; o dono troca o grupo, para um grupo do qual participa; o dono ou o root usam o `chmod`. A Correção 68 (`chmod` contra `chown`) está resolvida na prática.
+
+#### Bloco 4 — Diretório: o `x` é de atravessar
+
+**As frases do caderno estão certas, mas a tabela contradiz duas delas.** Para 500 e 100 você escreveu que "consegue acessar um arquivo pelo nome", e a tabela marcou `cat pasta/arq` como "Não". O certo é **Sim** nos dois: o `x` basta para atravessar o diretório e abrir um arquivo cujo nome você conhece. Tabela corrigida:
+
+| Modo | `ls pasta` | `cat pasta/arq` | `touch pasta/novo` | `rm pasta/arq` |
+|---|---|---|---|---|
+| 700 | Sim | Sim | Sim | Sim |
+| 600 | Só os nomes, com erros nos detalhes | Não | Não | Não |
+| 500 | Sim | **Sim** | Não | Não |
+| 300 | Não | Sim | Sim | Sim |
+| 100 | Não | **Sim** | Não | Não |
+
+Se a tabela foi preenchida como **previsão** antes de executar, vale registrar assim: "previ Não; o terminal mostrou Sim". Esse é o erro mais útil da prática, porque é o que a prova cobra (Q39 do simulado 01 e Q39 do simulado 03).
+
+As três regras, com o mecanismo:
+
+1. `r` no diretório lista os **nomes**.
+2. `x` no diretório permite **atravessar**: entrar com `cd` e abrir o que está dentro, desde que se saiba o nome.
+3. Criar, apagar e renomear mexem na **lista de entradas do diretório**, e por isso exigem `w` **e** `x` no diretório. A permissão do próprio arquivo não decide se ele pode ser apagado.
+
+#### Bloco 5 — SGID e sticky bit (em parte)
+
+Você trocou o `chmod g+wxs,o+t` pelo octal, com `sudo chown root:dev /srv/Box` e `3775`. **O caminho está certo**: o diretório nasce com 755; `g+wx` leva a 775; o `s` do grupo soma 2 e o `t` soma 1 no primeiro dígito, e o resultado é **3775**, ou `drwxrwsr-t`. A anotação traz `sudo 3775 /srv/Box`, sem o `chmod`: o comando é `sudo chmod 3775 /srv/Box`.
+
+Faltam os resultados, que são o centro do bloco:
+
+| Passo | Resultado esperado | Por quê |
+|---|---|---|
+| `ls -ld /srv/Box` | `drwxrwsr-t ... root dev` | `s` no grupo e `t` nos outros, ambos minúsculos porque há `x` |
+| `sudo -u alice touch /srv/Box/a` e `ls -l /srv/Box` | O arquivo `a` pertence a `alice` e ao grupo **`dev`**, e não ao grupo `alice` | SGID em diretório: o arquivo novo herda o **grupo do diretório** |
+| `sudo -u bob rm /srv/Box/a` | **Falha**: `rm: cannot remove '/srv/Box/a': Operation not permitted` | O `bob` tem `w` no diretório pelo grupo `dev`, mas o sticky bit só deixa apagar quem é dono do arquivo, dono do diretório ou root |
+
+Registre o que o seu terminal mostrou nos dois últimos passos. Se o `rm` do `bob` funcionou, alguma coisa ficou diferente (por exemplo, o `t` não foi aplicado), e vale conferir com `ls -ld /srv/Box`.
+
+#### Bloco 6, limpeza e Exercícios da LPI — a fazer
+
+O bloco 6 responde a duas perguntas: qual diretório é esvaziado na inicialização (o `/run`, que vive em RAM; o `/tmp` costuma ser limpo no boot; o `/var/tmp` é preservado entre reinícios) e por que o `cat sub/link` falha (o link guarda o texto `alvo`, que é resolvido **a partir do diretório onde o link está**, `sub/`, e `sub/alvo` não existe).
+
+A limpeza inclui o usuário do experimento sem `-m`: `sudo userdel teste_sem_nome`, além da `alice`, do `bob`, da `carol` e dos grupos `dev` e `ops`.
 
 ### Simulado 02 — sábado 17/10
 
@@ -340,9 +397,10 @@ A numeração segue a série global. **A próxima é a 76.** Erros de simulado e
 | Ter 13 | 2h05 | | Autoavaliação S5 (1 a 7) e Prática 1, blocos 1 e 2 |
 | Qua 14 | 2h20 | 0 | Sem estudo |
 | Qui 15 | 1h | | Autoavaliação S5 (8 a 10) e Prática 1, bloco 3 |
-| Sex 16 | 2h10 | 0 | Sem estudo; Prática 2 para o domingo |
-| Sáb 17 | 3h10 | | Simulado 02 e aulas 41 a 58 |
-| Dom 18 | 3h30 | | Prática 2, Exercícios da LPI 5.1 a 5.4, aulas 59 a 72 e Checkpoint A |
+| Sex 16 | 2h10 | 0 | Sem estudo |
+| Sáb 17 | 3h10 | 0 | Sem estudo |
+| Dom 18 | 3h30 | 0 | Sem estudo |
+| Seg 19 | — | | Prática 2, blocos 1 a 4 e parte do 5 |
 
 ---
 
@@ -350,15 +408,10 @@ A numeração segue a série global. **A próxima é a 76.** Erros de simulado e
 
 - [x] Autoavaliação da Semana 5 respondida e conferida (13 e 15/10): 9 de 10
 - [x] Prática 1, blocos 1 a 3 e experimento (13 e 15/10)
-- [ ] Exercícios da LPI 5.1 e 5.2 (domingo 18/10)
-- [ ] Prática 2, com Exercícios da LPI 5.3 e 5.4 e limpeza dos usuários de teste (domingo 18/10)
-- [ ] `cheatsheets/permissoes.md` escrito à mão, nos 10 minutos de registro da Prática 2
-- [ ] Curso, aulas 41 a 58 (sábado)
-- [ ] Simulado 02 e apuração por tópico e por tema (sábado 17/10)
-- [ ] Curso, aulas 59 a 72 (domingo)
-- [ ] Autoavaliação da Semana 6 respondida e conferida (quinta 22/10)
-- [ ] Checkpoint A preenchido
-- [ ] Commits ao fim de cada sessão
+- [x] Prática 2, blocos 1 a 4 (19/10)
+- [x] Checkpoint A registrado: vermelho
+
+Os itens abertos (resto da Prática 2, Exercícios da LPI 5.1 a 5.4, simulado 02, autoavaliação da Semana 6 e curso, aulas 41 a 72) estão no checklist da Semana 8.
 
 ---
 
