@@ -40,8 +40,8 @@ Os temas se sobrepõem às questões dos cinco tópicos; não são questões ext
 
 | Quando | O que | Tempo |
 |---|---|---|
-| Sáb 24/10 | Simulado 02 já traz o mínimo da seção 2.1; apurar o desempenho por tema | dentro do simulado |
-| Qua 21/10 | Prática 3 (Semana 8): mapa dos diretórios virtuais, `/proc`, `/sys` e `/dev` lado a lado | dentro da Prática 3 |
+| Qua 21/10 | Simulado 02 já traz o mínimo da seção 2.1; apurar o desempenho por tema | dentro do simulado |
+| Qui 22/10 | Prática 3 (Semana 8): mapa dos diretórios virtuais, `/proc`, `/sys` e `/dev` lado a lado | dentro da Prática 3 |
 | Seg 26/10 | Here document estudado como conceito, no bloco curto | 15 min |
 | **Ter 27/10** | **Mini-simulado R2** (seção 8): inclui `/sys`, rede e processos | 35 min |
 | **Qua 28/10** | **Mini-simulado R1** (20 questões, 25 min) e apuração (10 min) | 35 min |
@@ -478,4 +478,4 @@ A) `/dev/cpu` · B) `/var/cpuinfo` · C) `/proc/cpuinfo` · D) `/etc/cpuinfo`
 | 06/10/2026 | Criação, a partir das dicas recorrentes trazidas por Davi. Verificação contra o PDF oficial; mini-simulado R1; regras de lacuna; cola das quatro frentes |
 | 13/10/2026 | Nova estratégia (prova em 23/11): R1 movido para sex 23/10, depois do Tópico 4; R2 para ter 27/10; aquecimento rotativo a partir de 26/10; simulado 02 escrito com os mínimos por tema |
 | 18/10/2026 | Mini-simulado R2 escrito, com processos, rede e `/sys` |
-| 19/10/2026 | R1 remarcado para qua 28/10, depois do R2, para o simulado 02 caber no sábado 24/10 |
+| 19/10/2026 | R1 remarcado para qua 28/10, depois do R2, para abrir espaço na Semana 8 |
