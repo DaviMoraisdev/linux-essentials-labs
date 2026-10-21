@@ -59,7 +59,7 @@ Calendário revisto em 13/10 para a prova de 23/11 (`PLANO.md`, seção 7).
 | # | Data | Fonte | Meta | Acertos | % | Chutes acertados | Acertos firmes | Tempo | Situação |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | Seg 05/10 | `simulado-01` | Diagnóstico (esperado de 24 a 30) | **28** | **70%** | 5 | **23** | 20 min 31 s | **Concluído** |
-| 2 | **Sáb 24/10** | `simulado-02` (escrito em 13/10; não feito em 17/10) | 24 ou mais | | | | | | A fazer |
+| 2 | **Qua 21/10** | `simulado-02` (escrito em 13/10; não feito em 17/10) | 24 ou mais | | | | | | A fazer |
 | 3 | Dom 25/10 | `simulado-03` (escrito em 18/10) | **28 ou mais** (Checkpoint B) | | | | | | A fazer |
 | 4 | Qui 29/10 | Exame final de prática do NDG | 28 ou mais | | | | | | A fazer |
 | 5 | Dom 01/11 | `simulado-05` | **30 ou mais** | | | | | | A fazer |
@@ -95,8 +95,8 @@ As autoavaliações medem a retenção do conteúdo de uma semana. Desde a Seman
 | Semana 3 | Arquivos, links e pacotes | 19/09 | 20 | **20** | 16 | Respondida no dia do estudo. Gerou as Correções 27 e 28 (justificativas) |
 | Semana 4 | Objetivos 3.1 e 3.2, filtros e compactação | 29/09 | 20 | **14** | 16 | Abaixo da meta. Respondida quatro dias depois do estudo. Gerou as Correções 49 a 52 |
 | Semana 5 | Shell script | 13 e 15/10 | 10 | **9** | 8 | Nove a onze dias depois do Laboratório 2. A Q6 foi respondida com consulta |
-| Semana 6 | Tópico 5, usuários e permissões | **Qui 22/10** | 10 | | **8** | Questões em `labs/semana-07.md`, seção 6 |
-| Semana 8 | Tópico 4, o sistema operacional | **Seg 26/10** | 10 | | **8** | Questões em `labs/semana-08.md`. A última autoavaliação do plano |
+| Semana 6 | Tópico 5, usuários e permissões | **Sáb 24/10** | 10 | | **8** | Questões em `labs/semana-07.md`, seção 6 |
+| Semana 8 | Tópico 4, o sistema operacional | **Ter 27/10** | 10 | | **8** | Questões em `labs/semana-08.md`. A última autoavaliação do plano |
 
 Leitura: a de 29/09 (14/20, quatro dias depois do estudo) e o simulado #1 são os dados de retenção mais distantes do estudo disponíveis até aqui.
 
@@ -117,7 +117,7 @@ Critérios revistos em 13/10 (`PLANO.md`, seção 11). Os checkpoints anteriores
 
 Temas que aparecem com frequência nos relatos de candidatos (ver `praticas_simulados.md`). Formato: acertos e total de questões do tema. O simulado 01 não tinha esta marcação por tema; a tabela começa no simulado 02.
 
-| Tema | Mínimo por simulado | #2 (24/10) | R1 (28/10) | #3 (25/10) | R2 (27/10) | #5 | #7 | #8 | #11 |
+| Tema | Mínimo por simulado | #2 (21/10) | R1 (28/10) | #3 (25/10) | R2 (27/10) | #5 | #7 | #8 | #11 |
 |---|---|---|---|---|---|---|---|---|---|
 | Permissões | 4 | /5 | /5 | /4 | /4 | | | | |
 | `tar` e compressão | 2 | /2 | /4 | /2 | /3 | | | | |
@@ -267,7 +267,7 @@ Decisão ou checkpoint associado: .
 
 *A preencher na quarta 28/10. A apuração por tema vai na tabela da seção 2.5.*
 
-### Simulado #2 — 24/10/2026
+### Simulado #2 — 21/10/2026
 
 | Campo | Valor |
 |---|---|
@@ -276,7 +276,7 @@ Decisão ou checkpoint associado: .
 | Acertos | de 40 |
 | Meta | **24 ou mais** (Checkpoint A) |
 
-*A preencher no sábado 24/10. O simulado vem depois das Práticas 1 e 2 e antes do estudo do Tópico 4: separe as questões 26 a 33 na leitura. O registro completo fica no próprio `simulado-02.md`.*
+*A preencher na quarta 21/10. O simulado vem depois das Práticas 1 e 2 e antes do estudo do Tópico 4: separe as questões 26 a 33 na leitura. O registro completo fica no próprio `simulado-02.md`.*
 
 ---
 
@@ -432,7 +432,7 @@ São erros de conteúdo já estudado. Eles não têm atividade própria: voltam 
 | Correções 60 a 68 | Cards anotados em 05/10, conforme informado |
 | Questões erradas do simulado #1 | Correções 62 a 68 anotadas; os cinco chutes errados viram ênfase de estudo, sem card |
 | Correções 69 a 74 (curso, 08/10 e 09/10) | No seu fluxo do Notion |
-| Questões erradas do simulado 02 | A corrigir no Notion no mesmo dia do simulado (24/10) |
+| Questões erradas do simulado 02 | A corrigir no Notion no mesmo dia do simulado (21/10) |
 
 ---
 
