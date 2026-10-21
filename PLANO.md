@@ -26,18 +26,18 @@
 | Bandit | Níveis 0 a 9 |
 | Cards de revisão (Notion) | Em uso desde a Semana 1 |
 
-### Dívidas da Etapa 1 — situação em 19/10
+### Dívidas da Etapa 1 — situação em 20/10
 
 O Checkpoint A (18/10) deu **vermelho**: o que não fechou na Semana 7 entrou no calendário da Semana 8, e o Checkpoint B (25/10) decide a data da prova.
 
 | Dívida | Situação | Nova data |
 |---|---|---|
 | Autoavaliação da Semana 5 | **Feita: 9 de 10** | — |
-| Prática 1 | **Feita**; faltam os Exercícios da LPI 5.1 e 5.2 | Ter 20/10 |
-| Prática 2 | Blocos 1 a 4 feitos em 19/10; faltam o bloco 5 (resultados), o bloco 6, a limpeza e os Exercícios da LPI 5.3 e 5.4 | Ter 20/10 |
-| Simulado 02 | Não feito | **Sáb 24/10** |
-| Autoavaliação da Semana 6 | A fazer | Qui 22/10 |
-| Curso, aulas 41 a 72 | Parado na aula 40 | Ter 20, sáb 24 e dom 25/10 |
+| Prática 1 | **Feita**; faltam os Exercícios da LPI 5.1 e 5.2 e passar as correções para o caderno | Qua 21/10 |
+| Prática 2 | **Feita em 19 e 20/10**; faltam os Exercícios da LPI 5.3 e 5.4, as correções no caderno e a cola `cheatsheets/permissoes.md` | Qua 21/10 |
+| Simulado 02 | Não feito | **Qua 21/10** |
+| Autoavaliação da Semana 6 | A fazer | Sáb 24/10 |
+| Curso, aulas 41 a 72 | Parado na aula 40 | Qua 21, sáb 24 e dom 25/10 |
 
 ### Conteúdo ainda não estudado — Etapa 2, de 15/10 a 25/10
 
@@ -64,9 +64,9 @@ A lista completa, objetivo por objetivo, está em `labs/semana-07.md`, seção 2
 | 2. Encontrando seu caminho | 9 | 100% |
 | 3. Poder da linha de comando | 9 | 100% (falta o here document como conceito, 22/10) |
 | 4. Sistema operacional | 8 | 30% |
-| 5. Segurança e permissões | 7 | 50% (5.1 e 5.2 praticados na Prática 1; 5.3 e 5.4 na Prática 2, sex 16/10) |
+| 5. Segurança e permissões | 7 | 90% (Práticas 1 e 2 feitas; faltam os Exercícios da LPI) |
 
-**Progresso geral: aproximadamente 75% do conteúdo da prova.**
+**Progresso geral: aproximadamente 80% do conteúdo da prova.** Falta o Tópico 4.
 
 ---
 
@@ -303,7 +303,7 @@ Um simulado geral de 40 questões, 60 minutos, sem consulta, com a distribuiçã
 7. **Exceção:** a véspera da prova (domingo 22/11) não tem simulado. O final é na quinta 19/11.
 8. **Dificuldade (06/10):** do #2 em diante os simulados escritos aqui ficam mais próximos do exame: enunciados com cenário, pegadinhas de comando, escolha de mais de uma resposta, preenchimento e distratores plausíveis. Use pelo menos 45 minutos e reserve os últimos 15 para uma segunda passada nas marcadas.
 
-**Relação com a autoavaliação semanal.** Restam duas: a da Semana 6 (Tópico 5) na quinta 22/10 e a da Semana 8 (Tópico 4) no sábado 24/10, a última do plano. A partir da Semana 8, com os cinco tópicos estudados, o simulado substitui a autoavaliação.
+**Relação com a autoavaliação semanal.** Restam duas: a da Semana 6 (Tópico 5) no sábado 24/10 e a da Semana 8 (Tópico 4) na terça 27/10, a última do plano. A partir da Semana 8, com os cinco tópicos estudados, o simulado substitui a autoavaliação.
 
 ---
 
@@ -347,7 +347,7 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 | # | Data | Semana | Fonte | Meta |
 |---|---|---|---|---|
 | 1 | Seg 05/10 | 6 | `simulado-01` | **Feito: 28 de 40 (70%), 23 firmes** |
-| 2 | **Sáb 24/10** | 8 | `simulado-02` (pronto; não feito em 17/10) | 24 ou mais |
+| 2 | **Qua 21/10** | 8 | `simulado-02` (pronto; não feito em 17/10) | 24 ou mais |
 | 3 | **Dom 25/10** | 8 | `simulado-03` (pronto) | **28 ou mais** (Checkpoint B) |
 | R2 | Ter 27/10 | 9 | Reforço, 20 questões (pronto, `praticas_simulados.md`, seção 8) | 15 de 20 |
 | R1 | Qua 28/10 | 9 | Reforço, 20 questões (pronto, `praticas_simulados.md`, seção 6) | 15 de 20 |
@@ -378,12 +378,12 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 
 | Dia | Atividade |
 |---|---|
-| Ter 20 | Fechar a Prática 2 · Exercícios da LPI 5.1 a 5.4 · aulas 41 a 46 |
-| Qua 21 | Prática 3 — hardware, discos e o mapa dos diretórios (4.2 e 4.3) |
-| Qui 22 | Autoavaliação da Semana 6 · Prática 4 — processos, memória e logs (4.3) |
-| Sex 23 | Prática 5 — rede (4.4) |
-| Sáb 24 | **Simulado 02** · aulas 47 a 60 |
-| Dom 25 | **Simulado 03** · aulas 61 a 72 · **Checkpoint B** (decide a data da prova) |
+| Ter 20 | Prática 2 terminada |
+| Qua 21 | Exercícios da LPI 5.1 a 5.4 · **simulado 02** · correções no caderno · aulas 41 a 46 |
+| Qui 22 | Prática 3 — hardware, discos e o mapa dos diretórios (4.2 e 4.3) |
+| Sex 23 | Prática 4 — processos, memória e logs (4.3) |
+| Sáb 24 | Autoavaliação da Semana 6 · Prática 5 — rede (4.4) · aulas 47 a 58 |
+| Dom 25 | **Simulado 03** · aulas 59 a 72 · **Checkpoint B** (decide a data da prova) |
 
 **Marco:** ao fim desta semana, os cinco tópicos foram estudados e o curso está fechado.
 
@@ -391,8 +391,8 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 
 | Dia | Atividade |
 |---|---|
-| Seg 26 | Autoavaliação da Semana 8 (Tópico 4) · bloco curto: 4.1 e here document |
-| Ter 27 | **R2** |
+| Seg 26 | Bloco curto: 4.1 e here document |
+| Ter 27 | Autoavaliação da Semana 8 (Tópico 4) · **R2** |
 | Qua 28 | **R1** |
 | Qui 29 | **Simulado 04** (exame final de prática do NDG) |
 | Dom 01/11 | **Simulado 05** |
