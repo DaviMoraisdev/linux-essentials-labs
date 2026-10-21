@@ -115,6 +115,7 @@ Dois ajustes nos roteiros, por causa da ordem nova:
 | Sáb 17 | Sem estudo; o simulado 02 foi para o sábado 24/10 | — |
 | Dom 18 | Sem estudo | — |
 | Seg 19 | Prática 2, blocos 1 a 4 e parte do 5 | **feito** |
+| Ter 20 | Prática 2, blocos 5 e 6 | **feito** |
 
 Velocidade do curso: **2x** onde o vídeo repete o que já foi praticado (shell script, Tópico 5 depois das práticas); **1.25x** no Tópico 4, que é conteúdo novo.
 
@@ -300,9 +301,9 @@ A anotação diz "`/home/alice` e `/home/bob` → grupo primário". São coisas 
 
 Na sua VM: o grupo primário da `alice` é `alice`, o do `bob` é `bob` e o da `carol` é `ops` (por causa do `-g`). Para ver: `id -gn alice ; id -gn carol ; grep '^alice:' /etc/passwd | cut -d: -f4,6`.
 
-### Prática 2 — segunda 19/10 (em andamento)
+### Prática 2 — 19 e 20/10 — CONCLUÍDA (faltam os Exercícios da LPI e a cola)
 
-**Blocos 1 a 4 anotados em 19/10; bloco 5 em parte.** Faltam: os resultados do bloco 5, o bloco 6, a limpeza, os Exercícios da LPI 5.3 e 5.4 e o `cheatsheets/permissoes.md`.
+**Blocos 1 a 4 em 19/10; blocos 5 e 6 em 20/10.** Faltam os Exercícios da LPI 5.3 e 5.4 e o `cheatsheets/permissoes.md`. As correções dos blocos 1, 2 e 4, apontadas abaixo, ainda não foram passadas para o caderno.
 
 #### Bloco 1 — Ler as permissões
 
@@ -356,29 +357,24 @@ As três regras, com o mecanismo:
 
 Você trocou o `chmod g+wxs,o+t` pelo octal, com `sudo chown root:dev /srv/Box` e `3775`. **O caminho está certo**: o diretório nasce com 755; `g+wx` leva a 775; o `s` do grupo soma 2 e o `t` soma 1 no primeiro dígito, e o resultado é **3775**, ou `drwxrwsr-t`. A anotação traz `sudo 3775 /srv/Box`, sem o `chmod`: o comando é `sudo chmod 3775 /srv/Box`.
 
-Faltam os resultados, que são o centro do bloco:
+**Resultados registrados em 20/10.** O arquivo `a` nasceu com dono `alice` e grupo **`dev`**: o SGID funcionou. As regras anotadas estão corretas e mais precisas que o roteiro:
 
-| Passo | Resultado esperado | Por quê |
-|---|---|---|
-| `ls -ld /srv/Box` | `drwxrwsr-t ... root dev` | `s` no grupo e `t` nos outros, ambos minúsculos porque há `x` |
-| `sudo -u alice touch /srv/Box/a` e `ls -l /srv/Box` | O arquivo `a` pertence a `alice` e ao grupo **`dev`**, e não ao grupo `alice` | SGID em diretório: o arquivo novo herda o **grupo do diretório** |
-| `sudo -u bob rm /srv/Box/a` | **Falha**: `rm: cannot remove '/srv/Box/a': Operation not permitted` | O `bob` tem `w` no diretório pelo grupo `dev`, mas o sticky bit só deixa apagar quem é dono do arquivo, dono do diretório ou root |
+| Anotado | Revisão |
+|---|---|
+| SGID: determina o grupo herdado pelos arquivos novos | Correto |
+| Sticky: podem remover ou renomear uma entrada o dono do arquivo, o dono do diretório ou o root; "só quem criou pode apagar" é simplificação | Correto, e é a formulação que a prova usa |
+| O sticky não impede alterar o **conteúdo**; isso depende das permissões do próprio arquivo | Correto |
+| O `/srv` evita depender da travessia da sua pasta pessoal | Correto |
 
-Registre o que o seu terminal mostrou nos dois últimos passos. Se o `rm` do `bob` funcionou, alguma coisa ficou diferente (por exemplo, o `t` não foi aplicado), e vale conferir com `ls -ld /srv/Box`.
+**Falta registrar o resultado do `sudo -u bob rm /srv/Box/a`.** O esperado é falhar com `rm: cannot remove '/srv/Box/a': Operation not permitted`: o `bob` tem `w` no diretório pelo grupo `dev`, mas não é dono do arquivo nem do diretório. Anote se foi isso que apareceu. A anotação ainda traz `sudo 3775`; o comando é `sudo chmod 3775 /srv/Box`.
 
-#### Bloco 6, limpeza e Exercícios da LPI — a fazer
+#### Bloco 6 — Temporários e links
 
-O bloco 6 responde a duas perguntas: qual diretório é esvaziado na inicialização (o `/run`, que vive em RAM; o `/tmp` costuma ser limpo no boot; o `/var/tmp` é preservado entre reinícios) e por que o `cat sub/link` falha (o link guarda o texto `alvo`, que é resolvido **a partir do diretório onde o link está**, `sub/`, e `sub/alvo` não existe).
+Correto. O link guarda o **texto** `alvo`; esse texto é resolvido a partir do diretório onde o link está, então em `sub/` ele procura `~/lab6/sub/alvo`, que não existe, e o `cat` falha. O `readlink sub/link` devolvendo `alvo` é a prova disso. A tabela de `/tmp`, `/var/tmp` e `/run` está certa, e a resposta também: o `/run` é esvaziado na inicialização; a limpeza do `/tmp` depende da política do sistema; o `/var/tmp` sobrevive a reinícios.
 
-A limpeza inclui o usuário do experimento sem `-m`: `sudo userdel teste_sem_nome`, além da `alice`, do `bob`, da `carol` e dos grupos `dev` e `ops`.
+Falta a última parte do roteiro: refazer com `ln -s ~/lab6/alvo link` e comparar. Com o caminho absoluto, o link continua funcionando depois do `mv`, porque o texto guardado já aponta o lugar certo. Uma linha no caderno basta.
 
-### Simulado 02 — sábado 17/10
-
-*A preencher.* Registre também em `labs/simulados-práticos.lpi/resultados_simulados.md`.
-
-### Autoavaliação da Semana 6 — quinta 22/10
-
-*A preencher.* Acertos: de 10. Questões erradas:
+**Limpeza:** não está registrada. Confira que saíram `alice`, `bob`, `carol`, `teste_sem_nome`, os grupos `dev` e `ops`, o `/srv/Box` e o `~/lab6`: `getent passwd alice bob carol teste_sem_nome ; getent group dev ops` não deve imprimir nada.
 
 ### Correções da semana
 
@@ -401,6 +397,7 @@ A numeração segue a série global. **A próxima é a 76.** Erros de simulado e
 | Sáb 17 | 3h10 | 0 | Sem estudo |
 | Dom 18 | 3h30 | 0 | Sem estudo |
 | Seg 19 | — | | Prática 2, blocos 1 a 4 e parte do 5 |
+| Ter 20 | — | | Prática 2, blocos 5 e 6 |
 
 ---
 
@@ -408,7 +405,7 @@ A numeração segue a série global. **A próxima é a 76.** Erros de simulado e
 
 - [x] Autoavaliação da Semana 5 respondida e conferida (13 e 15/10): 9 de 10
 - [x] Prática 1, blocos 1 a 3 e experimento (13 e 15/10)
-- [x] Prática 2, blocos 1 a 4 (19/10)
+- [x] Prática 2, blocos 1 a 6 (19 e 20/10)
 - [x] Checkpoint A registrado: vermelho
 
 Os itens abertos (resto da Prática 2, Exercícios da LPI 5.1 a 5.4, simulado 02, autoavaliação da Semana 6 e curso, aulas 41 a 72) estão no checklist da Semana 8.
