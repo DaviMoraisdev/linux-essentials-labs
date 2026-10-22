@@ -26,18 +26,18 @@
 | Bandit | Níveis 0 a 9 |
 | Cards de revisão (Notion) | Em uso desde a Semana 1 |
 
-### Dívidas da Etapa 1 — situação em 20/10
+### Dívidas da Etapa 1 — situação em 21/10
 
-O Checkpoint A (18/10) deu **vermelho**: o que não fechou na Semana 7 entrou no calendário da Semana 8, e o Checkpoint B (25/10) decide a data da prova.
+O Checkpoint A (18/10) deu **vermelho**: o que não fechou na Semana 7 entrou no calendário da Semana 8, e o Checkpoint B (26/10) decide a data da prova.
 
 | Dívida | Situação | Nova data |
 |---|---|---|
 | Autoavaliação da Semana 5 | **Feita: 9 de 10** | — |
-| Prática 1 | **Feita**; faltam os Exercícios da LPI 5.1 e 5.2 e passar as correções para o caderno | Qua 21/10 |
-| Prática 2 | **Feita em 19 e 20/10**; faltam os Exercícios da LPI 5.3 e 5.4, as correções no caderno e a cola `cheatsheets/permissoes.md` | Qua 21/10 |
-| Simulado 02 | Não feito | **Qua 21/10** |
+| Prática 1 | **Feita**; Exercícios da LPI 5.1 e 5.2 **feitos em 21/10**; falta passar as correções para o caderno | Qui 22/10 |
+| Prática 2 | **Feita em 19 e 20/10**; Exercícios da LPI 5.3 e 5.4 **feitos em 21/10**; faltam as correções no caderno, três resíduos e a cola `cheatsheets/permissoes.md` | Qui 22/10 |
+| Simulado 02 | Não feito | **Qui 22/10** |
 | Autoavaliação da Semana 6 | A fazer | Sáb 24/10 |
-| Curso, aulas 41 a 72 | Parado na aula 40 | Qua 21, sáb 24 e dom 25/10 |
+| Curso, aulas 41 a 72 | Parado na aula 40 | Sex 23, sáb 24 e dom 25/10 |
 
 ### Conteúdo ainda não estudado — Etapa 2, de 15/10 a 25/10
 
@@ -54,6 +54,7 @@ A lista completa, objetivo por objetivo, está em `labs/semana-07.md`, seção 2
 | Item | Situação |
 |---|---|
 | Data da prova | **23/11/2026, segunda-feira** |
+| Exame a escolher | **010-160** (versão 1.6), e não o 010-200 |
 | Agendamento | Registrar aqui a confirmação: centro ____________ · horário ____________ · janela de remarcação sem custo ____________ |
 
 ### Cobertura estimada por tópico
@@ -74,7 +75,7 @@ A lista completa, objetivo por objetivo, está em `labs/semana-07.md`, seção 2
 
 | Item | Valor |
 |---|---|
-| Código | 010-160, versão 1.6 |
+| Código | **010-160, versão 1.6** (disponível até abril de 2027; a versão atual é a 2.0, exame 010-200) |
 | Questões / tempo | 40 questões em 60 minutos |
 | Formato | Múltipla escolha e preenchimento |
 | Nota de corte | Referência comum: 500 de 800 (~65%), ou 26 acertos |
@@ -82,6 +83,8 @@ A lista completa, objetivo por objetivo, está em `labs/semana-07.md`, seção 2
 | Validade | Vitalícia |
 | Entrega | Centro Pearson VUE ou OnVUE |
 
+> **Atenção ao agendar (conferido no site da LPI em 21/10):** a LPI lançou a versão 2.0 do Linux Essentials, exame **010-200**. Este plano cobre a **1.6, exame 010-160**, que continua disponível até abril de 2027. Na Pearson VUE, escolha o **010-160**.
+>
 > Recomendação: **centro Pearson VUE**, não OnVUE. O check-in remoto é rigoroso e um problema técnico queima o voucher.
 
 ### Pesos dos tópicos
@@ -303,7 +306,7 @@ Um simulado geral de 40 questões, 60 minutos, sem consulta, com a distribuiçã
 7. **Exceção:** a véspera da prova (domingo 22/11) não tem simulado. O final é na quinta 19/11.
 8. **Dificuldade (06/10):** do #2 em diante os simulados escritos aqui ficam mais próximos do exame: enunciados com cenário, pegadinhas de comando, escolha de mais de uma resposta, preenchimento e distratores plausíveis. Use pelo menos 45 minutos e reserve os últimos 15 para uma segunda passada nas marcadas.
 
-**Relação com a autoavaliação semanal.** Restam duas: a da Semana 6 (Tópico 5) no sábado 24/10 e a da Semana 8 (Tópico 4) na terça 27/10, a última do plano. A partir da Semana 8, com os cinco tópicos estudados, o simulado substitui a autoavaliação.
+**Relação com a autoavaliação semanal.** Restam duas: a da Semana 6 (Tópico 5) no sábado 24/10 e a da Semana 8 (Tópico 4) na quarta 28/10, a última do plano. A partir da Semana 8, com os cinco tópicos estudados, o simulado substitui a autoavaliação.
 
 ---
 
@@ -347,8 +350,8 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 | # | Data | Semana | Fonte | Meta |
 |---|---|---|---|---|
 | 1 | Seg 05/10 | 6 | `simulado-01` | **Feito: 28 de 40 (70%), 23 firmes** |
-| 2 | **Qua 21/10** | 8 | `simulado-02` (pronto; não feito em 17/10) | 24 ou mais |
-| 3 | **Dom 25/10** | 8 | `simulado-03` (pronto) | **28 ou mais** (Checkpoint B) |
+| 2 | **Qui 22/10** | 8 | `simulado-02` (pronto; não feito em 17/10) | 24 ou mais |
+| 3 | **Seg 26/10** | 9 | `simulado-03` (pronto) | **28 ou mais** (Checkpoint B) |
 | R2 | Ter 27/10 | 9 | Reforço, 20 questões (pronto, `praticas_simulados.md`, seção 8) | 15 de 20 |
 | R1 | Qua 28/10 | 9 | Reforço, 20 questões (pronto, `praticas_simulados.md`, seção 6) | 15 de 20 |
 | 4 | Qui 29/10 | 9 | Exame final de prática do NDG | 28 ou mais |
@@ -379,11 +382,11 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 | Dia | Atividade |
 |---|---|
 | Ter 20 | Prática 2 terminada |
-| Qua 21 | Exercícios da LPI 5.1 a 5.4 · **simulado 02** · correções no caderno · aulas 41 a 46 |
-| Qui 22 | Prática 3 — hardware, discos e o mapa dos diretórios (4.2 e 4.3) |
-| Sex 23 | Prática 4 — processos, memória e logs (4.3) |
-| Sáb 24 | Autoavaliação da Semana 6 · Prática 5 — rede (4.4) · aulas 47 a 58 |
-| Dom 25 | **Simulado 03** · aulas 59 a 72 · **Checkpoint B** (decide a data da prova) |
+| Qua 21 | Exercícios da LPI 5.1 a 5.4 |
+| Qui 22 | **Simulado 02** · correções e resíduos das Práticas 1 e 2 |
+| Sex 23 | Prática 3 — hardware, discos e o mapa dos diretórios (4.2 e 4.3) · aulas 41 a 46 |
+| Sáb 24 | Autoavaliação da Semana 6 · Prática 4 — processos, memória e logs (4.3) · aulas 47 a 58 |
+| Dom 25 | Prática 5 — rede (4.4) · aulas 59 a 72 |
 
 **Marco:** ao fim desta semana, os cinco tópicos foram estudados e o curso está fechado.
 
@@ -391,9 +394,9 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 
 | Dia | Atividade |
 |---|---|
-| Seg 26 | Bloco curto: 4.1 e here document |
-| Ter 27 | Autoavaliação da Semana 8 (Tópico 4) · **R2** |
-| Qua 28 | **R1** |
+| Seg 26 | **Simulado 03** · **Checkpoint B** (decide a data da prova) |
+| Ter 27 | **R2** · bloco curto: 4.1 e here document |
+| Qua 28 | Autoavaliação da Semana 8 (Tópico 4) · **R1** |
 | Qui 29 | **Simulado 04** (exame final de prática do NDG) |
 | Dom 01/11 | **Simulado 05** |
 | Demais dias | Revisão dirigida dos erros (30 min) e aquecimento rotativo pelas cinco frentes |
@@ -528,7 +531,7 @@ A coluna da direita é apenas o caminho natural dentro do roadmap atual, não um
 | Checkpoint | Data | Critérios | Resultado |
 |---|---|---|---|
 | **A** | Dom 18/10 | 1. Práticas 1 e 2 · 2. Simulado 02 com **24 ou mais** · 3. Autoavaliações das Semanas 5 e 6 feitas · 4. Curso até a aula 72 (ou 64, com 65 a 72 na segunda 19/10) | **Verde:** segue. **Amarelo:** um falhou; o item abre a segunda 19/10. **Vermelho:** dois ou mais falharam, ou simulado 02 abaixo de 20; a Semana 8 abre com as dívidas restantes e o Checkpoint B decide a data |
-| **B** | Dom 25/10 | 1. Curso fechado (aula 72) · 2. Práticas 3, 4 e 5 feitas · 3. Simulado 03 com **28 ou mais** | **Verde:** mantém 23/11. **Amarelo:** um falhou; mantém, mas o Gate fica sem folga. **Vermelho:** dois ou mais falharam; mover a prova para **30/11** |
+| **B** | Seg 26/10 | 1. Curso fechado (aula 72) · 2. Práticas 3, 4 e 5 feitas · 3. Simulado 03 com **28 ou mais** | **Verde:** mantém 23/11. **Amarelo:** um falhou; mantém, mas o Gate fica sem folga. **Vermelho:** dois ou mais falharam; mover a prova para **30/11** |
 | **Gate** | Dom 08/11 | Dois simulados consecutivos com **34 ou mais** entre o 06 (03/11), o 07 (05/11) e o 08 (08/11) | **Cumprido:** mantém 23/11. **Não cumprido:** se a média dos três ficou em 30 ou mais, mantém e o Final decide; abaixo disso, mover para **30/11** |
 | **Final** | Qui 19/11 | Simulado 11 | **34 ou mais:** vai. **30 a 33:** vai, com revisão leve dos erros no fim de semana. **Abaixo de 30:** remarcar para 30/11, se a janela de remarcação ainda permitir |
 
@@ -552,7 +555,7 @@ A coluna da direita é apenas o caminho natural dentro do roadmap atual, não um
 | Checkpoint | Data | Critérios cumpridos | Resultado | Decisão |
 |---|---|---|---|---|
 | A | 18/10 | Nenhum dos quatro (Prática 2 em parte; simulado 02 não feito; autoavaliação S6 pendente; curso na aula 40) | **Vermelho** | A Semana 8 abre com as dívidas; o Checkpoint B decide a data |
-| B | 25/10 | | | |
+| B | 26/10 | | | |
 | Gate | 08/11 | | | |
 | Final | 19/11 | | | |
 
