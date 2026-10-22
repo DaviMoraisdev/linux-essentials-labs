@@ -40,9 +40,9 @@ Os temas se sobrepõem às questões dos cinco tópicos; não são questões ext
 
 | Quando | O que | Tempo |
 |---|---|---|
-| Qua 21/10 | Simulado 02 já traz o mínimo da seção 2.1; apurar o desempenho por tema | dentro do simulado |
-| Qui 22/10 | Prática 3 (Semana 8): mapa dos diretórios virtuais, `/proc`, `/sys` e `/dev` lado a lado | dentro da Prática 3 |
-| Seg 26/10 | Here document estudado como conceito, no bloco curto | 15 min |
+| Qui 22/10 | Simulado 02 já traz o mínimo da seção 2.1; apurar o desempenho por tema | dentro do simulado |
+| Sex 23/10 | Prática 3 (Semana 8): mapa dos diretórios virtuais, `/proc`, `/sys` e `/dev` lado a lado | dentro da Prática 3 |
+| Ter 27/10 | Here document estudado como conceito, no bloco curto | 15 min |
 | **Ter 27/10** | **Mini-simulado R2** (seção 8): inclui `/sys`, rede e processos | 35 min |
 | **Qua 28/10** | **Mini-simulado R1** (20 questões, 25 min) e apuração (10 min) | 35 min |
 | Semanas 9 a 11 | Aquecimento rotativo pelas cinco frentes (seção 2.3), nos dias sem simulado | 10 min/dia |
