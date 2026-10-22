@@ -4,7 +4,7 @@ Período: 19/10 a 25/10/2026 (segunda a domingo)
 Objetivos da prova: 4.1, 4.2, 4.3 e 4.4 — Tópico 4, peso 8 de 40
 **Data da prova: segunda-feira, 23/11/2026**
 Carga prevista: cerca de 8h
-Marco da semana: **Checkpoint B, domingo 25/10**. Ao fim desta semana, os cinco tópicos da prova foram estudados
+Marco da semana: **Checkpoint B, segunda 26/10** (movido de domingo em 21/10). Ao fim da Prática 5, no domingo 25/10, os cinco tópicos da prova foram estudados
 
 O Tópico 4 nunca foi estudado como tópico, mas boa parte dele já foi encostada na prática: LVM e partições na Semana 0, `/proc` e `/dev` na Semana 3, portas e serviços na Semana 1, gerenciadores de pacotes no curso. A cobertura parte de cerca de 30%, não de zero. No simulado 01, os dois erros deste tópico foram chutes: `top` (Q28) e o sinal padrão do `kill` (Q29).
 
@@ -27,32 +27,54 @@ O 4.3, de peso 3, é o maior do tópico e o que mais se cobra em questões de "o
 
 ## Calendário da semana
 
-**Refeito em 19/10 e de novo em 20/10.** O Checkpoint A deu vermelho, e esta semana abre com as dívidas da Semana 7. A Prática 2 terminou na terça 20/10. Pelo seu plano, a quarta 21/10 fica para os Exercícios da LPI, o simulado 02, as correções e as primeiras aulas; as Práticas 3, 4 e 5 andam um dia. **O Checkpoint B (domingo 25/10) decide a data da prova.**
+**Refeito em 19, 20 e 21/10.** O Checkpoint A deu vermelho, e esta semana abre com as dívidas da Semana 7. A Prática 2 terminou na terça 20/10 e os Exercícios da LPI 5.1 a 5.4 foram resolvidos na quarta 21/10. Pela sua decisão, **as dívidas práticas fecham antes do conteúdo novo**: a quinta 22/10 fica para o simulado 02 e as correções, e as Práticas 3, 4 e 5 vão de sexta a domingo. Para o simulado 03 vir depois da Prática 5, ele e o **Checkpoint B** passam para a **segunda 26/10**.
 
 | Dia | Atividade | Tempo |
 |---|---|---|
 | Ter 20 | Prática 2, blocos 5 e 6 | **feito** |
-| **Qua 21** | Exercícios da LPI 5.1 a 5.4 (40 min) · **simulado 02** (60 min) e apuração (25 min) · correções no caderno das Práticas 1 e 2 (30 min) · curso, aulas 41 a 46 (2x, 30 min) | cerca de 3h05 |
-| Qui 22 | **Prática 3** — hardware, discos e o mapa dos diretórios (4.2 e 4.3), com Exercícios da LPI 4.2 | cerca de 1h20 |
-| Sex 23 | **Prática 4** — processos, memória e logs (4.3), com Exercícios da LPI 4.3 | cerca de 1h20 |
-| **Sáb 24** | **Autoavaliação da Semana 6** (30 min, primeira atividade, quatro dias depois da Prática 2; questões em `labs/semana-07.md`, seção 6) · **Prática 5** — rede (4.4), com Exercícios da LPI 4.4 · curso, aulas 47 a 58 | cerca de 2h50 |
-| **Dom 25** | **Simulado 03** (60 min, primeira atividade) e apuração (25 min) · curso, aulas 59 a 72 · **Checkpoint B** | cerca de 2h50 |
-| Seg 26 (Semana 9) | **Bloco curto**: 4.1 e here document (45 min) | 45 min |
-| Ter 27 (Semana 9) | **Autoavaliação da Semana 8** (30 min, três dias depois da Prática 5) · **R2** (35 min) | cerca de 1h05 |
+| Qua 21 | Exercícios da LPI 5.1 a 5.4 resolvidos | **feito** |
+| **Qui 22** | **Simulado 02** (60 min, primeira atividade) e apuração (25 min) · **correções no caderno** das Práticas 1 e 2 e os resíduos (lista na seção "Dívidas práticas em 21/10") (40 min) · erros dos Exercícios da LPI no Notion | cerca de 2h10 |
+| Sex 23 | **Prática 3** — hardware, discos e o mapa dos diretórios (4.2 e 4.3), com Exercícios da LPI 4.2 · curso, aulas 41 a 46 (2x) | cerca de 1h50 |
+| **Sáb 24** | **Autoavaliação da Semana 6** (30 min, primeira atividade; questões em `labs/semana-07.md`, seção 6) · **Prática 4** — processos, memória e logs (4.3), com Exercícios da LPI 4.3 · curso, aulas 47 a 58 | cerca de 2h50 |
+| **Dom 25** | **Prática 5** — rede (4.4), com Exercícios da LPI 4.4 · curso, aulas 59 a 72 | cerca de 2h35 |
+| **Seg 26** (Semana 9) | **Simulado 03** (60 min) e apuração (25 min) · **Checkpoint B** | cerca de 1h40 |
+| Ter 27 (Semana 9) | **R2** (35 min) · **bloco curto**: 4.1 e here document (45 min) | cerca de 1h20 |
+| Qua 28 (Semana 9) | **Autoavaliação da Semana 8** (30 min, três dias depois da Prática 5) · **R1** (35 min) | cerca de 1h05 |
 
-**Total de quarta a domingo: cerca de 11h25**, acima da meta de 9h. Se faltar tempo, corte nesta ordem:
+**Total de quinta a domingo: cerca de 9h25.** Se faltar tempo, corte nesta ordem:
 
 | Ordem | Corte | Efeito |
 |---|---|---|
-| 1 | Exercícios Exploratórios da LPI (mantendo os Guiados) | Saem |
+| 1 | Exercícios Exploratórios da LPI do Tópico 4 (mantendo os Guiados) | Saem |
 | 2 | Aulas que não couberem no fim de semana | Segunda 26/10 e terça 27/10, 30 minutos antes da atividade do dia |
-| 3 | Simulado 02 | Sai. O simulado 03 assume a medição |
 
-**Não se cortam:** as Práticas 3, 4 e 5, a autoavaliação da Semana 6 e o simulado 03. Sem as práticas, o Tópico 4 (8 dos 40 pontos) chega ao simulado sem estudo.
+O simulado 02 deixa de ser corte: é dívida, e você decidiu pagá-la primeiro.
+
+**Não se cortam:** o simulado 02, as Práticas 3, 4 e 5, a autoavaliação da Semana 6 e o simulado 03. Sem as práticas, o Tópico 4 (8 dos 40 pontos) chega ao simulado sem estudo.
 
 **O curso não trava as práticas.** Os roteiros do Tópico 4 funcionam com a leitura do PDF; as aulas 58 a 72, se chegarem depois das práticas, confirmam em vez de ensinar, como aconteceu com o shell script.
 
-**Aquecimento (10 min, nos dias de prática):** cinco comandos da prática anterior, de memória. Na quinta, o conteúdo da Prática 2 (conversões e bits especiais).
+**Aquecimento (10 min, nos dias de prática):** cinco comandos da prática anterior, de memória. Na sexta, o conteúdo da Prática 2 (conversões e bits especiais).
+
+## Dívidas práticas em 21/10
+
+Tudo o que está atrasado em relação ao plano. Depois desta lista paga, só restam conteúdo novo e simulados.
+
+| # | Dívida | Desde | Quando | Tempo |
+|---|---|---|---|---|
+| 1 | **Simulado 02** (40 questões) | 17/10 | Qui 22/10, primeira atividade | 1h25 |
+| 2 | **Correções no caderno da Prática 1:** os 7 campos do `/etc/passwd` (o 5.1 G5 do seu PDF tem a tabela), o arquivo que o `last` lê (`/var/log/wtmp`, 5.1 E1) e a Correção 75 | 15/10 | Qui 22/10 | 10 min |
+| 3 | **Correções no caderno da Prática 2:** `rwr` → `rwx` (bloco 1); 4664 → 4644 (bloco 2); `cat pasta/arq` com 500 e 100 → Sim (bloco 4); `sudo 3775` → `sudo chmod 3775` (bloco 5) | 19/10 | Qui 22/10 | 10 min |
+| 4 | **Resíduos da Prática 2:** anotar o resultado do `sudo -u bob rm /srv/Box/a`; refazer o link com `ln -s ~/lab6/alvo link` e comparar; confirmar a limpeza com `getent passwd alice bob carol teste_sem_nome ; getent group dev ops` | 20/10 | Qui 22/10 | 10 min |
+| 5 | **Exercícios da LPI 5.1 a 5.4:** levar ao Notion só as questões em que a sua primeira resposta errou | 21/10 | Qui 22/10 | 10 min |
+| 6 | **`cheatsheets/permissoes.md`**, escrito à mão | 19/10 | Qui 22/10, se sobrar tempo; senão sábado, depois da autoavaliação | 15 min |
+| 7 | **Curso, aulas 41 a 72** | 15/10 | Sex 23, sáb 24 e dom 25/10 | cerca de 3h |
+
+Os itens 6 e 7 são os únicos que não são exercício; ficam porque a cola é o que você vai ler na revisão final, e o curso é um dos dois objetivos da preparação.
+
+**Não estão atrasados** (ainda no prazo): autoavaliação da Semana 6 (sáb 24), Práticas 3, 4 e 5, simulado 03 e Checkpoint B (seg 26), R2 e bloco curto (ter 27), autoavaliação da Semana 8 e R1 (qua 28).
+
+---
 
 ## Antes de começar
 
@@ -343,13 +365,13 @@ Quizzes dos capítulos de hardware, processos e rede e do capítulo de permissõ
 
 ## Mini-simulado R1 — Quarta 28/10 (Semana 9)
 
-Remarcado em 19/10 para caber o simulado 02 nesta semana. 20 questões, 25 minutos, sobre as quatro frentes das dicas recorrentes e 6 lacunas. Está em `labs/simulados-práticos.lpi/praticas_simulados.md`, seção 6, com gabarito na seção 7. Meta: 15 de 20.
+Remarcado em 19/10. 20 questões, 25 minutos, sobre as quatro frentes das dicas recorrentes e 6 lacunas. Está em `labs/simulados-práticos.lpi/praticas_simulados.md`, seção 6, com gabarito na seção 7. Meta: 15 de 20.
 
 ---
 
-## Autoavaliação da Semana 8 — Terça 27/10
+## Autoavaliação da Semana 8 — Quarta 28/10
 
-Dez questões sobre o Tópico 4, respondidas **sem consultar**, três dias depois da Prática 5, como primeira atividade da terça 27/10. É a **última autoavaliação do plano**: a partir da Semana 9, com os cinco tópicos estudados, os simulados assumem a medição. Escreva as respostas à mão e só depois abra o gabarito.
+Dez questões sobre o Tópico 4, respondidas **sem consultar**, três dias depois da Prática 5, como primeira atividade da quarta 28/10. É a **última autoavaliação do plano**: a partir da Semana 9, com os cinco tópicos estudados, os simulados assumem a medição. Escreva as respostas à mão e só depois abra o gabarito.
 
 1. Qual a diferença entre uma versão **LTS** e uma distribuição **rolling release**? Dê um exemplo de cada.
 2. O que é um **driver**, e como os drivers existem no Linux? Qual comando lista os que estão carregados?
@@ -387,7 +409,7 @@ Dez questões sobre o Tópico 4, respondidas **sem consultar**, três dias depoi
 
 ---
 
-## Simulado 03 — Domingo 25/10
+## Simulado 03 — Segunda 26/10
 
 | Item | Valor |
 |---|---|
@@ -400,7 +422,7 @@ Dez questões sobre o Tópico 4, respondidas **sem consultar**, três dias depoi
 
 ---
 
-## Checkpoint B — Domingo 25/10, à noite
+## Checkpoint B — Segunda 26/10, à noite (movido de domingo em 21/10)
 
 | # | Critério | Cumprido |
 |---|---|---|
@@ -420,19 +442,37 @@ Dez questões sobre o Tópico 4, respondidas **sem consultar**, três dias depoi
 
 ## Registro das sessões
 
-### Exercícios da LPI 5.1 a 5.4 — quarta 21/10
+### Exercícios da LPI 5.1 a 5.4 — quarta 21/10 — CONCLUÍDOS
 
-*A preencher.* Anote só as questões erradas. O registro da Prática 2 está em `labs/semana-07.md`.
+Entregue como um guia em PDF com os **43 exercícios resolvidos** (5.1 G1 a G5 e E1 a E7; 5.2 G1 e G2 e E1 a E8; 5.3 G1 a G6 e E1 a E5; 5.4 G1 a G5 e E1 a E5).
 
-### Simulado 02 — quarta 21/10
+**Revisão:** as resoluções estão corretas, inclusive os pontos em que o guia corrige o gabarito do PDF da LPI. Os mais úteis para a prova:
+
+| Exercício | Ponto |
+|---|---|
+| 5.2 G2 | Grupo primário não aparece na lista de membros do `/etc/group`; `!` no hash é senha bloqueada; `0` na última troca obriga a trocar no próximo login |
+| 5.3 G4 | O `s` na posição do grupo é **SGID**, não SUID; e o Linux ignora SUID e SGID em scripts |
+| 5.3 G6 | `drwxr-xr-t` = 1755; `----r--r--` = 0044; `drwxr-sr-x` = 2755 |
+| 5.3 E2 | Binário executa com `--x`; script precisa de `r`, porque o interpretador lê o arquivo |
+| 5.4 E3 | Contador de links 4 = quatro nomes no total, três além do mostrado |
+| 5.4 E4 | Symlink relativo resolve a partir do diretório **onde o link está**; o `mv` muda o alvo encontrado |
+| 5.4 E5 | O `lrwxrwxrwx` do link não dá acesso: vale a permissão do alvo |
+
+**Ponto de método.** O PDF é um guia resolvido, não o registro das suas respostas. O roteiro pedia responder sem consultar e anotar só as questões erradas. Para o Notion, leve as questões em que a sua **primeira resposta** errou. Se a resolução foi lida antes de responder, registre aqui "estudo, sem medição": a medição do Tópico 5 fica com o simulado 02 (quinta) e a autoavaliação da Semana 6 (sábado).
+
+Questões erradas na primeira tentativa: *a preencher.*
+
+**Aviso sobre a versão da prova**, que o guia traz e foi conferido no site da LPI em 21/10: a versão atual é a **2.0, exame 010-200**; a **1.6, exame 010-160**, que este plano cobre, fica disponível **até abril de 2027**. Ao agendar na Pearson VUE, escolha o **010-160**.
+
+### Simulado 02 — quinta 22/10
 
 *A preencher.* Registre também em `labs/simulados-práticos.lpi/resultados_simulados.md`.
 
-### Prática 3 — quinta 22/10
+### Prática 3 — sexta 23/10
 
 *A preencher.*
 
-### Prática 4 — sexta 23/10
+### Prática 4 — sábado 24/10
 
 *A preencher.*
 
@@ -440,11 +480,11 @@ Dez questões sobre o Tópico 4, respondidas **sem consultar**, três dias depoi
 
 *A preencher.* Acertos: de 10.
 
-### Prática 5 — sábado 24/10
+### Prática 5 — domingo 25/10
 
 *A preencher.*
 
-### Simulado 03 — domingo 25/10
+### Simulado 03 — segunda 26/10
 
 *A preencher.* Registre também em `labs/simulados-práticos.lpi/resultados_simulados.md`.
 
@@ -454,11 +494,11 @@ Dez questões sobre o Tópico 4, respondidas **sem consultar**, três dias depoi
 |---|---|---|---|
 | | | | |
 
-### Bloco curto — segunda 26/10
+### Bloco curto — terça 27/10
 
 *A preencher.*
 
-### Autoavaliação da Semana 8 — terça 27/10
+### Autoavaliação da Semana 8 — quarta 28/10
 
 *A preencher.* Acertos: de 10.
 
@@ -477,29 +517,31 @@ A numeração segue a série global. **A próxima é a 76.** Erros de simulado e
 | Dia | Previsto | Real | Observação |
 |---|---|---|---|
 | Ter 20 | — | | Prática 2, blocos 5 e 6 |
-| Qua 21 | 3h05 | | Exercícios da LPI, simulado 02, correções e aulas 41 a 46 |
-| Qui 22 | 1h20 | | Prática 3 |
-| Sex 23 | 1h20 | | Prática 4 |
-| Sáb 24 | 2h50 | | Autoavaliação S6, Prática 5 e aulas 47 a 58 |
-| Dom 25 | 2h50 | | Simulado 03, aulas 59 a 72 e Checkpoint B |
+| Qua 21 | — | | Exercícios da LPI 5.1 a 5.4 |
+| Qui 22 | 2h10 | | Simulado 02 e correções |
+| Sex 23 | 1h50 | | Prática 3 e aulas 41 a 46 |
+| Sáb 24 | 2h50 | | Autoavaliação S6, Prática 4 e aulas 47 a 58 |
+| Dom 25 | 2h35 | | Prática 5 e aulas 59 a 72 |
+| Seg 26 | 1h40 | | Simulado 03 e Checkpoint B |
 
 ---
 
 ## Checklist da semana
 
 - [x] Prática 2 terminada, blocos 5 e 6 (terça 20/10)
-- [ ] Exercícios da LPI 5.1 a 5.4 (quarta 21/10)
-- [ ] Simulado 02 e apuração (quarta 21/10)
-- [ ] Correções das Práticas 1 e 2 passadas para o caderno (quarta 21/10)
+- [x] Exercícios da LPI 5.1 a 5.4 resolvidos (quarta 21/10)
+- [ ] Erros da primeira tentativa dos Exercícios da LPI no Notion (quinta 22/10)
+- [ ] Simulado 02 e apuração (quinta 22/10)
+- [ ] Correções e resíduos das Práticas 1 e 2 no caderno (quinta 22/10)
 - [ ] `cheatsheets/permissoes.md` escrito à mão
 - [ ] Pacotes instalados na VM (`pciutils`, `usbutils`, `net-tools`, `bind9-dnsutils`)
-- [ ] Prática 3, com Exercícios da LPI 4.2 (quinta 22/10)
-- [ ] Prática 4, com Exercícios da LPI 4.3 (sexta 23/10)
+- [ ] Prática 3, com Exercícios da LPI 4.2 (sexta 23/10)
 - [ ] Autoavaliação da Semana 6 (sábado 24/10)
-- [ ] Prática 5, com Exercícios da LPI 4.4 (sábado 24/10)
-- [ ] Curso, aulas 41 a 72 (quarta, sábado e domingo)
-- [ ] Simulado 03 e apuração por tópico e por tema (domingo 25/10)
-- [ ] Checkpoint B preenchido
+- [ ] Prática 4, com Exercícios da LPI 4.3 (sábado 24/10)
+- [ ] Prática 5, com Exercícios da LPI 4.4 (domingo 25/10)
+- [ ] Curso, aulas 41 a 72 (sexta, sábado e domingo)
+- [ ] Simulado 03 e apuração por tópico e por tema (segunda 26/10)
+- [ ] Checkpoint B preenchido (segunda 26/10)
 - [ ] Commits ao fim de cada sessão
 
 ---
