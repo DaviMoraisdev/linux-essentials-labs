@@ -1,4 +1,4 @@
-# Semana 7 — Pagamento das dívidas, fechamento do curso e nova estratégia até a prova
+3# Semana 7 — Pagamento das dívidas, fechamento do curso e nova estratégia até a prova
 
 Período: 12/10 a 18/10/2026 (segunda a domingo)
 Objetivos da prova: Tópico 5 (5.1 a 5.4) em prática; curso do Matheus Muller até a aula 72
@@ -228,9 +228,9 @@ Os roteiros das Práticas 3, 4 e 5, do bloco curto, a autoavaliação da Semana 
 2. **`Crtl` em vez de `Ctrl`** na questão 10. É a segunda vez (já aparecia no caderno da Semana 5).
 3. Na questão 10, "o `Esc` volta ao modo em que você digita comandos": o `Esc` volta ao **modo normal** (o de navegação, que o material também chama de modo de comando). Os comandos com `:`, como `:wq`, são digitados no **modo de linha de comando**, que se abre com `:` a partir do normal. Na prova, os nomes que aparecem são **inserção** e **comando** (ou normal).
 
-### Prática 1 — 13 e 15/10 — CONCLUÍDA (falta só a parte dos Exercícios da LPI)
+### Prática 1 — 13 e 15/10 — CONCLUÍDA
 
-**Blocos 1 e 2 anotados em 13/10; bloco 3, experimento sem `-m` e "Para o caderno" em 15/10.** Faltam os 20 minutos de Exercícios da LPI (lições 5.1 e 5.2), remarcados para o domingo 18/10.
+**Blocos 1 e 2 anotados em 13/10; bloco 3, experimento sem `-m` e "Para o caderno" em 15/10; respostas que faltavam e correções registradas em 22/10.** Os Exercícios da LPI 5.1 e 5.2 foram feitos em 21/10 (registro em `labs/semana-08.md`).
 
 **Vocabulário anotado:** UID, GID, grupo primário (registrado no `/etc/passwd`) e grupos secundários. Correto.
 
@@ -245,9 +245,9 @@ Os roteiros das Práticas 3, 4 e 5, do bloco curto, a autoavaliação da Semana 
 | `last \| head` | Histórico de logins, do mais recente, nas 10 primeiras linhas |
 | `sudo whoami` | `root`: o comando roda como root, e o shell volta a ser do `davi` |
 
-Faltam duas respostas do roteiro:
+Respostas que faltavam, registradas em 22/10:
 
-1. **De qual arquivo o `last` lê?** Ainda sem resposta no caderno de 15/10. Do `/var/log/wtmp`, o registro binário de logins e logouts. (O `who` lê o `/var/run/utmp`, que guarda só as sessões abertas agora.)
+1. **De qual arquivo o `last` lê?** Do `/var/log/wtmp`, o registro binário de logins e logouts. (O `who` lê o `/var/run/utmp`, que guarda só as sessões abertas agora.)
 2. **`su - alice`, `sudo -i` e `sudo su`:** a diferença entre `su` e `sudo` foi respondida em 15/10 ("Para o caderno", abaixo). O detalhe das três formas: o `su - alice` abre um shell de login como `alice` e pede a **senha da alice**; o `sudo -i` abre um shell de login do **root** e pede a **sua** senha; o `sudo su` também vira root com a sua senha, mas sem o ambiente de login do root (o `sudo su -` teria).
 
 #### Bloco 2 — Os arquivos de contas
@@ -264,8 +264,19 @@ Permissões registradas: `passwd` e `group` com `-rw-r--r--` (`root root`, legí
 
 Ajustes de caderno:
 
-1. **Ainda faltam os 7 campos do `/etc/passwd`, um por um** (o bloco 2 não mudou em 15/10), como o roteiro pede: usuário, `x`, UID, GID, comentário, diretório pessoal e shell de login. É o conteúdo da Q35 do simulado 01, errada por chute.
-2. **Falta responder por que o `/etc/passwd` é legível por todos e não guarda a senha:** vários programas precisam traduzir UID em nome; por isso a senha foi para o `/etc/shadow`, e o `x` do segundo campo indica isso.
+1. **Os 7 campos do `/etc/passwd`** (registrado em 22/10), na linha `root:x:0:0:root:/root:/bin/bash`:
+
+   | Campo | Valor | Significado |
+   |---|---|---|
+   | 1 | `root` | Nome de login |
+   | 2 | `x` | Marcador: o hash da senha está no `/etc/shadow` |
+   | 3 | `0` | UID |
+   | 4 | `0` | GID do grupo primário |
+   | 5 | `root` | Comentário (GECOS) |
+   | 6 | `/root` | Diretório pessoal |
+   | 7 | `/bin/bash` | Shell de login |
+
+2. **Por que o `/etc/passwd` é legível por todos e não guarda a senha** (registrado em 22/10): vários programas precisam traduzir UID em nome; por isso a senha foi para o `/etc/shadow`, legível só pelo root e pelo grupo `shadow`, e o `x` do segundo campo indica isso.
 3. **O `*` no segundo campo do `shadow`** significa que a conta **não tem senha válida**: não dá para entrar com senha. É o caso das contas de sistema. O `20563` é a data da última troca de senha, contada em dias desde 01/01/1970; `0`, `99999` e `7` são o mínimo e o máximo de dias entre trocas e o aviso antes de expirar.
 4. **No `/etc/group`, os 4 campos:** nome, `x`, GID e lista de membros. Em `root:x:0:` a lista está vazia.
 5. Na listagem do `ls -l`, a primeira linha saiu `rw-r--r--`, sem o `-` do tipo de arquivo. É de cópia, mas na prova o primeiro caractere conta: `-` arquivo, `d` diretório, `l` link.
@@ -301,9 +312,9 @@ A anotação diz "`/home/alice` e `/home/bob` → grupo primário". São coisas 
 
 Na sua VM: o grupo primário da `alice` é `alice`, o do `bob` é `bob` e o da `carol` é `ops` (por causa do `-g`). Para ver: `id -gn alice ; id -gn carol ; grep '^alice:' /etc/passwd | cut -d: -f4,6`.
 
-### Prática 2 — 19 e 20/10 — CONCLUÍDA (faltam os Exercícios da LPI e a cola)
+### Prática 2 — 19 e 20/10 — CONCLUÍDA (faltam os resíduos e a cola)
 
-**Blocos 1 a 4 em 19/10; blocos 5 e 6 em 20/10.** Faltam os Exercícios da LPI 5.3 e 5.4 e o `cheatsheets/permissoes.md`. As correções dos blocos 1, 2 e 4, apontadas abaixo, ainda não foram passadas para o caderno.
+**Blocos 1 a 4 em 19/10; blocos 5 e 6 em 20/10; correções dos blocos 1, 2, 4 e 5 registradas em 22/10.** Os Exercícios da LPI 5.3 e 5.4 foram feitos em 21/10. Faltam os três resíduos do bloco 5 e do bloco 6 (resultado do `rm` do `bob`, link com caminho absoluto e conferência da limpeza) e o `cheatsheets/permissoes.md`.
 
 #### Bloco 1 — Ler as permissões
 
@@ -311,7 +322,7 @@ Listagem registrada: `/etc/shadow` com `-rw-r-----` (`root shadow`), `/home` com
 
 Ajustes:
 
-1. **Na linha do `/tmp`, o dono saiu `rwr`.** O certo é `rwx`: `drwxrwxrwt` se lê `d` · `rwx` · `rwx` · `rwt`.
+1. **Corrigido em 22/10. Na linha do `/tmp`, o dono saiu `rwr`.** O certo é `rwx`: `drwxrwxrwt` se lê `d` · `rwx` · `rwx` · `rwt`.
 2. **Onde aparecem o `s` e o `t`**, que o roteiro pedia: o `s` do `/usr/bin/passwd` está no lugar do `x` do **dono** (SUID: o programa roda como root, que é quem pode gravar no `/etc/shadow`); o `t` do `/tmp` está no lugar do `x` dos **outros** (sticky bit).
 3. A primeira linha da listagem saiu `- rw-r-----`: o `-` do tipo virou marcador de lista no editor. No caderno, coloque a listagem em bloco de código para o `-` não sumir.
 4. O `/etc/shadow` passou de 942 para 1129 bytes desde a Prática 1: são as linhas da `alice`, do `bob`, da `carol` e do `teste_sem_nome`.
@@ -324,7 +335,7 @@ Ajustes:
 | `chmod u+x teste` | 740 | `rwxr-----` | Certo |
 | `chmod g=rw,o= teste` | 760 | `rwxrw----` | Certo |
 | `chmod a-x teste` | 660 | `rw-rw----` | Certo |
-| `chmod 4644 teste` | **4644** | `rwSr--r--` | No caderno saiu **4664**. O simbólico está certo, e ele mostra o erro: `r--` no grupo vale 4, não 6 |
+| `chmod 4644 teste` | **4644** | `rwSr--r--` | Corrigido em 22/10: no caderno tinha saído **4664**. O simbólico está certo, e ele mostra o erro: `r--` no grupo vale 4, não 6 |
 | `chmod u+x teste` | 4744 | `rwsr--r--` | Certo |
 
 A regra do `s` e do `S` está registrada com o mecanismo certo: minúsculo é bit especial com `x`; maiúsculo é bit especial sem `x`. O mesmo vale para `t` e `T`.
@@ -335,7 +346,7 @@ Correto em todos os passos: `chown bob:dev` troca dono e grupo; `chown :ops` tro
 
 #### Bloco 4 — Diretório: o `x` é de atravessar
 
-**As frases do caderno estão certas, mas a tabela contradiz duas delas.** Para 500 e 100 você escreveu que "consegue acessar um arquivo pelo nome", e a tabela marcou `cat pasta/arq` como "Não". O certo é **Sim** nos dois: o `x` basta para atravessar o diretório e abrir um arquivo cujo nome você conhece. Tabela corrigida:
+**Corrigido em 22/10.** As frases do caderno estavam certas, mas a tabela contradizia duas delas. Para 500 e 100 você escreveu que "consegue acessar um arquivo pelo nome", e a tabela marcou `cat pasta/arq` como "Não". O certo é **Sim** nos dois: o `x` basta para atravessar o diretório e abrir um arquivo cujo nome você conhece. Tabela corrigida:
 
 | Modo | `ls pasta` | `cat pasta/arq` | `touch pasta/novo` | `rm pasta/arq` |
 |---|---|---|---|---|
@@ -355,7 +366,7 @@ As três regras, com o mecanismo:
 
 #### Bloco 5 — SGID e sticky bit (em parte)
 
-Você trocou o `chmod g+wxs,o+t` pelo octal, com `sudo chown root:dev /srv/Box` e `3775`. **O caminho está certo**: o diretório nasce com 755; `g+wx` leva a 775; o `s` do grupo soma 2 e o `t` soma 1 no primeiro dígito, e o resultado é **3775**, ou `drwxrwsr-t`. A anotação traz `sudo 3775 /srv/Box`, sem o `chmod`: o comando é `sudo chmod 3775 /srv/Box`.
+Você trocou o `chmod g+wxs,o+t` pelo octal, com `sudo chown root:dev /srv/Box` e `3775`. **O caminho está certo**: o diretório nasce com 755; `g+wx` leva a 775; o `s` do grupo soma 2 e o `t` soma 1 no primeiro dígito, e o resultado é **3775**, ou `drwxrwsr-t`. A anotação trazia `sudo 3775 /srv/Box`, sem o `chmod`; corrigido em 22/10 para `sudo chmod 3775 /srv/Box`.
 
 **Resultados registrados em 20/10.** O arquivo `a` nasceu com dono `alice` e grupo **`dev`**: o SGID funcionou. As regras anotadas estão corretas e mais precisas que o roteiro:
 
