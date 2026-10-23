@@ -33,19 +33,20 @@ O Checkpoint A (18/10) deu **vermelho**: o que não fechou na Semana 7 entrou no
 | Dívida | Situação | Nova data |
 |---|---|---|
 | Autoavaliação da Semana 5 | **Feita: 9 de 10** | — |
-| Prática 1 | **Feita**; Exercícios da LPI 5.1 e 5.2 **feitos em 21/10**; falta passar as correções para o caderno | Qui 22/10 |
-| Prática 2 | **Feita em 19 e 20/10**; Exercícios da LPI 5.3 e 5.4 **feitos em 21/10**; faltam as correções no caderno, três resíduos e a cola `cheatsheets/permissoes.md` | Qui 22/10 |
-| Simulado 02 | Não feito | **Qui 22/10** |
+| Prática 1 | **Feita**; Exercícios da LPI 5.1 e 5.2 feitos em 21/10; correções no caderno e cards 60 a 70 no Notion **feitos em 22/10** | — |
+| Prática 2 | **Feita em 19 e 20/10**; Exercícios da LPI 5.3 e 5.4 feitos em 21/10; correções no caderno **feitas em 22/10**; faltam três resíduos e a cola `cheatsheets/permissoes.md` | Sáb 24/10 |
+| Cards no Notion | 60 a 70 anotados em 22/10; faltam 71 a 75, os três sem número e os erros dos Exercícios da LPI | Sex 23/10 |
+| Simulado 02 | Não feito (17, 21 e 22/10) | **Sex 23/10**. Se não sair, sai do plano e o simulado 03 assume a medição |
 | Autoavaliação da Semana 6 | A fazer | Sáb 24/10 |
-| Curso, aulas 41 a 72 | Parado na aula 40 | Sex 23, sáb 24 e dom 25/10 |
+| Curso, aulas 41 a 72 | Parado na aula 40 | Sáb 24 e dom 25/10 |
 
-### Conteúdo ainda não estudado — Etapa 2, de 15/10 a 25/10
+### Conteúdo ainda não estudado — Etapa 2, até 27/10
 
 | Item | Quando |
 |---|---|
-| **Curso, aulas 41 a 72** (32 aulas; último registro na 40) | 41 a 57 em 15 e 16/10; 58 a 72 em 17 e 18/10 |
-| **Tópico 4** — Práticas 3 (hardware, discos, diretórios), 4 (processos, memória, logs) e 5 (rede) | 19, 20 e 21/10 |
-| 4.1, here document (`<<`) e quizzes do NDG | 22/10 |
+| **Curso, aulas 41 a 72** (32 aulas; último registro na 40) | 41 a 56 no sáb 24/10; 57 a 72 no dom 25/10 |
+| **Tópico 4** — Práticas 3 (hardware, discos, diretórios), 4 (processos, memória, logs) e 5 (rede) | Sex 23, sáb 24 e dom 25/10 |
+| 4.1, here document (`<<`) e quizzes do NDG | Ter 27/10 |
 
 A lista completa, objetivo por objetivo, está em `labs/semana-07.md`, seção 2.
 
@@ -63,7 +64,7 @@ A lista completa, objetivo por objetivo, está em `labs/semana-07.md`, seção 2
 |---|---|---|
 | 1. Comunidade e open source | 7 | 100% |
 | 2. Encontrando seu caminho | 9 | 100% |
-| 3. Poder da linha de comando | 9 | 100% (falta o here document como conceito, 22/10) |
+| 3. Poder da linha de comando | 9 | 100% (falta o here document como conceito, 27/10) |
 | 4. Sistema operacional | 8 | 30% |
 | 5. Segurança e permissões | 7 | 90% (Práticas 1 e 2 feitas; faltam os Exercícios da LPI) |
 
@@ -350,7 +351,7 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 | # | Data | Semana | Fonte | Meta |
 |---|---|---|---|---|
 | 1 | Seg 05/10 | 6 | `simulado-01` | **Feito: 28 de 40 (70%), 23 firmes** |
-| 2 | **Qui 22/10** | 8 | `simulado-02` (pronto; não feito em 17/10) | 24 ou mais |
+| 2 | **Sex 23/10** | 8 | `simulado-02` (pronto; não feito em 17, 21 e 22/10) | 24 ou mais |
 | 3 | **Seg 26/10** | 9 | `simulado-03` (pronto) | **28 ou mais** (Checkpoint B) |
 | R2 | Ter 27/10 | 9 | Reforço, 20 questões (pronto, `praticas_simulados.md`, seção 8) | 15 de 20 |
 | R1 | Qua 28/10 | 9 | Reforço, 20 questões (pronto, `praticas_simulados.md`, seção 6) | 15 de 20 |
@@ -377,16 +378,16 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 
 ### Semana 8 — 19 a 25/10 · Dívidas da Semana 7 e Tópico 4
 
-**Arquivo detalhado:** `labs/semana-08.md` (roteiros, autoavaliação do Tópico 4, Checkpoint B e cola rápida). Calendário refeito em 19/10.
+**Arquivo detalhado:** `labs/semana-08.md` (roteiros, autoavaliação do Tópico 4, Checkpoint B e cola rápida). Calendário refeito em 19, 20, 21 e 22/10.
 
 | Dia | Atividade |
 |---|---|
 | Ter 20 | Prática 2 terminada |
 | Qua 21 | Exercícios da LPI 5.1 a 5.4 |
-| Qui 22 | **Simulado 02** · correções e resíduos das Práticas 1 e 2 |
-| Sex 23 | Prática 3 — hardware, discos e o mapa dos diretórios (4.2 e 4.3) · aulas 41 a 46 |
-| Sáb 24 | Autoavaliação da Semana 6 · Prática 4 — processos, memória e logs (4.3) · aulas 47 a 58 |
-| Dom 25 | Prática 5 — rede (4.4) · aulas 59 a 72 |
+| Qui 22 | Cards 60 a 70 no Notion · correções das Práticas 1 e 2 no caderno (o simulado 02 não saiu) |
+| Sex 23 | **Simulado 02** · Prática 3 — hardware, discos e o mapa dos diretórios (4.2 e 4.3) · cards que faltam no Notion |
+| Sáb 24 | Autoavaliação da Semana 6 · Prática 4 — processos, memória e logs (4.3) · resíduos e cola da Prática 2 · aulas 41 a 56 |
+| Dom 25 | Prática 5 — rede (4.4) · aulas 57 a 72 |
 
 **Marco:** ao fim desta semana, os cinco tópicos foram estudados e o curso está fechado.
 
