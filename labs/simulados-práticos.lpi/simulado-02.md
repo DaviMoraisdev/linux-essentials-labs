@@ -1,6 +1,6 @@
 # Simulado 02 — LPI Linux Essentials (010-160)
 
-Simulado no formato do exame, versão 1.6. Escrito em 13/10/2026; remarcado para a **quinta 22/10** (não feito em 17/10). Calendário em `labs/semana-08.md`.
+Simulado no formato do exame, versão 1.6. Escrito em 13/10/2026; remarcado para a **sexta 23/10** (não feito em 17, 21 e 22/10; se não sair na sexta, sai do plano). Calendário em `labs/semana-08.md`.
 
 Este simulado é **mais difícil que o 01**: enunciados com cenário, pegadinhas de comando, quatro questões de escolher duas respostas e cinco questões de preencher a lacuna. As questões são escritas sobre os objetivos oficiais; não são questões reais do exame.
 
@@ -449,7 +449,7 @@ Preencha depois de conferir o gabarito.
 
 | Campo | Valor |
 | --- | --- |
-| Data | 22/10/2026 |
+| Data | 23/10/2026 |
 | Tempo gasto | |
 | Minutos usados na segunda passada | |
 | Acertos | de 40 |
