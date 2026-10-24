@@ -1,6 +1,6 @@
 # Simulado 03 — LPI Linux Essentials (010-160)
 
-Simulado no formato do exame, versão 1.6. Escrito em 18/10/2026; aplicado na **segunda 26/10** (movido de domingo em 21/10), depois da Prática 5. É o primeiro com os cinco tópicos estudados e vale para o **Checkpoint B**.
+Simulado no formato do exame, versão 1.6. Escrito em 18/10/2026; aplicado na **sexta 30/10** (movido em 21 e 23/10), depois das Práticas 3 a 5 e do curso fechado. É o primeiro com os cinco tópicos estudados e vale para o **Checkpoint B**.
 
 Mesmo nível do simulado 02: enunciados com cenário, pegadinhas de comando, três questões de escolher duas respostas e cinco de preencher a lacuna. As questões são escritas sobre os objetivos oficiais; não são questões reais do exame.
 
@@ -439,7 +439,7 @@ Preencha depois de conferir o gabarito.
 
 | Campo | Valor |
 | --- | --- |
-| Data | 26/10/2026 |
+| Data | 30/10/2026 |
 | Tempo gasto | |
 | Minutos usados na segunda passada | |
 | Acertos | de 40 |
