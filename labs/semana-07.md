@@ -1,4 +1,4 @@
-3# Semana 7 — Pagamento das dívidas, fechamento do curso e nova estratégia até a prova
+# Semana 7 — Pagamento das dívidas, fechamento do curso e nova estratégia até a prova
 
 Período: 12/10 a 18/10/2026 (segunda a domingo)
 Objetivos da prova: Tópico 5 (5.1 a 5.4) em prática; curso do Matheus Muller até a aula 72
@@ -197,9 +197,9 @@ Uma autoavaliação abaixo de 8 não reprova o checkpoint: as questões erradas 
 
 ---
 
-## 8. Etapa 2 — Laboratórios do Tópico 4 (Semana 8, 19 a 25/10)
+## 8. Etapa 2 — Laboratórios do Tópico 4 (Semana 9, 26/10 a 01/11)
 
-Os roteiros das Práticas 3, 4 e 5, do bloco curto, a autoavaliação da Semana 8 e o calendário estão em `labs/semana-08.md`.
+Os roteiros das Práticas 3, 4 e 5, do bloco curto, a autoavaliação da Semana 8 e o calendário estão em `labs/semana-09.md` (movidos da Semana 8 em 23/10).
 
 ---
 
