@@ -1,6 +1,6 @@
 # Simulado 02 — LPI Linux Essentials (010-160)
 
-Simulado no formato do exame, versão 1.6. Escrito em 13/10/2026; remarcado para a **sexta 23/10** (não feito em 17, 21 e 22/10; se não sair na sexta, sai do plano). Calendário em `labs/semana-08.md`.
+Simulado no formato do exame, versão 1.6. Escrito em 13/10/2026; feito na **sexta 23/10** (remarcado de 17, 21 e 22/10): **22 de 40**. Apuração no fim do arquivo.
 
 Este simulado é **mais difícil que o 01**: enunciados com cenário, pegadinhas de comando, quatro questões de escolher duas respostas e cinco questões de preencher a lacuna. As questões são escritas sobre os objetivos oficiais; não são questões reais do exame.
 
@@ -30,7 +30,7 @@ Nas questões **(escolha duas)**, a questão só conta como certa se as duas res
 | 4. O sistema operacional Linux | 8 | 26 a 33 |
 | 5. Segurança e permissões de arquivo | 7 | 34 a 40 |
 
-**Atenção ao Tópico 4:** ele só será estudado na Semana 8. As questões dele medem o ponto de partida, não o resultado do estudo. Marque os chutes com cuidado.
+**Atenção ao Tópico 4:** ele só será estudado na Semana 9. As questões dele medem o ponto de partida, não o resultado do estudo. Marque os chutes com cuidado.
 
 ---
 
@@ -426,45 +426,83 @@ São erros antigos: não se estudam de novo, mas o simulado diz se voltaram.
 
 # Apuração
 
-Preencha depois de conferir o gabarito.
+Corrigido em 23/10 a partir das respostas marcadas no caderno. Q29 e Q40 foram **pesquisadas** durante o simulado: contam no bruto, mas não valem como medição.
 
-| Tópico | Peso | Questões | Acertos | Chutes acertados |
-| --- | --- | --- | --- | --- |
-| 1. Comunidade e open source | 7 | 1 a 7 | | |
-| 2. Encontrando seu caminho | 9 | 8 a 16 | | |
-| 3. Poder da linha de comando | 9 | 17 a 25 | | |
-| 4. Sistema operacional | 8 | 26 a 33 | | |
-| 5. Segurança e permissões | 7 | 34 a 40 | | |
-| **Total** | **40** | | | |
+| Tópico | Peso | Questões | Acertos | Chutes acertados | Acertos firmes | Erros |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1. Comunidade e open source | 7 | 1 a 7 | 5 | 0 | 5 | 5, 7 |
+| 2. Encontrando seu caminho | 9 | 8 a 16 | **4** | 0 | 4 | 9, 10, 13, 14, 16 |
+| 3. Poder da linha de comando | 9 | 17 a 25 | 6 | 1 (Q17) | 5 | 19, 22, 24 |
+| 4. Sistema operacional (não estudado) | 8 | 26 a 33 | 4 | 3 (Q27, Q28, Q29) | 1 | 30, 31, 32, 33 |
+| 5. Segurança e permissões | 7 | 34 a 40 | **3** | 0 (Q40 pesquisada) | 2 | 34, 36, 37, 38 |
+| **Total** | **40** | | **22** | **4** | **17** | **18** |
 
 | Tema | Questões | Acertos |
 | --- | --- | --- |
-| Permissões | 5 | |
-| `tar` e compressão | 2 | |
-| Redirecionamento | 3 | |
-| Diretórios virtuais | 3 | |
-| Lacunas | 5 | |
+| Permissões | 5 | **2** (39, 40) |
+| `tar` e compressão | 2 | 2 (Q17 por chute) |
+| Redirecionamento | 3 | 2 (20, 21) |
+| Diretórios virtuais | 3 | 2 (27, 28, ambas por chute) |
+| Lacunas | 5 | 3 (21, 29, 40; as duas últimas pesquisadas) |
 
 ## Registro
 
 | Campo | Valor |
 | --- | --- |
 | Data | 23/10/2026 |
-| Tempo gasto | |
-| Minutos usados na segunda passada | |
-| Acertos | de 40 |
-| Percentual e escala LPI | |
-| Questões marcadas como chute | |
-| Chutes acertados e chutes errados | |
-| Acertos firmes | |
-| Erros de forma nas lacunas | |
+| Tempo gasto | Não informado |
+| Minutos usados na segunda passada | Não informado |
+| Acertos | **22 de 40 (55%)**, equivalente a **440 de 800**. Abaixo da meta (24) e do corte do exame (26) |
+| Sem as pesquisadas (Q29, Q40) | 20 de 40 (50%) |
+| Questões marcadas como chute | 11: 5, 17, 27, 28, 29, 30, 31, 32, 33, 37, 38 |
+| Chutes acertados e chutes errados | 4 acertados (17, 27, 28, 29) · 7 errados (5, 30, 31, 32, 33, 37, 38) |
+| Acertos firmes | **17 de 40 (42,5%)** |
+| Erros de forma nas lacunas | 2: Q7 (`sudo dpkg`, com o `sudo` a mais) e Q13 (`man ou help`, duas respostas) |
 
 ## Questões erradas
 
-Só as erradas e as chutadas. A correção vai para o Notion, com as suas palavras.
+Só as erradas. A correção vai para o Notion, com as suas palavras. As quatro do Tópico 4 (30 a 33) **não viram card**: são conteúdo ainda não estudado e entram como ênfase nas Práticas 3 e 5 da Semana 9.
 
-| Q | Tópico | Tema | Você marcou | Gabarito | Convicção ou chute | Corrigida no Notion |
-| --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | |
+| Q | Tópico | Tema | Você marcou | Gabarito | Convicção ou chute | Reincidência | Corrigida no Notion |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 5 | 1 | Aplicativos | C (Blender) | **A** (GIMP) | Chute | — | |
+| 7 | 1 | Lacuna, pacotes | `sudo dpkg` | **`dpkg`** | Convicção; erro de **forma** | — | |
+| 9 | 2 | Navegação | D e E | **B e D** | Convicção | **Correção 54** | |
+| 10 | 2 | Caminho relativo | C (`cd ./tmp`) | **A** (`cd ../tmp`) | Convicção | Correções 53 e 64 (`..`) | |
+| 13 | 2 | Lacuna, ajuda | `man ou help` | **`help`** | Convicção; erro de **forma** | Correção 74 | |
+| 14 | 2 | `mv` | A e C | **A e E** | Convicção | — | |
+| 16 | 2 | Seções do `man` | D (`man -k`) | **C** (`man 5 passwd`) | Convicção | — | |
+| 19 | 3 | Redirecionamento | A | **B** | Convicção | **Correção 29** | |
+| 22 | 3 | `grep` | D (`-n`) | **A** (`-v`) | Convicção | **Correção 49** | |
+| 24 | 3 | Parâmetros de script | D | **C** (`3 b`) | Convicção | **Q6 da autoavaliação da Semana 5** | |
+| 30 | 4 | Dispositivos | D | A | Chute | Não estudado | Sem card |
+| 31 | 4 | DNS | A | C | Chute | Não estudado | Sem card |
+| 32 | 4 | IPv4 privado | B e E | B e D | Chute | Não estudado | Sem card |
+| 33 | 4 | Sinais | D | B | Chute | Não estudado; Q29 do simulado 01 | Sem card |
+| 34 | 5 | `/etc/passwd` | D | **A** | Convicção | **Q35 do simulado 01** e Prática 1 | |
+| 36 | 5 | Octal | A (755) | **B** (750) | Convicção | Q37 do simulado 01 (octal) | |
+| 37 | 5 | `chmod` simbólico | C (766) | **D** (746) | Chute | — | |
+| 38 | 5 | Bits especiais | D (`T`) | **C** (`t`) | Chute | — | |
 
-**Comparação com o simulado 01 (28 de 40, 23 firmes):** o que errava e agora acerta, o que continua errando, o que apareceu de novo.
+### O que escrever em cada card
+
+Cada linha traz o erro, o certo e o mecanismo que impede o erro de voltar.
+
+| Q | Errado | Certo | Mecanismo |
+| --- | --- | --- | --- |
+| 5 | Blender para retocar foto | **GIMP** | GIMP: imagem rasterizada (foto). Inkscape: vetor. Blender: 3D. Audacity: áudio |
+| 7 | `sudo dpkg` | `dpkg` | Em lacuna, escreva **só o nome do comando**: sem `sudo`, sem caminho, sem flag. O conteúdo estava certo; a forma derrubou |
+| 9 | `cd /home` leva para `/home/davi` | `cd` e `cd ~` | `/home` é o diretório que **contém** as pastas pessoais. O `~` é a pasta pessoal do usuário (`/home/davi`). `cd` sem argumento também vai para ela |
+| 10 | `cd ./tmp` sai de `/var/log` para `/var/tmp` | `cd ../tmp` | `.` é o diretório **atual**: `./tmp` seria `/var/log/tmp`. `..` é o **pai**: `../tmp` sobe para `/var` e entra em `tmp` |
+| 13 | `man ou help` | `help` | O `man` não tem página para comando interno. O `help` é o próprio interno do Bash para os internos (`help cd`). Em lacuna, **uma** resposta |
+| 14 | O `mv` exige `-r` para diretórios | O `mv` move diretórios sem opção | Quem exige `-r` é o **`cp`** (copiar diretório é copiar o conteúdo, um a um). O `mv` só troca o nome ou o lugar da entrada; o conteúdo vai junto |
+| 16 | `man -k passwd` mostra o formato do arquivo | `man 5 passwd` | O número escolhe a **seção**: 1 comandos, 5 formatos de arquivo, 8 administração. O `man -k` só **procura** páginas pela palavra (como o `apropos`) e lista os resultados |
+| 19 | `cmd 2>&1 > arquivo` grava tudo no arquivo | `cmd > arquivo 2>&1` | Lê-se da **esquerda para a direita**. `2>&1` copia o destino **atual** da saída padrão. Se vier antes, a saída padrão ainda é o terminal, e o erro fica no terminal |
+| 22 | `grep -n` mostra as linhas sem a palavra | `grep -v` | No `grep`, `-v` é ***invert***: mostra as linhas que **não** casam. `-n` numera, `-c` conta, `-i` ignora maiúsculas |
+| 24 | `echo $# $2` com `a b c` imprime `a b c` | `3 b` | `$#` é a **quantidade** de argumentos (3), `$2` é o segundo (`b`), `$@` são todos, `$0` é o nome do script e não entra na contagem |
+| 34 | O `x` do segundo campo indica administrador | O hash está no `/etc/shadow` | O `/etc/passwd` é legível por todos; por isso a senha saiu dele. O `x` só marca "a senha está no shadow". Administrador é o **UID 0**, terceiro campo |
+| 36 | `rwxr-x---` = 755 | 750 | Converta **cada trio separado**: `rwx` 7, `r-x` 5, `---` **0**. O último trio vazio é zero |
+| 37 | `754` com `o+w,g-x` dá 766 | 746 | Aplique cada parte só no seu trio: dono 7 fica 7; grupo 5 (`r-x`) **menos** `x` fica 4; outros 4 (`r--`) **mais** `w` fica 6 |
+| 38 | `1777` aparece com `T` | Com `t` minúsculo | O `t` substitui o `x` dos **outros**. Minúsculo: os outros **têm** `x`. Maiúsculo (`T`): **não têm**. `1777` dá `rwxrwxrwt` |
+
+**Comparação com o simulado 01 (28 de 40, 23 firmes):** caiu para 22 de 40, com 17 firmes. Parte da queda vem do formato mais difícil (cenários, escolha duas, cinco lacunas), mas os Tópicos 2 e 5 explicam o resto, e quase todos os erros deles são de conteúdo já estudado e já corrigido. **Das nove questões que retestavam correções antigas, quatro voltaram a errar** (Q9, Q19, Q22, Q34), e a Q24 repete o erro da autoavaliação da Semana 5. O que segurou: `tar` (Q17, Q18), here document (Q20), `2>` (Q21), `uniq` depois do `sort` (Q23), sticky bit (Q39) e `usermod -G` sem `-a` (Q35). Os erros se concentram em dois blocos, **navegação e ajuda (Tópico 2)** e **permissões e contas (Tópico 5)**, e são eles que os reforços R3 e R4 atacam.
