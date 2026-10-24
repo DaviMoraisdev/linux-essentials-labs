@@ -10,7 +10,7 @@
 
 ## 1. Status atual
 
-**Atualizado em 13/10.** Prova em **23/11**. Detalhe da semana em `labs/semana-07.md`.
+**Atualizado em 23/10.** Prova em **23/11**, a confirmar no Checkpoint B (domingo 01/11). Detalhe das semanas em `labs/semana-08.md` (fim de semana 24 e 25/10) e `labs/semana-09.md` (26/10 a 01/11).
 
 ### Concluído
 
@@ -26,27 +26,27 @@
 | Bandit | Níveis 0 a 9 |
 | Cards de revisão (Notion) | Em uso desde a Semana 1 |
 
-### Dívidas da Etapa 1 — situação em 21/10
+### Dívidas — situação em 23/10
 
-O Checkpoint A (18/10) deu **vermelho**: o que não fechou na Semana 7 entrou no calendário da Semana 8, e o Checkpoint B (26/10) decide a data da prova.
+O Checkpoint A (18/10) deu **vermelho**. O simulado 02 saiu em 23/10 com **22 de 40 (17 firmes)**, abaixo da meta de 24. Por isso o fim de semana 24 e 25/10 ficou só para as dívidas que são conteúdo de prova, com **limite no domingo**; o conteúdo novo foi para a Semana 9, e o **Checkpoint B passou para o domingo 01/11**. Mapa completo em `labs/semana-08.md`.
 
-| Dívida | Situação | Nova data |
+| Dívida | Situação | Quando |
 |---|---|---|
-| Autoavaliação da Semana 5 | **Feita: 9 de 10** | — |
-| Prática 1 | **Feita**; Exercícios da LPI 5.1 e 5.2 feitos em 21/10; correções no caderno e cards 60 a 70 no Notion **feitos em 22/10** | — |
-| Prática 2 | **Feita em 19 e 20/10**; Exercícios da LPI 5.3 e 5.4 feitos em 21/10; correções no caderno **feitas em 22/10**; faltam três resíduos e a cola `cheatsheets/permissoes.md` | Sáb 24/10 |
-| Cards no Notion | 60 a 70 anotados em 22/10; faltam 71 a 75, os três sem número e os erros dos Exercícios da LPI | Sex 23/10 |
-| Simulado 02 | Não feito (17, 21 e 22/10) | **Sex 23/10**. Se não sair, sai do plano e o simulado 03 assume a medição |
-| Autoavaliação da Semana 6 | A fazer | Sáb 24/10 |
-| Curso, aulas 41 a 72 | Parado na aula 40 | Sáb 24 e dom 25/10 |
+| Autoavaliações das Semanas 5 e 6 | Semana 5 feita (9 de 10); Semana 6 a fazer | Sáb 24/10, antes dos cards |
+| Práticas 1 e 2 | **Feitas**, com correções no caderno em 22/10 | — |
+| Simulado 02 | **Feito em 23/10: 22 de 40** | — |
+| Cards no Notion | 60 a 70 anotados; faltam os 14 do simulado 02, os ajustes em 65, 69 e 70, os cards 71 a 75 e dois sem número | Sáb 24/10 |
+| `cheatsheets/permissoes.md` | A fazer | Sáb 24/10 |
+| Reforços R4 e R3 (novos, sobre os erros do simulado 02) | Prontos em `reforco-r3-r4.md` | Dom 25/10 |
+| Resíduos da Prática 2; erros da primeira tentativa dos Exercícios da LPI | **Saíram do plano em 23/10**: não são conteúdo de prova ou não têm registro | — |
 
-### Conteúdo ainda não estudado — Etapa 2, até 27/10
+### Conteúdo ainda não estudado — Semana 9, de 26 a 29/10
 
 | Item | Quando |
 |---|---|
-| **Curso, aulas 41 a 72** (32 aulas; último registro na 40) | 41 a 56 no sáb 24/10; 57 a 72 no dom 25/10 |
-| **Tópico 4** — Práticas 3 (hardware, discos, diretórios), 4 (processos, memória, logs) e 5 (rede) | Sex 23, sáb 24 e dom 25/10 |
-| 4.1, here document (`<<`) e quizzes do NDG | Ter 27/10 |
+| **Tópico 4** — Práticas 3 (hardware, discos, diretórios), 4 (processos, memória, logs) e 5 (rede) | Seg 26, ter 27 e qua 28/10 |
+| **Curso, aulas 41 a 72** (32 aulas; último registro na 40) | Oito por dia, de segunda a quinta; curso fechado na qui 29/10 |
+| 4.1, here document (`<<`) e quizzes do NDG | Qui 29/10 |
 
 A lista completa, objetivo por objetivo, está em `labs/semana-07.md`, seção 2.
 
@@ -292,7 +292,7 @@ Os erros recorrentes da seção 9 não têm atividade própria. Voltam em dois m
 
 Dicas de candidatos, de fonte não oficial, conferidas contra o PDF da LPI: permissões (r = 4, w = 2, x = 1), `tar` e compressão, redirecionamento (`>`, `>>`, `2>`, `<<`), diretórios `/proc`, `/sys`, `/dev` e `/var`, e **atenção às questões de preencher a lacuna**. Todas constam do material oficial. O plano já cobria permissões, `tar` e `/proc` e `/dev`; as lacunas reais eram o `<<` como conceito, o `/sys` e o **formato de lacuna**, nunca treinado (a Q11 do simulado #1 foi respondida com um sublinhado na frente de `PATH`).
 
-Como entram, sem aumentar a carga: (1) **mínimo de questões por tema em todo simulado a partir do #2**: permissões 4, `tar` 2, redirecionamento 3 (com `<<`), diretórios 3, **lacunas 5**; (2) **mini-simulados de reforço de 20 questões e 25 minutos**: R2 na terça 27/10 e R1 na quarta 28/10; (3) a partir de 26/10, o aquecimento diário gira pelas cinco frentes (segunda permissões, terça `tar`, quarta redirecionamento, quinta diretórios, sexta lacunas). O detalhe, a cola e o R1 com gabarito estão em `praticas-reforco-dicas-recorrentes.md`; o desempenho por tema é registrado em `praticas-resultados-simulados-e-correcoes.md`.
+Como entram, sem aumentar a carga: (1) **mínimo de questões por tema em todo simulado a partir do #2**: permissões 4, `tar` 2, redirecionamento 3 (com `<<`), diretórios 3, **lacunas 5**; (2) **mini-simulados de reforço de 20 questões e 25 minutos**: R4 e R3, sobre os erros do simulado 02, no domingo 25/10, e R2 e R1 no sábado 31/10; (3) a partir de 26/10, o aquecimento diário gira pelas cinco frentes (segunda permissões, terça `tar`, quarta redirecionamento, quinta diretórios, sexta lacunas). O detalhe, a cola e o R1 com gabarito estão em `praticas-reforco-dicas-recorrentes.md`; o desempenho por tema é registrado em `praticas-resultados-simulados-e-correcoes.md`.
 
 ### Os simulados
 
@@ -307,7 +307,7 @@ Um simulado geral de 40 questões, 60 minutos, sem consulta, com a distribuiçã
 7. **Exceção:** a véspera da prova (domingo 22/11) não tem simulado. O final é na quinta 19/11.
 8. **Dificuldade (06/10):** do #2 em diante os simulados escritos aqui ficam mais próximos do exame: enunciados com cenário, pegadinhas de comando, escolha de mais de uma resposta, preenchimento e distratores plausíveis. Use pelo menos 45 minutos e reserve os últimos 15 para uma segunda passada nas marcadas.
 
-**Relação com a autoavaliação semanal.** Restam duas: a da Semana 6 (Tópico 5) no sábado 24/10 e a da Semana 8 (Tópico 4) na quarta 28/10, a última do plano. A partir da Semana 8, com os cinco tópicos estudados, o simulado substitui a autoavaliação.
+**Relação com a autoavaliação semanal.** Restam duas: a da Semana 6 (Tópico 5) no sábado 24/10 e a da Semana 8 (Tópico 4) no sábado 31/10, a última do plano. A partir do simulado 03 (30/10), com os cinco tópicos estudados, o simulado substitui a autoavaliação.
 
 ---
 
@@ -319,9 +319,9 @@ Semanas de **segunda a domingo**. A prova é na **segunda-feira 23/11**, depois 
 
 | Etapa | Semanas | Período | Foco |
 |---|---|---|---|
-| **1. Dívidas** | 7 | 13/10 a 18/10 | Práticas 1 e 2, simulado 02, autoavaliações das Semanas 5 e 6 · curso até a aula 72 em paralelo |
-| **2. Conteúdo não estudado** | 7 e 8 | 15/10 a 25/10 | Curso fechado · Tópico 4 em três práticas de laboratório · 4.1 e here document |
-| **3. Simulados** | 8 a 12 | 23/10 a 19/11 | Um simulado completo a cada dois ou três dias · revisão dirigida só nos erros · revisão leve na última semana |
+| **1. Dívidas** | 7 e 8 | 13/10 a 25/10 | Práticas 1 e 2, simulado 02, autoavaliações das Semanas 5 e 6 · correção dos erros do simulado 02 e reforços R3 e R4 |
+| **2. Conteúdo não estudado** | 9 | 26/10 a 29/10 | Tópico 4 em três práticas de laboratório · 4.1 e here document · curso fechado |
+| **3. Prática total** | 9 a 12 | 30/10 a 19/11 | Simulados completos a cada dois dias, em média · correção só dos erros · reforços nos temas abaixo de 60% · revisão leve na última semana |
 | **Prova** | — | **Seg 23/11** | — |
 
 ### A conta
@@ -329,10 +329,10 @@ Semanas de **segunda a domingo**. A prova é na **segunda-feira 23/11**, depois 
 | Item | Número |
 |---|---|
 | Semanas até a prova | 6 (de 13/10 a 22/11) |
-| Aulas restantes do curso | 32 (41 a 72), todas na Semana 7 |
-| Práticas de laboratório restantes | 5 (Práticas 1 e 2 do Tópico 5; Práticas 3, 4 e 5 do Tópico 4) |
-| Simulados completos | 10 (02 a 11), mais os reforços R1 e R2 |
-| Semanas só de simulados | 4 (9 a 12) |
+| Aulas restantes do curso | 32 (41 a 72), oito por dia de 26 a 29/10 |
+| Práticas de laboratório restantes | 3 (Práticas 3, 4 e 5 do Tópico 4) |
+| Simulados completos | 9 restantes (03 a 11), mais os reforços R1 a R4 |
+| Semanas só de simulados | 3 (10 a 12), mais o fim da Semana 9 |
 | Meta semanal | cerca de 9h, com 1h por dia útil e blocos maiores no fim de semana |
 
 ### Datas do calendário que afetam o plano
@@ -351,14 +351,16 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 | # | Data | Semana | Fonte | Meta |
 |---|---|---|---|---|
 | 1 | Seg 05/10 | 6 | `simulado-01` | **Feito: 28 de 40 (70%), 23 firmes** |
-| 2 | **Sex 23/10** | 8 | `simulado-02` (pronto; não feito em 17, 21 e 22/10) | 24 ou mais |
-| 3 | **Seg 26/10** | 9 | `simulado-03` (pronto) | **28 ou mais** (Checkpoint B) |
-| R2 | Ter 27/10 | 9 | Reforço, 20 questões (pronto, `praticas_simulados.md`, seção 8) | 15 de 20 |
-| R1 | Qua 28/10 | 9 | Reforço, 20 questões (pronto, `praticas_simulados.md`, seção 6) | 15 de 20 |
-| 4 | Qui 29/10 | 9 | Exame final de prática do NDG | 28 ou mais |
-| 5 | Dom 01/11 | 9 | `simulado-05` | **30 ou mais** |
-| 6 | Ter 03/11 | 10 | `simulado-06` | Acompanhar |
-| 7 | Qui 05/11 | 10 | `simulado-07` | 34 ou mais |
+| 2 | Sex 23/10 | 8 | `simulado-02` | **Feito: 22 de 40 (55%), 17 firmes**. Meta de 24 não atingida |
+| R4 | **Dom 25/10** | 8 | Reforço, 20 questões, contas e permissões (`reforco-r3-r4.md`) | 16 de 20 |
+| R3 | **Dom 25/10** | 8 | Reforço, 20 questões, navegação, ajuda e redirecionamento (`reforco-r3-r4.md`) | 16 de 20 |
+| 3 | **Sex 30/10** | 9 | `simulado-03` (pronto) | **28 ou mais** (Checkpoint B) |
+| R2 | Sáb 31/10 | 9 | Reforço, 20 questões (pronto, `praticas_simulados.md`, seção 8) | 15 de 20 |
+| R1 | Sáb 31/10 | 9 | Reforço, 20 questões (pronto, `praticas_simulados.md`, seção 6) | 15 de 20 |
+| 4 | **Dom 01/11** | 9 | Exame final de prática do NDG | 28 ou mais |
+| 5 | Ter 03/11 | 10 | `simulado-05` | **30 ou mais** |
+| 6 | Qua 04/11 | 10 | `simulado-06` | Acompanhar |
+| 7 | Sex 06/11 | 10 | `simulado-07` | 34 ou mais |
 | 8 | **Dom 08/11** | 10 | `simulado-08` | **34 ou mais** (Gate) |
 | 9 | Ter 10/11 | 11 | `simulado-09` | 34 ou mais |
 | 10 | Dom 15/11 | 11 | `simulado-10` | 34 ou mais |
@@ -366,7 +368,7 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 
 **Gate:** dois simulados consecutivos com 34 ou mais entre o 06, o 07 e o 08.
 
-**Regras da série.** Cronometrado, sem consulta, marcando cada chute; pelo menos 45 minutos de uso, com segunda passada; apuração por tópico e por tema; só se anotam as questões erradas e as chutadas, e a correção fica no Notion. Cada simulado traz o mínimo por tema das dicas recorrentes (permissões 4, `tar` 2, redirecionamento 3, diretórios 3, lacunas 5). Os simulados escritos aqui ficam prontos **três dias antes** do uso.
+**Regras da série.** Cronometrado, sem consulta (questão **pesquisada** conta como errada, regra de 23/10), marcando cada chute; pelo menos 45 minutos de uso, com segunda passada; apuração por tópico e por tema; só se anotam as questões erradas e as chutadas, e a correção fica no Notion. Cada simulado traz o mínimo por tema das dicas recorrentes (permissões 4, `tar` 2, redirecionamento 3, diretórios 3, lacunas 5). Os simulados escritos aqui ficam prontos **três dias antes** do uso.
 
 **Revisão dirigida.** Depois de cada simulado, no máximo 30 minutos, **só nos objetivos com erro**, de preferência executando na VM. Não se revisa o que já se acerta.
 
@@ -376,40 +378,45 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 
 **Arquivo detalhado:** `labs/semana-07.md`. Feito: autoavaliação da Semana 5 (9 de 10), Prática 1 e, na segunda 19/10, a Prática 2 até o bloco 4. Não feito: simulado 02 e curso. **Checkpoint A: vermelho.**
 
-### Semana 8 — 19 a 25/10 · Dívidas da Semana 7 e Tópico 4
+### Semana 8 — 19 a 25/10 · Dívidas da Semana 7, simulado 02 e reforço
 
-**Arquivo detalhado:** `labs/semana-08.md` (roteiros, autoavaliação do Tópico 4, Checkpoint B e cola rápida). Calendário refeito em 19, 20, 21 e 22/10.
-
-| Dia | Atividade |
-|---|---|
-| Ter 20 | Prática 2 terminada |
-| Qua 21 | Exercícios da LPI 5.1 a 5.4 |
-| Qui 22 | Cards 60 a 70 no Notion · correções das Práticas 1 e 2 no caderno (o simulado 02 não saiu) |
-| Sex 23 | **Simulado 02** · Prática 3 — hardware, discos e o mapa dos diretórios (4.2 e 4.3) · cards que faltam no Notion |
-| Sáb 24 | Autoavaliação da Semana 6 · Prática 4 — processos, memória e logs (4.3) · resíduos e cola da Prática 2 · aulas 41 a 56 |
-| Dom 25 | Prática 5 — rede (4.4) · aulas 57 a 72 |
-
-**Marco:** ao fim desta semana, os cinco tópicos foram estudados e o curso está fechado.
-
-### Semana 9 — 26/10 a 01/11 · Etapa 3, simulados
+**Arquivo detalhado:** `labs/semana-08.md`. Refeito em 23/10: o Tópico 4 e as aulas saíram do fim de semana.
 
 | Dia | Atividade |
 |---|---|
-| Seg 26 | **Simulado 03** · **Checkpoint B** (decide a data da prova) |
-| Ter 27 | **R2** · bloco curto: 4.1 e here document |
-| Qua 28 | Autoavaliação da Semana 8 (Tópico 4) · **R1** |
-| Qui 29 | **Simulado 04** (exame final de prática do NDG) |
-| Dom 01/11 | **Simulado 05** |
-| Demais dias | Revisão dirigida dos erros (30 min) e aquecimento rotativo pelas cinco frentes |
+| Ter 20 a qui 22 | Prática 2 terminada · Exercícios da LPI 5.1 a 5.4 · correções das Práticas 1 e 2 · cards 60 a 70 |
+| Sex 23 | **Simulado 02: 22 de 40** |
+| Sáb 24 | Autoavaliação da Semana 6 · cards do simulado 02 e os que faltavam · cola de permissões |
+| Dom 25 | **R4** e **R3** · erros dos reforços no Notion |
 
-### Semana 10 — 02 a 08/11 · Simulados e Gate
+**Marco:** dívidas fechadas no domingo 25/10. O que não fechar sai do plano.
+
+### Semana 9 — 26/10 a 01/11 · Tópico 4, curso fechado e início da prática total
+
+**Arquivo detalhado:** `labs/semana-09.md` (roteiros, autoavaliação do Tópico 4, Checkpoint B e cola rápida).
+
+| Dia | Atividade |
+|---|---|
+| Seg 26 | Prática 3 — hardware, discos e o mapa dos diretórios (4.2 e 4.3) · aulas 41 a 48 |
+| Ter 27 | Prática 4 — processos, memória e logs (4.3) · aulas 49 a 56 |
+| Qua 28 | Prática 5 — rede (4.4) · aulas 57 a 64 |
+| Qui 29 | Bloco curto: 4.1 e here document · aulas 65 a 72 (**curso fechado**) |
+| Sex 30 | **Simulado 03** |
+| Sáb 31 | Autoavaliação da Semana 8 (Tópico 4) · **R2** · **R1** |
+| Dom 01/11 | **Simulado 04** (exame final de prática do NDG) · **Checkpoint B** (decide a data da prova) |
+
+**Marco:** ao fim da quinta 29/10, os cinco tópicos foram estudados e o curso está fechado. Da sexta em diante, só simulados, correções e reforços.
+
+### Semana 10 — 02 a 08/11 · Prática total e Gate
 
 | Dia | Atividade |
 |---|---|
 | Seg 02 (feriado) | Livre |
-| Ter 03 | **Simulado 06** |
-| Qui 05 | **Simulado 07** |
+| Ter 03 | **Simulado 05** |
+| Qua 04 | **Simulado 06** |
+| Sex 06 | **Simulado 07** |
 | Dom 08 | **Simulado 08** · **Gate** |
+| Demais dias | Correção dos erros no Notion (até 30 min) e reforço nos temas abaixo de 60% |
 
 ### Semana 11 — 09 a 15/11 · Simulados
 
@@ -463,14 +470,18 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 
 ### Erros que se repetiram e merecem atenção
 
-Os erros abaixo são de comandos já estudados e não entram no aquecimento; os simulados continuam medindo se voltam, e a revisão leve da Semana 12 passa por eles nos cards do Notion. Valem o mesmo para as Correções 62 a 67 (Tópicos 1 e 2). A Correção 68 (`chmod` e `chown`) é do Tópico 5 e continua ativa até a Prática 2.
+Atualizado em 23/10 com o simulado 02, em que **quatro das nove questões que retestavam correções antigas voltaram a errar**. Os erros abaixo são de comandos já estudados e não entram no aquecimento; os simulados continuam medindo se voltam, e a revisão leve da Semana 12 passa por eles nos cards do Notion. Valem o mesmo para as Correções 62 a 67 (Tópicos 1 e 2). A Correção 68 (`chmod` e `chown`) é do Tópico 5 e continua ativa até a Prática 2.
 
 | Erro | Vezes | Correção |
 |---|---|---|
 | `sort` sem `-n` descrito como "invertendo a ordem" | **4** (Correções 32, 33/34 e 50) | As duas formas são **crescentes**; só o `-r` inverte. `-k` é **coluna**, vem de *key*. Reler não resolveu: o que resolve é executar os quatro comandos lado a lado |
 | `cd ..` e `cd -` trocados | **5** (a quarta em 30/09, Correção 53; a quinta em 05/10, Correção 64, agora com o `cd -` chamado de "pai") | `cd ..` é **pai** (espaço); `cd -` é **anterior** (tempo). O simulado mede se voltou |
 | Confundir o efeito com o mecanismo (`2>&1`, hard link, `-f` do `tar`) | 3 | O resultado certo pelo motivo errado quebra quando a pergunta muda de ângulo |
-| `grep -v` entendido como *verbose* | 1 (Correção 49) | É *invert*. O `grep` é a exceção: em `tar`, `cp`, `rm` e `mv` o `-v` é verbose. Custou **duas** questões da autoavaliação, porque a 14 dependia dele |
+| `grep -v` entendido como *verbose* ou como outra opção | **2** (Correção 49; Q22 do simulado 02, respondida com `-n`) | É *invert*. O `grep` é a exceção: em `tar`, `cp`, `rm` e `mv` o `-v` é verbose |
+| Ordem do `2>&1` | **2** (Correção 29; Q19 do simulado 02) | Da esquerda para a direita: `> arq 2>&1`. O `2>&1` copia o destino **atual** da saída padrão |
+| `/home` tratado como a pasta pessoal | **2** (Correção 54; Q9 do simulado 02) | `/home` contém as pastas pessoais; a pessoal é `~` |
+| `$#` (quantidade de argumentos) | **2** (Q6 da autoavaliação da Semana 5; Q24 do simulado 02) | `$#` conta; `$1`, `$2` são os valores; `$0` é o nome do script e não conta |
+| O `x` do segundo campo do `/etc/passwd` | **2** (Q35 do simulado 01, sobre o mesmo arquivo; Q34 do simulado 02) | Só indica que o hash está no `/etc/shadow`. Administrador é o UID 0 |
 | Direção da herança de variáveis (pai para filho) e `{}` tratado como globbing | **2 cada** (Correções 12 e 71; Correções 11 e 70) | Variável exportada vai para o **processo filho**, nunca para o que está ao lado ou acima; `{1,2}` expande antes e sem olhar o disco, o globbing só vê o que já existe |
 
 ### Regras de bolso
@@ -532,7 +543,7 @@ A coluna da direita é apenas o caminho natural dentro do roadmap atual, não um
 | Checkpoint | Data | Critérios | Resultado |
 |---|---|---|---|
 | **A** | Dom 18/10 | 1. Práticas 1 e 2 · 2. Simulado 02 com **24 ou mais** · 3. Autoavaliações das Semanas 5 e 6 feitas · 4. Curso até a aula 72 (ou 64, com 65 a 72 na segunda 19/10) | **Verde:** segue. **Amarelo:** um falhou; o item abre a segunda 19/10. **Vermelho:** dois ou mais falharam, ou simulado 02 abaixo de 20; a Semana 8 abre com as dívidas restantes e o Checkpoint B decide a data |
-| **B** | Seg 26/10 | 1. Curso fechado (aula 72) · 2. Práticas 3, 4 e 5 feitas · 3. Simulado 03 com **28 ou mais** | **Verde:** mantém 23/11. **Amarelo:** um falhou; mantém, mas o Gate fica sem folga. **Vermelho:** dois ou mais falharam; mover a prova para **30/11** |
+| **B** | **Dom 01/11** (movido em 23/10) | 1. Curso fechado (aula 72) · 2. Práticas 3, 4 e 5 feitas · 3. Simulado 03 com **28 ou mais** | **Verde:** mantém 23/11. **Amarelo:** um falhou; mantém, mas o Gate fica sem folga. **Vermelho:** dois ou mais falharam; mover a prova para **30/11** |
 | **Gate** | Dom 08/11 | Dois simulados consecutivos com **34 ou mais** entre o 06 (03/11), o 07 (05/11) e o 08 (08/11) | **Cumprido:** mantém 23/11. **Não cumprido:** se a média dos três ficou em 30 ou mais, mantém e o Final decide; abaixo disso, mover para **30/11** |
 | **Final** | Qui 19/11 | Simulado 11 | **34 ou mais:** vai. **30 a 33:** vai, com revisão leve dos erros no fim de semana. **Abaixo de 30:** remarcar para 30/11, se a janela de remarcação ainda permitir |
 
@@ -548,7 +559,7 @@ A coluna da direita é apenas o caminho natural dentro do roadmap atual, não um
 
 - **Decisão de 13/10:** a prova é em **23/11**.
 - Se o voucher **já foi comprado e a prova agendada**, registre na seção 1 o centro, o horário e a janela de remarcação sem custo, e desconsidere o item seguinte.
-- Se **ainda não foi comprado**, o gatilho de 08/10 (média dos três últimos simulados com 30 ou mais) continua sendo o critério de compra, avaliado no **domingo 01/11**, com os simulados 03, 04 e 05. Antes disso, sem custo, consulte no site da Pearson VUE a disponibilidade de 23/11 e a antecedência mínima de agendamento. Eu não conheço esses valores, e a data depende deles.
+- Se **ainda não foi comprado**, o gatilho de 08/10 (média dos três últimos simulados com 30 ou mais) continua sendo o critério de compra, avaliado no **domingo 01/11**, com os simulados 03 e 04 (o 05 passou para 03/11). Antes disso, sem custo, consulte no site da Pearson VUE a disponibilidade de 23/11 e a antecedência mínima de agendamento. Eu não conheço esses valores, e a data depende deles.
 - Recomendação mantida: **centro Pearson VUE**, não OnVUE.
 
 ### Registro das decisões
@@ -556,11 +567,11 @@ A coluna da direita é apenas o caminho natural dentro do roadmap atual, não um
 | Checkpoint | Data | Critérios cumpridos | Resultado | Decisão |
 |---|---|---|---|---|
 | A | 18/10 | Nenhum dos quatro (Prática 2 em parte; simulado 02 não feito; autoavaliação S6 pendente; curso na aula 40) | **Vermelho** | A Semana 8 abre com as dívidas; o Checkpoint B decide a data |
-| B | 26/10 | | | |
+| B | 01/11 | | | |
 | Gate | 08/11 | | | |
 | Final | 19/11 | | | |
 
-Histórico das decisões: em 08/10 a compra do voucher foi adiada; em 10/10 a data principal passou a 16/11; em 13/10 a prova foi fixada em **23/11**; em 19/10 o Checkpoint A deu vermelho, e a data passou a depender do Checkpoint B.
+Histórico das decisões: em 08/10 a compra do voucher foi adiada; em 10/10 a data principal passou a 16/11; em 13/10 a prova foi fixada em **23/11**; em 19/10 o Checkpoint A deu vermelho, e a data passou a depender do Checkpoint B; em 23/10, com o simulado 02 em 22 de 40, o Tópico 4 foi para a Semana 9 e o Checkpoint B passou para o domingo 01/11.
 
 ---
 
