@@ -70,13 +70,13 @@ A busca por "simulado 010-160" devolve muitos sites que anunciam "questões reai
 
 ## Dicas recorrentes de candidatos (06/10)
 
-Dicas de fonte não oficial (permissões, `tar`, redirecionamento incluindo `<<`, `/proc`, `/sys`, `/dev`, `/var`, e questões de preencher a lacuna) foram conferidas contra o PDF da LPI e aparecem nele. Entram como **reforço**, e não como fonte de questões: ver `praticas-reforco-dicas-recorrentes.md`, com mini-simulados R1 (13/10) e R2 (20/10).
+Dicas de fonte não oficial (permissões, `tar`, redirecionamento incluindo `<<`, `/proc`, `/sys`, `/dev`, `/var`, e questões de preencher a lacuna) foram conferidas contra o PDF da LPI e aparecem nele. Entram como **reforço**, e não como fonte de questões: ver `praticas_simulados.md`, com os mini-simulados R1 e R2, e `reforco-r3-r4.md`, com o R3 e o R4. Os quatro são usados na operação prática, de 02 a 09/11, junto com o banco de lacunas (`lacunas.md`).
 
 ## Ordem de uso sugerida
 
 | Momento | O que usar |
 |---|---|
-| Semana 7 | `simulado-02` deste repositório (sábado 17/10) e os Exercícios da LPI das lições 5.1 a 5.4 |
-| Semana 8 | Exercícios da LPI das lições 4.1 a 4.4, quizzes do NDG dos Tópicos 4 e 5, reforço R1 e `simulado-03` (25/10) |
-| Semanas 9 a 11 | Exame final de prática do NDG (29/10) e os simulados 05 a 10, com revisão só das questões erradas |
-| Semana 12 | Simulado final na quinta 19/11. Revisão leve pelas colas e pelos cards do Notion, de segunda a quarta |
+| Semanas 7 e 8 | `simulado-02` (23/10) e os Exercícios da LPI das lições 5.1 a 5.4 |
+| Semana 9 (26 a 30/10) | Exercícios da LPI das lições 4.1 a 4.4 e quizzes do NDG do Tópico 4, dentro das Práticas 3 a 5 |
+| Operação prática (31/10 a 26/11) | `simulado-03` (31/10), exame final de prática do NDG (03/11), simulados 05 a 13 deste repositório, mini-simulados R1 a R4 e M1 a M6, banco de lacunas |
+| Antes da prova | Revisão leve da lista de reincidências e das colas em 25 e 26/11; descanso de 27 a 29/11 |
