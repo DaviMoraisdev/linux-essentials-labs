@@ -38,27 +38,22 @@ Os temas se sobrepõem às questões dos cinco tópicos; não são questões ext
 
 ### 2.2 Onde cada reforço acontece
 
-| Quando | O que | Tempo |
-|---|---|---|
-| Sex 23/10 | Simulado 02 trouxe o mínimo da seção 2.1: permissões 2 de 5, `tar` 2 de 2, redirecionamento 2 de 3, diretórios 2 de 3, lacunas 3 de 5 | feito |
-| **Dom 25/10** | **Reforços R4 e R3** (`reforco-r3-r4.md`): os erros do simulado 02, em outro ângulo | 1h10 |
-| Seg 26/10 | Prática 3 (Semana 9): mapa dos diretórios virtuais, `/proc`, `/sys` e `/dev` lado a lado | dentro da Prática 3 |
-| Qui 29/10 | Here document estudado como conceito, no bloco curto | 15 min |
-| **Sáb 31/10** | **Mini-simulado R2** (seção 8): inclui `/sys`, rede e processos | 35 min |
-| **Sáb 31/10** | **Mini-simulado R1** (seção 6, 20 questões, 25 min) e apuração (10 min) | 35 min |
-| Semanas 9 a 11 | Aquecimento rotativo pelas cinco frentes (seção 2.3), nos dias sem simulado | 10 min/dia |
+Desde 26/10, os reforços fazem parte da operação prática (`labs/operacao-pratica.md`).
 
-### 2.3 Aquecimento rotativo (a partir de 26/10)
-
-| Dia | Frente do aquecimento |
+| Quando | O que |
 |---|---|
-| Segunda | Permissões: cinco conversões cronometradas |
-| Terça | `tar`: cinco comandos de montar, listar e extrair, escritos à mão |
-| Quarta | Redirecionamento: cinco linhas, incluindo `<<` e `2>&1` |
-| Quinta | Mapa dos diretórios: cinco perguntas "onde fica ...?" |
-| Sexta | Lacunas: cinco frases para completar com **uma palavra** |
+| Sex 23/10 | Simulado 02 trouxe o mínimo da seção 2.1: permissões 2 de 5, `tar` 2 de 2, redirecionamento 2 de 3, diretórios 2 de 3, lacunas 3 de 5 (**feito**) |
+| Seg 26/10 | Prática 3 (Semana 9): mapa dos diretórios virtuais, `/proc`, `/sys` e `/dev` lado a lado |
+| Qui 29/10 | Here document estudado como conceito, no bloco curto |
+| Seg 02/11 | **R4** (`reforco-r3-r4.md`): contas e permissões, sobre os erros do simulado 02 |
+| Qua 04/11 | **R3** (`reforco-r3-r4.md`): navegação, ajuda e redirecionamento, sobre os erros do simulado 02 |
+| Sex 06/11 | **R2** (seção 8 deste arquivo): inclui `/sys`, processos e rede |
+| Seg 09/11 | **R1** (seção 6 deste arquivo): as quatro frentes e seis lacunas |
+| Todo dia, de 31/10 a 26/11 | **Cinco lacunas** do banco (`lacunas.md`), no lugar do antigo aquecimento rotativo |
 
-Nos dias de simulado, o simulado substitui o aquecimento, como já é a regra.
+### 2.3 Aquecimento
+
+O aquecimento rotativo pelas cinco frentes foi substituído em 26/10 pelo **banco de lacunas** (`lacunas.md`): uma série de cinco por dia, misturando os cinco tópicos. Cada mini-simulado dos dias B é seguido de 30 minutos de treino na VM sobre o que errou.
 
 ---
 
@@ -139,11 +134,11 @@ Mnemônico: **proc de processos, dev de dispositivos, sys de hardware organizado
 
 ---
 
-## 6. Mini-simulado R1 — Sábado 31/10
+## 6. Mini-simulado R1 — Segunda 09/11
 
-**Regras:** 20 questões, 25 minutos, sem consulta, **marcando cada chute**. Nas questões de preenchimento (marcadas com **[lacuna]**), escreva só a resposta, seguindo a seção 4. Aberto o gabarito, anote apenas as erradas e as chutadas, corrija no Notion e registre o resultado em `resultados_simulados.md`, seções 2.5 e 4.
+**Regras:** 20 questões, 25 minutos, sem consulta, **marcando cada chute**. Nas questões de preenchimento (marcadas com **[lacuna]**), escreva só a resposta, seguindo a seção 4. Aberto o gabarito, anote apenas as erradas e as chutadas, siga o protocolo de correção da operação prática e registre o resultado em `resultados_simulados.md`, seções 2.5 e 4.
 
-**Metas:** 15 de 20 (75%) é o mínimo. A leitura mais importante é o **acerto por tema**: um tema abaixo de 60% vira o foco do aquecimento da semana seguinte.
+**Metas:** 15 de 20 (75%) é o mínimo. A leitura mais importante é o **acerto por tema**: um tema abaixo de 60% vira tema do treino na VM e do mini-simulado M seguinte.
 
 ### Permissões
 
@@ -297,11 +292,11 @@ A) `/dev/cpu` · B) `/var/cpuinfo` · C) `/proc/cpuinfo` · D) `/etc/cpuinfo`
 
 ---
 
-## 8. Mini-simulado R2 — Sábado 31/10
+## 8. Mini-simulado R2 — Sexta 06/11
 
 **Regras:** as mesmas do R1. 20 questões, 25 minutos, sem consulta, **marcando cada chute**. Nas questões **[lacuna]**, escreva só a resposta, seguindo a seção 4. Registre o resultado em `resultados_simulados.md`, seções 2.5 e 4.
 
-**Metas:** 15 de 20. Além das quatro frentes, o R2 cobre o que a Semana 8 acrescentou: `/sys`, processos e rede. Nenhuma questão repete o R1.
+**Metas:** 15 de 20. Além das quatro frentes, o R2 cobre o Tópico 4: `/sys`, processos e rede. Nenhuma questão repete o R1.
 
 ### Permissões
 
@@ -481,3 +476,4 @@ A) `/dev/cpu` · B) `/var/cpuinfo` · C) `/proc/cpuinfo` · D) `/etc/cpuinfo`
 | 18/10/2026 | Mini-simulado R2 escrito, com processos, rede e `/sys` |
 | 19/10/2026 | R1 remarcado para qua 28/10, depois do R2, para abrir espaço na Semana 8 |
 | 23/10/2026 | R2 e R1 remarcados para o sábado 31/10, depois do Tópico 4 (Semana 9). Criados os reforços R3 e R4 em arquivo próprio (`reforco-r3-r4.md`), sobre os erros do simulado 02 |
+| 26/10/2026 | Reforços integrados à operação prática: R4 em 02/11, R3 em 04/11, R2 em 06/11 e R1 em 09/11; aquecimento rotativo substituído pelo banco de lacunas (`lacunas.md`) |
