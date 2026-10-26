@@ -1,6 +1,6 @@
 # Simulado 03 — LPI Linux Essentials (010-160)
 
-Simulado no formato do exame, versão 1.6. Escrito em 18/10/2026; aplicado na **sexta 30/10** (movido em 21 e 23/10), depois das Práticas 3 a 5 e do curso fechado. É o primeiro com os cinco tópicos estudados e vale para o **Checkpoint B**.
+Simulado no formato do exame, versão 1.6. Escrito em 18/10/2026; aplicado no **sábado 31/10**, primeiro dia da operação prática, depois das Práticas 3 a 5 e do curso fechado. É o primeiro com os cinco tópicos estudados: a **linha de base** da operação.
 
 Mesmo nível do simulado 02: enunciados com cenário, pegadinhas de comando, três questões de escolher duas respostas e cinco de preencher a lacuna. As questões são escritas sobre os objetivos oficiais; não são questões reais do exame.
 
@@ -10,9 +10,9 @@ Mesmo nível do simulado 02: enunciados com cenário, pegadinhas de comando, tr�
 | --- | --- |
 | Questões | 40 |
 | Tempo | 60 minutos, cronometrados. **Use pelo menos 45** e reserve os últimos 15 para uma segunda passada nas marcadas |
-| Consulta | Nenhuma. Sem terminal, sem caderno, sem internet |
+| Consulta | Nenhuma. Sem terminal, sem caderno, sem internet. **Questão pesquisada conta como errada** |
 | Aprovação no exame real | 500 de 800 pontos, aproximadamente 65% — 26 acertos |
-| Meta deste simulado | **28 ou mais** (Checkpoint B) |
+| Meta deste simulado | Linha de base: medir os **acertos firmes** com os cinco tópicos estudados. A meta da semana seguinte é 24 firmes |
 
 Anote as respostas em papel antes de abrir o gabarito. **Marque cada chute**, mesmo acertando.
 
@@ -439,7 +439,7 @@ Preencha depois de conferir o gabarito.
 
 | Campo | Valor |
 | --- | --- |
-| Data | 30/10/2026 |
+| Data | 31/10/2026 |
 | Tempo gasto | |
 | Minutos usados na segunda passada | |
 | Acertos | de 40 |
@@ -451,9 +451,9 @@ Preencha depois de conferir o gabarito.
 
 ## Questões erradas
 
-Só as erradas e as chutadas. A correção vai para o Notion, com as suas palavras.
+Só as erradas e as chutadas, no mesmo dia, seguindo o protocolo de correção da operação prática (`labs/operacao-pratica.md`, seção 4). Card no Notion só para reincidência.
 
-| Q | Tópico | Tema | Você marcou | Gabarito | Convicção ou chute | Corrigida no Notion |
+| Q | Tópico | Tema | Você marcou | Gabarito | Convicção ou chute | Reincidência? |
 | --- | --- | --- | --- | --- | --- | --- |
 | | | | | | | |
 
