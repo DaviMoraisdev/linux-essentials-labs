@@ -1,6 +1,6 @@
 # Reforços R3 e R4 — erros do simulado 02 — LPI Linux Essentials (010-160)
 
-**Criado em:** 23/10/2026 · **Quando:** domingo 25/10 · **Origem:** os 14 erros do simulado 02 em conteúdo já estudado (`simulado-02.md`, seção "Questões erradas")
+**Criado em:** 23/10/2026 · **Quando:** R4 na segunda 02/11 e R3 na quarta 04/11, na operação prática · **Origem:** os 14 erros do simulado 02 em conteúdo já estudado (`simulado-02.md`, seção "Questões erradas")
 
 Os dois reforços atacam os blocos em que o simulado 02 concentrou os erros: **navegação, ajuda e redirecionamento** (R3, Tópicos 1 a 3) e **contas e permissões** (R4, Tópico 5). As questões **não repetem** as do simulado 02: testam o mesmo mecanismo por outro ângulo, porque é assim que o exame cobra. Quem decorou a resposta da questão anterior erra; quem entendeu o mecanismo acerta.
 
@@ -10,14 +10,14 @@ Os dois reforços atacam os blocos em que o simulado 02 concentrou os erros: **n
 | --- | --- |
 | Formato | 20 questões cada, **25 minutos** cada, cronometrados |
 | Consulta | Nenhuma. Sem terminal, sem caderno, sem Notion, sem internet. **Questão pesquisada conta como errada** |
-| Ordem | R4 primeiro (o tópico mais fraco), depois R3, com 10 minutos de intervalo |
+| Ordem | R4 primeiro (02/11, o tópico mais fraco), R3 depois (04/11) |
 | Meta | **16 de 20 em cada um** (80%) |
 | Chutes | Marque cada um, mesmo acertando |
 | Escolha duas | Só conta se as duas estiverem certas |
 
 **Dificuldade.** Mais perto do exame que os reforços R1 e R2: cinco alternativas, enunciados com cenário, saída de comando para interpretar e lacunas com a instrução que a prova usa: *"escreva só o comando, sem caminho e sem parâmetros"*. Se a lacuna pedir outra coisa (um caminho, três dígitos, um parâmetro com `$`), o enunciado diz.
 
-**Depois de cada um:** confira o gabarito, anote só as erradas e as chutadas na apuração e leve as erradas para o Notion. Um erro que repete um card que você escreveu no sábado é o sinal mais importante do dia: marque-o como **reincidência**.
+**Depois de cada um:** confira o gabarito, anote só as erradas e as chutadas na apuração e siga o protocolo de correção da operação prática (`labs/operacao-pratica.md`, seção 4). Um erro que repete um erro do simulado 02 é o sinal mais importante do dia: marque-o como **reincidência**, faça o card e rode na VM o treino indicado.
 
 ---
 
@@ -354,7 +354,7 @@ O que acontece com `./copia.sh a.txt`?
 | 17 | **A** | No diretório, `x` permite **atravessar** e acessar uma entrada pelo nome; `r` permite **listar**; `w` permite criar e apagar. Ela tem só `x`, e o arquivo dá `r` aos outros | Card sem número: `x` em diretório |
 | 18 | **B e C** | O sticky bit protege o **nome** dentro do diretório (apagar e renomear), não o **conteúdo** do arquivo. O conteúdo segue a permissão do próprio arquivo, `rw-` para os outros | Q39 (acerto) |
 | 19 | **`id`** | Grafia aceita: `id`. O `groups` mostra só os grupos; o `whoami`, só o nome | — |
-| 20 | **E** | O `sudo` pede a senha **de quem executa**; o `su -` pede a senha **da conta de destino**, a do root | Autoavaliação da Semana 6, Q4 |
+| 20 | **E** | O `sudo` pede a senha **de quem executa**; o `su -` pede a senha **da conta de destino**, a do root | `su` contra `sudo` (objetivo 5.1) |
 
 </details>
 
@@ -390,7 +390,7 @@ O que acontece com `./copia.sh a.txt`?
 
 # Apuração
 
-## R4 — domingo 25/10
+## R4 — segunda 02/11
 
 | Campo | Valor |
 | --- | --- |
@@ -398,7 +398,7 @@ O que acontece com `./copia.sh a.txt`?
 | Acertos | de 20 (meta: 16) |
 | Chutes marcados | |
 | Erros de forma nas lacunas | |
-| Reincidências (erro que repete um card de sábado) | |
+| Reincidências (erro que repete o simulado 02) | |
 
 | Bloco | Questões | Acertos |
 | --- | --- | --- |
@@ -407,7 +407,7 @@ O que acontece com `./copia.sh a.txt`?
 | Bits especiais | 11 a 14 | /4 |
 | Grupos, dono e acesso | 15 a 20 | /6 |
 
-## R3 — domingo 25/10
+## R3 — quarta 04/11
 
 | Campo | Valor |
 | --- | --- |
@@ -415,7 +415,7 @@ O que acontece com `./copia.sh a.txt`?
 | Acertos | de 20 (meta: 16) |
 | Chutes marcados | |
 | Erros de forma nas lacunas | |
-| Reincidências (erro que repete um card de sábado) | |
+| Reincidências (erro que repete o simulado 02) | |
 
 | Bloco | Questões | Acertos |
 | --- | --- | --- |
@@ -429,8 +429,8 @@ O que acontece com `./copia.sh a.txt`?
 
 ## Questões erradas
 
-| Reforço | Q | Você marcou | Gabarito | Convicção ou chute | Reincidência? | Corrigida no Notion |
-| --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | |
+| Reforço | Q | Você marcou | Gabarito | Convicção ou chute | Reincidência? |
+| --- | --- | --- | --- | --- | --- |
+| | | | | | |
 
-**Leitura.** Um bloco com menos da metade de acertos é sinal de que o card de sábado não fixou o mecanismo. Nesse caso, a correção é **executar na VM** os comandos do bloco, não reescrever o card.
+**Leitura.** Um bloco com menos da metade de acertos é sinal de que o mecanismo ainda não fixou. Nesse caso, a correção é **executar na VM** os comandos do bloco (treinos V1, V3, V4, V5 e V6), não reescrever o card.
