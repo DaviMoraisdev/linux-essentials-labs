@@ -1,6 +1,6 @@
 # Resultados dos simulados e correções — LPI Linux Essentials (010-160)
 
-**Aluno:** Davi · **Prova:** 23/11/2026 (definida em 13/10) · **Criado em:** 06/10/2026 · **Última atualização:** 13/10/2026
+**Aluno:** Davi · **Prova:** 30/11/2026 (definida em 26/10) · **Criado em:** 06/10/2026 · **Última atualização:** 26/10/2026
 
 Este arquivo reúne, em um só lugar, **todos os números de desempenho** do plano: os simulados, as autoavaliações por tópico, os checkpoints e as correções registradas desde a Semana 2. Ele não substitui o plano geral (`plano-linux-essentials-010-160.md`) nem os arquivos semanais; ele os resume e os mantém comparáveis.
 
@@ -17,22 +17,26 @@ Arquivos relacionados:
 
 ## 1. Como este documento funciona
 
-### 1.1 Regras vigentes (desde 06/10/2026)
+### 1.1 Regras vigentes (desde 26/10/2026)
 
-**Simulados: só se anotam as questões erradas.** Para cada simulado, este arquivo guarda a apuração por tópico, a lista das questões erradas e das chutadas, e a comparação com o simulado anterior. A **correção em si**, a explicação do mecanismo, é feita por você nos cards do Notion. Não se abre mais correção numerada para erro de simulado.
+**Só se anotam as questões erradas e as chutadas.** Cada simulado e cada mini-simulado guarda, no próprio arquivo, a apuração por tópico, a tabela das questões erradas e a coluna **reincidência**. Este arquivo guarda os números da série.
 
-**Erros antigos de conteúdo já estudado não entram no aquecimento.** Voltam de duas formas: nos próprios simulados, que medem se o erro reaparece, e na revisão leve da Semana 12, pelos cards do Notion. A lista está na seção 7.
+**Correção no mesmo dia, com tempo-limite** (20 minutos depois de um simulado, 10 depois de um mini). Erro de comando é **executado na VM**. O que não coube no dia não vira pendência. Protocolo completo em `labs/operacao-pratica.md`, seção 4.
 
-**A numeração das correções continua para laboratório e curso.** A próxima é a **75**.
+**Card no Notion só para reincidência**, um erro que já aconteceu antes. A lista de reincidências está em `labs/operacao-pratica.md`, seção 6.
+
+**A medida principal são os acertos firmes**: sem chutes e sem questões pesquisadas. Questão pesquisada conta como errada.
+
+**A numeração das correções continua só para laboratório e curso.** A próxima é a **76**.
 
 ### 1.2 Rotina após cada simulado
 
-1. Responder cronometrado, sem consulta, **marcando cada chute**. A partir do #2, usar pelo menos 45 minutos e reservar os últimos 15 para uma segunda passada.
+1. Responder cronometrado, sem consulta, **marcando cada chute**. Usar pelo menos 45 minutos e reservar os últimos 15 para uma segunda passada.
 2. Abrir o gabarito só depois de responder tudo.
-3. Apurar por tópico: acertos e chutes acertados.
-4. Copiar o modelo da seção 4 e preencher: tabela do simulado, tabela por tópico, **questões erradas** e **chutes acertados**.
-5. Corrigir as questões erradas no Notion, com as suas palavras, no mesmo dia.
-6. Atualizar as tabelas da seção 2 deste arquivo.
+3. Apurar por tópico: acertos, chutes acertados e **acertos firmes**.
+4. Preencher, no próprio arquivo do simulado, a tabela das questões erradas, com a coluna de reincidência.
+5. Rodar na VM os comandos das questões erradas; card no Notion só para as reincidências.
+6. Atualizar a seção 2 deste arquivo e o registro diário em `labs/operacao-pratica.md`.
 
 ### 1.3 Conversões úteis
 
@@ -54,36 +58,38 @@ O exame real aprova com **500 de 800 pontos**, cerca de 65%, ou 26 acertos. A es
 
 ### 2.1 Série de simulados
 
-Calendário revisto em 13/10 para a prova de 23/11 e refeito em 23/10, depois do simulado 02 (`PLANO.md`, seção 7).
+Calendário refeito em 26/10 para a prova de 30/11 (`PLANO.md`, seção 7, e `labs/operacao-pratica.md`). Meta em **acertos firmes**.
 
-| # | Data | Fonte | Meta | Acertos | % | Chutes acertados | Acertos firmes | Tempo | Situação |
+| # | Data | Fonte | Meta (firmes) | Acertos | % | Chutes acertados | Acertos firmes | Tempo | Situação |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | Seg 05/10 | `simulado-01` | Diagnóstico (esperado de 24 a 30) | **28** | **70%** | 5 | **23** | 20 min 31 s | **Concluído** |
-| 2 | Sex 23/10 | `simulado-02` (escrito em 13/10; não feito em 17, 21 e 22/10) | 24 ou mais | **22** | **55%** | 4 | **17** | Não informado | **Concluído, abaixo da meta** |
-| 3 | **Sex 30/10** | `simulado-03` (escrito em 18/10) | **28 ou mais** (Checkpoint B) | | | | | | A fazer |
-| 4 | **Dom 01/11** | Exame final de prática do NDG | 28 ou mais | | | | | | A fazer |
-| 5 | Ter 03/11 | `simulado-05` | **30 ou mais** | | | | | | A fazer |
-| 6 | Qua 04/11 | `simulado-06` | Acompanhar | | | | | | A fazer |
-| 7 | Sex 06/11 | `simulado-07` | 34 ou mais | | | | | | A fazer |
-| 8 | Dom 08/11 | `simulado-08` | **34 ou mais** (Gate) | | | | | | A fazer |
-| 9 | Ter 10/11 | `simulado-09` | 34 ou mais | | | | | | A fazer |
-| 10 | Dom 15/11 | `simulado-10` | 34 ou mais | | | | | | A fazer |
-| 11 | Qui 19/11 | `simulado-11` | **34 ou mais** (final) | | | | | | A fazer |
+| 1 | Seg 05/10 | `simulado-01` | Diagnóstico | **28** | **70%** | 5 | **23** | 20 min 31 s | **Concluído** |
+| 2 | Sex 23/10 | `simulado-02` (escrito em 13/10) | 24 ou mais | **22** | **55%** | 4 | **17** | Não informado | **Concluído, abaixo da meta** |
+| 3 | **Sáb 31/10** | `simulado-03` (escrito em 18/10) | Linha de base | | | | | | A fazer |
+| 4 | Ter 03/11 | Exame final de prática do NDG | 24 ou mais | | | | | | A fazer |
+| 5 | Qui 05/11 | `simulado-05` | 24 ou mais | | | | | | A fazer |
+| 6 | Sáb 07/11 | `simulado-06` | 24 ou mais | | | | | | A fazer |
+| 7 | Ter 10/11 | `simulado-07` | 28 ou mais | | | | | | A fazer |
+| 8 | Qui 12/11 | `simulado-08` | 28 ou mais | | | | | | A fazer |
+| 9 | Sáb 14/11 | `simulado-09` | 28 ou mais | | | | | | A fazer |
+| 10 | Ter 17/11 | `simulado-10` | 30 ou mais | | | | | | A fazer |
+| 11 | **Qui 19/11** | `simulado-11` | 30 ou mais · **decisão da data** | | | | | | A fazer |
+| 12 | Sáb 21/11 | `simulado-12` | 30 ou mais | | | | | | A fazer |
+| 13 | **Ter 24/11** | `simulado-13` | **30 ou mais** (final) | | | | | | A fazer |
 
-Mini-simulados de reforço (20 questões): **R4 e R3 no domingo 25/10** (novos, sobre os erros do simulado 02, em `reforco-r3-r4.md`); **R2 e R1 no sábado 31/10**. Não há simulado no domingo 22/11, véspera da prova.
+**Mini-simulados (20 questões):** R4 em 02/11, R3 em 04/11, R2 em 06/11, R1 em 09/11 e M1 a M6 de 11 a 23/11 (`labs/operacao-pratica.md`, seção 3).
 
 ### 2.2 Acertos por tópico, simulado a simulado
 
 Formato: acertos de questões, e entre parênteses os chutes acertados. Copie a coluna do simulado novo conforme ele for feito.
 
-| Tópico | Peso | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1. Comunidade e open source | 7 | 5/7 (0) | 5/7 (0) | | | | | | | | | |
-| 2. Encontrando seu caminho | 9 | 5/9 (0) | 4/9 (0) | | | | | | | | | |
-| 3. Poder da linha de comando | 9 | 9/9 (1) | 6/9 (1) | | | | | | | | | |
-| 4. Sistema operacional | 8 | 6/8 (1) | 4/8 (3) | | | | | | | | | |
-| 5. Segurança e permissões | 7 | 3/7 (3) | 3/7 (0) | | | | | | | | | |
-| **Total** | **40** | **28/40 (5)** | **22/40 (4)** | | | | | | | | | |
+| Tópico | Peso | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11 | #12 | #13 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1. Comunidade e open source | 7 | 5/7 (0) | 5/7 (0) | | | | | | | | | | | |
+| 2. Encontrando seu caminho | 9 | 5/9 (0) | 4/9 (0) | | | | | | | | | | | |
+| 3. Poder da linha de comando | 9 | 9/9 (1) | 6/9 (1) | | | | | | | | | | | |
+| 4. Sistema operacional | 8 | 6/8 (1) | 4/8 (3) | | | | | | | | | | | |
+| 5. Segurança e permissões | 7 | 3/7 (3) | 3/7 (0) | | | | | | | | | | | |
+| **Total** | **40** | **28/40 (5)** | **22/40 (4)** | | | | | | | | | | | |
 
 ### 2.3 Autoavaliações por tópico
 
@@ -95,39 +101,35 @@ As autoavaliações medem a retenção do conteúdo de uma semana. Desde a Seman
 | Semana 3 | Arquivos, links e pacotes | 19/09 | 20 | **20** | 16 | Respondida no dia do estudo. Gerou as Correções 27 e 28 (justificativas) |
 | Semana 4 | Objetivos 3.1 e 3.2, filtros e compactação | 29/09 | 20 | **14** | 16 | Abaixo da meta. Respondida quatro dias depois do estudo. Gerou as Correções 49 a 52 |
 | Semana 5 | Shell script | 13 e 15/10 | 10 | **9** | 8 | Nove a onze dias depois do Laboratório 2. A Q6 foi respondida com consulta |
-| Semana 6 | Tópico 5, usuários e permissões | **Sáb 24/10** | 10 | | **8** | Questões em `labs/semana-07.md`, seção 6 |
-| Semana 8 | Tópico 4, o sistema operacional | **Sáb 31/10** | 10 | | **8** | Questões em `labs/semana-09.md`. A última autoavaliação do plano |
 
-Leitura: a de 29/09 (14/20, quatro dias depois do estudo) e o simulado #1 são os dados de retenção mais distantes do estudo disponíveis até aqui.
+**As autoavaliações terminaram com a da Semana 5.** As das Semanas 6 e 8 saíram do plano em 26/10: daqui em diante, os simulados e mini-simulados medem a retenção.
 
-### 2.4 Checkpoints
+### 2.4 Checkpoints e decisão da data
 
-Critérios revistos em 13/10 (`PLANO.md`, seção 11). Os checkpoints anteriores ficam como registro.
+Os checkpoints saíram do plano em 26/10, junto com o modelo de dívidas. Fica o registro dos que foram aplicados e a única decisão que resta.
 
-| Checkpoint | Data | Critérios | Situação | Resultado e decisão |
-|---|---|---|---|---|
-| Pré-checkpoint | Qua 07/10 | Simulado 01 e Laboratório 2 | Cumpridos em 06/10 | Compra do voucher adiada em 08/10; data principal 16/11 em 10/10; **prova definida para 23/11 em 13/10** |
-| A (original) | Dom 11/10 | Curso até a 57; Laboratório 2; Práticas 1 e 2; simulado 02; gatilho do voucher | Substituído em 13/10 | Não aplicado; os itens abertos viraram as dívidas da Etapa 1 |
-| **A** | **Dom 18/10** | Práticas 1 e 2; simulado 02 com 24 ou mais; autoavaliações das Semanas 5 e 6; curso até a aula 72 | Nenhum cumprido; o simulado 02, feito em 23/10, ficou em 22 | **Vermelho**: a Semana 8 abre com as dívidas; o Checkpoint B decide a data |
-| **B** | **Dom 01/11** (movido em 23/10) | Curso fechado; Práticas 3, 4 e 5; simulado 03 com 28 ou mais | | |
-| **Gate** | **Dom 08/11** | Dois simulados consecutivos com 34 ou mais entre o 06, o 07 e o 08 | | |
-| **Final** | **Qui 19/11** | Simulado 11: 34 ou mais, ir; de 30 a 33, ir com revisão leve; abaixo de 30, remarcar para 30/11 | | |
+| Marco | Data | Resultado |
+|---|---|---|
+| Pré-checkpoint | Qua 07/10 | Cumprido; compra do voucher adiada em 08/10 |
+| Checkpoint A | Dom 18/10 | **Vermelho**: nenhum dos quatro critérios cumprido; o simulado 02, feito em 23/10, ficou em 22 |
+| Mudança de estratégia | Seg 26/10 | Prova movida para **30/11**; checkpoints B, Gate e Final retirados |
+| **Decisão final** | **Qui 19/11** | Média de acertos firmes dos simulados 09, 10 e 11: **26 ou mais**, vai em 30/11; **abaixo de 26**, remarcar |
 
 ### 2.5 Dicas recorrentes de prova, por tema
 
 Temas que aparecem com frequência nos relatos de candidatos (ver `praticas_simulados.md`). Formato: acertos e total de questões do tema. O simulado 01 não tinha esta marcação por tema; a tabela começa no simulado 02.
 
-| Tema | Mínimo por simulado | #2 (23/10) | R1 (31/10) | #3 (30/10) | R2 (31/10) | #5 | #7 | #8 | #11 |
-|---|---|---|---|---|---|---|---|---|---|
-| Permissões | 4 | **2/5** | /5 | /4 | /4 | | | | |
-| `tar` e compressão | 2 | 2/2 | /4 | /2 | /3 | | | | |
-| Redirecionamento (com `<<`) | 3 | 2/3 | /5 | /3 | /3 | | | | |
-| Diretórios virtuais e `/var` | 3 | 2/3 | /4 | /3 | /3 | | | | |
-| **Questões de preencher a lacuna** | 5 | 3/5 | /6 | /5 | /6 | | | | |
+| Tema | Mínimo por simulado | #2 (23/10) | #3 (31/10) | R2 (06/11) | R1 (09/11) | #5 | #7 | #9 | #11 | #13 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Permissões | 4 | **2/5** | /4 | /4 | /5 | | | | | |
+| `tar` e compressão | 2 | 2/2 | /2 | /3 | /4 | | | | | |
+| Redirecionamento (com `<<`) | 3 | 2/3 | /3 | /3 | /5 | | | | | |
+| Diretórios virtuais e `/var` | 3 | 2/3 | /3 | /3 | /4 | | | | | |
+| **Questões de preencher a lacuna** | 5 | 3/5 | /5 | /6 | /6 | | | | | |
 
 No simulado 02, **permissões ficou abaixo de 60%** (2 de 5) e é o foco do R4; nas lacunas, dois dos três acertos foram pesquisados, e os dois erros (Q7, Q13) foram de **forma**.
 
-Regra de leitura: um tema abaixo de 60% em um reforço ou simulado vira o foco do aquecimento da semana seguinte. Nas lacunas, anote também se o erro foi de **conteúdo** ou de **forma** (sublinhado, caminho, flag a mais, caixa).
+Regra de leitura: um tema abaixo de 60% em um simulado vira tema do mini-simulado M seguinte e do treino na VM do dia B. Nas lacunas, anote também se o erro foi de **conteúdo** ou de **forma** (sublinhado, caminho, flag a mais, caixa).
 
 ---
 
@@ -222,7 +224,7 @@ Na Q11 a resposta foi `PATH`, com um sublinhado na frente. No exame real, em cam
 
 ## 4. Modelo de registro para os próximos simulados
 
-Copie este bloco para cada simulado, trocando o número e a data. Preencha as tabelas e leve as questões erradas ao Notion.
+Copie este bloco para cada simulado, trocando o número e a data. Preencha as tabelas no mesmo dia, seguindo o protocolo de correção da operação prática.
 
 ### Simulado #N — data
 
@@ -247,7 +249,7 @@ Copie este bloco para cada simulado, trocando o número e a data. Preencha as ta
 | 5. Segurança e permissões | 7 | | | |
 | **Total** | **40** | | | |
 
-| Q | Tópico | Tema | Você marcou | Gabarito | Convicção ou chute | Corrigida no Notion |
+| Q | Tópico | Tema | Você marcou | Gabarito | Convicção ou chute | Reincidência? |
 |---|---|---|---|---|---|---|
 | | | | | | | |
 
@@ -273,27 +275,16 @@ Decisão ou checkpoint associado: .
 
 **Leitura.** A queda em relação ao simulado 01 (28, com 23 firmes) vem em parte do formato mais difícil, mas o principal está nos Tópicos 2 (4 de 9) e 5 (3 de 7), cujos erros são de **conteúdo já estudado e já corrigido**. Das nove questões que retestavam correções antigas, **quatro voltaram a errar**: Q9 (Correção 54), Q19 (29), Q22 (49) e Q34 (Q35 do simulado 01); a Q24 repete o erro da autoavaliação da Semana 5. O card no Notion, sozinho, não está fixando o mecanismo. Por isso os erros ganharam reforços próprios, R3 e R4, com as mesmas ideias em outro ângulo, e a regra de que **questão pesquisada conta como errada**. Questões erradas e texto dos cards em `simulado-02.md`.
 
-### Reforços R4 e R3 — 25/10/2026
+### Mini-simulados R4, R3, R2 e R1 — 02 a 09/11/2026
 
-| Campo | R4 (contas e permissões) | R3 (navegação, ajuda e redirecionamento) |
-|---|---|---|
-| Fonte | `reforco-r3-r4.md` | `reforco-r3-r4.md` |
-| Tempo gasto | | |
-| Acertos | de 20 (meta: 16) | de 20 (meta: 16) |
-| Chutes marcados | | |
-| Reincidências | | |
+| Campo | R4 (02/11) | R3 (04/11) | R2 (06/11) | R1 (09/11) |
+|---|---|---|---|---|
+| Fonte | `reforco-r3-r4.md` | `reforco-r3-r4.md` | `praticas_simulados.md`, seção 8 | `praticas_simulados.md`, seção 6 |
+| Acertos | de 20 (meta: 16) | de 20 (meta: 16) | de 20 (meta: 15) | de 20 (meta: 15) |
+| Chutes marcados | | | | |
+| Reincidências | | | | |
 
-### Mini-simulados de reforço R2 e R1 — 31/10/2026
-
-| Campo | R2 | R1 |
-|---|---|---|
-| Fonte | `praticas_simulados.md`, seção 8 | `praticas_simulados.md`, seção 6 |
-| Tempo gasto | | |
-| Acertos | de 20 (meta: 15) | de 20 (meta: 15) |
-| Chutes marcados | | |
-| Erros de forma nas lacunas | | |
-
-*A preencher no sábado 31/10. A apuração por tema vai na tabela da seção 2.5.*
+Os mini-simulados M1 a M6 são registrados no próprio arquivo e no registro diário de `labs/operacao-pratica.md`.
 
 ---
 
@@ -438,7 +429,7 @@ Os simulados dizem se estes erros voltam (seção 7).
 
 ## 7. Erros antigos acompanhados pelos simulados
 
-São erros de conteúdo já estudado. Eles não têm atividade própria: voltam **nos simulados** (o simulado 02 retesta oito deles) e na **revisão leve da Semana 12** (16 a 18/11), pelos cards do Notion.
+São erros de conteúdo já estudado. Desde 26/10 eles têm treino próprio na VM: a **lista de reincidências** de `labs/operacao-pratica.md`, seção 6, que também guia o M6 e a revisão leve de 25 e 26/11.
 
 | Item | Origem | Observação |
 |---|---|---|
@@ -450,24 +441,21 @@ São erros de conteúdo já estudado. Eles não têm atividade própria: voltam 
 
 ## 8. Notion: controle das correções
 
+**Regra desde 26/10:** card só para reincidência. As pendências de cards anteriores saíram do plano junto com o modelo de dívidas.
+
 | Item | Estado |
 |---|---|
-| Correções 60 a 68 | Cards anotados em 05/10, conforme informado |
-| Questões erradas do simulado #1 | Correções 62 a 68 anotadas; os cinco chutes errados viram ênfase de estudo, sem card |
-| Correções 69 e 70 | Cards na página "CARDS DE CORREÇÃO - LPI" em 22/10; **ajustes pendentes** (abaixo), sábado 24/10 |
-| Correções 71 a 75 | A anotar no sábado 24/10 |
-| Sem número: `x` em diretório (Prática 2, bloco 4) e 4644 (Prática 2, bloco 2) | A anotar no sábado 24/10. O card do `$#` (Q6 da autoavaliação da Semana 5) foi absorvido pelo da Q24 do simulado 02 |
-| Questões erradas do simulado 02 | **14 cards**, a anotar no sábado 24/10; texto pronto em `simulado-02.md`. As quatro do Tópico 4 ficam sem card, como ênfase da Semana 9 |
-| Erros dos reforços R4 e R3 | No domingo 25/10, depois da apuração |
-| Erros da primeira tentativa dos Exercícios da LPI 5.1 a 5.4 | **Saiu do plano em 23/10**: sem registro, e o Tópico 5 já tem três medições |
+| Correções 60 a 70 | Cards anotados (60 a 68 em 05/10; 69 e 70 em 22/10) |
+| Questões erradas do simulado 02 | Correção de cada uma em `simulado-02.md`, como referência. Os cinco erros reincidentes (Q9, Q19, Q22, Q24, Q34) estão na lista de reincidências |
+| Reincidências da operação prática | Card no mesmo dia em que o erro voltar |
 
-**Ajustes nos cards já anotados (conferidos em 22/10):**
+**Três cards anotados com erro**, conferidos em 22/10. Não é pendência, mas card errado ensina errado na revisão: se for abrir o Notion, são cinco minutos.
 
 | Card | Problema | Como deve ficar |
 |---|---|---|
 | 65 | Escrito `/user` | `/usr` |
 | 69 | No campo "Errado" falta o "não" | "...**não** é para shell interativo" |
-| 70 | O "Mecanismo" repete o do card 69 ("A distinção é login ou sem login") | O da Correção 70: `?` casa exatamente um caractere qualquer, e as chaves `{}` são expansão do shell, não globbing (texto em `labs/semana-06.md`) |
+| 70 | O "Mecanismo" repete o do card 69 | `?` casa exatamente um caractere qualquer, e as chaves `{}` são expansão do shell, não globbing |
 
 ---
 
@@ -482,3 +470,4 @@ São erros de conteúdo já estudado. Eles não têm atividade própria: voltam 
 | 10/10/2026 | Replanejamento: data principal da prova 16/11 (09/11 como meta ousada); meta de 9h por semana até 01/11; Prática 2 e aulas 58 em diante na segunda 12/10; autoavaliação da Semana 6 cortada |
 | 13/10/2026 | Nova estratégia: prova em 23/11; série de simulados redistribuída (02 a 11); R1 em 23/10 e R2 em 27/10; checkpoints A (18/10), B (25/10), Gate (08/11) e Final (19/11); autoavaliação da Semana 6 devolvida ao plano; retaguarda reduzida aos erros de conteúdo; simulado 02 escrito |
 | 23/10/2026 | Simulado 02 registrado (22 de 40, 17 firmes); reforços R3 e R4 criados sobre os erros dele; série refeita: #3 em 30/10, #4 em 01/11, #5 a #8 de 03 a 08/11; R2 e R1 em 31/10; Checkpoint B em 01/11; questão pesquisada passa a contar como errada |
+| 26/10/2026 | Nova estratégia: prova em 30/11; dívidas, autoavaliações restantes e checkpoints retirados; operação prática diária de 31/10 a 26/11 com 11 simulados (03 a 13) e 10 mini-simulados (R1 a R4, M1 a M6); medida principal em acertos firmes; card no Notion só para reincidência |
