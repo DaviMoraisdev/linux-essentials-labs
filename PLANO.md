@@ -1,16 +1,16 @@
 # Plano de Preparação — LPI Linux Essentials (010-160)
 
-**Aluno:** Davi (@DaviMoraisdev) · **Ritmo:** cerca de 9h/semana até a prova
-**Data da prova:** **23/11/2026, segunda-feira** (definida em 13/10; seção 11)
+**Aluno:** Davi (@DaviMoraisdev) · **Ritmo:** cerca de 2h por dia nesta semana; 1h10 a 1h25 por dia na operação prática
+**Data da prova:** **30/11/2026, segunda-feira** (movida de 23/11 em 26/10; seção 11)
 **Repositório de labs:** https://github.com/DaviMoraisdev/linux-essentials-labs
 
-> **Atualização de 13/10 — nova estratégia até 23/11.** A prova passou para **segunda 23/11**. O plano tem agora três etapas: (1) **pagar as dívidas** escolhidas (Práticas 1 e 2, simulado 02, autoavaliações das Semanas 5 e 6) até o domingo 18/10; (2) **estudar o conteúdo que falta**, com o curso fechado até 18/10 e o Tópico 4 em três práticas de laboratório na Semana 8; (3) **simulados** de 23/10 a 19/11. As dívidas antigas sem motivo para serem feitas agora saíram do plano. Detalhe na seção 1, no cronograma (seção 7) e em `labs/semana-07.md`.
+> **Estratégia de 26/10 — conteúdo primeiro, depois prática todos os dias.** O modelo de "dívidas" saiu do plano: pagar pendências atrasadas não estava gerando aprendizado, e o rendimento caiu (simulado 02: 22 de 40, 17 firmes). O plano agora tem duas fases e nenhuma lista de pendências: **(1) conteúdo**, de 26 a 30/10: curso do Muller fechado (aulas 41 a 72) e o Tópico 4 em três práticas de laboratório; **(2) operação prática**, de 31/10 a 26/11: simulado, mini-simulado, lacunas e treino na VM todos os dias, com correção no mesmo dia. O que não cabe no dia some; um erro real volta no simulado seguinte.
 
 ---
 
 ## 1. Status atual
 
-**Atualizado em 23/10.** Prova em **23/11**, a confirmar no Checkpoint B (domingo 01/11). Detalhe das semanas em `labs/semana-08.md` (fim de semana 24 e 25/10) e `labs/semana-09.md` (26/10 a 01/11).
+**Atualizado em 26/10.** Prova em **30/11**. Esta semana: `labs/semana-09.md`. De 31/10 em diante: `labs/operacao-pratica.md`.
 
 ### Concluído
 
@@ -21,42 +21,34 @@
 | **Semanas 2 e 3 — Tópico 2 (peso 9)** | Concluídas em 13/09 e 19/09 — os quatro objetivos |
 | **Semana 4 — Objetivos 3.1 e 3.2** | Fechada em 29/09 — 24 correções (29 a 52) |
 | **Semana 5 — Objetivo 3.3** | Laboratório 1 e exercício das frutas em 04/10; Correções 60 e 61 |
-| **Semana 6 — abertura do Tópico 5** | Simulado 01 (05/10: 28 de 40); Laboratório 2 (06/10: três scripts); aquecimento de conversões (07/10: 5 de 5, com estudo prévio); curso até a aula 40 (09/10); Correções 62 a 74 |
-| Autoavaliações | Semana 2: 14 de 15 · Semana 3: 20 de 20 · Semana 4: 14 de 20 |
+| **Semana 6 — abertura do Tópico 5** | Simulado 01 (05/10: 28 de 40, 23 firmes); Laboratório 2; curso até a aula 40 (09/10); Correções 62 a 74 |
+| **Semana 7 — Tópico 5 em prática** | Autoavaliação da Semana 5 (9 de 10); Prática 1 (usuários e grupos); Correção 75 |
+| **Semana 8 — Tópico 5 e simulado 02** | Prática 2 (permissões); Exercícios da LPI 5.1 a 5.4; simulado 02 (23/10: **22 de 40, 17 firmes**) |
+| Autoavaliações | Semana 2: 14 de 15 · Semana 3: 20 de 20 · Semana 4: 14 de 20 · Semana 5: 9 de 10. Encerradas: daqui em diante, os simulados medem |
 | Bandit | Níveis 0 a 9 |
-| Cards de revisão (Notion) | Em uso desde a Semana 1 |
+| Cards de revisão (Notion) | Cards 60 a 70 em 22/10; daqui em diante, só para reincidências |
 
-### Dívidas — situação em 23/10
+### O que falta estudar — semana de 26 a 30/10
 
-O Checkpoint A (18/10) deu **vermelho**. O simulado 02 saiu em 23/10 com **22 de 40 (17 firmes)**, abaixo da meta de 24. Por isso o fim de semana 24 e 25/10 ficou só para as dívidas que são conteúdo de prova, com **limite no domingo**; o conteúdo novo foi para a Semana 9, e o **Checkpoint B passou para o domingo 01/11**. Mapa completo em `labs/semana-08.md`.
-
-| Dívida | Situação | Quando |
+| Item | Peso | Quando |
 |---|---|---|
-| Autoavaliações das Semanas 5 e 6 | Semana 5 feita (9 de 10); Semana 6 a fazer | Sáb 24/10, antes dos cards |
-| Práticas 1 e 2 | **Feitas**, com correções no caderno em 22/10 | — |
-| Simulado 02 | **Feito em 23/10: 22 de 40** | — |
-| Cards no Notion | 60 a 70 anotados; faltam os 14 do simulado 02, os ajustes em 65, 69 e 70, os cards 71 a 75 e dois sem número | Sáb 24/10 |
-| `cheatsheets/permissoes.md` | A fazer | Sáb 24/10 |
-| Reforços R4 e R3 (novos, sobre os erros do simulado 02) | Prontos em `reforco-r3-r4.md` | Dom 25/10 |
-| Resíduos da Prática 2; erros da primeira tentativa dos Exercícios da LPI | **Saíram do plano em 23/10**: não são conteúdo de prova ou não têm registro | — |
+| **Curso, aulas 41 a 72** (32 aulas; último registro na 40) | — | Oito por dia, de segunda a quinta |
+| **4.2 Hardware** — Prática 3 | 2 | Seg 26/10 |
+| **4.3 Onde os dados ficam** — Práticas 3 e 4 | **3** | Seg 26 e ter 27/10 |
+| **4.4 Rede** — Prática 5 | 2 | Qua 28/10 |
+| **4.1 Sistemas operacionais** e here document | 1 | Qui 29/10 |
 
-### Conteúdo ainda não estudado — Semana 9, de 26 a 29/10
-
-| Item | Quando |
-|---|---|
-| **Tópico 4** — Práticas 3 (hardware, discos, diretórios), 4 (processos, memória, logs) e 5 (rede) | Seg 26, ter 27 e qua 28/10 |
-| **Curso, aulas 41 a 72** (32 aulas; último registro na 40) | Oito por dia, de segunda a quinta; curso fechado na qui 29/10 |
-| 4.1, here document (`<<`) e quizzes do NDG | Qui 29/10 |
-
-A lista completa, objetivo por objetivo, está em `labs/semana-07.md`, seção 2.
+Sexta 30/10 é reserva para o que tiver escorregado. Os roteiros estão em `labs/semana-09.md`.
 
 ### Voucher e agendamento
 
 | Item | Situação |
 |---|---|
-| Data da prova | **23/11/2026, segunda-feira** |
+| Data da prova | **30/11/2026, segunda-feira** |
 | Exame a escolher | **010-160** (versão 1.6), e não o 010-200 |
 | Agendamento | Registrar aqui a confirmação: centro ____________ · horário ____________ · janela de remarcação sem custo ____________ |
+
+Se a prova já estava agendada para 23/11, remarque para 30/11 respeitando a janela de remarcação sem custo da Pearson VUE. Se ainda não foi agendada, agende direto para 30/11.
 
 ### Cobertura estimada por tópico
 
@@ -64,11 +56,11 @@ A lista completa, objetivo por objetivo, está em `labs/semana-07.md`, seção 2
 |---|---|---|
 | 1. Comunidade e open source | 7 | 100% |
 | 2. Encontrando seu caminho | 9 | 100% |
-| 3. Poder da linha de comando | 9 | 100% (falta o here document como conceito, 27/10) |
-| 4. Sistema operacional | 8 | 30% |
-| 5. Segurança e permissões | 7 | 90% (Práticas 1 e 2 feitas; faltam os Exercícios da LPI) |
+| 3. Poder da linha de comando | 9 | 100% (here document como conceito na qui 29/10) |
+| 4. Sistema operacional | 8 | 30% → 100% até 30/10 |
+| 5. Segurança e permissões | 7 | 100% (Práticas 1 e 2 e Exercícios da LPI) |
 
-**Progresso geral: aproximadamente 80% do conteúdo da prova.** Falta o Tópico 4.
+**Progresso geral: aproximadamente 85% do conteúdo da prova.** Falta o Tópico 4, nesta semana. Estudado não é fixado: o simulado 02 mostrou erros justamente nos Tópicos 2 e 5, já estudados. A fixação é o trabalho da operação prática.
 
 ---
 
@@ -94,7 +86,7 @@ A lista completa, objetivo por objetivo, está em `labs/semana-07.md`, seção 2
 |---|---|---|
 | 2. Finding Your Way on a Linux System | **9** | Concluído nas Semanas 2 e 3 |
 | 3. The Power of the Command Line | **9** | Semanas 4 e 5 (concluído) |
-| 4. The Linux Operating System | **8** | Semana 8 (Práticas 3, 4 e 5) |
+| 4. The Linux Operating System | **8** | Semana 9 (Práticas 3, 4 e 5) |
 | 1. The Linux Community and a Career in Open Source | 7 | Concluído na Semana 1 |
 | 5. Security and File Permissions | 7 | Semanas 6 e 7 (Práticas 1 e 2) |
 
@@ -207,7 +199,7 @@ Host lab
 
 | Fonte | Custo | Para quê |
 |---|---|---|
-| **`labs/simulados-práticos.lpi/` deste repositório** | — | Simulados próprios, com peso do exame e gabarito comentado. As questões atacam os erros já registrados nos cadernos. Série dominical: ver seção 7 |
+| **`labs/simulados-práticos.lpi/` deste repositório** | — | Simulados próprios, com peso do exame e gabarito comentado. As questões atacam os erros já registrados nos cadernos. Calendário na seção 7 e em `labs/operacao-pratica.md` |
 | **NDG Linux Essentials** (Cisco Networking Academy) | Gratuito | Quizzes por módulo e exame final de prática. A melhor fonte externa gratuita |
 | **LPI Learning Materials** (PDF no Projeto) | Gratuito | Exercícios Guiados e Exploratórios de cada lição, com respostas. É o único material de questões **escrito pela própria LPI** |
 | **EDUSUM** | Gratuito | Amostra de questões no estilo LPI |
@@ -222,7 +214,7 @@ Sites de dumps — ITExams, Marks4Sure, Pass4Success e semelhantes — estão fo
 |---|---|
 | **LPI Learning Materials** (learning.lpi.org) | Material oficial, escrito objetivo por objetivo, com tradução PT-BR |
 | **OverTheWire — Bandit** | Níveis 0 a 9 concluídos; 10 a 20 são bônus, não obrigatórios |
-| **Notion** (cards próprios) | Retenção espaçada |
+| **Notion** (cards próprios) | Cards das reincidências (regra de 26/10) |
 | **explainshell.com** | Explica cada flag de um comando complexo |
 | **tldr / tealdeer** | Exemplos práticos, complemento ao `man` |
 
@@ -230,222 +222,137 @@ Sites de dumps — ITExams, Marks4Sure, Pass4Success e semelhantes — estão fo
 
 ## 6. Método de estudo
 
-O ritmo anterior era de cinco sessões semanais de laboratório. A partir da Semana 5 passa a ser **duas sessões de laboratório e o curso como atividade principal**.
+**Revisado em 26/10.** Duas fases, nenhuma pendência.
 
-### O que muda
+### Fase 1 — Conteúdo (26 a 30/10)
 
-| | Antes (S1–S4) | Fase 1 (S5–S7) |
-|---|---|---|
-| Sessões de laboratório | 5 por semana | **2 por semana** |
-| Curso | Complementar | **Atividade principal** |
-| Aquecimento diário | Não existia | **10 min, todo dia** |
-
-### O aquecimento diário — a peça que substitui a frequência perdida
-
-Comando vira reflexo por **repetição espaçada**, não por tempo acumulado. Duas sessões de uma hora ensinam menos motricidade que cinco de vinte minutos, ainda que somem o mesmo.
-
-Para não perder isso ao reduzir as sessões, entra um ritual curto de **10 minutos por dia**:
-
-1. Abrir a VM
-2. Refazer **cinco comandos de memória**, sem consultar nada
-3. O que travar vira card no Notion na hora
-
-Cinco comandos. Dez minutos. É o que mantém o espaçamento funcionando com duas sessões formais por semana.
-
-**O aquecimento é pautado pelo conteúdo atual e pelos erros medidos.** Cinco comandos escolhidos ao acaso reforçam o que já está fixado; cinco escolhidos a partir da prática anterior ou das questões erradas atacam a lacuna medida. Erros antigos de comandos já dominados não entram aqui: os simulados medem se voltam.
-
-| Período | Conteúdo do aquecimento |
+| Elemento | Como |
 |---|---|
-| Semanas 7 e 8 | O conteúdo da prática anterior (Tópico 5, depois Tópico 4) |
-| A partir de 26/10 | Rodízio pelas cinco frentes das dicas recorrentes: segunda permissões, terça `tar`, quarta redirecionamento, quinta diretórios, sexta lacunas |
-| Dias de simulado | Sem aquecimento: o simulado o substitui |
+| Aulas do curso | Oito por dia. Anotações no caderno, repassadas aqui como sempre |
+| Prática de cada tópico | Logo depois das aulas do mesmo tema: 45 min de teclado, 10 de registro, 5 de commit, **prevendo a saída antes de executar**; 20 min de Exercícios Guiados da LPI no fim |
+| Velocidade do curso | **2x** onde o vídeo repete o que já foi praticado; **1.25x** no Tópico 4, que é conteúdo novo |
+| O que não fechar até quinta | Vai para a sexta 30/10. O que não fechar até sexta não vira pendência: a operação começa no sábado do mesmo jeito |
 
-**Assunto novo entra no aquecimento só depois de estudado.** A primeira aparição é leitura de 5 minutos mais cinco questões; o reteste cego vem no dia seguinte. A régua de 3 segundos por item vale só para o que já foi estudado.
+### Fase 2 — Operação prática (31/10 a 26/11)
 
-### Quando responder a autoavaliação
+Detalhe completo em `labs/operacao-pratica.md`. O resumo:
 
-**Regra alterada em 29/09.** As autoavaliações das Semanas 2 e 3 foram respondidas no mesmo dia do último laboratório e deram 14 de 15 e 20 de 20. A da Semana 4 foi respondida quatro dias depois e deu 14 de 20 — com todos os quatro conceitos errados já registrados corretamente no caderno, dias antes.
+| Elemento | Como |
+|---|---|
+| **Dia A** | Lacunas (5 min) · simulado completo (60 min) · correção no mesmo dia (20 min) |
+| **Dia B** | Lacunas (5 min) · mini-simulado de 20 questões (25 min) · correção (10 min) · treino na VM sobre o que errou (30 min) |
+| **Domingo** | Descanso |
+| **Correção** | No mesmo dia, com tempo-limite. Erro de comando é **executado na VM**, não só lido |
+| **Notion** | Card só para **reincidência**, um erro que já aconteceu antes |
+| **Medida** | Acertos **firmes**, sem chutes e sem pesquisas |
 
-As duas primeiras notas mediam memória de curto prazo. A terceira mediu retenção, que é o que a prova mede.
+### Por que mudou
 
-**Da Semana 5 em diante, a autoavaliação de cada semana é respondida na semana seguinte**, em um dia de curso, como abertura da sessão. O intervalo mínimo é de três dias. Uma nota menor e honesta informa o plano; uma nota alta e cedo apenas o tranquiliza.
+Em outubro, o plano funcionava com "dívidas": o que não era feito no dia virava pendência para a semana seguinte. Na prática, as pendências se acumularam (o simulado 02 mudou de data quatro vezes), pagá-las virou tarefa burocrática e o rendimento caiu: de 23 para 17 acertos firmes entre os simulados 01 e 02. E escrever a correção não fixou: quatro das nove questões que retestavam correções antigas voltaram a errar.
 
-### As sessões de laboratório
+A operação prática troca o acúmulo por repetição diária. Se um erro é real, ele reaparece no simulado seguinte e é corrigido ali, com o contexto fresco.
 
-Sem vídeo dentro delas — o vídeo agora tem espaço próprio. A sessão inteira é teclado:
+### O que continua valendo
 
-1. **45 min de laboratório** — reproduzir tudo na VM, **digitando**, nunca copiando e colando
-2. **10 min de registro** — anotar no caderno o comando, o que faz e o exemplo executado
-3. **5 min** — commit no repositório
-
-**Quebrar coisas de propósito** continua valendo. O snapshot `limpo` existe para isso.
-
-### Dívidas
-
-Desde 13/10 só existem as dívidas da Etapa 1 (seção 1). Depois de pagas, um item adiado só volta ao plano se for conteúdo da prova ainda não estudado ou simulado; o resto sai.
-
-### Erros antigos de conteúdo já estudado
-
-Os erros recorrentes da seção 9 não têm atividade própria. Voltam em dois momentos: **nos simulados**, que continuam testando esses pontos, e na **revisão leve da Semana 12**, pelos cards do Notion.
+1. **Digitar, nunca copiar.** Na VM, todo comando é digitado.
+2. **Prever antes de executar.** A previsão errada é o que ensina.
+3. **Quebrar coisas de propósito.** O snapshot `limpo` existe para isso.
+4. **Correções numeradas** continuam só para erros de laboratório e de curso nesta semana; a próxima é a **76**. Erro de simulado não gera correção numerada.
+5. **Formato das lacunas:** escrever só o comando, sem caminho, sem `sudo` e sem opções, salvo se pedido. Dois pontos se perderam por isso no simulado 02.
 
 ### Dicas recorrentes de prova (06/10)
 
-Dicas de candidatos, de fonte não oficial, conferidas contra o PDF da LPI: permissões (r = 4, w = 2, x = 1), `tar` e compressão, redirecionamento (`>`, `>>`, `2>`, `<<`), diretórios `/proc`, `/sys`, `/dev` e `/var`, e **atenção às questões de preencher a lacuna**. Todas constam do material oficial. O plano já cobria permissões, `tar` e `/proc` e `/dev`; as lacunas reais eram o `<<` como conceito, o `/sys` e o **formato de lacuna**, nunca treinado (a Q11 do simulado #1 foi respondida com um sublinhado na frente de `PATH`).
-
-Como entram, sem aumentar a carga: (1) **mínimo de questões por tema em todo simulado a partir do #2**: permissões 4, `tar` 2, redirecionamento 3 (com `<<`), diretórios 3, **lacunas 5**; (2) **mini-simulados de reforço de 20 questões e 25 minutos**: R4 e R3, sobre os erros do simulado 02, no domingo 25/10, e R2 e R1 no sábado 31/10; (3) a partir de 26/10, o aquecimento diário gira pelas cinco frentes (segunda permissões, terça `tar`, quarta redirecionamento, quinta diretórios, sexta lacunas). O detalhe, a cola e o R1 com gabarito estão em `praticas-reforco-dicas-recorrentes.md`; o desempenho por tema é registrado em `praticas-resultados-simulados-e-correcoes.md`.
-
-### Os simulados
-
-Um simulado geral de 40 questões, 60 minutos, sem consulta, com a distribuição de pesos do exame. É o termômetro e o treino da condição de prova. Da Semana 9 em diante há dois ou três por semana; a série completa, com datas, fontes e metas, está na seção 7.
-
-1. Cronometrado, sem terminal, sem caderno, sem internet.
-2. **Marcar cada chute**, mesmo acertando.
-3. Apuração **por tópico** e **lista das questões erradas e das chutadas**, com o tópico de cada uma. **Desde 06/10 não se abre correção numerada para erro de simulado:** a correção fica por conta dos seus cards no Notion.
-4. Cada simulado é um conjunto **novo**. As questões erradas voltam só pelo aquecimento, nunca refazendo o simulado inteiro.
-5. O resultado entra na tabela da série e alimenta os checkpoints da seção 11.
-6. Carga: cerca de 1h35 por simulado (60 min de prova, 20 a 25 de apuração, commits).
-7. **Exceção:** a véspera da prova (domingo 22/11) não tem simulado. O final é na quinta 19/11.
-8. **Dificuldade (06/10):** do #2 em diante os simulados escritos aqui ficam mais próximos do exame: enunciados com cenário, pegadinhas de comando, escolha de mais de uma resposta, preenchimento e distratores plausíveis. Use pelo menos 45 minutos e reserve os últimos 15 para uma segunda passada nas marcadas.
-
-**Relação com a autoavaliação semanal.** Restam duas: a da Semana 6 (Tópico 5) no sábado 24/10 e a da Semana 8 (Tópico 4) no sábado 31/10, a última do plano. A partir do simulado 03 (30/10), com os cinco tópicos estudados, o simulado substitui a autoavaliação.
+Dicas de candidatos, de fonte não oficial, conferidas contra o PDF da LPI: permissões (r = 4, w = 2, x = 1), `tar` e compressão, redirecionamento (`>`, `>>`, `2>`, `<<`), diretórios `/proc`, `/sys`, `/dev` e `/var`, e **atenção às questões de preencher a lacuna**. Todas constam do material oficial. Na operação prática elas entram de três formas: (1) **mínimo de questões por tema em todo simulado**: permissões 4, `tar` 2, redirecionamento 3, diretórios 3, **lacunas 5**; (2) os **mini-simulados R1 a R4**; (3) o **banco de lacunas** do aquecimento diário. Detalhe em `labs/simulados-práticos.lpi/praticas_simulados.md`.
 
 ---
 
-## 7. Cronograma até a prova (revisado em 13/10)
+## 7. Cronograma até a prova (revisado em 26/10)
 
-Semanas de **segunda a domingo**. A prova é na **segunda-feira 23/11**, depois do fim da Semana 12. O histórico das Semanas 1 a 6 está nos arquivos `labs/semana-01.md` a `labs/semana-06.md`; esta seção só trata do que vem pela frente.
+Semanas de **segunda a domingo**. A prova é na **segunda-feira 30/11**. O histórico das Semanas 1 a 8 está em `labs/semana-01.md` a `labs/semana-08.md`.
 
 ### Visão geral
 
-| Etapa | Semanas | Período | Foco |
+| Fase | Período | Arquivo | Foco |
 |---|---|---|---|
-| **1. Dívidas** | 7 e 8 | 13/10 a 25/10 | Práticas 1 e 2, simulado 02, autoavaliações das Semanas 5 e 6 · correção dos erros do simulado 02 e reforços R3 e R4 |
-| **2. Conteúdo não estudado** | 9 | 26/10 a 29/10 | Tópico 4 em três práticas de laboratório · 4.1 e here document · curso fechado |
-| **3. Prática total** | 9 a 12 | 30/10 a 19/11 | Simulados completos a cada dois dias, em média · correção só dos erros · reforços nos temas abaixo de 60% · revisão leve na última semana |
-| **Prova** | — | **Seg 23/11** | — |
+| **1. Conteúdo** | 26/10 a 30/10 | `labs/semana-09.md` | Curso fechado · Tópico 4 em três práticas · 4.1 e here document |
+| **2. Operação prática** | 31/10 a 26/11 | `labs/operacao-pratica.md` | Todos os dias: simulado ou mini-simulado, lacunas, treino na VM e correção no mesmo dia |
+| **Descanso** | 27/11 a 29/11 | — | Sem estudo |
+| **Prova** | **Seg 30/11** | — | — |
 
 ### A conta
 
 | Item | Número |
 |---|---|
-| Semanas até a prova | 6 (de 13/10 a 22/11) |
-| Aulas restantes do curso | 32 (41 a 72), oito por dia de 26 a 29/10 |
+| Aulas restantes do curso | 32 (41 a 72), até qui 29/10 |
 | Práticas de laboratório restantes | 3 (Práticas 3, 4 e 5 do Tópico 4) |
-| Simulados completos | 9 restantes (03 a 11), mais os reforços R1 a R4 |
-| Semanas só de simulados | 3 (10 a 12), mais o fim da Semana 9 |
-| Meta semanal | cerca de 9h, com 1h por dia útil e blocos maiores no fim de semana |
+| Dias de operação prática | 23, com 4 domingos de descanso |
+| Simulados completos | 11 (03 a 13) |
+| Mini-simulados | 10 (R1 a R4 e M1 a M6) |
+| Lacunas | 23 séries de cinco (115 questões) |
 
 ### Datas do calendário que afetam o plano
 
 | Data | Evento | Efeito |
 |---|---|---|
-| Qua 28/10 | Dia do Servidor Público | Sem efeito |
-| Seg 02/11 | Finados (feriado) | Dia livre na Semana 10; nada é agendado nele |
-| Sex 20/11 | Consciência Negra (feriado) | Primeiro dia do descanso antes da prova |
-| Seg 23/11 | **Prova** | Não cai em feriado |
+| Seg 02/11 | Finados (feriado) | Dia normal da operação (tipo B) |
+| Sex 20/11 | Consciência Negra (feriado) | Dia normal da operação (tipo B) |
+| Seg 30/11 | **Prova** | Não cai em feriado |
 
-### Série de simulados
-
-Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
-
-| # | Data | Semana | Fonte | Meta |
-|---|---|---|---|---|
-| 1 | Seg 05/10 | 6 | `simulado-01` | **Feito: 28 de 40 (70%), 23 firmes** |
-| 2 | Sex 23/10 | 8 | `simulado-02` | **Feito: 22 de 40 (55%), 17 firmes**. Meta de 24 não atingida |
-| R4 | **Dom 25/10** | 8 | Reforço, 20 questões, contas e permissões (`reforco-r3-r4.md`) | 16 de 20 |
-| R3 | **Dom 25/10** | 8 | Reforço, 20 questões, navegação, ajuda e redirecionamento (`reforco-r3-r4.md`) | 16 de 20 |
-| 3 | **Sex 30/10** | 9 | `simulado-03` (pronto) | **28 ou mais** (Checkpoint B) |
-| R2 | Sáb 31/10 | 9 | Reforço, 20 questões (pronto, `praticas_simulados.md`, seção 8) | 15 de 20 |
-| R1 | Sáb 31/10 | 9 | Reforço, 20 questões (pronto, `praticas_simulados.md`, seção 6) | 15 de 20 |
-| 4 | **Dom 01/11** | 9 | Exame final de prática do NDG | 28 ou mais |
-| 5 | Ter 03/11 | 10 | `simulado-05` | **30 ou mais** |
-| 6 | Qua 04/11 | 10 | `simulado-06` | Acompanhar |
-| 7 | Sex 06/11 | 10 | `simulado-07` | 34 ou mais |
-| 8 | **Dom 08/11** | 10 | `simulado-08` | **34 ou mais** (Gate) |
-| 9 | Ter 10/11 | 11 | `simulado-09` | 34 ou mais |
-| 10 | Dom 15/11 | 11 | `simulado-10` | 34 ou mais |
-| 11 | **Qui 19/11** | 12 | `simulado-11` | **34 ou mais** (final) |
-
-**Gate:** dois simulados consecutivos com 34 ou mais entre o 06, o 07 e o 08.
-
-**Regras da série.** Cronometrado, sem consulta (questão **pesquisada** conta como errada, regra de 23/10), marcando cada chute; pelo menos 45 minutos de uso, com segunda passada; apuração por tópico e por tema; só se anotam as questões erradas e as chutadas, e a correção fica no Notion. Cada simulado traz o mínimo por tema das dicas recorrentes (permissões 4, `tar` 2, redirecionamento 3, diretórios 3, lacunas 5). Os simulados escritos aqui ficam prontos **três dias antes** do uso.
-
-**Revisão dirigida.** Depois de cada simulado, no máximo 30 minutos, **só nos objetivos com erro**, de preferência executando na VM. Não se revisa o que já se acerta.
-
----
-
-### Semana 7 — 12 a 18/10 · Etapa 1, dívidas
-
-**Arquivo detalhado:** `labs/semana-07.md`. Feito: autoavaliação da Semana 5 (9 de 10), Prática 1 e, na segunda 19/10, a Prática 2 até o bloco 4. Não feito: simulado 02 e curso. **Checkpoint A: vermelho.**
-
-### Semana 8 — 19 a 25/10 · Dívidas da Semana 7, simulado 02 e reforço
-
-**Arquivo detalhado:** `labs/semana-08.md`. Refeito em 23/10: o Tópico 4 e as aulas saíram do fim de semana.
-
-| Dia | Atividade |
-|---|---|
-| Ter 20 a qui 22 | Prática 2 terminada · Exercícios da LPI 5.1 a 5.4 · correções das Práticas 1 e 2 · cards 60 a 70 |
-| Sex 23 | **Simulado 02: 22 de 40** |
-| Sáb 24 | Autoavaliação da Semana 6 · cards do simulado 02 e os que faltavam · cola de permissões |
-| Dom 25 | **R4** e **R3** · erros dos reforços no Notion |
-
-**Marco:** dívidas fechadas no domingo 25/10. O que não fechar sai do plano.
-
-### Semana 9 — 26/10 a 01/11 · Tópico 4, curso fechado e início da prática total
-
-**Arquivo detalhado:** `labs/semana-09.md` (roteiros, autoavaliação do Tópico 4, Checkpoint B e cola rápida).
+### Semana 9 — 26/10 a 01/11 · Conteúdo e início da operação
 
 | Dia | Atividade |
 |---|---|
 | Seg 26 | Prática 3 — hardware, discos e o mapa dos diretórios (4.2 e 4.3) · aulas 41 a 48 |
 | Ter 27 | Prática 4 — processos, memória e logs (4.3) · aulas 49 a 56 |
 | Qua 28 | Prática 5 — rede (4.4) · aulas 57 a 64 |
-| Qui 29 | Bloco curto: 4.1 e here document · aulas 65 a 72 (**curso fechado**) |
-| Sex 30 | **Simulado 03** |
-| Sáb 31 | Autoavaliação da Semana 8 (Tópico 4) · **R2** · **R1** |
-| Dom 01/11 | **Simulado 04** (exame final de prática do NDG) · **Checkpoint B** (decide a data da prova) |
+| Qui 29 | 4.1 e here document · aulas 65 a 72 (**curso fechado**) |
+| Sex 30 | Reserva para o que escorregou |
+| Sáb 31 | **Simulado 03** — linha de base da operação |
+| Dom 01/11 | Descanso |
 
-**Marco:** ao fim da quinta 29/10, os cinco tópicos foram estudados e o curso está fechado. Da sexta em diante, só simulados, correções e reforços.
+### Semanas 10 a 13 — 02/11 a 29/11 · Operação prática
 
-### Semana 10 — 02 a 08/11 · Prática total e Gate
+| Semana | Dias A (simulados) | Dias B (mini-simulados) |
+|---|---|---|
+| 10 (02 a 08/11) | 04 (NDG), 05, 06 | R4, R3, R2 |
+| 11 (09 a 15/11) | 07, 08, 09 | R1, M1, M2 |
+| 12 (16 a 22/11) | 10, 11 (decisão), 12 | M3, M4, M5 |
+| 13 (23 a 29/11) | 13 (final, 24/11) | M6 · revisão leve em 25 e 26/11 · descanso de 27 a 29/11 |
 
-| Dia | Atividade |
-|---|---|
-| Seg 02 (feriado) | Livre |
-| Ter 03 | **Simulado 05** |
-| Qua 04 | **Simulado 06** |
-| Sex 06 | **Simulado 07** |
-| Dom 08 | **Simulado 08** · **Gate** |
-| Demais dias | Correção dos erros no Notion (até 30 min) e reforço nos temas abaixo de 60% |
+Calendário dia a dia, metas e registro em `labs/operacao-pratica.md`.
 
-### Semana 11 — 09 a 15/11 · Simulados
+### Série de simulados
 
-| Dia | Atividade |
-|---|---|
-| Ter 10 | **Simulado 09** |
-| Dom 15 | **Simulado 10** |
-| Demais dias | Revisão dirigida dos erros que se repetiram em dois simulados ou mais |
+| # | Data | Fonte | Meta de acertos firmes |
+|---|---|---|---|
+| 1 | Seg 05/10 | `simulado-01` | **Feito: 28 de 40, 23 firmes** |
+| 2 | Sex 23/10 | `simulado-02` | **Feito: 22 de 40, 17 firmes** |
+| 3 | **Sáb 31/10** | `simulado-03` (pronto) | Linha de base |
+| 4 | Ter 03/11 | Exame final de prática do NDG | 24 ou mais |
+| 5 | Qui 05/11 | `simulado-05` | 24 ou mais |
+| 6 | Sáb 07/11 | `simulado-06` | 24 ou mais |
+| 7 | Ter 10/11 | `simulado-07` | 28 ou mais |
+| 8 | Qui 12/11 | `simulado-08` | 28 ou mais |
+| 9 | Sáb 14/11 | `simulado-09` | 28 ou mais |
+| 10 | Ter 17/11 | `simulado-10` | 30 ou mais |
+| 11 | **Qui 19/11** | `simulado-11` | 30 ou mais · **decisão da data** |
+| 12 | Sáb 21/11 | `simulado-12` | 30 ou mais |
+| 13 | **Ter 24/11** | `simulado-13` | **30 ou mais** (final) |
 
-### Semana 12 — 16 a 22/11 · Revisão leve e descanso
-
-- Segunda a quarta: revisão **leve**, 40 minutos por dia, só nas colas (`cheatsheets/`) e nos cards do Notion. Sem conteúdo novo.
-- **Quinta 19/11: simulado final (11).**
-- Sexta (feriado), sábado e domingo: **descanso**. Não estudar na véspera.
-
-**Prova: segunda-feira 23/11.** Chegar 30 minutos antes, com dois documentos com foto. Na prova: 40 questões em 60 minutos, 1,5 minuto por questão; marcar as difíceis e voltar; nas de preenchimento, escrever **só o comando**, sem caminho e sem flags, salvo se pedido.
+**Regras da série.** Cronometrado, sem consulta (questão **pesquisada** conta como errada), marcando cada chute; pelo menos 45 minutos de uso, com segunda passada; apuração por tópico e por tema; só se anotam as questões erradas e as chutadas. Cada simulado traz o mínimo por tema das dicas recorrentes. Os simulados escritos aqui ficam prontos **três dias antes** do uso.
 
 ---
 
-## 8. Riscos do novo formato e como são mitigados
+## 8. Riscos e como são mitigados
 
 | Risco | Por que existe | Mitigação |
 |---|---|---|
-| **Perda de motricidade** | Comando vira reflexo por repetição espaçada; 2 sessões/semana espaçam menos que 5 | Aquecimento diário de 10 minutos, cinco comandos de memória |
-| **Permissões sem repetição suficiente** | É o conteúdo mais dependente de reflexo, e cai na semana de menor frequência | Aquecimento de conversões nas Semanas 6 e 7 · cinco questões de permissões em todo simulado |
-| **Curso sem prática imediata** | Assistir sem digitar produz reconhecimento, não competência | As 2 práticas da semana cobrem sempre o objetivo de maior peso daquele bloco |
-| **Dívidas acumuladas sobre o conteúdo novo** | Em 13/10, quatro dívidas e 32 aulas disputavam a mesma semana | Etapas em ordem fixa (dívidas, conteúdo, simulados) · ordem de corte escrita em `labs/semana-07.md` |
-| **Prova marcada sem margem (atualizado em 13/10)** | Com 23/11, sobram quatro semanas de simulados depois do conteúdo | Checkpoints A, B, Gate e Final na seção 11 · limite absoluto em 30/11 |
-| **Retenção menor que a percebida** | A autoavaliação da Semana 4, feita 4 dias depois, deu 14/20 contra 20/20 no mesmo dia | Autoavaliação sempre na semana seguinte · aquecimento pautado pelos erros · simulado com marcação de chutes |
+| **A semana de conteúdo escorregar** | Aconteceu em todas as semanas desde 13/10 | Sexta 30/10 como reserva; o que não fechar não vira pendência, e a operação começa no sábado |
+| **Assistir sem praticar** | O vídeo produz reconhecimento, não competência | Cada tema do Tópico 4 tem a sua prática logo depois das aulas |
+| **Simular muito e corrigir pouco** | Um simulado mede; quem ensina é a correção | Dias A e B alternados; correção no mesmo dia, executando na VM; mini-simulados escritos sobre os erros |
+| **Erros que voltam** | Quatro das nove correções antigas voltaram no simulado 02 | Lista de reincidências com treino na VM para cada uma; card no Notion só para elas |
+| **Cansaço** | Todos os dias até a prova | Sessões de 1h10 a 1h25; domingo de descanso; três dias sem estudo antes da prova |
+| **Erro de forma nas lacunas** | Duas questões perdidas no simulado 02 com a resposta certa escrita errado | Cinco lacunas por dia, com a regra de forma |
 
 ---
 
@@ -470,7 +377,7 @@ Meta em acertos: 24 = 60%, 28 = 70%, 30 = 75%, 34 = 85%.
 
 ### Erros que se repetiram e merecem atenção
 
-Atualizado em 23/10 com o simulado 02, em que **quatro das nove questões que retestavam correções antigas voltaram a errar**. Os erros abaixo são de comandos já estudados e não entram no aquecimento; os simulados continuam medindo se voltam, e a revisão leve da Semana 12 passa por eles nos cards do Notion. Valem o mesmo para as Correções 62 a 67 (Tópicos 1 e 2). A Correção 68 (`chmod` e `chown`) é do Tópico 5 e continua ativa até a Prática 2.
+Atualizado em 23/10 com o simulado 02, em que **quatro das nove questões que retestavam correções antigas voltaram a errar**. Desde 26/10, esta lista é a **lista de reincidências** da operação prática (`labs/operacao-pratica.md`, seção 6): cada item tem um treino na VM, e a revisão leve de 25 e 26/11 passa por ela.
 
 | Erro | Vezes | Correção |
 |---|---|---|
@@ -504,7 +411,7 @@ Ordem de estudo confirmada:
 
 | # | Certificação | Situação |
 |---|---|---|
-| 1 | **LPI Linux Essentials** (010-160) | Em preparação — prova em 23/11/2026 |
+| 1 | **LPI Linux Essentials** (010-160) | Em preparação — prova em 30/11/2026 |
 | 2 | **GitHub Foundations** | Na sequência, em dezembro |
 | 3 | **Red Hat RHCSA** (EX200) | Próxima grande certificação |
 | 4 | **LPIC-1** (101-500 e 102-500) | Duas provas; o certificado só sai com as duas aprovadas |
@@ -534,44 +441,37 @@ A coluna da direita é apenas o caminho natural dentro do roadmap atual, não um
 - **O LPIC-1 vem logo depois** e reaproveita boa parte do RHCSA no lado de administração. Ele exige dois exames, o 101-500 e o 102-500, e pedirá material complementar vendor-neutral com foco em Debian.
 - **A RHCE vem depois do LPIC-1.** É a certificação de nível engenheiro da Red Hat, construída sobre o RHCSA e centrada em automação com Ansible (exame EX294). O ambiente de laboratório montado para o RHCSA continua sendo a base.
 
-## 11. Checkpoints e regra de adiamento da prova
+## 11. A data da prova
 
-**Revisada em 13/10**, com a prova em **23/11**. O princípio de 02/10 continua: a decisão sobre manter ou mover a data é tomada por critérios escritos antes, com números (práticas feitas, aulas assistidas, acertos em simulado), e não pela sensação de estar pronto.
+**Revisada em 26/10.** A prova passou de 23/11 para **30/11**. Os checkpoints A, B, Gate e Final saíram do plano: eram critérios demais para acompanhar, e a semana extra é de prática, não de conteúdo.
 
-### Checkpoints
+### Por que 30/11
 
-| Checkpoint | Data | Critérios | Resultado |
-|---|---|---|---|
-| **A** | Dom 18/10 | 1. Práticas 1 e 2 · 2. Simulado 02 com **24 ou mais** · 3. Autoavaliações das Semanas 5 e 6 feitas · 4. Curso até a aula 72 (ou 64, com 65 a 72 na segunda 19/10) | **Verde:** segue. **Amarelo:** um falhou; o item abre a segunda 19/10. **Vermelho:** dois ou mais falharam, ou simulado 02 abaixo de 20; a Semana 8 abre com as dívidas restantes e o Checkpoint B decide a data |
-| **B** | **Dom 01/11** (movido em 23/10) | 1. Curso fechado (aula 72) · 2. Práticas 3, 4 e 5 feitas · 3. Simulado 03 com **28 ou mais** | **Verde:** mantém 23/11. **Amarelo:** um falhou; mantém, mas o Gate fica sem folga. **Vermelho:** dois ou mais falharam; mover a prova para **30/11** |
-| **Gate** | Dom 08/11 | Dois simulados consecutivos com **34 ou mais** entre o 06 (03/11), o 07 (05/11) e o 08 (08/11) | **Cumprido:** mantém 23/11. **Não cumprido:** se a média dos três ficou em 30 ou mais, mantém e o Final decide; abaixo disso, mover para **30/11** |
-| **Final** | Qui 19/11 | Simulado 11 | **34 ou mais:** vai. **30 a 33:** vai, com revisão leve dos erros no fim de semana. **Abaixo de 30:** remarcar para 30/11, se a janela de remarcação ainda permitir |
+| Medida | Situação em 26/10 |
+|---|---|
+| Acertos firmes | 23 no simulado 01 e 17 no simulado 02. O corte do exame é 26 |
+| Conteúdo | O Tópico 4 (8 das 40 questões) só fecha em 29/10 |
+| Prática com 23/11 | Cerca de 20 dias, sem margem se a semana de conteúdo atrasar |
+| Prática com 30/11 | 23 dias de operação, mais três de descanso |
+| Validade do exame 010-160 | Até abril de 2027: a semana a mais não tem custo de versão |
 
-### Datas alternativas
+### A única decisão que resta
 
-| Cenário | Data | O que muda |
-|---|---|---|
-| Manter | **Seg 23/11** | Plano como está |
-| Remarcar uma semana | Seg 30/11 | A Semana 12 vira semana de simulados (dois); a revisão leve e o simulado final passam para 23 a 26/11 |
-| **Limite absoluto** | **Seg 30/11** | Passar de 30/11 sem o Gate cumprido indica problema de método, não de calendário. Reavaliar o plano antes de remarcar de novo |
+**Quinta 19/11, depois do simulado 11**, com a média de acertos firmes dos simulados 09, 10 e 11:
+
+| Média | Decisão |
+|---|---|
+| **26 ou mais** | Vai em 30/11 |
+| **Abaixo de 26** | Remarcar. Antes de escolher a nova data, revemos o método com os números na mão |
 
 ### Voucher e agendamento
 
-- **Decisão de 13/10:** a prova é em **23/11**.
-- Se o voucher **já foi comprado e a prova agendada**, registre na seção 1 o centro, o horário e a janela de remarcação sem custo, e desconsidere o item seguinte.
-- Se **ainda não foi comprado**, o gatilho de 08/10 (média dos três últimos simulados com 30 ou mais) continua sendo o critério de compra, avaliado no **domingo 01/11**, com os simulados 03 e 04 (o 05 passou para 03/11). Antes disso, sem custo, consulte no site da Pearson VUE a disponibilidade de 23/11 e a antecedência mínima de agendamento. Eu não conheço esses valores, e a data depende deles.
-- Recomendação mantida: **centro Pearson VUE**, não OnVUE.
+- Exame **010-160**, em **centro Pearson VUE**, não OnVUE: o check-in remoto é rigoroso, e um problema técnico queima o voucher.
+- Confira no site da Pearson VUE a janela de remarcação sem custo e registre-a na seção 1. Eu não conheço esse valor.
 
-### Registro das decisões
+### Histórico das decisões
 
-| Checkpoint | Data | Critérios cumpridos | Resultado | Decisão |
-|---|---|---|---|---|
-| A | 18/10 | Nenhum dos quatro (Prática 2 em parte; simulado 02 não feito; autoavaliação S6 pendente; curso na aula 40) | **Vermelho** | A Semana 8 abre com as dívidas; o Checkpoint B decide a data |
-| B | 01/11 | | | |
-| Gate | 08/11 | | | |
-| Final | 19/11 | | | |
-
-Histórico das decisões: em 08/10 a compra do voucher foi adiada; em 10/10 a data principal passou a 16/11; em 13/10 a prova foi fixada em **23/11**; em 19/10 o Checkpoint A deu vermelho, e a data passou a depender do Checkpoint B; em 23/10, com o simulado 02 em 22 de 40, o Tópico 4 foi para a Semana 9 e o Checkpoint B passou para o domingo 01/11.
+Em 08/10 a compra do voucher foi adiada; em 10/10 a data principal passou a 16/11; em 13/10 a prova foi fixada em 23/11; em 19/10 o Checkpoint A deu vermelho; em 23/10, com o simulado 02 em 22 de 40, o Tópico 4 foi para a Semana 9; **em 26/10 a estratégia mudou para conteúdo seguido de operação prática diária, as dívidas e os checkpoints saíram do plano, e a prova passou para 30/11.**
 
 ---
 
