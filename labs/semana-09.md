@@ -1,14 +1,14 @@
-# Semana 9 — Tópico 4, curso fechado e início da prática total
+# Semana 9 — Conteúdo final: Tópico 4 e curso fechado
 
 Período: 26/10 a 01/11/2026 (segunda a domingo)
 Objetivos da prova: 4.1, 4.2, 4.3 e 4.4 — Tópico 4, peso 8 de 40
-**Data da prova: segunda-feira, 23/11/2026** (o Checkpoint B, no domingo 01/11, decide entre 23/11 e 30/11)
-Carga prevista: cerca de 12h
-Marco da semana: **curso fechado na quinta 29/10**; a partir da sexta 30/10, **só simulados e correção de erros** até a prova
+**Data da prova: segunda-feira, 30/11/2026**
+Carga prevista: cerca de 2h por dia, de segunda a quinta
+Marco da semana: **todo o conteúdo da prova estudado até a quinta 29/10** (sexta de reserva). No sábado 31/10 começa a operação prática (`labs/operacao-pratica.md`)
 
-Semana criada em 23/10. O conteúdo novo e as aulas que restavam saíram do fim de semana 24 e 25/10, que ficou só para as correções do simulado 02 e os reforços R3 e R4 (`labs/semana-08.md`). Esta semana tem duas metades: de segunda a quinta, o **último conteúdo da prova** (Tópico 4 e aulas 41 a 72); de sexta a domingo, a **prática total**, que segue nas Semanas 10 e 11.
+**Semana refeita em 26/10, com a nova estratégia.** Esta é a última semana de conteúdo: o curso do Muller (aulas 41 a 72) e o Tópico 4, cada tema com a sua prática de laboratório logo depois das aulas. Não há simulado, autoavaliação nem pendência nesta semana. As anotações das aulas e das práticas vão para o caderno e são repassadas aqui, como sempre.
 
-O Tópico 4 nunca foi estudado como tópico, mas boa parte dele já foi encostada na prática: LVM e partições na Semana 0, `/proc` e `/dev` na Semana 3, portas e serviços na Semana 1, gerenciadores de pacotes no curso. A cobertura parte de cerca de 30%, não de zero. No simulado 02, das oito questões dele, quatro foram acertadas, três delas por chute ou pesquisa: **dispositivos `/dev/sd*` (Q30), `/etc/resolv.conf` (Q31), faixas IPv4 privadas (Q32) e `kill -9` (Q33) erradas**. Esses quatro pontos são a ênfase das Práticas 3, 4 e 5.
+O Tópico 4 nunca foi estudado como tópico, mas boa parte dele já foi encostada na prática: LVM e partições na Semana 0, `/proc` e `/dev` na Semana 3, portas e serviços na Semana 1, gerenciadores de pacotes no curso. A cobertura parte de cerca de 30%. No simulado 02, os quatro erros do tópico apontam o que mais precisa de atenção: **dispositivos `/dev/sd*` (Q30), `/etc/resolv.conf` (Q31), faixas IPv4 privadas (Q32) e `kill -9` (Q33)**. O sinal padrão do `kill` também caiu no simulado 01.
 
 ---
 
@@ -31,41 +31,19 @@ O 4.3, de peso 3, é o maior do tópico e o que mais se cobra em questões de "o
 
 | Dia | Atividade | Tempo |
 |---|---|---|
-| **Seg 26** | **Prática 3** — hardware, discos e o mapa dos diretórios (4.2 e 4.3), com Exercícios da LPI 4.2 · curso, aulas 41 a 48 | cerca de 2h |
-| **Ter 27** | **Prática 4** — processos, memória e logs (4.3), com Exercícios da LPI 4.3 · curso, aulas 49 a 56 | cerca de 2h |
-| **Qua 28** | **Prática 5** — rede (4.4), com Exercícios da LPI 4.4 · curso, aulas 57 a 64 | cerca de 2h |
-| **Qui 29** | **Bloco curto** — 4.1 e here document · curso, aulas 65 a 72 (**curso fechado**) | cerca de 1h30 |
-| **Sex 30** | **Simulado 03** (60 min) e apuração (25 min) — o primeiro com os cinco tópicos estudados | cerca de 1h25 |
-| **Sáb 31** | **Autoavaliação da Semana 8** (30 min, três dias depois da Prática 5) · **R2** (35 min) · **R1** (35 min) | cerca de 1h40 |
-| **Dom 01/11** | **Simulado 04** — exame final de prática do NDG (60 min) e apuração (25 min) · **Checkpoint B** (decide a data da prova) | cerca de 1h40 |
+| **Seg 26** | Curso, aulas 41 a 48 · **Prática 3** — hardware, discos e o mapa dos diretórios (4.2 e 4.3), com Exercícios da LPI 4.2 | cerca de 2h |
+| **Ter 27** | Curso, aulas 49 a 56 · **Prática 4** — processos, memória e logs (4.3), com Exercícios da LPI 4.3 | cerca de 2h |
+| **Qua 28** | Curso, aulas 57 a 64 · **Prática 5** — rede (4.4), com Exercícios da LPI 4.4 | cerca de 2h |
+| **Qui 29** | Curso, aulas 65 a 72 (**curso fechado**) · **Bloco curto** — 4.1 e here document | cerca de 1h45 |
+| Sex 30 | **Reserva** para o que tiver escorregado. Se nada escorregou, folga | até 2h |
+| **Sáb 31** | **Simulado 03** — primeiro dia da operação prática (`labs/operacao-pratica.md`) | cerca de 1h25 |
+| Dom 01/11 | Descanso | — |
 
-**Aquecimento (10 min, nos dias de prática):** cinco comandos da prática anterior, de memória. Na segunda, os pontos do R4 que você errar no domingo 25/10.
+**A ordem do dia é aulas e depois prática**, quando as aulas do dia forem do Tópico 4. Se as aulas do dia forem de outro tópico, a prática vem primeiro e as aulas depois; o roteiro funciona com a leitura do PDF.
 
-**As aulas não travam as práticas.** Os roteiros do Tópico 4 funcionam com a leitura do PDF; se uma aula chegar depois da prática, ela confirma em vez de ensinar, como aconteceu com o shell script.
+**O que não fechar até sexta não vira pendência.** A operação começa no sábado de qualquer forma; um tema que ficou fraco aparece nos simulados e é corrigido lá.
 
-**Se faltar tempo**, corte nesta ordem:
-
-| Ordem | Corte | Efeito |
-|---|---|---|
-| 1 | Exercícios Exploratórios da LPI do Tópico 4 (mantendo os Guiados) | Saem |
-| 2 | NDG do bloco curto | Sai (já era opcional) |
-| 3 | Aulas que não couberem no dia | Vão para a quinta 29/10, junto com as 65 a 72 |
-
-**Não se cortam:** as Práticas 3, 4 e 5, o simulado 03 e o Checkpoint B. Sem as práticas, o Tópico 4 (8 dos 40 pontos) chega aos simulados sem estudo.
-
----
-
-## Prática total — como funciona a partir da sexta 30/10
-
-A partir do simulado 03, todo o conteúdo da prova foi estudado. Daí até a prova, cada sessão é uma destas três coisas, nesta ordem de prioridade:
-
-| Tipo | O que é | Regra |
-|---|---|---|
-| **Simulado** | 40 questões, 60 minutos, sem consulta, marcando os chutes | Série em `PLANO.md`, seção 7; um a cada dois dias, em média |
-| **Correção** | As erradas de cada simulado vão para o Notion no mesmo dia | Só as erradas; no máximo 30 minutos, de preferência executando na VM |
-| **Reforço** | Mini-simulado de 20 questões sobre os temas com erro | Escrito por mim depois de cada simulado, quando um tema cair abaixo de 60% |
-
-Sem conteúdo novo, sem aulas e sem práticas longas. Questão **pesquisada** durante um simulado conta como **errada**.
+**Se faltar tempo no dia**, corte nesta ordem: (1) os Exercícios Exploratórios da LPI, mantendo os Guiados; (2) o NDG do bloco curto, que já é opcional. As práticas e as aulas não se cortam: vão para a sexta.
 
 ---
 
@@ -356,93 +334,6 @@ Quizzes dos capítulos de hardware, processos e rede e do capítulo de permissõ
 
 ---
 
----
-
-## Mini-simulados R2 e R1 — Sábado 31/10
-
-Os dois estão em `labs/simulados-práticos.lpi/praticas_simulados.md`: o **R2** na seção 8, com gabarito, e o **R1** na seção 6, com gabarito na seção 7. 20 questões e 25 minutos cada. Meta: 15 de 20. O R2 cobre `/sys`, processos e rede, por isso vem depois das Práticas 3 a 5.
-
----
-
-## Autoavaliação da Semana 8 — Sábado 31/10
-
-Dez questões sobre o Tópico 4, respondidas **sem consultar**, três dias depois da Prática 5, como primeira atividade do sábado 31/10. É a **última autoavaliação do plano**: dali em diante, com os cinco tópicos estudados, os simulados assumem a medição. Escreva as respostas à mão e só depois abra o gabarito.
-
-1. Qual a diferença entre uma versão **LTS** e uma distribuição **rolling release**? Dê um exemplo de cada.
-2. O que é um **driver**, e como os drivers existem no Linux? Qual comando lista os que estão carregados?
-3. Qual o nome do arquivo de dispositivo da **primeira partição do segundo disco** SATA? No `ls -l /dev/sda`, o que significa a primeira letra `b`?
-4. Explique a diferença entre `/proc`, `/sys` e `/dev`, com um arquivo ou diretório de cada.
-5. Em que diretório ficam: (a) os arquivos de configuração do sistema; (b) os logs; (c) o kernel e o `initramfs`; (d) o banco de dados de pacotes de uma distribuição Debian?
-6. Qual a diferença entre `ps` e `top`? Dentro do `top`, que tecla ordena por uso de memória?
-7. Qual sinal o `kill` envia quando nenhum é informado? Qual a diferença entre ele e o `SIGKILL`? Que sinal o `Ctrl+C` envia?
-8. Um processo foi iniciado com `sleep 300 &`. Quais comandos (a) listam os trabalhos do shell, (b) trazem esse processo para o primeiro plano e (c) devolvem ao segundo plano um processo suspenso com `Ctrl+Z`?
-9. Escreva o comando atual e o antigo para: (a) ver os endereços IP das interfaces; (b) ver a rota padrão; (c) ver as portas TCP em escuta.
-10. Para que servem o `/etc/hosts` e o `/etc/resolv.conf`? Quais são as três faixas de endereços IPv4 privados?
-
-| Campo | Valor |
-|---|---|
-| Acertos | de 10 |
-| Meta | 8 ou mais |
-| Questões erradas | |
-| Erros viram | lista das questões erradas aqui; a correção fica no Notion |
-
-<details>
-<summary>Gabarito (abra só depois de responder)</summary>
-
-1. **LTS** (*Long Term Support*) recebe correções de segurança e de bugs por vários anos, sem trocar de versão principal; exemplo: Ubuntu 26.04 LTS, o da sua VM. **Rolling release** não tem versões fixas: o sistema é atualizado continuamente; exemplos: Arch Linux, openSUSE Tumbleweed.
-2. Driver é o software que traduz pedidos padrão do sistema para as operações específicas de um dispositivo. No Linux, a maioria dos drivers são **módulos do kernel**, carregados quando o dispositivo precisa deles. `lsmod` lista os carregados.
-3. `/dev/sdb1`: `sd`, letra do disco (`a` o primeiro, `b` o segundo) e número da partição. O `b` indica **dispositivo de bloco** (lê e grava em blocos, como discos); o `c` indicaria dispositivo de caractere, como `/dev/tty`.
-4. `/proc`: processos e informações do kernel (`/proc/cpuinfo`, `/proc/meminfo`, um diretório por PID). `/sys`: dispositivos, barramentos e drivers organizados pelo kernel (`/sys/class/net`). `/dev`: os arquivos de dispositivo que os programas abrem (`/dev/sda`, `/dev/null`). Os três são montados pelo kernel e não ocupam disco.
-5. (a) `/etc`; (b) `/var/log`; (c) `/boot`; (d) `/var/lib/dpkg`.
-6. O `ps` é uma foto: lista os processos no instante em que roda. O `top` é contínuo: atualiza a lista a cada poucos segundos e mostra carga, memória e CPU. No `top`, `M` ordena por memória (`P` por CPU).
-7. `SIGTERM` (15): pede para o processo encerrar, e ele pode tratar o pedido e terminar de forma limpa. `SIGKILL` (9, com `kill -9`) é aplicado pelo kernel e não pode ser tratado nem ignorado. O `Ctrl+C` envia `SIGINT` (2).
-8. (a) `jobs`; (b) `fg` (ou `fg %1`); (c) `bg`.
-9. (a) `ip addr show` e `ifconfig`; (b) `ip route show` e `route`; (c) `ss -tln` e `netstat -tln`.
-10. O `/etc/hosts` é uma tabela local de nomes e endereços, consultada antes do DNS. O `/etc/resolv.conf` diz quais servidores DNS consultar (linhas `nameserver`). Faixas privadas: `10.0.0.0/8`, `172.16.0.0/12` (de `172.16` a `172.31`) e `192.168.0.0/16`.
-
-</details>
-
----
-
-## Simulado 03 — Sexta 30/10
-
-| Item | Valor |
-|---|---|
-| Arquivo | `labs/simulados-práticos.lpi/simulado-03.md` |
-| Formato | 40 questões, 60 minutos, sem consulta; pelo menos 45 minutos de uso, com segunda passada |
-| Meta | **28 ou mais** (Checkpoint B) |
-| Registro | No próprio arquivo e em `resultados_simulados.md` |
-
-É o primeiro simulado com os cinco tópicos estudados. Marque cada chute; anote só as questões erradas e leve-as para o Notion no mesmo dia.
-
----
-
-## Simulado 04 — Domingo 01/11
-
-Exame final de prática do NDG Linux Essentials, nas mesmas regras: cronometrado, sem consulta, marcando os chutes. Meta: **28 ou mais**. Registre em `resultados_simulados.md`.
-
----
-
-## Checkpoint B — Domingo 01/11, à noite
-
-Movido em 23/10 de segunda 26/10 para o domingo 01/11, junto com o Tópico 4.
-
-| # | Critério | Cumprido |
-|---|---|---|
-| 1 | Curso fechado (aula 72) | |
-| 2 | Práticas 3, 4 e 5 feitas e registradas | |
-| 3 | Simulado 03 com **28 ou mais** acertos | |
-
-| Resultado | Condição | Decisão |
-|---|---|---|
-| **Verde** | Os três cumpridos | Mantém 23/11 |
-| **Amarelo** | Um falhou | Mantém 23/11, mas o Gate de 08/11 fica sem folga |
-| **Vermelho** | Dois ou mais falharam | Mover a prova para **30/11** |
-
-Como o Checkpoint A deu vermelho, **este checkpoint decide a data**: verde ou amarelo mantêm 23/11; vermelho move a prova para 30/11, o limite absoluto. O simulado 04 não entra nos critérios, mas entra na leitura: se o 03 e o 04 ficarem os dois abaixo de 26, o corte do exame, a data de 23/11 não se sustenta mesmo com o amarelo. Regra completa em `PLANO.md`, seção 11.
-
----
-
 ## Registro das sessões
 
 ### Prática 3 — segunda 26/10
@@ -463,29 +354,16 @@ Como o Checkpoint A deu vermelho, **este checkpoint decide a data**: verde ou am
 
 ### Curso, aulas 41 a 72
 
-| Data | Aulas assistidas | Parei na aula | Anotações novas |
-|---|---|---|---|
-| | | | |
-
-### Simulado 03 — sexta 30/10
-
-*A preencher.* Registre também em `labs/simulados-práticos.lpi/resultados_simulados.md`.
-
-### Autoavaliação da Semana 8 — sábado 31/10
-
-*A preencher.* Acertos: de 10.
-
-### R2 e R1 — sábado 31/10
-
-*A preencher.* R2: de 20. R1: de 20.
-
-### Simulado 04 — domingo 01/11
-
-*A preencher.*
+| Data | Aulas previstas | Aulas assistidas | Parei na aula | Anotações novas |
+|---|---|---|---|---|
+| Seg 26/10 | 41 a 48 | | | |
+| Ter 27/10 | 49 a 56 | | | |
+| Qua 28/10 | 57 a 64 | | | |
+| Qui 29/10 | 65 a 72 | | | |
 
 ### Correções da semana
 
-A numeração segue a série global. **A próxima é a 76.** Erros de simulado, reforço e autoavaliação não geram correção numerada; vão para o Notion.
+A numeração segue a série global. **A próxima é a 76.** Correção numerada só para erro de laboratório e de curso.
 
 | # | Tema | Origem |
 |---|---|---|
@@ -497,34 +375,30 @@ A numeração segue a série global. **A próxima é a 76.** Erros de simulado, 
 
 | Dia | Previsto | Real | Observação |
 |---|---|---|---|
-| Seg 26 | 2h | | Prática 3 e aulas 41 a 48 |
-| Ter 27 | 2h | | Prática 4 e aulas 49 a 56 |
-| Qua 28 | 2h | | Prática 5 e aulas 57 a 64 |
-| Qui 29 | 1h30 | | Bloco curto e aulas 65 a 72 |
-| Sex 30 | 1h25 | | Simulado 03 |
-| Sáb 31 | 1h40 | | Autoavaliação S8, R2 e R1 |
-| Dom 01 | 1h40 | | Simulado 04 e Checkpoint B |
+| Seg 26 | 2h | | Aulas 41 a 48 e Prática 3 |
+| Ter 27 | 2h | | Aulas 49 a 56 e Prática 4 |
+| Qua 28 | 2h | | Aulas 57 a 64 e Prática 5 |
+| Qui 29 | 1h45 | | Aulas 65 a 72 e bloco curto |
+| Sex 30 | — | | Reserva |
+| Sáb 31 | 1h25 | | Simulado 03 (operação prática) |
 
 ---
 
 ## Checklist da semana
 
 - [ ] Pacotes instalados na VM (`pciutils`, `usbutils`, `net-tools`, `bind9-dnsutils`)
-- [ ] Prática 3, com Exercícios da LPI 4.2 (segunda 26/10)
-- [ ] Prática 4, com Exercícios da LPI 4.3 (terça 27/10)
-- [ ] Prática 5, com Exercícios da LPI 4.4 (quarta 28/10)
-- [ ] Bloco curto: 4.1 e here document (quinta 29/10)
-- [ ] Curso, aulas 41 a 72 (segunda a quinta)
-- [ ] Simulado 03, apuração e erros no Notion (sexta 30/10)
-- [ ] Autoavaliação da Semana 8, R2 e R1 (sábado 31/10)
-- [ ] Simulado 04 e Checkpoint B preenchido (domingo 01/11)
+- [ ] Aulas 41 a 48 e Prática 3, com Exercícios da LPI 4.2 (segunda 26/10)
+- [ ] Aulas 49 a 56 e Prática 4, com Exercícios da LPI 4.3 (terça 27/10)
+- [ ] Aulas 57 a 64 e Prática 5, com Exercícios da LPI 4.4 (quarta 28/10)
+- [ ] Aulas 65 a 72 e bloco curto: 4.1 e here document (quinta 29/10)
+- [ ] Anotações das aulas e das práticas repassadas aqui
 - [ ] Commits ao fim de cada sessão
 
 ---
 
 ## Entregável
 
-`labs/semana-09.md` preenchido: Práticas 3 a 5, curso fechado, simulados 03 e 04, autoavaliação da Semana 8, R1 e R2, e o Checkpoint B com a decisão da data da prova.
+`labs/semana-09.md` preenchido: Práticas 3 a 5, bloco curto e curso fechado. Com isso, todo o conteúdo da prova está estudado, e a operação prática começa no sábado 31/10.
 
 ---
 
