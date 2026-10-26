@@ -461,32 +461,32 @@ Corrigido em 23/10 a partir das respostas marcadas no caderno. Q29 e Q40 foram *
 
 ## Questões erradas
 
-Só as erradas. A correção vai para o Notion, com as suas palavras. As quatro do Tópico 4 (30 a 33) **não viram card**: são conteúdo ainda não estudado e entram como ênfase nas Práticas 3 e 5 da Semana 9.
+Só as erradas. As quatro do Tópico 4 (30 a 33) são conteúdo que ainda não tinha sido estudado e entram como ênfase nas Práticas 3 e 5 da Semana 9.
 
-| Q | Tópico | Tema | Você marcou | Gabarito | Convicção ou chute | Reincidência | Corrigida no Notion |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 5 | 1 | Aplicativos | C (Blender) | **A** (GIMP) | Chute | — | |
-| 7 | 1 | Lacuna, pacotes | `sudo dpkg` | **`dpkg`** | Convicção; erro de **forma** | — | |
-| 9 | 2 | Navegação | D e E | **B e D** | Convicção | **Correção 54** | |
-| 10 | 2 | Caminho relativo | C (`cd ./tmp`) | **A** (`cd ../tmp`) | Convicção | Correções 53 e 64 (`..`) | |
-| 13 | 2 | Lacuna, ajuda | `man ou help` | **`help`** | Convicção; erro de **forma** | Correção 74 | |
-| 14 | 2 | `mv` | A e C | **A e E** | Convicção | — | |
-| 16 | 2 | Seções do `man` | D (`man -k`) | **C** (`man 5 passwd`) | Convicção | — | |
-| 19 | 3 | Redirecionamento | A | **B** | Convicção | **Correção 29** | |
-| 22 | 3 | `grep` | D (`-n`) | **A** (`-v`) | Convicção | **Correção 49** | |
-| 24 | 3 | Parâmetros de script | D | **C** (`3 b`) | Convicção | **Q6 da autoavaliação da Semana 5** | |
-| 30 | 4 | Dispositivos | D | A | Chute | Não estudado | Sem card |
-| 31 | 4 | DNS | A | C | Chute | Não estudado | Sem card |
-| 32 | 4 | IPv4 privado | B e E | B e D | Chute | Não estudado | Sem card |
-| 33 | 4 | Sinais | D | B | Chute | Não estudado; Q29 do simulado 01 | Sem card |
-| 34 | 5 | `/etc/passwd` | D | **A** | Convicção | **Q35 do simulado 01** e Prática 1 | |
-| 36 | 5 | Octal | A (755) | **B** (750) | Convicção | Q37 do simulado 01 (octal) | |
-| 37 | 5 | `chmod` simbólico | C (766) | **D** (746) | Chute | — | |
-| 38 | 5 | Bits especiais | D (`T`) | **C** (`t`) | Chute | — | |
+| Q | Tópico | Tema | Você marcou | Gabarito | Convicção ou chute | Reincidência |
+| --- | --- | --- | --- | --- | --- | --- |
+| 5 | 1 | Aplicativos | C (Blender) | **A** (GIMP) | Chute | — |
+| 7 | 1 | Lacuna, pacotes | `sudo dpkg` | **`dpkg`** | Convicção; erro de **forma** | — |
+| 9 | 2 | Navegação | D e E | **B e D** | Convicção | **Correção 54** |
+| 10 | 2 | Caminho relativo | C (`cd ./tmp`) | **A** (`cd ../tmp`) | Convicção | Correções 53 e 64 (`..`) |
+| 13 | 2 | Lacuna, ajuda | `man ou help` | **`help`** | Convicção; erro de **forma** | Correção 74 |
+| 14 | 2 | `mv` | A e C | **A e E** | Convicção | — |
+| 16 | 2 | Seções do `man` | D (`man -k`) | **C** (`man 5 passwd`) | Convicção | — |
+| 19 | 3 | Redirecionamento | A | **B** | Convicção | **Correção 29** |
+| 22 | 3 | `grep` | D (`-n`) | **A** (`-v`) | Convicção | **Correção 49** |
+| 24 | 3 | Parâmetros de script | D | **C** (`3 b`) | Convicção | **Q6 da autoavaliação da Semana 5** |
+| 30 | 4 | Dispositivos | D | A | Chute | Não estudado |
+| 31 | 4 | DNS | A | C | Chute | Não estudado |
+| 32 | 4 | IPv4 privado | B e E | B e D | Chute | Não estudado |
+| 33 | 4 | Sinais | D | B | Chute | Não estudado; Q29 do simulado 01 |
+| 34 | 5 | `/etc/passwd` | D | **A** | Convicção | **Q35 do simulado 01** e Prática 1 |
+| 36 | 5 | Octal | A (755) | **B** (750) | Convicção | Q37 do simulado 01 (octal) |
+| 37 | 5 | `chmod` simbólico | C (766) | **D** (746) | Chute | — |
+| 38 | 5 | Bits especiais | D (`T`) | **C** (`t`) | Chute | — |
 
-### O que escrever em cada card
+### A correção de cada erro
 
-Cada linha traz o erro, o certo e o mecanismo que impede o erro de voltar.
+Cada linha traz o erro, o certo e o mecanismo que impede o erro de voltar. Desde 26/10, card no Notion só para os reincidentes (Q9, Q19, Q22, Q24 e Q34), que estão na lista de reincidências da operação prática.
 
 | Q | Errado | Certo | Mecanismo |
 | --- | --- | --- | --- |
