@@ -336,9 +336,38 @@ Quizzes dos capítulos de hardware, processos e rede e do capítulo de permissõ
 
 ## Registro das sessões
 
-### Prática 3 — segunda 26/10
+### Prática 3 — 26 e 27/10 — EM ANDAMENTO
 
-*A preencher.*
+**Bloco 1 anotado em 27/10.** Faltam os blocos 2 a 4 e os Exercícios da LPI 4.2.
+
+#### Bloco 1 — Processador, memória e barramentos
+
+| Comando | O que faz | Resultado na VM |
+|---|---|---|
+| `lscpu \| head -15` | Resume a arquitetura e os processadores | — |
+| `grep -m1 'model name' /proc/cpuinfo` | Mostra o modelo do processador | Uma linha |
+| `grep -c processor /proc/cpuinfo` | Conta as linhas com `processor`: uma por processador lógico | **2** |
+| `free -h` | Memória total, usada e livre, e o swap, em unidades legíveis (MiB, GiB) | — |
+| `head -3 /proc/meminfo` | As primeiras linhas de onde o `free` tira os números (`MemTotal`, `MemFree`, `MemAvailable`) | — |
+| `lspci` | Dispositivos no barramento PCI/PCI Express; na VM, os virtuais do VirtualBox (vídeo, rede) | — |
+| `lsusb` | Dispositivos USB visíveis | — |
+| `lsmod \| head` | Módulos carregados no kernel | — |
+
+**Para o caderno, revisado:**
+
+| Pergunta | Resposta |
+|---|---|
+| De onde o `lscpu` e o `free` tiram os números? | O `free` lê o `/proc/meminfo`; o `lscpu` lê o `/proc/cpuinfo` e o `/sys`. São arquivos virtuais, gerados pelo kernel na hora em que são lidos: não ocupam disco |
+| Quantos processadores a VM tem? | **2 lógicos**, as 2 vCPUs configuradas no VirtualBox na criação da VM |
+| O que o `lsmod` lista? | Os **módulos do kernel** carregados, que é a forma como a maioria dos **drivers** existe no Linux. Nem todo módulo é driver, e alguns drivers vêm embutidos no próprio kernel |
+
+**Correções:**
+
+1. **O `-m1` do `grep` não "diz onde está o conteúdo".** É `--max-count=1`: o `grep` para depois da **primeira** linha que casa. Sem ele, o `/proc/cpuinfo` repete o bloco para cada processador, e o `model name` sairia duas vezes na sua VM. Ver Correção 76.
+2. **Swap** é um espaço **em disco** (partição ou arquivo) usado quando a RAM enche. É mais lento que a RAM; "reserva" é uma boa forma de lembrar.
+3. Grafia: "kerne" → **kernel**; "mémoria" → **memória**.
+
+O resto está certo, e a nuance sobre módulos e drivers vai além do que o roteiro pedia.
 
 ### Prática 4 — terça 27/10
 
@@ -363,11 +392,16 @@ Quizzes dos capítulos de hardware, processos e rede e do capítulo de permissõ
 
 ### Correções da semana
 
-A numeração segue a série global. **A próxima é a 76.** Correção numerada só para erro de laboratório e de curso.
+A numeração segue a série global. **A próxima é a 77.** Correção numerada só para erro de laboratório e de curso.
+
+#### Correção 76 — o `-m1` do `grep` limita a quantidade de linhas
+
+O caderno diz que o `-m1` serve "para dizer onde está o conteúdo desejado". O `-m` é `--max-count`: `-m1` faz o `grep` **parar na primeira linha que casa**. No `/proc/cpuinfo`, cada processador lógico tem o seu bloco, com o seu `model name`; com 2 vCPUs, `grep 'model name' /proc/cpuinfo` imprime duas linhas iguais, e `grep -m1` imprime uma. Para ver: rode os dois lado a lado. Não confundir com o `-c`, que **conta** as linhas, nem com o `-n`, que **numera**.
+
 
 | # | Tema | Origem |
 |---|---|---|
-| | | |
+| 76 | O `-m1` do `grep` é *max-count*: para depois da primeira linha que casa, não "diz onde está o conteúdo" | Prática 3, bloco 1, 27/10 |
 
 ---
 
@@ -375,7 +409,7 @@ A numeração segue a série global. **A próxima é a 76.** Correção numerada
 
 | Dia | Previsto | Real | Observação |
 |---|---|---|---|
-| Seg 26 | 2h | | Aulas 41 a 48 e Prática 3 |
+| Seg 26 | 2h | | Aulas 41 a 48 e Prática 3 (bloco 1 em 27/10) |
 | Ter 27 | 2h | | Aulas 49 a 56 e Prática 4 |
 | Qua 28 | 2h | | Aulas 57 a 64 e Prática 5 |
 | Qui 29 | 1h45 | | Aulas 65 a 72 e bloco curto |
