@@ -64,7 +64,7 @@ Calendário refeito em 26/10 para a prova de 30/11 (`PLANO.md`, seção 7, e `la
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | Seg 05/10 | `simulado-01` | Diagnóstico | **28** | **70%** | 5 | **23** | 20 min 31 s | **Concluído** |
 | 2 | Sex 23/10 | `simulado-02` (escrito em 13/10) | 24 ou mais | **22** | **55%** | 4 | **17** | Não informado | **Concluído, abaixo da meta** |
-| 3 | **Sáb 31/10** | `simulado-03` (escrito em 18/10) | Linha de base | | | | | | A fazer |
+| 3 | **Dom 01/11** | `simulado-03` (escrito em 18/10) | Linha de base | | | | | | A fazer |
 | 4 | Ter 03/11 | Exame final de prática do NDG | 24 ou mais | | | | | | A fazer |
 | 5 | Qui 05/11 | `simulado-05` | 24 ou mais | | | | | | A fazer |
 | 6 | Sáb 07/11 | `simulado-06` | 24 ou mais | | | | | | A fazer |
@@ -119,7 +119,7 @@ Os checkpoints saíram do plano em 26/10, junto com o modelo de dívidas. Fica o
 
 Temas que aparecem com frequência nos relatos de candidatos (ver `praticas_simulados.md`). Formato: acertos e total de questões do tema. O simulado 01 não tinha esta marcação por tema; a tabela começa no simulado 02.
 
-| Tema | Mínimo por simulado | #2 (23/10) | #3 (31/10) | R2 (06/11) | R1 (09/11) | #5 | #7 | #9 | #11 | #13 |
+| Tema | Mínimo por simulado | #2 (23/10) | #3 (01/11) | R2 (06/11) | R1 (09/11) | #5 | #7 | #9 | #11 | #13 |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Permissões | 4 | **2/5** | /4 | /4 | /5 | | | | | |
 | `tar` e compressão | 2 | 2/2 | /2 | /3 | /4 | | | | | |
