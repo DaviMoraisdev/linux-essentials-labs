@@ -3,10 +3,10 @@
 Período: 26/10 a 01/11/2026 (segunda a domingo)
 Objetivos da prova: 4.1, 4.2, 4.3 e 4.4 — Tópico 4, peso 8 de 40
 **Data da prova: segunda-feira, 30/11/2026**
-Carga prevista: cerca de 2h por dia, de segunda a quinta
-Marco da semana: **todo o conteúdo da prova estudado até a quinta 29/10** (sexta de reserva). No sábado 31/10 começa a operação prática (`labs/operacao-pratica.md`)
+Carga prevista: cerca de 1h na sexta 30/10 e cerca de 4h no domingo 01/11
+Marco da semana: **Tópico 4 praticado no domingo 01/11**, com o simulado 03 no mesmo dia. As aulas 41 a 72 e o bloco curto (4.1 e here document) passaram para a Semana 10, junto com a operação prática (`labs/operacao-pratica.md`)
 
-**Semana refeita em 26/10, com a nova estratégia.** Esta é a última semana de conteúdo: o curso do Muller (aulas 41 a 72) e o Tópico 4, cada tema com a sua prática de laboratório logo depois das aulas. Não há simulado, autoavaliação nem pendência nesta semana. As anotações das aulas e das práticas vão para o caderno e são repassadas aqui, como sempre.
+**Semana refeita em 26/10, com a nova estratégia, e de novo em 29/10.** Até quinta saiu o bloco 1 da Prática 3. O resto ficou assim: sexta, o resto da Prática 3; sábado, descanso; domingo, as Práticas 4 e 5 e o simulado 03. **As aulas 41 a 72 e o bloco curto foram para a Semana 10** (02 a 06/11), somados às sessões da operação prática. As anotações das práticas vão para o caderno e são repassadas aqui, como sempre.
 
 O Tópico 4 nunca foi estudado como tópico, mas boa parte dele já foi encostada na prática: LVM e partições na Semana 0, `/proc` e `/dev` na Semana 3, portas e serviços na Semana 1, gerenciadores de pacotes no curso. A cobertura parte de cerca de 30%. No simulado 02, os quatro erros do tópico apontam o que mais precisa de atenção: **dispositivos `/dev/sd*` (Q30), `/etc/resolv.conf` (Q31), faixas IPv4 privadas (Q32) e `kill -9` (Q33)**. O sinal padrão do `kill` também caiu no simulado 01.
 
@@ -29,21 +29,20 @@ O 4.3, de peso 3, é o maior do tópico e o que mais se cobra em questões de "o
 
 ## Calendário da semana
 
+**Refeito em 29/10.**
+
 | Dia | Atividade | Tempo |
 |---|---|---|
-| **Seg 26** | Curso, aulas 41 a 48 · **Prática 3** — hardware, discos e o mapa dos diretórios (4.2 e 4.3), com Exercícios da LPI 4.2 | cerca de 2h |
-| **Ter 27** | Curso, aulas 49 a 56 · **Prática 4** — processos, memória e logs (4.3), com Exercícios da LPI 4.3 | cerca de 2h |
-| **Qua 28** | Curso, aulas 57 a 64 · **Prática 5** — rede (4.4), com Exercícios da LPI 4.4 | cerca de 2h |
-| **Qui 29** | Curso, aulas 65 a 72 (**curso fechado**) · **Bloco curto** — 4.1 e here document | cerca de 1h45 |
-| Sex 30 | **Reserva** para o que tiver escorregado. Se nada escorregou, folga | até 2h |
-| **Sáb 31** | **Simulado 03** — primeiro dia da operação prática (`labs/operacao-pratica.md`) | cerca de 1h25 |
-| Dom 01/11 | Descanso | — |
+| Seg 26 a qui 29 | Prática 3, bloco 1 (anotado em 27/10) | **feito** |
+| **Sex 30** | **Prática 3**, blocos 2 a 4, com Exercícios da LPI 4.2 | cerca de 1h |
+| Sáb 31 | **Descanso** | — |
+| **Dom 01/11** | **Prática 4** — processos, memória e logs (4.3), 1h20 · intervalo · **Prática 5** — rede (4.4), 1h20 · intervalo de pelo menos 1h · **Simulado 03** (lacunas da série 01 antes), 1h25 | cerca de 4h05 |
 
-**A ordem do dia é aulas e depois prática**, quando as aulas do dia forem do Tópico 4. Se as aulas do dia forem de outro tópico, a prática vem primeiro e as aulas depois; o roteiro funciona com a leitura do PDF.
+**O domingo é pesado, então a ordem importa.** As duas práticas vêm primeiro, porque o simulado cobra o Tópico 4. O simulado vem por último, depois de um intervalo de verdade, longe do teclado. Os Exercícios da LPI 4.3 e 4.4 podem ficar só nos Guiados, para não chegar cansado ao simulado.
 
-**O que não fechar até sexta não vira pendência.** A operação começa no sábado de qualquer forma; um tema que ficou fraco aparece nos simulados e é corrigido lá.
+**Leitura do simulado 03.** Feito no mesmo dia das Práticas 4 e 5, ele mede o Tópico 4 com o estudo ainda fresco: o acerto nesse tópico vai sair acima da retenção real. Os outros tópicos medem normalmente. A medição honesta do Tópico 4 vem com o R2 (06/11) e os simulados 04 a 06.
 
-**Se faltar tempo no dia**, corte nesta ordem: (1) os Exercícios Exploratórios da LPI, mantendo os Guiados; (2) o NDG do bloco curto, que já é opcional. As práticas e as aulas não se cortam: vão para a sexta.
+**Se faltar tempo**, corte nesta ordem: (1) os Exercícios Exploratórios da LPI, mantendo os Guiados; (2) os Guiados da Prática 5. As práticas e o simulado não se cortam.
 
 ---
 
@@ -336,9 +335,9 @@ Quizzes dos capítulos de hardware, processos e rede e do capítulo de permissõ
 
 ## Registro das sessões
 
-### Prática 3 — 26 e 27/10 — EM ANDAMENTO
+### Prática 3 — 27 e 30/10 — EM ANDAMENTO
 
-**Bloco 1 anotado em 27/10.** Faltam os blocos 2 a 4 e os Exercícios da LPI 4.2.
+**Bloco 1 anotado em 27/10.** Blocos 2 a 4 e Exercícios da LPI 4.2 na sexta 30/10.
 
 #### Bloco 1 — Processador, memória e barramentos
 
@@ -369,26 +368,19 @@ Quizzes dos capítulos de hardware, processos e rede e do capítulo de permissõ
 
 O resto está certo, e a nuance sobre módulos e drivers vai além do que o roteiro pedia.
 
-### Prática 4 — terça 27/10
+### Prática 4 — domingo 01/11
 
 *A preencher.*
 
-### Prática 5 — quarta 28/10
+### Prática 5 — domingo 01/11
 
 *A preencher.*
 
-### Bloco curto — quinta 29/10
+### Simulado 03 — domingo 01/11
 
-*A preencher.*
+*A preencher no próprio `simulado-03.md`.* Acertos: de 40. Firmes: .
 
-### Curso, aulas 41 a 72
-
-| Data | Aulas previstas | Aulas assistidas | Parei na aula | Anotações novas |
-|---|---|---|---|---|
-| Seg 26/10 | 41 a 48 | | | |
-| Ter 27/10 | 49 a 56 | | | |
-| Qua 28/10 | 57 a 64 | | | |
-| Qui 29/10 | 65 a 72 | | | |
+O bloco curto (4.1 e here document) e o curso, aulas 41 a 72, foram para a Semana 10 e são registrados em `labs/operacao-pratica.md`.
 
 ### Correções da semana
 
@@ -409,30 +401,29 @@ O caderno diz que o `-m1` serve "para dizer onde está o conteúdo desejado". O 
 
 | Dia | Previsto | Real | Observação |
 |---|---|---|---|
-| Seg 26 | 2h | | Aulas 41 a 48 e Prática 3 (bloco 1 em 27/10) |
-| Ter 27 | 2h | | Aulas 49 a 56 e Prática 4 |
-| Qua 28 | 2h | | Aulas 57 a 64 e Prática 5 |
-| Qui 29 | 1h45 | | Aulas 65 a 72 e bloco curto |
-| Sex 30 | — | | Reserva |
-| Sáb 31 | 1h25 | | Simulado 03 (operação prática) |
+| Seg 26 a qui 29 | — | | Prática 3, bloco 1 |
+| Sex 30 | 1h | | Prática 3, blocos 2 a 4 |
+| Sáb 31 | — | | Descanso |
+| Dom 01/11 | 4h05 | | Práticas 4 e 5 e simulado 03 |
 
 ---
 
 ## Checklist da semana
 
+- [x] Prática 3, bloco 1 (27/10)
 - [ ] Pacotes instalados na VM (`pciutils`, `usbutils`, `net-tools`, `bind9-dnsutils`)
-- [ ] Aulas 41 a 48 e Prática 3, com Exercícios da LPI 4.2 (segunda 26/10)
-- [ ] Aulas 49 a 56 e Prática 4, com Exercícios da LPI 4.3 (terça 27/10)
-- [ ] Aulas 57 a 64 e Prática 5, com Exercícios da LPI 4.4 (quarta 28/10)
-- [ ] Aulas 65 a 72 e bloco curto: 4.1 e here document (quinta 29/10)
-- [ ] Anotações das aulas e das práticas repassadas aqui
+- [ ] Prática 3, blocos 2 a 4, com Exercícios da LPI 4.2 (sexta 30/10)
+- [ ] Prática 4, com Exercícios da LPI 4.3 (domingo 01/11)
+- [ ] Prática 5, com Exercícios da LPI 4.4 (domingo 01/11)
+- [ ] Simulado 03, com a apuração e as erradas no mesmo dia (domingo 01/11)
+- [ ] Anotações das práticas repassadas aqui
 - [ ] Commits ao fim de cada sessão
 
 ---
 
 ## Entregável
 
-`labs/semana-09.md` preenchido: Práticas 3 a 5, bloco curto e curso fechado. Com isso, todo o conteúdo da prova está estudado, e a operação prática começa no sábado 31/10.
+`labs/semana-09.md` preenchido: Práticas 3 a 5 e o simulado 03. Com isso, o Tópico 4 está praticado; as aulas e o bloco curto fecham o conteúdo na Semana 10.
 
 ---
 
