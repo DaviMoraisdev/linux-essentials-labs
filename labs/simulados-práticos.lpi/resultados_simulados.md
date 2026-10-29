@@ -43,13 +43,13 @@ Desde 26/10, os reforços fazem parte da operação prática (`labs/operacao-pra
 | Quando | O que |
 |---|---|
 | Sex 23/10 | Simulado 02 trouxe o mínimo da seção 2.1: permissões 2 de 5, `tar` 2 de 2, redirecionamento 2 de 3, diretórios 2 de 3, lacunas 3 de 5 (**feito**) |
-| Seg 26/10 | Prática 3 (Semana 9): mapa dos diretórios virtuais, `/proc`, `/sys` e `/dev` lado a lado |
-| Qui 29/10 | Here document estudado como conceito, no bloco curto |
+| Sex 30/10 | Prática 3 (Semana 9): mapa dos diretórios virtuais, `/proc`, `/sys` e `/dev` lado a lado |
+| Dom 01/11 | Simulado 03, a linha de base da operação |
 | Seg 02/11 | **R4** (`reforco-r3-r4.md`): contas e permissões, sobre os erros do simulado 02 |
 | Qua 04/11 | **R3** (`reforco-r3-r4.md`): navegação, ajuda e redirecionamento, sobre os erros do simulado 02 |
-| Sex 06/11 | **R2** (seção 8 deste arquivo): inclui `/sys`, processos e rede |
+| Sex 06/11 | Here document estudado como conceito, no bloco curto · **R2** (seção 8 deste arquivo): inclui `/sys`, processos e rede |
 | Seg 09/11 | **R1** (seção 6 deste arquivo): as quatro frentes e seis lacunas |
-| Todo dia, de 31/10 a 26/11 | **Cinco lacunas** do banco (`lacunas.md`), no lugar do antigo aquecimento rotativo |
+| Todo dia, de 01/11 a 26/11 | **Cinco lacunas** do banco (`lacunas.md`), no lugar do antigo aquecimento rotativo |
 
 ### 2.3 Aquecimento
 
