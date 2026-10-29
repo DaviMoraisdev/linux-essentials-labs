@@ -1,10 +1,10 @@
-# Operação prática — 31/10 a 26/11/2026
+# Operação prática — 01/11 a 26/11/2026
 
 **Prova: segunda-feira, 30/11/2026** · Exame **010-160** · Criado em 26/10/2026
 
-A partir do sábado 31/10, todo o conteúdo da prova está estudado. Daí até a prova, **todos os dias** são de prática: simulados, mini-simulados, lacunas e treino na VM. Não há conteúdo novo, nem aula, nem dívida.
+A operação começa no **domingo 01/11**, com o simulado 03. Daí até a prova, **todos os dias** são de prática: simulados, mini-simulados, lacunas e treino na VM. Não há dívida. A única exceção é a **Semana 10**: de 02 a 06/11, cada sessão tem um acréscimo de conteúdo (as aulas 41 a 72 e o bloco curto 4.1 e here document), remarcado em 29/10. Depois de 06/11, não há mais aula nem conteúdo novo.
 
-Este arquivo substitui os arquivos semanais a partir de 31/10. O registro de cada dia fica na seção 9.
+Este arquivo substitui os arquivos semanais a partir de 02/11. O registro de cada dia fica na seção 9.
 
 ---
 
@@ -17,7 +17,7 @@ Este arquivo substitui os arquivos semanais a partir de 31/10. O registro de cad
 | 3 | **Card no Notion só para reincidência**, ou seja, um erro que já aconteceu antes | Quatro das nove correções antigas voltaram a errar no simulado 02. Escrever não fixou; **executar na VM** fixa |
 | 4 | **Condição de prova** em todo simulado: cronometrado, sem consulta, marcando cada chute. **Questão pesquisada conta como errada** | A prova não tem consulta. Na dúvida, marque o chute e siga |
 | 5 | **Um número para acompanhar: os acertos firmes**, sem chutes e sem pesquisas | O total com chutes engana: 28 no simulado 01 eram só 23 firmes |
-| 6 | **Domingo é descanso de verdade** | A retenção se consolida no intervalo, não na repetição sem pausa |
+| 6 | **O dia de descanso é de verdade**: sábado 31/10 e, depois, os domingos | A retenção se consolida no intervalo, não na repetição sem pausa |
 
 ---
 
@@ -38,13 +38,13 @@ Os dias se alternam entre **A** (simulado completo) e **B** (mini-simulado e tre
 
 | Dia | Tipo | Sessão | Treino na VM | Lacunas |
 |---|---|---|---|---|
-| **Sáb 31/10** | A | **Simulado 03** — o primeiro com os cinco tópicos estudados; é a linha de base da operação | — | Série 01 |
-| Dom 01/11 | — | Descanso | — | — |
-| Seg 02/11 (feriado) | B | **R4** — contas e permissões (`reforco-r3-r4.md`) | V5 e V6 | Série 02 |
-| Ter 03/11 | A | **Simulado 04** — exame final de prática do NDG | — | Série 03 |
-| Qua 04/11 | B | **R3** — navegação, ajuda e redirecionamento (`reforco-r3-r4.md`) | V1 e V3 | Série 04 |
-| Qui 05/11 | A | **Simulado 05** | — | Série 05 |
-| Sex 06/11 | B | **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) | V7 | Série 06 |
+| Sáb 31/10 | — | Descanso | — | — |
+| **Dom 01/11** | A | **Simulado 03**, depois das Práticas 4 e 5 (`labs/semana-09.md`) — a linha de base da operação | — | Série 01 |
+| Seg 02/11 (feriado) | B | **R4** — contas e permissões (`reforco-r3-r4.md`) · **aulas 41 a 48** | V5 e V6 | Série 02 |
+| Ter 03/11 | A | **Simulado 04** — exame final de prática do NDG · **aulas 49 a 56** | — | Série 03 |
+| Qua 04/11 | B | **R3** — navegação, ajuda e redirecionamento (`reforco-r3-r4.md`) · **aulas 57 a 64** | V1 e V3 | Série 04 |
+| Qui 05/11 | A | **Simulado 05** · **aulas 65 a 72 (curso fechado)** | — | Série 05 |
+| Sex 06/11 | B | **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) · **bloco curto: 4.1 e here document** (`labs/semana-09.md`) | V7 | Série 06 |
 | Sáb 07/11 | A | **Simulado 06** | — | Série 07 |
 | Dom 08/11 | — | Descanso | — | — |
 | Seg 09/11 | B | **R1** — as quatro frentes e seis lacunas (`praticas_simulados.md`, seção 6) | V8 e V4 | Série 08 |
@@ -68,7 +68,9 @@ Os dias se alternam entre **A** (simulado completo) e **B** (mini-simulado e tre
 | Sex 27 a dom 29/11 | — | **Descanso.** Não estudar na véspera | — | — |
 | **Seg 30/11** | — | **PROVA** | — | — |
 
-**Contas:** 11 simulados completos (03 a 13), 10 mini-simulados (R1 a R4 e M1 a M6), 23 séries de lacunas e 4 domingos de descanso.
+**Semana 10, com as aulas:** de segunda a quinta, as oito aulas do dia vêm **antes** da sessão de prática, e na sexta o bloco curto vem antes do R2. As sessões crescem para cerca de 1h50 nos dias B e 2h05 nos dias A. É a única exceção à regra 1, porque o curso é conteúdo de prova: a aula que não couber vai para o domingo 08/11, que só deixa de ser descanso nesse caso.
+
+**Contas:** 11 simulados completos (03 a 13), 10 mini-simulados (R1 a R4 e M1 a M6), 23 séries de lacunas e 4 dias de descanso (sábado 31/10 e os domingos 08, 15 e 22/11).
 
 **Se um dia cair**, ele não é reposto. O dia seguinte segue o calendário, e a regra 1 vale aqui também.
 
@@ -244,7 +246,7 @@ São os erros que voltaram depois de corrigidos. É a lista que guia os treinos 
 
 | Período | Simulados | Meta de acertos firmes |
 |---|---|---|
-| Linha de base | 03 (31/10) | Medir; sem meta |
+| Linha de base | 03 (01/11) | Medir; sem meta |
 | Semana de 02/11 | 04, 05 e 06 | **24 ou mais** |
 | Semana de 09/11 | 07, 08 e 09 | **28 ou mais** |
 | Semana de 16/11 | 10, 11 e 12 | **30 ou mais** |
@@ -278,7 +280,7 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 
 | Data | Tipo | Sessão | Acertos | Firmes | Lacunas | Reincidências novas |
 |---|---|---|---|---|---|---|
-| 31/10 | A | Simulado 03 | de 40 | | de 5 | |
+| 01/11 | A | Simulado 03 | de 40 | | de 5 | |
 | 02/11 | B | R4 | de 20 | | de 5 | |
 | 03/11 | A | Simulado 04 | de 40 | | de 5 | |
 | 04/11 | B | R3 | de 20 | | de 5 | |
