@@ -1,16 +1,16 @@
 # Plano de Preparação — LPI Linux Essentials (010-160)
 
-**Aluno:** Davi (@DaviMoraisdev) · **Ritmo:** cerca de 2h por dia nesta semana; 1h10 a 1h25 por dia na operação prática
+**Aluno:** Davi (@DaviMoraisdev) · **Ritmo:** 1h10 a 1h25 por dia na operação prática; cerca de 2h por dia na Semana 10, que ainda tem as aulas
 **Data da prova:** **30/11/2026, segunda-feira** (movida de 23/11 em 26/10; seção 11)
 **Repositório de labs:** https://github.com/DaviMoraisdev/linux-essentials-labs
 
-> **Estratégia de 26/10 — conteúdo primeiro, depois prática todos os dias.** O modelo de "dívidas" saiu do plano: pagar pendências atrasadas não estava gerando aprendizado, e o rendimento caiu (simulado 02: 22 de 40, 17 firmes). O plano agora tem duas fases e nenhuma lista de pendências: **(1) conteúdo**, de 26 a 30/10: curso do Muller fechado (aulas 41 a 72) e o Tópico 4 em três práticas de laboratório; **(2) operação prática**, de 31/10 a 26/11: simulado, mini-simulado, lacunas e treino na VM todos os dias, com correção no mesmo dia. O que não cabe no dia some; um erro real volta no simulado seguinte.
+> **Estratégia de 26/10 — conteúdo primeiro, depois prática todos os dias.** O modelo de "dívidas" saiu do plano: pagar pendências atrasadas não estava gerando aprendizado, e o rendimento caiu (simulado 02: 22 de 40, 17 firmes). O plano agora tem duas fases e nenhuma lista de pendências: **(1) conteúdo**: o Tópico 4 em três práticas de laboratório até 01/11, e o curso do Muller (aulas 41 a 72) e o 4.1 de 02 a 06/11, somados às sessões de prática; **(2) operação prática**, de 01/11 a 26/11: simulado, mini-simulado, lacunas e treino na VM todos os dias, com correção no mesmo dia. O que não cabe no dia some; um erro real volta no simulado seguinte.
 
 ---
 
 ## 1. Status atual
 
-**Atualizado em 26/10.** Prova em **30/11**. Esta semana: `labs/semana-09.md`. De 31/10 em diante: `labs/operacao-pratica.md`.
+**Atualizado em 29/10.** Prova em **30/11**. Até domingo 01/11: `labs/semana-09.md`. De 01/11 em diante: `labs/operacao-pratica.md`.
 
 ### Concluído
 
@@ -28,17 +28,19 @@
 | Bandit | Níveis 0 a 9 |
 | Cards de revisão (Notion) | Cards 60 a 70 em 22/10; daqui em diante, só para reincidências |
 
-### O que falta estudar — semana de 26 a 30/10
+### O que falta estudar
+
+Calendário refeito em 29/10: a Prática 3 teve só o bloco 1 até quinta.
 
 | Item | Peso | Quando |
 |---|---|---|
-| **Curso, aulas 41 a 72** (32 aulas; último registro na 40) | — | Oito por dia, de segunda a quinta |
-| **4.2 Hardware** — Prática 3 | 2 | Seg 26/10 |
-| **4.3 Onde os dados ficam** — Práticas 3 e 4 | **3** | Seg 26 e ter 27/10 |
-| **4.4 Rede** — Prática 5 | 2 | Qua 28/10 |
-| **4.1 Sistemas operacionais** e here document | 1 | Qui 29/10 |
+| **4.2 Hardware** e **4.3** (diretórios) — Prática 3, blocos 2 a 4 | 2 e 3 | Sex 30/10 |
+| **4.3 Processos, memória e logs** — Prática 4 | **3** | Dom 01/11 |
+| **4.4 Rede** — Prática 5 | 2 | Dom 01/11, antes do simulado 03 |
+| **Curso, aulas 41 a 72** (32 aulas; último registro na 40) | — | Oito por dia, de seg 02 a qui 05/11, antes da sessão de prática |
+| **4.1 Sistemas operacionais** e here document | 1 | Sex 06/11, antes do R2 |
 
-Sexta 30/10 é reserva para o que tiver escorregado. Os roteiros estão em `labs/semana-09.md`.
+Sábado 31/10 é descanso. Os roteiros estão em `labs/semana-09.md`.
 
 ### Voucher e agendamento
 
@@ -224,16 +226,17 @@ Sites de dumps — ITExams, Marks4Sure, Pass4Success e semelhantes — estão fo
 
 **Revisado em 26/10.** Duas fases, nenhuma pendência.
 
-### Fase 1 — Conteúdo (26 a 30/10)
+### Fase 1 — Conteúdo (26/10 a 06/11)
 
 | Elemento | Como |
 |---|---|
-| Aulas do curso | Oito por dia. Anotações no caderno, repassadas aqui como sempre |
-| Prática de cada tópico | Logo depois das aulas do mesmo tema: 45 min de teclado, 10 de registro, 5 de commit, **prevendo a saída antes de executar**; 20 min de Exercícios Guiados da LPI no fim |
-| Velocidade do curso | **2x** onde o vídeo repete o que já foi praticado; **1.25x** no Tópico 4, que é conteúdo novo |
-| O que não fechar até quinta | Vai para a sexta 30/10. O que não fechar até sexta não vira pendência: a operação começa no sábado do mesmo jeito |
+| Tópico 4 | Práticas 3, 4 e 5 até o domingo 01/11: 45 min de teclado, 10 de registro, 5 de commit, **prevendo a saída antes de executar**; Exercícios Guiados da LPI no fim |
+| Aulas do curso | Oito por dia, de 02 a 05/11, **antes** da sessão de prática do dia. Anotações no caderno, repassadas aqui como sempre |
+| 4.1 e here document | Sex 06/11, antes do R2 |
+| Velocidade do curso | **2x** onde o vídeo repete o que já foi praticado, o que agora vale para quase todo o restante, inclusive o Tópico 4 |
+| O que não fechar | Aula que não couber vai para o domingo 08/11. Nenhum outro item vira pendência |
 
-### Fase 2 — Operação prática (31/10 a 26/11)
+### Fase 2 — Operação prática (01/11 a 26/11)
 
 Detalhe completo em `labs/operacao-pratica.md`. O resumo:
 
@@ -241,7 +244,7 @@ Detalhe completo em `labs/operacao-pratica.md`. O resumo:
 |---|---|
 | **Dia A** | Lacunas (5 min) · simulado completo (60 min) · correção no mesmo dia (20 min) |
 | **Dia B** | Lacunas (5 min) · mini-simulado de 20 questões (25 min) · correção (10 min) · treino na VM sobre o que errou (30 min) |
-| **Domingo** | Descanso |
+| **Descanso** | Sábado 31/10 e os domingos 08, 15 e 22/11 |
 | **Correção** | No mesmo dia, com tempo-limite. Erro de comando é **executado na VM**, não só lido |
 | **Notion** | Card só para **reincidência**, um erro que já aconteceu antes |
 | **Medida** | Acertos **firmes**, sem chutes e sem pesquisas |
@@ -274,8 +277,8 @@ Semanas de **segunda a domingo**. A prova é na **segunda-feira 30/11**. O hist�
 
 | Fase | Período | Arquivo | Foco |
 |---|---|---|---|
-| **1. Conteúdo** | 26/10 a 30/10 | `labs/semana-09.md` | Curso fechado · Tópico 4 em três práticas · 4.1 e here document |
-| **2. Operação prática** | 31/10 a 26/11 | `labs/operacao-pratica.md` | Todos os dias: simulado ou mini-simulado, lacunas, treino na VM e correção no mesmo dia |
+| **1. Conteúdo** | 26/10 a 06/11 | `labs/semana-09.md` e `labs/operacao-pratica.md` | Tópico 4 em três práticas até 01/11 · aulas 41 a 72 e 4.1 de 02 a 06/11 |
+| **2. Operação prática** | 01/11 a 26/11 | `labs/operacao-pratica.md` | Todos os dias: simulado ou mini-simulado, lacunas, treino na VM e correção no mesmo dia |
 | **Descanso** | 27/11 a 29/11 | — | Sem estudo |
 | **Prova** | **Seg 30/11** | — | — |
 
@@ -283,9 +286,9 @@ Semanas de **segunda a domingo**. A prova é na **segunda-feira 30/11**. O hist�
 
 | Item | Número |
 |---|---|
-| Aulas restantes do curso | 32 (41 a 72), até qui 29/10 |
+| Aulas restantes do curso | 32 (41 a 72), de 02 a 05/11 |
 | Práticas de laboratório restantes | 3 (Práticas 3, 4 e 5 do Tópico 4) |
-| Dias de operação prática | 23, com 4 domingos de descanso |
+| Dias de operação prática | 23, com 4 dias de descanso |
 | Simulados completos | 11 (03 a 13) |
 | Mini-simulados | 10 (R1 a R4 e M1 a M6) |
 | Lacunas | 23 séries de cinco (115 questões) |
@@ -298,23 +301,22 @@ Semanas de **segunda a domingo**. A prova é na **segunda-feira 30/11**. O hist�
 | Sex 20/11 | Consciência Negra (feriado) | Dia normal da operação (tipo B) |
 | Seg 30/11 | **Prova** | Não cai em feriado |
 
-### Semana 9 — 26/10 a 01/11 · Conteúdo e início da operação
+### Semana 9 — 26/10 a 01/11 · Tópico 4 e início da operação
+
+Refeita em 29/10.
 
 | Dia | Atividade |
 |---|---|
-| Seg 26 | Prática 3 — hardware, discos e o mapa dos diretórios (4.2 e 4.3) · aulas 41 a 48 |
-| Ter 27 | Prática 4 — processos, memória e logs (4.3) · aulas 49 a 56 |
-| Qua 28 | Prática 5 — rede (4.4) · aulas 57 a 64 |
-| Qui 29 | 4.1 e here document · aulas 65 a 72 (**curso fechado**) |
-| Sex 30 | Reserva para o que escorregou |
-| Sáb 31 | **Simulado 03** — linha de base da operação |
-| Dom 01/11 | Descanso |
+| Seg 26 a qui 29 | Prática 3, bloco 1 |
+| Sex 30 | Prática 3, blocos 2 a 4 |
+| Sáb 31 | Descanso |
+| Dom 01/11 | Prática 4 · Prática 5 · **Simulado 03** — linha de base da operação |
 
 ### Semanas 10 a 13 — 02/11 a 29/11 · Operação prática
 
 | Semana | Dias A (simulados) | Dias B (mini-simulados) |
 |---|---|---|
-| 10 (02 a 08/11) | 04 (NDG), 05, 06 | R4, R3, R2 |
+| 10 (02 a 08/11) | 04 (NDG), 05, 06 · com as aulas 41 a 72 de segunda a quinta | R4, R3, R2 · com o 4.1 e o here document na sexta |
 | 11 (09 a 15/11) | 07, 08, 09 | R1, M1, M2 |
 | 12 (16 a 22/11) | 10, 11 (decisão), 12 | M3, M4, M5 |
 | 13 (23 a 29/11) | 13 (final, 24/11) | M6 · revisão leve em 25 e 26/11 · descanso de 27 a 29/11 |
@@ -327,7 +329,7 @@ Calendário dia a dia, metas e registro em `labs/operacao-pratica.md`.
 |---|---|---|---|
 | 1 | Seg 05/10 | `simulado-01` | **Feito: 28 de 40, 23 firmes** |
 | 2 | Sex 23/10 | `simulado-02` | **Feito: 22 de 40, 17 firmes** |
-| 3 | **Sáb 31/10** | `simulado-03` (pronto) | Linha de base |
+| 3 | **Dom 01/11** | `simulado-03` (pronto) | Linha de base |
 | 4 | Ter 03/11 | Exame final de prática do NDG | 24 ou mais |
 | 5 | Qui 05/11 | `simulado-05` | 24 ou mais |
 | 6 | Sáb 07/11 | `simulado-06` | 24 ou mais |
@@ -471,7 +473,7 @@ A coluna da direita é apenas o caminho natural dentro do roadmap atual, não um
 
 ### Histórico das decisões
 
-Em 08/10 a compra do voucher foi adiada; em 10/10 a data principal passou a 16/11; em 13/10 a prova foi fixada em 23/11; em 19/10 o Checkpoint A deu vermelho; em 23/10, com o simulado 02 em 22 de 40, o Tópico 4 foi para a Semana 9; **em 26/10 a estratégia mudou para conteúdo seguido de operação prática diária, as dívidas e os checkpoints saíram do plano, e a prova passou para 30/11.**
+Em 08/10 a compra do voucher foi adiada; em 10/10 a data principal passou a 16/11; em 13/10 a prova foi fixada em 23/11; em 19/10 o Checkpoint A deu vermelho; em 23/10, com o simulado 02 em 22 de 40, o Tópico 4 foi para a Semana 9; **em 26/10 a estratégia mudou para conteúdo seguido de operação prática diária, as dívidas e os checkpoints saíram do plano, e a prova passou para 30/11.** Em 29/10, as Práticas 4 e 5 e o simulado 03 foram para o domingo 01/11, o sábado 31/10 virou descanso e as aulas 41 a 72 foram para a Semana 10.
 
 ---
 
