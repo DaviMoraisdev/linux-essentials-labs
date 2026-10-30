@@ -44,7 +44,7 @@ Os dias se alternam entre **A** (simulado completo) e **B** (mini-simulado e tre
 | Ter 03/11 | A | **Simulado 04** — exame final de prática do NDG · **aulas 49 a 56** | — | Série 03 |
 | Qua 04/11 | B | **R3** — navegação, ajuda e redirecionamento (`reforco-r3-r4.md`) · **aulas 57 a 64** | V1 e V3 | Série 04 |
 | Qui 05/11 | A | **Simulado 05** · **aulas 65 a 72 (curso fechado)** | — | Série 05 |
-| Sex 06/11 | B | **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) · **bloco curto: 4.1 e here document** (`labs/semana-09.md`) | V7 | Série 06 |
+| Sex 06/11 | B | **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) · **bloco curto: 4.1 e here document** e **Exercícios da LPI 4.2** (`labs/semana-09.md`) | V7 | Série 06 |
 | Sáb 07/11 | A | **Simulado 06** | — | Série 07 |
 | Dom 08/11 | — | Descanso | — | — |
 | Seg 09/11 | B | **R1** — as quatro frentes e seis lacunas (`praticas_simulados.md`, seção 6) | V8 e V4 | Série 08 |
@@ -68,7 +68,7 @@ Os dias se alternam entre **A** (simulado completo) e **B** (mini-simulado e tre
 | Sex 27 a dom 29/11 | — | **Descanso.** Não estudar na véspera | — | — |
 | **Seg 30/11** | — | **PROVA** | — | — |
 
-**Semana 10, com as aulas:** de segunda a quinta, as oito aulas do dia vêm **antes** da sessão de prática, e na sexta o bloco curto vem antes do R2. As sessões crescem para cerca de 1h50 nos dias B e 2h05 nos dias A. É a única exceção à regra 1, porque o curso é conteúdo de prova: a aula que não couber vai para o domingo 08/11, que só deixa de ser descanso nesse caso.
+**Semana 10, com as aulas:** de segunda a quinta, as oito aulas do dia vêm **antes** da sessão de prática, e na sexta o bloco curto e os Exercícios da LPI 4.2 (20 min) vêm antes do R2. As sessões crescem para cerca de 1h50 nos dias B e 2h05 nos dias A. É a única exceção à regra 1, porque o curso é conteúdo de prova: a aula que não couber vai para o domingo 08/11, que só deixa de ser descanso nesse caso.
 
 **Contas:** 11 simulados completos (03 a 13), 10 mini-simulados (R1 a R4 e M1 a M6), 23 séries de lacunas e 4 dias de descanso (sábado 31/10 e os domingos 08, 15 e 22/11).
 
