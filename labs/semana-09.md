@@ -34,7 +34,7 @@ O 4.3, de peso 3, é o maior do tópico e o que mais se cobra em questões de "o
 | Dia | Atividade | Tempo |
 |---|---|---|
 | Seg 26 a qui 29 | Prática 3, bloco 1 (anotado em 27/10) | **feito** |
-| **Sex 30** | **Prática 3**, blocos 2 a 4, com Exercícios da LPI 4.2 | cerca de 1h |
+| Sex 30 | Prática 3, blocos 2 a 4; os Exercícios da LPI 4.2 foram para a sexta 06/11 | **feito** |
 | Sáb 31 | **Descanso** | — |
 | **Dom 01/11** | **Prática 4** — processos, memória e logs (4.3), 1h20 · intervalo · **Prática 5** — rede (4.4), 1h20 · intervalo de pelo menos 1h · **Simulado 03** (lacunas da série 01 antes), 1h25 | cerca de 4h05 |
 
@@ -335,9 +335,9 @@ Quizzes dos capítulos de hardware, processos e rede e do capítulo de permissõ
 
 ## Registro das sessões
 
-### Prática 3 — 27 e 30/10 — EM ANDAMENTO
+### Prática 3 — 27 e 30/10 — CONCLUÍDA (Exercícios da LPI 4.2 na Semana 10)
 
-**Bloco 1 anotado em 27/10.** Blocos 2 a 4 e Exercícios da LPI 4.2 na sexta 30/10.
+**Bloco 1 anotado em 27/10; blocos 2 a 4 em 30/10.** Os Exercícios da LPI 4.2 foram para a Semana 10, na sexta 06/11, junto com o bloco curto (ajuste de 30/10).
 
 #### Bloco 1 — Processador, memória e barramentos
 
@@ -368,6 +368,106 @@ Quizzes dos capítulos de hardware, processos e rede e do capítulo de permissõ
 
 O resto está certo, e a nuance sobre módulos e drivers vai além do que o roteiro pedia.
 
+#### Bloco 2 — Discos e partições
+
+Saída do `lsblk` na VM:
+
+```
+NAME                      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sda                         8:0    0   25G  0 disk
+├─sda1                      8:1    0    1M  0 part
+├─sda2                      8:2    0    2G  0 part /boot
+└─sda3                      8:3    0   23G  0 part
+  └─ubuntu--vg-ubuntu--lv 252:0    0   23G  0 lvm  /
+sr0                        11:0    1 1024M  1 rom
+```
+
+| Item | Leitura |
+|---|---|
+| `sda` | O disco (`TYPE` `disk`) |
+| `sda1` | Partição de 1 MiB, sem sistema de arquivos: é a partição de *BIOS boot* que o GRUB usa em discos GPT |
+| `sda2` | `/boot`, 2 GiB, fora do LVM |
+| `sda3` | Partição que serve de volume físico do LVM |
+| `ubuntu--vg-ubuntu--lv` | Volume lógico do LVM, montado em `/` |
+| `sr0` | **Drive óptico** virtual (CD/DVD) do VirtualBox: `RM` 1 = removível, `RO` 1 = somente leitura, `TYPE` `rom`. É o "drive óptico" que o objetivo 4.2 cita |
+
+**LVM** (*Logical Volume Manager*): camada entre os discos físicos e os volumes que o sistema monta, que permite aumentar, reduzir e juntar espaço com flexibilidade. Foi o que permitiu estender o volume para 23 GiB na Semana 0.
+
+| Comando | O que faz |
+|---|---|
+| `lsblk -f` | Acrescenta as colunas de **sistema de arquivos**: `FSTYPE` (`ext4`, `LVM2_member`), `UUID`, rótulo, espaço livre e uso |
+| `ls -l /dev/sd*` | O **shell** expande o `*` para os nomes que começam com `/dev/sd`; o `ls` lista os quatro: `sda`, `sda1`, `sda2`, `sda3` |
+| `df -h` | Espaço livre e usado **por sistema de arquivos montado** |
+| `df -h -t tmpfs` | Só os sistemas de arquivos do tipo `tmpfs`: temporários, em memória virtual (RAM e, se preciso, swap) |
+| `du -sh /var/log` | Espaço ocupado por **um diretório** e tudo dentro dele: `-s` resume em um total, `-h` em unidades legíveis |
+
+No `ls -l /dev/sd*`, onde normalmente fica o tamanho aparece `8, 0`, `8, 1`... São os números **major** e **minor**: o major (8) identifica o driver do disco, e o minor, cada dispositivo ou partição. Arquivo de dispositivo não tem tamanho.
+
+**Para o caderno, revisado:**
+
+| Pergunta | Resposta |
+|---|---|
+| Segunda partição do terceiro disco | `/dev/sdc2`: `sd` + `c` (terceiro disco: a, b, c) + `2` |
+| O que é o `b` no `ls -l /dev/sda`? | **Dispositivo de bloco**: lê e grava em blocos, como discos e partições. O `/dev/tty` e o `/dev/null` começam com `c`: **dispositivo de caractere**, um fluxo de bytes |
+| Por que o `/boot` está em `sda2`, fora do LVM? | *Estava em branco.* O carregador de inicialização (GRUB) precisa ler o kernel e o `initramfs` **antes** de o LVM existir; quem ativa o LVM é o próprio `initramfs`, já carregado. Por isso o `/boot` fica numa partição comum |
+| `df` contra `du` | `df` mostra o espaço **por sistema de arquivos montado**; `du` soma o espaço **ocupado por diretórios e arquivos**. Medem coisas diferentes, por isso os números não batem |
+
+#### Bloco 3 — O mapa dos diretórios
+
+| Comando | O que mostra |
+|---|---|
+| `ls /proc \| head` | Diretórios com **números**, um para cada processo em execução (o número é o PID), e arquivos do kernel, como `cpuinfo` e `meminfo` |
+| `cat /proc/$$/status \| head -5` | O `$$` vira o **PID do shell atual**; as primeiras linhas do `status` trazem o nome do processo (`bash`), o estado e o PID |
+| `cat /proc/version` | A versão do kernel e o compilador usado |
+| `cat /proc/uptime` | Dois números: segundos desde a inicialização e segundos somados de CPU ociosa (com mais de uma CPU, o segundo pode passar do primeiro) |
+| `ls /sys/class/net` | `enp0s3` (a placa de rede da VM) e `lo` (*loopback*, a comunicação da máquina com ela mesma) |
+| `cat /sys/class/net/enp0s3/address` | O **endereço MAC** da placa. O prefixo `08:00:27` é o do VirtualBox |
+| `ls -l /dev/sda /dev/tty /dev/null /dev/zero` | `/dev/sda` é bloco (`b`); os outros três são caractere (`c`). `/dev/tty`: o terminal do processo; `/dev/null`: descarta o que recebe; `/dev/zero`: devolve zeros |
+| `ls /boot` | `vmlinuz-*` (o kernel), `initrd.img-*` (o `initramfs`) e o diretório `grub` |
+| `cat /etc/os-release` | Nome e versão da distribuição. No Ubuntu, `/etc/os-release` é um link para `/usr/lib/os-release` |
+| `ls /var/log` | Os logs de sistema e de programas. Parte das mensagens fica no **journal do systemd**, lido com `journalctl` |
+
+**Tabela de memória, revisada:**
+
+| Diretório | Real ou virtual | O que guarda | Um arquivo lido |
+|---|---|---|---|
+| `/proc` | Virtual | Processos (um diretório por PID) e informações do kernel | `/proc/cpuinfo` |
+| `/sys` | Virtual | Dispositivos, barramentos e drivers, organizados pelo kernel | `/sys/class/net/enp0s3/address` |
+| `/dev` | Virtual (`devtmpfs`) | Arquivos de dispositivo que os programas abrem | `/dev/null` |
+| `/boot` | Real, em disco | Kernel, `initramfs` e carregador de inicialização | `vmlinuz-*` |
+| `/etc` | Real, em disco | Configuração do sistema e dos programas | `/etc/os-release` |
+| `/var/log` | Real, em disco | Logs | Escreva o nome de um que apareceu na VM, como `dpkg.log` ou `auth.log` |
+
+#### Bloco 4 — Programas, configuração e banco de dados de pacotes
+
+| Comando | Resultado e leitura |
+|---|---|
+| `which ls` | `/usr/bin/ls`: o primeiro executável chamado `ls` nos diretórios do `PATH` |
+| `dpkg -S /usr/bin/ls` | `coreutils: /usr/bin/ls`. Do **arquivo para o pacote** |
+| `dpkg -L coreutils \| head` | Os arquivos instalados pelo pacote. Do **pacote para os arquivos** |
+| `dpkg -l \| wc -l` | Uma estimativa da quantidade de pacotes: a saída tem linhas de cabeçalho e pode listar pacotes em outros estados, além de instalados |
+| `ls /var/lib/dpkg` | O **banco de dados do `dpkg`**: o registro dos pacotes instalados |
+| `ls /etc/ssh` | A configuração do SSH: `sshd_config`, `ssh_config` e as chaves do servidor |
+
+| Item | Onde fica |
+|---|---|
+| Executáveis de programas | `/usr/bin` |
+| Configuração do sistema | `/etc` |
+| Banco de dados de pacotes no Debian e no Ubuntu | `/var/lib/dpkg` |
+| Banco de dados RPM na família Red Hat | Tradicionalmente `/var/lib/rpm`; nas versões recentes, `/usr/lib/sysimage/rpm`, com link no lugar antigo |
+
+O equivalente no container Rocky (`rpm -qf`, `rpm -ql`, `rpm -qa`) ficou sem resultado registrado. Não é pendência: os quatro pares para a prova são `dpkg -S` e `rpm -qf` (arquivo → pacote), `dpkg -L` e `rpm -ql` (pacote → arquivos).
+
+**Correções dos blocos 2 a 4:**
+
+1. **Os dois números do bloco 3 são do `/proc/uptime`, não do `/proc/$$/status`.** No caderno, a explicação do tempo desde a inicialização e do tempo ocioso ficou embaixo do `status`. Ver Correção 77.
+2. **`lsblk -f`** não mostra "as partições dos arquivos `sda` no `/dev`"; ele acrescenta as colunas de sistema de arquivos (`FSTYPE`, `UUID`, uso). A explicação da convenção `sd` + letra + número, que estava embaixo dele, está certa, mas pertence ao `ls -l /dev/sd*`.
+3. **`sr0`** ficou sem leitura: é o drive óptico virtual, cobrado no 4.2.
+4. As duas perguntas finais do bloco 2 (`/boot` fora do LVM; `df` contra `du`) estavam em branco no "Para o caderno". A segunda já estava respondida na sua tabela; a primeira está respondida acima.
+5. Grafia: `enp03s` → **`enp0s3`**; "man so systemd" → **journal do systemd**; "onjetos" → **objetos**; "armazenmento" → **armazenamento**; "inicializção" → **inicialização**; "fornceu" → **forneceu**; "camingo" → **caminho**.
+
+O bloco 4 está todo certo, incluindo duas nuances que o roteiro não pedia: o `dpkg -l | wc -l` como estimativa e o local variável do banco RPM.
+
 ### Prática 4 — domingo 01/11
 
 *A preencher.*
@@ -384,16 +484,22 @@ O bloco curto (4.1 e here document) e o curso, aulas 41 a 72, foram para a Seman
 
 ### Correções da semana
 
-A numeração segue a série global. **A próxima é a 77.** Correção numerada só para erro de laboratório e de curso.
+A numeração segue a série global. **A próxima é a 78.** Correção numerada só para erro de laboratório e de curso.
 
 #### Correção 76 — o `-m1` do `grep` limita a quantidade de linhas
 
 O caderno diz que o `-m1` serve "para dizer onde está o conteúdo desejado". O `-m` é `--max-count`: `-m1` faz o `grep` **parar na primeira linha que casa**. No `/proc/cpuinfo`, cada processador lógico tem o seu bloco, com o seu `model name`; com 2 vCPUs, `grep 'model name' /proc/cpuinfo` imprime duas linhas iguais, e `grep -m1` imprime uma. Para ver: rode os dois lado a lado. Não confundir com o `-c`, que **conta** as linhas, nem com o `-n`, que **numera**.
 
 
+#### Correção 77 — tempo desde a inicialização é o `/proc/uptime`, não o `/proc/$$/status`
+
+O caderno pôs a explicação dos dois números (segundos desde a inicialização e segundos de CPU ociosa) embaixo do `cat /proc/$$/status`. Eles são a saída do `cat /proc/uptime`. O `/proc/$$/status` descreve **um processo**, o shell atual: `Name: bash`, `State`, `Pid`, `PPid`, memória usada. A diferença é a regra do `/proc`: um diretório **por PID**, com os dados daquele processo, e arquivos **soltos** na raiz, como `uptime`, `version`, `cpuinfo` e `meminfo`, com dados do sistema inteiro. Para ver: `cat /proc/uptime ; head -5 /proc/$$/status`.
+
+
 | # | Tema | Origem |
 |---|---|---|
 | 76 | O `-m1` do `grep` é *max-count*: para depois da primeira linha que casa, não "diz onde está o conteúdo" | Prática 3, bloco 1, 27/10 |
+| 77 | Os números de tempo desde a inicialização e de CPU ociosa são do `/proc/uptime`; o `/proc/$$/status` descreve um processo | Prática 3, bloco 3, 30/10 |
 
 ---
 
@@ -402,7 +508,7 @@ O caderno diz que o `-m1` serve "para dizer onde está o conteúdo desejado". O 
 | Dia | Previsto | Real | Observação |
 |---|---|---|---|
 | Seg 26 a qui 29 | — | | Prática 3, bloco 1 |
-| Sex 30 | 1h | | Prática 3, blocos 2 a 4 |
+| Sex 30 | 1h | | Prática 3, blocos 2 a 4 (feito) |
 | Sáb 31 | — | | Descanso |
 | Dom 01/11 | 4h05 | | Práticas 4 e 5 e simulado 03 |
 
@@ -411,8 +517,9 @@ O caderno diz que o `-m1` serve "para dizer onde está o conteúdo desejado". O 
 ## Checklist da semana
 
 - [x] Prática 3, bloco 1 (27/10)
-- [ ] Pacotes instalados na VM (`pciutils`, `usbutils`, `net-tools`, `bind9-dnsutils`)
-- [ ] Prática 3, blocos 2 a 4, com Exercícios da LPI 4.2 (sexta 30/10)
+- [x] Pacotes instalados na VM (`pciutils`, `usbutils`, `net-tools`, `bind9-dnsutils`)
+- [x] Prática 3, blocos 2 a 4 (sexta 30/10)
+- [ ] Exercícios da LPI 4.2 (sexta 06/11, na Semana 10)
 - [ ] Prática 4, com Exercícios da LPI 4.3 (domingo 01/11)
 - [ ] Prática 5, com Exercícios da LPI 4.4 (domingo 01/11)
 - [ ] Simulado 03, com a apuração e as erradas no mesmo dia (domingo 01/11)
