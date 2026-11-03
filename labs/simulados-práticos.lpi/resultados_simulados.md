@@ -44,12 +44,12 @@ Desde 26/10, os reforços fazem parte da operação prática (`labs/operacao-pra
 |---|---|
 | Sex 23/10 | Simulado 02 trouxe o mínimo da seção 2.1: permissões 2 de 5, `tar` 2 de 2, redirecionamento 2 de 3, diretórios 2 de 3, lacunas 3 de 5 (**feito**) |
 | Sex 30/10 | Prática 3 (Semana 9): mapa dos diretórios virtuais, `/proc`, `/sys` e `/dev` lado a lado |
-| Dom 01/11 | Simulado 03, a linha de base da operação |
-| Seg 02/11 | **R4** (`reforco-r3-r4.md`): contas e permissões, sobre os erros do simulado 02 |
-| Qua 04/11 | **R3** (`reforco-r3-r4.md`): navegação, ajuda e redirecionamento, sobre os erros do simulado 02 |
-| Sex 06/11 | Here document estudado como conceito, no bloco curto · **R2** (seção 8 deste arquivo): inclui `/sys`, processos e rede |
-| Seg 09/11 | **R1** (seção 6 deste arquivo): as quatro frentes e seis lacunas |
-| Todo dia, de 01/11 a 26/11 | **Cinco lacunas** do banco (`lacunas.md`), no lugar do antigo aquecimento rotativo |
+| Ter 03/11 | Simulado 03, a linha de base da operação |
+| Qua 04/11 | **R4** (`reforco-r3-r4.md`): contas e permissões, sobre os erros do simulado 02 |
+| Sex 06/11 | Here document estudado como conceito, no bloco curto · **R3** (`reforco-r3-r4.md`): navegação, ajuda e redirecionamento, sobre os erros do simulado 02 |
+| Seg 09/11 | **R2** (seção 8 deste arquivo): inclui `/sys`, processos e rede |
+| Qua 11/11 | **R1** (seção 6 deste arquivo): as quatro frentes e seis lacunas |
+| Todo dia, de 03/11 a 26/11 | **Cinco lacunas** do banco (`lacunas.md`), no lugar do antigo aquecimento rotativo |
 
 ### 2.3 Aquecimento
 
@@ -134,7 +134,7 @@ Mnemônico: **proc de processos, dev de dispositivos, sys de hardware organizado
 
 ---
 
-## 6. Mini-simulado R1 — Segunda 09/11
+## 6. Mini-simulado R1 — Quarta 11/11
 
 **Regras:** 20 questões, 25 minutos, sem consulta, **marcando cada chute**. Nas questões de preenchimento (marcadas com **[lacuna]**), escreva só a resposta, seguindo a seção 4. Aberto o gabarito, anote apenas as erradas e as chutadas, siga o protocolo de correção da operação prática e registre o resultado em `resultados_simulados.md`, seções 2.5 e 4.
 
@@ -292,7 +292,7 @@ A) `/dev/cpu` · B) `/var/cpuinfo` · C) `/proc/cpuinfo` · D) `/etc/cpuinfo`
 
 ---
 
-## 8. Mini-simulado R2 — Sexta 06/11
+## 8. Mini-simulado R2 — Segunda 09/11
 
 **Regras:** as mesmas do R1. 20 questões, 25 minutos, sem consulta, **marcando cada chute**. Nas questões **[lacuna]**, escreva só a resposta, seguindo a seção 4. Registre o resultado em `resultados_simulados.md`, seções 2.5 e 4.
 
