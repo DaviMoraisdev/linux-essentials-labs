@@ -14,7 +14,7 @@ São **120 lacunas em 24 séries de cinco**. Cada série mistura tópicos, porqu
 | Erro | Marque na tabela de controle no fim do arquivo. Erro **de forma** (resposta certa escrita errado) conta como erro |
 | Repetição | Uma lacuna errada volta **três dias depois**: anote na coluna "Volta na série" do controle e responda de novo junto com aquela série |
 
-As do Tópico 4 dependem das Práticas 3 a 5 e por isso só começam com a operação, no domingo 01/11.
+As do Tópico 4 dependem das Práticas 3 a 5 e por isso só começam com a operação, na terça 03/11.
 
 ---
 
