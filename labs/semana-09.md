@@ -3,10 +3,10 @@
 Período: 26/10 a 01/11/2026 (segunda a domingo)
 Objetivos da prova: 4.1, 4.2, 4.3 e 4.4 — Tópico 4, peso 8 de 40
 **Data da prova: segunda-feira, 30/11/2026**
-Carga prevista: cerca de 1h na sexta 30/10 e cerca de 4h no domingo 01/11
-Marco da semana: **Tópico 4 praticado no domingo 01/11**, com o simulado 03 no mesmo dia. As aulas 41 a 72 e o bloco curto (4.1 e here document) passaram para a Semana 10, junto com a operação prática (`labs/operacao-pratica.md`)
+Situação: **fechada em 02/11**, com as Práticas 3, 4 e 5 feitas
+Marco da semana: **Tópico 4 praticado**. O simulado 03 passou para a terça 03/11. As aulas 41 a 72 e o bloco curto (4.1 e here document) passaram para a Semana 10, junto com a operação prática (`labs/operacao-pratica.md`)
 
-**Semana refeita em 26/10, com a nova estratégia, e de novo em 29/10.** Até quinta saiu o bloco 1 da Prática 3. O resto ficou assim: sexta, o resto da Prática 3; sábado, descanso; domingo, as Práticas 4 e 5 e o simulado 03. **As aulas 41 a 72 e o bloco curto foram para a Semana 10** (02 a 06/11), somados às sessões da operação prática. As anotações das práticas vão para o caderno e são repassadas aqui, como sempre.
+**Semana refeita em 26/10, com a nova estratégia, e de novo em 29/10; fechada em 02/11.** As três práticas do Tópico 4 foram feitas: a Prática 3 entre 27 e 30/10, e as Práticas 4 e 5 até 02/11. O simulado 03, as aulas 41 a 72, o bloco curto e os Exercícios da LPI 4.2 e 4.3 estão nos primeiros dias da operação prática (`labs/operacao-pratica.md`).
 
 O Tópico 4 nunca foi estudado como tópico, mas boa parte dele já foi encostada na prática: LVM e partições na Semana 0, `/proc` e `/dev` na Semana 3, portas e serviços na Semana 1, gerenciadores de pacotes no curso. A cobertura parte de cerca de 30%. No simulado 02, os quatro erros do tópico apontam o que mais precisa de atenção: **dispositivos `/dev/sd*` (Q30), `/etc/resolv.conf` (Q31), faixas IPv4 privadas (Q32) e `kill -9` (Q33)**. O sinal padrão do `kill` também caiu no simulado 01.
 
@@ -29,20 +29,17 @@ O 4.3, de peso 3, é o maior do tópico e o que mais se cobra em questões de "o
 
 ## Calendário da semana
 
-**Refeito em 29/10.**
+**Refeito em 29/10 e fechado em 02/11.**
 
-| Dia | Atividade | Tempo |
+| Dia | Atividade | Situação |
 |---|---|---|
 | Seg 26 a qui 29 | Prática 3, bloco 1 (anotado em 27/10) | **feito** |
 | Sex 30 | Prática 3, blocos 2 a 4; os Exercícios da LPI 4.2 foram para a sexta 06/11 | **feito** |
-| Sáb 31 | **Descanso** | — |
-| **Dom 01/11** | **Prática 4** — processos, memória e logs (4.3), 1h20 · intervalo · **Prática 5** — rede (4.4), 1h20 · intervalo de pelo menos 1h · **Simulado 03** (lacunas da série 01 antes), 1h25 | cerca de 4h05 |
+| Sáb 31 | Descanso | — |
+| Dom 01 e seg 02/11 | **Práticas 4 e 5** | **feitas**; anotações da Prática 5 a recuperar |
+| Ter 03/11 | **Simulado 03**, aulas 41 a 60 e Exercícios da LPI 4.3: já na operação prática (`labs/operacao-pratica.md`) | — |
 
-**O domingo é pesado, então a ordem importa.** As duas práticas vêm primeiro, porque o simulado cobra o Tópico 4. O simulado vem por último, depois de um intervalo de verdade, longe do teclado. Os Exercícios da LPI 4.3 e 4.4 podem ficar só nos Guiados, para não chegar cansado ao simulado.
-
-**Leitura do simulado 03.** Feito no mesmo dia das Práticas 4 e 5, ele mede o Tópico 4 com o estudo ainda fresco: o acerto nesse tópico vai sair acima da retenção real. Os outros tópicos medem normalmente. A medição honesta do Tópico 4 vem com o R2 (06/11) e os simulados 04 a 06.
-
-**Se faltar tempo**, corte nesta ordem: (1) os Exercícios Exploratórios da LPI, mantendo os Guiados; (2) os Guiados da Prática 5. As práticas e o simulado não se cortam.
+Com as três práticas feitas, **o Tópico 4 está praticado**. O que resta de conteúdo (aulas 41 a 72, 4.1 e here document, Exercícios da LPI 4.2 e 4.3) está nos primeiros dias da operação prática.
 
 ---
 
@@ -468,23 +465,111 @@ O equivalente no container Rocky (`rpm -qf`, `rpm -ql`, `rpm -qa`) ficou sem res
 
 O bloco 4 está todo certo, incluindo duas nuances que o roteiro não pedia: o `dpkg -l | wc -l` como estimativa e o local variável do banco RPM.
 
-### Prática 4 — domingo 01/11
+### Prática 4 — até 02/11 — CONCLUÍDA (Exercícios da LPI 4.3 na terça 03/11)
 
-*A preencher.*
+#### Bloco 1 — Listar processos
 
-### Prática 5 — domingo 01/11
+| Comando | O que mostra |
+|---|---|
+| `ps` | Sem opções: os processos do seu usuário ligados ao terminal atual |
+| `ps aux` | Os processos de todos os usuários, inclusive os sem terminal |
+| `ps -ef` | Outra listagem completa, com a coluna `PPID`, o PID do processo pai |
+| `ps aux --sort=-%cpu \| head -5` | Os que mais usam CPU, em ordem decrescente |
+| `echo $$ ; ps -p $$` | O PID do shell atual e o processo desse PID |
 
-*A preencher.*
+**Um processo** é um programa em execução. Cada um tem um PID e um processo pai (PPID).
 
-### Simulado 03 — domingo 01/11
+| Coluna do `ps aux` | Significado |
+|---|---|
+| `PID` | Número que identifica o processo |
+| `USER` | Usuário efetivo com que o processo roda |
+| `%CPU` | Percentual de CPU calculado pelo `ps` |
+| `%MEM` | Memória residente do processo, em percentual da RAM física |
+| `STAT` | Estado: `R` executando ou pronto; `S` dormindo, espera interrompível; `D` espera ininterruptível, quase sempre entrada e saída; `T` suspenso; `Z` zumbi, terminou e espera o pai recolher o status |
 
-*A preencher no próprio `simulado-03.md`.* Acertos: de 40. Firmes: .
+**PID 1** (*estava em branco*): é o **`systemd`**, o processo de inicialização (*init*). É o primeiro processo que o kernel inicia; todos os outros descendem dele, e ele adota os processos que ficam órfãos. Para ver: `ps -p 1 -o pid,comm`.
 
-O bloco curto (4.1 e here document) e o curso, aulas 41 a 72, foram para a Semana 10 e são registrados em `labs/operacao-pratica.md`.
+O `ps` é uma **foto**; o `top`, um **filme**.
+
+#### Bloco 2 — `top` e memória
+
+| Coluna do `free` | Significado |
+|---|---|
+| `free` | RAM completamente sem uso |
+| `buff/cache` | RAM usada como buffer e cache para acelerar o acesso a disco; o kernel a devolve quando um programa precisa |
+| `available` | Estimativa da RAM disponível para programas novos sem recorrer ao swap: a livre mais a que pode ser recuperada do cache |
+
+**Por que a `available` importa mais:** pouca memória em `free` não é falta de RAM, porque o Linux usa a RAM ociosa como cache. A `available` já desconta isso. O `free` lê tudo do `/proc/meminfo`.
+
+**Load average** (`uptime`, `cat /proc/loadavg`): a média de tarefas executando ou esperando CPU, mais as em espera ininterruptível (`D`), nos últimos **1, 5 e 15 minutos**. Não é percentual: compare com a quantidade de CPUs lógicas. Na sua VM, com 2 vCPUs, um load de 2,0 é a capacidade cheia.
+
+Dentro do `top`: `P` ordena por CPU, `M` por memória, `k` pede um PID para enviar um sinal, `q` sai.
+
+#### Bloco 3 — Primeiro e segundo plano, e sinais
+
+| Passo | O que acontece |
+|---|---|
+| `sleep 300 &` | Roda **300 segundos** em segundo plano e libera o prompt. O shell mostra `[1] 8585`: `[1]` é o **número do trabalho** neste shell; `8585`, o **PID** no sistema |
+| `sleep 400` | Roda em **primeiro plano**: o terminal fica **ocupado**, sem prompt, até o comando terminar |
+| `Ctrl+Z` | Envia `SIGTSTP` (20): o processo é **suspenso** e aparece como `Stopped` no `jobs` |
+| `bg` | Continua o trabalho suspenso **em segundo plano** (`Running`) |
+| `fg %1` | Traz o trabalho 1, o `sleep 300`, para o primeiro plano |
+| `Ctrl+C` | Envia `SIGINT` (2) ao processo em primeiro plano, que termina |
+| `sleep 500 & echo $!` | O `$!` guarda o PID do último comando iniciado em segundo plano |
+| `kill $!` | Envia `SIGTERM` (15), o padrão do `kill`; o `jobs` mostra `Terminated` |
+| `kill -9 $!` | Envia `SIGKILL` (9); o `jobs` mostra `Killed` |
+
+| Sinal | Número | Mecanismo e efeito |
+|---|---|---|
+| `SIGHUP` | 1 | Historicamente, a perda do terminal; muitos serviços o tratam como pedido para reler a configuração |
+| `SIGINT` | 2 | Enviado pelo `Ctrl+C`; a ação padrão é encerrar |
+| `SIGKILL` | 9 | O kernel encerra o processo sem passar pelo programa: não pode ser capturado, bloqueado nem ignorado |
+| `SIGTERM` | 15 | **Padrão do `kill`.** Pedido de encerramento; o programa pode tratá-lo e fazer a limpeza antes de sair |
+| `SIGCONT` | 18 | Continua um processo suspenso (é o que o `bg` e o `fg` enviam) |
+| `SIGTSTP` | 20 | Enviado pelo `Ctrl+Z`; a ação padrão é suspender |
+
+`&` inicia em segundo plano; `Ctrl+Z` suspende; `bg` continua em segundo plano; `fg` traz para o primeiro plano; `jobs` lista os trabalhos **deste shell**, não os processos do sistema.
+
+#### Bloco 4 — Mensagens do sistema e logs
+
+| Recurso | Função |
+|---|---|
+| `dmesg` | Lê o **buffer de mensagens do kernel**: inicialização, drivers, dispositivos conectados. `sudo dmesg \| grep -i enp0s3` filtra as da placa de rede |
+| `rsyslog` | O serviço de **syslog** do Ubuntu: recebe as mensagens do sistema e dos serviços e as grava em arquivos de `/var/log`, como o `/var/log/syslog` |
+| `/var/log` | Onde ficam os arquivos de log |
+| `systemd-journald` | Coleta e guarda os registros no **journal** do `systemd` |
+| `journalctl` | Lê o journal; `-n 10` mostra as últimas dez entradas, `--no-pager` imprime direto no terminal |
+| `logger` | Envia uma mensagem ao sistema de logs; não imprime confirmação |
+
+O roteiro pedia anotar se o `/var/log/syslog` existe na VM. Isso não ficou registrado: se o `sudo tail -5 /var/log/syslog` e o `grep` do `logger` funcionaram, ele existe e o `rsyslog` está ativo; se deram "No such file", só o journal está ativo.
+
+**Correções:**
+
+1. **`sleep 300` espera 300 segundos** (5 minutos), não 30.
+2. **O primeiro plano ocupa o terminal.** No `sleep 400`, o terminal não fica "aguardando comando": fica bloqueado, sem prompt, até o processo terminar ou ser suspenso. O `Ctrl+Z` não é um pedido do terminal; é você que envia o `SIGTSTP`. Ver Correção 78.
+3. **No `fg %1`, o encerramento é pelo `Ctrl+C`**, como no roteiro. Com o processo em primeiro plano não há prompt para digitar `kill %1`; o `kill %1` serve para um trabalho em **segundo plano**.
+4. **PID 1** estava em branco: é o `systemd` (resposta acima).
+5. A linha `echo $ps -p$` saiu embaralhada: o comando é `echo $$ ; ps -p $$`.
+6. O `-F` do `grep` (texto literal) está certo, mas não estava no comando do roteiro, que foi `sudo grep "teste do lab" /var/log/syslog`.
+7. Grafia: **`Ctrl`**, e não `Crtl`, pela **terceira vez** (autoavaliação da Semana 5, caderno da Semana 5 e aqui); "slepp" → **sleep**; "acerelar" → **acelerar**; "availiable" → **available**; "possibildade" → **possibilidade**.
+
+Os blocos 2 e 4 estão muito bons: a explicação do `available` e a do *load average*, incluindo a espera ininterruptível e a relação com o número de CPUs, vão além do que a prova cobra.
+
+#### Exercícios da LPI 4.3
+
+A lista de 13 exercícios ficou registrada sem respostas. **Vão para a terça 03/11**, depois do simulado 03 e das aulas: só os Guiados (1 a 6) e o complemento (10 a 13), sem consultar. Os Exploratórios (7 a 9) são opcionais. Anote só as erradas.
+
+### Prática 5 — até 02/11 — CONCLUÍDA (anotações a recuperar)
+
+Feita, mas as anotações se perderam. Quando recuperá-las, eu reviso e registro aqui. Se não forem recuperadas, não é pendência: o 4.4 (rede) volta no R2 (09/11), no treino V7 e nos simulados.
+
+### Simulado 03
+
+Passou para a **terça 03/11**, primeiro dia da operação prática. Registro no próprio `simulado-03.md` e em `labs/operacao-pratica.md`.
 
 ### Correções da semana
 
-A numeração segue a série global. **A próxima é a 78.** Correção numerada só para erro de laboratório e de curso.
+A numeração segue a série global. **A próxima é a 79.** Correção numerada só para erro de laboratório e de curso.
 
 #### Correção 76 — o `-m1` do `grep` limita a quantidade de linhas
 
@@ -496,10 +581,16 @@ O caderno diz que o `-m1` serve "para dizer onde está o conteúdo desejado". O 
 O caderno pôs a explicação dos dois números (segundos desde a inicialização e segundos de CPU ociosa) embaixo do `cat /proc/$$/status`. Eles são a saída do `cat /proc/uptime`. O `/proc/$$/status` descreve **um processo**, o shell atual: `Name: bash`, `State`, `Pid`, `PPid`, memória usada. A diferença é a regra do `/proc`: um diretório **por PID**, com os dados daquele processo, e arquivos **soltos** na raiz, como `uptime`, `version`, `cpuinfo` e `meminfo`, com dados do sistema inteiro. Para ver: `cat /proc/uptime ; head -5 /proc/$$/status`.
 
 
+#### Correção 78 — em primeiro plano, o terminal fica ocupado; o `Ctrl+Z` suspende
+
+O caderno diz que, no `sleep 400`, "o terminal fica aguardando comando e pede para digitar `Ctrl+Z`". Em **primeiro plano**, o processo é dono do terminal: não há prompt até ele terminar. O `Ctrl+Z` é você que pressiona, e o terminal traduz em `SIGTSTP` (20), que **suspende** o processo (`Stopped`) e devolve o prompt. A partir daí: `bg` continua em segundo plano; `fg` traz de volta; `kill %N` encerra um trabalho que **não** está em primeiro plano. Com o processo em primeiro plano, quem encerra é o `Ctrl+C` (`SIGINT`). Para ver: `sleep 400`, `Ctrl+Z`, `jobs`, `bg`, `jobs`, `kill %1`, `jobs`.
+
+
 | # | Tema | Origem |
 |---|---|---|
 | 76 | O `-m1` do `grep` é *max-count*: para depois da primeira linha que casa, não "diz onde está o conteúdo" | Prática 3, bloco 1, 27/10 |
 | 77 | Os números de tempo desde a inicialização e de CPU ociosa são do `/proc/uptime`; o `/proc/$$/status` descreve um processo | Prática 3, bloco 3, 30/10 |
+| 78 | Em primeiro plano o terminal fica ocupado, sem prompt; o `Ctrl+Z` envia `SIGTSTP` e suspende | Prática 4, bloco 3 |
 
 ---
 
@@ -510,7 +601,7 @@ O caderno pôs a explicação dos dois números (segundos desde a inicializaçã
 | Seg 26 a qui 29 | — | | Prática 3, bloco 1 |
 | Sex 30 | 1h | | Prática 3, blocos 2 a 4 (feito) |
 | Sáb 31 | — | | Descanso |
-| Dom 01/11 | 4h05 | | Práticas 4 e 5 e simulado 03 |
+| Dom 01 e seg 02/11 | — | | Práticas 4 e 5 (feitas) |
 
 ---
 
@@ -519,18 +610,18 @@ O caderno pôs a explicação dos dois números (segundos desde a inicializaçã
 - [x] Prática 3, bloco 1 (27/10)
 - [x] Pacotes instalados na VM (`pciutils`, `usbutils`, `net-tools`, `bind9-dnsutils`)
 - [x] Prática 3, blocos 2 a 4 (sexta 30/10)
-- [ ] Exercícios da LPI 4.2 (sexta 06/11, na Semana 10)
-- [ ] Prática 4, com Exercícios da LPI 4.3 (domingo 01/11)
-- [ ] Prática 5, com Exercícios da LPI 4.4 (domingo 01/11)
-- [ ] Simulado 03, com a apuração e as erradas no mesmo dia (domingo 01/11)
-- [ ] Anotações das práticas repassadas aqui
+- [x] Prática 4 (até 02/11)
+- [x] Prática 5 (até 02/11)
+- [ ] Anotações da Prática 5 repassadas aqui
+- [ ] Exercícios da LPI 4.3 (terça 03/11, na operação prática)
+- [ ] Exercícios da LPI 4.2 (sexta 06/11, na operação prática)
 - [ ] Commits ao fim de cada sessão
 
 ---
 
 ## Entregável
 
-`labs/semana-09.md` preenchido: Práticas 3 a 5 e o simulado 03. Com isso, o Tópico 4 está praticado; as aulas e o bloco curto fecham o conteúdo na Semana 10.
+`labs/semana-09.md` preenchido com as Práticas 3, 4 e 5. O Tópico 4 está praticado; as aulas, o bloco curto e os exercícios fecham o conteúdo nos primeiros dias da operação prática.
 
 ---
 
