@@ -1,10 +1,10 @@
-# Operação prática — 01/11 a 26/11/2026
+# Operação prática — 03/11 a 26/11/2026
 
 **Prova: segunda-feira, 30/11/2026** · Exame **010-160** · Criado em 26/10/2026
 
-A operação começa no **domingo 01/11**, com o simulado 03. Daí até a prova, **todos os dias** são de prática: simulados, mini-simulados, lacunas e treino na VM. Não há dívida. A única exceção é a **Semana 10**: de 02 a 06/11, cada sessão tem um acréscimo de conteúdo (as aulas 41 a 72 e o bloco curto 4.1 e here document), remarcado em 29/10. Depois de 06/11, não há mais aula nem conteúdo novo.
+A operação começa na **terça 03/11**, com o simulado 03 (calendário refeito em 02/11: as Práticas 4 e 5 terminaram no fim de semana e o simulado 03 passou para terça). Daí até a prova, **todos os dias** são de prática: simulados, mini-simulados, lacunas e treino na VM. Não há dívida. A única exceção é a primeira semana: de 03 a 06/11, as sessões têm um acréscimo de conteúdo (as aulas 41 a 72, o bloco curto 4.1 e here document e os Exercícios da LPI 4.2 e 4.3). Depois de 06/11, não há mais aula nem conteúdo novo.
 
-Este arquivo substitui os arquivos semanais a partir de 02/11. O registro de cada dia fica na seção 9.
+Este arquivo substitui os arquivos semanais a partir de 03/11. O registro de cada dia fica na seção 9.
 
 ---
 
@@ -17,7 +17,7 @@ Este arquivo substitui os arquivos semanais a partir de 02/11. O registro de cad
 | 3 | **Card no Notion só para reincidência**, ou seja, um erro que já aconteceu antes | Quatro das nove correções antigas voltaram a errar no simulado 02. Escrever não fixou; **executar na VM** fixa |
 | 4 | **Condição de prova** em todo simulado: cronometrado, sem consulta, marcando cada chute. **Questão pesquisada conta como errada** | A prova não tem consulta. Na dúvida, marque o chute e siga |
 | 5 | **Um número para acompanhar: os acertos firmes**, sem chutes e sem pesquisas | O total com chutes engana: 28 no simulado 01 eram só 23 firmes |
-| 6 | **O dia de descanso é de verdade**: sábado 31/10 e, depois, os domingos | A retenção se consolida no intervalo, não na repetição sem pausa |
+| 6 | **O domingo é descanso de verdade** | A retenção se consolida no intervalo, não na repetição sem pausa |
 
 ---
 
@@ -36,41 +36,42 @@ Os dias se alternam entre **A** (simulado completo) e **B** (mini-simulado e tre
 
 ## 3. Calendário
 
+**Refeito em 02/11.** Com o simulado 03 na terça 03/11, a sequência inteira andou: os mini-simulados ficaram nas segundas, quartas e sextas, os simulados nas terças, quintas e sábados, e o simulado 13 saiu do plano para manter os dois dias leves antes da prova.
+
 | Dia | Tipo | Sessão | Treino na VM | Lacunas |
 |---|---|---|---|---|
-| Sáb 31/10 | — | Descanso | — | — |
-| **Dom 01/11** | A | **Simulado 03**, depois das Práticas 4 e 5 (`labs/semana-09.md`) — a linha de base da operação | — | Série 01 |
-| Seg 02/11 (feriado) | B | **R4** — contas e permissões (`reforco-r3-r4.md`) · **aulas 41 a 48** | V5 e V6 | Série 02 |
-| Ter 03/11 | A | **Simulado 04** — exame final de prática do NDG · **aulas 49 a 56** | — | Série 03 |
-| Qua 04/11 | B | **R3** — navegação, ajuda e redirecionamento (`reforco-r3-r4.md`) · **aulas 57 a 64** | V1 e V3 | Série 04 |
-| Qui 05/11 | A | **Simulado 05** · **aulas 65 a 72 (curso fechado)** | — | Série 05 |
-| Sex 06/11 | B | **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) · **bloco curto: 4.1 e here document** e **Exercícios da LPI 4.2** (`labs/semana-09.md`) | V7 | Série 06 |
-| Sáb 07/11 | A | **Simulado 06** | — | Série 07 |
+| **Ter 03/11** | A | **Simulado 03** — a linha de base da operação · **aulas 41 a 60** · **Exercícios da LPI 4.3** (Guiados) | Os exercícios fazem o papel do treino | Série 01 |
+| Qua 04/11 | B | **R4** — contas e permissões (`reforco-r3-r4.md`) · **aulas 61 a 72 (curso fechado)** | V5 e V6 | Série 02 |
+| Qui 05/11 | A | **Simulado 04** — exame final de prática do NDG | — | Série 03 |
+| Sex 06/11 | B | **R3** — navegação, ajuda e redirecionamento (`reforco-r3-r4.md`) · **bloco curto: 4.1 e here document** e **Exercícios da LPI 4.2** (`labs/semana-09.md`) | V1 e V3 | Série 04 |
+| Sáb 07/11 | A | **Simulado 05** | — | Série 05 |
 | Dom 08/11 | — | Descanso | — | — |
-| Seg 09/11 | B | **R1** — as quatro frentes e seis lacunas (`praticas_simulados.md`, seção 6) | V8 e V4 | Série 08 |
-| Ter 10/11 | A | **Simulado 07** | — | Série 09 |
-| Qua 11/11 | B | **M1** — temas mais errados nos simulados 05 a 07 | Conforme o M1 | Série 10 |
-| Qui 12/11 | A | **Simulado 08** | — | Série 11 |
-| Sex 13/11 | B | **M2** | Conforme o M2 | Série 12 |
-| Sáb 14/11 | A | **Simulado 09** | — | Série 13 |
+| Seg 09/11 | B | **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) | V7 | Série 06 |
+| Ter 10/11 | A | **Simulado 06** | — | Série 07 |
+| Qua 11/11 | B | **R1** — as quatro frentes e seis lacunas (`praticas_simulados.md`, seção 6) | V8 e V4 | Série 08 |
+| Qui 12/11 | A | **Simulado 07** | — | Série 09 |
+| Sex 13/11 | B | **M1** — temas mais errados nos simulados 05 a 07 | Conforme o M1 | Série 10 |
+| Sáb 14/11 | A | **Simulado 08** | — | Série 11 |
 | Dom 15/11 | — | Descanso | — | — |
-| Seg 16/11 | B | **M3** | Conforme o M3 | Série 14 |
-| Ter 17/11 | A | **Simulado 10** | — | Série 15 |
-| Qua 18/11 | B | **M4** | Conforme o M4 | Série 16 |
-| Qui 19/11 | A | **Simulado 11** · **decisão final da data** (seção 7) | — | Série 17 |
-| Sex 20/11 (feriado) | B | **M5** | Conforme o M5 | Série 18 |
-| Sáb 21/11 | A | **Simulado 12** | — | Série 19 |
+| Seg 16/11 | B | **M2** | Conforme o M2 | Série 12 |
+| Ter 17/11 | A | **Simulado 09** | — | Série 13 |
+| Qua 18/11 | B | **M3** | Conforme o M3 | Série 14 |
+| Qui 19/11 | A | **Simulado 10** | — | Série 15 |
+| Sex 20/11 (feriado) | B | **M4** | Conforme o M4 | Série 16 |
+| Sáb 21/11 | A | **Simulado 11** · **decisão final da data** (seção 7) | — | Série 17 |
 | Dom 22/11 | — | Descanso | — | — |
-| Seg 23/11 | B | **M6** — só as reincidências da seção 6 | Os blocos das reincidências | Série 20 |
-| Ter 24/11 | A | **Simulado 13** — o simulado final | — | Série 21 |
-| Qua 25/11 | Leve | Lista de reincidências na VM (40 min), sem questão nova | Os blocos das reincidências | Série 22 |
-| Qui 26/11 | Leve | Releitura das colas e da lista de reincidências (30 min) | — | Série 23 |
+| Seg 23/11 | B | **M5** | Conforme o M5 | Série 18 |
+| Ter 24/11 | A | **Simulado 12** — o simulado final | — | Série 19 |
+| Qua 25/11 | B | **M6** — só as reincidências da seção 6 | Os blocos das reincidências | Série 20 |
+| Qui 26/11 | Leve | Releitura das colas e lista de reincidências na VM (40 min), sem questão nova | Os blocos das reincidências | Série 21 |
 | Sex 27 a dom 29/11 | — | **Descanso.** Não estudar na véspera | — | — |
 | **Seg 30/11** | — | **PROVA** | — | — |
 
-**Semana 10, com as aulas:** de segunda a quinta, as oito aulas do dia vêm **antes** da sessão de prática, e na sexta o bloco curto e os Exercícios da LPI 4.2 (20 min) vêm antes do R2. As sessões crescem para cerca de 1h50 nos dias B e 2h05 nos dias A. É a única exceção à regra 1, porque o curso é conteúdo de prova: a aula que não couber vai para o domingo 08/11, que só deixa de ser descanso nesse caso.
+**Terça 03/11, a ordem recomendada:** o **simulado 03 primeiro**, com a cabeça descansada e antes das aulas, para que ele meça a retenção real; depois as aulas 41 a 60; por último os Exercícios da LPI 4.3, só os Guiados (questões 1 a 6 e 10 a 13 da lista da Prática 4). É o dia mais longo da operação, com cerca de 4h.
 
-**Contas:** 11 simulados completos (03 a 13), 10 mini-simulados (R1 a R4 e M1 a M6), 23 séries de lacunas e 4 dias de descanso (sábado 31/10 e os domingos 08, 15 e 22/11).
+**Primeira semana, com as aulas:** é a única exceção à regra 1, porque o curso é conteúdo de prova: a aula que não couber na terça ou na quarta vai para o domingo 08/11, que só deixa de ser descanso nesse caso.
+
+**Contas:** 10 simulados completos (03 a 12), 10 mini-simulados (R1 a R4 e M1 a M6), 21 séries de lacunas e 3 domingos de descanso, além dos três dias antes da prova.
 
 **Se um dia cair**, ele não é reposto. O dia seguinte segue o calendário, e a regra 1 vale aqui também.
 
@@ -246,20 +247,20 @@ São os erros que voltaram depois de corrigidos. É a lista que guia os treinos 
 
 | Período | Simulados | Meta de acertos firmes |
 |---|---|---|
-| Linha de base | 03 (01/11) | Medir; sem meta |
-| Semana de 02/11 | 04, 05 e 06 | **24 ou mais** |
-| Semana de 09/11 | 07, 08 e 09 | **28 ou mais** |
-| Semana de 16/11 | 10, 11 e 12 | **30 ou mais** |
-| Final | 13 (24/11) | **30 ou mais** |
+| Linha de base | 03 (03/11) | Medir; sem meta |
+| Primeira semana | 04 (05/11) e 05 (07/11) | **24 ou mais** |
+| Semana de 09/11 | 06, 07 e 08 | **28 ou mais** |
+| Semana de 16/11 | 09, 10 e 11 | **30 ou mais** |
+| Final | 12 (24/11) | **30 ou mais** |
 
-**Decisão final, na quinta 19/11**, com a média de acertos firmes dos simulados 09, 10 e 11:
+**Decisão final, no sábado 21/11**, com a média de acertos firmes dos simulados 09, 10 e 11:
 
 | Média | Decisão |
 |---|---|
 | **26 ou mais** | Vai em 30/11 |
 | **Abaixo de 26** | Remarcar. O exame 010-160 fica disponível até abril de 2027; antes de escolher a nova data, revemos o método com os números na mão |
 
-O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota real fica acima disso.
+O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota real fica acima disso. Confira a janela de remarcação sem custo da Pearson VUE antes de 21/11.
 
 ---
 
@@ -270,7 +271,7 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 | Simulado 03 | Pronto (`simulado-03.md`) |
 | Simulado 04 | Exame final de prática do NDG Linux Essentials |
 | R1, R2, R3 e R4 | Prontos (`praticas_simulados.md` e `reforco-r3-r4.md`) |
-| Simulados 05 a 13 | Escritos por mim, prontos **até três dias antes** de cada um. O 05 e o 06 ficam prontos até sábado, 31/10 |
+| Simulados 05 a 12 | Escritos por mim, prontos **até três dias antes** de cada um. O 05 fica pronto até quarta, 04/11 |
 | M1 a M6 | Escritos por mim a partir dos erros dos simulados anteriores, prontos na véspera |
 | Lacunas | Prontas (`lacunas.md`, 24 séries) |
 
@@ -280,26 +281,24 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 
 | Data | Tipo | Sessão | Acertos | Firmes | Lacunas | Reincidências novas |
 |---|---|---|---|---|---|---|
-| 01/11 | A | Simulado 03 | de 40 | | de 5 | |
-| 02/11 | B | R4 | de 20 | | de 5 | |
-| 03/11 | A | Simulado 04 | de 40 | | de 5 | |
-| 04/11 | B | R3 | de 20 | | de 5 | |
-| 05/11 | A | Simulado 05 | de 40 | | de 5 | |
-| 06/11 | B | R2 | de 20 | | de 5 | |
-| 07/11 | A | Simulado 06 | de 40 | | de 5 | |
-| 09/11 | B | R1 | de 20 | | de 5 | |
-| 10/11 | A | Simulado 07 | de 40 | | de 5 | |
-| 11/11 | B | M1 | de 20 | | de 5 | |
-| 12/11 | A | Simulado 08 | de 40 | | de 5 | |
-| 13/11 | B | M2 | de 20 | | de 5 | |
-| 14/11 | A | Simulado 09 | de 40 | | de 5 | |
-| 16/11 | B | M3 | de 20 | | de 5 | |
-| 17/11 | A | Simulado 10 | de 40 | | de 5 | |
-| 18/11 | B | M4 | de 20 | | de 5 | |
-| 19/11 | A | Simulado 11 · decisão | de 40 | | de 5 | |
-| 20/11 | B | M5 | de 20 | | de 5 | |
-| 21/11 | A | Simulado 12 | de 40 | | de 5 | |
-| 23/11 | B | M6 | de 20 | | de 5 | |
-| 24/11 | A | Simulado 13 | de 40 | | de 5 | |
-| 25/11 | Leve | Reincidências na VM | — | — | de 5 | — |
-| 26/11 | Leve | Colas e reincidências | — | — | de 5 | — |
+| 03/11 | A | Simulado 03 · aulas 41 a 60 | de 40 | | de 5 | |
+| 04/11 | B | R4 · aulas 61 a 72 | de 20 | | de 5 | |
+| 05/11 | A | Simulado 04 (NDG) | de 40 | | de 5 | |
+| 06/11 | B | R3 · bloco curto · Exercícios da LPI 4.2 | de 20 | | de 5 | |
+| 07/11 | A | Simulado 05 | de 40 | | de 5 | |
+| 09/11 | B | R2 | de 20 | | de 5 | |
+| 10/11 | A | Simulado 06 | de 40 | | de 5 | |
+| 11/11 | B | R1 | de 20 | | de 5 | |
+| 12/11 | A | Simulado 07 | de 40 | | de 5 | |
+| 13/11 | B | M1 | de 20 | | de 5 | |
+| 14/11 | A | Simulado 08 | de 40 | | de 5 | |
+| 16/11 | B | M2 | de 20 | | de 5 | |
+| 17/11 | A | Simulado 09 | de 40 | | de 5 | |
+| 18/11 | B | M3 | de 20 | | de 5 | |
+| 19/11 | A | Simulado 10 | de 40 | | de 5 | |
+| 20/11 | B | M4 | de 20 | | de 5 | |
+| 21/11 | A | Simulado 11 · decisão | de 40 | | de 5 | |
+| 23/11 | B | M5 | de 20 | | de 5 | |
+| 24/11 | A | Simulado 12 (final) | de 40 | | de 5 | |
+| 25/11 | B | M6 | de 20 | | de 5 | |
+| 26/11 | Leve | Colas e reincidências na VM | — | — | de 5 | — |
