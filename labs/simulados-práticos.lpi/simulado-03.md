@@ -1,6 +1,6 @@
 # Simulado 03 — LPI Linux Essentials (010-160)
 
-Simulado no formato do exame, versão 1.6. Escrito em 18/10/2026; aplicado no **domingo 01/11**, primeiro dia da operação prática, no mesmo dia das Práticas 4 e 5. O curso (aulas 41 a 72) e o 4.1 ainda não terão sido vistos. É o primeiro com os cinco tópicos estudados: a **linha de base** da operação.
+Simulado no formato do exame, versão 1.6. Escrito em 18/10/2026; aplicado na **terça 03/11**, primeiro dia da operação prática, depois das Práticas 3, 4 e 5. Faça-o **antes** das aulas 41 a 60 do mesmo dia. O curso a partir da aula 41 e o 4.1 ainda não terão sido vistos. É o primeiro com os cinco tópicos estudados: a **linha de base** da operação.
 
 Mesmo nível do simulado 02: enunciados com cenário, pegadinhas de comando, três questões de escolher duas respostas e cinco de preencher a lacuna. As questões são escritas sobre os objetivos oficiais; não são questões reais do exame.
 
@@ -439,7 +439,7 @@ Preencha depois de conferir o gabarito.
 
 | Campo | Valor |
 | --- | --- |
-| Data | 01/11/2026 |
+| Data | 03/11/2026 |
 | Tempo gasto | |
 | Minutos usados na segunda passada | |
 | Acertos | de 40 |
