@@ -64,32 +64,31 @@ Calendário refeito em 26/10 para a prova de 30/11 (`PLANO.md`, seção 7, e `la
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | Seg 05/10 | `simulado-01` | Diagnóstico | **28** | **70%** | 5 | **23** | 20 min 31 s | **Concluído** |
 | 2 | Sex 23/10 | `simulado-02` (escrito em 13/10) | 24 ou mais | **22** | **55%** | 4 | **17** | Não informado | **Concluído, abaixo da meta** |
-| 3 | **Dom 01/11** | `simulado-03` (escrito em 18/10) | Linha de base | | | | | | A fazer |
-| 4 | Ter 03/11 | Exame final de prática do NDG | 24 ou mais | | | | | | A fazer |
-| 5 | Qui 05/11 | `simulado-05` | 24 ou mais | | | | | | A fazer |
-| 6 | Sáb 07/11 | `simulado-06` | 24 ou mais | | | | | | A fazer |
-| 7 | Ter 10/11 | `simulado-07` | 28 ou mais | | | | | | A fazer |
-| 8 | Qui 12/11 | `simulado-08` | 28 ou mais | | | | | | A fazer |
-| 9 | Sáb 14/11 | `simulado-09` | 28 ou mais | | | | | | A fazer |
-| 10 | Ter 17/11 | `simulado-10` | 30 ou mais | | | | | | A fazer |
-| 11 | **Qui 19/11** | `simulado-11` | 30 ou mais · **decisão da data** | | | | | | A fazer |
-| 12 | Sáb 21/11 | `simulado-12` | 30 ou mais | | | | | | A fazer |
-| 13 | **Ter 24/11** | `simulado-13` | **30 ou mais** (final) | | | | | | A fazer |
+| 3 | **Ter 03/11** | `simulado-03` (escrito em 18/10) | Linha de base | | | | | | A fazer |
+| 4 | Qui 05/11 | Exame final de prática do NDG | 24 ou mais | | | | | | A fazer |
+| 5 | Sáb 07/11 | `simulado-05` | 24 ou mais | | | | | | A fazer |
+| 6 | Ter 10/11 | `simulado-06` | 28 ou mais | | | | | | A fazer |
+| 7 | Qui 12/11 | `simulado-07` | 28 ou mais | | | | | | A fazer |
+| 8 | Sáb 14/11 | `simulado-08` | 28 ou mais | | | | | | A fazer |
+| 9 | Ter 17/11 | `simulado-09` | 30 ou mais | | | | | | A fazer |
+| 10 | Qui 19/11 | `simulado-10` | 30 ou mais | | | | | | A fazer |
+| 11 | **Sáb 21/11** | `simulado-11` | 30 ou mais · **decisão da data** | | | | | | A fazer |
+| 12 | **Ter 24/11** | `simulado-12` | **30 ou mais** (final) | | | | | | A fazer |
 
-**Mini-simulados (20 questões):** R4 em 02/11, R3 em 04/11, R2 em 06/11, R1 em 09/11 e M1 a M6 de 11 a 23/11 (`labs/operacao-pratica.md`, seção 3).
+**Mini-simulados (20 questões):** R4 em 04/11, R3 em 06/11, R2 em 09/11, R1 em 11/11 e M1 a M6 de 13 a 25/11 (`labs/operacao-pratica.md`, seção 3). Calendário refeito em 02/11.
 
 ### 2.2 Acertos por tópico, simulado a simulado
 
 Formato: acertos de questões, e entre parênteses os chutes acertados. Copie a coluna do simulado novo conforme ele for feito.
 
-| Tópico | Peso | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11 | #12 | #13 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1. Comunidade e open source | 7 | 5/7 (0) | 5/7 (0) | | | | | | | | | | | |
-| 2. Encontrando seu caminho | 9 | 5/9 (0) | 4/9 (0) | | | | | | | | | | | |
-| 3. Poder da linha de comando | 9 | 9/9 (1) | 6/9 (1) | | | | | | | | | | | |
-| 4. Sistema operacional | 8 | 6/8 (1) | 4/8 (3) | | | | | | | | | | | |
-| 5. Segurança e permissões | 7 | 3/7 (3) | 3/7 (0) | | | | | | | | | | | |
-| **Total** | **40** | **28/40 (5)** | **22/40 (4)** | | | | | | | | | | | |
+| Tópico | Peso | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11 | #12 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1. Comunidade e open source | 7 | 5/7 (0) | 5/7 (0) | | | | | | | | | | |
+| 2. Encontrando seu caminho | 9 | 5/9 (0) | 4/9 (0) | | | | | | | | | | |
+| 3. Poder da linha de comando | 9 | 9/9 (1) | 6/9 (1) | | | | | | | | | | |
+| 4. Sistema operacional | 8 | 6/8 (1) | 4/8 (3) | | | | | | | | | | |
+| 5. Segurança e permissões | 7 | 3/7 (3) | 3/7 (0) | | | | | | | | | | |
+| **Total** | **40** | **28/40 (5)** | **22/40 (4)** | | | | | | | | | | |
 
 ### 2.3 Autoavaliações por tópico
 
@@ -113,13 +112,13 @@ Os checkpoints saíram do plano em 26/10, junto com o modelo de dívidas. Fica o
 | Pré-checkpoint | Qua 07/10 | Cumprido; compra do voucher adiada em 08/10 |
 | Checkpoint A | Dom 18/10 | **Vermelho**: nenhum dos quatro critérios cumprido; o simulado 02, feito em 23/10, ficou em 22 |
 | Mudança de estratégia | Seg 26/10 | Prova movida para **30/11**; checkpoints B, Gate e Final retirados |
-| **Decisão final** | **Qui 19/11** | Média de acertos firmes dos simulados 09, 10 e 11: **26 ou mais**, vai em 30/11; **abaixo de 26**, remarcar |
+| **Decisão final** | **Sáb 21/11** | Média de acertos firmes dos simulados 09, 10 e 11: **26 ou mais**, vai em 30/11; **abaixo de 26**, remarcar |
 
 ### 2.5 Dicas recorrentes de prova, por tema
 
 Temas que aparecem com frequência nos relatos de candidatos (ver `praticas_simulados.md`). Formato: acertos e total de questões do tema. O simulado 01 não tinha esta marcação por tema; a tabela começa no simulado 02.
 
-| Tema | Mínimo por simulado | #2 (23/10) | #3 (01/11) | R2 (06/11) | R1 (09/11) | #5 | #7 | #9 | #11 | #13 |
+| Tema | Mínimo por simulado | #2 (23/10) | #3 (03/11) | R2 (09/11) | R1 (11/11) | #5 | #7 | #9 | #11 | #12 |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Permissões | 4 | **2/5** | /4 | /4 | /5 | | | | | |
 | `tar` e compressão | 2 | 2/2 | /2 | /3 | /4 | | | | | |
@@ -275,9 +274,9 @@ Decisão ou checkpoint associado: .
 
 **Leitura.** A queda em relação ao simulado 01 (28, com 23 firmes) vem em parte do formato mais difícil, mas o principal está nos Tópicos 2 (4 de 9) e 5 (3 de 7), cujos erros são de **conteúdo já estudado e já corrigido**. Das nove questões que retestavam correções antigas, **quatro voltaram a errar**: Q9 (Correção 54), Q19 (29), Q22 (49) e Q34 (Q35 do simulado 01); a Q24 repete o erro da autoavaliação da Semana 5. O card no Notion, sozinho, não está fixando o mecanismo. Por isso os erros ganharam reforços próprios, R3 e R4, com as mesmas ideias em outro ângulo, e a regra de que **questão pesquisada conta como errada**. Questões erradas e texto dos cards em `simulado-02.md`.
 
-### Mini-simulados R4, R3, R2 e R1 — 02 a 09/11/2026
+### Mini-simulados R4, R3, R2 e R1 — 04 a 11/11/2026
 
-| Campo | R4 (02/11) | R3 (04/11) | R2 (06/11) | R1 (09/11) |
+| Campo | R4 (04/11) | R3 (06/11) | R2 (09/11) | R1 (11/11) |
 |---|---|---|---|---|
 | Fonte | `reforco-r3-r4.md` | `reforco-r3-r4.md` | `praticas_simulados.md`, seção 8 | `praticas_simulados.md`, seção 6 |
 | Acertos | de 20 (meta: 16) | de 20 (meta: 16) | de 20 (meta: 15) | de 20 (meta: 15) |
@@ -471,3 +470,4 @@ São erros de conteúdo já estudado. Desde 26/10 eles têm treino próprio na V
 | 13/10/2026 | Nova estratégia: prova em 23/11; série de simulados redistribuída (02 a 11); R1 em 23/10 e R2 em 27/10; checkpoints A (18/10), B (25/10), Gate (08/11) e Final (19/11); autoavaliação da Semana 6 devolvida ao plano; retaguarda reduzida aos erros de conteúdo; simulado 02 escrito |
 | 23/10/2026 | Simulado 02 registrado (22 de 40, 17 firmes); reforços R3 e R4 criados sobre os erros dele; série refeita: #3 em 30/10, #4 em 01/11, #5 a #8 de 03 a 08/11; R2 e R1 em 31/10; Checkpoint B em 01/11; questão pesquisada passa a contar como errada |
 | 26/10/2026 | Nova estratégia: prova em 30/11; dívidas, autoavaliações restantes e checkpoints retirados; operação prática diária de 31/10 a 26/11 com 11 simulados (03 a 13) e 10 mini-simulados (R1 a R4, M1 a M6); medida principal em acertos firmes; card no Notion só para reincidência |
+| 02/11/2026 | Calendário refeito: simulado 03 em 03/11; simulados 04 a 12 de 05 a 24/11; simulado 13 retirado; mini-simulados de 04 a 25/11; decisão da data em 21/11 |
