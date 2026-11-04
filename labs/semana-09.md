@@ -3,7 +3,7 @@
 Período: 26/10 a 01/11/2026 (segunda a domingo)
 Objetivos da prova: 4.1, 4.2, 4.3 e 4.4 — Tópico 4, peso 8 de 40
 **Data da prova: segunda-feira, 30/11/2026**
-Situação: **fechada em 02/11**, com as Práticas 3, 4 e 5 feitas
+Situação: **fechada em 03/11**, com as Práticas 3, 4 e 5 feitas e anotadas
 Marco da semana: **Tópico 4 praticado**. O simulado 03 passou para a terça 03/11. As aulas 41 a 72 e o bloco curto (4.1 e here document) passaram para a Semana 10, junto com a operação prática (`labs/operacao-pratica.md`)
 
 **Semana refeita em 26/10, com a nova estratégia, e de novo em 29/10; fechada em 02/11.** As três práticas do Tópico 4 foram feitas: a Prática 3 entre 27 e 30/10, e as Práticas 4 e 5 até 02/11. O simulado 03, as aulas 41 a 72, o bloco curto e os Exercícios da LPI 4.2 e 4.3 estão nos primeiros dias da operação prática (`labs/operacao-pratica.md`).
@@ -36,7 +36,7 @@ O 4.3, de peso 3, é o maior do tópico e o que mais se cobra em questões de "o
 | Seg 26 a qui 29 | Prática 3, bloco 1 (anotado em 27/10) | **feito** |
 | Sex 30 | Prática 3, blocos 2 a 4; os Exercícios da LPI 4.2 foram para a sexta 06/11 | **feito** |
 | Sáb 31 | Descanso | — |
-| Dom 01 e seg 02/11 | **Práticas 4 e 5** | **feitas**; anotações da Prática 5 a recuperar |
+| Dom 01 e seg 02/11 | **Práticas 4 e 5** | **feitas**; anotações da Prática 5 registradas em 03/11 |
 | Ter 03/11 | **Simulado 03**, aulas 41 a 60 e Exercícios da LPI 4.3: já na operação prática (`labs/operacao-pratica.md`) | — |
 
 Com as três práticas feitas, **o Tópico 4 está praticado**. O que resta de conteúdo (aulas 41 a 72, 4.1 e here document, Exercícios da LPI 4.2 e 4.3) está nos primeiros dias da operação prática.
@@ -559,9 +559,98 @@ Os blocos 2 e 4 estão muito bons: a explicação do `available` e a do *load av
 
 A lista de 13 exercícios ficou registrada sem respostas. **Vão para a terça 03/11**, depois do simulado 03 e das aulas: só os Guiados (1 a 6) e o complemento (10 a 13), sem consultar. Os Exploratórios (7 a 9) são opcionais. Anote só as erradas.
 
-### Prática 5 — até 02/11 — CONCLUÍDA (anotações a recuperar)
+### Prática 5 — até 02/11 — CONCLUÍDA (anotações registradas em 03/11)
 
-Feita, mas as anotações se perderam. Quando recuperá-las, eu reviso e registro aqui. Se não forem recuperadas, não é pendência: o 4.4 (rede) volta no R2 (09/11), no treino V7 e nos simulados.
+#### Bloco 1 — Interfaces e endereços
+
+| Comando | O que faz |
+|---|---|
+| `ip addr show` | Mostra as interfaces e os endereços IPv4 e IPv6 |
+| `ip -4 addr show enp0s3` | Só o IPv4 da interface |
+| `ip -6 addr show enp0s3` | Só o IPv6 da interface |
+| `ifconfig` | O comando antigo, do pacote `net-tools` |
+
+| Item | Leitura |
+|---|---|
+| `lo` | Interface de *loopback*: a máquina falando com ela mesma. Endereços `127.0.0.1` (IPv4) e **`::1`** (IPv6) |
+| `enp0s3` | A placa de rede Ethernet da VM, ligada à rede virtual do VirtualBox |
+| `inet` e `inet6` | Endereço IPv4 e endereço IPv6 |
+| `10.0.2.15/24` | O endereço da VM; o `/24` diz que os primeiros 24 bits são a rede, ou seja, a máscara `255.255.255.0`. A rede é `10.0.2.0/24`: o `.0` identifica a rede e o `.255` é o *broadcast* |
+| `fe80::...` | IPv6 **link-local**: vale só no enlace e não passa por roteadores |
+
+O `ip` é o comando atual; o `ifconfig`, o antigo. A prova cobra os dois nomes.
+
+#### Bloco 2 — Roteamento
+
+| Comando | O que mostra |
+|---|---|
+| `ip route show` | As rotas e a **rota padrão** |
+| `route -n` | A tabela de rotas no formato antigo, com números em vez de nomes |
+| `ping -c 3 10.0.2.2` | Se o gateway responde |
+| `ping -c 3 1.1.1.1` | Se um endereço externo responde, sem depender de DNS |
+
+| Pergunta | Resposta |
+|---|---|
+| `default via 10.0.2.2` | A **rota padrão**: o que não casa com nenhuma rota mais específica vai para o gateway `10.0.2.2` |
+| O gateway é o roteador de casa? | Não: é o gateway virtual do NAT do VirtualBox, que roda no computador hospedeiro. No NAT padrão, a VM recebe `10.0.2.15` e o gateway é `10.0.2.2` |
+| `10.0.2.0/24 dev enp0s3` | A rede ligada diretamente à interface: para esses destinos, a VM não usa a rota padrão |
+| `-c 3` | O `ping` para depois de três pacotes; sem ele, só para com `Ctrl+C` |
+| O que o `ping` testa | Envia pedidos ICMP. A falta de resposta pode ser filtro de firewall: sozinha, não prova que a conexão inteira caiu |
+
+#### Bloco 3 — DNS
+
+| Arquivo ou comando | Função |
+|---|---|
+| `/etc/resolv.conf` | Quais servidores DNS consultar. No Ubuntu aparece `127.0.0.53`, o resolvedor local do `systemd-resolved`, que repassa as consultas aos servidores reais (`resolvectl status` mostra quais são) |
+| `/etc/hosts` | Tabela local de nomes e endereços, consultada **antes** do DNS na configuração comum. Foi por isso que o `labteste` funcionou sem servidor nenhum |
+| `host lpi.org` | Consulta DNS com resposta curta |
+| `dig lpi.org +short` | Consulta DNS; sem o `+short`, a resposta é detalhada |
+| `getent hosts labteste` | Resolve o nome **do jeito que os programas resolvem**, passando pelo `/etc/hosts`; o `host` e o `dig` consultam só o DNS |
+
+A ordem entre `/etc/hosts` e DNS vem do `/etc/nsswitch.conf` (linha `hosts:`). Ótimo ponto, além do que a prova cobra.
+
+#### Bloco 4 — Sockets e portas
+
+Um **socket** é um ponto de comunicação de um processo, com endereço e porta.
+
+| Opção do `ss` | Significado |
+|---|---|
+| `-t` | TCP |
+| `-u` | UDP |
+| `-l` | Só os que estão **escutando** |
+| `-n` | Números em vez de nomes |
+| `-p` | O processo dono do socket (completo só com `sudo`) |
+| `-s` | Resumo estatístico |
+
+| Pergunta | Resposta |
+|---|---|
+| Porta TCP em `LISTEN` | Um socket esperando conexões novas naquela porta |
+| Porta 22 | SSH |
+| `127.0.0.1:22` contra `0.0.0.0:22` | O primeiro só aceita conexão pelo *loopback*; o segundo, por qualquer endereço IPv4 da máquina |
+| Porta escutando está aberta para a internet? | Não necessariamente: no NAT do VirtualBox, a entrada depende do redirecionamento de portas (o seu 2222 → 22) e do firewall |
+
+**Detalhe da sua VM:** o SSH é **ativado por socket** (`ssh.socket`, Semana 0). Por isso, no `sudo ss -tlnp`, quem aparece escutando na porta 22 é o **`systemd`**, e não o `sshd`. O `sshd` só aparece quando há uma conexão aberta.
+
+#### Teoria
+
+| Tema | O que fixar |
+|---|---|
+| IPv4 e IPv6 | 32 bits em decimal contra 128 bits em hexadecimal |
+| `::` | Abrevia grupos consecutivos de zeros no IPv6, **uma vez** por endereço |
+| IPv4 privado | `10.0.0.0/8`, `172.16.0.0/12` (de `172.16` a `172.31`) e `192.168.0.0/16`. Nem todo `172` é privado |
+| `/24` | Máscara `255.255.255.0` |
+| TCP e UDP | TCP: com conexão, ordem e confirmação. UDP: sem conexão, sem garantia de entrega |
+| DNS | Porta **53**, UDP e TCP |
+| DHCP | Entrega IP, máscara, gateway e DNS automaticamente; foi ele que deu o `10.0.2.15` à VM |
+| Portas comuns | 22 SSH, 25 SMTP, 53 DNS, 80 HTTP, 443 HTTPS |
+
+**Ajustes:** só de grafia, nenhum de conteúdo. `/ect/hosts` → **`/etc/hosts`**; `gatent` → **`getent`**; "recene" → **recebe**; "aparenta" → **apresenta**; "intefaces" → **interfaces**; no bloco 2, "gateway 10.0.2." → **10.0.2.2**. Faltou o `::1` como endereço IPv6 do `lo`.
+
+É a prática mais bem anotada da semana: as ressalvas sobre o `ping` sem resposta, a ordem do `nsswitch.conf` e o `0.0.0.0` contra o `127.0.0.1` são exatamente o tipo de mecanismo que derruba questão de prova.
+
+#### Exercícios da LPI 4.4
+
+Os enunciados resumidos ficaram registrados, sem respostas. Entram no calendário dos Exercícios da LPI (`labs/simulados-práticos.lpi/exercicios-lpi.md`), na segunda 09/11, junto com o R2.
 
 ### Simulado 03
 
@@ -612,9 +701,8 @@ O caderno diz que, no `sleep 400`, "o terminal fica aguardando comando e pede pa
 - [x] Prática 3, blocos 2 a 4 (sexta 30/10)
 - [x] Prática 4 (até 02/11)
 - [x] Prática 5 (até 02/11)
-- [ ] Anotações da Prática 5 repassadas aqui
-- [ ] Exercícios da LPI 4.3 (terça 03/11, na operação prática)
-- [ ] Exercícios da LPI 4.2 (sexta 06/11, na operação prática)
+- [x] Anotações da Prática 5 repassadas aqui (03/11)
+- Exercícios da LPI de todas as lições: na operação prática (`labs/simulados-práticos.lpi/exercicios-lpi.md`)
 - [ ] Commits ao fim de cada sessão
 
 ---
