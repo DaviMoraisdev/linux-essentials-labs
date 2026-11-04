@@ -78,5 +78,5 @@ Dicas de fonte não oficial (permissões, `tar`, redirecionamento incluindo `<<`
 |---|---|
 | Semanas 7 e 8 | `simulado-02` (23/10) e os Exercícios da LPI das lições 5.1 a 5.4 |
 | Semana 9 (26/10 a 01/11) | Exercícios da LPI das lições 4.2 a 4.4 e quizzes do NDG do Tópico 4, dentro das Práticas 3 a 5; os Exercícios da LPI 4.2 e 4.3 e a lição 4.1 ficam para 03 e 06/11 |
-| Operação prática (03/11 a 26/11) | `simulado-03` (03/11), exame final de prática do NDG (05/11), simulados 05 a 12 deste repositório, mini-simulados R1 a R4 e M1 a M6, banco de lacunas |
+| Operação prática (03/11 a 26/11) | Exercícios da LPI das 24 lições, um bloco por dia (`exercicios-lpi.md`) · `simulado-03` (03/11), exame final de prática do NDG (05/11), simulados 05 a 12 deste repositório, mini-simulados R1 a R4 e M1 a M6, banco de lacunas |
 | Antes da prova | Revisão leve da lista de reincidências e das colas em 25 e 26/11; descanso de 27 a 29/11 |
