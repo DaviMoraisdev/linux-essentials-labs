@@ -30,14 +30,14 @@
 
 ### O que falta estudar
 
-O Tópico 4 está praticado: Práticas 3, 4 e 5 feitas até 02/11. Falta o que está nos primeiros dias da operação prática:
+O Tópico 4 está praticado: Práticas 3, 4 e 5 feitas até 02/11 e anotadas até 03/11. Falta o que está nos primeiros dias da operação prática:
 
 | Item | Peso | Quando |
 |---|---|---|
 | **Curso, aulas 41 a 60** | — | Ter 03/11, depois do simulado 03 |
 | **Curso, aulas 61 a 72** (curso fechado) | — | Qua 04/11, antes do R4 |
-| Exercícios da LPI 4.3 | — | Ter 03/11, no lugar do treino na VM |
-| **4.1 Sistemas operacionais**, here document e Exercícios da LPI 4.2 | 1 | Sex 06/11, antes do R3 |
+| **4.1 Sistemas operacionais** e here document | 1 | Sex 06/11, antes do R3 |
+| **Exercícios da LPI de todas as 24 lições** (cerca de 205) | — | Um bloco por dia, de 03 a 25/11 (`labs/simulados-práticos.lpi/exercicios-lpi.md`) |
 
 ### Voucher e agendamento
 
@@ -229,7 +229,7 @@ Sites de dumps — ITExams, Marks4Sure, Pass4Success e semelhantes — estão fo
 |---|---|
 | Tópico 4 | Práticas 3, 4 e 5, **feitas até 02/11**: 45 min de teclado, 10 de registro, 5 de commit, **prevendo a saída antes de executar** |
 | Aulas do curso | 41 a 60 na terça 03/11 e 61 a 72 na quarta 04/11. Anotações no caderno, repassadas aqui como sempre |
-| 4.1, here document e Exercícios da LPI 4.2 | Sex 06/11, antes do R3 |
+| 4.1 e here document | Sex 06/11, antes do R3 |
 | Velocidade do curso | **2x** onde o vídeo repete o que já foi praticado, o que agora vale para quase todo o restante, inclusive o Tópico 4 |
 | O que não fechar | Aula que não couber vai para o domingo 08/11. Nenhum outro item vira pendência |
 
@@ -239,8 +239,9 @@ Detalhe completo em `labs/operacao-pratica.md`. O resumo:
 
 | Elemento | Como |
 |---|---|
-| **Dia A** | Lacunas (5 min) · simulado completo (60 min) · correção no mesmo dia (20 min) |
-| **Dia B** | Lacunas (5 min) · mini-simulado de 20 questões (25 min) · correção (10 min) · treino na VM sobre o que errou (30 min) |
+| **Dia A** | Lacunas (5 min) · simulado completo (60 min) · correção no mesmo dia (20 min) · Exercícios da LPI (25 min) · cerca de 1h50 |
+| **Dia B** | Lacunas (5 min) · mini-simulado de 20 questões (25 min) · correção (10 min) · treino na VM sobre o que errou (30 min) · Exercícios da LPI (25 min) · cerca de 1h35 |
+| **Exercícios da LPI** | As 24 lições do material oficial, um bloco por dia, respondidos sem consulta e conferidos no PDF (`labs/simulados-práticos.lpi/exercicios-lpi.md`) |
 | **Descanso** | Domingos 08, 15 e 22/11, e de 27 a 29/11 |
 | **Correção** | No mesmo dia, com tempo-limite. Erro de comando é **executado na VM**, não só lido |
 | **Notion** | Card só para **reincidência**, um erro que já aconteceu antes |
@@ -288,6 +289,7 @@ Semanas de **segunda a domingo**. A prova é na **segunda-feira 30/11**. O hist�
 | Dias de operação prática | 21, de 03 a 26/11, com os domingos de descanso |
 | Simulados completos | 10 (03 a 12) |
 | Mini-simulados | 10 (R1 a R4 e M1 a M6) |
+| Exercícios da LPI | 24 lições, cerca de 205 exercícios, de 03 a 25/11 |
 | Lacunas | 21 séries de cinco (105 questões) |
 
 ### Datas do calendário que afetam o plano
