@@ -27,8 +27,10 @@ Os dias se alternam entre **A** (simulado completo) e **B** (mini-simulado e tre
 
 | Tipo | Sessão | Tempo |
 |---|---|---|
-| **A — Simulado** | Lacunas (5 min) · **simulado completo**, 40 questões em 60 min · correção (20 min) | cerca de 1h25 |
-| **B — Mini e VM** | Lacunas (5 min) · **mini-simulado**, 20 questões em 25 min · correção (10 min) · **treino na VM** sobre o que errou (30 min) | cerca de 1h10 |
+| **A — Simulado** | Lacunas (5 min) · **simulado completo**, 40 questões em 60 min · correção (20 min) · **Exercícios da LPI** (25 min) | cerca de 1h50 |
+| **B — Mini e VM** | Lacunas (5 min) · **mini-simulado**, 20 questões em 25 min · correção (10 min) · **treino na VM** sobre o que errou (30 min) · **Exercícios da LPI** (25 min) | cerca de 1h35 |
+
+**Todo dia tem simulado:** completo nos dias A, mini nos dias B. **Todo dia tem um bloco dos Exercícios da LPI**, em `labs/simulados-práticos.lpi/exercicios-lpi.md`: as 24 lições do material oficial, cerca de 205 exercícios, distribuídas de 03 a 25/11.
 
 **Banco de lacunas:** `labs/simulados-práticos.lpi/lacunas.md`. São 24 séries de cinco; use uma por dia, na ordem.
 
@@ -38,40 +40,40 @@ Os dias se alternam entre **A** (simulado completo) e **B** (mini-simulado e tre
 
 **Refeito em 02/11.** Com o simulado 03 na terça 03/11, a sequência inteira andou: os mini-simulados ficaram nas segundas, quartas e sextas, os simulados nas terças, quintas e sábados, e o simulado 13 saiu do plano para manter os dois dias leves antes da prova.
 
-| Dia | Tipo | Sessão | Treino na VM | Lacunas |
-|---|---|---|---|---|
-| **Ter 03/11** | A | **Simulado 03** — a linha de base da operação · **aulas 41 a 60** · **Exercícios da LPI 4.3** (Guiados) | Os exercícios fazem o papel do treino | Série 01 |
-| Qua 04/11 | B | **R4** — contas e permissões (`reforco-r3-r4.md`) · **aulas 61 a 72 (curso fechado)** | V5 e V6 | Série 02 |
-| Qui 05/11 | A | **Simulado 04** — exame final de prática do NDG | — | Série 03 |
-| Sex 06/11 | B | **R3** — navegação, ajuda e redirecionamento (`reforco-r3-r4.md`) · **bloco curto: 4.1 e here document** e **Exercícios da LPI 4.2** (`labs/semana-09.md`) | V1 e V3 | Série 04 |
-| Sáb 07/11 | A | **Simulado 05** | — | Série 05 |
-| Dom 08/11 | — | Descanso | — | — |
-| Seg 09/11 | B | **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) | V7 | Série 06 |
-| Ter 10/11 | A | **Simulado 06** | — | Série 07 |
-| Qua 11/11 | B | **R1** — as quatro frentes e seis lacunas (`praticas_simulados.md`, seção 6) | V8 e V4 | Série 08 |
-| Qui 12/11 | A | **Simulado 07** | — | Série 09 |
-| Sex 13/11 | B | **M1** — temas mais errados nos simulados 05 a 07 | Conforme o M1 | Série 10 |
-| Sáb 14/11 | A | **Simulado 08** | — | Série 11 |
-| Dom 15/11 | — | Descanso | — | — |
-| Seg 16/11 | B | **M2** | Conforme o M2 | Série 12 |
-| Ter 17/11 | A | **Simulado 09** | — | Série 13 |
-| Qua 18/11 | B | **M3** | Conforme o M3 | Série 14 |
-| Qui 19/11 | A | **Simulado 10** | — | Série 15 |
-| Sex 20/11 (feriado) | B | **M4** | Conforme o M4 | Série 16 |
-| Sáb 21/11 | A | **Simulado 11** · **decisão final da data** (seção 7) | — | Série 17 |
-| Dom 22/11 | — | Descanso | — | — |
-| Seg 23/11 | B | **M5** | Conforme o M5 | Série 18 |
-| Ter 24/11 | A | **Simulado 12** — o simulado final | — | Série 19 |
-| Qua 25/11 | B | **M6** — só as reincidências da seção 6 | Os blocos das reincidências | Série 20 |
-| Qui 26/11 | Leve | Releitura das colas e lista de reincidências na VM (40 min), sem questão nova | Os blocos das reincidências | Série 21 |
-| Sex 27 a dom 29/11 | — | **Descanso.** Não estudar na véspera | — | — |
-| **Seg 30/11** | — | **PROVA** | — | — |
+| Dia | Tipo | Sessão | Treino na VM | Exercícios da LPI | Lacunas |
+|---|---|---|---|---|---|
+| **Ter 03/11** | A | **Simulado 03** — a linha de base da operação · **aulas 41 a 60** | — | 4.3 (lições 1 e 2) | Série 01 |
+| Qua 04/11 | B | **R4** — contas e permissões (`reforco-r3-r4.md`) · **aulas 61 a 72 (curso fechado)** | V5 e V6 | 5.1 | Série 02 |
+| Qui 05/11 | A | **Simulado 04** — exame final de prática do NDG | — | 5.2 | Série 03 |
+| Sex 06/11 | B | **R3** — navegação, ajuda e redirecionamento (`reforco-r3-r4.md`) · **bloco curto: 4.1 e here document** (`labs/semana-09.md`) | V1 e V3 | 4.1 e 4.2 | Série 04 |
+| Sáb 07/11 | A | **Simulado 05** | — | 5.3 | Série 05 |
+| Dom 08/11 | — | Descanso | — | — | — |
+| Seg 09/11 | B | **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) | V7 | 4.4 | Série 06 |
+| Ter 10/11 | A | **Simulado 06** | — | 5.4 | Série 07 |
+| Qua 11/11 | B | **R1** — as quatro frentes e seis lacunas (`praticas_simulados.md`, seção 6) | V8 e V4 | 3.1 | Série 08 |
+| Qui 12/11 | A | **Simulado 07** | — | 2.1, lição 1 | Série 09 |
+| Sex 13/11 | B | **M1** — temas mais errados nos simulados 05 a 07 | Conforme o M1 | 2.1, lição 2 | Série 10 |
+| Sáb 14/11 | A | **Simulado 08** | — | 2.2 | Série 11 |
+| Dom 15/11 | — | Descanso | — | — | — |
+| Seg 16/11 | B | **M2** | Conforme o M2 | 2.3 (lições 1 e 2) | Série 12 |
+| Ter 17/11 | A | **Simulado 09** | — | 3.3 (lições 1 e 2) | Série 13 |
+| Qua 18/11 | B | **M3** | Conforme o M3 | 2.4 | Série 14 |
+| Qui 19/11 | A | **Simulado 10** | — | 3.2, lição 1 | Série 15 |
+| Sex 20/11 (feriado) | B | **M4** | Conforme o M4 | 3.2, lição 2 | Série 16 |
+| Sáb 21/11 | A | **Simulado 11** · **decisão final da data** (seção 7) | — | 1.1 | Série 17 |
+| Dom 22/11 | — | Descanso | — | — | — |
+| Seg 23/11 | B | **M5** | Conforme o M5 | 1.2 | Série 18 |
+| Ter 24/11 | A | **Simulado 12** — o simulado final | — | 1.4 | Série 19 |
+| Qua 25/11 | B | **M6** — só as reincidências da seção 6 | Os blocos das reincidências | 1.3 | Série 20 |
+| Qui 26/11 | Leve | Releitura das colas e lista de reincidências na VM (40 min), sem questão nova | Os blocos das reincidências | 4.3, se não saiu em 03/11 | Série 21 |
+| Sex 27 a dom 29/11 | — | **Descanso.** Não estudar na véspera | — | — | — |
+| **Seg 30/11** | — | **PROVA** | — | — | — |
 
-**Terça 03/11, a ordem recomendada:** o **simulado 03 primeiro**, com a cabeça descansada e antes das aulas, para que ele meça a retenção real; depois as aulas 41 a 60; por último os Exercícios da LPI 4.3, só os Guiados (questões 1 a 6 e 10 a 13 da lista da Prática 4). É o dia mais longo da operação, com cerca de 4h.
+**Terça 03/11, a ordem recomendada:** o **simulado 03 primeiro**, com a cabeça descansada e antes das aulas, para que ele meça a retenção real; depois as aulas 41 a 60; por último os Exercícios da LPI 4.3. É o dia mais longo da operação, com cerca de 4h.
 
 **Primeira semana, com as aulas:** é a única exceção à regra 1, porque o curso é conteúdo de prova: a aula que não couber na terça ou na quarta vai para o domingo 08/11, que só deixa de ser descanso nesse caso.
 
-**Contas:** 10 simulados completos (03 a 12), 10 mini-simulados (R1 a R4 e M1 a M6), 21 séries de lacunas e 3 domingos de descanso, além dos três dias antes da prova.
+**Contas:** 10 simulados completos (03 a 12), 10 mini-simulados (R1 a R4 e M1 a M6), 24 lições dos Exercícios da LPI, 21 séries de lacunas e 3 domingos de descanso, além dos três dias antes da prova.
 
 **Se um dia cair**, ele não é reposto. O dia seguinte segue o calendário, e a regra 1 vale aqui também.
 
@@ -274,31 +276,32 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 | Simulados 05 a 12 | Escritos por mim, prontos **até três dias antes** de cada um. O 05 fica pronto até quarta, 04/11 |
 | M1 a M6 | Escritos por mim a partir dos erros dos simulados anteriores, prontos na véspera |
 | Lacunas | Prontas (`lacunas.md`, 24 séries) |
+| Exercícios da LPI | No PDF do material oficial; calendário e registro em `exercicios-lpi.md` |
 
 ---
 
 ## 9. Registro diário
 
-| Data | Tipo | Sessão | Acertos | Firmes | Lacunas | Reincidências novas |
-|---|---|---|---|---|---|---|
-| 03/11 | A | Simulado 03 · aulas 41 a 60 | de 40 | | de 5 | |
-| 04/11 | B | R4 · aulas 61 a 72 | de 20 | | de 5 | |
-| 05/11 | A | Simulado 04 (NDG) | de 40 | | de 5 | |
-| 06/11 | B | R3 · bloco curto · Exercícios da LPI 4.2 | de 20 | | de 5 | |
-| 07/11 | A | Simulado 05 | de 40 | | de 5 | |
-| 09/11 | B | R2 | de 20 | | de 5 | |
-| 10/11 | A | Simulado 06 | de 40 | | de 5 | |
-| 11/11 | B | R1 | de 20 | | de 5 | |
-| 12/11 | A | Simulado 07 | de 40 | | de 5 | |
-| 13/11 | B | M1 | de 20 | | de 5 | |
-| 14/11 | A | Simulado 08 | de 40 | | de 5 | |
-| 16/11 | B | M2 | de 20 | | de 5 | |
-| 17/11 | A | Simulado 09 | de 40 | | de 5 | |
-| 18/11 | B | M3 | de 20 | | de 5 | |
-| 19/11 | A | Simulado 10 | de 40 | | de 5 | |
-| 20/11 | B | M4 | de 20 | | de 5 | |
-| 21/11 | A | Simulado 11 · decisão | de 40 | | de 5 | |
-| 23/11 | B | M5 | de 20 | | de 5 | |
-| 24/11 | A | Simulado 12 (final) | de 40 | | de 5 | |
-| 25/11 | B | M6 | de 20 | | de 5 | |
-| 26/11 | Leve | Colas e reincidências na VM | — | — | de 5 | — |
+| Data | Tipo | Sessão | Acertos | Firmes | Lacunas | Exercícios da LPI | Reincidências novas |
+|---|---|---|---|---|---|---|---|
+| 03/11 | A | Simulado 03 · aulas 41 a 60 | de 40 |  | de 5 | 4.3 (lições 1 e 2) · de |  |
+| 04/11 | B | R4 · aulas 61 a 72 | de 20 |  | de 5 | 5.1 · de |  |
+| 05/11 | A | Simulado 04 (NDG) | de 40 |  | de 5 | 5.2 · de |  |
+| 06/11 | B | R3 · bloco curto · Exercícios da LPI 4.2 | de 20 |  | de 5 | 4.1 e 4.2 · de |  |
+| 07/11 | A | Simulado 05 | de 40 |  | de 5 | 5.3 · de |  |
+| 09/11 | B | R2 | de 20 |  | de 5 | 4.4 · de |  |
+| 10/11 | A | Simulado 06 | de 40 |  | de 5 | 5.4 · de |  |
+| 11/11 | B | R1 | de 20 |  | de 5 | 3.1 · de |  |
+| 12/11 | A | Simulado 07 | de 40 |  | de 5 | 2.1, lição 1 · de |  |
+| 13/11 | B | M1 | de 20 |  | de 5 | 2.1, lição 2 · de |  |
+| 14/11 | A | Simulado 08 | de 40 |  | de 5 | 2.2 · de |  |
+| 16/11 | B | M2 | de 20 |  | de 5 | 2.3 (lições 1 e 2) · de |  |
+| 17/11 | A | Simulado 09 | de 40 |  | de 5 | 3.3 (lições 1 e 2) · de |  |
+| 18/11 | B | M3 | de 20 |  | de 5 | 2.4 · de |  |
+| 19/11 | A | Simulado 10 | de 40 |  | de 5 | 3.2, lição 1 · de |  |
+| 20/11 | B | M4 | de 20 |  | de 5 | 3.2, lição 2 · de |  |
+| 21/11 | A | Simulado 11 · decisão | de 40 |  | de 5 | 1.1 · de |  |
+| 23/11 | B | M5 | de 20 |  | de 5 | 1.2 · de |  |
+| 24/11 | A | Simulado 12 (final) | de 40 |  | de 5 | 1.4 · de |  |
+| 25/11 | B | M6 | de 20 |  | de 5 | 1.3 · de |  |
+| 26/11 | Leve | Colas e reincidências na VM | — | — | de 5 | 4.3, se faltou · de | — |
