@@ -1,473 +1,478 @@
-# Resultados dos simulados e correções — LPI Linux Essentials (010-160)
+# Reforço das dicas recorrentes de prova — LPI Linux Essentials (010-160)
 
-**Aluno:** Davi · **Prova:** 30/11/2026 (definida em 26/10) · **Criado em:** 06/10/2026 · **Última atualização:** 26/10/2026
+**Criado em:** 06/10/2026 · **Origem das dicas:** relato de candidatos, encontrado por você na internet (fonte não oficial)
 
-Este arquivo reúne, em um só lugar, **todos os números de desempenho** do plano: os simulados, as autoavaliações por tópico, os checkpoints e as correções registradas desde a Semana 2. Ele não substitui o plano geral (`plano-linux-essentials-010-160.md`) nem os arquivos semanais; ele os resume e os mantém comparáveis.
-
-Arquivos relacionados:
-
-| Arquivo | O que traz |
-|---|---|
-| `praticas-simulado-01-resultado-05-10.md` | A prova do simulado #1 corrigida, questão por questão |
-| `semana-06-permissoes.md` | O texto completo das Correções 62 a 74 |
-| `plano-linux-essentials-010-160.md` | Seção 7 (série de simulados), seção 9 (erros recorrentes) e seção 11 (checkpoints) |
-| `praticas-fontes-de-simulados.md` | De onde vêm as questões |
+Este arquivo reúne as quatro dicas recorrentes, o que o plano já cobre de cada uma, as regras para as questões de preenchimento e o primeiro **mini-simulado de reforço (R1)**, com 20 questões e gabarito comentado. O resultado de cada reforço é registrado em `resultados_simulados.md`, seções 2.5 e 4.
 
 ---
 
-## 1. Como este documento funciona
+## 1. As dicas e a verificação contra o material oficial
 
-### 1.1 Regras vigentes (desde 26/10/2026)
+As dicas não são oficiais, então foram conferidas contra o PDF da LPI (versão 1.6) e contra o histórico do plano.
 
-**Só se anotam as questões erradas e as chutadas.** Cada simulado e cada mini-simulado guarda, no próprio arquivo, a apuração por tópico, a tabela das questões erradas e a coluna **reincidência**. Este arquivo guarda os números da série.
-
-**Correção no mesmo dia, com tempo-limite** (20 minutos depois de um simulado, 10 depois de um mini). Erro de comando é **executado na VM**. O que não coube no dia não vira pendência. Protocolo completo em `labs/operacao-pratica.md`, seção 4.
-
-**Card no Notion só para reincidência**, um erro que já aconteceu antes. A lista de reincidências está em `labs/operacao-pratica.md`, seção 6.
-
-**A medida principal são os acertos firmes**: sem chutes e sem questões pesquisadas. Questão pesquisada conta como errada.
-
-**A numeração das correções continua só para laboratório e curso.** A próxima é a **76**.
-
-### 1.2 Rotina após cada simulado
-
-1. Responder cronometrado, sem consulta, **marcando cada chute**. Usar pelo menos 45 minutos e reservar os últimos 15 para uma segunda passada.
-2. Abrir o gabarito só depois de responder tudo.
-3. Apurar por tópico: acertos, chutes acertados e **acertos firmes**.
-4. Preencher, no próprio arquivo do simulado, a tabela das questões erradas, com a coluna de reincidência.
-5. Rodar na VM os comandos das questões erradas; card no Notion só para as reincidências.
-6. Atualizar a seção 2 deste arquivo e o registro diário em `labs/operacao-pratica.md`.
-
-### 1.3 Conversões úteis
-
-| Percentual | Acertos de 40 | Escala LPI (acertos × 20) |
-|---|---|---|
-| 60% | 24 | 480 |
-| 65% (corte do exame real) | 26 | 520 |
-| 70% | 28 | 560 |
-| 75% | 30 | 600 |
-| 85% | 34 | 680 |
-
-O exame real aprova com **500 de 800 pontos**, cerca de 65%, ou 26 acertos. A escala acima é uma aproximação (acertos × 20), útil para comparar; a pontuação oficial da LPI pode ponderar as questões de outra forma.
-
-**Acerto firme** é o acerto não marcado como chute. Ele é o número que mede conhecimento. Um acerto por chute conta como acerto na nota, e como lacuna no estudo.
-
----
-
-## 2. Painel de resultados
-
-### 2.1 Série de simulados
-
-Calendário refeito em 26/10 para a prova de 30/11 (`PLANO.md`, seção 7, e `labs/operacao-pratica.md`). Meta em **acertos firmes**.
-
-| # | Data | Fonte | Meta (firmes) | Acertos | % | Chutes acertados | Acertos firmes | Tempo | Situação |
-|---|---|---|---|---|---|---|---|---|---|
-| 1 | Seg 05/10 | `simulado-01` | Diagnóstico | **28** | **70%** | 5 | **23** | 20 min 31 s | **Concluído** |
-| 2 | Sex 23/10 | `simulado-02` (escrito em 13/10) | 24 ou mais | **22** | **55%** | 4 | **17** | Não informado | **Concluído, abaixo da meta** |
-| 3 | **Ter 03/11** | `simulado-03` (escrito em 18/10) | Linha de base | | | | | | A fazer |
-| 4 | Qui 05/11 | Exame final de prática do NDG | 24 ou mais | | | | | | A fazer |
-| 5 | Sáb 07/11 | `simulado-05` | 24 ou mais | | | | | | A fazer |
-| 6 | Ter 10/11 | `simulado-06` | 28 ou mais | | | | | | A fazer |
-| 7 | Qui 12/11 | `simulado-07` | 28 ou mais | | | | | | A fazer |
-| 8 | Sáb 14/11 | `simulado-08` | 28 ou mais | | | | | | A fazer |
-| 9 | Ter 17/11 | `simulado-09` | 30 ou mais | | | | | | A fazer |
-| 10 | Qui 19/11 | `simulado-10` | 30 ou mais | | | | | | A fazer |
-| 11 | **Sáb 21/11** | `simulado-11` | 30 ou mais · **decisão da data** | | | | | | A fazer |
-| 12 | **Ter 24/11** | `simulado-12` | **30 ou mais** (final) | | | | | | A fazer |
-
-**Mini-simulados (20 questões):** R4 em 04/11, R3 em 06/11, R2 em 09/11, R1 em 11/11 e M1 a M6 de 13 a 25/11 (`labs/operacao-pratica.md`, seção 3). Calendário refeito em 02/11.
-
-### 2.2 Acertos por tópico, simulado a simulado
-
-Formato: acertos de questões, e entre parênteses os chutes acertados. Copie a coluna do simulado novo conforme ele for feito.
-
-| Tópico | Peso | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11 | #12 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1. Comunidade e open source | 7 | 5/7 (0) | 5/7 (0) | | | | | | | | | | |
-| 2. Encontrando seu caminho | 9 | 5/9 (0) | 4/9 (0) | | | | | | | | | | |
-| 3. Poder da linha de comando | 9 | 9/9 (1) | 6/9 (1) | | | | | | | | | | |
-| 4. Sistema operacional | 8 | 6/8 (1) | 4/8 (3) | | | | | | | | | | |
-| 5. Segurança e permissões | 7 | 3/7 (3) | 3/7 (0) | | | | | | | | | | |
-| **Total** | **40** | **28/40 (5)** | **22/40 (4)** | | | | | | | | | | |
-
-### 2.3 Autoavaliações por tópico
-
-As autoavaliações medem a retenção do conteúdo de uma semana. Desde a Semana 4, são respondidas na semana seguinte, com pelo menos três dias de intervalo.
-
-| Autoavaliação | Conteúdo | Data | Questões | Acertos | Meta | Observação |
-|---|---|---|---|---|---|---|
-| Semana 2 | Conteúdo da Semana 2 | 14/09 | 15 | **14** | 12 | Respondida no dia do estudo. O único erro foi a Q9, sobre o `export` |
-| Semana 3 | Arquivos, links e pacotes | 19/09 | 20 | **20** | 16 | Respondida no dia do estudo. Gerou as Correções 27 e 28 (justificativas) |
-| Semana 4 | Objetivos 3.1 e 3.2, filtros e compactação | 29/09 | 20 | **14** | 16 | Abaixo da meta. Respondida quatro dias depois do estudo. Gerou as Correções 49 a 52 |
-| Semana 5 | Shell script | 13 e 15/10 | 10 | **9** | 8 | Nove a onze dias depois do Laboratório 2. A Q6 foi respondida com consulta |
-
-**As autoavaliações terminaram com a da Semana 5.** As das Semanas 6 e 8 saíram do plano em 26/10: daqui em diante, os simulados e mini-simulados medem a retenção.
-
-### 2.4 Checkpoints e decisão da data
-
-Os checkpoints saíram do plano em 26/10, junto com o modelo de dívidas. Fica o registro dos que foram aplicados e a única decisão que resta.
-
-| Marco | Data | Resultado |
-|---|---|---|
-| Pré-checkpoint | Qua 07/10 | Cumprido; compra do voucher adiada em 08/10 |
-| Checkpoint A | Dom 18/10 | **Vermelho**: nenhum dos quatro critérios cumprido; o simulado 02, feito em 23/10, ficou em 22 |
-| Mudança de estratégia | Seg 26/10 | Prova movida para **30/11**; checkpoints B, Gate e Final retirados |
-| **Decisão final** | **Sáb 21/11** | Média de acertos firmes dos simulados 09, 10 e 11: **26 ou mais**, vai em 30/11; **abaixo de 26**, remarcar |
-
-### 2.5 Dicas recorrentes de prova, por tema
-
-Temas que aparecem com frequência nos relatos de candidatos (ver `praticas_simulados.md`). Formato: acertos e total de questões do tema. O simulado 01 não tinha esta marcação por tema; a tabela começa no simulado 02.
-
-| Tema | Mínimo por simulado | #2 (23/10) | #3 (03/11) | R2 (09/11) | R1 (11/11) | #5 | #7 | #9 | #11 | #12 |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Permissões | 4 | **2/5** | /4 | /4 | /5 | | | | | |
-| `tar` e compressão | 2 | 2/2 | /2 | /3 | /4 | | | | | |
-| Redirecionamento (com `<<`) | 3 | 2/3 | /3 | /3 | /5 | | | | | |
-| Diretórios virtuais e `/var` | 3 | 2/3 | /3 | /3 | /4 | | | | | |
-| **Questões de preencher a lacuna** | 5 | 3/5 | /5 | /6 | /6 | | | | | |
-
-No simulado 02, **permissões ficou abaixo de 60%** (2 de 5) e é o foco do R4; nas lacunas, dois dos três acertos foram pesquisados, e os dois erros (Q7, Q13) foram de **forma**.
-
-Regra de leitura: um tema abaixo de 60% em um simulado vira tema do mini-simulado M seguinte e do treino na VM do dia B. Nas lacunas, anote também se o erro foi de **conteúdo** ou de **forma** (sublinhado, caminho, flag a mais, caixa).
-
----
-
-## 3. Simulado #1 — 05/10/2026
-
-### 3.1 Registro
-
-| Campo | Valor |
-|---|---|
-| Fonte | `simulado-01-diagnostico`, 40 questões, distribuição de pesos do exame |
-| Condições | 60 minutos, sem consulta |
-| Tempo gasto | 20 min 31 s (restaram 39 min 29 s) |
-| Acertos | **28 de 40 (70%)**, equivalente a **560 de 800** |
-| Corte do exame real | 26 acertos. Resultado **acima do corte** |
-| Chutes marcados | 10: 22, 28, 29, 33, 34, 35, 36, 37, 39 e 40 |
-| Chutes acertados | 5 (22, 33, 34, 36, 39) |
-| Chutes errados | 5 (28, 29, 35, 37, 40) |
-| Acertos firmes | **23 de 40 (57,5%)** |
-| Erros | 12: 7 com convicção e 5 chutados |
-
-### 3.2 Por tópico
-
-| Tópico | Peso | Questões | Acertos | % | Chutes acertados | Acertos firmes | Erros com convicção | Erros chutados |
-|---|---|---|---|---|---|---|---|---|
-| 1. Comunidade e open source | 7 | 1 a 7 | 5 | 71% | 0 | 5 | 2 (Q3, Q7) | 0 |
-| 2. Encontrando seu caminho | 9 | 8 a 16 | 5 | 56% | 0 | 5 | 4 (Q10, Q14, Q15, Q16) | 0 |
-| 3. Poder da linha de comando | 9 | 17 a 25 | **9** | **100%** | 1 | 8 | 0 | 0 |
-| 4. Sistema operacional | 8 | 26 a 33 | 6 | 75% | 1 | 5 | 0 | 2 (Q28, Q29) |
-| 5. Segurança e permissões | 7 | 34 a 40 | 3 | 43% | 3 | **0** | 1 (Q38) | 3 (Q35, Q37, Q40) |
-| **Total** | **40** | | **28** | **70%** | **5** | **23** | **7** | **5** |
-
-### 3.3 Leitura
-
-**O resultado cumpre o diagnóstico, com uma ressalva.** O 70% está na parte alta da expectativa (24 a 30), mas só 23 acertos são firmes. Sem os chutes, o desempenho ficaria em 57,5%, abaixo do corte de 65%.
-
-**O Tópico 3 sustentou.** Nove de nove, com apenas um acerto por chute (Q22). As questões 18, 20, 21 e 24 retestavam correções antigas e foram acertadas com firmeza.
-
-**A fragilidade está nos Tópicos 1 e 2.** Seis dos sete erros com convicção caíram neles. Foram estudados nas Semanas 1 a 3 e só tinham sido medidos por autoavaliações feitas no mesmo dia do estudo. Nesses tópicos a confiança foi maior do que o acerto.
-
-**A calibração foi boa onde não há estudo.** Os cinco erros marcados como chute estão nos Tópicos 4 e 5, ainda não estudados. O plano está funcionando nesse ponto.
-
-**O Tópico 5 não tem nenhum acerto firme.** Os três acertos foram chutes. É a prioridade da Semana 6.
-
-**Tempo.** 20 min 31 s de 60, cerca de 31 segundos por questão; o exame dá 90 segundos por questão. Com tanto tempo sobrando, vale usá-lo: para o simulado #2, usar pelo menos 45 minutos, com segunda passada.
-
-### 3.4 Questões erradas
-
-| Q | Tópico | Tema | Você marcou | Gabarito | Tipo | Onde está tratada |
-|---|---|---|---|---|---|---|
-| 3 | 1 | Distribuição *upstream* do RHEL | Debian | Fedora | Convicção | Correção 62 |
-| 7 | 1 | Tecnologia em que cada sistema tem seu próprio kernel | Contêineres | Virtualização por hipervisor | Convicção | Correção 63 |
-| 10 | 2 | O que faz `cd -` | Vai para o diretório pai | Volta ao diretório anterior | Convicção | Correção 64 |
-| 14 | 2 | Significado de `/usr` | *User* | *Unix System Resources* | Convicção | Correção 65 |
-| 15 | 2 | Diretório virtual com informações dos processos | `/dev` | `/proc` | Convicção | Correção 66 |
-| 16 | 2 | Documentação completa do `cp` | `cp --manual` | `man cp` | Convicção | Correção 67 |
-| 28 | 4 | Processos em tempo real | Alternativa D (o `free -h` mostra memória) | `top` | Chute | Semana 7, Prática 1 |
-| 29 | 4 | Sinal padrão do `kill` | Alternativa A | `SIGTERM` (15); o `SIGKILL` (9) só com `kill -9` | Chute | Semana 7, Prática 1 |
-| 35 | 5 | Último campo do `/etc/passwd` | Alternativa D | Shell de login (7º campo; o GID é o 4º) | Chute | Semana 6, Prática 1 |
-| 37 | 5 | `rw-r--r--` em octal | 664 | 644 | Chute | Aquecimento de conversões |
-| 38 | 5 | Mudar dono e grupo de um arquivo | `chmod davi:financeiro` | `chown davi:financeiro` | Convicção | Correção 68 |
-| 40 | 5 | Quem retira permissões de arquivo novo | Alternativa C | `umask` | Chute | Baixa prioridade: fora da lista oficial do 5.3 |
-
-Na Q37, o 664 que você marcou é justamente o padrão dos arquivos novos na sua VM. Pode ter sido o que você vê no terminal, e não a conversão pedida.
-
-### 3.5 Chutes acertados
-
-São acertos sem confirmação. Contam como lacuna de estudo.
-
-| Q | Tópico | Tema |
-|---|---|---|
-| 22 | 3 | Comando que cria `backup.tar.gz` (o `-f` do `tar`, Correção 52) |
-| 33 | 4 | Diretório dos arquivos de log, segundo o FHS |
-| 34 | 5 | Arquivo das senhas criptografadas (`/etc/shadow`) |
-| 36 | 5 | Significado de `rwxr-xr--` |
-| 39 | 5 | O que o `x` concede em um diretório |
-
-### 3.6 Retestes de correções antigas
-
-| Q | Retestava | Resultado |
-|---|---|---|
-| 18 | Correção 29, a ordem em `> arquivo 2>&1` | Acerto firme |
-| 20 | Correções 33, 34 e 50, o `-k` do `sort` | Acerto firme |
-| 21 | Correção 36, o `uniq -u` | Acerto firme |
-| 22 | Correção 52, o `-f` do `tar` | Acerto **por chute** |
-| 24 | Regex `ab*c` | Acerto firme |
-
-### 3.7 Observação de forma
-
-Na Q11 a resposta foi `PATH`, com um sublinhado na frente. No exame real, em campo de preenchimento, escreva **só a palavra**.
-
----
-
-## 4. Modelo de registro para os próximos simulados
-
-Copie este bloco para cada simulado, trocando o número e a data. Preencha as tabelas no mesmo dia, seguindo o protocolo de correção da operação prática.
-
-### Simulado #N — data
-
-| Campo | Valor |
-|---|---|
-| Fonte | |
-| Tempo gasto | |
-| Segunda passada (minutos usados nas marcadas) | |
-| Acertos | de 40 |
-| Percentual e escala LPI | |
-| Chutes marcados | |
-| Chutes acertados e chutes errados | |
-| Acertos firmes | |
-| Meta | |
-
-| Tópico | Peso | Questões | Acertos | Chutes acertados |
-|---|---|---|---|---|
-| 1. Comunidade e open source | 7 | | | |
-| 2. Encontrando seu caminho | 9 | | | |
-| 3. Poder da linha de comando | 9 | | | |
-| 4. Sistema operacional | 8 | | | |
-| 5. Segurança e permissões | 7 | | | |
-| **Total** | **40** | | | |
-
-| Q | Tópico | Tema | Você marcou | Gabarito | Convicção ou chute | Reincidência? |
-|---|---|---|---|---|---|---|
-| | | | | | | |
-
-Chutes acertados: Q, tópico, tema.
-
-Comparação com o simulado anterior: o que errava e agora acerta, o que continua errando, o que apareceu de novo.
-
-Decisão ou checkpoint associado: .
-
-### Simulado #2 — 23/10/2026
-
-| Campo | Valor |
-|---|---|
-| Fonte | `simulado-02.md` (escrito em 13/10) |
-| Tempo gasto | Não informado |
-| Acertos | **22 de 40 (55%)**, equivalente a **440 de 800**. Abaixo da meta (24) e do corte do exame (26) |
-| Sem as pesquisadas (Q29 e Q40) | 20 de 40 (50%) |
-| Chutes marcados | 11: 5, 17, 27, 28, 29, 30, 31, 32, 33, 37, 38 |
-| Chutes acertados | 4 (17, 27, 28, 29) |
-| Acertos firmes | **17 de 40 (42,5%)** |
-| Erros | 18: 11 com convicção (dois de forma: Q7 e Q13) e 7 chutados |
-| Meta | 24 ou mais (Checkpoint A) |
-
-**Leitura.** A queda em relação ao simulado 01 (28, com 23 firmes) vem em parte do formato mais difícil, mas o principal está nos Tópicos 2 (4 de 9) e 5 (3 de 7), cujos erros são de **conteúdo já estudado e já corrigido**. Das nove questões que retestavam correções antigas, **quatro voltaram a errar**: Q9 (Correção 54), Q19 (29), Q22 (49) e Q34 (Q35 do simulado 01); a Q24 repete o erro da autoavaliação da Semana 5. O card no Notion, sozinho, não está fixando o mecanismo. Por isso os erros ganharam reforços próprios, R3 e R4, com as mesmas ideias em outro ângulo, e a regra de que **questão pesquisada conta como errada**. Questões erradas e texto dos cards em `simulado-02.md`.
-
-### Mini-simulados R4, R3, R2 e R1 — 04 a 11/11/2026
-
-| Campo | R4 (04/11) | R3 (06/11) | R2 (09/11) | R1 (11/11) |
-|---|---|---|---|---|
-| Fonte | `reforco-r3-r4.md` | `reforco-r3-r4.md` | `praticas_simulados.md`, seção 8 | `praticas_simulados.md`, seção 6 |
-| Acertos | de 20 (meta: 16) | de 20 (meta: 16) | de 20 (meta: 15) | de 20 (meta: 15) |
-| Chutes marcados | | | | |
-| Reincidências | | | | |
-
-Os mini-simulados M1 a M6 são registrados no próprio arquivo e no registro diário de `labs/operacao-pratica.md`.
-
----
-
-## 5. Índice de correções (1 a 74)
-
-Total: **74 correções** em cinco semanas. O texto completo de cada uma está no arquivo da semana indicada. A numeração é global e contínua; a próxima é a **75**.
-
-| Semana | Correções | Quantidade |
-|---|---|---|
-| 2 | 1 a 16 | 16 |
-| 3 | 17 a 28 | 12 |
-| 4 | 29 a 52 | 24 |
-| 5 | 53 a 61 | 9 |
-| 6 (simulado #1 e curso) | 62 a 74 | 13 |
-
-Nota de 06/10: o fechamento da Semana 4 dizia "dez correções (43 a 52)". As correções da Semana 4 são, na verdade, 29 a 52, num total de 24, e a soma de 52 correções até a Semana 4 confere.
-
-### Semana 2 — arquivo `semana-02-linha-de-comando.md`
-
-| # | Tema | Origem |
-|---|---|---|
-| 1 | `cd ..` não é "anterior" | Sessão 1, 09/09 |
-| 2 | Registro do `cd -` (voltou a `/var/log`) | Sessão 1 |
-| 3 | `ls` lista o conteúdo do diretório atual; `ls -R` entra nos subdiretórios | Sessão 1 |
-| 4 | `ls -h` sozinho não muda a listagem | Sessão 1 |
-| 5 | `echo` exibe qualquer texto (o shell expande `$VAR` antes) | Sessão 1 |
-| 6 | `/log` não existe: é `/var/log` | Sessão 1, 09/09 |
-| 7 | O `echo $?` deve vir logo após o comando | Sessão 1, 09/09 |
-| 8 | `type ls` = alias | Sessão 3, 10/09 |
-| 9 | O `which ls` devolve `/usr/bin/ls`, com a barra inicial | Sessão 3 |
-| 10 | Digitação: `/usr/share/doc`, não `/usr/share/odc` | Sessão 3 |
-| 11 | Brace expansion `{01..20}` não é globbing | Sessão 4, 13/09 |
-| 12 | Direção da herança de variáveis | Sessão 4 |
-| 13 | O que o `grep` filtra | Sessão 4 |
-| 14 | Digitação: `env | wc -l`, não `emv` | Sessão 4 |
-| 15 | O `tar` empacota; a compressão é uma flag | Sessão 4 |
-| 16 | O `history` lê `~/.bash_history` | Sessão 4 |
-
-### Semana 3 — arquivo `semana-03-arquivos-e-links.md`
-
-| # | Tema | Origem |
-|---|---|---|
-| 17 | `sources.list` → formato deb822 | Curso `.deb`, 15/09 |
-| 18 | `apt upgrade` não "exclui o kernel" | Curso `.deb` |
-| 19 | `dist-upgrade` não é upgrade de distribuição | Curso `.deb` |
-| 20 | Sintaxe do `apt-get dist-upgrade` | Curso `.deb` |
-| 21 | `apt update` atualiza o índice local | Curso `.deb` |
-| 22 | Flags do `rpm -ivh` | Curso `.rpm`, 17/09 |
-| 23 | `yum check-update` | Curso `.rpm` |
-| 24 | `yum clean packages` | Curso `.rpm` |
-| 25 | O `head` corta a listagem | FHS, 17/09 |
-| 26 | `2> /dev/null`, com a barra | FHS, 17/09 |
-| 27 | Hard link não é cópia | Autoavaliação, 19/09 |
-| 28 | `apt-get -f install` conserta (não força) | Autoavaliação |
-
-### Semana 4 — arquivo `semana-04-filtros-e-compactacao.md`
-
-| # | Tema | Origem |
-|---|---|---|
-| 29 | O que o `2>&1` realmente faz | Semana 4 |
-| 30 | Quem abre o arquivo no `<` é o shell, não o comando | Semana 4 |
-| 31 | As linhas de `Permission denied` não eram arquivos encontrados | Semana 4 |
-| 32 | `sort` sem `-n` é crescente, não decrescente | Semana 4 |
-| 33 e 34 | O `-k` escolhe a coluna (*key*); não "separa" e não é "setor" | Semana 4 |
-| 35 | O pipeline próprio traz o cabeçalho e responde outra pergunta | Semana 4 |
-| 36 | `uniq -u` não "remove as duplicatas" | Semana 4 |
-| 37 | A troca de shell vale no próximo login, não após reiniciar | Semana 4 |
-| 38 | `$SHELL` mostra o shell configurado, não o que está rodando | Semana 4 |
-| 39 | O `grep ERROR` não falhou por causa de maiúsculas | Semana 4 |
-| 40 | `-f1,4` são as colunas 1 e 4, não "de 1 a 4" | Semana 4 |
-| 41 | Um `.tar.bz2` com 0 bytes indica que o comando falhou | Semana 4 |
-| 42 | A ordem de compressão está invertida | Semana 4 |
-| 43 | `-size -1033c` não é "exatamente 1033 bytes" | Semana 4 |
-| 44 | O `-o` do `find` não distribui os filtros anteriores | Semana 4 |
-| 45 | `/etc/passwd` é um arquivo; o último `sort -rn` ordena pela contagem | Semana 4 |
-| 46 | No `-exec`, o `wc -l` conta as linhas dentro de cada arquivo | Semana 4 |
-| 47 | `tail -n +2` descarta o cabeçalho; o `sort -u` não é o `uniq` | Semana 4 |
-| 48 | O `2>/dev/null` não vem "após o pipe" | Semana 4 |
-| 49 | `grep -v` é *invert*, não *verbose* | Autoavaliação, 29/09 |
-| 50 | `sort` sem `-n` não inverte a ordem (quarta ocorrência) | Autoavaliação |
-| 51 | Os dois significados do `^` e a posição que os distingue | Autoavaliação |
-| 52 | O `-f` do `tar` vem por último porque consome o argumento seguinte | Autoavaliação |
-
-### Semana 5 — arquivo `semana-05-shell-script.md`
-
-| # | Tema | Origem |
-|---|---|---|
-| 53 | `..` é o diretório pai, não o "anterior" (quarta ocorrência) | Curso, 30/09 |
-| 54 | `~` e `cd` sem argumento levam ao diretório pessoal, não a `/home` | Curso |
-| 55 | A variável é `$PWD`, em maiúsculas; o `cd -` depende de `$OLDPWD` | Curso |
-| 56 | `uname -a` não traz a distribuição, e o `-o` também não | Curso |
-| 57 | O `$PATH` é uma lista de onde procurar, não "armazena comandos" | Curso |
-| 58 | `runlevel` mostra o anterior e o atual; o nível não muda por "comandos de desligamento" | Curso |
-| 59 | `whoami` e `$USER` respondem à mesma pergunta por fontes diferentes | Curso |
-| 60 | O `./` e o `Permission denied` têm causas diferentes | Laboratório 1, bloco 1, 02/10 |
-| 61 | O `2` do `2>` e o `2` do `$?` não têm relação | Laboratório 1, bloco 5, 04/10 |
-
-### Semana 6 — arquivo `semana-06-permissoes.md` (simulado #1 e curso)
-
-| # | Tema | Questão |
-|---|---|---|
-| 62 | O *upstream* do RHEL é o Fedora, não o Debian | Q3 |
-| 63 | Contêiner compartilha o kernel; a máquina virtual tem o seu | Q7 |
-| 64 | `..` sobe na árvore, `-` volta no histórico (quinta ocorrência) | Q10 |
-| 65 | `/usr` não é *user* | Q14 |
-| 66 | `/proc` é de processos, `/dev` é de dispositivos | Q15 |
-| 67 | `man` é o manual; o `--manual` não existe no `cp` | Q16 |
-| 68 | `chmod` muda permissões, `chown` muda o dono | Q38 |
-| 69 | `~/.bashrc` é de shell interativo sem login, e a diferença é login ou não | Curso, 08/10 |
-| 70 | `?` casa um caractere qualquer; `{}` não é globbing (2ª ocorrência da Correção 11) | Curso, 08/10 |
-| 71 | Variáveis exportadas são herdadas por processos filhos; `set` mostra tudo, `env` só as exportadas (2ª ocorrência da Correção 12) | Curso, 08/10 |
-| 72 | `\` escapa um caractere e não produz `\n`; aspas duplas ainda expandem | Curso, 08/10 |
-| 73 | `updatedb` refaz o índice inteiro; `locate` lê o índice e `find` olha o disco | Curso, 09/10 |
-| 74 | `type` mostra como o shell interpreta um nome, não "o tipo de binário" | Curso, 09/10 |
-
-O Laboratório 2 (06/10) não gerou correção numerada: não houve erro conceitual.
-
----
-
-## 6. Erros que se repetiram
-
-| Erro | Ocorrências | Correções | Mecanismo |
+| Dica | Está no material oficial? | Onde o plano já cobre | Lacuna a fechar |
 |---|---|---|---|
-| `cd ..` e `cd -` trocados | **5** | 1, 53 e 64 | `..` é o pai (espaço); `-` é o anterior (tempo) |
-| `sort` sem `-n` descrito como "invertendo a ordem" | **4** | 32, 33 e 34, 50 | As duas formas são crescentes; só o `-r` inverte; `-k` é coluna |
-| Resultado certo pelo motivo errado (`2>&1`, hard link, `-f` do `tar`) | 3 | 29, 27, 52 | O resultado certo pelo motivo errado quebra quando a pergunta muda de ângulo |
-| Direção da herança de variáveis (pai para filho) | 2 | 12 e 71 | A variável exportada vai para o **processo filho**, nunca para "outras sessões" |
-| `{}` tratado como globbing | 2 | 11 e 70 | A expansão de chaves cria nomes antes do comando, sem olhar o disco; o globbing só enxerga o que já existe |
-| `grep -v` entendido como *verbose* ou trocado por `-n` | **2** | 49; Q22 do simulado 02 | É *invert*; no `grep` é a exceção, nos demais comandos o `-v` é *verbose* |
-| Ordem do `2>&1` | **2** | 29; Q19 do simulado 02 | Da esquerda para a direita: `> arq 2>&1` |
-| `/home` tratado como a pasta pessoal | **2** | 54; Q9 do simulado 02 | `/home` contém as pastas pessoais; a pessoal é `~` |
-| `$#` (quantidade de argumentos) | **2** | Q6 da autoavaliação da Semana 5; Q24 do simulado 02 | `$#` conta os argumentos; `$0` não entra |
-| O `x` do `/etc/passwd` | **2** | Q35 do simulado 01; Q34 do simulado 02 | Só indica que o hash está no `/etc/shadow`; administrador é o UID 0 |
+| Permissões, com r = 4, w = 2, x = 1 | Sim, lição 5.3 | Aquecimento diário e Prática 2 da Semana 6; Correção 68 | Medir nos simulados, não só no aquecimento |
+| `tar` e flags de compressão | Sim, lição 3.1 | Semana 4; Correções 15, 41, 42 e 52; Q22 do simulado #1 foi **acerto por chute** | Está na retaguarda. Volta pelos simulados e por este reforço |
+| Redirecionamento `>`, `>>`, `2>`, `<<` | Sim, lição 3.2: o PDF traz a seção "Here documents" | Semana 4 e Correção 29; Correção 30 | O `<<` foi usado muitas vezes para criar arquivos, mas **nunca estudado como conceito** |
+| `/proc`, `/sys`, `/dev`, `/var` | Sim: `/proc`, `/dev` e `/sys` na lição 4.3; `/var` no FHS | `/proc` e `/dev` na Semana 3; Correção 66 (Q15 errada); `/sys` só entra na Semana 7 | Praticar o mapa dos quatro lado a lado |
+| Questões de preencher a lacuna | Formato do exame | Q11 do simulado #1 (resposta `PATH` com sublinhado) | Nunca foram treinadas como formato; entram a partir do simulado #2 |
 
-**Padrão do simulado #1:** nos Tópicos 1 e 2, a confiança foi maior que o acerto. Seis dos sete erros com convicção caíram neles.
-
-**Padrão do simulado #2:** o padrão continua no Tópico 2 e chegou ao Tópico 5. Onze erros com convicção, cinco deles reincidência.
-
-Os simulados dizem se estes erros voltam (seção 7).
+**Leitura.** A dica sobre `<<` e a dica sobre lacunas apontam os dois pontos onde o plano estava mais fino. As outras duas confirmam que o plano já está no caminho, e agora ganham um número mínimo de questões por simulado.
 
 ---
 
-## 7. Erros antigos acompanhados pelos simulados
+## 2. Como o reforço entra no plano
 
-São erros de conteúdo já estudado. Desde 26/10 eles têm treino próprio na VM: a **lista de reincidências** de `labs/operacao-pratica.md`, seção 6, que também guia o M6 e a revisão leve de 25 e 26/11.
+### 2.1 Número mínimo de questões por tema, a partir do simulado #2
 
-| Item | Origem | Observação |
+Os temas se sobrepõem às questões dos cinco tópicos; não são questões extras.
+
+| Tema | Mínimo por simulado | Observação |
 |---|---|---|
-| Correções 62 a 67 (Tópicos 1 e 2 do simulado 01) | Semana 6 | A Correção 68 (`chmod` e `chown`) é do Tópico 5 e fica ativa até a Prática 2 |
-| `cd ..` e `cd -` | Correções 1, 53 e 64 | Quinta ocorrência; o simulado mede se volta |
-| `sort`, `-k` e `uniq` | Correções 32 a 36 e 50 | Retestados pelos simulados 01 e 02 |
+| Permissões (octal, simbólico, `chmod`, `chown`, SUID, SGID e sticky bit) | 4 | Incluir conversão nos dois sentidos |
+| `tar` e compressão (`-c`, `-x`, `-t`, `-z`, `-j`, `-J`, `-f`, extensões) | 2 | Incluir a ordem do `-f` |
+| Redirecionamento (`>`, `>>`, `2>`, `<`, `<<`, `&>`, `2>&1`) | 3 | Incluir `<<` com o delimitador |
+| Diretórios virtuais e `/var` (`/proc`, `/sys`, `/dev`, `/var`) | 3 | Incluir pelo menos uma de contraste, como `/proc` contra `/dev` |
+| **Preenchimento de lacuna** (resposta digitada) | **5** | Qualquer tópico |
 
----
+### 2.2 Onde cada reforço acontece
 
-## 8. Notion: controle das correções
+Desde 26/10, os reforços fazem parte da operação prática (`labs/operacao-pratica.md`).
 
-**Regra desde 26/10:** card só para reincidência. As pendências de cards anteriores saíram do plano junto com o modelo de dívidas.
-
-| Item | Estado |
+| Quando | O que |
 |---|---|
-| Correções 60 a 70 | Cards anotados (60 a 68 em 05/10; 69 e 70 em 22/10) |
-| Questões erradas do simulado 02 | Correção de cada uma em `simulado-02.md`, como referência. Os cinco erros reincidentes (Q9, Q19, Q22, Q24, Q34) estão na lista de reincidências |
-| Reincidências da operação prática | Card no mesmo dia em que o erro voltar |
+| Sex 23/10 | Simulado 02 trouxe o mínimo da seção 2.1: permissões 2 de 5, `tar` 2 de 2, redirecionamento 2 de 3, diretórios 2 de 3, lacunas 3 de 5 (**feito**) |
+| Sex 30/10 | Prática 3 (Semana 9): mapa dos diretórios virtuais, `/proc`, `/sys` e `/dev` lado a lado |
+| Qui 05/11 | Simulado 03, a linha de base da operação · **R4** (`reforco-r3-r4.md`): contas e permissões |
+| Sex 06/11 | Here document estudado como conceito, no bloco curto · **R3** (`reforco-r3-r4.md`): navegação, ajuda e redirecionamento |
+| Seg 09/11 | **R2** (seção 8 deste arquivo): inclui `/sys`, processos e rede |
+| Qua 11/11 | **R1** (seção 6 deste arquivo): as quatro frentes e seis lacunas |
+| Todo dia, de 04/11 a 26/11 | **Cinco lacunas** do banco (`lacunas.md`), no lugar do antigo aquecimento rotativo |
 
-**Três cards anotados com erro**, conferidos em 22/10. Não é pendência, mas card errado ensina errado na revisão: se for abrir o Notion, são cinco minutos.
+### 2.3 Aquecimento
 
-| Card | Problema | Como deve ficar |
-|---|---|---|
-| 65 | Escrito `/user` | `/usr` |
-| 69 | No campo "Errado" falta o "não" | "...**não** é para shell interativo" |
-| 70 | O "Mecanismo" repete o do card 69 | `?` casa exatamente um caractere qualquer, e as chaves `{}` são expansão do shell, não globbing |
+O aquecimento rotativo pelas cinco frentes foi substituído em 26/10 pelo **banco de lacunas** (`lacunas.md`): uma série de cinco por dia, misturando os cinco tópicos. Cada mini-simulado dos dias B é seguido de 30 minutos de treino na VM sobre o que errou.
 
 ---
 
-## 9. Histórico deste documento
+## 3. Instrução para pedir o `simulado-02` (e os seguintes)
+
+Acrescente ao pedido, além do que já está definido (mais difícil, com cenário, pegadinhas, múltipla resposta e distratores plausíveis):
+
+1. Incluir o mínimo de questões por tema da seção 2.1.
+2. Incluir **5 questões de preencher a lacuna**, com resposta de uma palavra ou de um comando curto.
+3. Colocar uma **tabela de temas no gabarito**: número da questão, tema da seção 2.1 e tópico do exame.
+4. Fazer as questões de preenchimento aceitarem uma única grafia correta, sem ambiguidade, e dizer qual.
+
+---
+
+## 4. Regras para as questões de preencher a lacuna
+
+O exame de preenchimento compara o que você digitou com a resposta esperada. Por isso:
+
+1. **Escreva só o que foi pedido.** Se a pergunta é "qual comando", digite o comando, sem caminho (`chown`, não `/usr/bin/chown`) e sem flags, salvo se a pergunta pedir as flags.
+2. **Nada de enfeite.** Sem sublinhado, sem `$`, sem aspas, sem ponto final. No simulado #1, a Q11 foi respondida com um sublinhado na frente de `PATH`.
+3. **Maiúsculas e minúsculas contam.** No Linux, `PATH` e `path` são nomes diferentes; o comando é sempre em minúsculas.
+4. **Leia o que a lacuna pede.** "O diretório ____" pode pedir `/proc` ou só `proc`, conforme a barra já estar no enunciado. Se a barra está escrita antes da lacuna, não repita.
+5. **Não tem alternativa para dar dica.** Responda de memória antes de olhar qualquer coisa; é um formato em que o acerto por chute é quase impossível, então o resultado é um retrato fiel do que você sabe.
+6. **Se travou, escreva o que você acha que é.** Lacuna em branco vale zero; palpite tem alguma chance.
+
+---
+
+## 5. Cola das quatro frentes
+
+### 5.1 Permissões
+
+| Símbolo | Valor |
+|---|---|
+| `r` | 4 |
+| `w` | 2 |
+| `x` | 1 |
+
+Cada dígito soma os valores de um grupo, na ordem **dono, grupo, outros**. Exemplos: `rwxr-x--x` = 751; `rw-r--r--` = 644; `rwxrwxrwx` = 777.
+
+`chmod` muda permissões; `chown` muda dono e grupo (`chown dono:grupo arquivo`); `chgrp` muda só o grupo.
+
+### 5.2 `tar` e compressão
+
+| Quero | Comando |
+|---|---|
+| Criar com gzip | `tar -czf nome.tar.gz diretório/` |
+| Criar com bzip2 | `tar -cjf nome.tar.bz2 diretório/` |
+| Criar com xz | `tar -cJf nome.tar.xz diretório/` |
+| Listar o conteúdo | `tar -tf nome.tar` (ou `-tzf`, `-tjf`) |
+| Extrair | `tar -xzf nome.tar.gz` (ou `-xjf`, `-xJf`) |
+
+O `-f` vai **por último** entre as flags, porque consome o argumento seguinte: o nome do arquivo. O `tar` empacota; quem comprime é a flag `z`, `j` ou `J`. O `gzip arquivo` cria `arquivo.gz` e **remove** o original.
+
+### 5.3 Redirecionamento
+
+| Operador | Efeito |
+|---|---|
+| `>` | Saída padrão para um arquivo; **sobrescreve** |
+| `>>` | Saída padrão para um arquivo; **acrescenta** |
+| `2>` | Saída de erro para um arquivo; sobrescreve |
+| `<` | Um arquivo vira a entrada do comando |
+| `<<` | *Here document*: as linhas seguintes, até o delimitador, viram a entrada |
+| `&>` | Saída e erro para o mesmo arquivo |
+| `> arq 2>&1` | Saída e erro no arquivo (a **ordem** importa) |
+
+No `<< FIM`, a palavra `FIM` é só o **delimitador**: ela não é exibida nem entra no conteúdo.
+
+### 5.4 Diretórios virtuais e `/var`
+
+| Diretório | O que guarda |
+|---|---|
+| `/proc` | Sistema de arquivos virtual: processos (um diretório por PID), CPU (`/proc/cpuinfo`), memória (`/proc/meminfo`) e configuração do kernel (`/proc/sys`) |
+| `/sys` | `sysfs`: informações sobre dispositivos de hardware, organizadas em categorias (por exemplo, `/sys/class/net/enp0s3/address`) |
+| `/dev` | Arquivos de dispositivo (blocos como `/dev/sda1`, caracteres como `/dev/tty`) e especiais (`/dev/null`, `/dev/zero`, `/dev/urandom`) |
+| `/var` | Dados **variáveis**: logs em `/var/log`, filas em `/var/spool`, cache em `/var/cache`, temporários que sobrevivem ao reinício em `/var/tmp` |
+
+Mnemônico: **proc de processos, dev de dispositivos, sys de hardware organizado, var de variável.**
+
+---
+
+## 6. Mini-simulado R1 — Quarta 11/11
+
+**Regras:** 20 questões, 25 minutos, sem consulta, **marcando cada chute**. Nas questões de preenchimento (marcadas com **[lacuna]**), escreva só a resposta, seguindo a seção 4. Aberto o gabarito, anote apenas as erradas e as chutadas, siga o protocolo de correção da operação prática e registre o resultado em `resultados_simulados.md`, seções 2.5 e 4.
+
+**Metas:** 15 de 20 (75%) é o mínimo. A leitura mais importante é o **acerto por tema**: um tema abaixo de 60% vira tema do treino na VM e do mini-simulado M seguinte.
+
+### Permissões
+
+**1.** Qual é a representação octal de `-rwxr-x--x`?
+
+A) 755 · B) 751 · C) 741 · D) 651
+
+**2.** Um arquivo tem permissão `640`. Depois de `chmod g+w,o+r arquivo`, a permissão será:
+
+A) 664 · B) 666 · C) 660 · D) 644
+
+**3. [lacuna]** O comando que altera o **dono** de um arquivo é: ______
+
+**4.** Um usuário tem apenas `r--` sobre um diretório. Qual afirmação é verdadeira?
+
+A) Ele consegue entrar no diretório com `cd` e listar os nomes
+B) Ele consegue listar os nomes, mas não entrar com `cd` nem ver os detalhes dos arquivos
+C) Ele consegue entrar, mas não listar
+D) Ele não consegue fazer nada com o diretório
+
+**5.** O que significa o `s` em `-rwsr-xr-x`?
+
+A) O arquivo é compartilhado em rede
+B) O arquivo executa com as permissões do **dono**
+C) O arquivo executa com as permissões do grupo
+D) Só o dono pode apagar o arquivo
+
+### tar e compressão
+
+**6.** Qual comando cria um arquivo compactado com gzip chamado `docs.tar.gz` a partir do diretório `docs`?
+
+A) `tar -czf docs.tar.gz docs/`
+B) `tar -cjf docs.tar.gz docs/`
+C) `tar -xzf docs.tar.gz docs/`
+D) `tar -czf docs/ docs.tar.gz`
+
+**7. [lacuna]** Para **listar** o conteúdo de `backup.tar` sem extrair, completando o comando `tar -__f backup.tar`, a letra que falta é: ______
+
+**8.** Qual flag do `tar` comprime com **bzip2**?
+
+A) `-z` · B) `-j` · C) `-J` · D) `-b`
+
+**9.** O que acontece ao executar `gzip arq.txt` em um diretório com o arquivo `arq.txt`?
+
+A) Cria `arq.txt.gz` e mantém `arq.txt`
+B) Cria `arq.txt.gz` e remove `arq.txt`
+C) Cria `arq.gz`, sem a extensão original
+D) Cria um diretório `arq.txt` com o arquivo comprimido
+
+### Redirecionamento
+
+**10.** Sequência: `echo a > f` · `echo b >> f` · `echo c > f` · `cat f`. Qual é a saída?
+
+A) `a`, `b` e `c` em três linhas
+B) `a` e `b`
+C) `c`
+D) `b` e `c`
+
+**11.** O comando `ls /etc /naoexiste 2> erros.txt` grava em `erros.txt`:
+
+A) A listagem de `/etc` e a mensagem de erro
+B) Apenas a mensagem de erro
+C) Apenas a listagem de `/etc`
+D) Nada: o `2>` só funciona com `>`
+
+**12.** No comando abaixo, qual é o papel da palavra `FIM`?
+
+```
+cat << FIM
+primeira linha
+segunda linha
+FIM
+```
+
+A) É o nome do arquivo criado
+B) É o delimitador que encerra a entrada; não faz parte do conteúdo
+C) É o texto que o `cat` imprime primeiro
+D) É uma variável do shell
+
+**13. [lacuna]** O operador que **acrescenta** a saída ao final de um arquivo, sem apagar o conteúdo, é: ______
+
+**14.** Qual é o efeito de `ls /etc /nao > t.txt 2>&1`?
+
+A) Só a saída normal vai para `t.txt`; o erro aparece no terminal
+B) Saída normal e erro vão para `t.txt`
+C) Cria um arquivo chamado `1`
+D) Só o erro vai para `t.txt`
+
+### Diretórios virtuais e /var
+
+**15.** Qual diretório contém um subdiretório numerado para cada processo em execução?
+
+A) `/dev` · B) `/var` · C) `/proc` · D) `/etc`
+
+**16. [lacuna]** O diretório que guarda os arquivos de dispositivo, como `sda` e `tty`, é: /______
+
+**17.** Onde ficam, normalmente, os arquivos de log do sistema?
+
+A) `/etc/log` · B) `/var/log` · C) `/proc/log` · D) `/usr/log`
+
+**18.** Sem usar nenhum comando de hardware, onde se lê as informações da CPU diretamente?
+
+A) `/dev/cpu` · B) `/var/cpuinfo` · C) `/proc/cpuinfo` · D) `/etc/cpuinfo`
+
+### Lacunas gerais
+
+**19. [lacuna]** O comando que exibe o caminho completo do diretório atual é: ______
+
+**20. [lacuna]** A variável de ambiente que guarda a lista de diretórios onde o shell procura comandos é: ______
+
+---
+
+## 7. Gabarito comentado do R1
+
+| Q | Tema | Tópico | Resposta | Por quê |
+|---|---|---|---|---|
+| 1 | Permissões | 5.3 | **B** (751) | dono `rwx` = 7, grupo `r-x` = 5, outros `--x` = 1 |
+| 2 | Permissões | 5.3 | **A** (664) | `640` com `g+w` vira `660`; com `o+r` vira `664` |
+| 3 | Permissões | 5.3 | **chown** | `chmod` muda permissões; `chown` muda dono. É a Correção 68 |
+| 4 | Permissões | 5.3 | **B** | O `r` lista os nomes. Sem `x`, não se atravessa o diretório: nem `cd`, nem acesso aos detalhes |
+| 5 | Permissões | 5.3 | **B** | `s` no lugar do `x` do dono é o SUID: o programa roda com as permissões do dono |
+| 6 | tar | 3.1 | **A** | `c` cria, `z` gzip, `f` por último com o nome. B usa `j` (bzip2); C extrai; D inverte a ordem |
+| 7 | tar | 3.1 | **t** | `-tf` lista. `-cf` cria e `-xf` extrai |
+| 8 | tar | 3.1 | **B** | `j` é bzip2; `z` é gzip; `J` (maiúsculo) é xz |
+| 9 | Compressão | 3.1 | **B** | O `gzip` substitui o original pelo `.gz`. Para manter, use `gzip -k` |
+| 10 | Redirecionamento | 3.2 | **C** | O `>` do terceiro comando sobrescreve o arquivo; só `c` sobra |
+| 11 | Redirecionamento | 3.2 | **B** | `2>` redireciona só o canal de erro (stderr, canal 2) |
+| 12 | Redirecionamento | 3.2 | **B** | No *here document*, a palavra depois do `<<` é o delimitador; o `cat` mostra só as linhas entre as marcas |
+| 13 | Redirecionamento | 3.2 | **>>** | O `>` sobrescreve; o `>>` acrescenta |
+| 14 | Redirecionamento | 3.2 | **B** | `> t.txt` aponta o canal 1 para o arquivo; `2>&1` aponta o 2 para onde o 1 está. É a Correção 29 |
+| 15 | Diretórios | 4.3 | **C** | `/proc` tem um diretório por PID. É a Correção 66 |
+| 16 | Diretórios | 4.3 | **dev** | A barra já está no enunciado; escreva só `dev` |
+| 17 | Diretórios | 2 (FHS) | **B** | `/var` guarda dados variáveis; os logs ficam em `/var/log` |
+| 18 | Diretórios | 4.3 | **C** | `/proc/cpuinfo`. Para memória, `/proc/meminfo` |
+| 19 | Lacuna geral | 2 | **pwd** | *Print working directory* |
+| 20 | Lacuna geral | 2 | **PATH** | Em maiúsculas, sem sublinhado e sem `$`. É a Q11 do simulado #1 |
+
+**Verificação:** os comandos das questões 2, 6, 9, 10, 11, 12 e 14 foram executados em um shell antes de fechar o gabarito, e as saídas conferem.
+
+### Apuração por tema
+
+| Tema | Questões | Acertos | Chutes acertados |
+|---|---|---|---|
+| Permissões | 1 a 5 | /5 | |
+| `tar` e compressão | 6 a 9 | /4 | |
+| Redirecionamento | 10 a 14 | /5 | |
+| Diretórios virtuais e `/var` | 15 a 18 | /4 | |
+| Lacunas gerais | 19 e 20 | /2 | |
+| **Todas as questões [lacuna]** | 3, 7, 13, 16, 19, 20 | /6 | |
+| **Total** | | /20 | |
+
+---
+
+## 8. Mini-simulado R2 — Segunda 09/11
+
+**Regras:** as mesmas do R1. 20 questões, 25 minutos, sem consulta, **marcando cada chute**. Nas questões **[lacuna]**, escreva só a resposta, seguindo a seção 4. Registre o resultado em `resultados_simulados.md`, seções 2.5 e 4.
+
+**Metas:** 15 de 20. Além das quatro frentes, o R2 cobre o Tópico 4: `/sys`, processos e rede. Nenhuma questão repete o R1.
+
+### Permissões
+
+**1.** Depois de `chmod 750 projeto`, em que `projeto` é um diretório, como ele aparece no `ls -ld`?
+
+- A) `drwxr-x---`
+- B) `drwxr-xr-x`
+- C) `drwx-----x`
+- D) `drw-r-x---`
+
+**2. [lacuna]** Em um diretório com sticky bit, se os outros têm permissão de execução, a letra que aparece no lugar do `x` deles é: ______
+
+**3.** O que significa o `S` maiúsculo em `-rwSr--r--`?
+
+- A) O SGID está ligado e o grupo tem `x`
+- B) O SUID está ligado, mas o dono não tem `x`
+- C) O arquivo é um socket
+- D) O sticky bit está ligado
+
+**4.** Um arquivo tem permissão `755`. Qual é a permissão depois de `chmod o-rwx arquivo`?
+
+- A) `700`
+- B) `750`
+- C) `754`
+- D) `705`
+
+### `tar` e compressão
+
+**5.** Qual comando extrai `site.tar.gz` **dentro do diretório** `/tmp/site`, sem precisar entrar nele antes?
+
+- A) `tar -xzf site.tar.gz /tmp/site`
+- B) `tar -xzf site.tar.gz -C /tmp/site`
+- C) `tar -czf site.tar.gz -C /tmp/site`
+- D) `tar -xzf /tmp/site site.tar.gz`
+
+**6. [lacuna]** O comando que descomprime um arquivo `.gz`, o par do `gzip`, é: ______
+
+**7.** Qual comando cria o arquivo `docs.zip` com o diretório `docs` e tudo o que há dentro dele?
+
+- A) `zip docs.zip docs`
+- B) `zip -r docs.zip docs`
+- C) `unzip -r docs.zip docs`
+- D) `tar -zip docs.zip docs`
+
+### Redirecionamento
+
+**8.** O que faz `ls /etc /naoexiste &> tudo.txt`?
+
+- A) Grava só a listagem de `/etc` em `tudo.txt`
+- B) Grava só a mensagem de erro em `tudo.txt`
+- C) Grava a listagem e a mensagem de erro em `tudo.txt`
+- D) Executa o `ls` em segundo plano e grava a saída em `tudo.txt`
+
+**9.** O que faz `sort < nomes.txt > ordenados.txt`?
+
+- A) Ordena `ordenados.txt` e grava em `nomes.txt`
+- B) Lê `nomes.txt`, ordena e grava o resultado em `ordenados.txt`
+- C) Dá erro: não se pode usar `<` e `>` no mesmo comando
+- D) Acrescenta `nomes.txt` ao final de `ordenados.txt`
+
+**10. [lacuna]** O operador que entrega a um comando várias linhas escritas no próprio script, até uma palavra delimitadora, é: ______
+
+### Diretórios
+
+**11.** Em qual caminho cada interface de rede aparece como um subdiretório, organizado pelo kernel?
+
+- A) `/proc/net/dev`
+- B) `/sys/class/net`
+- C) `/dev/net`
+- D) `/etc/network`
+
+**12. [lacuna]** O diretório que guarda o kernel e o `initramfs` é: /______
+
+**13.** Em uma distribuição Debian, onde fica o banco de dados que registra os pacotes instalados?
+
+- A) `/etc/apt`
+- B) `/var/cache/apt`
+- C) `/var/lib/dpkg`
+- D) `/usr/share/doc`
+
+### Processos
+
+**14.** Dentro do `top`, qual tecla ordena os processos por uso de memória?
+
+- A) `P`
+- B) `M`
+- C) `k`
+- D) `q`
+
+**15.** Qual é a diferença entre `kill 1234` e `kill -9 1234`?
+
+- A) Nenhuma: os dois enviam `SIGKILL`
+- B) O primeiro envia `SIGTERM`, que o processo pode tratar; o segundo envia `SIGKILL`, que não pode ser tratado nem ignorado
+- C) O primeiro suspende o processo; o segundo o encerra
+- D) O primeiro encerra o processo 1234; o segundo encerra os 9 primeiros processos
+
+**16. [lacuna]** O comando que lista os trabalhos (*jobs*) iniciados no shell atual é: ______
+
+**17.** No `free -h`, o que a coluna `available` representa?
+
+- A) A memória que nunca foi usada desde o boot
+- B) A memória que pode ser entregue a novos programas sem recorrer à swap, contando o cache que pode ser liberado
+- C) O tamanho da swap
+- D) A memória reservada para o kernel
+
+### Rede
+
+**18.** O `/etc/resolv.conf` da VM tem a linha `nameserver 127.0.0.53`. O que ela significa?
+
+- A) O DNS da VM está desligado
+- B) As consultas de DNS vão para um resolvedor local, que roda na própria máquina
+- C) A VM só consegue resolver os nomes do `/etc/hosts`
+- D) O IP da VM é `127.0.0.53`
+
+**19.** Qual é a diferença entre `host lpi.org` e `ping -c 1 lpi.org`?
+
+- A) Nenhuma: os dois só consultam o DNS
+- B) O `host` consulta o DNS e mostra o endereço; o `ping` resolve o nome e testa se a máquina responde
+- C) O `host` testa a conectividade; o `ping` consulta o DNS
+- D) O `ping` só funciona com endereços IP
+
+**20. [lacuna]** O comando atual que substitui o `ifconfig` e o `route` é: ______
+
+---
+
+### Gabarito comentado do R2
+
+<details>
+<summary>Abra só depois de responder</summary>
+
+| Q | Tema | Tópico | Resposta | Por quê |
+|---|---|---|---|---|
+| 1 | Permissões | 5.3 | **A** | 7 = `rwx`, 5 = `r-x`, 0 = `---`, com o `d` de diretório |
+| 2 | Permissões | 5.4 | **t** | `t` minúsculo: sticky ligado e `x` presente. Sem o `x`, seria `T` |
+| 3 | Permissões | 5.3 | **B** | `S` maiúsculo no lugar do `x` do dono: SUID ligado sem permissão de execução |
+| 4 | Permissões | 5.3 | **B** | Os outros perdem tudo: `r-x` vira `---` |
+| 5 | tar | 3.1 | **B** | O `-C` muda para o diretório antes de extrair. Na A, `/tmp/site` seria tratado como um item a extrair |
+| 6 | Compressão | 3.1 | **gunzip** | Equivale a `gzip -d` |
+| 7 | Compressão | 3.1 | **B** | O `zip` precisa do `-r` para entrar no diretório. O `unzip` extrai |
+| 8 | Redirecionamento | 3.2 | **C** | O `&>` manda os fluxos 1 e 2 para o mesmo arquivo, como `> tudo.txt 2>&1` |
+| 9 | Redirecionamento | 3.2 | **B** | O shell abre `nomes.txt` como entrada e `ordenados.txt` como saída antes de o `sort` rodar |
+| 10 | Redirecionamento | 3.2 | **<<** | O *here document*. Não confundir com `<`, que lê de um arquivo |
+| 11 | Diretórios | 4.3 | **B** | `/sys/class/net` traz um diretório por interface (`lo`, `enp0s3`) |
+| 12 | Diretórios | 4.3 | **boot** | A barra já está no enunciado |
+| 13 | Diretórios | 4.3 | **C** | O `/var/cache/apt` guarda os `.deb` baixados, não o registro do que está instalado |
+| 14 | Processos | 4.3 | **B** | `M` memória, `P` CPU, `k` encerra, `q` sai |
+| 15 | Processos | 4.3 | **B** | Sem número, o `kill` envia `SIGTERM` (15) |
+| 16 | Processos | 4.3 | **jobs** | — |
+| 17 | Processos | 4.3 | **B** | O `free` coloca no `available` também o cache que o kernel libera quando precisa |
+| 18 | Rede | 4.4 | **B** | No Ubuntu, `127.0.0.53` é o `systemd-resolved`, que repassa as consultas aos servidores reais |
+| 19 | Rede | 4.4 | **B** | O `ping` também resolve o nome, mas o objetivo dele é testar a conectividade |
+| 20 | Rede | 4.4 | **ip** | `ip addr show` substitui o `ifconfig`; `ip route show` substitui o `route` |
+
+### Apuração por tema
+
+| Tema | Questões | Acertos | Chutes acertados |
+|---|---|---|---|
+| Permissões | 1 a 4 | /4 | |
+| `tar` e compressão | 5 a 7 | /3 | |
+| Redirecionamento | 8 a 10 | /3 | |
+| Diretórios virtuais e `/var` | 11 a 13 | /3 | |
+| Processos | 14 a 17 | /4 | |
+| Rede | 18 a 20 | /3 | |
+| **Todas as questões [lacuna]** | 2, 6, 10, 12, 16, 20 | /6 | |
+| **Total** | | /20 | |
+
+</details>
+
+---
+
+## 9. Histórico
 
 | Data | Alteração |
 |---|---|
-| 06/10/2026 | Criação. Reúne o simulado #1, as autoavaliações, os checkpoints, o índice das correções 1 a 68, os erros recorrentes e a fila de retaguarda. Registra as regras de 06/10 (só anotar questões erradas; correção no Notion; retaguarda de erros antigos) |
-| 06/10/2026 | Acrescentadas a seção 2.5 (dicas recorrentes por tema) e o registro do mini-simulado de reforço R1 na seção 4 |
-| 08/10/2026 | Correções 69 a 72 (curso, 08/10); pré-checkpoint com a compra do voucher adiada (gatilho: média dos três últimos simulados ≥ 30); simulado #2 de volta ao domingo 11/10; autoavaliação da Semana 5 na sexta 09/10 |
-| 09/10/2026 | Correções 73 e 74 (curso, 09/10) |
-| 10/10/2026 | Replanejamento: data principal da prova 16/11 (09/11 como meta ousada); meta de 9h por semana até 01/11; Prática 2 e aulas 58 em diante na segunda 12/10; autoavaliação da Semana 6 cortada |
-| 13/10/2026 | Nova estratégia: prova em 23/11; série de simulados redistribuída (02 a 11); R1 em 23/10 e R2 em 27/10; checkpoints A (18/10), B (25/10), Gate (08/11) e Final (19/11); autoavaliação da Semana 6 devolvida ao plano; retaguarda reduzida aos erros de conteúdo; simulado 02 escrito |
-| 23/10/2026 | Simulado 02 registrado (22 de 40, 17 firmes); reforços R3 e R4 criados sobre os erros dele; série refeita: #3 em 30/10, #4 em 01/11, #5 a #8 de 03 a 08/11; R2 e R1 em 31/10; Checkpoint B em 01/11; questão pesquisada passa a contar como errada |
-| 26/10/2026 | Nova estratégia: prova em 30/11; dívidas, autoavaliações restantes e checkpoints retirados; operação prática diária de 31/10 a 26/11 com 11 simulados (03 a 13) e 10 mini-simulados (R1 a R4, M1 a M6); medida principal em acertos firmes; card no Notion só para reincidência |
-| 02/11/2026 | Calendário refeito: simulado 03 em 03/11; simulados 04 a 12 de 05 a 24/11; simulado 13 retirado; mini-simulados de 04 a 25/11; decisão da data em 21/11 |
+| 06/10/2026 | Criação, a partir das dicas recorrentes trazidas por Davi. Verificação contra o PDF oficial; mini-simulado R1; regras de lacuna; cola das quatro frentes |
+| 13/10/2026 | Nova estratégia (prova em 23/11): R1 movido para sex 23/10, depois do Tópico 4; R2 para ter 27/10; aquecimento rotativo a partir de 26/10; simulado 02 escrito com os mínimos por tema |
+| 18/10/2026 | Mini-simulado R2 escrito, com processos, rede e `/sys` |
+| 19/10/2026 | R1 remarcado para qua 28/10, depois do R2, para abrir espaço na Semana 8 |
+| 23/10/2026 | R2 e R1 remarcados para o sábado 31/10, depois do Tópico 4 (Semana 9). Criados os reforços R3 e R4 em arquivo próprio (`reforco-r3-r4.md`), sobre os erros do simulado 02 |
+| 26/10/2026 | Reforços integrados à operação prática: R4 em 02/11, R3 em 04/11, R2 em 06/11 e R1 em 09/11; aquecimento rotativo substituído pelo banco de lacunas (`lacunas.md`) |
