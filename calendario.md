@@ -22,7 +22,7 @@ De quinta 05 a sábado 07/11, as aulas 41 a 72 entram à noite, depois da sessã
 | Seg | Ter | Qua | Qui | Sex | Sáb | Dom |
 |---|---|---|---|---|---|---|
 | 2<br>Finados | 3<br>Práticas registradas | 4<br>Lacunas 01 e 02 | **5** · **A**<br>Simulado 03<br>R4<br>Aulas 41–52<br>LPI 4.3 L1, 4.3 L2, 5.1 | **6** · **B**<br>R3<br>4.1 e here doc<br>Aulas 53–62<br>LPI 4.1, 4.2 | **7** · **A**<br>Simulado 05<br>Aulas 63–72<br>LPI 5.3 | **8** · —<br>Descanso |
-| **9** · **B**<br>R2<br>LPI 5.2, 4.4 | **10** · **A**<br>Simulado 04 (NDG)<br>LPI 5.4 | **11** · **B**<br>R1<br>LPI 3.1, 2.1 L1 | **12** · **A**<br>Simulado 06<br>LPI 2.1 L2 | **13** · **B**<br>M1<br>LPI 2.2, 2.3 L1 | **14** · **A**<br>Simulado 07<br>LPI 2.3 L2 | **15** · —<br>Descanso |
+| **9** · **B**<br>R2<br>LPI 5.2, 4.4 | **10** · **A**<br>Simulado 04<br>LPI 5.4 | **11** · **B**<br>R1<br>LPI 3.1, 2.1 L1 | **12** · **A**<br>Simulado 06<br>LPI 2.1 L2 | **13** · **B**<br>M1<br>LPI 2.2, 2.3 L1 | **14** · **A**<br>Simulado 07<br>LPI 2.3 L2 | **15** · —<br>Descanso |
 | **16** · **B**<br>M2<br>LPI 2.4, 3.2 L1 | **17** · **A**<br>Simulado 08<br>LPI 3.2 L2 | **18** · **B**<br>M3<br>LPI 3.3 L1, 3.3 L2, 1.1 | **19** · **A**<br>Simulado 09<br>LPI 1.2 | **20** · **B**<br>M4<br>feriado<br>LPI 1.3, 1.4 | **21** · **A**<br>Simulado 10<br>**Decisão da data**<br>LPI: revisão das erradas | **22** · —<br>Descanso |
 | **23** · **A**<br>Simulado 11<br>LPI: revisão das erradas | **24** · **B**<br>M5<br>LPI: revisão das erradas | **25** · **A**<br>**Simulado 12 (final)**<br>LPI: revisão das erradas | **26** · Leve<br>M6 (reincidências)<br>Colas | **27** · —<br>Descanso | **28** · —<br>Descanso | **29** · —<br>Descanso<br>Não estudar |
 | **30** · **PROVA**<br>010-160 |   |   |   |   |   |   |
@@ -40,7 +40,7 @@ Marque a coluna "Feito" ao fim de cada sessão.
 | Sáb 07/11 | A | **Simulado 05** (`simulado-05.md`) · aulas 63 a 72 (curso fechado) | V4 (scripts) | 5.3 (416–418) | Série 05 | |
 | Dom 08/11 | Descanso | Descanso | — | — | — | |
 | Seg 09/11 | B | **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) | V7 (processos e rede) | 5.2 (391–393); 4.4 (349–350) | Série 06 | |
-| Ter 10/11 | A | **Simulado 04** — exame final de prática do NDG | Conforme os erros do simulado | 5.4 (434–435) | Série 07 | |
+| Ter 10/11 | A | **Simulado 04** (`simulado-04.md`) | Conforme os erros do simulado | 5.4 (434–435) | Série 07 | |
 | Qua 11/11 | B | **R1** — as quatro frentes e seis lacunas (`praticas_simulados.md`, seção 6) | V8 (`tar` e links) | 3.1 (183–184); 2.1, lição 1 (82–84) | Série 08 | |
 | Qui 12/11 | A | **Simulado 06** | Conforme os erros do simulado | 2.1, lição 2 (94–95) | Série 09 | |
 | Sex 13/11 | B | **M1** — os temas mais errados nos simulados 03 a 06 | Conforme o M1 | 2.2 (107–109); 2.3, lição 1 (122–124) | Série 10 | |
