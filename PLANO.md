@@ -316,7 +316,7 @@ Refeita em 04/11: carga de cerca de 2h a 2h15 em todos os dias (perto de 13h por
 | Semana | Dias A (simulados) | Dias B (mini-simulados) |
 |---|---|---|
 | 10 (05 a 08/11) | 03 (com o R4, o que ficou de 03 e 04/11), 05 | R3 (com o 4.1 e o here document) · aulas 41 a 72 à noite, de quinta a sábado |
-| 11 (09 a 15/11) | 04 (NDG), 06, 07 | R2, R1, M1 |
+| 11 (09 a 15/11) | 04, 06, 07 | R2, R1, M1 |
 | 12 (16 a 22/11) | 08, 09, 10 (decisão) | M2, M3, M4 |
 | 13 (23 a 29/11) | 11, 12 (final, 25/11) | M5 · M6 no dia leve, 26/11 · descanso de 27 a 29/11 |
 
@@ -330,7 +330,7 @@ Calendário dia a dia, metas e registro em `labs/operacao-pratica.md`; visão de
 | 2 | Sex 23/10 | `simulado-02` | **Feito: 22 de 40, 17 firmes** |
 | 3 | **Qui 05/11** | `simulado-03` (pronto) | Linha de base |
 | 5 | Sáb 07/11 | `simulado-05` (pronto) | 24 ou mais |
-| 4 | Ter 10/11 | Exame final de prática do NDG | 24 ou mais |
+| 4 | Ter 10/11 | `simulado-04` (pronto; substitui o exame do NDG) | 24 ou mais |
 | 6 | Qui 12/11 | `simulado-06` | 28 ou mais |
 | 7 | Sáb 14/11 | `simulado-07` | 28 ou mais |
 | 8 | Ter 17/11 | `simulado-08` | 28 ou mais |
