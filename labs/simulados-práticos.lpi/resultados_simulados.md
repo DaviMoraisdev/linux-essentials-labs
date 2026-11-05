@@ -66,7 +66,7 @@ Calendário refeito em 26/10 para a prova de 30/11 (`PLANO.md`, seção 7, e `la
 | 2 | Sex 23/10 | `simulado-02` (escrito em 13/10) | 24 ou mais | **22** | **55%** | 4 | **17** | Não informado | **Concluído, abaixo da meta** |
 | 3 | **Qui 05/11** | `simulado-03` (escrito em 18/10) | Linha de base | | | | | | A fazer |
 | 5 | Sáb 07/11 | `simulado-05` (escrito em 04/11) | 24 ou mais | | | | | | A fazer |
-| 4 | Ter 10/11 | Exame final de prática do NDG | 24 ou mais | | | | | | A fazer |
+| 4 | Ter 10/11 | `simulado-04` (escrito em 04/11) | 24 ou mais | | | | | | A fazer |
 | 6 | Qui 12/11 | `simulado-06` | 28 ou mais | | | | | | A fazer |
 | 7 | Sáb 14/11 | `simulado-07` | 28 ou mais | | | | | | A fazer |
 | 8 | Ter 17/11 | `simulado-08` | 28 ou mais | | | | | | A fazer |
