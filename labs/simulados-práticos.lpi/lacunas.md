@@ -528,8 +528,8 @@ As do Tópico 4 dependem das Práticas 3 a 5 e por isso só começam com a opera
 
 | Série | Data | Acertos | Erradas (número e motivo: conteúdo ou forma) | Volta na série |
 |---|---|---|---|---|
-| 01 | | de 5 | | |
-| 02 | | de 5 | | |
+| 01 | 04/11 | **1 de 5** (conteúdo: 3) | 1 forma ("Licença Copyleft"; vale só `copyleft`) · 3 forma ("-x - extract"; vale só `-x`) · 4 em branco (`ps`) · 5 em branco (`/etc/shadow`) | 04 |
+| 02 | 04/11 | **0 de 5** (conteúdo: 1) | 1 em branco (`help`) · 2 conteúdo ("tar.gz"; a opção é `-z`) · 3 em branco (`top`) · 4 em branco (`/etc/group`) · 5 forma ("FSF - Free Software Foundation"; vale só `FSF`) | 05 |
 | 03 | | de 5 | | |
 | 04 | | de 5 | | |
 | 05 | | de 5 | | |
