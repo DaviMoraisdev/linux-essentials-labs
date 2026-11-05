@@ -40,7 +40,7 @@ Este arquivo substitui os arquivos semanais a partir de 05/11. O registro de cad
 
 ## 3. Calendário
 
-**Refeito em 04/11.** Quinta 05/11 recebe o que ficou para trás de 03 e 04/11 (simulado 03, R4, V5 e V6, LPI 4.3 e 5.1). O que era da quinta foi distribuído: o simulado 04 (NDG) foi para a terça 10/11, e a LPI 5.2 para a segunda 09/11.
+**Refeito em 04/11.** Quinta 05/11 recebe o que ficou para trás de 03 e 04/11 (simulado 03, R4, V5 e V6, LPI 4.3 e 5.1). O que era da quinta foi distribuído: o simulado 04 foi para a terça 10/11, e a LPI 5.2 para a segunda 09/11.
 
 | Dia | Tipo | Sessão | Treino na VM | Exercícios da LPI | Lacunas |
 |---|---|---|---|---|---|
@@ -49,7 +49,7 @@ Este arquivo substitui os arquivos semanais a partir de 05/11. O registro de cad
 | **Sáb 07/11** | A | **Simulado 05** (`simulado-05.md`) · **aulas 63 a 72 (curso fechado)** | V4 (scripts) | 5.3 | Série 05 |
 | Dom 08/11 | — | Descanso | — | — | — |
 | Seg 09/11 | B | **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) | V7 (processos e rede) | 5.2 e 4.4 | Série 06 |
-| **Ter 10/11** | A | **Simulado 04** — exame final de prática do NDG | Conforme os erros do simulado | 5.4 | Série 07 |
+| **Ter 10/11** | A | **Simulado 04** (`simulado-04.md`) | Conforme os erros do simulado | 5.4 | Série 07 |
 | Qua 11/11 | B | **R1** — as quatro frentes e seis lacunas (`praticas_simulados.md`, seção 6) | V8 (`tar` e links) | 3.1 e 2.1, lição 1 | Série 08 |
 | **Qui 12/11** | A | **Simulado 06** | Conforme os erros do simulado | 2.1, lição 2 | Série 09 |
 | Sex 13/11 | B | **M1** — os temas mais errados nos simulados 03 a 06 | Conforme o M1 | 2.2 e 2.3, lição 1 | Série 10 |
@@ -274,7 +274,7 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 | Material | Situação |
 |---|---|
 | Simulado 03 | Pronto (`simulado-03.md`) |
-| Simulado 04 | Exame final de prática do NDG Linux Essentials |
+| Simulado 04 | Pronto (`simulado-04.md`, escrito em 04/11), para a terça 10/11. Substitui o exame final do NDG, que fica como treino extra opcional |
 | R1, R2, R3 e R4 | Prontos (`praticas_simulados.md` e `reforco-r3-r4.md`) |
 | Simulado 05 | Pronto (`simulado-05.md`, escrito em 04/11), para o sábado 07/11 |
 | Simulados 06 a 12 | Escritos por mim, prontos **até três dias antes** de cada um |
@@ -293,7 +293,7 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 | 06/11 | B | R3 · 4.1 e here doc · Aulas 53–62 | de 20 | | de 5 | 4.1 e 4.2 · de | |
 | 07/11 | A | Simulado 05 · Aulas 63–72 | de 40 | | de 5 | 5.3 · de | |
 | 09/11 | B | R2 | de 20 | | de 5 | 5.2 e 4.4 · de | |
-| 10/11 | A | Simulado 04 (NDG) | de 40 | | de 5 | 5.4 · de | |
+| 10/11 | A | Simulado 04 | de 40 | | de 5 | 5.4 · de | |
 | 11/11 | B | R1 | de 20 | | de 5 | 3.1 e 2.1, lição 1 · de | |
 | 12/11 | A | Simulado 06 | de 40 | | de 5 | 2.1, lição 2 · de | |
 | 13/11 | B | M1 | de 20 | | de 5 | 2.2 e 2.3, lição 1 · de | |
