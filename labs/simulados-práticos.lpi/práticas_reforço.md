@@ -1,6 +1,6 @@
 # Reforços R3 e R4 — erros do simulado 02 — LPI Linux Essentials (010-160)
 
-**Criado em:** 23/10/2026 · **Quando:** R4 na quarta 04/11 e R3 na sexta 06/11, na operação prática · **Origem:** os 14 erros do simulado 02 em conteúdo já estudado (`simulado-02.md`, seção "Questões erradas")
+**Criado em:** 23/10/2026 · **Quando:** R4 na quinta 05/11 e R3 na sexta 06/11, na operação prática · **Origem:** os 14 erros do simulado 02 em conteúdo já estudado (`simulado-02.md`, seção "Questões erradas")
 
 Os dois reforços atacam os blocos em que o simulado 02 concentrou os erros: **navegação, ajuda e redirecionamento** (R3, Tópicos 1 a 3) e **contas e permissões** (R4, Tópico 5). As questões **não repetem** as do simulado 02: testam o mesmo mecanismo por outro ângulo, porque é assim que o exame cobra. Quem decorou a resposta da questão anterior erra; quem entendeu o mecanismo acerta.
 
@@ -10,7 +10,7 @@ Os dois reforços atacam os blocos em que o simulado 02 concentrou os erros: **n
 | --- | --- |
 | Formato | 20 questões cada, **25 minutos** cada, cronometrados |
 | Consulta | Nenhuma. Sem terminal, sem caderno, sem Notion, sem internet. **Questão pesquisada conta como errada** |
-| Ordem | R4 primeiro (04/11, o tópico mais fraco), R3 depois (06/11) |
+| Ordem | R4 primeiro (05/11, o tópico mais fraco), R3 depois (06/11) |
 | Meta | **16 de 20 em cada um** (80%) |
 | Chutes | Marque cada um, mesmo acertando |
 | Escolha duas | Só conta se as duas estiverem certas |
@@ -390,7 +390,7 @@ O que acontece com `./copia.sh a.txt`?
 
 # Apuração
 
-## R4 — quarta 04/11
+## R4 — quinta 05/11
 
 | Campo | Valor |
 | --- | --- |
