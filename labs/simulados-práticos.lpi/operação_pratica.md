@@ -232,18 +232,21 @@ São os erros que voltaram depois de corrigidos. É a lista que guia os treinos 
 | Erro | Vezes | O certo | Treino |
 |---|---|---|---|
 | `cd ..`, `cd -`, `./` e `../` trocados | **7** | `..` é o pai; `-` é o anterior; `.` é o atual | V1 |
-| `sort` sem `-n` descrito como invertendo | 4 | As duas formas são crescentes; só o `-r` inverte; `-k` é a coluna | V3 |
+| `sort` sem `-n` descrito como invertendo | **5** | As duas formas são crescentes; só o `-r` inverte; `-k` é a coluna | V3 |
 | Ordem do `2>&1` | 2 | `> arq 2>&1`: da esquerda para a direita | V3 |
 | `grep -v` | 2 | É *invert*; no `grep` não é *verbose* | V3 |
 | `/home` tratado como a pasta pessoal | 2 | `/home` contém as pastas; a pessoal é `~` | V1 |
 | `$#` | 2 | Conta os argumentos; `$0` não entra | V4 |
 | O `x` do `/etc/passwd` | 2 | Só diz que o hash está no `/etc/shadow`; o administrador é o UID 0 | V6 |
-| Conversão octal (o trio vazio é 0) | 2 | `rwxr-x---` = 750; `rw-r--r--` = 644 | V5 |
-| Herança de variáveis (pai para filho) | 2 | A variável exportada vai para o processo filho | — |
+| Conversão octal, com e sem bit especial | **3** (Q37 do simulado 01; Q36 do simulado 02; Q36 do simulado 03, `645` no lugar de `4755`) | Bit especial primeiro (SUID 4, SGID 2, sticky 1), depois trio por trio: `rwsr-xr-x` = 4755; `rwxr-x---` = 750 | V5 |
+| Herança de variáveis: `export` | **3** (Correções 12 e 71; Q16 do simulado 03) | O `export` marca a variável para os filhos; o `env NOME` tenta executar um comando | V4 |
 | `{}` tratado como globbing | 2 | A expansão de chaves cria os nomes sem olhar o disco | — |
 | Sinal padrão do `kill` | 2 | `SIGTERM` (15); o `SIGKILL` (9) só com `kill -9` | V7 |
 | **Forma das lacunas** (palavra a mais, explicação junto da resposta) | **5** (Q11 do simulado 01; Q7 e Q13 do simulado 02; séries 01 e 02 das lacunas) | Na lacuna, só o pedido: `copyleft`, `-x`, `FSF`. Explicação vai no caderno, nunca na resposta | — |
 | `help` para os comandos internos | **3** (Correção 74; Q13 do simulado 02; série 02 das lacunas) | `help cd`; o `man` é para programas, o `type` diz o que é interno | V2 |
+| Padrão de globbing sem correspondência | 2 (Semana 3; Q24 do simulado 03) | O Bash entrega o texto literal, como `*.log`; não há erro | V1 |
+| `fg` e `bg` | 2 (Correção 78; Q29 do simulado 03) | `fg` traz para o primeiro plano; `bg` continua em segundo; `Ctrl+Z` suspende | V7 |
+| `x` em diretório | 2 (Prática 2, bloco 4; Q39 do simulado 03) | `r` lista; `x` atravessa e abre um nome conhecido; `w` cria e apaga | V5 |
 | Arquivos de contas (`/etc/shadow`, `/etc/group`) | 2 (Q34 do simulado 02; séries 01 e 02 das lacunas) | `/etc/passwd` contas, `/etc/shadow` hashes, `/etc/group` grupos e membros secundários | V6 |
 
 ---
@@ -289,7 +292,7 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 | Data | Tipo | Sessão | Acertos | Firmes | Lacunas | Exercícios da LPI | Reincidências novas |
 |---|---|---|---|---|---|---|---|
 | 04/11 | — | Lacunas das séries 01 e 02 | — | — | 1 de 5 e 0 de 5 | — | Forma das lacunas; `help`; arquivos de contas |
-| 05/11 | A | Simulado 03 · R4 · Aulas 41–52 | de 40 | | de 5 | 4.3, lição 1 e 4.3, lição 2 e 5.1 · de | |
+| 05/11 | A | Simulado 03 · R4 · Aulas 41–52 | Simulado 03: **27 de 40** · R4: de 20 | **20** | Série 03: **4 de 5** | 4.3, lição 1 e 4.3, lição 2 e 5.1 · de | |
 | 06/11 | B | R3 · 4.1 e here doc · Aulas 53–62 | de 20 | | de 5 | 4.1 e 4.2 · de | |
 | 07/11 | A | Simulado 05 · Aulas 63–72 | de 40 | | de 5 | 5.3 · de | |
 | 09/11 | B | R2 | de 20 | | de 5 | 5.2 e 4.4 · de | |
