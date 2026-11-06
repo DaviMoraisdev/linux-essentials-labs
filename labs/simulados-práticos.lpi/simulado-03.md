@@ -416,45 +416,74 @@ FIM
 
 # Apuração
 
-Preencha depois de conferir o gabarito.
+Corrigido em 05/11 a partir das respostas marcadas no caderno.
 
-| Tópico | Peso | Questões | Acertos | Chutes acertados |
-| --- | --- | --- | --- | --- |
-| 1. Comunidade e open source | 7 | 1 a 7 | | |
-| 2. Encontrando seu caminho | 9 | 8 a 16 | | |
-| 3. Poder da linha de comando | 9 | 17 a 25 | | |
-| 4. Sistema operacional | 8 | 26 a 33 | | |
-| 5. Segurança e permissões | 7 | 34 a 40 | | |
-| **Total** | **40** | | | |
+**Atenção à cópia que você usou.** Ela perdeu caracteres em três alternativas: na Q24, a B era `*.log` (saiu `.log`); na Q32, a B era `2001:db8::1` e a C `2001::db8::1` (saíram sem o `2`); na Q25, a A era `0` (saiu vazia). Isso acontece ao colar Markdown no Notion, que interpreta `*` e números no começo como formatação. Para os próximos simulados, **abra o `.md` direto no VS Code** (`Ctrl+Shift+V` para a pré-visualização) ou no GitHub. A Q24 e a Q32 contam como erradas mesmo assim: as respostas marcadas estariam erradas também com o texto correto.
+
+| Tópico | Peso | Questões | Acertos | Chutes acertados | Acertos firmes | Erros |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1. Comunidade e open source | 7 | 1 a 7 | 5 | 1 (Q3) | 4 | 6, 7 |
+| 2. Encontrando seu caminho | 9 | 8 a 16 | 5 | 0 | 5 | 8, 9, 12, 16 |
+| 3. Poder da linha de comando | 9 | 17 a 25 | 7 | 2 (Q17, Q25) | 5 | 23, 24 |
+| 4. Sistema operacional | 8 | 26 a 33 | 6 | 1 (Q30) | 5 | 29, 32 |
+| 5. Segurança e permissões | 7 | 34 a 40 | 4 | 3 (Q34, Q37, Q38) | **1** | 36, 39, 40 |
+| **Total** | **40** | | **27** | **7** | **20** | **13** |
 
 | Tema | Questões | Acertos |
 | --- | --- | --- |
-| Permissões | 4 | |
-| `tar` e compressão | 2 | |
-| Redirecionamento | 3 | |
-| Diretórios virtuais | 3 | |
-| Lacunas | 5 | |
+| Permissões | 4 | 2 (37 e 38, as duas por chute) |
+| `tar` e compressão | 2 | 2 (Q17 por chute) |
+| Redirecionamento | 3 | **3** |
+| Diretórios virtuais | 3 | **3** |
+| Lacunas | 5 | 3 (10, 18, 26) |
 
 ## Registro
 
 | Campo | Valor |
 | --- | --- |
 | Data | 05/11/2026 |
-| Tempo gasto | |
-| Minutos usados na segunda passada | |
-| Acertos | de 40 |
-| Percentual e escala LPI | |
-| Questões marcadas como chute | |
-| Chutes acertados e chutes errados | |
-| Acertos firmes | |
-| Erros de forma nas lacunas | |
+| Tempo gasto | Não informado |
+| Minutos usados na segunda passada | Não informado |
+| Acertos | **27 de 40 (67,5%)**, equivalente a **540 de 800**: acima do corte do exame (26) |
+| Questões marcadas como chute | 11: 3, 6, 12, 17, 23, 25, 29, 30, 34, 37, 38 |
+| Chutes acertados e chutes errados | 7 acertados (3, 17, 25, 30, 34, 37, 38) · 4 errados (6, 12, 23, 29) |
+| Acertos firmes | **20 de 40 (50%)**. Linha de base da operação |
+| Erros de forma nas lacunas | Nenhum. Uma lacuna em branco (Q7) e uma errada no conteúdo (Q36) |
 
 ## Questões erradas
 
-Só as erradas e as chutadas, no mesmo dia, seguindo o protocolo de correção da operação prática (`labs/operacao-pratica.md`, seção 4). Card no Notion só para reincidência.
-
 | Q | Tópico | Tema | Você marcou | Gabarito | Convicção ou chute | Reincidência? |
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | |
+| 6 | 1 | Ambiente gráfico | C (Xfce) | **D** (Wayland) | Chute | — |
+| 7 | 1 | Lacuna, licença | em branco | **`GPL`** | — | — |
+| 8 | 2 | `ls` | C (`ls -a`) | **B** (`ls -ld`) | Convicção | — |
+| 9 | 2 | `mkdir` | A (`-r`) | **C** (`-p`) | Convicção | — |
+| 12 | 2 | Globbing | D | **B** (`img10.png`) | Chute | — |
+| 16 | 2 | Variáveis | C (`env`) | **B** (`export`) | Convicção | **Sim**: Correções 12 e 71 |
+| 23 | 3 | `sort` | D (decrescente) | **A** (crescente) | Chute | **Sim**: Correções 32 a 34 e 50 |
+| 24 | 3 | Globbing no `for` | C | **B** (`*.log`) | Convicção | **Sim**: Semana 3 |
+| 29 | 4 | Processos | D | **B** | Chute | **Sim**: Correção 78; Q28 e Q29 do simulado 01 |
+| 32 | 4 | IPv6 | D | **B** | Convicção | — |
+| 36 | 5 | Lacuna, octal | `645` | **`4755`** | Convicção | **Sim**: Q37 do simulado 01; Q36 e Q38 do simulado 02 |
+| 39 | 5 | `x` em diretório | C | **B** | Convicção | **Sim**: Prática 2, bloco 4 |
+| 40 | 5 | `sudo` e `su` | B e C | **A e B** | Convicção | — |
 
-**Comparação com os simulados 01 e 02:** o que errava e agora acerta, o que continua errando, o que apareceu de novo.
+### A correção de cada erro
+
+| Q | Errado | Certo | Mecanismo |
+| --- | --- | --- | --- |
+| 6 | Xfce é protocolo gráfico | **Wayland** | Wayland e X11 são o **protocolo** que desenha na tela. GNOME, KDE Plasma e Xfce são **ambientes de desktop** que rodam em cima dele |
+| 7 | (em branco) | `GPL` | O kernel Linux é **GPL versão 2**. Na lacuna, só a sigla |
+| 8 | `ls -a /etc` | `ls -ld /etc` | O `-d` mostra **o próprio diretório**, e não o que há dentro; com `-l`, mostra dono e permissões dele. O `-a` mostra os ocultos |
+| 9 | `mkdir -r` | `mkdir -p` | `-p` de *parents*: cria os diretórios intermediários. O `mkdir` não tem `-r`; quem tem é o `cp` e o `rm` |
+| 12 | Erro de sintaxe | `img10.png` | Cada `[0-9]` casa **exatamente um** caractere. Dois colchetes = dois dígitos: só `img10.png` |
+| 16 | `env EDITOR` | `export EDITOR` | O `export` marca a variável para ser **herdada pelos processos filhos**. O `env` sem argumento lista o ambiente; com um nome, tenta **executar** um comando com esse nome |
+| 23 | Decrescente | Crescente | `-n` ordena **como número**; só o `-r` inverte. `-t:` é o separador e `-k3` a coluna. É a **quinta vez** que o `sort` aparece como se invertesse |
+| 24 | Erro do `for` | `*.log` | Quando o padrão não casa com nada, o Bash entrega o **texto literal** `*.log`, e o `echo` o imprime. Não há erro |
+| 29 | `fg` põe em segundo plano | `fg` traz para o **primeiro** plano | `fg` = *foreground*, primeiro plano; `bg` = *background*, continua em segundo plano; `Ctrl+Z` suspende. Foi a Prática 4, bloco 3 |
+| 32 | `fe80:0:0:0:0:0:0:0:1` | `2001:db8::1` | IPv6 tem **no máximo 8 grupos**; a D tem 9. O `::` abrevia zeros e aparece **uma vez** (a C tem dois `::`) |
+| 36 | `645` | `4755` | Comece pelo **bit especial**: `s` no `x` do dono = SUID = **4**. Depois os trios: `rws` conta como `rwx` = 7, `r-x` = 5, `r-x` = 5. Resultado: `4755` |
+| 39 | Lista e entra, sem ler | Entra e acessa um nome conhecido, sem listar | Para os **outros**, sobrou só o `x` (`--x`): atravessar e abrir um nome conhecido. **`r` lista; `x` atravessa**; sem `r`, o `ls` falha |
+| 40 | `chown root comando` executa como root | `sudo comando` e `su -c 'comando'` | O `chown` muda **o dono de um arquivo**; não executa nada. Rodam como root: `sudo` (sua senha, política do `sudoers`) e `su -c` (senha do root) |
+
+**Comparação com os simulados 01 e 02.** Subiu de 22 para **27 acertos** (o corte do exame é 26) e de 17 para **20 firmes**, apesar de ser um simulado do mesmo nível do 02. Redirecionamento (3 de 3) e diretórios virtuais (3 de 3) ficaram firmes, e o Tópico 4, recém-praticado, deu 5 firmes de 8. O ponto fraco continua sendo o **Tópico 5: só 1 acerto firme em 7**, e três dos quatro acertos foram chutes. Das oito questões que retestavam erros antigos, **três voltaram a errar** (Q16, Q23, Q24) e duas acertaram só por chute (Q29 errou; Q34 acertou chutando). O que ficou firme desde o simulado 02: `tar`, here document, `2>>`, `wc -l <`, `grep -c '^$'`, hard link contra simbólico, `apropos` e `man -k`.
