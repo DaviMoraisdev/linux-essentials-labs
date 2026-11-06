@@ -64,7 +64,7 @@ Calendário refeito em 26/10 para a prova de 30/11 (`PLANO.md`, seção 7, e `la
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | Seg 05/10 | `simulado-01` | Diagnóstico | **28** | **70%** | 5 | **23** | 20 min 31 s | **Concluído** |
 | 2 | Sex 23/10 | `simulado-02` (escrito em 13/10) | 24 ou mais | **22** | **55%** | 4 | **17** | Não informado | **Concluído, abaixo da meta** |
-| 3 | **Qui 05/11** | `simulado-03` (escrito em 18/10) | Linha de base | | | | | | A fazer |
+| 3 | Qui 05/11 | `simulado-03` (escrito em 18/10) | Linha de base | **27** | **67,5%** | 7 | **20** | Não informado | **Concluído: acima do corte do exame** |
 | 5 | Sáb 07/11 | `simulado-05` (escrito em 04/11) | 24 ou mais | | | | | | A fazer |
 | 4 | Ter 10/11 | `simulado-04` (escrito em 04/11) | 24 ou mais | | | | | | A fazer |
 | 6 | Qui 12/11 | `simulado-06` | 28 ou mais | | | | | | A fazer |
@@ -83,12 +83,12 @@ Formato: acertos de questões, e entre parênteses os chutes acertados. Copie a 
 
 | Tópico | Peso | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11 | #12 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1. Comunidade e open source | 7 | 5/7 (0) | 5/7 (0) | | | | | | | | | | |
-| 2. Encontrando seu caminho | 9 | 5/9 (0) | 4/9 (0) | | | | | | | | | | |
-| 3. Poder da linha de comando | 9 | 9/9 (1) | 6/9 (1) | | | | | | | | | | |
-| 4. Sistema operacional | 8 | 6/8 (1) | 4/8 (3) | | | | | | | | | | |
-| 5. Segurança e permissões | 7 | 3/7 (3) | 3/7 (0) | | | | | | | | | | |
-| **Total** | **40** | **28/40 (5)** | **22/40 (4)** | | | | | | | | | | |
+| 1. Comunidade e open source | 7 | 5/7 (0) | 5/7 (0) | 5/7 (1) | | | | | | | | | |
+| 2. Encontrando seu caminho | 9 | 5/9 (0) | 4/9 (0) | 5/9 (0) | | | | | | | | | |
+| 3. Poder da linha de comando | 9 | 9/9 (1) | 6/9 (1) | 7/9 (2) | | | | | | | | | |
+| 4. Sistema operacional | 8 | 6/8 (1) | 4/8 (3) | 6/8 (1) | | | | | | | | | |
+| 5. Segurança e permissões | 7 | 3/7 (3) | 3/7 (0) | **4/7 (3)** | | | | | | | | | |
+| **Total** | **40** | **28/40 (5)** | **22/40 (4)** | **27/40 (7)** | | | | | | | | | |
 
 ### 2.3 Autoavaliações por tópico
 
@@ -120,11 +120,11 @@ Temas que aparecem com frequência nos relatos de candidatos (ver `praticas_simu
 
 | Tema | Mínimo por simulado | #2 (23/10) | #3 (05/11) | R2 (09/11) | R1 (11/11) | #5 | #7 | #9 | #11 | #12 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Permissões | 4 | **2/5** | /4 | /4 | /5 | | | | | |
-| `tar` e compressão | 2 | 2/2 | /2 | /3 | /4 | | | | | |
-| Redirecionamento (com `<<`) | 3 | 2/3 | /3 | /3 | /5 | | | | | |
-| Diretórios virtuais e `/var` | 3 | 2/3 | /3 | /3 | /4 | | | | | |
-| **Questões de preencher a lacuna** | 5 | 3/5 | /5 | /6 | /6 | | | | | |
+| Permissões | 4 | **2/5** | **2/4** (dois chutes) | /4 | /5 | | | | | |
+| `tar` e compressão | 2 | 2/2 | 2/2 | /3 | /4 | | | | | |
+| Redirecionamento (com `<<`) | 3 | 2/3 | 3/3 | /3 | /5 | | | | | |
+| Diretórios virtuais e `/var` | 3 | 2/3 | 3/3 | /3 | /4 | | | | | |
+| **Questões de preencher a lacuna** | 5 | 3/5 | 3/5 | /6 | /6 | | | | | |
 
 No simulado 02, **permissões ficou abaixo de 60%** (2 de 5) e é o foco do R4; nas lacunas, dois dos três acertos foram pesquisados, e os dois erros (Q7, Q13) foram de **forma**.
 
@@ -274,6 +274,18 @@ Decisão ou checkpoint associado: .
 
 **Leitura.** A queda em relação ao simulado 01 (28, com 23 firmes) vem em parte do formato mais difícil, mas o principal está nos Tópicos 2 (4 de 9) e 5 (3 de 7), cujos erros são de **conteúdo já estudado e já corrigido**. Das nove questões que retestavam correções antigas, **quatro voltaram a errar**: Q9 (Correção 54), Q19 (29), Q22 (49) e Q34 (Q35 do simulado 01); a Q24 repete o erro da autoavaliação da Semana 5. O card no Notion, sozinho, não está fixando o mecanismo. Por isso os erros ganharam reforços próprios, R3 e R4, com as mesmas ideias em outro ângulo, e a regra de que **questão pesquisada conta como errada**. Questões erradas e texto dos cards em `simulado-02.md`.
 
+### Simulado #3 — 05/11/2026
+
+| Campo | Valor |
+|---|---|
+| Fonte | `simulado-03.md` (escrito em 18/10) |
+| Acertos | **27 de 40 (67,5%)**, equivalente a **540 de 800**: acima do corte (26) |
+| Chutes marcados | 11; 7 acertados (3, 17, 25, 30, 34, 37, 38) |
+| Acertos firmes | **20 de 40**: linha de base da operação |
+| Erros | 13: 6, 7, 8, 9, 12, 16, 23, 24, 29, 32, 36, 39, 40 |
+
+**Leitura.** Primeiro simulado acima do corte do exame, e os acertos firmes subiram de 17 para 20. Redirecionamento e diretórios virtuais fecharam em 3 de 3. O **Tópico 5 é o problema**: um acerto firme em sete, com a lacuna octal em `645` (o certo é `4755`), `x` em diretório e `chown` confundido com execução como root. Cinco dos treze erros são reincidência (Q16, Q23, Q24, Q29, Q36, Q39). Correções em `simulado-03.md`.
+
 ### Mini-simulados R4, R3, R2 e R1 — 05 a 11/11/2026
 
 | Campo | R4 (05/11) | R3 (06/11) | R2 (09/11) | R1 (11/11) |
@@ -408,9 +420,9 @@ O Laboratório 2 (06/10) não gerou correção numerada: não houve erro conceit
 | Erro | Ocorrências | Correções | Mecanismo |
 |---|---|---|---|
 | `cd ..` e `cd -` trocados | **5** | 1, 53 e 64 | `..` é o pai (espaço); `-` é o anterior (tempo) |
-| `sort` sem `-n` descrito como "invertendo a ordem" | **4** | 32, 33 e 34, 50 | As duas formas são crescentes; só o `-r` inverte; `-k` é coluna |
+| `sort` sem `-n` descrito como "invertendo a ordem" | **5** | 32, 33 e 34, 50; Q23 do simulado 03 | As duas formas são crescentes; só o `-r` inverte; `-k` é coluna |
 | Resultado certo pelo motivo errado (`2>&1`, hard link, `-f` do `tar`) | 3 | 29, 27, 52 | O resultado certo pelo motivo errado quebra quando a pergunta muda de ângulo |
-| Direção da herança de variáveis (pai para filho) | 2 | 12 e 71 | A variável exportada vai para o **processo filho**, nunca para "outras sessões" |
+| Herança de variáveis: `export` | **3** | 12 e 71; Q16 do simulado 03 (`env` no lugar de `export`) | A variável exportada vai para o **processo filho**, nunca para "outras sessões" |
 | `{}` tratado como globbing | 2 | 11 e 70 | A expansão de chaves cria nomes antes do comando, sem olhar o disco; o globbing só enxerga o que já existe |
 | `grep -v` entendido como *verbose* ou trocado por `-n` | **2** | 49; Q22 do simulado 02 | É *invert*; no `grep` é a exceção, nos demais comandos o `-v` é *verbose* |
 | Ordem do `2>&1` | **2** | 29; Q19 do simulado 02 | Da esquerda para a direita: `> arq 2>&1` |
@@ -472,3 +484,4 @@ São erros de conteúdo já estudado. Desde 26/10 eles têm treino próprio na V
 | 26/10/2026 | Nova estratégia: prova em 30/11; dívidas, autoavaliações restantes e checkpoints retirados; operação prática diária de 31/10 a 26/11 com 11 simulados (03 a 13) e 10 mini-simulados (R1 a R4, M1 a M6); medida principal em acertos firmes; card no Notion só para reincidência |
 | 02/11/2026 | Calendário refeito: simulado 03 em 03/11; simulados 04 a 12 de 05 a 24/11; simulado 13 retirado; mini-simulados de 04 a 25/11; decisão da data em 21/11 |
 | 04/11/2026 | Calendário refeito: simulado 03 e R4 em 05/11; simulado 05 em 07/11; simulado 04 (NDG) em 10/11; simulados 06 a 12 de 12 a 25/11; decisão em 21/11 com os simulados 08, 09 e 10; lacunas das séries 01 e 02 registradas |
+| 05/11/2026 | Simulado 03 registrado: 27 de 40, 20 firmes (linha de base); lacunas da série 03: 4 de 5 |
