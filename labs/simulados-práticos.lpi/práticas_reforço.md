@@ -342,7 +342,7 @@ O que acontece com `./copia.sh a.txt`?
 | 5 | **C** | `rw-` 6, `r--` 4, `---` **0** | Q36 |
 | 6 | **E** | `rwx` 7, `--x` 1, `---` **0** | Q36 |
 | 7 | **C e E** | 751 = `rwx r-x --x`. `go=rx` daria `r-x` aos outros (755); `715` inverte grupo e outros | Q36 |
-| 8 | **A** | Grupo: 4 + 2 = 6. Outros: 0 + 1 = 1. Dono inalterado: 6 | Q37 |
+| 8 | **C** | Dono inalterado: 6. Grupo: 4 + 2 = 6. Outros: 0 + 1 = 1. Resultado: `661` (gabarito corrigido em 06/11; antes marcava `671` por engano) | Q37 |
 | 9 | **D** | Dono: 7 − 2 = 5. Grupo: 5 − 4 = 1. Outros: `o=` sem nada zera, 0 | Q37 |
 | 10 | **`664`** | `a` = todos: cada trio perde o `x`. 7 − 1 = 6, 7 − 1 = 6, 5 − 1 = 4 | Q37 |
 | 11 | **C** | O `2` é SGID e aparece no `x` do **grupo**. O grupo tem `x` (o 7 de `770`), então `s` minúsculo | Q38 |
