@@ -168,10 +168,10 @@ touch f ; mkdir -p d
 for m in 640 750 751 4755 2744 ; do chmod $m f ; stat -c '%a %A' f ; done
 for m in 1777 1770 2770 ; do chmod $m d ; stat -c '%a %A' d ; done   # t e T; s no grupo
 chmod 754 f ; chmod o+w,g-x f ; stat -c '%a %A' f        # 746
-chmod 640 f ; chmod g+w,o+x f ; stat -c '%a %A' f        # 671
+chmod 640 f ; chmod g+w,o+x f ; stat -c '%a %A' f        # 661
 chmod 755 f ; chmod u-w,g-r,o= f ; stat -c '%a %A' f     # 510
 chmod 775 f ; chmod a-x f ; stat -c '%a %A' f            # 664
-chmod 711 d ; ls -ld d                                    # x sem r: atravessa, não lista
+chmod 711 d ; ls -ld d                                    # x sem r: atravessa, não lista (o d no chmod é obrigatório)
 ```
 
 ### V6 — Contas e grupos
@@ -292,7 +292,7 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 | Data | Tipo | Sessão | Acertos | Firmes | Lacunas | Exercícios da LPI | Reincidências novas |
 |---|---|---|---|---|---|---|---|
 | 04/11 | — | Lacunas das séries 01 e 02 | — | — | 1 de 5 e 0 de 5 | — | Forma das lacunas; `help`; arquivos de contas |
-| 05/11 | A | Simulado 03 · R4 · Aulas 41–52 | Simulado 03: **27 de 40** · R4: de 20 | **20** | Série 03: **4 de 5** | 4.3, lição 1 e 4.3, lição 2 e 5.1 · de | |
+| 05/11 | A | Simulado 03 · R4 · V5 e V6 · Aulas 41–52 | Simulado 03: **27 de 40** · R4: de 20 | **20** | Série 03: **4 de 5** | 4.3, lição 1 e 4.3, lição 2 e 5.1 · de | |
 | 06/11 | B | R3 · 4.1 e here doc · Aulas 53–62 | de 20 | | de 5 | 4.1 e 4.2 · de | |
 | 07/11 | A | Simulado 05 · Aulas 63–72 | de 40 | | de 5 | 5.3 · de | |
 | 09/11 | B | R2 | de 20 | | de 5 | 5.2 e 4.4 · de | |
@@ -311,3 +311,10 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 | 24/11 | B | M5 | de 20 | | de 5 | Revisão: erradas dos Tópicos 3 e 2 · de | |
 | 25/11 | A | Simulado 12 (final) | de 40 | | de 5 | Revisão: erradas do Tópico 1 · de | |
 | 26/11 | Leve | M6 (reincidências) · Colas | de 20 | | de 5 | — | |
+
+### Treinos na VM — o que saiu diferente do previsto
+
+| Data | Bloco | Observação |
+|---|---|---|
+| 05/11 | V5 | Todas as conversões bateram, inclusive `2744` → `-rwxr-Sr--` (`S`: SGID sem `x` no grupo) e `1770` → `T`. O roteiro previa `671` para `640` com `g+w,o+x`; o certo, confirmado na VM, é **`661`** (roteiro e gabarito do R4 corrigidos). O `chmod 711 ; ls -ld d` deu *missing operand*: faltou o `d` no `chmod` |
+| 05/11 | V6 | `usermod -G ops` tirou o `dev` e o `-aG dev` devolveu: o mecanismo da reincidência, visto na prática. O `/etc/skel` foi copiado para a pasta do `teste1`. **O `last` não existe no Ubuntu 26.04**: foi substituído pelo pacote `wtmpdb` (`sudo apt install wtmpdb` traz o comando). Para a prova, continua valendo: o `last` lê o histórico de logins do `/var/log/wtmp`. O `groupdel ops` falhou porque a `carol`, da Prática 2, ainda existe com o `ops` como grupo primário |
