@@ -1,6 +1,6 @@
 # Reforços R3 e R4 — erros do simulado 02 — LPI Linux Essentials (010-160)
 
-**Criado em:** 23/10/2026 · **Quando:** R4 na quinta 05/11 e R3 na sexta 06/11, na operação prática · **Origem:** os 14 erros do simulado 02 em conteúdo já estudado (`simulado-02.md`, seção "Questões erradas")
+**Criado em:** 23/10/2026 · **Quando:** R3 na sexta 06/11 (feito) e R4 no sábado 07/11, na operação prática · **Origem:** os 14 erros do simulado 02 em conteúdo já estudado (`simulado-02.md`, seção "Questões erradas")
 
 Os dois reforços atacam os blocos em que o simulado 02 concentrou os erros: **navegação, ajuda e redirecionamento** (R3, Tópicos 1 a 3) e **contas e permissões** (R4, Tópico 5). As questões **não repetem** as do simulado 02: testam o mesmo mecanismo por outro ângulo, porque é assim que o exame cobra. Quem decorou a resposta da questão anterior erra; quem entendeu o mecanismo acerta.
 
@@ -10,7 +10,7 @@ Os dois reforços atacam os blocos em que o simulado 02 concentrou os erros: **n
 | --- | --- |
 | Formato | 20 questões cada, **25 minutos** cada, cronometrados |
 | Consulta | Nenhuma. Sem terminal, sem caderno, sem Notion, sem internet. **Questão pesquisada conta como errada** |
-| Ordem | R4 primeiro (05/11, o tópico mais fraco), R3 depois (06/11) |
+| Ordem | R3 em 06/11 (feito); R4 no sábado 07/11, remarcado na reorganização de 06/11 |
 | Meta | **16 de 20 em cada um** (80%) |
 | Chutes | Marque cada um, mesmo acertando |
 | Escolha duas | Só conta se as duas estiverem certas |
@@ -390,7 +390,7 @@ O que acontece com `./copia.sh a.txt`?
 
 # Apuração
 
-## R4 — quinta 05/11
+## R4 — sábado 07/11
 
 | Campo | Valor |
 | --- | --- |
@@ -411,26 +411,37 @@ O que acontece com `./copia.sh a.txt`?
 
 | Campo | Valor |
 | --- | --- |
-| Tempo gasto | |
-| Acertos | de 20 (meta: 16) |
-| Chutes marcados | |
-| Erros de forma nas lacunas | |
-| Reincidências (erro que repete o simulado 02) | |
+| Tempo gasto | Não informado |
+| Acertos | **17 de 20** (meta: 16) |
+| Firmes | 17 (o único chute, Q16, foi erro) |
+| Chutes marcados | 1 (Q16) |
+| Erros de forma nas lacunas | 0 (Q5 `type` e Q18 `$?` corretas) |
+| Reincidências (erro que repete o simulado 02) | 3: Q7 (Q16 do 02), Q13 (Q19 do 02) e Q16 (Q24 do 02) |
 
 | Bloco | Questões | Acertos |
 | --- | --- | --- |
-| Caminhos e navegação | 1 a 4 | /4 |
-| Ajuda e `man` | 5 a 8 | /4 |
-| `mv` e `cp` | 9 e 10 | /2 |
-| Redirecionamento | 11 a 13 | /3 |
-| `grep` | 14 e 15 | /2 |
-| Scripts | 16 a 18 | /3 |
-| Tópico 1 | 19 e 20 | /2 |
+| Caminhos e navegação | 1 a 4 | 4/4 |
+| Ajuda e `man` | 5 a 8 | 3/4 |
+| `mv` e `cp` | 9 e 10 | 2/2 |
+| Redirecionamento | 11 a 13 | 2/3 |
+| `grep` | 14 e 15 | 2/2 |
+| Scripts | 16 a 18 | 2/3 |
+| Tópico 1 | 19 e 20 | 2/2 |
 
 ## Questões erradas
 
 | Reforço | Q | Você marcou | Gabarito | Convicção ou chute | Reincidência? |
 | --- | --- | --- | --- | --- | --- |
-| | | | | | |
+| R3 | 7 | C (`man -k crontab`) | E (`man 5 crontab`) | Convicção | Sim (Q16 do simulado 02) |
+| R3 | 13 | A (quantas mensagens de erro) | E (quantos caminhos encontrados) | Convicção | Sim (Q19 do simulado 02) |
+| R3 | 16 | C (`./args.sh 3 um`) | D (`./args.sh 2 um`) | Chute | Sim (Q24 do simulado 02); terceira vez do `$#` |
+
+### Correções do R3
+
+1. **Q7.** O `man -k` **procura** páginas pela descrição curta (igual ao `apropos`) e devolve uma lista; ele não abre nenhuma página. Para **abrir** a página do formato de arquivo, informa-se a seção: `man 5 crontab`. Seção 1 é comando do usuário, seção 5 é formato de arquivo, seção 8 é comando de administração. Na VM: `man -k crontab` mostra `crontab (1)` e `crontab (5)`; em seguida `man 5 crontab`.
+2. **Q13.** O `2>/dev/null` descarta **só** o canal 2. O que passa pelo pipe é a saída padrão (canal 1), ou seja, os caminhos encontrados. O `wc -l` conta essas linhas. Para contar os erros seria preciso inverter: `find / -name passwd 2>&1 >/dev/null | wc -l`.
+3. **Q16.** O `$#` conta **só os argumentos**, sem o `$0`. Em `./args.sh um dois` há dois argumentos, então `$#` vale 2. O `$0` sai exatamente como o script foi chamado (`./args.sh`). Na VM: crie `args.sh` com `echo $0 $# $1` e rode `./args.sh um dois` (treino V7).
+
+**Leitura do R3.** Os blocos de navegação, `mv`/`cp`, `grep` e Tópico 1 fecharam sem erro. Os três erros são reincidências do simulado 02 e já estão na lista da `operacao-pratica.md`, seção 6 (`$#` com 3 ocorrências; seções do `man` com 2). O `2>&1 > arquivo` (Q11) e o `&>` (Q12) acertados mostram que o treino V3 fixou a ordem do redirecionamento; falta o caso do pipe com `2>/dev/null`.
 
 **Leitura.** Um bloco com menos da metade de acertos é sinal de que o mecanismo ainda não fixou. Nesse caso, a correção é **executar na VM** os comandos do bloco (treinos V1, V3, V4, V5 e V6), não reescrever o card.
