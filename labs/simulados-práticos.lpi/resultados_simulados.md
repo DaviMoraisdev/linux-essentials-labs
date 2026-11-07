@@ -65,9 +65,9 @@ Calendário refeito em 26/10 para a prova de 30/11 (`PLANO.md`, seção 7, e `la
 | 1 | Seg 05/10 | `simulado-01` | Diagnóstico | **28** | **70%** | 5 | **23** | 20 min 31 s | **Concluído** |
 | 2 | Sex 23/10 | `simulado-02` (escrito em 13/10) | 24 ou mais | **22** | **55%** | 4 | **17** | Não informado | **Concluído, abaixo da meta** |
 | 3 | Qui 05/11 | `simulado-03` (escrito em 18/10) | Linha de base | **27** | **67,5%** | 7 | **20** | Não informado | **Concluído: acima do corte do exame** |
-| 5 | Sáb 07/11 | `simulado-05` (escrito em 04/11) | 24 ou mais | | | | | | A fazer |
-| 4 | Ter 10/11 | `simulado-04` (escrito em 04/11) | 24 ou mais | | | | | | A fazer |
-| 6 | Qui 12/11 | `simulado-06` | 28 ou mais | | | | | | A fazer |
+| 5 | Seg 09/11 | `simulado-05` (escrito em 04/11) | 24 ou mais | | | | | | A fazer |
+| 4 | Qua 11/11 | `simulado-04` (escrito em 04/11) | 24 ou mais | | | | | | A fazer |
+| 6 | Sex 13/11 | `simulado-06` | 28 ou mais | | | | | | A fazer |
 | 7 | Sáb 14/11 | `simulado-07` | 28 ou mais | | | | | | A fazer |
 | 8 | Ter 17/11 | `simulado-08` | 28 ou mais | | | | | | A fazer |
 | 9 | Qui 19/11 | `simulado-09` | 30 ou mais | | | | | | A fazer |
@@ -75,7 +75,7 @@ Calendário refeito em 26/10 para a prova de 30/11 (`PLANO.md`, seção 7, e `la
 | 11 | Seg 23/11 | `simulado-11` | 30 ou mais | | | | | | A fazer |
 | 12 | **Qua 25/11** | `simulado-12` | **30 ou mais** (final) | | | | | | A fazer |
 
-**Mini-simulados (20 questões):** R4 em 05/11, R3 em 06/11, R2 em 09/11, R1 em 11/11 e M1 a M6 de 13 a 26/11 (`labs/operacao-pratica.md`, seção 3). Calendário refeito em 04/11.
+**Mini-simulados (20 questões):** R3 em 06/11 (17 de 20), R4 em 07/11, R2 em 10/11 e M1 a M6 de 12 a 26/11 (`labs/operacao-pratica.md`, seção 3). O R1 saiu do plano em 06/11: os temas dele (permissões, `tar`, redirecionamento, diretórios, lacunas) já aparecem em todo simulado e no banco de lacunas. Ele continua na seção 6 de `praticas_simulados.md` como material de consulta. Calendário refeito em 06/11.
 
 ### 2.2 Acertos por tópico, simulado a simulado
 
@@ -118,13 +118,13 @@ Os checkpoints saíram do plano em 26/10, junto com o modelo de dívidas. Fica o
 
 Temas que aparecem com frequência nos relatos de candidatos (ver `praticas_simulados.md`). Formato: acertos e total de questões do tema. O simulado 01 não tinha esta marcação por tema; a tabela começa no simulado 02.
 
-| Tema | Mínimo por simulado | #2 (23/10) | #3 (05/11) | R2 (09/11) | R1 (11/11) | #5 | #7 | #9 | #11 | #12 |
+| Tema | Mínimo por simulado | #2 (23/10) | #3 (05/11) | R2 (10/11) | R1 (retirado) | #5 | #7 | #9 | #11 | #12 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Permissões | 4 | **2/5** | **2/4** (dois chutes) | /4 | /5 | | | | | |
-| `tar` e compressão | 2 | 2/2 | 2/2 | /3 | /4 | | | | | |
-| Redirecionamento (com `<<`) | 3 | 2/3 | 3/3 | /3 | /5 | | | | | |
-| Diretórios virtuais e `/var` | 3 | 2/3 | 3/3 | /3 | /4 | | | | | |
-| **Questões de preencher a lacuna** | 5 | 3/5 | 3/5 | /6 | /6 | | | | | |
+| Permissões | 4 | **2/5** | **2/4** (dois chutes) | /4 | — | | | | | |
+| `tar` e compressão | 2 | 2/2 | 2/2 | /3 | — | | | | | |
+| Redirecionamento (com `<<`) | 3 | 2/3 | 3/3 | /3 | — | | | | | |
+| Diretórios virtuais e `/var` | 3 | 2/3 | 3/3 | /3 | — | | | | | |
+| **Questões de preencher a lacuna** | 5 | 3/5 | 3/5 | /6 | — | | | | | |
 
 No simulado 02, **permissões ficou abaixo de 60%** (2 de 5) e é o foco do R4; nas lacunas, dois dos três acertos foram pesquisados, e os dois erros (Q7, Q13) foram de **forma**.
 
@@ -286,14 +286,17 @@ Decisão ou checkpoint associado: .
 
 **Leitura.** Primeiro simulado acima do corte do exame, e os acertos firmes subiram de 17 para 20. Redirecionamento e diretórios virtuais fecharam em 3 de 3. O **Tópico 5 é o problema**: um acerto firme em sete, com a lacuna octal em `645` (o certo é `4755`), `x` em diretório e `chown` confundido com execução como root. Cinco dos treze erros são reincidência (Q16, Q23, Q24, Q29, Q36, Q39). Correções em `simulado-03.md`.
 
-### Mini-simulados R4, R3, R2 e R1 — 05 a 11/11/2026
+### Mini-simulados R3, R4 e R2 — 06 a 10/11/2026
 
-| Campo | R4 (05/11) | R3 (06/11) | R2 (09/11) | R1 (11/11) |
-|---|---|---|---|---|
-| Fonte | `reforco-r3-r4.md` | `reforco-r3-r4.md` | `praticas_simulados.md`, seção 8 | `praticas_simulados.md`, seção 6 |
-| Acertos | de 20 (meta: 16) | de 20 (meta: 16) | de 20 (meta: 15) | de 20 (meta: 15) |
-| Chutes marcados | | | | |
-| Reincidências | | | | |
+| Campo | R3 (06/11) | R4 (07/11) | R2 (10/11) |
+|---|---|---|---|
+| Fonte | `reforco-r3-r4.md` | `reforco-r3-r4.md` | `praticas_simulados.md`, seção 8 |
+| Acertos | **17 de 20** (meta: 16) | de 20 (meta: 16) | de 20 (meta: 15) |
+| Firmes | **17** | | |
+| Chutes marcados | 1 (Q16, errado) | | |
+| Reincidências | 3: seções do `man` (Q7), `2>/dev/null` com pipe (Q13), `$#` (Q16) | | |
+
+O R1 foi retirado em 06/11 (ver a nota acima da seção 2.2).
 
 Os mini-simulados M1 a M6 são registrados no próprio arquivo e no registro diário de `labs/operacao-pratica.md`.
 
@@ -485,3 +488,4 @@ São erros de conteúdo já estudado. Desde 26/10 eles têm treino próprio na V
 | 02/11/2026 | Calendário refeito: simulado 03 em 03/11; simulados 04 a 12 de 05 a 24/11; simulado 13 retirado; mini-simulados de 04 a 25/11; decisão da data em 21/11 |
 | 04/11/2026 | Calendário refeito: simulado 03 e R4 em 05/11; simulado 05 em 07/11; simulado 04 (NDG) em 10/11; simulados 06 a 12 de 12 a 25/11; decisão em 21/11 com os simulados 08, 09 e 10; lacunas das séries 01 e 02 registradas |
 | 05/11/2026 | Simulado 03 registrado: 27 de 40, 20 firmes (linha de base); lacunas da série 03: 4 de 5 |
+| 06/11/2026 | R3 registrado: 17 de 20, 17 firmes, três reincidências (`man 5`, `2>/dev/null` com pipe, `$#`); calendário refeito: R4 em 07/11, simulado 05 em 09/11, R2 em 10/11, simulado 04 em 11/11, M1 em 12/11, simulado 06 em 13/11; R1 retirado |
