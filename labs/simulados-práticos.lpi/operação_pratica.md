@@ -2,7 +2,7 @@
 
 **Prova: segunda-feira, 30/11/2026** · Exame **010-160** · Criado em 26/10/2026
 
-A operação começa de fato na **quinta 05/11**, com o simulado 03 (calendário refeito em 04/11: o que não saiu em 03 e 04/11 foi para o dia 05; o que era do dia 05 foi distribuído pela semana; e a carga de todos os dias subiu, com mais Exercícios da LPI, treino na VM todo dia e mini-simulados escritos a partir dos seus erros). Daí até a prova, **todos os dias** são de prática. Não há dívida. A única exceção é a primeira semana: de 05 a 07/11, as sessões têm um acréscimo de conteúdo (as aulas 41 a 72 e o bloco curto 4.1 e here document). Depois de 07/11, não há mais aula nem conteúdo novo.
+A operação começou na **quinta 05/11**, com o simulado 03 (27 de 40, 20 firmes). **Calendário refeito em 06/11:** o sábado 07/11 fica com o R4 e os Exercícios da LPI da semana, o domingo 08/11 com as aulas 41 a 72 e o que faltar da LPI, e o simulado 05 passou para a segunda 09/11. Daí até a prova, **todos os dias** são de prática. Não há dívida. A única exceção é o fim de semana de 07 e 08/11, que fecha o conteúdo (as aulas 41 a 72) e os Exercícios da LPI atrasados.
 
 Este arquivo substitui os arquivos semanais a partir de 05/11. O registro de cada dia fica na seção 9.
 
@@ -40,20 +40,34 @@ Este arquivo substitui os arquivos semanais a partir de 05/11. O registro de cad
 
 ## 3. Calendário
 
-**Refeito em 04/11.** Quinta 05/11 recebe o que ficou para trás de 03 e 04/11 (simulado 03, R4, V5 e V6, LPI 4.3 e 5.1). O que era da quinta foi distribuído: o simulado 04 foi para a terça 10/11, e a LPI 5.2 para a segunda 09/11.
+**Refeito em 06/11**, a seu pedido. Quinta e sexta foram feitas em parte; o que ficou para trás foi para o fim de semana, e a semana de 09/11 andou um dia:
+
+| Mudança | Antes | Agora |
+|---|---|---|
+| R4 | Qui 05/11 | **Sáb 07/11** |
+| Exercícios da LPI 4.2, 4.3, 5.1 e 5.3 | Qui 05 a sáb 07/11 | **Sáb 07 e dom 08/11** |
+| Aulas 41 a 72 | Noites de qui 05 a sáb 07/11 | **Dom 08/11** |
+| Simulado 05 | Sáb 07/11 | **Seg 09/11** |
+| R2 | Seg 09/11 | Ter 10/11 |
+| Simulado 04 | Ter 10/11 | Qua 11/11 |
+| M1 | Sex 13/11 | Qui 12/11 |
+| Simulado 06 | Qui 12/11 | Sex 13/11 |
+| R1 | Qua 11/11 | **Saiu do plano**: os temas dele (permissões, `tar`, redirecionamento, diretórios, lacunas) já aparecem em todo simulado e no banco de lacunas |
+
+De 15/11 em diante, nada mudou.
 
 | Dia | Tipo | Sessão | Treino na VM | Exercícios da LPI | Lacunas |
 |---|---|---|---|---|---|
-| **Qui 05/11** | A | **Simulado 03** (linha de base) · **R4** — contas e permissões (`reforco-r3-r4.md`) · **aulas 41 a 52** | V5 e V6 | 4.3, lição 1 e 4.3, lição 2 e 5.1 | Série 03 |
-| Sex 06/11 | B | **R3** — navegação, ajuda e redirecionamento (`reforco-r3-r4.md`) · **bloco curto**: 4.1 e here document (`labs/semana-09.md`) · **aulas 53 a 62** | V1 e V3 | 4.1 e 4.2 | Série 04 |
-| **Sáb 07/11** | A | **Simulado 05** (`simulado-05.md`) · **aulas 63 a 72 (curso fechado)** | V4 (scripts) | 5.3 | Série 05 |
-| Dom 08/11 | — | Descanso | — | — | — |
-| Seg 09/11 | B | **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) | V7 (processos e rede) | 5.2 e 4.4 | Série 06 |
-| **Ter 10/11** | A | **Simulado 04** (`simulado-04.md`) | Conforme os erros do simulado | 5.4 | Série 07 |
-| Qua 11/11 | B | **R1** — as quatro frentes e seis lacunas (`praticas_simulados.md`, seção 6) | V8 (`tar` e links) | 3.1 e 2.1, lição 1 | Série 08 |
-| **Qui 12/11** | A | **Simulado 06** | Conforme os erros do simulado | 2.1, lição 2 | Série 09 |
-| Sex 13/11 | B | **M1** — os temas mais errados nos simulados 03 a 06 | Conforme o M1 | 2.2 e 2.3, lição 1 | Série 10 |
-| **Sáb 14/11** | A | **Simulado 07** | Conforme os erros do simulado | 2.3, lição 2 | Série 11 |
+| **Qui 05/11** | A | **Simulado 03** (feito: 27 de 40, 20 firmes) · V5 e V6 (feitos). O R4 e a LPI 4.3 e 5.1 passaram para o sábado 07/11 | V5 e V6 (feitos) | — | Série 03 |
+| Sex 06/11 | B | **R3** (feito: 17 de 20) · **bloco curto**: 4.1 e here document (feito) · V1 e V3 (feitos). A LPI 4.2 passou para o sábado 07/11 | V1 e V3 (feitos) | 4.1 (feito) | Série 04 |
+| Sáb 07/11 | B | **R4** — contas e permissões (`reforco-r3-r4.md`) · **Exercícios da LPI da semana**, o quanto couber | — | 4.2 e 4.3, lição 1 e 4.3, lição 2 e 5.1 e 5.3 | Série 05 |
+| **Dom 08/11** | Conteúdo | **Aulas 41 a 72** (curso fechado) · Exercícios da LPI da semana que não saíram no sábado | — | — | — |
+| **Seg 09/11** | A | **Simulado 05** (`simulado-05.md`) | V4 (scripts) e os erros do simulado | 5.2 | Série 06 |
+| Ter 10/11 | B | **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) | V7 (processos e rede) | 4.4 e 5.4 | Série 07 |
+| **Qua 11/11** | A | **Simulado 04** (`simulado-04.md`) | Conforme os erros do simulado | 3.1 | Série 08 |
+| Qui 12/11 | B | **M1** — os temas mais errados nos simulados 03, 05 e 04 | Conforme o M1 | 2.1, lição 1 e 2.1, lição 2 | Série 09 |
+| **Sex 13/11** | A | **Simulado 06** | Conforme os erros do simulado | 2.2 | Série 10 |
+| **Sáb 14/11** | A | **Simulado 07** | Conforme os erros do simulado | 2.3, lição 1 e 2.3, lição 2 | Série 11 |
 | Dom 15/11 | — | Descanso | — | — | — |
 | Seg 16/11 | B | **M2** | Conforme o M2 | 2.4 e 3.2, lição 1 | Série 12 |
 | **Ter 17/11** | A | **Simulado 08** — conta para a decisão | Conforme os erros do simulado | 3.2, lição 2 | Série 13 |
@@ -71,9 +85,9 @@ Este arquivo substitui os arquivos semanais a partir de 05/11. O registro de cad
 | Dom 29/11 | — | Descanso antes da prova · não estudar na véspera | — | — | — |
 | **Seg 30/11** | — | **PROVA — Linux Essentials 010-160** | — | — | — |
 
-**As aulas 41 a 72** ficam à noite, de quinta a sábado, depois da sessão de prática. É a única exceção à regra 1: a aula que não couber vai para o domingo 08/11.
+**Se a LPI atrasada não sair no fim de semana,** ela entra um bloco por dia na semana de 09/11, junto com os blocos novos: **5.1** na seg 09, **4.3, lição 1** na ter 10, **4.3, lição 2** na qua 11, **4.2** na qui 12 e **5.3** na sex 13. A aula que não couber no domingo vai para a noite de segunda.
 
-**Contas:** 10 simulados completos (03 a 12), 10 mini-simulados (R1 a R4 e M1 a M6), as 24 lições da LPI mais cinco blocos de revisão das erradas, treino na VM todos os dias, 21 séries de lacunas e 3 domingos de descanso, além dos três dias antes da prova.
+**Contas:** 10 simulados completos (03 a 12), 9 mini-simulados (R2, R3, R4 e M1 a M6), as 24 lições da LPI mais cinco blocos de revisão das erradas, treino na VM todos os dias, 21 séries de lacunas e 3 domingos de descanso, além dos três dias antes da prova.
 
 **Se um dia cair**, ele não é reposto. O dia seguinte segue o calendário, e a regra 1 vale aqui também.
 
@@ -236,13 +250,14 @@ São os erros que voltaram depois de corrigidos. É a lista que guia os treinos 
 | Ordem do `2>&1` | 2 | `> arq 2>&1`: da esquerda para a direita | V3 |
 | `grep -v` | 2 | É *invert*; no `grep` não é *verbose* | V3 |
 | `/home` tratado como a pasta pessoal | 2 | `/home` contém as pastas; a pessoal é `~` | V1 |
-| `$#` | 2 | Conta os argumentos; `$0` não entra | V4 |
+| `$#` | **3** (Q24 do simulado 02; Q6 da autoavaliação da Semana 5; Q16 do R3) | Conta só os argumentos; o `$0` (nome do script) **não entra**: `./args.sh um dois` dá `$#` = 2 | V4 |
 | O `x` do `/etc/passwd` | 2 | Só diz que o hash está no `/etc/shadow`; o administrador é o UID 0 | V6 |
 | Conversão octal, com e sem bit especial | **3** (Q37 do simulado 01; Q36 do simulado 02; Q36 do simulado 03, `645` no lugar de `4755`) | Bit especial primeiro (SUID 4, SGID 2, sticky 1), depois trio por trio: `rwsr-xr-x` = 4755; `rwxr-x---` = 750 | V5 |
 | Herança de variáveis: `export` | **3** (Correções 12 e 71; Q16 do simulado 03) | O `export` marca a variável para os filhos; o `env NOME` tenta executar um comando | V4 |
 | `{}` tratado como globbing | 2 | A expansão de chaves cria os nomes sem olhar o disco | — |
 | Sinal padrão do `kill` | 2 | `SIGTERM` (15); o `SIGKILL` (9) só com `kill -9` | V7 |
 | **Forma das lacunas** (palavra a mais, explicação junto da resposta) | **5** (Q11 do simulado 01; Q7 e Q13 do simulado 02; séries 01 e 02 das lacunas) | Na lacuna, só o pedido: `copyleft`, `-x`, `FSF`. Explicação vai no caderno, nunca na resposta | — |
+| Seções do `man` (`man 5` contra `man -k`) | 2 (Q16 do simulado 02; Q7 do R3) | `man 5 arquivo` abre o **formato do arquivo**; `man -k` só **procura** a palavra e lista páginas | V2 |
 | `help` para os comandos internos | **3** (Correção 74; Q13 do simulado 02; série 02 das lacunas) | `help cd`; o `man` é para programas, o `type` diz o que é interno | V2 |
 | Padrão de globbing sem correspondência | 2 (Semana 3; Q24 do simulado 03) | O Bash entrega o texto literal, como `*.log`; não há erro | V1 |
 | `fg` e `bg` | 2 (Correção 78; Q29 do simulado 03) | `fg` traz para o primeiro plano; `bg` continua em segundo; `Ctrl+Z` suspende | V7 |
@@ -255,9 +270,9 @@ São os erros que voltaram depois de corrigidos. É a lista que guia os treinos 
 
 | Período | Simulados | Meta de acertos firmes |
 |---|---|---|
-| Linha de base | 03 (05/11) | Medir; sem meta |
-| Primeira semana | 05 (07/11) e 04 (10/11) | **24 ou mais** |
-| Segunda semana | 06 (12/11), 07 (14/11) e 08 (17/11) | **28 ou mais** |
+| Linha de base | 03 (05/11) | **20** (feito) |
+| Primeira semana | 05 (09/11) e 04 (11/11) | **24 ou mais** |
+| Segunda semana | 06 (13/11), 07 (14/11) e 08 (17/11) | **28 ou mais** |
 | Terceira semana | 09 (19/11), 10 (21/11) e 11 (23/11) | **30 ou mais** |
 | Final | 12 (25/11) | **30 ou mais** |
 
@@ -277,9 +292,9 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 | Material | Situação |
 |---|---|
 | Simulado 03 | Pronto (`simulado-03.md`) |
-| Simulado 04 | Pronto (`simulado-04.md`, escrito em 04/11), para a terça 10/11. Substitui o exame final do NDG, que fica como treino extra opcional |
-| R1, R2, R3 e R4 | Prontos (`praticas_simulados.md` e `reforco-r3-r4.md`) |
-| Simulado 05 | Pronto (`simulado-05.md`, escrito em 04/11), para o sábado 07/11 |
+| Simulado 04 | Pronto (`simulado-04.md`, escrito em 04/11), para a quarta 11/11. Substitui o exame final do NDG, que fica como treino extra opcional |
+| R2, R3 e R4 | Prontos (`praticas_simulados.md` e `reforco-r3-r4.md`). O R3 foi feito em 06/11; o R1 saiu do plano em 06/11 |
+| Simulado 05 | Pronto (`simulado-05.md`, escrito em 04/11), para a segunda 09/11 |
 | Simulados 06 a 12 | Escritos por mim, prontos **até três dias antes** de cada um |
 | M1 a M6 | Escritos por mim a partir dos erros dos simulados anteriores, prontos na véspera |
 | Lacunas | Prontas (`lacunas.md`, 24 séries) |
@@ -292,18 +307,19 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 | Data | Tipo | Sessão | Acertos | Firmes | Lacunas | Exercícios da LPI | Reincidências novas |
 |---|---|---|---|---|---|---|---|
 | 04/11 | — | Lacunas das séries 01 e 02 | — | — | 1 de 5 e 0 de 5 | — | Forma das lacunas; `help`; arquivos de contas |
-| 05/11 | A | Simulado 03 · R4 · V5 e V6 · Aulas 41–52 | Simulado 03: **27 de 40** · R4: de 20 | **20** | Série 03: **4 de 5** | 4.3, lição 1 e 4.3, lição 2 e 5.1 · de | |
-| 06/11 | B | R3 · 4.1 e here doc · Aulas 53–62 | de 20 | | de 5 | 4.1 e 4.2 · de | |
-| 07/11 | A | Simulado 05 · Aulas 63–72 | de 40 | | de 5 | 5.3 · de | |
-| 09/11 | B | R2 | de 20 | | de 5 | 5.2 e 4.4 · de | |
-| 10/11 | A | Simulado 04 | de 40 | | de 5 | 5.4 · de | |
-| 11/11 | B | R1 | de 20 | | de 5 | 3.1 e 2.1, lição 1 · de | |
-| 12/11 | A | Simulado 06 | de 40 | | de 5 | 2.1, lição 2 · de | |
-| 13/11 | B | M1 | de 20 | | de 5 | 2.2 e 2.3, lição 1 · de | |
-| 14/11 | A | Simulado 07 | de 40 | | de 5 | 2.3, lição 2 · de | |
+| 05/11 | A | Simulado 03 · V5 e V6 | Simulado 03: **27 de 40** | **20** | Série 03: **4 de 5** | — (passaram para 07/11) | Seis, no próprio `simulado-03.md` |
+| 06/11 | B | R3 · bloco curto (4.1 e here doc) · V1 e V3 | R3: **17 de 20** | **17** | — | 4.1: **7 de 7** | `$#`; seções do `man` |
+| 07/11 | B | R4 · LPI da semana | R4: de 20 | | Série 05: de 5 | 4.2, 4.3 (lições 1 e 2), 5.1 e 5.3 · de | |
+| 08/11 | Conteúdo | Aulas 41 a 72 · LPI que faltou | — | — | — | | |
+| 09/11 | A | Simulado 05 | de 40 | | Série 06: de 5 | 5.2 · de | |
+| 10/11 | B | R2 | de 20 | | Série 07: de 5 | 4.4 e 5.4 · de | |
+| 11/11 | A | Simulado 04 | de 40 | | Série 08: de 5 | 3.1 · de | |
+| 12/11 | B | M1 | de 20 | | Série 09: de 5 | 2.1 (lições 1 e 2) · de | |
+| 13/11 | A | Simulado 06 | de 40 | | Série 10: de 5 | 2.2 · de | |
+| 14/11 | A | Simulado 07 | de 40 | | Série 11: de 5 | 2.3 (lições 1 e 2) · de | |
 | 16/11 | B | M2 | de 20 | | de 5 | 2.4 e 3.2, lição 1 · de | |
 | 17/11 | A | Simulado 08 | de 40 | | de 5 | 3.2, lição 2 · de | |
-| 18/11 | B | M3 | de 20 | | de 5 | 3.3, lição 1 e 3.3, lição 2 e 1.1 · de | |
+| 18/11 | B | M3 | de 20 | | de 5 | 3.3 (lições 1 e 2) e 1.1 · de | |
 | 19/11 | A | Simulado 09 | de 40 | | de 5 | 1.2 · de | |
 | 20/11 | B | M4 · feriado | de 20 | | de 5 | 1.3 e 1.4 · de | |
 | 21/11 | A | Simulado 10 · Decisão da data | de 40 | | de 5 | Revisão: erradas do Tópico 5 · de | |
@@ -318,3 +334,13 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 |---|---|---|
 | 05/11 | V5 | Todas as conversões bateram, inclusive `2744` → `-rwxr-Sr--` (`S`: SGID sem `x` no grupo) e `1770` → `T`. O roteiro previa `671` para `640` com `g+w,o+x`; o certo, confirmado na VM, é **`661`** (roteiro e gabarito do R4 corrigidos). O `chmod 711 ; ls -ld d` deu *missing operand*: faltou o `d` no `chmod` |
 | 05/11 | V6 | `usermod -G ops` tirou o `dev` e o `-aG dev` devolveu: o mecanismo da reincidência, visto na prática. O `/etc/skel` foi copiado para a pasta do `teste1`. **O `last` não existe no Ubuntu 26.04**: foi substituído pelo pacote `wtmpdb` (`sudo apt install wtmpdb` traz o comando). Para a prova, continua valendo: o `last` lê o histórico de logins do `/var/log/wtmp`. O `groupdel ops` falhou porque a `carol`, da Prática 2, ainda existe com o `ops` como grupo primário |
+| 06/11 | V1 | Tudo como previsto, inclusive o `cd -`, que imprime o diretório antes do `pwd` (por isso o `/var/log` saiu duas vezes). O `ls /home` mostrou `alice`, `bob` e `carol`, da Prática 2, ainda na VM |
+| 06/11 | V3 | O `2>&1 > b.txt` mandou o erro para a **tela** e só a saída para o arquivo: na sua colagem, a primeira linha depois do comando é o erro na tela, e o `cat b.txt` mostrou só o `/etc/hostname`. No primeiro here document, o `FIM` não fechou o bloco: a linha tinha um **espaço depois do `FIM`**, e o delimitador precisa estar sozinho na linha, sem espaço. Por isso o bloco só fechou no segundo `FIM` |
+
+### Bloco curto — 4.1 e here document (06/11)
+
+**Lição 4.1.** As duas tabelas ficaram completas e certas: licença, kernel (Windows NT, XNU/Darwin, Linux), interface padrão e instalação de software nos três sistemas, e as quatro fases do ciclo de vida. A observação final está ótima: **beta e estável** dizem a maturidade, **LTS** diz a duração do suporte e **rolling release** diz o modelo de atualização. São eixos diferentes, e a prova costuma misturá-los. Ajuste de grafia: "mac0S" → **macOS**.
+
+**Exercícios da LPI 4.1:** os 5 Guiados e os 2 Exploratórios respondidos, todos certos. O `uname -r` mostra a versão do kernel, e o `uname -s` no macOS responde `Darwin`.
+
+**Here document:** a tabela dos quatro operadores (`<`, `<<`, `>`, `>>`) está certa. Fica o detalhe do V3: o delimitador fecha o bloco só se estiver **sozinho na linha**, sem espaço antes ou depois.
