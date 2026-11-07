@@ -44,10 +44,11 @@ Desde 26/10, os reforços fazem parte da operação prática (`labs/operacao-pra
 |---|---|
 | Sex 23/10 | Simulado 02 trouxe o mínimo da seção 2.1: permissões 2 de 5, `tar` 2 de 2, redirecionamento 2 de 3, diretórios 2 de 3, lacunas 3 de 5 (**feito**) |
 | Sex 30/10 | Prática 3 (Semana 9): mapa dos diretórios virtuais, `/proc`, `/sys` e `/dev` lado a lado |
-| Qui 05/11 | Simulado 03, a linha de base da operação · **R4** (`reforco-r3-r4.md`): contas e permissões |
-| Sex 06/11 | Here document estudado como conceito, no bloco curto · **R3** (`reforco-r3-r4.md`): navegação, ajuda e redirecionamento |
-| Seg 09/11 | **R2** (seção 8 deste arquivo): inclui `/sys`, processos e rede |
-| Qua 11/11 | **R1** (seção 6 deste arquivo): as quatro frentes e seis lacunas |
+| Qui 05/11 | Simulado 03, a linha de base da operação: 27 de 40, 20 firmes (**feito**) |
+| Sex 06/11 | Here document estudado como conceito, no bloco curto · **R3** (`reforco-r3-r4.md`): 17 de 20, 17 firmes (**feito**) |
+| Sáb 07/11 | **R4** (`reforco-r3-r4.md`): contas e permissões |
+| Ter 10/11 | **R2** (seção 8 deste arquivo): inclui `/sys`, processos e rede |
+| R1 | **Saiu do plano em 06/11**: os temas dele já aparecem em todo simulado e no banco de lacunas. A seção 6 fica como material de consulta |
 | Todo dia, de 04/11 a 26/11 | **Cinco lacunas** do banco (`lacunas.md`), no lugar do antigo aquecimento rotativo |
 
 ### 2.3 Aquecimento
@@ -133,7 +134,7 @@ Mnemônico: **proc de processos, dev de dispositivos, sys de hardware organizado
 
 ---
 
-## 6. Mini-simulado R1 — Quarta 11/11
+## 6. Mini-simulado R1 — fora do plano (material de consulta)
 
 **Regras:** 20 questões, 25 minutos, sem consulta, **marcando cada chute**. Nas questões de preenchimento (marcadas com **[lacuna]**), escreva só a resposta, seguindo a seção 4. Aberto o gabarito, anote apenas as erradas e as chutadas, siga o protocolo de correção da operação prática e registre o resultado em `resultados_simulados.md`, seções 2.5 e 4.
 
@@ -476,3 +477,4 @@ A) `/dev/cpu` · B) `/var/cpuinfo` · C) `/proc/cpuinfo` · D) `/etc/cpuinfo`
 | 19/10/2026 | R1 remarcado para qua 28/10, depois do R2, para abrir espaço na Semana 8 |
 | 23/10/2026 | R2 e R1 remarcados para o sábado 31/10, depois do Tópico 4 (Semana 9). Criados os reforços R3 e R4 em arquivo próprio (`reforco-r3-r4.md`), sobre os erros do simulado 02 |
 | 26/10/2026 | Reforços integrados à operação prática: R4 em 02/11, R3 em 04/11, R2 em 06/11 e R1 em 09/11; aquecimento rotativo substituído pelo banco de lacunas (`lacunas.md`) |
+| 06/11/2026 | Calendário refeito: R3 feito em 06/11 (17 de 20); R4 no sábado 07/11; R2 na terça 10/11; R1 fora do plano, mantido como material de consulta |
