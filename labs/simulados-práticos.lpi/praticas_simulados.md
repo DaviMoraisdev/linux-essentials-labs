@@ -46,7 +46,7 @@ Desde 26/10, os reforços fazem parte da operação prática (`labs/operacao-pra
 | Sex 30/10 | Prática 3 (Semana 9): mapa dos diretórios virtuais, `/proc`, `/sys` e `/dev` lado a lado |
 | Qui 05/11 | Simulado 03, a linha de base da operação: 27 de 40, 20 firmes (**feito**) |
 | Sex 06/11 | Here document estudado como conceito, no bloco curto · **R3** (`reforco-r3-r4.md`): 17 de 20, 17 firmes (**feito**) |
-| Sáb 07/11 | **R4** (`reforco-r3-r4.md`): contas e permissões |
+| Sáb 07/11 | **R4** (`reforco-r3-r4.md`): 18 de 20, 18 firmes (**feito**) |
 | Ter 10/11 | **R2** (seção 8 deste arquivo): inclui `/sys`, processos e rede |
 | R1 | **Saiu do plano em 06/11**: os temas dele já aparecem em todo simulado e no banco de lacunas. A seção 6 fica como material de consulta |
 | Todo dia, de 04/11 a 26/11 | **Cinco lacunas** do banco (`lacunas.md`), no lugar do antigo aquecimento rotativo |
