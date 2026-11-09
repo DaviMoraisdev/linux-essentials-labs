@@ -23,41 +23,30 @@ São as **24 lições** do material oficial, com cerca de **205 exercícios** (G
 
 ## 1. Calendário
 
-**Refeito em 04/11**, com mais exercícios por semana: **dois blocos nos dias B** e um nos dias A. As 24 lições terminam em 20/11. De 21 a 25/11, cada bloco **refaz as questões que você errou**, tópico a tópico, sem olhar a resposta antes.
+**Refeito em 08/11**, com a carga maior: **duas ou três lições por dia**, de 09 a 18/11, incluindo os domingos 15 e 22. As cinco lições atrasadas (4.2, 4.3 nas duas lições, 5.1 e 5.3) entraram de 09 a 11/11, junto com as outras do mesmo tópico. De 19 a 25/11, cada bloco **refaz as questões que você errou**, tópico a tópico, e o que errar de novo na revisão volta em 24 e 25/11.
 
 | Dia | Lições | Exercícios (aprox.) | Páginas dos exercícios | Páginas das respostas |
 |---|---|---|---|---|
 | Sex 06/11 | 4.1 | 7 | 264–266 | 268–270 |
-| Sáb 07/11 | 4.2 e 4.3, lição 1 e 4.3, lição 2 e 5.1 e 5.3 | 4 + 6 + 9 + 12 + 11 | 283–284 · 303–305 · 321–324 · 372–374 · 416–418 | 286–288 · 308–310 · 328–332 · 377–379 · 420–423 |
-| Seg 09/11 | 5.2 | 10 | 391–393 | 395–397 |
-| Ter 10/11 | 4.4 e 5.4 | 9 + 10 | 349–350 · 434–435 | 352–353 · 439–440 |
-| Qua 11/11 | 3.1 | 9 | 183–184 | 187–189 |
-| Qui 12/11 | 2.1, lição 1 e 2.1, lição 2 | 6 + 9 | 82–84 · 94–95 | 86–87 · 97–98 |
-| Sex 13/11 | 2.2 | 11 | 107–109 | 111–114 |
-| Sáb 14/11 | 2.3, lição 1 e 2.3, lição 2 | 7 + 5 | 122–124 · 139–141 | 126–129 · 143–145 |
-| Seg 16/11 | 2.4 e 3.2, lição 1 | 12 + 12 | 162–164 · 199–200 | 167–170 · 202–204 |
-| Ter 17/11 | 3.2, lição 2 | 9 | 210–211 | 213–215 |
-| Qua 18/11 | 3.3, lição 1 e 3.3, lição 2 e 1.1 | 7 + 3 + 8 | 229–231 · 247–249 · 8–9 | 234–236 · 251–253 · 11–13 |
-| Qui 19/11 | 1.2 | 11 | 30–32 | 34–36 |
-| Sex 20/11 | 1.3 e 1.4 | 10 + 8 | 48–49 · 66–68 | 51–52 · 70–72 |
-| Sáb 21/11 | **Revisão: erradas do Tópico 5** | As erradas da seção 3 | — | — |
-| Seg 23/11 | **Revisão: erradas do Tópico 4** | As erradas da seção 3 | — | — |
-| Ter 24/11 | **Revisão: erradas dos Tópicos 3 e 2** | As erradas da seção 3 | — | — |
-| Qua 25/11 | **Revisão: erradas do Tópico 1** | As erradas da seção 3 | — | — |
+| Seg 09/11 | 5.1 e 5.2 | 12 + 10 | 372–374 · 391–393 | 377–379 · 395–397 |
+| Ter 10/11 | 5.3 e 5.4 | 11 + 10 | 416–418 · 434–435 | 420–423 · 439–440 |
+| Qua 11/11 | 4.2 e 4.3, lição 1 e 4.3, lição 2 | 4 + 6 + 9 | 283–284 · 303–305 · 321–324 | 286–288 · 308–310 · 328–332 |
+| Qui 12/11 | 4.4 e 3.1 | 9 + 9 | 349–350 · 183–184 | 352–353 · 187–189 |
+| Sex 13/11 | 3.2, lição 1 e 3.2, lição 2 | 12 + 9 | 199–200 · 210–211 | 202–204 · 213–215 |
+| Sáb 14/11 | 3.3, lição 1 e 3.3, lição 2 e 2.1, lição 1 | 7 + 3 + 6 | 229–231 · 247–249 · 82–84 | 234–236 · 251–253 · 86–87 |
+| Dom 15/11 | 2.1, lição 2 e 2.2 | 9 + 11 | 94–95 · 107–109 | 97–98 · 111–114 |
+| Seg 16/11 | 2.3, lição 1 e 2.3, lição 2 e 2.4 | 7 + 5 + 12 | 122–124 · 139–141 · 162–164 | 126–129 · 143–145 · 167–170 |
+| Ter 17/11 | 1.1 e 1.2 | 8 + 11 | 8–9 · 30–32 | 11–13 · 34–36 |
+| Qua 18/11 | 1.3 e 1.4 | 10 + 8 | 48–49 · 66–68 | 51–52 · 70–72 |
+| Qui 19/11 | **Revisão: erradas do Tópico 5** | As erradas da seção 3 | — | — |
+| Sex 20/11 | **Revisão: erradas do Tópico 4** | As erradas da seção 3 | — | — |
+| Sáb 21/11 | **Revisão: erradas do Tópico 3** | As erradas da seção 3 | — | — |
+| Dom 22/11 | **Revisão: erradas do Tópico 2** | As erradas da seção 3 | — | — |
+| Seg 23/11 | **Revisão: erradas do Tópico 1** | As erradas da seção 3 | — | — |
+| Ter 24/11 | **Revisão: as que errou de novo na revisão** | As erradas da seção 3 | — | — |
+| Qua 25/11 | **Revisão: as reincidências da LPI** | As erradas da seção 3 | — | — |
 
 As páginas são as impressas no rodapé do PDF.
-
-### Atraso desta semana (ajuste de 06/11)
-
-As cinco lições de 07/11 (4.2, 4.3 lição 1, 4.3 lição 2, 5.1 e 5.3; 42 exercícios) são o atraso da semana de 05 a 08/11. A ordem é esta:
-
-| Etapa | O que fazer |
-| --- | --- |
-| Sábado 07/11 | Depois do R4, o máximo das cinco lições, na ordem da tabela |
-| Domingo 08/11 | O que sobrar do sábado, junto com as aulas 41 a 72 |
-| Se ainda sobrar | Uma lição por dia, somada ao bloco já previsto: 5.1 na seg 09, 4.3 lição 1 na ter 10, 4.3 lição 2 na qua 11, 4.2 na qui 12 e 5.3 na sex 13 |
-
-Na distribuição da última linha, o dia ganha cerca de 25 minutos. Registre na seção 3 com a data em que a lição foi feita de fato.
 
 ---
 
@@ -65,29 +54,29 @@ Na distribuição da última linha, o dia ganha cerca de 25 minutos. Registre na
 
 | Lição | Tema | Exercícios | Dia |
 |---|---|---|---|
-| 1.1 | A evolução do Linux e sistemas operacionais populares | G5 E3 | Qua 18/11 |
-| 1.2 | Principais aplicações open source | G7 E4 | Qui 19/11 |
-| 1.3 | Software open source e suas licenças | G5 E5 | Sex 20/11 |
-| 1.4 | Habilidades ICT e trabalhando no Linux | G5 E3 | Sex 20/11 |
-| 2.1, lição 1 | O básico sobre a linha de comando | G3 E3 | Qui 12/11 |
-| 2.1, lição 2 | O básico sobre a linha de comando (variáveis) | G4 E5 | Qui 12/11 |
-| 2.2 | Usando a linha de comando para conseguir ajuda | G6 E5 | Sex 13/11 |
-| 2.3, lição 1 | Usando diretórios e listando arquivos | G4 E3 | Sáb 14/11 |
-| 2.3, lição 2 | Usando diretórios e listando arquivos (caminhos e ocultos) | G2 E3 | Sáb 14/11 |
+| 1.1 | A evolução do Linux e sistemas operacionais populares | G5 E3 | Ter 17/11 |
+| 1.2 | Principais aplicações open source | G7 E4 | Ter 17/11 |
+| 1.3 | Software open source e suas licenças | G5 E5 | Qua 18/11 |
+| 1.4 | Habilidades ICT e trabalhando no Linux | G5 E3 | Qua 18/11 |
+| 2.1, lição 1 | O básico sobre a linha de comando | G3 E3 | Sáb 14/11 |
+| 2.1, lição 2 | O básico sobre a linha de comando (variáveis) | G4 E5 | Dom 15/11 |
+| 2.2 | Usando a linha de comando para conseguir ajuda | G6 E5 | Dom 15/11 |
+| 2.3, lição 1 | Usando diretórios e listando arquivos | G4 E3 | Seg 16/11 |
+| 2.3, lição 2 | Usando diretórios e listando arquivos (caminhos e ocultos) | G2 E3 | Seg 16/11 |
 | 2.4 | Criando, movendo e deletando arquivos | G7 E5 | Seg 16/11 |
-| 3.1 | Empacotando arquivos na linha de comando | G5 E4 | Qua 11/11 |
-| 3.2, lição 1 | Redirecionamento e pipes | G7 E5 | Seg 16/11 |
-| 3.2, lição 2 | `grep` e expressões regulares | G6 E3 | Ter 17/11 |
-| 3.3, lição 1 | Transformando comandos em scripts | G3 E4 | Qua 18/11 |
-| 3.3, lição 2 | Códigos de saída, argumentos e `for` | G2 E1 | Qua 18/11 |
+| 3.1 | Empacotando arquivos na linha de comando | G5 E4 | Qui 12/11 |
+| 3.2, lição 1 | Redirecionamento e pipes | G7 E5 | Sex 13/11 |
+| 3.2, lição 2 | `grep` e expressões regulares | G6 E3 | Sex 13/11 |
+| 3.3, lição 1 | Transformando comandos em scripts | G3 E4 | Sáb 14/11 |
+| 3.3, lição 2 | Códigos de saída, argumentos e `for` | G2 E1 | Sáb 14/11 |
 | 4.1 | Escolhendo um sistema operacional | G5 E2 | Sex 06/11 |
-| 4.2 | Entendendo o hardware do computador | G3 E1 | Sáb 07/11 |
-| 4.3, lição 1 | Onde os dados são armazenados: programas, configuração e processos | G4 E2 | Sáb 07/11 |
-| 4.3, lição 2 | Onde os dados são armazenados: logs e mensagens do sistema | G6 E3 | Sáb 07/11 |
-| 4.4 | Seu computador na rede | G4 E5 | Ter 10/11 |
-| 5.1 | Segurança básica e tipos de usuários | G5 E7 | Sáb 07/11 |
+| 4.2 | Entendendo o hardware do computador | G3 E1 | Qua 11/11 |
+| 4.3, lição 1 | Onde os dados são armazenados: programas, configuração e processos | G4 E2 | Qua 11/11 |
+| 4.3, lição 2 | Onde os dados são armazenados: logs e mensagens do sistema | G6 E3 | Qua 11/11 |
+| 4.4 | Seu computador na rede | G4 E5 | Qui 12/11 |
+| 5.1 | Segurança básica e tipos de usuários | G5 E7 | Seg 09/11 |
 | 5.2 | Criando usuários e grupos | G2 E8 | Seg 09/11 |
-| 5.3 | Gerenciando permissões e propriedade de arquivos | G6 E5 | Sáb 07/11 |
+| 5.3 | Gerenciando permissões e propriedade de arquivos | G6 E5 | Ter 10/11 |
 | 5.4 | Diretórios e arquivos especiais | G5 E5 | Ter 10/11 |
 
 ---
@@ -99,30 +88,33 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 | Dia | Lição | Acertos | Erradas (número e o que estava errado) | Reincidência? |
 |---|---|---|---|---|
 | Sex 06/11 | 4.1 | **7 de 7** | Nenhuma | — |
-| Sáb 07/11 | 4.2 | de 4 |  |  |
-| Sáb 07/11 | 4.3, lição 1 | de 6 |  |  |
-| Sáb 07/11 | 4.3, lição 2 | de 9 |  |  |
-| Sáb 07/11 | 5.1 | de 12 |  |  |
-| Sáb 07/11 | 5.3 | de 11 |  |  |
+| Seg 09/11 | 5.1 | de 12 |  |  |
 | Seg 09/11 | 5.2 | de 10 |  |  |
-| Ter 10/11 | 4.4 | de 9 |  |  |
+| Ter 10/11 | 5.3 | de 11 |  |  |
 | Ter 10/11 | 5.4 | de 10 |  |  |
-| Qua 11/11 | 3.1 | de 9 |  |  |
-| Qui 12/11 | 2.1, lição 1 | de 6 |  |  |
-| Qui 12/11 | 2.1, lição 2 | de 9 |  |  |
-| Sex 13/11 | 2.2 | de 11 |  |  |
-| Sáb 14/11 | 2.3, lição 1 | de 7 |  |  |
-| Sáb 14/11 | 2.3, lição 2 | de 5 |  |  |
+| Qua 11/11 | 4.2 | de 4 |  |  |
+| Qua 11/11 | 4.3, lição 1 | de 6 |  |  |
+| Qua 11/11 | 4.3, lição 2 | de 9 |  |  |
+| Qui 12/11 | 4.4 | de 9 |  |  |
+| Qui 12/11 | 3.1 | de 9 |  |  |
+| Sex 13/11 | 3.2, lição 1 | de 12 |  |  |
+| Sex 13/11 | 3.2, lição 2 | de 9 |  |  |
+| Sáb 14/11 | 3.3, lição 1 | de 7 |  |  |
+| Sáb 14/11 | 3.3, lição 2 | de 3 |  |  |
+| Sáb 14/11 | 2.1, lição 1 | de 6 |  |  |
+| Dom 15/11 | 2.1, lição 2 | de 9 |  |  |
+| Dom 15/11 | 2.2 | de 11 |  |  |
+| Seg 16/11 | 2.3, lição 1 | de 7 |  |  |
+| Seg 16/11 | 2.3, lição 2 | de 5 |  |  |
 | Seg 16/11 | 2.4 | de 12 |  |  |
-| Seg 16/11 | 3.2, lição 1 | de 12 |  |  |
-| Ter 17/11 | 3.2, lição 2 | de 9 |  |  |
-| Qua 18/11 | 3.3, lição 1 | de 7 |  |  |
-| Qua 18/11 | 3.3, lição 2 | de 3 |  |  |
-| Qua 18/11 | 1.1 | de 8 |  |  |
-| Qui 19/11 | 1.2 | de 11 |  |  |
-| Sex 20/11 | 1.3 | de 10 |  |  |
-| Sex 20/11 | 1.4 | de 8 |  |  |
-| Sáb 21/11 | Revisão: erradas do Tópico 5 | | | |
-| Seg 23/11 | Revisão: erradas do Tópico 4 | | | |
-| Ter 24/11 | Revisão: erradas dos Tópicos 3 e 2 | | | |
-| Qua 25/11 | Revisão: erradas do Tópico 1 | | | |
+| Ter 17/11 | 1.1 | de 8 |  |  |
+| Ter 17/11 | 1.2 | de 11 |  |  |
+| Qua 18/11 | 1.3 | de 10 |  |  |
+| Qua 18/11 | 1.4 | de 8 |  |  |
+| Qui 19/11 | Revisão: erradas do Tópico 5 | | | |
+| Sex 20/11 | Revisão: erradas do Tópico 4 | | | |
+| Sáb 21/11 | Revisão: erradas do Tópico 3 | | | |
+| Dom 22/11 | Revisão: erradas do Tópico 2 | | | |
+| Seg 23/11 | Revisão: erradas do Tópico 1 | | | |
+| Ter 24/11 | Revisão: as que errou de novo na revisão | | | |
+| Qua 25/11 | Revisão: as reincidências da LPI | | | |
