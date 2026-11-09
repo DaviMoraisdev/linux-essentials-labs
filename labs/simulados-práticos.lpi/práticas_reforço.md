@@ -1,6 +1,6 @@
 # Reforços R3 e R4 — erros do simulado 02 — LPI Linux Essentials (010-160)
 
-**Criado em:** 23/10/2026 · **Quando:** R3 na sexta 06/11 (feito) e R4 no sábado 07/11, na operação prática · **Origem:** os 14 erros do simulado 02 em conteúdo já estudado (`simulado-02.md`, seção "Questões erradas")
+**Criado em:** 23/10/2026 · **Quando:** R3 na sexta 06/11 e R4 no sábado 07/11 (os dois feitos), na operação prática · **Origem:** os 14 erros do simulado 02 em conteúdo já estudado (`simulado-02.md`, seção "Questões erradas")
 
 Os dois reforços atacam os blocos em que o simulado 02 concentrou os erros: **navegação, ajuda e redirecionamento** (R3, Tópicos 1 a 3) e **contas e permissões** (R4, Tópico 5). As questões **não repetem** as do simulado 02: testam o mesmo mecanismo por outro ângulo, porque é assim que o exame cobra. Quem decorou a resposta da questão anterior erra; quem entendeu o mecanismo acerta.
 
@@ -394,18 +394,19 @@ O que acontece com `./copia.sh a.txt`?
 
 | Campo | Valor |
 | --- | --- |
-| Tempo gasto | |
-| Acertos | de 20 (meta: 16) |
-| Chutes marcados | |
-| Erros de forma nas lacunas | |
-| Reincidências (erro que repete o simulado 02) | |
+| Tempo gasto | Não informado |
+| Acertos | **18 de 20** (meta: 16) |
+| Firmes | **18** (nenhum chute marcado) |
+| Chutes marcados | 0 |
+| Erros de forma nas lacunas | 0 (Q3 `/etc/shadow`, Q10 `664` e Q19 `id` corretas) |
+| Reincidências (erro que repete o simulado 02) | 2: Q14 (Q38 do 02) e Q16 (Q40 do 02) |
 
 | Bloco | Questões | Acertos |
 | --- | --- | --- |
-| `/etc/passwd`, `/etc/shadow`, `/etc/group` | 1 a 4 | /4 |
-| Octal e simbólico | 5 a 10 | /6 |
-| Bits especiais | 11 a 14 | /4 |
-| Grupos, dono e acesso | 15 a 20 | /6 |
+| `/etc/passwd`, `/etc/shadow`, `/etc/group` | 1 a 4 | 4/4 |
+| Octal e simbólico | 5 a 10 | 6/6 |
+| Bits especiais | 11 a 14 | 3/4 |
+| Grupos, dono e acesso | 15 a 20 | 5/6 |
 
 ## R3 — sexta 06/11
 
@@ -435,6 +436,8 @@ O que acontece com `./copia.sh a.txt`?
 | R3 | 7 | C (`man -k crontab`) | E (`man 5 crontab`) | Convicção | Sim (Q16 do simulado 02) |
 | R3 | 13 | A (quantas mensagens de erro) | E (quantos caminhos encontrados) | Convicção | Sim (Q19 do simulado 02) |
 | R3 | 16 | C (`./args.sh 3 um`) | D (`./args.sh 2 um`) | Chute | Sim (Q24 do simulado 02); terceira vez do `$#` |
+| R4 | 14 | B (`4744`) | D (`2744`) | Convicção | Sim (Q38 do simulado 02) |
+| R4 | 16 | B e D (`chgrp` e `usermod -g`) | B e E (`chgrp` e `chown :financeiro`) | Convicção | Sim (Q40 do simulado 02, que tinha sido pesquisada) |
 
 ### Correções do R3
 
@@ -443,5 +446,12 @@ O que acontece com `./copia.sh a.txt`?
 3. **Q16.** O `$#` conta **só os argumentos**, sem o `$0`. Em `./args.sh um dois` há dois argumentos, então `$#` vale 2. O `$0` sai exatamente como o script foi chamado (`./args.sh`). Na VM: crie `args.sh` com `echo $0 $# $1` e rode `./args.sh um dois` (treino V7).
 
 **Leitura do R3.** Os blocos de navegação, `mv`/`cp`, `grep` e Tópico 1 fecharam sem erro. Os três erros são reincidências do simulado 02 e já estão na lista da `operacao-pratica.md`, seção 6 (`$#` com 3 ocorrências; seções do `man` com 2). O `2>&1 > arquivo` (Q11) e o `&>` (Q12) acertados mostram que o treino V3 fixou a ordem do redirecionamento; falta o caso do pipe com `2>/dev/null`.
+
+### Correções do R4
+
+1. **Q14.** O `S` em `-rwxr-Sr--` está no trio do **grupo**, e no grupo o bit especial é o **SGID (2)**. O SUID (4) só aparece no trio do dono. Maiúsculo quer dizer que o grupo não tem `x`: `r-S` vale 4. Resultado: `2744`. Regra para a prova: **primeiro veja em qual trio está a letra**, depois some. Você acertou isso na VM em 05/11 (V5); no papel, a pressa leu "S" como SUID.
+2. **Q16.** O `usermod` mexe em **contas de usuário**: `usermod -g financeiro` mudaria o grupo primário de um usuário chamado `relatorio.txt`, que não existe. Para o **grupo de um arquivo**: `chgrp financeiro relatorio.txt` ou `chown :financeiro relatorio.txt` (os dois-pontos antes do nome dizem "só o grupo"). Na VM: `touch r.txt; sudo chown :adm r.txt; ls -l r.txt`.
+
+**Leitura do R4.** Os blocos de contas e de octal fecharam sem erro, inclusive as três questões de `chmod` simbólico que eram o ponto fraco do simulado 02. Os dois erros são de leitura de posição: em qual trio está o `S` e qual comando age sobre arquivo e qual age sobre usuário. Os dois entram na lista de reincidências da `operacao-pratica.md` e no treino V5 da segunda 09/11.
 
 **Leitura.** Um bloco com menos da metade de acertos é sinal de que o mecanismo ainda não fixou. Nesse caso, a correção é **executar na VM** os comandos do bloco (treinos V1, V3, V4, V5 e V6), não reescrever o card.
