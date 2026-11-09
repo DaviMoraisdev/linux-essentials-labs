@@ -75,7 +75,7 @@ Calendário refeito em 26/10 para a prova de 30/11 (`PLANO.md`, seção 7, e `la
 | 11 | Seg 23/11 | `simulado-11` | 30 ou mais | | | | | | A fazer |
 | 12 | **Qua 25/11** | `simulado-12` | **30 ou mais** (final) | | | | | | A fazer |
 
-**Mini-simulados (20 questões):** R3 em 06/11 (17 de 20), R4 em 07/11, R2 em 10/11 e M1 a M6 de 12 a 26/11 (`labs/operacao-pratica.md`, seção 3). O R1 saiu do plano em 06/11: os temas dele (permissões, `tar`, redirecionamento, diretórios, lacunas) já aparecem em todo simulado e no banco de lacunas. Ele continua na seção 6 de `praticas_simulados.md` como material de consulta. Calendário refeito em 06/11.
+**Mini-simulados (20 questões):** R3 em 06/11 (17 de 20), R4 em 07/11 (18 de 20), R2 em 10/11 e M1 a M6 de 12 a 26/11 (`labs/operacao-pratica.md`, seção 3). O R1 saiu do plano em 06/11: os temas dele (permissões, `tar`, redirecionamento, diretórios, lacunas) já aparecem em todo simulado e no banco de lacunas. Ele continua na seção 6 de `praticas_simulados.md` como material de consulta. Calendário refeito em 06/11.
 
 ### 2.2 Acertos por tópico, simulado a simulado
 
@@ -291,10 +291,10 @@ Decisão ou checkpoint associado: .
 | Campo | R3 (06/11) | R4 (07/11) | R2 (10/11) |
 |---|---|---|---|
 | Fonte | `reforco-r3-r4.md` | `reforco-r3-r4.md` | `praticas_simulados.md`, seção 8 |
-| Acertos | **17 de 20** (meta: 16) | de 20 (meta: 16) | de 20 (meta: 15) |
-| Firmes | **17** | | |
-| Chutes marcados | 1 (Q16, errado) | | |
-| Reincidências | 3: seções do `man` (Q7), `2>/dev/null` com pipe (Q13), `$#` (Q16) | | |
+| Acertos | **17 de 20** (meta: 16) | **18 de 20** (meta: 16) | de 20 (meta: 15) |
+| Firmes | **17** | **18** | |
+| Chutes marcados | 1 (Q16, errado) | 0 | |
+| Reincidências | 3: seções do `man` (Q7), `2>/dev/null` com pipe (Q13), `$#` (Q16) | 2: `S` no trio do grupo lido como SUID (Q14), `usermod -g` para o grupo de um arquivo (Q16) | |
 
 O R1 foi retirado em 06/11 (ver a nota acima da seção 2.2).
 
@@ -489,3 +489,4 @@ São erros de conteúdo já estudado. Desde 26/10 eles têm treino próprio na V
 | 04/11/2026 | Calendário refeito: simulado 03 e R4 em 05/11; simulado 05 em 07/11; simulado 04 (NDG) em 10/11; simulados 06 a 12 de 12 a 25/11; decisão em 21/11 com os simulados 08, 09 e 10; lacunas das séries 01 e 02 registradas |
 | 05/11/2026 | Simulado 03 registrado: 27 de 40, 20 firmes (linha de base); lacunas da série 03: 4 de 5 |
 | 06/11/2026 | R3 registrado: 17 de 20, 17 firmes, três reincidências (`man 5`, `2>/dev/null` com pipe, `$#`); calendário refeito: R4 em 07/11, simulado 05 em 09/11, R2 em 10/11, simulado 04 em 11/11, M1 em 12/11, simulado 06 em 13/11; R1 retirado |
+| 08/11/2026 | R4 registrado: 18 de 20, 18 firmes; lacunas 04 e 05: 5 de 5 cada; carga aumentada para cerca de 3h30 por dia e 2h nos domingos 15 e 22; aulas 41 a 72 nas noites de 09 a 12/11; Exercícios da LPI até 18/11 |
