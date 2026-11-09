@@ -2,7 +2,7 @@
 
 **Prova: segunda-feira, 30/11/2026** · Exame **010-160** · Criado em 26/10/2026
 
-A operação começou na **quinta 05/11**, com o simulado 03 (27 de 40, 20 firmes). **Calendário refeito em 06/11:** o sábado 07/11 fica com o R4 e os Exercícios da LPI da semana, o domingo 08/11 com as aulas 41 a 72 e o que faltar da LPI, e o simulado 05 passou para a segunda 09/11. Daí até a prova, **todos os dias** são de prática. Não há dívida. A única exceção é o fim de semana de 07 e 08/11, que fecha o conteúdo (as aulas 41 a 72) e os Exercícios da LPI atrasados.
+A operação começou na **quinta 05/11**, com o simulado 03 (27 de 40, 20 firmes). **Calendário refeito em 08/11, com carga maior:** cerca de **3h30 de segunda a sábado** e **2h nos domingos 15 e 22**. As aulas 41 a 72, que não saíram no domingo 08/11, ficam nas noites de 09 a 12/11; os Exercícios da LPI atrasados entram de 09 a 15/11, e as 24 lições terminam em 18/11. Daí até a prova, **todos os dias** são de prática. Não há dívida.
 
 Este arquivo substitui os arquivos semanais a partir de 05/11. O registro de cada dia fica na seção 9.
 
@@ -17,77 +17,77 @@ Este arquivo substitui os arquivos semanais a partir de 05/11. O registro de cad
 | 3 | **Card no Notion só para reincidência**, ou seja, um erro que já aconteceu antes | Quatro das nove correções antigas voltaram a errar no simulado 02. Escrever não fixou; **executar na VM** fixa |
 | 4 | **Condição de prova** em todo simulado: cronometrado, sem consulta, marcando cada chute. **Questão pesquisada conta como errada** | A prova não tem consulta. Na dúvida, marque o chute e siga |
 | 5 | **Um número para acompanhar: os acertos firmes**, sem chutes e sem pesquisas | O total com chutes engana: 28 no simulado 01 eram só 23 firmes |
-| 6 | **O domingo é descanso de verdade** | A retenção se consolida no intervalo, não na repetição sem pausa |
+| 6 | **Os domingos 15 e 22 são curtos** (cerca de 2h, sem simulado) e **27 a 29/11 são descanso de verdade** | A carga subiu a seu pedido em 08/11; o descanso antes da prova é onde a retenção se consolida |
 
 ---
 
-## 2. Os dois tipos de dia
+## 2. Os tipos de dia
 
-**Carga revista em 04/11:** cerca de **2h a 2h15 todos os dias**, seis dias por semana (perto de 13h semanais), em vez de dias leves alternados com dias pesados. Todo dia tem simulado (completo ou mini), treino na VM e Exercícios da LPI.
+**Carga revista em 08/11, a seu pedido:** cerca de **3h30 de segunda a sábado** e **2h nos domingos 15 e 22** (perto de 25h por semana). Todo dia de semana tem simulado (completo ou mini), treino na VM, dois ou três blocos dos Exercícios da LPI e uma sessão à noite.
 
 | Tipo | Sessão | Tempo |
 |---|---|---|
-| **A — Simulado** | Lacunas (5 min) · **simulado completo**, 40 questões em 60 min · correção (20 min) · **treino na VM** sobre os erros do simulado (25 min) · **1 bloco** dos Exercícios da LPI (25 min) | cerca de 2h15 |
-| **B — Reforço** | Lacunas (5 min) · **mini-simulado**, 20 questões em 25 min · correção (10 min) · **treino na VM** (30 min) · **2 blocos** dos Exercícios da LPI (50 min) | cerca de 2h |
+| **A — Simulado** | Lacunas (5 min) · **simulado completo**, 40 questões em 60 min · correção (20 min) · **treino na VM** sobre os erros do simulado (30 min) · **2 blocos** dos Exercícios da LPI (50 min) · **à noite**: aulas ou refazer as erradas (40 min) | cerca de 3h30 |
+| **B — Reforço** | Lacunas (5 min) · **mini-simulado**, 20 questões em 25 min · correção (10 min) · **treino na VM** (40 min) · **2 ou 3 blocos** dos Exercícios da LPI (75 min) · **à noite**: aulas ou refazer as erradas (45 min) | cerca de 3h30 |
+| **Domingo de prática** (15 e 22/11) | Lacunas (5 min) · **2 blocos** dos Exercícios da LPI (50 min) · **treino na VM das reincidências** da seção 6 (30 min) · releitura das colas e refazer as erradas da semana (30 min) | cerca de 2h |
+| **Leve** (26/11) | Mini-simulado M6, só das reincidências, e releitura das colas | cerca de 1h15 |
+
+**A sessão da noite.** De 09 a 12/11, são as **aulas 41 a 72** (oito por noite, com anotações no caderno). De 13/11 em diante, é **refazer as erradas**: sem consulta, você refaz as questões erradas e chutadas do simulado ou mini do dia e as erradas da LPI do dia; o que errar de novo é executado na VM e entra na seção 6 como reincidência.
 
 **Todo dia tem simulado:** completo nos dias A, mini nos dias B. Os mini-simulados M1 a M6 são escritos por mim **a partir dos seus erros** nos simulados anteriores, e o treino na VM dos dias A é sempre sobre o que você errou no simulado do dia.
 
-**Exercícios da LPI** (`labs/simulados-práticos.lpi/exercicios-lpi.md`): as 24 lições terminam em 20/11; de 21 a 25/11, um bloco por dia **refaz as que você errou**, tópico a tópico.
+**Exercícios da LPI** (`labs/simulados-práticos.lpi/exercicios-lpi.md`): as 23 lições que faltam vão de 09 a 18/11, duas ou três por dia; de 19 a 25/11, um bloco por dia **refaz as que você errou**, tópico a tópico.
 
-**Banco de lacunas:** `labs/simulados-práticos.lpi/lacunas.md`. Uma série por dia, na ordem; as erradas voltam três dias depois.
+**Banco de lacunas:** `labs/simulados-práticos.lpi/lacunas.md`. Uma série por dia, na ordem; as erradas voltam três séries depois. Com os domingos de prática, as 24 séries fecham em 26/11.
 
 ---
 
 ## 3. Calendário
 
-**Refeito em 06/11**, a seu pedido. Quinta e sexta foram feitas em parte; o que ficou para trás foi para o fim de semana, e a semana de 09/11 andou um dia:
+**Refeito em 08/11**, a seu pedido: carga maior em todas as semanas e Exercícios da LPI espalhados. O fim de semana fez o R4 (18 de 20) e as lacunas 04 e 05; as aulas e a LPI atrasada entraram na semana de 09/11.
 
-| Mudança | Antes | Agora |
+| Mudança | Antes (06/11) | Agora (08/11) |
 |---|---|---|
-| R4 | Qui 05/11 | **Sáb 07/11** |
-| Exercícios da LPI 4.2, 4.3, 5.1 e 5.3 | Qui 05 a sáb 07/11 | **Sáb 07 e dom 08/11** |
-| Aulas 41 a 72 | Noites de qui 05 a sáb 07/11 | **Dom 08/11** |
-| Simulado 05 | Sáb 07/11 | **Seg 09/11** |
-| R2 | Seg 09/11 | Ter 10/11 |
-| Simulado 04 | Ter 10/11 | Qua 11/11 |
-| M1 | Sex 13/11 | Qui 12/11 |
-| Simulado 06 | Qui 12/11 | Sex 13/11 |
-| R1 | Qua 11/11 | **Saiu do plano**: os temas dele (permissões, `tar`, redirecionamento, diretórios, lacunas) já aparecem em todo simulado e no banco de lacunas |
+| Carga diária | Cerca de 2h a 2h15 | **Cerca de 3h30** de segunda a sábado |
+| Domingos 15 e 22/11 | Descanso | **Domingo de prática**, cerca de 2h (LPI, VM das reincidências, colas) |
+| Aulas 41 a 72 | Dom 08/11 | **Noites de 09 a 12/11**, oito por noite |
+| LPI atrasada (4.2, 4.3, 5.1, 5.3) | Sáb 07 e dom 08/11 | **09 a 11/11**, junto com o tópico de cada uma |
+| Lições da LPI | Uma ou duas por dia, até 20/11 | **Duas ou três por dia, até 18/11**; revisão das erradas de 19 a 25/11 |
+| Noites de 13 a 25/11 | — | **Refazer as erradas** do dia (seção 2) |
+| Lacunas | 21 séries | **As 24 séries**, até 26/11 |
 
-De 15/11 em diante, nada mudou.
+As datas dos simulados e dos mini-simulados não mudaram.
 
 | Dia | Tipo | Sessão | Treino na VM | Exercícios da LPI | Lacunas |
 |---|---|---|---|---|---|
-| **Qui 05/11** | A | **Simulado 03** (feito: 27 de 40, 20 firmes) · V5 e V6 (feitos). O R4 e a LPI 4.3 e 5.1 passaram para o sábado 07/11 | V5 e V6 (feitos) | — | Série 03 |
-| Sex 06/11 | B | **R3** (feito: 17 de 20) · **bloco curto**: 4.1 e here document (feito) · V1 e V3 (feitos). A LPI 4.2 passou para o sábado 07/11 | V1 e V3 (feitos) | 4.1 (feito) | Série 04 |
-| Sáb 07/11 | B | **R4** — contas e permissões (`reforco-r3-r4.md`) · **Exercícios da LPI da semana**, o quanto couber | — | 4.2 e 4.3, lição 1 e 4.3, lição 2 e 5.1 e 5.3 | Série 05 |
-| **Dom 08/11** | Conteúdo | **Aulas 41 a 72** (curso fechado) · Exercícios da LPI da semana que não saíram no sábado | — | — | — |
-| **Seg 09/11** | A | **Simulado 05** (`simulado-05.md`) | V4 (scripts) e os erros do simulado | 5.2 | Série 06 |
-| Ter 10/11 | B | **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) | V7 (processos e rede) | 4.4 e 5.4 | Série 07 |
-| **Qua 11/11** | A | **Simulado 04** (`simulado-04.md`) | Conforme os erros do simulado | 3.1 | Série 08 |
-| Qui 12/11 | B | **M1** — os temas mais errados nos simulados 03, 05 e 04 | Conforme o M1 | 2.1, lição 1 e 2.1, lição 2 | Série 09 |
-| **Sex 13/11** | A | **Simulado 06** | Conforme os erros do simulado | 2.2 | Série 10 |
-| **Sáb 14/11** | A | **Simulado 07** | Conforme os erros do simulado | 2.3, lição 1 e 2.3, lição 2 | Série 11 |
-| Dom 15/11 | — | Descanso | — | — | — |
-| Seg 16/11 | B | **M2** | Conforme o M2 | 2.4 e 3.2, lição 1 | Série 12 |
-| **Ter 17/11** | A | **Simulado 08** — conta para a decisão | Conforme os erros do simulado | 3.2, lição 2 | Série 13 |
-| Qua 18/11 | B | **M3** | Conforme o M3 | 3.3, lição 1 e 3.3, lição 2 e 1.1 | Série 14 |
-| **Qui 19/11** | A | **Simulado 09** — conta para a decisão | Conforme os erros do simulado | 1.2 | Série 15 |
-| Sex 20/11 | B | **M4** (feriado) | Conforme o M4 | 1.3 e 1.4 | Série 16 |
-| **Sáb 21/11** | A | **Simulado 10** · **decisão da data** (média de acertos firmes dos simulados 08, 09 e 10) | Conforme os erros do simulado | Revisão: erradas do Tópico 5 | Série 17 |
-| Dom 22/11 | — | Descanso | — | — | — |
-| **Seg 23/11** | A | **Simulado 11** | Conforme os erros do simulado | Revisão: erradas do Tópico 4 | Série 18 |
-| Ter 24/11 | B | **M5** | Conforme o M5 | Revisão: erradas dos Tópicos 3 e 2 | Série 19 |
-| **Qua 25/11** | A | **Simulado 12** — o simulado final | Conforme os erros do simulado | Revisão: erradas do Tópico 1 | Série 20 |
-| Qui 26/11 | Leve | **M6** — só as reincidências · releitura das colas | Os blocos das reincidências | — | Série 21 |
+| **Qui 05/11** | A | **Simulado 03** (feito: 27 de 40, 20 firmes) · V5 e V6 (feitos) | V5 e V6 (feitos) | — | Série 03 |
+| Sex 06/11 | B | **R3** (feito: 17 de 20) · **bloco curto**: 4.1 e here document (feito) · V1 e V3 (feitos) | V1 e V3 (feitos) | 4.1 (feito) | — |
+| Sáb 07/11 | B | **R4** (feito: 18 de 20, 18 firmes) · lacunas 04 e 05 (5 de 5 cada). Os Exercícios da LPI da semana passaram para 09 a 15/11 | — | — | Séries 04 e 05 |
+| Dom 08/11 | — | Não realizado: as aulas 41 a 72 passaram para as noites de 09 a 12/11 e os Exercícios da LPI para 09 a 15/11 | — | — | — |
+| **Seg 09/11** | A | **Simulado 05** (`simulado-05.md`) · **aulas 41 a 48** | V5 (bits especiais e `chown :grupo`, os erros do R4) e os erros do simulado | 5.1 e 5.2 | Série 06 + retornos das séries 01 e 03 |
+| Ter 10/11 | B | **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) · **aulas 49 a 56** | V7 (processos e rede) e V4 (`$#` e `$0`) | 5.3 e 5.4 | Série 07 + retornos da série 02 |
+| **Qua 11/11** | A | **Simulado 04** (`simulado-04.md`) · **aulas 57 a 64** | Conforme os erros do simulado | 4.2 e 4.3, lição 1 e 4.3, lição 2 | Série 08 |
+| Qui 12/11 | B | **M1** — os temas mais errados nos simulados 03, 05 e 04 · **aulas 65 a 72 (curso fechado)** | Conforme o M1 | 4.4 e 3.1 | Série 09 |
+| **Sex 13/11** | A | **Simulado 06** · à noite, refazer as erradas do M1 e do simulado 06 | Conforme os erros do simulado | 3.2, lição 1 e 3.2, lição 2 | Série 10 |
+| **Sáb 14/11** | A | **Simulado 07** · à noite, refazer as erradas do simulado 07 | Conforme os erros do simulado | 3.3, lição 1 e 3.3, lição 2 e 2.1, lição 1 | Série 11 |
+| Dom 15/11 | Domingo | **Domingo de prática** · releitura das colas e refazer as erradas da semana | As reincidências da seção 6 | 2.1, lição 2 e 2.2 | Série 12 |
+| Seg 16/11 | B | **M2** · à noite, refazer as erradas do M2 | Conforme o M2 | 2.3, lição 1 e 2.3, lição 2 e 2.4 | Série 13 |
+| **Ter 17/11** | A | **Simulado 08** — conta para a decisão · à noite, refazer as erradas | Conforme os erros do simulado | 1.1 e 1.2 | Série 14 |
+| Qua 18/11 | B | **M3** · à noite, refazer as erradas do M3 · **fim das 24 lições da LPI** | Conforme o M3 | 1.3 e 1.4 | Série 15 |
+| **Qui 19/11** | A | **Simulado 09** — conta para a decisão · à noite, refazer as erradas | Conforme os erros do simulado | Revisão: erradas do Tópico 5 | Série 16 |
+| Sex 20/11 | B | **M4** (feriado) · à noite, refazer as erradas do M4 | Conforme o M4 | Revisão: erradas do Tópico 4 | Série 17 |
+| **Sáb 21/11** | A | **Simulado 10** · **decisão da data** (média de acertos firmes dos simulados 08, 09 e 10) | Conforme os erros do simulado | Revisão: erradas do Tópico 3 | Série 18 |
+| Dom 22/11 | Domingo | **Domingo de prática** · releitura das colas e refazer as erradas da semana | As reincidências da seção 6 | Revisão: erradas do Tópico 2 | Série 19 |
+| **Seg 23/11** | A | **Simulado 11** · à noite, refazer as erradas | Conforme os erros do simulado | Revisão: erradas do Tópico 1 | Série 20 |
+| Ter 24/11 | B | **M5** · à noite, refazer as erradas do M5 | Conforme o M5 | Revisão: as que errou de novo na revisão | Série 21 |
+| **Qua 25/11** | A | **Simulado 12** — o simulado final · à noite, refazer as erradas | Conforme os erros do simulado | Revisão: as reincidências da LPI | Série 22 |
+| Qui 26/11 | Leve | **M6** — só as reincidências · releitura das colas | Os blocos das reincidências | — | Séries 23 e 24 |
 | Sex 27/11 | — | Descanso antes da prova | — | — | — |
 | Sáb 28/11 | — | Descanso antes da prova | — | — | — |
 | Dom 29/11 | — | Descanso antes da prova · não estudar na véspera | — | — | — |
 | **Seg 30/11** | — | **PROVA — Linux Essentials 010-160** | — | — | — |
 
-**Se a LPI atrasada não sair no fim de semana,** ela entra um bloco por dia na semana de 09/11, junto com os blocos novos: **5.1** na seg 09, **4.3, lição 1** na ter 10, **4.3, lição 2** na qua 11, **4.2** na qui 12 e **5.3** na sex 13. A aula que não couber no domingo vai para a noite de segunda.
-
-**Contas:** 10 simulados completos (03 a 12), 9 mini-simulados (R2, R3, R4 e M1 a M6), as 24 lições da LPI mais cinco blocos de revisão das erradas, treino na VM todos os dias, 21 séries de lacunas e 3 domingos de descanso, além dos três dias antes da prova.
+**Contas:** 10 simulados completos (03 a 12), 9 mini-simulados (R2, R3, R4 e M1 a M6), as 24 lições da LPI mais sete blocos de revisão das erradas, treino na VM todos os dias, as 24 séries de lacunas, dois domingos de prática e três dias de descanso antes da prova.
 
 **Se um dia cair**, ele não é reposto. O dia seguinte segue o calendário, e a regra 1 vale aqui também.
 
@@ -252,7 +252,7 @@ São os erros que voltaram depois de corrigidos. É a lista que guia os treinos 
 | `/home` tratado como a pasta pessoal | 2 | `/home` contém as pastas; a pessoal é `~` | V1 |
 | `$#` | **3** (Q24 do simulado 02; Q6 da autoavaliação da Semana 5; Q16 do R3) | Conta só os argumentos; o `$0` (nome do script) **não entra**: `./args.sh um dois` dá `$#` = 2 | V4 |
 | O `x` do `/etc/passwd` | 2 | Só diz que o hash está no `/etc/shadow`; o administrador é o UID 0 | V6 |
-| Conversão octal, com e sem bit especial | **3** (Q37 do simulado 01; Q36 do simulado 02; Q36 do simulado 03, `645` no lugar de `4755`) | Bit especial primeiro (SUID 4, SGID 2, sticky 1), depois trio por trio: `rwsr-xr-x` = 4755; `rwxr-x---` = 750 | V5 |
+| Conversão octal, com e sem bit especial | **4** (Q37 do simulado 01; Q36 do simulado 02; Q36 do simulado 03, `645` no lugar de `4755`; Q14 do R4, `4744` no lugar de `2744`) | Bit especial primeiro (SUID 4, SGID 2, sticky 1), depois trio por trio. **O trio onde está o `s`/`S` diz qual é o bit**: no dono, SUID (4); no grupo, SGID (2); nos outros, `t`/`T`, sticky (1). `rwsr-xr-x` = 4755; `rwxr-Sr--` = 2744 | V5 |
 | Herança de variáveis: `export` | **3** (Correções 12 e 71; Q16 do simulado 03) | O `export` marca a variável para os filhos; o `env NOME` tenta executar um comando | V4 |
 | `{}` tratado como globbing | 2 | A expansão de chaves cria os nomes sem olhar o disco | — |
 | Sinal padrão do `kill` | 2 | `SIGTERM` (15); o `SIGKILL` (9) só com `kill -9` | V7 |
@@ -262,6 +262,7 @@ São os erros que voltaram depois de corrigidos. É a lista que guia os treinos 
 | Padrão de globbing sem correspondência | 2 (Semana 3; Q24 do simulado 03) | O Bash entrega o texto literal, como `*.log`; não há erro | V1 |
 | `fg` e `bg` | 2 (Correção 78; Q29 do simulado 03) | `fg` traz para o primeiro plano; `bg` continua em segundo; `Ctrl+Z` suspende | V7 |
 | `x` em diretório | 2 (Prática 2, bloco 4; Q39 do simulado 03) | `r` lista; `x` atravessa e abre um nome conhecido; `w` cria e apaga | V5 |
+| Mudar só o grupo de um arquivo | 2 (Q40 do simulado 02, pesquisada; Q16 do R4) | `chgrp grupo arq` ou `chown :grupo arq`. O `usermod -g` muda o grupo primário de um **usuário**, nunca o de um arquivo | V5 e V6 |
 | Arquivos de contas (`/etc/shadow`, `/etc/group`) | 2 (Q34 do simulado 02; séries 01 e 02 das lacunas) | `/etc/passwd` contas, `/etc/shadow` hashes, `/etc/group` grupos e membros secundários | V6 |
 
 ---
@@ -293,7 +294,7 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 |---|---|
 | Simulado 03 | Pronto (`simulado-03.md`) |
 | Simulado 04 | Pronto (`simulado-04.md`, escrito em 04/11), para a quarta 11/11. Substitui o exame final do NDG, que fica como treino extra opcional |
-| R2, R3 e R4 | Prontos (`praticas_simulados.md` e `reforco-r3-r4.md`). O R3 foi feito em 06/11; o R1 saiu do plano em 06/11 |
+| R2, R3 e R4 | Prontos (`praticas_simulados.md` e `reforco-r3-r4.md`). R3 feito em 06/11 e R4 em 07/11; o R1 saiu do plano em 06/11 |
 | Simulado 05 | Pronto (`simulado-05.md`, escrito em 04/11), para a segunda 09/11 |
 | Simulados 06 a 12 | Escritos por mim, prontos **até três dias antes** de cada um |
 | M1 a M6 | Escritos por mim a partir dos erros dos simulados anteriores, prontos na véspera |
@@ -309,24 +310,26 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 | 04/11 | — | Lacunas das séries 01 e 02 | — | — | 1 de 5 e 0 de 5 | — | Forma das lacunas; `help`; arquivos de contas |
 | 05/11 | A | Simulado 03 · V5 e V6 | Simulado 03: **27 de 40** | **20** | Série 03: **4 de 5** | — (passaram para 07/11) | Seis, no próprio `simulado-03.md` |
 | 06/11 | B | R3 · bloco curto (4.1 e here doc) · V1 e V3 | R3: **17 de 20** | **17** | — | 4.1: **7 de 7** | `$#`; seções do `man` |
-| 07/11 | B | R4 · LPI da semana | R4: de 20 | | Série 05: de 5 | 4.2, 4.3 (lições 1 e 2), 5.1 e 5.3 · de | |
-| 08/11 | Conteúdo | Aulas 41 a 72 · LPI que faltou | — | — | — | | |
-| 09/11 | A | Simulado 05 | de 40 | | Série 06: de 5 | 5.2 · de | |
-| 10/11 | B | R2 | de 20 | | Série 07: de 5 | 4.4 e 5.4 · de | |
-| 11/11 | A | Simulado 04 | de 40 | | Série 08: de 5 | 3.1 · de | |
-| 12/11 | B | M1 | de 20 | | Série 09: de 5 | 2.1 (lições 1 e 2) · de | |
-| 13/11 | A | Simulado 06 | de 40 | | Série 10: de 5 | 2.2 · de | |
-| 14/11 | A | Simulado 07 | de 40 | | Série 11: de 5 | 2.3 (lições 1 e 2) · de | |
-| 16/11 | B | M2 | de 20 | | de 5 | 2.4 e 3.2, lição 1 · de | |
-| 17/11 | A | Simulado 08 | de 40 | | de 5 | 3.2, lição 2 · de | |
-| 18/11 | B | M3 | de 20 | | de 5 | 3.3 (lições 1 e 2) e 1.1 · de | |
-| 19/11 | A | Simulado 09 | de 40 | | de 5 | 1.2 · de | |
-| 20/11 | B | M4 · feriado | de 20 | | de 5 | 1.3 e 1.4 · de | |
-| 21/11 | A | Simulado 10 · Decisão da data | de 40 | | de 5 | Revisão: erradas do Tópico 5 · de | |
-| 23/11 | A | Simulado 11 | de 40 | | de 5 | Revisão: erradas do Tópico 4 · de | |
-| 24/11 | B | M5 | de 20 | | de 5 | Revisão: erradas dos Tópicos 3 e 2 · de | |
-| 25/11 | A | Simulado 12 (final) | de 40 | | de 5 | Revisão: erradas do Tópico 1 · de | |
-| 26/11 | Leve | M6 (reincidências) · Colas | de 20 | | de 5 | — | |
+| 07/11 | B | R4 · lacunas 04 e 05 | R4: **18 de 20** | **18** | Séries 04 e 05: **5 de 5** e **5 de 5** | — (remarcados para 09 a 11/11) | Bit especial pelo trio (`S` no grupo = SGID); grupo do arquivo com `usermod -g` |
+| 08/11 | — | Não realizado: aulas e LPI remarcadas | — | — | — | — | — |
+| 09/11 | A | Simulado 05 · Aulas 41–48 | de 40 |  | Série 06: de 5 | 5.1 e 5.2 · de | |
+| 10/11 | B | R2 · Aulas 49–56 | de 20 |  | Série 07: de 5 | 5.3 e 5.4 · de | |
+| 11/11 | A | Simulado 04 · Aulas 57–64 | de 40 |  | Série 08: de 5 | 4.2 e 4.3, lição 1 e 4.3, lição 2 · de | |
+| 12/11 | B | M1 · Aulas 65–72 | de 20 |  | Série 09: de 5 | 4.4 e 3.1 · de | |
+| 13/11 | A | Simulado 06 · Refazer erradas | de 40 |  | Série 10: de 5 | 3.2, lição 1 e 3.2, lição 2 · de | |
+| 14/11 | A | Simulado 07 · Refazer erradas | de 40 |  | Série 11: de 5 | 3.3, lição 1 e 3.3, lição 2 e 2.1, lição 1 · de | |
+| 15/11 | Domingo | Colas e erradas da semana · VM das reincidências | — | — | Série 12: de 5 | 2.1, lição 2 e 2.2 · de | |
+| 16/11 | B | M2 · Refazer erradas | de 20 |  | Série 13: de 5 | 2.3, lição 1 e 2.3, lição 2 e 2.4 · de | |
+| 17/11 | A | Simulado 08 · Refazer erradas | de 40 |  | Série 14: de 5 | 1.1 e 1.2 · de | |
+| 18/11 | B | M3 · Fim das lições | de 20 |  | Série 15: de 5 | 1.3 e 1.4 · de | |
+| 19/11 | A | Simulado 09 · Refazer erradas | de 40 |  | Série 16: de 5 | Revisão: erradas do Tópico 5 · de | |
+| 20/11 | B | M4 · feriado | de 20 |  | Série 17: de 5 | Revisão: erradas do Tópico 4 · de | |
+| 21/11 | A | Simulado 10 · Decisão da data | de 40 |  | Série 18: de 5 | Revisão: erradas do Tópico 3 · de | |
+| 22/11 | Domingo | Colas e erradas da semana · VM das reincidências | — | — | Série 19: de 5 | Revisão: erradas do Tópico 2 · de | |
+| 23/11 | A | Simulado 11 · Refazer erradas | de 40 |  | Série 20: de 5 | Revisão: erradas do Tópico 1 · de | |
+| 24/11 | B | M5 · Refazer erradas | de 20 |  | Série 21: de 5 | Revisão: as que errou de novo na revisão · de | |
+| 25/11 | A | Simulado 12 (final) | de 40 |  | Série 22: de 5 | Revisão: as reincidências da LPI · de | |
+| 26/11 | Leve | M6 (reincidências) · Colas | de 20 |  | Séries 23 e 24: de 5 e de 5 | — | |
 
 ### Treinos na VM — o que saiu diferente do previsto
 
