@@ -65,17 +65,17 @@ Calendário refeito em 26/10 para a prova de 30/11 (`PLANO.md`, seção 7, e `la
 | 1 | Seg 05/10 | `simulado-01` | Diagnóstico | **28** | **70%** | 5 | **23** | 20 min 31 s | **Concluído** |
 | 2 | Sex 23/10 | `simulado-02` (escrito em 13/10) | 24 ou mais | **22** | **55%** | 4 | **17** | Não informado | **Concluído, abaixo da meta** |
 | 3 | Qui 05/11 | `simulado-03` (escrito em 18/10) | Linha de base | **27** | **67,5%** | 7 | **20** | Não informado | **Concluído: acima do corte do exame** |
-| 5 | Seg 09/11 | `simulado-05` (escrito em 04/11) | 24 ou mais | | | | | | A fazer |
 | 4 | Qua 11/11 | `simulado-04` (escrito em 04/11) | 24 ou mais | | | | | | A fazer |
 | 6 | Sex 13/11 | `simulado-06` | 28 ou mais | | | | | | A fazer |
 | 7 | Sáb 14/11 | `simulado-07` | 28 ou mais | | | | | | A fazer |
 | 8 | Ter 17/11 | `simulado-08` | 28 ou mais | | | | | | A fazer |
 | 9 | Qui 19/11 | `simulado-09` | 30 ou mais | | | | | | A fazer |
-| 10 | **Sáb 21/11** | `simulado-10` | 30 ou mais · **decisão da data** | | | | | | A fazer |
+| 10 | **Sáb 21/11** | `simulado-10` | 30 ou mais · **ponto de ajuste** | | | | | | A fazer |
 | 11 | Seg 23/11 | `simulado-11` | 30 ou mais | | | | | | A fazer |
+| 5 | Ter 24/11 | `simulado-05` (escrito em 04/11; guardado para perto da prova) | 30 ou mais | | | | | | A fazer |
 | 12 | **Qua 25/11** | `simulado-12` | **30 ou mais** (final) | | | | | | A fazer |
 
-**Mini-simulados (20 questões):** R3 em 06/11 (17 de 20), R4 em 07/11 (18 de 20), R2 em 10/11 e M1 a M6 de 12 a 26/11 (`labs/operacao-pratica.md`, seção 3). O R1 saiu do plano em 06/11: os temas dele (permissões, `tar`, redirecionamento, diretórios, lacunas) já aparecem em todo simulado e no banco de lacunas. Ele continua na seção 6 de `praticas_simulados.md` como material de consulta. Calendário refeito em 06/11.
+**Mini-simulados (20 questões):** R3 em 06/11 (17 de 20), R4 em 07/11 (18 de 20), R2 em 15/11, M1 a M4 de 12 a 20/11 e M6 em 26/11 (`labs/operacao-pratica.md`, seção 3); o M5 saiu em 09/11. O R1 saiu do plano em 06/11: os temas dele (permissões, `tar`, redirecionamento, diretórios, lacunas) já aparecem em todo simulado e no banco de lacunas. Ele continua na seção 6 de `praticas_simulados.md` como material de consulta. Calendário refeito em 06/11.
 
 ### 2.2 Acertos por tópico, simulado a simulado
 
@@ -103,16 +103,17 @@ As autoavaliações medem a retenção do conteúdo de uma semana. Desde a Seman
 
 **As autoavaliações terminaram com a da Semana 5.** As das Semanas 6 e 8 saíram do plano em 26/10: daqui em diante, os simulados e mini-simulados medem a retenção.
 
-### 2.4 Checkpoints e decisão da data
+### 2.4 Checkpoints e ponto de ajuste
 
-Os checkpoints saíram do plano em 26/10, junto com o modelo de dívidas. Fica o registro dos que foram aplicados e a única decisão que resta.
+Os checkpoints saíram do plano em 26/10, junto com o modelo de dívidas. Fica o registro dos que foram aplicados.
 
 | Marco | Data | Resultado |
 |---|---|---|
 | Pré-checkpoint | Qua 07/10 | Cumprido; compra do voucher adiada em 08/10 |
 | Checkpoint A | Dom 18/10 | **Vermelho**: nenhum dos quatro critérios cumprido; o simulado 02, feito em 23/10, ficou em 22 |
 | Mudança de estratégia | Seg 26/10 | Prova movida para **30/11**; checkpoints B, Gate e Final retirados |
-| **Decisão final** | **Sáb 21/11** | Média de acertos firmes dos simulados 08, 09 e 10: **26 ou mais**, vai em 30/11; **abaixo de 26**, remarcar |
+| Prova comprada | Seg 09/11 | **Confirmada para 30/11**; a decisão de data saiu do plano |
+| **Ponto de ajuste** | **Sáb 21/11** | Média de acertos firmes dos simulados 08, 09 e 10: **26 ou mais**, segue o plano; **abaixo de 26**, os últimos dias focam os dois tópicos mais fracos |
 
 ### 2.5 Dicas recorrentes de prova, por tema
 
@@ -288,7 +289,7 @@ Decisão ou checkpoint associado: .
 
 ### Mini-simulados R3, R4 e R2 — 06 a 10/11/2026
 
-| Campo | R3 (06/11) | R4 (07/11) | R2 (10/11) |
+| Campo | R3 (06/11) | R4 (07/11) | R2 (15/11) |
 |---|---|---|---|
 | Fonte | `reforco-r3-r4.md` | `reforco-r3-r4.md` | `praticas_simulados.md`, seção 8 |
 | Acertos | **17 de 20** (meta: 16) | **18 de 20** (meta: 16) | de 20 (meta: 15) |
@@ -490,3 +491,4 @@ São erros de conteúdo já estudado. Desde 26/10 eles têm treino próprio na V
 | 05/11/2026 | Simulado 03 registrado: 27 de 40, 20 firmes (linha de base); lacunas da série 03: 4 de 5 |
 | 06/11/2026 | R3 registrado: 17 de 20, 17 firmes, três reincidências (`man 5`, `2>/dev/null` com pipe, `$#`); calendário refeito: R4 em 07/11, simulado 05 em 09/11, R2 em 10/11, simulado 04 em 11/11, M1 em 12/11, simulado 06 em 13/11; R1 retirado |
 | 08/11/2026 | R4 registrado: 18 de 20, 18 firmes; lacunas 04 e 05: 5 de 5 cada; carga aumentada para cerca de 3h30 por dia e 2h nos domingos 15 e 22; aulas 41 a 72 nas noites de 09 a 12/11; Exercícios da LPI até 18/11 |
+| 09/11/2026 | Prova comprada para 30/11; decisão de 21/11 virou ponto de ajuste; simulado 05 guardado para 24/11 (no lugar do M5); R2 para 15/11; terça 10/11 como dia de conteúdo |
