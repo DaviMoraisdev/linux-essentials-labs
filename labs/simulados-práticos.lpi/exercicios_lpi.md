@@ -29,8 +29,8 @@ São as **24 lições** do material oficial, com cerca de **205 exercícios** (G
 |---|---|---|---|---|
 | Sex 06/11 | 4.1 | 7 | 264–266 | 268–270 |
 | Seg 09/11 | 5.1 e 5.2 | 12 + 10 | 372–374 · 391–393 | 377–379 · 395–397 |
-| Ter 10/11 | 5.3 e 5.4 | 11 + 10 | 416–418 · 434–435 | 420–423 · 439–440 |
-| Qua 11/11 | 4.2 e 4.3, lição 1 e 4.3, lição 2 | 4 + 6 + 9 | 283–284 · 303–305 · 321–324 | 286–288 · 308–310 · 328–332 |
+| Ter 10/11 | 5.3 e 5.4 e 4.2 | 11 + 10 + 4 | 416–418 · 434–435 · 283–284 | 420–423 · 439–440 · 286–288 |
+| Qua 11/11 | 4.3, lição 1 e 4.3, lição 2 | 6 + 9 | 303–305 · 321–324 | 308–310 · 328–332 |
 | Qui 12/11 | 4.4 e 3.1 | 9 + 9 | 349–350 · 183–184 | 352–353 · 187–189 |
 | Sex 13/11 | 3.2, lição 1 e 3.2, lição 2 | 12 + 9 | 199–200 · 210–211 | 202–204 · 213–215 |
 | Sáb 14/11 | 3.3, lição 1 e 3.3, lição 2 e 2.1, lição 1 | 7 + 3 + 6 | 229–231 · 247–249 · 82–84 | 234–236 · 251–253 · 86–87 |
@@ -70,7 +70,7 @@ As páginas são as impressas no rodapé do PDF.
 | 3.3, lição 1 | Transformando comandos em scripts | G3 E4 | Sáb 14/11 |
 | 3.3, lição 2 | Códigos de saída, argumentos e `for` | G2 E1 | Sáb 14/11 |
 | 4.1 | Escolhendo um sistema operacional | G5 E2 | Sex 06/11 |
-| 4.2 | Entendendo o hardware do computador | G3 E1 | Qua 11/11 |
+| 4.2 | Entendendo o hardware do computador | G3 E1 | Ter 10/11 |
 | 4.3, lição 1 | Onde os dados são armazenados: programas, configuração e processos | G4 E2 | Qua 11/11 |
 | 4.3, lição 2 | Onde os dados são armazenados: logs e mensagens do sistema | G6 E3 | Qua 11/11 |
 | 4.4 | Seu computador na rede | G4 E5 | Qui 12/11 |
@@ -88,11 +88,11 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 | Dia | Lição | Acertos | Erradas (número e o que estava errado) | Reincidência? |
 |---|---|---|---|---|
 | Sex 06/11 | 4.1 | **7 de 7** | Nenhuma | — |
-| Seg 09/11 | 5.1 | de 12 |  |  |
-| Seg 09/11 | 5.2 | de 10 |  |  |
+| Seg 09/11 | 5.1 | **12 de 12** | Nenhuma. Medição a confirmar: a redação é a mesma do guia resolvido de 21/10 | — |
+| Seg 09/11 | 5.2 | **9 de 10** | E8 em branco (o SUID do `passwd`). Medição a confirmar, pelo mesmo motivo | Não |
 | Ter 10/11 | 5.3 | de 11 |  |  |
 | Ter 10/11 | 5.4 | de 10 |  |  |
-| Qua 11/11 | 4.2 | de 4 |  |  |
+| Ter 10/11 | 4.2 | de 4 |  |  |
 | Qua 11/11 | 4.3, lição 1 | de 6 |  |  |
 | Qua 11/11 | 4.3, lição 2 | de 9 |  |  |
 | Qui 12/11 | 4.4 | de 9 |  |  |
@@ -118,3 +118,31 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 | Seg 23/11 | Revisão: erradas do Tópico 1 | | | |
 | Ter 24/11 | Revisão: as que errou de novo na revisão | | | |
 | Qua 25/11 | Revisão: as reincidências da LPI | | | |
+
+---
+
+## 4. Correções
+
+### 5.1 e 5.2 — segunda 09/11
+
+**Medição.** Várias respostas têm a mesma redação do guia resolvido de 21/10 ("Hash não é criptografia reversível", "Remove o cabeçalho, inclusive o resumo", "Nome do grupo, marcador, GID e lista de membros", "/home pode ficar indisponível"). Se o guia foi consultado, as duas lições contam como feitas, mas **não como acertos firmes** (regra 4 da operação). A checagem fica no M1, na quinta 12/11, com questões dos dois temas. Para 5.3 e 5.4, na terça 10/11, **deixe o guia de 21/10 fechado**: ele também traz as respostas dessas lições.
+
+**Lição 5.1 (12 de 12).**
+
+| Exercício | Observação |
+| --- | --- |
+| G4 | Certo: `w`. Faltou citar onde está a **contagem**: na primeira linha do `w` (por exemplo, `2 users`) |
+| G5 | Grafia: o diretório inicial é `/home/emma` (estava "/hpme/emma") |
+| E1 | Faltou a segunda metade, o que **falta** em cada um: o `who` não mostra a atividade nem a carga; o `w` não mostra as sessões encerradas; o `last` não mostra o que o usuário está fazendo agora |
+| E4 | Certo. Atalho para a prova: `id usuario` ou `groups usuario` mostram todos os grupos de uma vez, inclusive o principal |
+
+**Lição 5.2 (9 de 10).**
+
+| Exercício | Observação |
+| --- | --- |
+| E1 | Incompleto. Com `CREATE_HOME` e `USERGROUPS_ENAB` em `yes`, o `useradd -m dave` também **cria o grupo `dave`** (em `/etc/group` e `/etc/gshadow`) e **copia o `/etc/skel`** para `/home/dave` |
+| E2 | Certo, mas responda a pergunta antes do comando: **não consegue**, porque a conta nasce sem senha (`!` no `/etc/shadow`); o `sudo passwd dave` resolve |
+| E3 | Certo. O grupo `dave` não tem membros listados (`dave:x:1006:`): o grupo principal não aparece no quarto campo. O UID 1005 e o GID 1006 ficaram diferentes provavelmente porque o GID 1005 já estava em uso (talvez o grupo `ops`, que ficou da Prática 2); `getent group 1005` confirma |
+| E5 | O resultado está certo; anote também o comando: `sudo useradd -m -u 1035 -g sys_admin -G web_admin,db_admin carol` |
+| E7 | Grafia das permissões: `-rw-r--r--` e `-rw-r-----`, sempre com 10 caracteres |
+| E8 | **Em branco.** O `s` no trio do dono é o **SUID**: o `passwd` roda com o UID efetivo do dono, o root, e por isso um usuário comum consegue gravar a própria senha nova no `/etc/shadow`, que ele não pode ler nem alterar diretamente |
