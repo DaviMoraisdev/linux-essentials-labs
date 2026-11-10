@@ -524,16 +524,33 @@ As do Tópico 4 dependem das Práticas 3 a 5 e por isso só começam com a opera
 
 ---
 
+## Lacunas extras — erros do R4
+
+Respondidas junto com a série 07, na terça 10/11. Saem dos dois erros do R4 (`reforco-r3-r4.md`) e substituem o treino na VM que não foi feito em 09/11.
+
+1. *(Tópico 5)* Octal completo, com o bit especial, de `-rwxr-Sr--`: ______
+2. *(Tópico 5)* Comando que muda **só o grupo** de um arquivo, sem mexer no dono (só o nome do comando): ______
+
+<details>
+<summary>Gabarito das lacunas extras</summary>
+
+| # | Resposta | Também aceito |
+|---|---|---|
+| 1 | `2744` | — (o `S` está no trio do grupo: SGID, que vale 2) |
+| 2 | `chgrp` | `chown` não vale aqui: ele muda o grupo só na forma `chown :grupo arquivo` |
+
+</details>
+
 ## Controle
 
 | Série | Data | Acertos | Erradas (número e motivo: conteúdo ou forma) | Volta na série |
 |---|---|---|---|---|
-| 01 | 04/11 | **1 de 5** (conteúdo: 3) | 1 forma ("Licença Copyleft"; vale só `copyleft`) · 3 forma ("-x - extract"; vale só `-x`) · 4 em branco (`ps`) · 5 em branco (`/etc/shadow`) | 06 (não refeitas com a série 04; voltam na seg 09/11) |
-| 02 | 04/11 | **0 de 5** (conteúdo: 1) | 1 em branco (`help`) · 2 conteúdo ("tar.gz"; a opção é `-z`) · 3 em branco (`top`) · 4 em branco (`/etc/group`) · 5 forma ("FSF - Free Software Foundation"; vale só `FSF`) | 07 (não refeitas com a série 05; voltam na ter 10/11) |
-| 03 | 05/11 | **4 de 5** | 3 em branco (`/etc/skel`; no simulado 03, a Q35 sobre o mesmo arquivo saiu certa: reconhecer é mais fácil que lembrar) | 06 |
+| 01 | 04/11 | **1 de 5** (conteúdo: 3) | 1 forma ("Licença Copyleft"; vale só `copyleft`) · 3 forma ("-x - extract"; vale só `-x`) · 4 em branco (`ps`) · 5 em branco (`/etc/shadow`) | Ter 10/11, com a série 07 (não refeitas com as séries 04 e 06) |
+| 02 | 04/11 | **0 de 5** (conteúdo: 1) | 1 em branco (`help`) · 2 conteúdo ("tar.gz"; a opção é `-z`) · 3 em branco (`top`) · 4 em branco (`/etc/group`) · 5 forma ("FSF - Free Software Foundation"; vale só `FSF`) | Qua 11/11, com a série 08 (não refeitas com a série 05) |
+| 03 | 05/11 | **4 de 5** | 3 em branco (`/etc/skel`; no simulado 03, a Q35 sobre o mesmo arquivo saiu certa: reconhecer é mais fácil que lembrar) | Ter 10/11, com a série 07 (não refeita com a série 06) |
 | 04 | 07/11 | **5 de 5** | Nenhuma | — |
 | 05 | 07/11 | **5 de 5** | Nenhuma. A 3 (`5`, seção de formatos de arquivo) é o mesmo ponto que você errou na Q7 do R3: lembrado na lacuna, mas não reconhecido na alternativa | — |
-| 06 | | de 5 | | |
+| 06 | 09/11 | **5 de 5** | Nenhuma | — |
 | 07 | | de 5 | | |
 | 08 | | de 5 | | |
 | 09 | | de 5 | | |
