@@ -1,6 +1,6 @@
 # Simulado 05 — LPI Linux Essentials (010-160)
 
-Simulado no formato do exame, versão 1.6. Escrito em 04/11/2026 para a **segunda 09/11**, na operação prática. Cinco alternativas por questão, como no exame e nos reforços R3 e R4; quatro questões de escolher duas; cinco lacunas com a instrução que a prova usa. As questões são escritas sobre os objetivos oficiais; não são questões reais do exame.
+Simulado no formato do exame, versão 1.6. Escrito em 04/11/2026 para a **terça 24/11**, guardado para perto da prova, na operação prática. Cinco alternativas por questão, como no exame e nos reforços R3 e R4; quatro questões de escolher duas; cinco lacunas com a instrução que a prova usa. As questões são escritas sobre os objetivos oficiais; não são questões reais do exame.
 
 Quinze questões retestam reincidências registradas até 04/11 (tabela no fim do gabarito), sempre por um ângulo diferente do da questão em que você errou.
 
@@ -487,7 +487,7 @@ Preencha depois de conferir o gabarito.
 
 | Campo | Valor |
 | --- | --- |
-| Data | 09/11/2026 |
+| Data | 24/11/2026 |
 | Tempo gasto | |
 | Minutos usados na segunda passada | |
 | Acertos | de 40 |
