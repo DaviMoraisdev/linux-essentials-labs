@@ -1,6 +1,6 @@
 # Calendário até a prova — LPI Linux Essentials (010-160)
 
-**Prova: segunda-feira, 30/11/2026** · Período: 05/11 a 30/11/2026 · Refeito em 09/11 · Para importar no celular ou no Google Agenda: `calendario-ate-a-prova.ics`
+**Prova: segunda-feira, 30/11/2026** · Período: 05/11 a 30/11/2026 · Refeito em 10/11 · Para importar no celular ou no Google Agenda: `calendario-ate-a-prova.ics`
 
 Detalhe de cada sessão, regras e protocolo de correção: `operacao-pratica.md`. Exercícios da LPI: `simulados-práticos.lpi/exercicios-lpi.md`.
 
@@ -15,7 +15,7 @@ Detalhe de cada sessão, regras e protocolo de correção: `operacao-pratica.md`
 | Leve | Mini-simulado das reincidências e releitura das colas | cerca de 1h15 |
 | Descanso | Sem estudo | — |
 
-Carga aumentada em 08/11: cerca de 3h30 de segunda a sábado e 2h nos domingos 15 e 22. Ajuste de 09/11: a terça 10/11 vira dia de conteúdo (o máximo das aulas 41 a 72); o que sobrar vai para as noites de 11 e 12/11; depois disso, a noite é para **refazer as erradas** do dia. O simulado 05 ficou para a terça 24/11, mais perto da prova. As 24 lições da LPI terminam em 18/11; de 19 a 25/11, a LPI é de revisão.
+Carga aumentada em 08/11: cerca de 3h30 de segunda a sábado e 2h nos domingos 15 e 22. Ajustes de 09 e 10/11: a terça 10/11 foi dia de conteúdo (aulas 41 a 48); as aulas 49 a 72 ficam nas noites de 11, 12 e 13/11, oito por noite; depois disso, a noite é para **refazer as erradas** do dia. O simulado 05 ficou para a terça 24/11, mais perto da prova. As 24 lições da LPI terminam em 18/11; de 19 a 25/11, a LPI é de revisão.
 
 ---
 
@@ -24,7 +24,7 @@ Carga aumentada em 08/11: cerca de 3h30 de segunda a sábado e 2h nos domingos 1
 | Seg | Ter | Qua | Qui | Sex | Sáb | Dom |
 |---|---|---|---|---|---|---|
 | 2<br>Finados | 3<br>Práticas registradas | 4<br>Lacunas 01 e 02 | **5** · **A**<br>Simulado 03 ✓<br>V5 e V6 ✓ | **6** · **B**<br>R3 ✓<br>4.1 e here doc ✓ | **7** · **B**<br>R4 ✓<br>Lacunas 04 e 05 ✓ | **8** · Remarcado<br>Aulas e LPI remarcadas |
-| **9** · **Conteúdo**<br>LPI 5.1 e 5.2 ✓<br>Lacunas 06 ✓<br>Simulado 05 → 24/11 | **10** · **Conteúdo**<br>Aulas 41–72 (o máximo)<br>Mais exercícios<br>LPI 5.3, 5.4, 4.2 | **11** · **A**<br>Simulado 04<br>Aulas restantes<br>LPI 4.3 L1, 4.3 L2 | **12** · **B**<br>M1<br>Curso fechado<br>LPI 4.4, 3.1 | **13** · **A**<br>Simulado 06<br>Refazer erradas<br>LPI 3.2 L1, 3.2 L2 | **14** · **A**<br>Simulado 07<br>Refazer erradas<br>LPI 3.3 L1, 3.3 L2, 2.1 L1 | **15** · Domingo<br>R2<br>Colas e erradas da semana<br>LPI 2.1 L2, 2.2 |
+| **9** · **Conteúdo**<br>LPI 5.1 e 5.2 ✓<br>Lacunas 06 ✓<br>Simulado 05 → 24/11 | **10** · **Conteúdo**<br>Aulas 41–48 ✓<br>LPI 4.2 e 5.3 ✓<br>Lacunas 07 ✓ | **11** · **A**<br>Simulado 04<br>Aulas 49–56<br>LPI 4.3 L1, 4.3 L2 | **12** · **B**<br>M1<br>Aulas 57–64<br>LPI 4.4, 3.1, 5.4 | **13** · **A**<br>Simulado 06<br>Aulas 65–72 (curso fechado)<br>LPI 3.2 L1, 3.2 L2 | **14** · **A**<br>Simulado 07<br>Refazer erradas<br>LPI 3.3 L1, 3.3 L2, 2.1 L1 | **15** · Domingo<br>R2<br>Colas e erradas da semana<br>LPI 2.1 L2, 2.2 |
 | **16** · **B**<br>M2<br>Refazer erradas<br>LPI 2.3 L1, 2.3 L2, 2.4 | **17** · **A**<br>Simulado 08<br>Refazer erradas<br>LPI 1.1, 1.2 | **18** · **B**<br>M3<br>Fim das lições<br>LPI 1.3, 1.4 | **19** · **A**<br>Simulado 09<br>Refazer erradas<br>LPI: revisão das erradas | **20** · **B**<br>M4<br>feriado<br>LPI: revisão das erradas | **21** · **A**<br>Simulado 10<br>**Ponto de ajuste**<br>LPI: revisão das erradas | **22** · Domingo<br>Colas e erradas da semana<br>VM das reincidências<br>LPI: revisão das erradas |
 | **23** · **A**<br>Simulado 11<br>Refazer erradas<br>LPI: revisão das erradas | **24** · **A**<br>**Simulado 05**<br>Refazer erradas<br>LPI: revisão das erradas | **25** · **A**<br>**Simulado 12 (final)**<br>LPI: revisão das erradas | **26** · Leve<br>M6 (reincidências)<br>Colas | **27** · —<br>Descanso | **28** · —<br>Descanso | **29** · —<br>Descanso<br>Não estudar |
 | **30** · **PROVA**<br>**PROVA**<br>010-160 |   |   |   |   |   |   |
@@ -42,10 +42,10 @@ Marque a coluna "Feito" ao fim de cada sessão.
 | Sáb 07/11 | B | **R4** (feito: 18 de 20, 18 firmes) · lacunas 04 e 05 (5 de 5 cada). Os Exercícios da LPI da semana passaram para 09 a 15/11 | — | — | Séries 04 e 05 | ✓ |
 | Dom 08/11 | Remarcado | Não realizado: as aulas 41 a 72 passaram para as noites de 09 a 12/11 e os Exercícios da LPI para 09 a 15/11 | — | — | — | Remarcado |
 | Seg 09/11 | Conteúdo | LPI 5.1 e 5.2 (feitos) · lacunas 06 (5 de 5). O **simulado 05 passou para a ter 24/11**, mais perto da prova; as aulas 41 a 48 passaram para a ter 10/11; o V5 foi substituído (já feito em 05/11) | Substituído: o V5 já tinha sido feito em 05/11 | 5.1 (372–374); 5.2 (391–393) | Série 06 | ✓ |
-| Ter 10/11 | Conteúdo | **Dia de conteúdo**: o máximo das **aulas 41 a 72** e três lições da LPI (5.3, 5.4 e 4.2). O R2 passou para o dom 15/11 | — | 5.3 (416–418); 5.4 (434–435); 4.2 (283–284) | Série 07 + retornos das séries 01 e 03 + 2 extras do R4 |  |
-| Qua 11/11 | A | **Simulado 04** (`simulado-04.md`) · à noite, as aulas que sobrarem de terça | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 4.3, lição 1 (303–305); 4.3, lição 2 (321–324) | Série 08 + retornos da série 02 |  |
-| Qui 12/11 | B | **M1** — os erros dos simulados 03 e 04, do R3 e do R4, e uma checagem das lições 5.1 e 5.2 · à noite, as aulas que ainda faltarem (curso fechado) | Só os comandos que errar no M1 | 4.4 (349–350); 3.1 (183–184) | Série 09 |  |
-| Sex 13/11 | A | **Simulado 06** · à noite, refazer as erradas do M1 e do simulado 06 | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 3.2, lição 1 (199–200); 3.2, lição 2 (210–211) | Série 10 |  |
+| Ter 10/11 | Conteúdo | **Dia de conteúdo** (feito): aulas 41 a 48 · LPI 4.2 e 5.3 · lacunas 07. A LPI 5.4 passou para a qui 12/11 | — | 4.2 (283–284); 5.3 (416–418) | Série 07 | ✓ |
+| Qua 11/11 | A | **Simulado 04** (`simulado-04.md`) · à noite, **aulas 49 a 56** | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 4.3, lição 1 (303–305); 4.3, lição 2 (321–324) | Série 08 + retornos das séries 01, 02 e 03 + 2 extras do R4 |  |
+| Qui 12/11 | B | **M1** — os erros dos simulados 03 e 04, do R3 e do R4, e uma checagem das lições 5.1, 5.2 e 5.3 · à noite, **aulas 57 a 64** | Só os comandos que errar no M1 | 4.4 (349–350); 3.1 (183–184); 5.4 (434–435) | Série 09 |  |
+| Sex 13/11 | A | **Simulado 06** · à noite, **aulas 65 a 72** (curso fechado) | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 3.2, lição 1 (199–200); 3.2, lição 2 (210–211) | Série 10 + retornos da série 07 |  |
 | Sáb 14/11 | A | **Simulado 07** · à noite, refazer as erradas do simulado 07 | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 3.3, lição 1 (229–231); 3.3, lição 2 (247–249); 2.1, lição 1 (82–84) | Série 11 |  |
 | Dom 15/11 | Domingo de prática | **Domingo de prática** · **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) · releitura das colas | Só os comandos que errar no R2 | 2.1, lição 2 (94–95); 2.2 (107–109) | Série 12 |  |
 | Seg 16/11 | B | **M2** · à noite, refazer as erradas do M2 | Só os comandos que errar no M2 | 2.3, lição 1 (122–124); 2.3, lição 2 (139–141); 2.4 (162–164) | Série 13 |  |
@@ -71,8 +71,8 @@ Marque a coluna "Feito" ao fim de cada sessão.
 | Data | Marco |
 |---|---|
 | Qui 05/11 | Simulado 03: **27 de 40, 20 firmes**, a linha de base |
-| Ter 10/11 | Dia de conteúdo: o máximo das aulas 41 a 72 |
-| Qui 12/11 | Curso fechado (aula 72), no máximo |
+| Ter 10/11 | Dia de conteúdo: aulas 41 a 48 (feitas) |
+| Sex 13/11 | Curso fechado (aula 72), com oito aulas por noite de 11 a 13/11 |
 | Qua 18/11 | Fim das 24 lições da LPI |
 | Sáb 21/11 | **Ponto de ajuste**: média de acertos firmes dos simulados 08, 09 e 10. A prova está comprada para 30/11; a média só decide o foco dos últimos dias |
 | Ter 24/11 | Simulado 05, guardado para perto da prova |
