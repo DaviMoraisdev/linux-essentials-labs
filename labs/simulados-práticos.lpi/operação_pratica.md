@@ -2,7 +2,7 @@
 
 **Prova: segunda-feira, 30/11/2026** · Exame **010-160** · Criado em 26/10/2026
 
-A operação começou na **quinta 05/11**, com o simulado 03 (27 de 40, 20 firmes). **A prova está comprada para segunda 30/11** (confirmado em 09/11). A carga é de cerca de **3h30 de segunda a sábado** e **2h nos domingos 15 e 22** (refeita em 08/11). **Ajuste de 09/11:** a terça 10/11 vira dia de conteúdo, com o máximo das aulas 41 a 72 e três lições da LPI; o simulado 05 ficou para a terça 24/11, mais perto da prova; o R2 passou para o domingo 15/11; e o treino na VM passa a ser só sobre comandos errados no dia. Daí até a prova, **todos os dias** são de prática. Não há dívida.
+A operação começou na **quinta 05/11**, com o simulado 03 (27 de 40, 20 firmes). **A prova está comprada para segunda 30/11** (confirmado em 09/11). A carga é de cerca de **3h30 de segunda a sábado** e **2h nos domingos 15 e 22** (refeita em 08/11). **Ajustes de 09 e 10/11:** a terça 10/11 foi dia de conteúdo (aulas 41 a 48, LPI 4.2 e 5.3); as aulas 49 a 72 ficam nas noites de 11 a 13/11, oito por noite, e a LPI 5.4 vai para a quinta 12/11; o simulado 05 ficou para a terça 24/11, mais perto da prova; o R2 passou para o domingo 15/11; e o treino na VM passa a ser só sobre comandos errados no dia. Daí até a prova, **todos os dias** são de prática. Não há dívida.
 
 Este arquivo substitui os arquivos semanais a partir de 05/11. O registro de cada dia fica na seção 9.
 
@@ -33,7 +33,7 @@ Este arquivo substitui os arquivos semanais a partir de 05/11. O registro de cad
 | **Conteúdo** (ter 10/11) | Lacunas e as que voltam (10 min) · **o máximo das aulas 41 a 72**, com anotações no caderno · **três lições** da LPI (5.3, 5.4 e 4.2) | cerca de 3h30 ou mais |
 | **Leve** (26/11) | Mini-simulado M6, só das reincidências, e releitura das colas | cerca de 1h15 |
 
-**A sessão da noite.** Na terça 10/11, as aulas tomam o dia. O que sobrar das aulas 41 a 72 fica para as noites de 11 e 12/11. Depois disso, a noite é para **refazer as erradas**: sem consulta, você refaz as questões erradas e chutadas do simulado ou mini do dia e as erradas da LPI do dia; o que errar de novo entra na seção 6 como reincidência.
+**A sessão da noite.** As aulas 49 a 72 ficam nas noites de 11, 12 e 13/11, oito por noite (o mesmo ritmo de 10/11); o curso fecha na sexta 13/11. Depois disso, a noite é para **refazer as erradas**: sem consulta, você refaz as questões erradas e chutadas do simulado ou mini do dia e as erradas da LPI do dia; o que errar de novo entra na seção 6 como reincidência.
 
 **O treino na VM (desde 09/11).** Os blocos V1 a V8 da seção 5 já foram feitos. O tempo de VM agora é só para os **comandos que você errar no dia**: rode o comando da questão e veja a saída real. Se o erro não for de comando, ou se o comando já foi treinado, o tempo vai para refazer as erradas. Os erros do R4 viraram duas lacunas extras (`lacunas.md`) e questões do M1.
 
@@ -69,10 +69,10 @@ A carga de 08/11 continua: cerca de 3h30 de segunda a sábado e 2h nos domingos 
 | Sáb 07/11 | B | **R4** (feito: 18 de 20, 18 firmes) · lacunas 04 e 05 (5 de 5 cada). Os Exercícios da LPI da semana passaram para 09 a 15/11 | — | — | Séries 04 e 05 |
 | Dom 08/11 | — | Não realizado: as aulas 41 a 72 passaram para as noites de 09 a 12/11 e os Exercícios da LPI para 09 a 15/11 | — | — | — |
 | Seg 09/11 | Conteúdo | LPI 5.1 e 5.2 (feitos) · lacunas 06 (5 de 5). O **simulado 05 passou para a ter 24/11**, mais perto da prova; as aulas 41 a 48 passaram para a ter 10/11; o V5 foi substituído (já feito em 05/11) | Substituído: o V5 já tinha sido feito em 05/11 | 5.1 e 5.2 (feito) | Série 06 |
-| Ter 10/11 | Conteúdo | **Dia de conteúdo**: o máximo das **aulas 41 a 72** e três lições da LPI (5.3, 5.4 e 4.2). O R2 passou para o dom 15/11 | — | 5.3 e 5.4 e 4.2 | Série 07 + retornos das séries 01 e 03 + 2 extras do R4 |
-| **Qua 11/11** | A | **Simulado 04** (`simulado-04.md`) · à noite, as aulas que sobrarem de terça | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 4.3, lição 1 e 4.3, lição 2 | Série 08 + retornos da série 02 |
-| Qui 12/11 | B | **M1** — os erros dos simulados 03 e 04, do R3 e do R4, e uma checagem das lições 5.1 e 5.2 · à noite, as aulas que ainda faltarem (curso fechado) | Só os comandos que errar no M1 | 4.4 e 3.1 | Série 09 |
-| **Sex 13/11** | A | **Simulado 06** · à noite, refazer as erradas do M1 e do simulado 06 | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 3.2, lição 1 e 3.2, lição 2 | Série 10 |
+| Ter 10/11 | Conteúdo | **Dia de conteúdo** (feito): aulas 41 a 48 · LPI 4.2 e 5.3 · lacunas 07. A LPI 5.4 passou para a qui 12/11 | — | 4.2 e 5.3 (feito) | Série 07 |
+| **Qua 11/11** | A | **Simulado 04** (`simulado-04.md`) · à noite, **aulas 49 a 56** | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 4.3, lição 1 e 4.3, lição 2 | Série 08 + retornos das séries 01, 02 e 03 + 2 extras do R4 |
+| Qui 12/11 | B | **M1** — os erros dos simulados 03 e 04, do R3 e do R4, e uma checagem das lições 5.1, 5.2 e 5.3 · à noite, **aulas 57 a 64** | Só os comandos que errar no M1 | 4.4 e 3.1 e 5.4 | Série 09 |
+| **Sex 13/11** | A | **Simulado 06** · à noite, **aulas 65 a 72** (curso fechado) | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 3.2, lição 1 e 3.2, lição 2 | Série 10 + retornos da série 07 |
 | **Sáb 14/11** | A | **Simulado 07** · à noite, refazer as erradas do simulado 07 | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 3.3, lição 1 e 3.3, lição 2 e 2.1, lição 1 | Série 11 |
 | Dom 15/11 | Domingo | **Domingo de prática** · **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) · releitura das colas | Só os comandos que errar no R2 | 2.1, lição 2 e 2.2 | Série 12 |
 | Seg 16/11 | B | **M2** · à noite, refazer as erradas do M2 | Só os comandos que errar no M2 | 2.3, lição 1 e 2.3, lição 2 e 2.4 | Série 13 |
@@ -260,7 +260,7 @@ São os erros que voltaram depois de corrigidos. É a lista que guia os treinos 
 | Herança de variáveis: `export` | **3** (Correções 12 e 71; Q16 do simulado 03) | O `export` marca a variável para os filhos; o `env NOME` tenta executar um comando | V4 |
 | `{}` tratado como globbing | 2 | A expansão de chaves cria os nomes sem olhar o disco | — |
 | Sinal padrão do `kill` | 2 | `SIGTERM` (15); o `SIGKILL` (9) só com `kill -9` | V7 |
-| **Forma das lacunas** (palavra a mais, explicação junto da resposta) | **5** (Q11 do simulado 01; Q7 e Q13 do simulado 02; séries 01 e 02 das lacunas) | Na lacuna, só o pedido: `copyleft`, `-x`, `FSF`. Explicação vai no caderno, nunca na resposta | — |
+| **Forma das lacunas e dos comandos** (palavra a mais, espaço a mais, caminho sem `/`) | **7** (Q11 do simulado 01; Q7 e Q13 do simulado 02; séries 01 e 02 das lacunas; série 07: `update db` e `proc`; LPI 5.3 G2: `chmod u+x, go-wx`) | Na lacuna, só o pedido, escrito como se digita: `updatedb`, `/proc`, `chown`. No terminal, espaço separa argumentos: `chmod u+x,go-wx arq`, sem espaço depois da vírgula | — |
 | Seções do `man` (`man 5` contra `man -k`) | 2 (Q16 do simulado 02; Q7 do R3) | `man 5 arquivo` abre o **formato do arquivo**; `man -k` só **procura** a palavra e lista páginas | V2 |
 | `help` para os comandos internos | **3** (Correção 74; Q13 do simulado 02; série 02 das lacunas) | `help cd`; o `man` é para programas, o `type` diz o que é interno | V2 |
 | Padrão de globbing sem correspondência | 2 (Semana 3; Q24 do simulado 03) | O Bash entrega o texto literal, como `*.log`; não há erro | V1 |
@@ -317,10 +317,10 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 | 07/11 | B | R4 · lacunas 04 e 05 | R4: **18 de 20** | **18** | Séries 04 e 05: **5 de 5** e **5 de 5** | — (remarcados para 09 a 11/11) | Bit especial pelo trio (`S` no grupo = SGID); grupo do arquivo com `usermod -g` |
 | 08/11 | — | Não realizado: aulas e LPI remarcadas | — | — | — | — | — |
 | 09/11 | Conteúdo | LPI 5.1 e 5.2 · lacunas 06 (simulado 05 guardado para 24/11) | — | — | Série 06: **5 de 5** | 5.1: **12 de 12** · 5.2: **9 de 10** (medição a confirmar) | — |
-| 10/11 | Conteúdo | Aulas 41–72 (o máximo) · Mais exercícios | — | — | Série 07: de 5 · retornos: de 5 · extras: de 2 | 5.3 e 5.4 e 4.2 · de | |
-| 11/11 | A | Simulado 04 · Aulas restantes | de 40 |  | Série 08: de 5 · retornos: de 5 | 4.3, lição 1 e 4.3, lição 2 · de | |
-| 12/11 | B | M1 · Curso fechado | de 20 |  | Série 09: de 5 | 4.4 e 3.1 · de | |
-| 13/11 | A | Simulado 06 · Refazer erradas | de 40 |  | Série 10: de 5 | 3.2, lição 1 e 3.2, lição 2 · de | |
+| 10/11 | Conteúdo | Aulas 41 a 48 · LPI 4.2 e 5.3 · lacunas 07 (a LPI 5.4 passou para 12/11) | — | — | Série 07: **3 de 5** (conteúdo: 5) · retornos e extras não enviados | 4.2: **4 de 4** · 5.3: **9 de 11** | Forma das lacunas (`update db`, `proc`) |
+| 11/11 | A | Simulado 04 · Aulas 49 a 56 | de 40 |  | Série 08: de 5 · retornos: de 10 · extras: de 2 | 4.3, lição 1 e 4.3, lição 2 · de | |
+| 12/11 | B | M1 · Aulas 57 a 64 | de 20 |  | Série 09: de 5 | 4.4, 3.1 e 5.4 · de | |
+| 13/11 | A | Simulado 06 · Aulas 65 a 72 (curso fechado) | de 40 |  | Série 10: de 5 · retornos da 07: de 2 | 3.2, lição 1 e 3.2, lição 2 · de | |
 | 14/11 | A | Simulado 07 · Refazer erradas | de 40 |  | Série 11: de 5 | 3.3, lição 1 e 3.3, lição 2 e 2.1, lição 1 · de | |
 | 15/11 | Domingo | R2 · Colas e erradas da semana | R2: de 20 |  | Série 12: de 5 | 2.1, lição 2 e 2.2 · de | |
 | 16/11 | B | M2 · Refazer erradas | de 20 |  | Série 13: de 5 | 2.3, lição 1 e 2.3, lição 2 e 2.4 · de | |
@@ -351,3 +351,51 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 **Exercícios da LPI 4.1:** os 5 Guiados e os 2 Exploratórios respondidos, todos certos. O `uname -r` mostra a versão do kernel, e o `uname -s` no macOS responde `Darwin`.
 
 **Here document:** a tabela dos quatro operadores (`<`, `<<`, `>`, `>>`) está certa. Fica o detalhe do V3: o delimitador fecha o bloco só se estiver **sozinho na linha**, sem espaço antes ou depois.
+
+### Curso, aulas 41 a 48 — terça 10/11
+
+**Conteúdo registrado**
+
+| Tema | O que ficou anotado |
+|---|---|
+| Caminhos | Absoluto (`cd /home/davi/doc`) contra relativo (`cd doc`) |
+| Arquivos e diretórios | `mkdir`, `mkdir -p` (cria os pais que faltam), `mv` (move e renomeia), `cp -r` (recursivo), `rm -f` e `rm -r` |
+| `tar` e compressão | `-c` cria, `-v` detalha, `-f` aponta o arquivo; `-z` gzip, `-j` bzip2; `zip -r` e `unzip`; `xz` e `unxz` |
+| Prática de compressão | Os 12 passos: `tar cf`, `gzip`/`gunzip`, `bzip2`/`bunzip2`, `xz`/`unxz`, `tar czf`, `tar cjf`, `zip -r`, `unzip` |
+| Leitura de arquivos | `less` (páginas), `head` e `tail`, `tail -f` (log em tempo real) |
+| Canais | `stdin` 0, `stdout` 1, `stderr` 2 |
+| `cut` | `cut -d : -f 1 /etc/passwd` |
+| Expressões regulares | `^a`, `h$`, `^[ab]`, `^[^ab]`, `^..s` com `grep` |
+
+**Pontos fortes:** a prática de compressão completa, nos 12 passos e com cada par comprimir e descomprimir; e as cinco expressões regulares, todas certas, inclusive a diferença entre `^[ab]` (começa com a ou b) e `^[^ab]` (o `^` **dentro** dos colchetes nega).
+
+**Ajustes de caderno (sem correção numerada)**
+
+1. "O `-c` compacta": o `-c` **cria** o arquivo `.tar`, que só **agrupa** os arquivos, sem reduzir o tamanho. Quem comprime é o `-z`, o `-j` ou o `-J`.
+2. "Delimitador de coluna em diretórios são `:`": o `:` é o separador dos **campos do `/etc/passwd`**, não de diretórios.
+3. Aspas: no caderno aparecem aspas curvas (`‘^a’`). No terminal, só funcionam as **retas**: `grep '^a' /etc/passwd`. Cuidado ao copiar do Notion.
+
+#### Correção 79 — o `rm` sem `-r` não apaga diretório, nem vazio
+
+O caderno diz: "`rm dir` remove diretórios vazios e arquivos". O `rm` sozinho só apaga **arquivos**; com um diretório, até vazio, responde `rm: cannot remove 'dir': Is a directory`.
+
+| Comando | Apaga |
+|---|---|
+| `rm arq` | Arquivo |
+| `rmdir dir` ou `rm -d dir` | Diretório **vazio** |
+| `rm -r dir` | Diretório com todo o conteúdo |
+| `rm -rf dir` | O mesmo, sem perguntar e sem erro se não existir |
+
+Na VM: `mkdir vazio; rm vazio; rmdir vazio`.
+
+#### Correção 80 — `-j` é bzip2 e `-J` é xz; o `xz` recebe o `.tar`, não o `.tar.xz`
+
+O caderno junta as letras: "Para comprimir: `-z` ou `-J` ... `tar cvjf arq.tar.bz2`". São três opções diferentes, e a prova cobra a letra exata:
+
+| Opção do `tar` | Compressor | Extensão |
+|---|---|---|
+| `-z` | gzip | `.tar.gz` |
+| `-j` | bzip2 | `.tar.bz2` |
+| `-J` | xz | `.tar.xz` |
+
+E o `xz` comprime o arquivo que você passa e **acrescenta** a extensão: `xz arq.tar` gera `arq.tar.xz`. O caderno tem "`xz arq.tar.xz`", que só funciona no sentido contrário (`unxz arq.tar.xz` ou `xz -d arq.tar.xz`). Os 12 passos da prática estão certos; o erro está só na anotação da aula.
