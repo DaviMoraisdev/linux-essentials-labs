@@ -29,9 +29,9 @@ São as **24 lições** do material oficial, com cerca de **205 exercícios** (G
 |---|---|---|---|---|
 | Sex 06/11 | 4.1 | 7 | 264–266 | 268–270 |
 | Seg 09/11 | 5.1 e 5.2 | 12 + 10 | 372–374 · 391–393 | 377–379 · 395–397 |
-| Ter 10/11 | 5.3 e 5.4 e 4.2 | 11 + 10 + 4 | 416–418 · 434–435 · 283–284 | 420–423 · 439–440 · 286–288 |
+| Ter 10/11 | 4.2 e 5.3 | 4 + 11 | 283–284 · 416–418 | 286–288 · 420–423 |
 | Qua 11/11 | 4.3, lição 1 e 4.3, lição 2 | 6 + 9 | 303–305 · 321–324 | 308–310 · 328–332 |
-| Qui 12/11 | 4.4 e 3.1 | 9 + 9 | 349–350 · 183–184 | 352–353 · 187–189 |
+| Qui 12/11 | 4.4 e 3.1 e 5.4 | 9 + 9 + 10 | 349–350 · 183–184 · 434–435 | 352–353 · 187–189 · 439–440 |
 | Sex 13/11 | 3.2, lição 1 e 3.2, lição 2 | 12 + 9 | 199–200 · 210–211 | 202–204 · 213–215 |
 | Sáb 14/11 | 3.3, lição 1 e 3.3, lição 2 e 2.1, lição 1 | 7 + 3 + 6 | 229–231 · 247–249 · 82–84 | 234–236 · 251–253 · 86–87 |
 | Dom 15/11 | 2.1, lição 2 e 2.2 | 9 + 11 | 94–95 · 107–109 | 97–98 · 111–114 |
@@ -77,7 +77,7 @@ As páginas são as impressas no rodapé do PDF.
 | 5.1 | Segurança básica e tipos de usuários | G5 E7 | Seg 09/11 |
 | 5.2 | Criando usuários e grupos | G2 E8 | Seg 09/11 |
 | 5.3 | Gerenciando permissões e propriedade de arquivos | G6 E5 | Ter 10/11 |
-| 5.4 | Diretórios e arquivos especiais | G5 E5 | Ter 10/11 |
+| 5.4 | Diretórios e arquivos especiais | G5 E5 | Qui 12/11 |
 
 ---
 
@@ -90,13 +90,13 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 | Sex 06/11 | 4.1 | **7 de 7** | Nenhuma | — |
 | Seg 09/11 | 5.1 | **12 de 12** | Nenhuma. Medição a confirmar: a redação é a mesma do guia resolvido de 21/10 | — |
 | Seg 09/11 | 5.2 | **9 de 10** | E8 em branco (o SUID do `passwd`). Medição a confirmar, pelo mesmo motivo | Não |
-| Ter 10/11 | 5.3 | de 11 |  |  |
-| Ter 10/11 | 5.4 | de 10 |  |  |
-| Ter 10/11 | 4.2 | de 4 |  |  |
+| Ter 10/11 | 4.2 | **4 de 4** | Nenhuma (E1 com a saída de exemplo do PDF, não a da sua VM) | — |
+| Ter 10/11 | 5.3 | **9 de 11** | G2: espaço depois da vírgula no `chmod` simbólico; E1 em branco (`chmod 4` e `chmod 44`) | Não |
 | Qua 11/11 | 4.3, lição 1 | de 6 |  |  |
 | Qua 11/11 | 4.3, lição 2 | de 9 |  |  |
 | Qui 12/11 | 4.4 | de 9 |  |  |
 | Qui 12/11 | 3.1 | de 9 |  |  |
+| Qui 12/11 | 5.4 | de 10 |  |  |
 | Sex 13/11 | 3.2, lição 1 | de 12 |  |  |
 | Sex 13/11 | 3.2, lição 2 | de 9 |  |  |
 | Sáb 14/11 | 3.3, lição 1 | de 7 |  |  |
@@ -146,3 +146,26 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 | E5 | O resultado está certo; anote também o comando: `sudo useradd -m -u 1035 -g sys_admin -G web_admin,db_admin carol` |
 | E7 | Grafia das permissões: `-rw-r--r--` e `-rw-r-----`, sempre com 10 caracteres |
 | E8 | **Em branco.** O `s` no trio do dono é o **SUID**: o `passwd` roda com o UID efetivo do dono, o root, e por isso um usuário comum consegue gravar a própria senha nova no `/etc/shadow`, que ele não pode ler nem alterar diretamente |
+
+### 4.2 e 5.3 — terça 10/11
+
+**Lição 4.2 (4 de 4).**
+
+| Exercício | Observação |
+| --- | --- |
+| G2 | Certo. A ressalva sobre a GPU faz sentido: os editores atuais usam a GPU para reproduzir e renderizar o vídeo, então ela pesa, sim, quando o programa tem aceleração por GPU |
+| G3 | Certo: `/dev/sdc3` (terceiro disco, `c`; terceira partição, `3`) |
+| E1 | A tabela descreve a saída de exemplo do PDF (`mmcblk0`, um cartão SD de Raspberry Pi), não a da sua VM. Rode `lsblk -f` na `lab-ubuntu`: o disco deve aparecer como `sda` ou `vda`, com as partições `sda1`, `sda2` e assim por diante. Grafia: é `mmcblk0` (estava "mmclk0") |
+
+**Lição 5.3 (9 de 11).**
+
+| Exercício | Observação |
+| --- | --- |
+| G2 | **Errado pela forma.** `chmod u+x, go-wx emptyfile` falha: o espaço depois da vírgula separa os argumentos, e o `chmod` responde `invalid mode: 'u+x,'`. O certo é `chmod u+x,go-wx emptyfile`, tudo junto. A prova cobra exatamente esse tipo de detalhe |
+| G4 | Certo, e com a correção do gabarito do PDF (o grupo `root` não é o usuário root; o Linux ignora SUID e SGID em scripts). **Para a prova**, se a pergunta for só sobre o bit: SGID faz o programa rodar com o **GID efetivo do grupo dono** (aqui, `root`), nunca com o UID 0. Grafia: o arquivo é `test.sh` (estava "teste.sh") |
+| G6 | As quatro conversões certas: 1755, 0044, 0664 e 2755 |
+| E1 | **Em branco.** O `chmod` completa com **zeros à esquerda**: `chmod 4` vale `0004` e dá `-------r--` (só os outros leem); `chmod 44` vale `0044` e dá `----r--r--`. Os dígitos que faltam são sempre os da esquerda (bit especial, dono, grupo, nessa ordem) |
+| E4 | Certo: `s` minúsculo tem o bit e o `x`; `S` maiúsculo tem o bit sem o `x` |
+| E5 | Certo: `chgrp users Box` e `chmod 3770 Box` dão `drwxrws--T`. O 3 é SGID (2) mais sticky (1), e o `T` maiúsculo aparece porque os outros não têm `x` |
+
+**Medição.** A resposta do G4 segue a mesma correção do gabarito que está no guia resolvido de 21/10. Se o guia foi consultado nesta lição, ela conta como feita, mas não como acertos firmes. O M1, na quinta 12/11, traz questões de 5.1, 5.2 e 5.3 para medir de novo.
