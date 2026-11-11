@@ -492,3 +492,4 @@ São erros de conteúdo já estudado. Desde 26/10 eles têm treino próprio na V
 | 06/11/2026 | R3 registrado: 17 de 20, 17 firmes, três reincidências (`man 5`, `2>/dev/null` com pipe, `$#`); calendário refeito: R4 em 07/11, simulado 05 em 09/11, R2 em 10/11, simulado 04 em 11/11, M1 em 12/11, simulado 06 em 13/11; R1 retirado |
 | 08/11/2026 | R4 registrado: 18 de 20, 18 firmes; lacunas 04 e 05: 5 de 5 cada; carga aumentada para cerca de 3h30 por dia e 2h nos domingos 15 e 22; aulas 41 a 72 nas noites de 09 a 12/11; Exercícios da LPI até 18/11 |
 | 09/11/2026 | Prova comprada para 30/11; decisão de 21/11 virou ponto de ajuste; simulado 05 guardado para 24/11 (no lugar do M5); R2 para 15/11; terça 10/11 como dia de conteúdo |
+| 10/11/2026 | Dia de conteúdo: aulas 41 a 48, LPI 4.2 (4 de 4) e 5.3 (9 de 11), lacunas 07 (3 de 5, dois erros de forma); aulas 49 a 72 nas noites de 11 a 13/11; LPI 5.4 em 12/11 |
