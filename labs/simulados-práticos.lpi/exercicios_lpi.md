@@ -31,15 +31,15 @@ São as **24 lições** do material oficial, com cerca de **205 exercícios** (G
 | Seg 09/11 | 5.1 e 5.2 | 12 + 10 | 372–374 · 391–393 | 377–379 · 395–397 |
 | Ter 10/11 | 4.2 e 5.3 | 4 + 11 | 283–284 · 416–418 | 286–288 · 420–423 |
 | Qua 11/11 | 4.3, lição 1 e 4.3, lição 2 | 6 + 9 | 303–305 · 321–324 | 308–310 · 328–332 |
-| Qui 12/11 | 4.4 e 3.1 e 5.4 | 9 + 9 + 10 | 349–350 · 183–184 · 434–435 | 352–353 · 187–189 · 439–440 |
-| Sex 13/11 | 3.2, lição 1 e 3.2, lição 2 | 12 + 9 | 199–200 · 210–211 | 202–204 · 213–215 |
-| Sáb 14/11 | 3.3, lição 1 e 3.3, lição 2 e 2.1, lição 1 | 7 + 3 + 6 | 229–231 · 247–249 · 82–84 | 234–236 · 251–253 · 86–87 |
-| Dom 15/11 | 2.1, lição 2 e 2.2 | 9 + 11 | 94–95 · 107–109 | 97–98 · 111–114 |
-| Seg 16/11 | 2.3, lição 1 e 2.3, lição 2 e 2.4 | 7 + 5 + 12 | 122–124 · 139–141 · 162–164 | 126–129 · 143–145 · 167–170 |
-| Ter 17/11 | 1.1 e 1.2 | 8 + 11 | 8–9 · 30–32 | 11–13 · 34–36 |
-| Qua 18/11 | 1.3 e 1.4 | 10 + 8 | 48–49 · 66–68 | 51–52 · 70–72 |
-| Qui 19/11 | **Revisão: erradas do Tópico 5** | As erradas da seção 3 | — | — |
-| Sex 20/11 | **Revisão: erradas do Tópico 4** | As erradas da seção 3 | — | — |
+| Qui 12/11 | 4.4 e 5.4 | 9 + 10 | 349–350 · 434–435 | 352–353 · 439–440 |
+| Sex 13/11 | 3.1 e 3.2, lição 1 | 9 + 12 | 183–184 · 199–200 | 187–189 · 202–204 |
+| Sáb 14/11 | 3.2, lição 2 e 3.3, lição 1 e 3.3, lição 2 | 9 + 7 + 3 | 210–211 · 229–231 · 247–249 | 213–215 · 234–236 · 251–253 |
+| Dom 15/11 | 2.1, lição 1 e 2.1, lição 2 | 6 + 9 | 82–84 · 94–95 | 86–87 · 97–98 |
+| Seg 16/11 | 2.2 e 2.3, lição 1 | 11 + 7 | 107–109 · 122–124 | 111–114 · 126–129 |
+| Ter 17/11 | 2.3, lição 2 e 2.4 | 5 + 12 | 139–141 · 162–164 | 143–145 · 167–170 |
+| Qua 18/11 | 1.1 e 1.2 | 8 + 11 | 8–9 · 30–32 | 11–13 · 34–36 |
+| Qui 19/11 | 1.3 e 1.4 | 10 + 8 | 48–49 · 66–68 | 51–52 · 70–72 |
+| Sex 20/11 | **Revisão: erradas dos Tópicos 5 e 4** | As erradas da seção 3 | — | — |
 | Sáb 21/11 | **Revisão: erradas do Tópico 3** | As erradas da seção 3 | — | — |
 | Dom 22/11 | **Revisão: erradas do Tópico 2** | As erradas da seção 3 | — | — |
 | Seg 23/11 | **Revisão: erradas do Tópico 1** | As erradas da seção 3 | — | — |
@@ -54,19 +54,19 @@ As páginas são as impressas no rodapé do PDF.
 
 | Lição | Tema | Exercícios | Dia |
 |---|---|---|---|
-| 1.1 | A evolução do Linux e sistemas operacionais populares | G5 E3 | Ter 17/11 |
-| 1.2 | Principais aplicações open source | G7 E4 | Ter 17/11 |
-| 1.3 | Software open source e suas licenças | G5 E5 | Qua 18/11 |
-| 1.4 | Habilidades ICT e trabalhando no Linux | G5 E3 | Qua 18/11 |
-| 2.1, lição 1 | O básico sobre a linha de comando | G3 E3 | Sáb 14/11 |
+| 1.1 | A evolução do Linux e sistemas operacionais populares | G5 E3 | Qua 18/11 |
+| 1.2 | Principais aplicações open source | G7 E4 | Qua 18/11 |
+| 1.3 | Software open source e suas licenças | G5 E5 | Qui 19/11 |
+| 1.4 | Habilidades ICT e trabalhando no Linux | G5 E3 | Qui 19/11 |
+| 2.1, lição 1 | O básico sobre a linha de comando | G3 E3 | Dom 15/11 |
 | 2.1, lição 2 | O básico sobre a linha de comando (variáveis) | G4 E5 | Dom 15/11 |
-| 2.2 | Usando a linha de comando para conseguir ajuda | G6 E5 | Dom 15/11 |
+| 2.2 | Usando a linha de comando para conseguir ajuda | G6 E5 | Seg 16/11 |
 | 2.3, lição 1 | Usando diretórios e listando arquivos | G4 E3 | Seg 16/11 |
-| 2.3, lição 2 | Usando diretórios e listando arquivos (caminhos e ocultos) | G2 E3 | Seg 16/11 |
-| 2.4 | Criando, movendo e deletando arquivos | G7 E5 | Seg 16/11 |
-| 3.1 | Empacotando arquivos na linha de comando | G5 E4 | Qui 12/11 |
+| 2.3, lição 2 | Usando diretórios e listando arquivos (caminhos e ocultos) | G2 E3 | Ter 17/11 |
+| 2.4 | Criando, movendo e deletando arquivos | G7 E5 | Ter 17/11 |
+| 3.1 | Empacotando arquivos na linha de comando | G5 E4 | Sex 13/11 |
 | 3.2, lição 1 | Redirecionamento e pipes | G7 E5 | Sex 13/11 |
-| 3.2, lição 2 | `grep` e expressões regulares | G6 E3 | Sex 13/11 |
+| 3.2, lição 2 | `grep` e expressões regulares | G6 E3 | Sáb 14/11 |
 | 3.3, lição 1 | Transformando comandos em scripts | G3 E4 | Sáb 14/11 |
 | 3.3, lição 2 | Códigos de saída, argumentos e `for` | G2 E1 | Sáb 14/11 |
 | 4.1 | Escolhendo um sistema operacional | G5 E2 | Sex 06/11 |
@@ -92,27 +92,26 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 | Seg 09/11 | 5.2 | **9 de 10** | E8 em branco (o SUID do `passwd`). Medição a confirmar, pelo mesmo motivo | Não |
 | Ter 10/11 | 4.2 | **4 de 4** | Nenhuma (E1 com a saída de exemplo do PDF, não a da sua VM) | — |
 | Ter 10/11 | 5.3 | **9 de 11** | G2: espaço depois da vírgula no `chmod` simbólico; E1 em branco (`chmod 4` e `chmod 44`) | Não |
-| Qua 11/11 | 4.3, lição 1 | de 6 |  |  |
-| Qua 11/11 | 4.3, lição 2 | de 9 |  |  |
+| Qua 11/11 | 4.3, lição 1 | **6 de 6** | Nenhuma (saídas do `which` copiadas do PDF; na VM são `/usr/...`) | — |
+| Qua 11/11 | 4.3, lição 2 | **7 de 9** | G3, itens 2 e 3, pesquisados; E3, item 4 (o pendrive some do `/dev`) | Não |
 | Qui 12/11 | 4.4 | de 9 |  |  |
-| Qui 12/11 | 3.1 | de 9 |  |  |
 | Qui 12/11 | 5.4 | de 10 |  |  |
+| Sex 13/11 | 3.1 | de 9 |  |  |
 | Sex 13/11 | 3.2, lição 1 | de 12 |  |  |
-| Sex 13/11 | 3.2, lição 2 | de 9 |  |  |
+| Sáb 14/11 | 3.2, lição 2 | de 9 |  |  |
 | Sáb 14/11 | 3.3, lição 1 | de 7 |  |  |
 | Sáb 14/11 | 3.3, lição 2 | de 3 |  |  |
-| Sáb 14/11 | 2.1, lição 1 | de 6 |  |  |
+| Dom 15/11 | 2.1, lição 1 | de 6 |  |  |
 | Dom 15/11 | 2.1, lição 2 | de 9 |  |  |
-| Dom 15/11 | 2.2 | de 11 |  |  |
+| Seg 16/11 | 2.2 | de 11 |  |  |
 | Seg 16/11 | 2.3, lição 1 | de 7 |  |  |
-| Seg 16/11 | 2.3, lição 2 | de 5 |  |  |
-| Seg 16/11 | 2.4 | de 12 |  |  |
-| Ter 17/11 | 1.1 | de 8 |  |  |
-| Ter 17/11 | 1.2 | de 11 |  |  |
-| Qua 18/11 | 1.3 | de 10 |  |  |
-| Qua 18/11 | 1.4 | de 8 |  |  |
-| Qui 19/11 | Revisão: erradas do Tópico 5 | | | |
-| Sex 20/11 | Revisão: erradas do Tópico 4 | | | |
+| Ter 17/11 | 2.3, lição 2 | de 5 |  |  |
+| Ter 17/11 | 2.4 | de 12 |  |  |
+| Qua 18/11 | 1.1 | de 8 |  |  |
+| Qua 18/11 | 1.2 | de 11 |  |  |
+| Qui 19/11 | 1.3 | de 10 |  |  |
+| Qui 19/11 | 1.4 | de 8 |  |  |
+| Sex 20/11 | Revisão: erradas dos Tópicos 5 e 4 | | | |
 | Sáb 21/11 | Revisão: erradas do Tópico 3 | | | |
 | Dom 22/11 | Revisão: erradas do Tópico 2 | | | |
 | Seg 23/11 | Revisão: erradas do Tópico 1 | | | |
@@ -169,3 +168,31 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 | E5 | Certo: `chgrp users Box` e `chmod 3770 Box` dão `drwxrws--T`. O 3 é SGID (2) mais sticky (1), e o `T` maiúsculo aparece porque os outros não têm `x` |
 
 **Medição.** A resposta do G4 segue a mesma correção do gabarito que está no guia resolvido de 21/10. Se o guia foi consultado nesta lição, ela conta como feita, mas não como acertos firmes. O M1, na quinta 12/11, traz questões de 5.1, 5.2 e 5.3 para medir de novo.
+
+### 4.3, lições 1 e 2 — quarta 11/11
+
+**Lição 4.3, lição 1 (6 de 6).**
+
+| Exercício | Observação |
+| --- | --- |
+| G1 | Certo na classificação. Os caminhos (`/sbin/swapon`, `/bin/kill`, `/bin/ps`) são os do PDF. Na sua VM, com o `/usr` unificado, o `which` mostra `/usr/sbin/swapon`, `/usr/bin/kill` e `/usr/bin/ps`; o `/bin` e o `/sbin` são links para `/usr/bin` e `/usr/sbin`. Detalhe de prova: o `kill` também é **comando interno** do Bash; o `which` mostra o programa em disco, e o `type kill` diz `kill is a shell builtin` |
+| G2 | Certo. Grafia: `~/.profile`, sem espaço |
+| G3 | Certo: 4 é a versão, 15 a revisão principal, 0 a secundária e 50 o patch |
+| E1 | Certo: `/dev/hd*` para IDE e `/dev/nvme*` para NVMe. Grafia: a primeira partição é `/dev/nvme0n1p1` (estava "nvmen1p1") |
+| E2 | Certo. Grafia: o campo é `Shmem` (estava "Shemem") |
+
+**Lição 4.3, lição 2 (7 de 9).**
+
+| Exercício | Observação |
+| --- | --- |
+| G1 | Certo: `top` da carol (PID 887), `/proc/887` e o `systemd` com PID 1, o primeiro a iniciar |
+| G2 | Certo: `last` para o `wtmp`, `lastb` (com `sudo`) para o `btmp` e `journalctl` para o journal. Para um arquivo de journal específico: `journalctl --file <caminho>` |
+| G3 | **Itens 2 e 3 marcados como pesquisados**, então contam como erro (regra 4). Ótimo ter marcado. A forma simples que a prova espera: `grep sd /var/log/kern.log` e `grep "session opened" /var/log/auth.log \| tail -1`; o `grep` lê o arquivo direto, sem o `cat`. O item 1 está certo: `last \| grep reboot \| head -1` (o `last` já lista do mais recente para o mais antigo) |
+| G4 | Certo: `dmesg` e `journalctl -k` |
+| G5 | Certo nas quatro mensagens |
+| G6 | Certo: `journalctl -u` com o nome da unidade |
+| E1 | Certo: `k` e o PID 444 (sinal 15, o padrão), `m` para as barras, `M` para ordenar por memória, `W` para salvar e `~/.config/procps/toprc`. Grafia: sem espaço depois de `~/.` |
+| E2 | Certo: o `exec` troca o programa e **mantém o PID** |
+| E3 | **Item 4 errado.** Depois de remover o pendrive, o `ls /dev/sd*` **não mostra mais** o `/dev/sdb` nem o `/dev/sdb1`: os arquivos de dispositivo são criados e removidos na hora pelo `udev`. Se o `/dev/sdb1` continuou aparecendo, o pendrive ainda estava conectado à VM |
+
+**Medição.** O G3 marcado como "pesquisado" é exatamente o registro que a operação precisa. Com isso, as lições sem marca contam como firmes. Se nas lições 5.1, 5.2 e 5.3 você não consultou o guia de 21/10, diga e eu tiro a observação de "medição a confirmar".
