@@ -12,7 +12,7 @@ São **120 lacunas em 24 séries de cinco**. Cada série mistura tópicos, porqu
 | Forma | Escreva **só o que foi pedido**: o comando sem caminho, sem `sudo` e sem opções, salvo quando o enunciado pedir a opção, o caminho ou o `$`. Maiúsculas e minúsculas contam |
 | Conferência | Abra o gabarito da série só depois das cinco |
 | Erro | Marque na tabela de controle no fim do arquivo. Erro **de forma** (resposta certa escrita errado) conta como erro |
-| Repetição | Uma lacuna errada volta **três séries depois**: anote na coluna "Volta na série" do controle e responda de novo junto com aquela série. Mande as que voltam junto com a série do dia |
+| Repetição | Uma lacuna errada volta **três séries depois**. Desde 11/11, as que voltam ficam **escritas dentro da própria série**, logo depois do gabarito dela, na seção "Retornos": basta responder a série inteira |
 
 As do Tópico 4 dependem das Práticas 3 a 5 e por isso só começam com a operação, na terça 03/11.
 
@@ -207,6 +207,22 @@ As do Tópico 4 dependem das Práticas 3 a 5 e por isso só começam com a opera
 
 </details>
 
+### Retornos para responder com a série 09 (quinta 12/11)
+
+Itens errados nas séries 01, 02 e 03 que ainda não voltaram. Responda sem abrir os gabaritos.
+
+- *(Tópico 1, série 01)* Tipo de licença que exige que versões modificadas e distribuídas mantenham a mesma licença do original (uma palavra): ______
+- *(Tópico 3, série 01)* Opção do `tar` que extrai (com o hífen): ______
+- *(Tópico 4, série 01)* Comando que mostra uma foto dos processos no momento em que roda: ______
+- *(Tópico 2, série 02)* Comando interno do Bash que mostra a ajuda dos comandos internos: ______
+- *(Tópico 3, série 02)* Opção do `tar` que comprime com gzip: ______
+- *(Tópico 4, série 02)* Comando que mostra os processos continuamente, atualizando a tela: ______
+- *(Tópico 5, série 02)* Caminho do arquivo com os grupos e seus membros secundários: ______
+- *(Tópico 1, série 02)* Sigla da fundação criada por Richard Stallman que publica a GPL: ______
+- *(Tópico 5, série 03)* Caminho do diretório cujo conteúdo é copiado para a pasta pessoal de cada usuário novo: ______
+
+O `/etc/shadow` (série 01, item 5) saiu da lista: foi escrito certo, de memória, na Q3 do R4.
+
 ## Série 10
 
 1. *(Tópico 5)* Comando que cria um grupo: ______
@@ -228,6 +244,11 @@ As do Tópico 4 dependem das Práticas 3 a 5 e por isso só começam com a opera
 
 </details>
 
+### Retornos para responder com a série 10 (sexta 13/11)
+
+- *(Tópico 2, série 07)* Comando que reconstrói o banco de dados consultado pelo `locate`: ______
+- *(Tópico 4, série 07)* Caminho do sistema de arquivos virtual com um diretório para cada PID: ______
+
 ## Série 11
 
 1. *(Tópico 1)* Programa livre para modelagem e animação 3D: ______
@@ -248,6 +269,10 @@ As do Tópico 4 dependem das Práticas 3 a 5 e por isso só começam com a opera
 | 5 | `passwd` | — |
 
 </details>
+
+### Retorno para responder com a série 11 (sábado 14/11)
+
+- *(Tópico 1, série 08)* Suíte de escritório livre, derivada do OpenOffice, presente na maioria das distribuições (o nome completo): ______
 
 ## Série 12
 
@@ -526,7 +551,7 @@ As do Tópico 4 dependem das Práticas 3 a 5 e por isso só começam com a opera
 
 ## Lacunas extras — erros do R4
 
-Respondidas junto com a série 08, na quarta 11/11 (não vieram com a série 07). Saem dos dois erros do R4 (`reforco-r3-r4.md`) e substituem o treino na VM que não foi feito em 09/11.
+Respondidas com a série 08, na quarta 11/11: **2 de 2** (`2744` e `chgrp`). Os dois erros do R4 estão fechados. Saem dos dois erros do R4 (`reforco-r3-r4.md`) e substituem o treino na VM que não foi feito em 09/11.
 
 1. *(Tópico 5)* Octal completo, com o bit especial, de `-rwxr-Sr--`: ______
 2. *(Tópico 5)* Comando que muda **só o grupo** de um arquivo, sem mexer no dono (só o nome do comando): ______
@@ -545,14 +570,14 @@ Respondidas junto com a série 08, na quarta 11/11 (não vieram com a série 07)
 
 | Série | Data | Acertos | Erradas (número e motivo: conteúdo ou forma) | Volta na série |
 |---|---|---|---|---|
-| 01 | 04/11 | **1 de 5** (conteúdo: 3) | 1 forma ("Licença Copyleft"; vale só `copyleft`) · 3 forma ("-x - extract"; vale só `-x`) · 4 em branco (`ps`) · 5 em branco (`/etc/shadow`) | Qua 11/11, com a série 08 (não refeitas com as séries 04, 06 e 07) |
-| 02 | 04/11 | **0 de 5** (conteúdo: 1) | 1 em branco (`help`) · 2 conteúdo ("tar.gz"; a opção é `-z`) · 3 em branco (`top`) · 4 em branco (`/etc/group`) · 5 forma ("FSF - Free Software Foundation"; vale só `FSF`) | Qua 11/11, com a série 08 (não refeitas com a série 05) |
-| 03 | 05/11 | **4 de 5** | 3 em branco (`/etc/skel`; no simulado 03, a Q35 sobre o mesmo arquivo saiu certa: reconhecer é mais fácil que lembrar) | Qua 11/11, com a série 08 (não refeita com as séries 06 e 07) |
+| 01 | 04/11 | **1 de 5** (conteúdo: 3) | 1 forma ("Licença Copyleft"; vale só `copyleft`) · 3 forma ("-x - extract"; vale só `-x`) · 4 em branco (`ps`) · 5 em branco (`/etc/shadow`) | Qui 12/11: escritas dentro da série 09 |
+| 02 | 04/11 | **0 de 5** (conteúdo: 1) | 1 em branco (`help`) · 2 conteúdo ("tar.gz"; a opção é `-z`) · 3 em branco (`top`) · 4 em branco (`/etc/group`) · 5 forma ("FSF - Free Software Foundation"; vale só `FSF`) | Qui 12/11: escritas dentro da série 09 |
+| 03 | 05/11 | **4 de 5** | 3 em branco (`/etc/skel`; no simulado 03, a Q35 sobre o mesmo arquivo saiu certa: reconhecer é mais fácil que lembrar) | Qui 12/11: escrita dentro da série 09 |
 | 04 | 07/11 | **5 de 5** | Nenhuma | — |
 | 05 | 07/11 | **5 de 5** | Nenhuma. A 3 (`5`, seção de formatos de arquivo) é o mesmo ponto que você errou na Q7 do R3: lembrado na lacuna, mas não reconhecido na alternativa | — |
 | 06 | 09/11 | **5 de 5** | Nenhuma | — |
-| 07 | 10/11 | **3 de 5** (conteúdo: 5) | 2 de forma: `update db` (é `updatedb`, junto) e `proc` (o pedido é o caminho: `/proc`). Na 4, `sudo chown` foi aceito, mas o comando é só `chown` | Sex 13/11, com a série 10 (itens 1 e 3) |
-| 08 | | de 5 | | |
+| 07 | 10/11 | **3 de 5** (conteúdo: 5) | 2 de forma: `update db` (é `updatedb`, junto) e `proc` (o pedido é o caminho: `/proc`). Na 4, `sudo chown` foi aceito, mas o comando é só `chown` | Sex 13/11: escritas dentro da série 10 |
+| 08 | 11/11 | **4 de 5** (conteúdo: 5) | 1 de forma: `Libre` (o nome é `LibreOffice`). As 2 extras do R4 vieram certas: `2744` e `chgrp` | Sáb 14/11: escrita dentro da série 11 |
 | 09 | | de 5 | | |
 | 10 | | de 5 | | |
 | 11 | | de 5 | | |
