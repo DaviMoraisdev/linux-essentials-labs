@@ -1,6 +1,6 @@
 # Simulado 04 — LPI Linux Essentials (010-160)
 
-Simulado no formato do exame, versão 1.6. Escrito em 04/11/2026 para a **quarta 11/11**, na operação prática. Substitui o exame final de prática do NDG, que estava previsto nesse lugar, para não depender de acesso à plataforma. Se você tiver acesso ao NDG, o exame final de lá vira um treino extra opcional, fora do calendário.
+Simulado no formato do exame, versão 1.6. Escrito em 04/11/2026 para a **quinta 12/11** (remarcado de 11/11), na operação prática. Substitui o exame final de prática do NDG, que estava previsto nesse lugar, para não depender de acesso à plataforma. Se você tiver acesso ao NDG, o exame final de lá vira um treino extra opcional, fora do calendário.
 
 Cinco alternativas por questão, três questões de escolher duas e cinco lacunas com a instrução que a prova usa. As questões são escritas sobre os objetivos oficiais; não são questões reais do exame. Nenhuma repete os simulados 02, 03 e 05.
 
@@ -476,7 +476,7 @@ Preencha depois de conferir o gabarito.
 
 | Campo | Valor |
 | --- | --- |
-| Data | 11/11/2026 |
+| Data | 12/11/2026 |
 | Tempo gasto | |
 | Minutos usados na segunda passada | |
 | Acertos | de 40 |
