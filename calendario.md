@@ -62,7 +62,15 @@ Marque a coluna "Feito" ao fim de cada sessão.
 | Sex 27/11 | Descanso | Descanso antes da prova | — | — | — |  |
 | Sáb 28/11 | Descanso | Descanso antes da prova | — | — | — |  |
 | Dom 29/11 | Descanso | Descanso antes da prova · não estudar na véspera | — | — | — |  |
-| Seg 30/11 | Prova | **PROVA — L 20 firmes**, a linha de base |
+| Seg 30/11 | Prova | **PROVA — Linux Essentials 010-160** | — | — | — |  |
+
+---
+
+## Marcos
+
+| Data | Marco |
+|---|---|
+| Qui 05/11 | Simulado 03: **27 de 40, 20 firmes**, a linha de base |
 | Ter 10/11 | Dia de conteúdo: aulas 41 a 48 (feitas) |
 | Sex 13/11 | Curso fechado (aula 72): aulas 56 a 64 na qui 12 e 65 a 72 na sex 13 |
 | Qui 19/11 | Fim das 24 lições da LPI |
