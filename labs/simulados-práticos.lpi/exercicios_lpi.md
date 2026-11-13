@@ -169,10 +169,6 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 
 **Medição.** A resposta do G4 segue a mesma correção do gabarito que está no guia resolvido de 21/10. Se o guia foi consultado nesta lição, ela conta como feita, mas não como acertos firmes. O M1, na quinta 12/11, traz questões de 5.1, 5.2 e 5.3 para medir de novo.
 
-### 4.3, lições 1 e 2 — quarta 11/11
-
-**Lição 4.3, lição 1 (6 de 6).**
-
 | Exercício | Observação |
 | --- | --- |
 | G1 | Certo na classificação. Os caminhos (`/sbin/swapon`, `/bin/kill`, `/bin/ps`) são os do PDF. Na sua VM, com o `/usr` unificado, o `which` mostra `/usr/sbin/swapon`, `/usr/bin/kill` e `/usr/bin/ps`; o `/bin` e o `/sbin` são links para `/usr/bin` e `/usr/sbin`. Detalhe de prova: o `kill` também é **comando interno** do Bash; o `which` mostra o programa em disco, e o `type kill` diz `kill is a shell builtin` |
