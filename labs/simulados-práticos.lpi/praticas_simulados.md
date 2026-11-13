@@ -452,9 +452,7 @@ A) `/dev/cpu` · B) `/var/cpuinfo` · C) `/proc/cpuinfo` · D) `/etc/cpuinfo`
 
 ### Apuração por tema
 
-| Tema | Questões | Acertos | Chutes acertados |
-|---|---|---|---|
-| Permissões | 1 a 4 | /4 | |
+| |
 | `tar` e compressão | 5 a 7 | /3 | |
 | Redirecionamento | 8 a 10 | /3 | |
 | Diretórios virtuais e `/var` | 11 a 13 | /3 | |
