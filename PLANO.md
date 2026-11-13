@@ -10,7 +10,7 @@
 
 ## 1. Status atual
 
-**Atualizado em 11/11.** Prova **comprada para 30/11**. Semana 9, fechada: `labs/semana-09.md`. De 05/11 em diante: `labs/operacao-pratica.md` (carga de cerca de 3h30 por dia desde 08/11). Feitos na operação: simulado 03 (05/11: 27 de 40, **20 firmes**), R3 (06/11: 17 de 20), R4 (07/11: **18 de 20**), lacunas 04 a 08, aulas 41 a 55 e os Exercícios da LPI 4.1, 4.2, 4.3, 5.1, 5.2 e 5.3. O simulado 04 passou para 12/11 e o M1 para 16/11.
+**Atualizado em 12/11.** Prova **comprada para 30/11**. Semana 9, fechada: `labs/semana-09.md`. De 05/11 em diante: `labs/simulados-práticos.lpi/operação_pratica.md` (carga de cerca de 3h30 por dia desde 08/11). Feitos na operação: simulado 03 (05/11: 27 de 40, 20 firmes), **simulado 04 (12/11: 32 de 40, 31 firmes)**, R3 (17 de 20), R4 (18 de 20), lacunas 04 a 09 com todos os retornos fechados, aulas 41 a 59 e os Exercícios da LPI 4.1 a 4.4 e 5.1 a 5.4. O M1 está na segunda 16/11.
 
 ### Concluído
 
@@ -34,7 +34,7 @@ O Tópico 4 está praticado: Práticas 3, 4 e 5 feitas até 02/11 e anotadas at�
 
 | Item | Peso | Quando |
 |---|---|---|
-| **Curso, aulas 56 a 72** | — | Aulas 41 a 55 feitas em 10 e 11/11. As 17 restantes: 56 a 64 na qui 12 e 65 a 72 na sex 13/11 (curso fechado) |
+| **Curso, aulas 60 a 72** | — | Aulas 41 a 59 feitas de 10 a 12/11. As 13 restantes: 60 a 66 na sex 13 e 67 a 72 no sáb 14/11 (curso fechado) |
 | **Exercícios da LPI de todas as 24 lições** (cerca de 205) | — | 4.1, 4.2, 4.3, 5.1, 5.2 e 5.3 feitas até 11/11. As outras, duas ou três por dia, até 19/11; revisão das erradas de 20 a 25/11 (`labs/simulados-práticos.lpi/exercicios-lpi.md`) |
 
 O 4.1 (Sistemas operacionais) e o here document foram estudados no bloco curto de 06/11. Com isso, todo o conteúdo dos cinco tópicos foi visto; resta só o curso.
@@ -59,7 +59,7 @@ Se a prova já estava agendada para 23/11, remarque para 30/11 respeitando a jan
 | 4. Sistema operacional | 8 | 100% (Práticas 3 a 5 até 02/11; 4.1 em 06/11) |
 | 5. Segurança e permissões | 7 | 100% (Práticas 1 e 2 e Exercícios da LPI) |
 
-**Progresso geral: todo o conteúdo da prova foi visto.** Falta fechar o curso (aulas 56 a 72, até a sexta 13/11). Estudado não é fixado: o simulado 02 mostrou erros justamente nos Tópicos 2 e 5, já estudados. A fixação é o trabalho da operação prática.
+**Progresso geral: todo o conteúdo da prova foi visto.** Falta fechar o curso (aulas 60 a 72, até o sábado 14/11). Estudado não é fixado: o simulado 02 mostrou erros justamente nos Tópicos 2 e 5, já estudados. A fixação é o trabalho da operação prática.
 
 ---
 
@@ -285,7 +285,7 @@ Semanas de **segunda a domingo**. A prova é na **segunda-feira 30/11**. O hist�
 
 | Item | Número |
 |---|---|
-| Aulas restantes do curso | 17 (56 a 72), nas noites de 12 e 13/11 |
+| Aulas restantes do curso | 13 (60 a 72), nas noites de 13 e 14/11 |
 | Práticas de laboratório restantes | Nenhuma: as três do Tópico 4 foram feitas até 02/11 |
 | Dias de operação prática | 21, de 05 a 26/11 (com os domingos 15 e 22 em sessão curta) |
 | Simulados completos | 10 (03 a 12) |
@@ -331,8 +331,8 @@ Calendário dia a dia, metas e registro em `labs/operacao-pratica.md`; visão de
 | 1 | Seg 05/10 | `simulado-01` | **Feito: 28 de 40, 23 firmes** |
 | 2 | Sex 23/10 | `simulado-02` | **Feito: 22 de 40, 17 firmes** |
 | 3 | Qui 05/11 | `simulado-03` | **Feito: 27 de 40, 20 firmes** (linha de base) |
-| 4 | Qui 12/11 | `simulado-04` (pronto; substitui o exame do NDG) | 24 ou mais |
-| 6 | Sex 13/11 | `simulado-06` | 28 ou mais |
+| 4 | Qui 12/11 | `simulado-04` | **Feito: 32 de 40, 31 firmes** |
+| 6 | Sex 13/11 | `simulado-06` (pronto, escrito em 12/11) | 28 ou mais |
 | 7 | Sáb 14/11 | `simulado-07` | 28 ou mais |
 | 8 | Ter 17/11 | `simulado-08` | 28 ou mais |
 | 9 | Qui 19/11 | `simulado-09` | 30 ou mais |
