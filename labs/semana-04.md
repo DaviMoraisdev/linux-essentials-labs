@@ -1289,11 +1289,6 @@ Como o `lab4` é removido no fim da Semana 4, os arquivos de apoio do aqueciment
 - [x] Commits da Semana 4 (29/09)
 
 ---
-
-## Fechamento da Semana 4
-
-**Situação: fechada em 29/09.**
-
 As cinco sessões de laboratório foram executadas, todas com registro e correção. A semana produziu **dez correções** (43 a 52), somando **52 correções em quatro semanas**.
 
 Duas delas merecem destaque, por razões opostas. A **44** — a precedência do `-o` no `find` — é o tipo de erro que não gera mensagem: o comando roda, devolve resultado, e o resultado está errado. A **50** — o `sort` sem `-n` ser crescente — é a quarta ocorrência do mesmo conceito, e o que ela revela não é o conceito, é o método: **três registros escritos não fixaram o que uma execução de quinze segundos fixa.**
