@@ -475,15 +475,7 @@ São erros de conteúdo já estudado. Desde 26/10 eles têm treino próprio na V
 ---
 
 ## 9. Histórico deste documento
-
-| Data | Alteração |
-|---|---|
-| 06/10/2026 | Criação. Reúne o simulado #1, as autoavaliações, os checkpoints, o índice das correções 1 a 68, os erros recorrentes e a fila de retaguarda. Registra as regras de 06/10 (só anotar questões erradas; correção no Notion; retaguarda de erros antigos) |
-| 06/10/2026 | Acrescentadas a seção 2.5 (dicas recorrentes por tema) e o registro do mini-simulado de reforço R1 na seção 4 |
-| 08/10/2026 | Correções 69 a 72 (curso, 08/10); pré-checkpoint com a compra do voucher adiada (gatilho: média dos três últimos simulados ≥ 30); simulado #2 de volta ao domingo 11/10; autoavaliação da Semana 5 na sexta 09/10 |
-| 09/10/2026 | Correções 73 e 74 (curso, 09/10) |
-| 10/10/2026 | Replanejamento: data principal da prova 16/11 (09/11 como meta ousada); meta de 9h por semana até 01/11; Prática 2 e aulas 58 em diante na segunda 12/10; autoavaliação da Semana 6 cortada |
-| 13/10/2026 | Nova estratégia: prova em 23/11; série de simulados redistribuída (02 a 11); R1 em 23/10 e R2 em 27/10; checkpoints A (18/10), B (25/10), Gate (08/11) e Final (19/11); autoavaliação da Semana 6 devolvida ao plano; retaguarda reduzida aos erros de conteúdo; simulado 02 escrito |
+érie de simulados redistribuída (02 a 11); R1 em 23/10 e R2 em 27/10; checkpoints A (18/10), B (25/10), Gate (08/11) e Final (19/11); autoavaliação da Semana 6 devolvida ao plano; retaguarda reduzida aos erros de conteúdo; simulado 02 escrito |
 | 23/10/2026 | Simulado 02 registrado (22 de 40, 17 firmes); reforços R3 e R4 criados sobre os erros dele; série refeita: #3 em 30/10, #4 em 01/11, #5 a #8 de 03 a 08/11; R2 e R1 em 31/10; Checkpoint B em 01/11; questão pesquisada passa a contar como errada |
 | 26/10/2026 | Nova estratégia: prova em 30/11; dívidas, autoavaliações restantes e checkpoints retirados; operação prática diária de 31/10 a 26/11 com 11 simulados (03 a 13) e 10 mini-simulados (R1 a R4, M1 a M6); medida principal em acertos firmes; card no Notion só para reincidência |
 | 02/11/2026 | Calendário refeito: simulado 03 em 03/11; simulados 04 a 12 de 05 a 24/11; simulado 13 retirado; mini-simulados de 04 a 25/11; decisão da data em 21/11 |
