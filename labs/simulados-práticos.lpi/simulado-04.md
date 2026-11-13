@@ -453,8 +453,7 @@ fi
 
 # Apuração
 
-Preencha depois de conferir o gabarito.
-
+Preencha depois de conferir o gabarito
 | Tópico | Peso | Questões | Acertos | Chutes acertados |
 | --- | --- | --- | --- | --- |
 | 1. Comunidade e open source | 7 | 1 a 7 | | |
