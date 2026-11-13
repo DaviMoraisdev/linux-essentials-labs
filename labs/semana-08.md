@@ -50,11 +50,7 @@ Entregue como um guia em PDF com os **43 exercícios resolvidos** (5.1 G1 a G5 e
 |---|---|---|
 | 1 | 5 de 7 | Erro de forma na lacuna (Q7, `sudo dpkg`) e um chute (Q5) |
 | 2 | **4 de 9** | Caminhos (`./` contra `../`, `/home` contra `~`), `help`, `mv` e seções do `man` |
-| 3 | 6 de 9 | Ordem do `2>&1`, `grep -v` e `$#`: os três são reincidência |
-| 4 | 4 de 8 | Não estudado; três acertos por chute ou pesquisa |
-| 5 | **3 de 7** | `x` do `/etc/passwd`, conversão octal e bits especiais |
-
-**Ponto de método.** Q29 e Q40 foram pesquisadas durante o simulado. No exame não há consulta: daqui em diante, **questão pesquisada conta como errada**. Na dúvida, marque o chute e siga; a pesquisa vem depois, na correção.
+| 3 | 6 de 9 | Ordisa vem depois, na correção.
 
 ### Correções da semana
 
