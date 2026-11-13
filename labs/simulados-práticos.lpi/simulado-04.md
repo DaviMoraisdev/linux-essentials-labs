@@ -453,36 +453,37 @@ fi
 
 # Apuração
 
-Preencha depois de conferir o gabarito
+Preencha depois de conferir o gabarito.
+
 | Tópico | Peso | Questões | Acertos | Chutes acertados |
 | --- | --- | --- | --- | --- |
-| 1. Comunidade e open source | 7 | 1 a 7 | | |
-| 2. Encontrando seu caminho | 9 | 8 a 16 | | |
-| 3. Poder da linha de comando | 9 | 17 a 25 | | |
-| 4. Sistema operacional | 8 | 26 a 33 | | |
-| 5. Segurança e permissões | 7 | 34 a 40 | | |
-| **Total** | **40** | | | |
+| 1. Comunidade e open source | 7 | 1 a 7 | **6** | 1 (Q5) |
+| 2. Encontrando seu caminho | 9 | 8 a 16 | **9** | 0 |
+| 3. Poder da linha de comando | 9 | 17 a 25 | **8** | 0 |
+| 4. Sistema operacional | 8 | 26 a 33 | **6** | 0 |
+| 5. Segurança e permissões | 7 | 34 a 40 | **3** | 0 |
+| **Total** | **40** | | **32** | **1** |
 
 | Tema | Questões | Acertos |
 | --- | --- | --- |
-| Permissões | 4 | |
-| `tar` e compressão | 2 | |
-| Redirecionamento | 3 | |
-| Diretórios virtuais | 3 | |
-| Lacunas | 5 | |
+| Permissões | 4 | 2 (Q38 e Q39 erradas) |
+| `tar` e compressão | 2 | 2 |
+| Redirecionamento | 3 | 2 (Q20 errada) |
+| Diretórios virtuais | 3 | 3 |
+| Lacunas | 5 | 5 |
 
 ## Registro
 
 | Campo | Valor |
 | --- | --- |
 | Data | 12/11/2026 |
-| Tempo gasto | |
-| Minutos usados na segunda passada | |
-| Acertos | de 40 |
-| Questões marcadas como chute | |
-| Chutes acertados e chutes errados | |
-| Acertos firmes | |
-| Erros de forma nas lacunas | |
+| Tempo gasto | Não informado |
+| Minutos usados na segunda passada | Não informado |
+| Acertos | **32 de 40** (80%, cerca de 640 de 800) |
+| Questões marcadas como chute | 1 (Q5) |
+| Chutes acertados e chutes errados | 1 acertado, 0 errados |
+| Acertos firmes | **31** (meta: 24) |
+| Erros de forma nas lacunas | 0 |
 
 ## Questões erradas
 
@@ -490,4 +491,26 @@ Só as erradas e as chutadas, no mesmo dia, seguindo o protocolo de correção d
 
 | Q | Tópico | Tema | Você marcou | Gabarito | Convicção ou chute | Reincidência? |
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | |
+| 4 | 1 | Contêineres e máquinas virtuais | D (máquina virtual) | E (contêineres) | Convicção | **Sim** (Q7 do simulado 01; Correção 63) |
+| 20 | 3 | `tee` | D (`echo`) | E (`tee`) | Convicção | Não |
+| 29 | 4 | `ps` de todos os usuários | D (`ps -t`) | B (`ps aux`) | Convicção | Não |
+| 32 | 4 | Tamanho do IPv6 | B (64 bits) | E (128 bits) | Convicção | Não |
+| 34 | 5 | `!` no `/etc/shadow` | C (administrador) | B (senha bloqueada) | Convicção | **Sim** (Q34 do simulado 02) |
+| 38 | 5 | SGID no `ls -ld` | B (`drwxrwxr-t`) | E (`drwxrwsr-x`) | Convicção | **Sim** (Q38 do simulado 02; Q14 do R4) |
+| 39 | 5 | `x` em diretório | A (`r--`) | C (`--x`) | Convicção | **Sim** (Prática 2; Q39 do simulado 03) |
+| 40 | 5 | Arquivos do `useradd` | A e D (`/etc/hosts` e `/etc/shadow`) | B e D (`/etc/passwd` e `/etc/shadow`) | Convicção | **Sim** (arquivos de contas) |
+
+**Retestes de erros antigos:** 6 de 10. Fecharam o `cd -` (Q9), o hard link (Q15), as aspas (Q25), o `fg`/`bg` (Q30) e as conversões (Q36 e Q37). Voltaram a errar o contêiner (Q4), o `/etc/shadow` (Q34), o SGID (Q38) e o `x` em diretório (Q39).
+
+### Correções do simulado 04
+
+1. **Q4.** Contêineres **compartilham o kernel** do hospedeiro e isolam só a aplicação (Docker, Podman, LXC). A máquina virtual é o oposto: cada uma tem o **próprio kernel** e um sistema operacional completo, sobre um hipervisor. Regra para a prova: "compartilhando o kernel" ou "sem um sistema completo para cada instância" = contêiner.
+2. **Q20.** O `tee` é o "T" do encanamento: recebe pela entrada padrão e manda para a tela **e** para o arquivo. `ls | tee lista.txt` mostra e grava; `tee -a` acrescenta. O `echo` só escreve o texto que recebe como argumento.
+3. **Q29.** `ps aux` (estilo BSD, sem hífen): `a` todos os usuários, `u` formato com o dono, `x` inclusive os sem terminal. O equivalente no estilo Unix é `ps -ef`. O `ps -t` filtra por **terminal**, o oposto do pedido. O `ps` sozinho mostra só os processos do terminal atual (Correção 83).
+4. **Q32.** IPv4 tem **32** bits; IPv6 tem **128** bits, em oito grupos de quatro dígitos hexadecimais. O 64 que confunde é o tamanho usual do **prefixo** de uma sub-rede IPv6 (`/64`), metade do endereço. Grave como: 4 → 32, 6 → 128.
+5. **Q34.** O `!` (ou `*`) no campo do hash do `/etc/shadow` **bloqueia** o login por senha. Você acertou exatamente isso no exercício 5.2 da LPI na segunda (o `henry`). Na prova, o "administrador" é sempre o **UID 0** no `/etc/passwd`, nunca um sinal no `/etc/shadow`.
+6. **Q38.** O `2` de `2775` é **SGID**, e aparece no `x` do **grupo**: `rwxrwsr-x`. O `t` é do sticky (`1`). Mesma regra do R4: primeiro olhe **o dígito especial** (4 dono, 2 grupo, 1 outros) e depois **em qual trio** a letra cai.
+7. **Q39.** Em diretório, quem deixa **entrar** (`cd`) e atravessar é o **`x`**. O `r` só deixa **listar** os nomes. Por isso a permissão mínima para o `cd` é `--x`. Terceira vez que esse ponto cai; está no M1.
+8. **Q40.** O `useradd -m carlos` grava a conta no **`/etc/passwd`** e a senha (ainda bloqueada) no **`/etc/shadow`**, e cria o grupo pessoal no `/etc/group`. O `/etc/hosts` é de **rede** (nome e IP). No exercício 5.2 da LPI você escreveu isso certo; aqui, a leitura apressada pegou a primeira alternativa com `/etc`.
+
+**Leitura.** **32 de 40 e 31 firmes**, bem acima da meta de 24 e acima do corte de 26. É o melhor resultado até aqui (simulado 03: 20 firmes). Os Tópicos 2 e 3 quase fecharam (17 de 18). O ponto fraco continua sendo o **Tópico 5 (3 de 7)**, e quatro dos cinco erros dele são de conteúdo que você já acertou em outro formato (R4, LPI 5.2). É erro de **leitura sob pressão**: na próxima prova, leia a alternativa inteira antes de marcar e use a segunda passada nas questões do Tópico 5.
