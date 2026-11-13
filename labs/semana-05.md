@@ -812,6 +812,17 @@ O exercício do material oficial traz um script com erros de sintaxe para corrig
 
 ```bash
 #!/bin/bash
+
+fruta1 = Macas
+fruta2=Laranjas
+
+if [$1 -gt $2 ]
+then
+echo '$fruta1 venceram!'
+elif [ "$1" -eq "$2" ]
+then
+echo "Empate!"
+else
 echo "$fruta2 venceram!"
 done
 ```

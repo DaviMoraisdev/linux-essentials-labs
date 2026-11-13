@@ -468,7 +468,13 @@ Corrigido em 05/11 a partir das respostas marcadas no caderno.
 | 39 | 5 | `x` em diretório | C | **B** | Convicção | **Sim**: Prática 2, bloco 4 |
 | 40 | 5 | `sudo` e `su` | B e C | **A e B** | Convicção | — |
 
-### A correção de cada erroo diretório**, e não o que há dentro; com `-l`, mostra dono e permissões dele. O `-a` mostra os ocultos |
+### A correção de cada erro
+
+| Q | Errado | Certo | Mecanismo |
+| --- | --- | --- | --- |
+| 6 | Xfce é protocolo gráfico | **Wayland** | Wayland e X11 são o **protocolo** que desenha na tela. GNOME, KDE Plasma e Xfce são **ambientes de desktop** que rodam em cima dele |
+| 7 | (em branco) | `GPL` | O kernel Linux é **GPL versão 2**. Na lacuna, só a sigla |
+| 8 | `ls -a /etc` | `ls -ld /etc` | O `-d` mostra **o próprio diretório**, e não o que há dentro; com `-l`, mostra dono e permissões dele. O `-a` mostra os ocultos |
 | 9 | `mkdir -r` | `mkdir -p` | `-p` de *parents*: cria os diretórios intermediários. O `mkdir` não tem `-r`; quem tem é o `cp` e o `rm` |
 | 12 | Erro de sintaxe | `img10.png` | Cada `[0-9]` casa **exatamente um** caractere. Dois colchetes = dois dígitos: só `img10.png` |
 | 16 | `env EDITOR` | `export EDITOR` | O `export` marca a variável para ser **herdada pelos processos filhos**. O `env` sem argumento lista o ambiente; com um nome, tenta **executar** um comando com esse nome |

@@ -491,7 +491,9 @@ Cada linha traz o erro, o certo e o mecanismo que impede o erro de voltar. Desde
 | Q | Errado | Certo | Mecanismo |
 | --- | --- | --- | --- |
 | 5 | Blender para retocar foto | **GIMP** | GIMP: imagem rasterizada (foto). Inkscape: vetor. Blender: 3D. Audacity: áudio |
-| 7 | `sudo dpkg` | `dpkg` | Em lacuna, escreva **só o nom
+| 7 | `sudo dpkg` | `dpkg` | Em lacuna, escreva **só o nome do comando**: sem `sudo`, sem caminho, sem flag. O conteúdo estava certo; a forma derrubou |
+| 9 | `cd /home` leva para `/home/davi` | `cd` e `cd ~` | `/home` é o diretório que **contém** as pastas pessoais. O `~` é a pasta pessoal do usuário (`/home/davi`). `cd` sem argumento também vai para ela |
+| 10 | `cd ./tmp` sai de `/var/log` para `/var/tmp` | `cd ../tmp` | `.` é o diretório **atual**: `./tmp` seria `/var/log/tmp`. `..` é o **pai**: `../tmp` sobe para `/var` e entra em `tmp` |
 | 13 | `man ou help` | `help` | O `man` não tem página para comando interno. O `help` é o próprio interno do Bash para os internos (`help cd`). Em lacuna, **uma** resposta |
 | 14 | O `mv` exige `-r` para diretórios | O `mv` move diretórios sem opção | Quem exige `-r` é o **`cp`** (copiar diretório é copiar o conteúdo, um a um). O `mv` só troca o nome ou o lugar da entrada; o conteúdo vai junto |
 | 16 | `man -k passwd` mostra o formato do arquivo | `man 5 passwd` | O número escolhe a **seção**: 1 comandos, 5 formatos de arquivo, 8 administração. O `man -k` só **procura** páginas pela palavra (como o `apropos`) e lista os resultados |
