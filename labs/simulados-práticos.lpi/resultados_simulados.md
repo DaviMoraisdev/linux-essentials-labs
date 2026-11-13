@@ -65,8 +65,8 @@ Calendário refeito em 26/10 para a prova de 30/11 (`PLANO.md`, seção 7, e `la
 | 1 | Seg 05/10 | `simulado-01` | Diagnóstico | **28** | **70%** | 5 | **23** | 20 min 31 s | **Concluído** |
 | 2 | Sex 23/10 | `simulado-02` (escrito em 13/10) | 24 ou mais | **22** | **55%** | 4 | **17** | Não informado | **Concluído, abaixo da meta** |
 | 3 | Qui 05/11 | `simulado-03` (escrito em 18/10) | Linha de base | **27** | **67,5%** | 7 | **20** | Não informado | **Concluído: acima do corte do exame** |
-| 4 | Qui 12/11 | `simulado-04` (escrito em 04/11) | 24 ou mais | | | | | | A fazer |
-| 6 | Sex 13/11 | `simulado-06` | 28 ou mais | | | | | | A fazer |
+| 4 | Qui 12/11 | `simulado-04` (escrito em 04/11) | 24 ou mais | **32** | **80%** | 1 | **31** | Não informado | **Concluído: o melhor até aqui** |
+| 6 | Sex 13/11 | `simulado-06` (escrito em 12/11) | 28 ou mais | | | | | | A fazer |
 | 7 | Sáb 14/11 | `simulado-07` | 28 ou mais | | | | | | A fazer |
 | 8 | Ter 17/11 | `simulado-08` | 28 ou mais | | | | | | A fazer |
 | 9 | Qui 19/11 | `simulado-09` | 30 ou mais | | | | | | A fazer |
@@ -475,7 +475,15 @@ São erros de conteúdo já estudado. Desde 26/10 eles têm treino próprio na V
 ---
 
 ## 9. Histórico deste documento
-érie de simulados redistribuída (02 a 11); R1 em 23/10 e R2 em 27/10; checkpoints A (18/10), B (25/10), Gate (08/11) e Final (19/11); autoavaliação da Semana 6 devolvida ao plano; retaguarda reduzida aos erros de conteúdo; simulado 02 escrito |
+
+| Data | Alteração |
+|---|---|
+| 06/10/2026 | Criação. Reúne o simulado #1, as autoavaliações, os checkpoints, o índice das correções 1 a 68, os erros recorrentes e a fila de retaguarda. Registra as regras de 06/10 (só anotar questões erradas; correção no Notion; retaguarda de erros antigos) |
+| 06/10/2026 | Acrescentadas a seção 2.5 (dicas recorrentes por tema) e o registro do mini-simulado de reforço R1 na seção 4 |
+| 08/10/2026 | Correções 69 a 72 (curso, 08/10); pré-checkpoint com a compra do voucher adiada (gatilho: média dos três últimos simulados ≥ 30); simulado #2 de volta ao domingo 11/10; autoavaliação da Semana 5 na sexta 09/10 |
+| 09/10/2026 | Correções 73 e 74 (curso, 09/10) |
+| 10/10/2026 | Replanejamento: data principal da prova 16/11 (09/11 como meta ousada); meta de 9h por semana até 01/11; Prática 2 e aulas 58 em diante na segunda 12/10; autoavaliação da Semana 6 cortada |
+| 13/10/2026 | Nova estratégia: prova em 23/11; série de simulados redistribuída (02 a 11); R1 em 23/10 e R2 em 27/10; checkpoints A (18/10), B (25/10), Gate (08/11) e Final (19/11); autoavaliação da Semana 6 devolvida ao plano; retaguarda reduzida aos erros de conteúdo; simulado 02 escrito |
 | 23/10/2026 | Simulado 02 registrado (22 de 40, 17 firmes); reforços R3 e R4 criados sobre os erros dele; série refeita: #3 em 30/10, #4 em 01/11, #5 a #8 de 03 a 08/11; R2 e R1 em 31/10; Checkpoint B em 01/11; questão pesquisada passa a contar como errada |
 | 26/10/2026 | Nova estratégia: prova em 30/11; dívidas, autoavaliações restantes e checkpoints retirados; operação prática diária de 31/10 a 26/11 com 11 simulados (03 a 13) e 10 mini-simulados (R1 a R4, M1 a M6); medida principal em acertos firmes; card no Notion só para reincidência |
 | 02/11/2026 | Calendário refeito: simulado 03 em 03/11; simulados 04 a 12 de 05 a 24/11; simulado 13 retirado; mini-simulados de 04 a 25/11; decisão da data em 21/11 |
@@ -486,3 +494,4 @@ São erros de conteúdo já estudado. Desde 26/10 eles têm treino próprio na V
 | 09/11/2026 | Prova comprada para 30/11; decisão de 21/11 virou ponto de ajuste; simulado 05 guardado para 24/11 (no lugar do M5); R2 para 15/11; terça 10/11 como dia de conteúdo |
 | 10/11/2026 | Dia de conteúdo: aulas 41 a 48, LPI 4.2 (4 de 4) e 5.3 (9 de 11), lacunas 07 (3 de 5, dois erros de forma); aulas 49 a 72 nas noites de 11 a 13/11; LPI 5.4 em 12/11 |
 | 11/11/2026 | LPI 4.3 lição 1 (6 de 6) e lição 2 (7 de 9, com 2 itens pesquisados); lacunas 08 (4 de 5) e as extras do R4 (2 de 2); aulas 48 a 55; simulado 04 remarcado para 12/11, M1 para 16/11, M2 retirado |
+| 12/11/2026 | Simulado 04: **32 de 40, 31 firmes** (meta 24); Tópico 5 com 3 de 7, quatro erros de leitura; lacunas 09 (5 de 5) e os 9 retornos (9 de 9); LPI 4.4 (7 de 9, comandos a confirmar) e 5.4 (8 de 8); aulas 56 a 59; simulado 06 escrito |
