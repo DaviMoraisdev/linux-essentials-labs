@@ -570,15 +570,15 @@ Respondidas com a série 08, na quarta 11/11: **2 de 2** (`2744` e `chgrp`). Os 
 
 | Série | Data | Acertos | Erradas (número e motivo: conteúdo ou forma) | Volta na série |
 |---|---|---|---|---|
-| 01 | 04/11 | **1 de 5** (conteúdo: 3) | 1 forma ("Licença Copyleft"; vale só `copyleft`) · 3 forma ("-x - extract"; vale só `-x`) · 4 em branco (`ps`) · 5 em branco (`/etc/shadow`) | Qui 12/11: escritas dentro da série 09 |
-| 02 | 04/11 | **0 de 5** (conteúdo: 1) | 1 em branco (`help`) · 2 conteúdo ("tar.gz"; a opção é `-z`) · 3 em branco (`top`) · 4 em branco (`/etc/group`) · 5 forma ("FSF - Free Software Foundation"; vale só `FSF`) | Qui 12/11: escritas dentro da série 09 |
-| 03 | 05/11 | **4 de 5** | 3 em branco (`/etc/skel`; no simulado 03, a Q35 sobre o mesmo arquivo saiu certa: reconhecer é mais fácil que lembrar) | Qui 12/11: escrita dentro da série 09 |
+| 01 | 04/11 | **1 de 5** (conteúdo: 3) | 1 forma ("Licença Copyleft"; vale só `copyleft`) · 3 forma ("-x - extract"; vale só `-x`) · 4 em branco (`ps`) · 5 em branco (`/etc/shadow`) | Fechadas em 12/11, com a série 09 (todas certas) |
+| 02 | 04/11 | **0 de 5** (conteúdo: 1) | 1 em branco (`help`) · 2 conteúdo ("tar.gz"; a opção é `-z`) · 3 em branco (`top`) · 4 em branco (`/etc/group`) · 5 forma ("FSF - Free Software Foundation"; vale só `FSF`) | Fechadas em 12/11, com a série 09 (todas certas) |
+| 03 | 05/11 | **4 de 5** | 3 em branco (`/etc/skel`; no simulado 03, a Q35 sobre o mesmo arquivo saiu certa: reconhecer é mais fácil que lembrar) | Fechada em 12/11, com a série 09 (certa) |
 | 04 | 07/11 | **5 de 5** | Nenhuma | — |
 | 05 | 07/11 | **5 de 5** | Nenhuma. A 3 (`5`, seção de formatos de arquivo) é o mesmo ponto que você errou na Q7 do R3: lembrado na lacuna, mas não reconhecido na alternativa | — |
 | 06 | 09/11 | **5 de 5** | Nenhuma | — |
 | 07 | 10/11 | **3 de 5** (conteúdo: 5) | 2 de forma: `update db` (é `updatedb`, junto) e `proc` (o pedido é o caminho: `/proc`). Na 4, `sudo chown` foi aceito, mas o comando é só `chown` | Sex 13/11: escritas dentro da série 10 |
 | 08 | 11/11 | **4 de 5** (conteúdo: 5) | 1 de forma: `Libre` (o nome é `LibreOffice`). As 2 extras do R4 vieram certas: `2744` e `chgrp` | Sáb 14/11: escrita dentro da série 11 |
-| 09 | | de 5 | | |
+| 09 | 12/11 | **5 de 5** | Nenhuma. No item 1, `term` foi aceito; escreva o nome do sinal em maiúsculas, `TERM` ou `SIGTERM`. **Retornos: 9 de 9**: as séries 01, 02 e 03 estão fechadas | — |
 | 10 | | de 5 | | |
 | 11 | | de 5 | | |
 | 12 | | de 5 | | |
