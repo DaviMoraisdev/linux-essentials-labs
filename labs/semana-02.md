@@ -1074,9 +1074,7 @@ Card para o Notion: *"O que `export` faz? → Marca a variável para ser herdada
 - [x] Sessão 5 — histórico, atalhos e aliases (13/09)
 - [x] Bandit nível 5 para 6
 - [x] Autoavaliação — realizada em 14/09, nota 14 de 15
-- [x] Curso do Muller — nenhum avanço nesta semana
-- [x] Cards do Notion atualizados
-
+- [x] Curso do Muller — nenhum avanço nesta sema
 ## Fechamento da Semana 2
 
 **Concluída em 13/09, no último dia do prazo.** As cinco sessões foram cumpridas, duas delas no domingo.
