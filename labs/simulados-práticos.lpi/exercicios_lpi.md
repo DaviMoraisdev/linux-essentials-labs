@@ -94,8 +94,8 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 | Ter 10/11 | 5.3 | **9 de 11** | G2: espaço depois da vírgula no `chmod` simbólico; E1 em branco (`chmod 4` e `chmod 44`) | Não |
 | Qua 11/11 | 4.3, lição 1 | **6 de 6** | Nenhuma (saídas do `which` copiadas do PDF; na VM são `/usr/...`) | — |
 | Qua 11/11 | 4.3, lição 2 | **7 de 9** | G3, itens 2 e 3, pesquisados; E3, item 4 (o pendrive some do `/dev`) | Não |
-| Qui 12/11 | 4.4 | de 9 |  |  |
-| Qui 12/11 | 5.4 | de 10 |  |  |
+| Qui 12/11 | 4.4 | **7 de 9** | G1 e G3 sem a linha de comando (a confirmar: podem ter sumido na cópia) | — |
+| Qui 12/11 | 5.4 | **10 de 10** | Nenhuma | — |
 | Sex 13/11 | 3.1 | de 9 |  |  |
 | Sex 13/11 | 3.2, lição 1 | de 12 |  |  |
 | Sáb 14/11 | 3.2, lição 2 | de 9 |  |  |
@@ -196,3 +196,21 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 | E3 | **Item 4 errado.** Depois de remover o pendrive, o `ls /dev/sd*` **não mostra mais** o `/dev/sdb` nem o `/dev/sdb1`: os arquivos de dispositivo são criados e removidos na hora pelo `udev`. Se o `/dev/sdb1` continuou aparecendo, o pendrive ainda estava conectado à VM |
 
 **Medição.** O G3 marcado como "pesquisado" é exatamente o registro que a operação precisa. Com isso, as lições sem marca contam como firmes. Se nas lições 5.1, 5.2 e 5.3 você não consultou o guia de 21/10, diga e eu tiro a observação de "medição a confirmar".
+
+### 4.4 e 5.4 — quinta 12/11
+
+**Lição 4.4 (7 de 9).**
+
+| Exercício | Observação |
+| --- | --- |
+| G1 | **Faltam os comandos.** A resposta explica o `ip addr add` e cita "o último comando", mas as linhas não vieram. São: `sudo ip addr add 192.168.10.10/24 dev ens33` e `sudo ip addr add 2001:0:0:abcd:0:8a2e:0370:7334/64 dev ens33`; para conferir, `ip addr show ens33`. Se no seu caderno os comandos estão lá e só sumiram ao copiar (como já aconteceu com o Notion), a lição vira 8 de 9 |
+| G2 | Certo: `192.168.10.1`, `172.16.57.47` e `10.100.49.162` são privados (faixas `10.0.0.0/8`, `172.16.0.0/12` e `192.168.0.0/16`) |
+| G3 | **Falta a linha.** A explicação está certa (o IP vem primeiro), mas a resposta pedida é a própria linha: `192.168.0.15 example.com`. Mesmo caso do G1: se ela estava num bloco de código, confirme |
+| G4 | Certo: rota padrão IPv6 pelo gateway `2001:db8:0:abcd::1` |
+| E1 | Certo: TXT, PTR, CNAME e MX. Para a prova, junte os outros dois: **A** (nome para IPv4) e **AAAA** (nome para IPv6) |
+| E2 | Certo: a *bridge* liga interfaces na camada de enlace, como um switch |
+| E3 | Certo: `ss -u`. Sem `-a` ou `-l`, o `ss` mostra só os sockets estabelecidos |
+| E4 | Certo: `ss -s` |
+| E5 | Certo: 4 TCP e 7 UDP, total 11 |
+
+**Lição 5.4 (10 de 10).** Os cinco Guiados e os cinco Exploratórios certos (a pergunta do `ls -lah` conta como os Exploratórios 3, 4 e 5). Destaques: o hard link como "outro nome para o mesmo inode", o `Invalid cross-device link` e o `ls -li` para comparar inodes. No E1, a resposta cobre as duas leituras do enunciado, o que está ótimo: com `ln -s recipes.txt rezepte.txt`, apagar `receitas.txt` não afeta o link simbólico.
