@@ -33,7 +33,7 @@ Este arquivo substitui os arquivos semanais a partir de 05/11. O registro de cad
 | **Conteúdo** (ter 10/11) | Lacunas e as que voltam (10 min) · **o máximo das aulas 41 a 72**, com anotações no caderno · **três lições** da LPI (5.3, 5.4 e 4.2) | cerca de 3h30 ou mais |
 | **Leve** (26/11) | Mini-simulado M6, só das reincidências, e releitura das colas | cerca de 1h15 |
 
-**A sessão da noite.** As aulas 56 a 72 ficam nas noites de 12 e 13/11 (56 a 64 e 65 a 72); o curso fecha na sexta 13/11. Depois disso, a noite é para **refazer as erradas**: sem consulta, você refaz as questões erradas e chutadas do simulado ou mini do dia e as erradas da LPI do dia; o que errar de novo entra na seção 6 como reincidência.
+**A sessão da noite.** As aulas 56 a 59 saíram em 12/11; as 60 a 72 ficam nas noites de 13 e 14/11 (60 a 66 e 67 a 72), e o curso fecha no sábado 14/11. Depois disso, a noite é para **refazer as erradas**: sem consulta, você refaz as questões erradas e chutadas do simulado ou mini do dia e as erradas da LPI do dia; o que errar de novo entra na seção 6 como reincidência.
 
 **O treino na VM (desde 09/11).** Os blocos V1 a V8 da seção 5 já foram feitos. O tempo de VM agora é só para os **comandos que você errar no dia**: rode o comando da questão e veja a saída real. Se o erro não for de comando, ou se o comando já foi treinado, o tempo vai para refazer as erradas. Os erros do R4 viraram duas lacunas extras (`lacunas.md`) e questões do M1.
 
@@ -73,9 +73,9 @@ A carga de 08/11 continua: cerca de 3h30 de segunda a sábado e 2h nos domingos 
 | Seg 09/11 | Conteúdo | LPI 5.1 e 5.2 (feitos) · lacunas 06 (5 de 5). O **simulado 05 passou para a ter 24/11**, mais perto da prova; as aulas 41 a 48 passaram para a ter 10/11; o V5 foi substituído (já feito em 05/11) | Substituído: o V5 já tinha sido feito em 05/11 | 5.1 e 5.2 (feito) | Série 06 |
 | Ter 10/11 | Conteúdo | **Dia de conteúdo** (feito): aulas 41 a 48 · LPI 4.2 e 5.3 · lacunas 07. A LPI 5.4 passou para a qui 12/11 | — | 4.2 e 5.3 (feito) | Série 07 |
 | Qua 11/11 | Conteúdo | LPI 4.3 (lições 1 e 2) · lacunas 08 e as 2 extras do R4 · aulas 48 a 55 (feitos). O **simulado 04 passou para a qui 12/11** | — | 4.3, lição 1 e 4.3, lição 2 (feito) | Série 08 |
-| **Qui 12/11** | A | **Simulado 04** (`simulado-04.md`), remarcado de 11/11 · à noite, **aulas 56 a 64** | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 4.4 e 5.4 | Série 09 + 9 retornos (escritos na série) |
-| **Sex 13/11** | A | **Simulado 06** · à noite, **aulas 65 a 72** (curso fechado) | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 3.1 e 3.2, lição 1 | Série 10 + 2 retornos (escritos na série) |
-| **Sáb 14/11** | A | **Simulado 07** · à noite, refazer as erradas da semana | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 3.2, lição 2 e 3.3, lição 1 e 3.3, lição 2 | Série 11 + 1 retorno (escrito na série) |
+| Qui 12/11 | A | **Simulado 04** (feito: 32 de 40, 31 firmes) · aulas 56 a 59 | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 4.4 e 5.4 | Série 09 + 9 retornos (escritos na série) |
+| **Sex 13/11** | A | **Simulado 06** (`simulado-06.md`) · à noite, **aulas 60 a 66** | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 3.1 e 3.2, lição 1 | Série 10 + 2 retornos (escritos na série) |
+| **Sáb 14/11** | A | **Simulado 07** · à noite, **aulas 67 a 72** (curso fechado) | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 3.2, lição 2 e 3.3, lição 1 e 3.3, lição 2 | Série 11 + 1 retorno (escrito na série) |
 | Dom 15/11 | Domingo | **Domingo de prática** · **R2** — permissões, `tar`, redirecionamento, diretórios, processos e rede (`praticas_simulados.md`, seção 8) · releitura das colas | Só os comandos que errar no R2 | 2.1, lição 1 e 2.1, lição 2 | Série 12 |
 | Seg 16/11 | B | **M1** — os erros dos simulados 03, 04, 06 e 07, do R3 e do R4, e uma checagem das lições 5.1 a 5.3 · à noite, refazer as erradas do M1 | Só os comandos que errar no M1 | 2.2 e 2.3, lição 1 | Série 13 |
 | **Ter 17/11** | A | **Simulado 08** — conta para o ponto de ajuste · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 2.3, lição 2 e 2.4 | Série 14 |
@@ -258,7 +258,7 @@ São os erros que voltaram depois de corrigidos. É a lista que guia os treinos 
 | `/home` tratado como a pasta pessoal | 2 | `/home` contém as pastas; a pessoal é `~` | V1 |
 | `$#` | **3** (Q24 do simulado 02; Q6 da autoavaliação da Semana 5; Q16 do R3) | Conta só os argumentos; o `$0` (nome do script) **não entra**: `./args.sh um dois` dá `$#` = 2 | V4 |
 | O `x` do `/etc/passwd` | 2 | Só diz que o hash está no `/etc/shadow`; o administrador é o UID 0 | V6 |
-| Conversão octal, com e sem bit especial | **4** (Q37 do simulado 01; Q36 do simulado 02; Q36 do simulado 03, `645` no lugar de `4755`; Q14 do R4, `4744` no lugar de `2744`) | Bit especial primeiro (SUID 4, SGID 2, sticky 1), depois trio por trio. **O trio onde está o `s`/`S` diz qual é o bit**: no dono, SUID (4); no grupo, SGID (2); nos outros, `t`/`T`, sticky (1). `rwsr-xr-x` = 4755; `rwxr-Sr--` = 2744 | V5 |
+| Conversão octal, com e sem bit especial | **5** (Q37 do simulado 01; Q36 do simulado 02; Q36 do simulado 03, `645` no lugar de `4755`; Q14 do R4, `4744` no lugar de `2744`; Q38 do simulado 04, `t` no lugar do `s` do grupo em `2775`) | Bit especial primeiro (SUID 4, SGID 2, sticky 1), depois trio por trio. **O trio onde está o `s`/`S` diz qual é o bit**: no dono, SUID (4); no grupo, SGID (2); nos outros, `t`/`T`, sticky (1). `rwsr-xr-x` = 4755; `rwxr-Sr--` = 2744 | V5 |
 | Herança de variáveis: `export` | **3** (Correções 12 e 71; Q16 do simulado 03) | O `export` marca a variável para os filhos; o `env NOME` tenta executar um comando | V4 |
 | `{}` tratado como globbing | 2 | A expansão de chaves cria os nomes sem olhar o disco | — |
 | Sinal padrão do `kill` | 2 | `SIGTERM` (15); o `SIGKILL` (9) só com `kill -9` | V7 |
@@ -267,9 +267,10 @@ São os erros que voltaram depois de corrigidos. É a lista que guia os treinos 
 | `help` para os comandos internos | **3** (Correção 74; Q13 do simulado 02; série 02 das lacunas) | `help cd`; o `man` é para programas, o `type` diz o que é interno | V2 |
 | Padrão de globbing sem correspondência | 2 (Semana 3; Q24 do simulado 03) | O Bash entrega o texto literal, como `*.log`; não há erro | V1 |
 | `fg` e `bg` | 2 (Correção 78; Q29 do simulado 03) | `fg` traz para o primeiro plano; `bg` continua em segundo; `Ctrl+Z` suspende | V7 |
-| `x` em diretório | 2 (Prática 2, bloco 4; Q39 do simulado 03) | `r` lista; `x` atravessa e abre um nome conhecido; `w` cria e apaga | V5 |
+| `x` em diretório | **3** (Prática 2, bloco 4; Q39 do simulado 03; Q39 do simulado 04, `r--` no lugar de `--x`) | `r` lista; `x` atravessa e abre um nome conhecido; `w` cria e apaga. Mínimo para o `cd`: `--x` | V5 |
 | Mudar só o grupo de um arquivo | 2 (Q40 do simulado 02, pesquisada; Q16 do R4) | `chgrp grupo arq` ou `chown :grupo arq`. O `usermod -g` muda o grupo primário de um **usuário**, nunca o de um arquivo | V5 e V6 |
-| Arquivos de contas (`/etc/shadow`, `/etc/group`) | 2 (Q34 do simulado 02; séries 01 e 02 das lacunas) | `/etc/passwd` contas, `/etc/shadow` hashes, `/etc/group` grupos e membros secundários | V6 |
+| Arquivos de contas (`/etc/shadow`, `/etc/group`) | **4** (Q34 do simulado 02; séries 01 e 02 das lacunas; Q34 e Q40 do simulado 04) | `/etc/passwd` contas, `/etc/shadow` hashes (`!` ou `*` = senha bloqueada), `/etc/group` grupos e membros secundários. O `useradd` grava no `passwd`, no `shadow` e no `group`; o `/etc/hosts` é de rede | V6 |
+| Contêiner contra máquina virtual | 2 (Q7 do simulado 01, Correção 63; Q4 do simulado 04) | Contêiner **compartilha o kernel** do hospedeiro; máquina virtual tem **kernel próprio**, sobre um hipervisor | — |
 
 ---
 
@@ -321,9 +322,9 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 | 09/11 | Conteúdo | LPI 5.1 e 5.2 · lacunas 06 (simulado 05 guardado para 24/11) | — | — | Série 06: **5 de 5** | 5.1: **12 de 12** · 5.2: **9 de 10** (medição a confirmar) | — |
 | 10/11 | Conteúdo | Aulas 41 a 48 · LPI 4.2 e 5.3 · lacunas 07 (a LPI 5.4 passou para 12/11) | — | — | Série 07: **3 de 5** (conteúdo: 5) · retornos e extras não enviados | 4.2: **4 de 4** · 5.3: **9 de 11** | Forma das lacunas (`update db`, `proc`) |
 | 11/11 | Conteúdo | LPI 4.3 (lições 1 e 2) · lacunas 08 e extras · aulas 48 a 55 (o simulado 04 passou para 12/11) | — | — | Série 08: **4 de 5** (conteúdo: 5) · extras: **2 de 2** · retornos não enviados | 4.3 L1: **6 de 6** · 4.3 L2: **7 de 9** | Forma das lacunas (`Libre`) |
-| 12/11 | A | Simulado 04 · Aulas 56–64 | de 40 |  | Série 09: de 5 · retornos: de 9 | 4.4 e 5.4 · de | |
-| 13/11 | A | Simulado 06 · Aulas 65–72 (curso fechado) | de 40 |  | Série 10: de 5 · retornos: de 2 | 3.1 e 3.2, lição 1 · de | |
-| 14/11 | A | Simulado 07 · Refazer erradas | de 40 |  | Série 11: de 5 · retorno: de 1 | 3.2, lição 2 e 3.3, lição 1 e 3.3, lição 2 · de | |
+| 12/11 | A | Simulado 04 · aulas 56 a 59 | **32 de 40** | **31** | Série 09: **5 de 5** · retornos: **9 de 9** | 4.4: **7 de 9** (comandos a confirmar) · 5.4: **8 de 8** | Contêiner (Q4), `/etc/shadow` (Q34), SGID (Q38), `x` em diretório (Q39), arquivos do `useradd` (Q40) |
+| 13/11 | A | Simulado 06 · Aulas 60 a 66 | de 40 |  | Série 10: de 5 · retornos: de 2 | 3.1 e 3.2, lição 1 · de | |
+| 14/11 | A | Simulado 07 · Aulas 67 a 72 (curso fechado) | de 40 |  | Série 11: de 5 · retorno: de 1 | 3.2, lição 2 e 3.3, lição 1 e 3.3, lição 2 · de | |
 | 15/11 | Domingo | R2 · Colas e erradas da semana | R2: de 20 |  | Série 12: de 5 | 2.1, lição 1 e 2.1, lição 2 · de | |
 | 16/11 | B | M1 · Refazer erradas | de 20 |  | Série 13: de 5 | 2.2 e 2.3, lição 1 · de | |
 | 17/11 | A | Simulado 08 · Refazer erradas | de 40 |  | Série 14: de 5 | 2.3, lição 2 e 2.4 · de | |
@@ -432,3 +433,52 @@ O caderno diz: "distros enterprise demoram para lançar atualização, cerca de 
 | Atualizações dentro da versão | Versões menores (9.1, 9.2...) com correções e pequenas novidades |
 
 É o mesmo eixo do bloco curto de 06/11: **LTS e suporte longo** dizem quanto tempo a versão recebe correções, e não com que frequência sai uma versão nova. As enterprise priorizam estabilidade e por isso trazem versões mais antigas e testadas dos programas.
+
+### Curso, aulas 56 a 59 — quinta 12/11
+
+**Conteúdo registrado**
+
+| Tema | O que ficou anotado |
+|---|---|
+| Processos | PID 1 (`systemd` ou `init`), `ps`, `top`, `SIGTERM` (15) |
+| Logs | `/var/log`, `syslog`, `dmesg` |
+| Teoria de redes | IP, IPv4 (32 bits), IPv6, sub-rede e máscara (`255.255.255.0`), MAC, roteador, DNS, ISP |
+| Linux em rede | `ip addr show` (o `ifconfig` é o antigo), `ip route`, `netstat -r`, `ss -lt` (TCP) e `ss -lu` (UDP) |
+| Prática de redes | IP de duas formas, rotas de três formas, portas em escuta, `ping -c 4`, DNS pelo `/etc/resolv.conf`, apelido no `/etc/hosts` |
+
+**Pontos fortes:** a prática de redes cobriu as três gerações de comandos (`ip`, `netstat`/`route` e `ss`), e o `ping -c 4` e o `ss -ln` estão certos. O par `ss -lt` e `ss -lu` também.
+
+**Ajustes de caderno (sem correção numerada)**
+
+1. **IPv6 tem 128 bits**, em hexadecimal; o caderno só diz que "substitui o IPv4". Foi o erro da Q32 do simulado 04.
+2. O `SIGTERM` (15) é o pedido de **encerramento**, o sinal padrão do `kill`; o processo pode tratar ou ignorar. O `SIGKILL` (9) não pode ser tratado.
+3. O `syslog` (no Ubuntu, o `rsyslog`) é o serviço que **recebe** as mensagens dos programas e as grava nos arquivos do `/var/log`. Nos sistemas com `systemd`, o `journald` faz o mesmo papel, em formato binário (`journalctl`).
+4. O roteador liga **redes diferentes** e encaminha pacotes entre elas; quem liga os aparelhos da mesma rede é o switch.
+5. Prática 1: no Linux é `ifconfig` (o `ipconfig` é do Windows). Prática 2: `netstat -r` (estava "nestat").
+6. Prática 5: no Ubuntu, o `/etc/resolv.conf` costuma mostrar `127.0.0.53`, o resolvedor local do `systemd-resolved`. Os servidores DNS de verdade aparecem em `resolvectl status`.
+7. Prática 6: o nome no `/etc/hosts` não pode ter espaço. `192.168.25.2 meu roteador` cria **dois** nomes, `meu` e `roteador`. Use `192.168.25.2 meu-roteador`.
+
+#### Correção 82 — o `dmesg` mostra as mensagens do kernel, não "tudo o que está na memória"
+
+O caderno diz: "`dmesg` faz um dump de tudo que está na memória". O `dmesg` lê o **buffer de anel do kernel** (*ring buffer*): as mensagens que o kernel gerou na inicialização e depois, como a detecção de discos, de placas de rede e do pendrive que você conectou no exercício 4.3. Não mostra a memória RAM nem os logs dos programas.
+
+| Comando | O que mostra |
+|---|---|
+| `dmesg` | Mensagens do kernel (buffer de anel) |
+| `journalctl -k` | As mesmas mensagens do kernel, guardadas no journal |
+| `free -h` | Uso da memória e do swap |
+| `cat /proc/meminfo` | Os detalhes da memória, de onde o `free` tira os números |
+
+#### Correção 83 — o `ps` sozinho mostra só o terminal atual; todos os processos são `ps aux` ou `ps -ef`
+
+O caderno diz: "`ps` lista os processos do usuário em específico". Sem opções, o `ps` mostra só os processos **do terminal atual** (em geral, o `bash` e o próprio `ps`). Foi a raiz do erro da Q29 do simulado 04.
+
+| Comando | Estilo | Mostra |
+|---|---|---|
+| `ps` | — | Processos do terminal atual |
+| `ps aux` | BSD, sem hífen | Todos os processos, de todos os usuários, com o dono |
+| `ps -ef` | Unix (System V), com hífen | Todos os processos, em formato completo |
+| `ps -u davi` | Unix | Processos do usuário `davi` |
+| `ps -t pts/0` | Unix | Processos do terminal `pts/0` |
+
+Na VM: `ps`, depois `ps aux | wc -l` e compare as quantidades.
