@@ -66,16 +66,20 @@ Calendário refeito em 26/10 para a prova de 30/11 (`PLANO.md`, seção 7, e `la
 | 2 | Sex 23/10 | `simulado-02` (escrito em 13/10) | 24 ou mais | **22** | **55%** | 4 | **17** | Não informado | **Concluído, abaixo da meta** |
 | 3 | Qui 05/11 | `simulado-03` (escrito em 18/10) | Linha de base | **27** | **67,5%** | 7 | **20** | Não informado | **Concluído: acima do corte do exame** |
 | 4 | Qui 12/11 | `simulado-04` (escrito em 04/11) | 24 ou mais | **32** | **80%** | 1 | **31** | Não informado | **Concluído: o melhor até aqui** |
-| 6 | Sex 13/11 | `simulado-06` (escrito em 12/11) | 28 ou mais | | | | | | A fazer |
-| 7 | Sáb 14/11 | `simulado-07` | 28 ou mais | | | | | | A fazer |
-| 8 | Ter 17/11 | `simulado-08` | 28 ou mais | | | | | | A fazer |
-| 9 | Qui 19/11 | `simulado-09` | 30 ou mais | | | | | | A fazer |
-| 10 | **Sáb 21/11** | `simulado-10` | 30 ou mais · **ponto de ajuste** | | | | | | A fazer |
-| 11 | Seg 23/11 | `simulado-11` | 30 ou mais | | | | | | A fazer |
-| 5 | Ter 24/11 | `simulado-05` (escrito em 04/11; guardado para perto da prova) | 30 ou mais | | | | | | A fazer |
+| 6 | Sex 13/11 | `simulado-06` (escrito em 12/11) | 28 ou mais | **35** | **87,5%** | 1 | **34** | Não informado | **Concluído, acima da meta** (fácil demais: ver a nota abaixo) |
+| 7 | Seg 16/11 | `simulado-07` (escrito em 13/11, padrão novo) | 28 ou mais | | | | | | A fazer |
+| 8 | Qua 18/11 | `simulado-08` (padrão novo) | 28 ou mais · ponto de ajuste | | | | | | A fazer |
+| 9 | Sex 20/11 | `simulado-09` (padrão novo) | 28 ou mais · ponto de ajuste | | | | | | A fazer |
+| 10 | **Sáb 21/11** | `simulado-10` (padrão novo) | 28 ou mais · **ponto de ajuste** | | | | | | A fazer |
+| 11 | — | `simulado-11` | — | | | | | | **Retirado em 15/11** |
+| 5 | Seg 23/11 | `simulado-05` (reescrito no padrão novo) | 30 ou mais | | | | | | A fazer |
 | 12 | **Qua 25/11** | `simulado-12` | **30 ou mais** (final) | | | | | | A fazer |
 
-**Mini-simulados (20 questões):** R3 em 06/11 (17 de 20), R4 em 07/11 (18 de 20), R2 em 15/11, M1 em 16/11, M3 em 18/11, M4 em 20/11 e M6 em 26/11 (`labs/operacao-pratica.md`, seção 3); o M5 saiu em 09/11 e o M2 em 11/11. O R1 saiu do plano em 06/11: os temas dele (permissões, `tar`, redirecionamento, diretórios, lacunas) já aparecem em todo simulado e no banco de lacunas. Ele continua na seção 6 de `praticas_simulados.md` como material de consulta. Calendário refeito em 06/11.
+**Nota sobre o simulado 06.** O resultado é real, mas o simulado ficou mais fácil que a prova: foi escrito para retestar os erros do 04 e cobrou vários conceitos de forma direta. A partir do 07, as questões são de situação (seção 8.1 da `operação_pratica.md`), e é normal os acertos caírem um pouco.
+
+**Simulados do curso:** o simulado 1 no domingo 15/11 e o 2 no domingo 22/11. Registre aqui o acerto e o total de questões de cada um.
+
+**Mini-simulados (20 questões):** R3 em 06/11 (17 de 20), R4 em 07/11 (18 de 20), M1 em 19/11, M4 em 24/11 e M6 em 26/11 (o M3 saiu em 15/11) (`labs/operacao-pratica.md`, seção 3); o M5 saiu em 09/11 e o M2 em 11/11. O R1 saiu do plano em 06/11: os temas dele (permissões, `tar`, redirecionamento, diretórios, lacunas) já aparecem em todo simulado e no banco de lacunas. Ele continua na seção 6 de `praticas_simulados.md` como material de consulta. Calendário refeito em 06/11.
 
 ### 2.2 Acertos por tópico, simulado a simulado
 
@@ -289,7 +293,7 @@ Decisão ou checkpoint associado: .
 
 ### Mini-simulados R3, R4 e R2 — 06 a 10/11/2026
 
-| Campo | R3 (06/11) | R4 (07/11) | R2 (15/11) |
+| Campo | R3 (06/11) | R4 (07/11) | R2 (retirado em 13/11) |
 |---|---|---|---|
 | Fonte | `reforco-r3-r4.md` | `reforco-r3-r4.md` | `praticas_simulados.md`, seção 8 |
 | Acertos | **17 de 20** (meta: 16) | **18 de 20** (meta: 16) | de 20 (meta: 15) |
@@ -495,3 +499,5 @@ São erros de conteúdo já estudado. Desde 26/10 eles têm treino próprio na V
 | 10/11/2026 | Dia de conteúdo: aulas 41 a 48, LPI 4.2 (4 de 4) e 5.3 (9 de 11), lacunas 07 (3 de 5, dois erros de forma); aulas 49 a 72 nas noites de 11 a 13/11; LPI 5.4 em 12/11 |
 | 11/11/2026 | LPI 4.3 lição 1 (6 de 6) e lição 2 (7 de 9, com 2 itens pesquisados); lacunas 08 (4 de 5) e as extras do R4 (2 de 2); aulas 48 a 55; simulado 04 remarcado para 12/11, M1 para 16/11, M2 retirado |
 | 12/11/2026 | Simulado 04: **32 de 40, 31 firmes** (meta 24); Tópico 5 com 3 de 7, quatro erros de leitura; lacunas 09 (5 de 5) e os 9 retornos (9 de 9); LPI 4.4 (7 de 9, comandos a confirmar) e 5.4 (8 de 8); aulas 56 a 59; simulado 06 escrito |
+| 13/11/2026 | Simulado 06: **35 de 40, 34 firmes**; você notou temas repetidos e questões óbvias, e os simulados seguintes passam ao padrão novo (`operação_pratica.md`, seção 8.1); simulado 07 escrito; curso termina na aula 64, com dois simulados próprios em 15 e 22/11; R2 retirado; LPI 3.1 (8 de 9) e 3.2, lição 1 (7 de 12); lacunas 10 (4 de 5) |
+| 15/11/2026 | Fim de semana sem estudo; plano refeito até 30/11: simulado 07 e aulas 60 a 64 em 16/11, simulado 1 do curso em 17/11, simulados 08 (18), 09 (20), 10 (21), 2 do curso (22), 05 reescrito (23) e 12 (25); M1 em 19/11, M4 em 24/11 e M6 em 26/11; saíram o simulado 11 e o M3; sexta 27/11 de reserva |
