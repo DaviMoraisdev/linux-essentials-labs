@@ -23,7 +23,7 @@ São as **24 lições** do material oficial, com cerca de **205 exercícios** (G
 
 ## 1. Calendário
 
-**Refeito em 08/11**, com a carga maior: **duas ou três lições por dia**, de 09 a 18/11, incluindo os domingos 15 e 22. As cinco lições atrasadas (4.2, 4.3 nas duas lições, 5.1 e 5.3) entraram de 09 a 11/11, junto com as outras do mesmo tópico. De 19 a 25/11, cada bloco **refaz as questões que você errou**, tópico a tópico, e o que errar de novo na revisão volta em 24 e 25/11.
+**Refeito em 15/11**, depois do fim de semana sem estudo. As 13 lições que faltam vão de 16 a 21/11, duas ou três por dia; de 22 a 25/11, quatro blocos **refazem as questões que você errou**. O que estava em 14 e 15/11 entrou em 16 e 17/11.
 
 | Dia | Lições | Exercícios (aprox.) | Páginas dos exercícios | Páginas das respostas |
 |---|---|---|---|---|
@@ -33,18 +33,16 @@ São as **24 lições** do material oficial, com cerca de **205 exercícios** (G
 | Qua 11/11 | 4.3, lição 1 e 4.3, lição 2 | 6 + 9 | 303–305 · 321–324 | 308–310 · 328–332 |
 | Qui 12/11 | 4.4 e 5.4 | 9 + 10 | 349–350 · 434–435 | 352–353 · 439–440 |
 | Sex 13/11 | 3.1 e 3.2, lição 1 | 9 + 12 | 183–184 · 199–200 | 187–189 · 202–204 |
-| Sáb 14/11 | 3.2, lição 2 e 3.3, lição 1 e 3.3, lição 2 | 9 + 7 + 3 | 210–211 · 229–231 · 247–249 | 213–215 · 234–236 · 251–253 |
-| Dom 15/11 | 2.1, lição 1 e 2.1, lição 2 | 6 + 9 | 82–84 · 94–95 | 86–87 · 97–98 |
-| Seg 16/11 | 2.2 e 2.3, lição 1 | 11 + 7 | 107–109 · 122–124 | 111–114 · 126–129 |
-| Ter 17/11 | 2.3, lição 2 e 2.4 | 5 + 12 | 139–141 · 162–164 | 143–145 · 167–170 |
-| Qua 18/11 | 1.1 e 1.2 | 8 + 11 | 8–9 · 30–32 | 11–13 · 34–36 |
-| Qui 19/11 | 1.3 e 1.4 | 10 + 8 | 48–49 · 66–68 | 51–52 · 70–72 |
-| Sex 20/11 | **Revisão: erradas dos Tópicos 5 e 4** | As erradas da seção 3 | — | — |
-| Sáb 21/11 | **Revisão: erradas do Tópico 3** | As erradas da seção 3 | — | — |
-| Dom 22/11 | **Revisão: erradas do Tópico 2** | As erradas da seção 3 | — | — |
-| Seg 23/11 | **Revisão: erradas do Tópico 1** | As erradas da seção 3 | — | — |
-| Ter 24/11 | **Revisão: as que errou de novo na revisão** | As erradas da seção 3 | — | — |
-| Qua 25/11 | **Revisão: as reincidências da LPI** | As erradas da seção 3 | — | — |
+| Seg 16/11 | 3.2, lição 2 e 3.3, lição 1 | 9 + 7 | 210–211 · 229–231 | 213–215 · 234–236 |
+| Ter 17/11 | 3.3, lição 2 e 2.1, lição 1 e 2.1, lição 2 | 3 + 6 + 9 | 247–249 · 82–84 · 94–95 | 251–253 · 86–87 · 97–98 |
+| Qua 18/11 | 2.2 e 2.3, lição 1 | 11 + 7 | 107–109 · 122–124 | 111–114 · 126–129 |
+| Qui 19/11 | 2.3, lição 2 e 2.4 | 5 + 12 | 139–141 · 162–164 | 143–145 · 167–170 |
+| Sex 20/11 | 1.1 e 1.2 | 8 + 11 | 8–9 · 30–32 | 11–13 · 34–36 |
+| Sáb 21/11 | 1.3 e 1.4 | 10 + 8 | 48–49 · 66–68 | 51–52 · 70–72 |
+| Dom 22/11 | **Revisão: erradas dos Tópicos 5 e 4** | As erradas da seção 3 | — | — |
+| Seg 23/11 | **Revisão: erradas do Tópico 3** | As erradas da seção 3 | — | — |
+| Ter 24/11 | **Revisão: erradas dos Tópicos 2 e 1** | As erradas da seção 3 | — | — |
+| Qua 25/11 | **Revisão: as que errou de novo e as reincidências** | As erradas da seção 3 | — | — |
 
 As páginas são as impressas no rodapé do PDF.
 
@@ -54,21 +52,21 @@ As páginas são as impressas no rodapé do PDF.
 
 | Lição | Tema | Exercícios | Dia |
 |---|---|---|---|
-| 1.1 | A evolução do Linux e sistemas operacionais populares | G5 E3 | Qua 18/11 |
-| 1.2 | Principais aplicações open source | G7 E4 | Qua 18/11 |
-| 1.3 | Software open source e suas licenças | G5 E5 | Qui 19/11 |
-| 1.4 | Habilidades ICT e trabalhando no Linux | G5 E3 | Qui 19/11 |
-| 2.1, lição 1 | O básico sobre a linha de comando | G3 E3 | Dom 15/11 |
-| 2.1, lição 2 | O básico sobre a linha de comando (variáveis) | G4 E5 | Dom 15/11 |
-| 2.2 | Usando a linha de comando para conseguir ajuda | G6 E5 | Seg 16/11 |
-| 2.3, lição 1 | Usando diretórios e listando arquivos | G4 E3 | Seg 16/11 |
-| 2.3, lição 2 | Usando diretórios e listando arquivos (caminhos e ocultos) | G2 E3 | Ter 17/11 |
-| 2.4 | Criando, movendo e deletando arquivos | G7 E5 | Ter 17/11 |
+| 1.1 | A evolução do Linux e sistemas operacionais populares | G5 E3 | Sex 20/11 |
+| 1.2 | Principais aplicações open source | G7 E4 | Sex 20/11 |
+| 1.3 | Software open source e suas licenças | G5 E5 | Sáb 21/11 |
+| 1.4 | Habilidades ICT e trabalhando no Linux | G5 E3 | Sáb 21/11 |
+| 2.1, lição 1 | O básico sobre a linha de comando | G3 E3 | Ter 17/11 |
+| 2.1, lição 2 | O básico sobre a linha de comando (variáveis) | G4 E5 | Ter 17/11 |
+| 2.2 | Usando a linha de comando para conseguir ajuda | G6 E5 | Qua 18/11 |
+| 2.3, lição 1 | Usando diretórios e listando arquivos | G4 E3 | Qua 18/11 |
+| 2.3, lição 2 | Usando diretórios e listando arquivos (caminhos e ocultos) | G2 E3 | Qui 19/11 |
+| 2.4 | Criando, movendo e deletando arquivos | G7 E5 | Qui 19/11 |
 | 3.1 | Empacotando arquivos na linha de comando | G5 E4 | Sex 13/11 |
 | 3.2, lição 1 | Redirecionamento e pipes | G7 E5 | Sex 13/11 |
-| 3.2, lição 2 | `grep` e expressões regulares | G6 E3 | Sáb 14/11 |
-| 3.3, lição 1 | Transformando comandos em scripts | G3 E4 | Sáb 14/11 |
-| 3.3, lição 2 | Códigos de saída, argumentos e `for` | G2 E1 | Sáb 14/11 |
+| 3.2, lição 2 | `grep` e expressões regulares | G6 E3 | Seg 16/11 |
+| 3.3, lição 1 | Transformando comandos em scripts | G3 E4 | Seg 16/11 |
+| 3.3, lição 2 | Códigos de saída, argumentos e `for` | G2 E1 | Ter 17/11 |
 | 4.1 | Escolhendo um sistema operacional | G5 E2 | Sex 06/11 |
 | 4.2 | Entendendo o hardware do computador | G3 E1 | Ter 10/11 |
 | 4.3, lição 1 | Onde os dados são armazenados: programas, configuração e processos | G4 E2 | Qua 11/11 |
@@ -96,27 +94,25 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 | Qua 11/11 | 4.3, lição 2 | **7 de 9** | G3, itens 2 e 3, pesquisados; E3, item 4 (o pendrive some do `/dev`) | Não |
 | Qui 12/11 | 4.4 | **7 de 9** | G1 e G3 sem a linha de comando (a confirmar: podem ter sumido na cópia) | — |
 | Qui 12/11 | 5.4 | **10 de 10** | Nenhuma | — |
-| Sex 13/11 | 3.1 | de 9 |  |  |
-| Sex 13/11 | 3.2, lição 1 | de 12 |  |  |
-| Sáb 14/11 | 3.2, lição 2 | de 9 |  |  |
-| Sáb 14/11 | 3.3, lição 1 | de 7 |  |  |
-| Sáb 14/11 | 3.3, lição 2 | de 3 |  |  |
-| Dom 15/11 | 2.1, lição 1 | de 6 |  |  |
-| Dom 15/11 | 2.1, lição 2 | de 9 |  |  |
-| Seg 16/11 | 2.2 | de 11 |  |  |
-| Seg 16/11 | 2.3, lição 1 | de 7 |  |  |
-| Ter 17/11 | 2.3, lição 2 | de 5 |  |  |
-| Ter 17/11 | 2.4 | de 12 |  |  |
-| Qua 18/11 | 1.1 | de 8 |  |  |
-| Qua 18/11 | 1.2 | de 11 |  |  |
-| Qui 19/11 | 1.3 | de 10 |  |  |
-| Qui 19/11 | 1.4 | de 8 |  |  |
-| Sex 20/11 | Revisão: erradas dos Tópicos 5 e 4 | | | |
-| Sáb 21/11 | Revisão: erradas do Tópico 3 | | | |
-| Dom 22/11 | Revisão: erradas do Tópico 2 | | | |
-| Seg 23/11 | Revisão: erradas do Tópico 1 | | | |
-| Ter 24/11 | Revisão: as que errou de novo na revisão | | | |
-| Qua 25/11 | Revisão: as reincidências da LPI | | | |
+| Sex 13/11 | 3.1 | **8 de 9** | E4: faltou o `tar -xf` depois do `gunzip` | — |
+| Sex 13/11 | 3.2, lição 1 | **7 de 12** | G3, G4, G5 (forma do comando), E2 e E5 | Sim: forma dos comandos |
+| Seg 16/11 | 3.2, lição 2 | de 9 |  |  |
+| Seg 16/11 | 3.3, lição 1 | de 7 |  |  |
+| Ter 17/11 | 3.3, lição 2 | de 3 |  |  |
+| Ter 17/11 | 2.1, lição 1 | de 6 |  |  |
+| Ter 17/11 | 2.1, lição 2 | de 9 |  |  |
+| Qua 18/11 | 2.2 | de 11 |  |  |
+| Qua 18/11 | 2.3, lição 1 | de 7 |  |  |
+| Qui 19/11 | 2.3, lição 2 | de 5 |  |  |
+| Qui 19/11 | 2.4 | de 12 |  |  |
+| Sex 20/11 | 1.1 | de 8 |  |  |
+| Sex 20/11 | 1.2 | de 11 |  |  |
+| Sáb 21/11 | 1.3 | de 10 |  |  |
+| Sáb 21/11 | 1.4 | de 8 |  |  |
+| Dom 22/11 | Revisão: erradas dos Tópicos 5 e 4 | | | |
+| Seg 23/11 | Revisão: erradas do Tópico 3 | | | |
+| Ter 24/11 | Revisão: erradas dos Tópicos 2 e 1 | | | |
+| Qua 25/11 | Revisão: as que errou de novo e as reincidências | | | |
 
 ---
 
@@ -214,3 +210,30 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 | E5 | Certo: 4 TCP e 7 UDP, total 11 |
 
 **Lição 5.4 (10 de 10).** Os cinco Guiados e os cinco Exploratórios certos (a pergunta do `ls -lah` conta como os Exploratórios 3, 4 e 5). Destaques: o hard link como "outro nome para o mesmo inode", o `Invalid cross-device link` e o `ls -li` para comparar inodes. No E1, a resposta cobre as duas leituras do enunciado, o que está ótimo: com `ln -s recipes.txt rezepte.txt`, apagar `receitas.txt` não afeta o link simbólico.
+
+### 3.1 e 3.2, lição 1 — sexta 13/11
+
+**Lição 3.1 (8 de 9).**
+
+| Exercício | Observação |
+| --- | --- |
+| G1 a G5 | Certos. Destaque para o G3 (`gunzip`, `tar -rf`, `gzip`: o `tar` não acrescenta dentro de um pacote comprimido) e o G4 (`-P`, `--absolute-names`) |
+| E1 | Certo: `--wildcards`, com o padrão entre aspas. Grafia: GNU tar |
+| E2 | Certo: o gzip, o bzip2 e o xz conferem a integridade ao descomprimir (também dá para testar antes com `gzip -t`); para comparar com o original, `cmp` |
+| E3 | Certo: sobrescreve. Com `-k` (`--keep-old-files`), o `tar` não sobrescreve |
+| E4 | **Incompleto.** O `gunzip archive.tgz` só tira a compressão e deixa `archive.tar`; falta extrair: `tar -xf archive.tar`. Em uma linha: `gunzip -c archive.tgz \| tar -xf -` (ou `zcat archive.tgz \| tar -xf -`) |
+
+**Lição 3.2, lição 1 (7 de 12).** Os acertos (G1, G2, G6, G7, E1, E3 e E4) mostram que o raciocínio do redirecionamento está certo. Os cinco erros são todos de **montagem do comando**: o tipo de detalhe que a prova cobra nas alternativas.
+
+| Exercício | Observação |
+| --- | --- |
+| G3 | **Errado.** `tail -n 10 /etc/passwd > ~/Documents` tenta gravar **no diretório**, e o shell responde `Is a directory`. O destino precisa ser um arquivo: `tail -n 10 /etc/passwd > ~/Documents/ultimas.txt` |
+| G4 | **Errado pela forma.** `~/contents` não existe: o arquivo é `~/contents.txt`. Certo: `wc -w < ~/contents.txt >> ~/field2.txt` |
+| G5 | **Errado pela forma.** `head -5 n /etc/passwd` faz o `head` procurar um arquivo chamado `n`. Certo: `head -n 5 /etc/passwd \| sort -r` (ou `head -5`, sem o `n`) |
+| E1 | Certo na ideia. Grafia: o destino pedido é `field1.txt`. Atenção: no `ls -l` as colunas são separadas por **vários** espaços, por isso o `-f 2` com `-d ' '` pode pegar campos vazios; o E5 resolve isso com `tr -s ' '` |
+| E2 | **Errado.** A resposta é de outro exercício. O pedido era tirar os hífens com `tr` e redirecionamento de **entrada**: `tr -d '-' < ~/contents.txt` |
+| E5 | **Errado.** Faltou o `cut`, e o `-f 9` foi parar no `tr`, que não tem essa opção. Certo: `tr -s ' ' < ~/contents.txt \| cut -d ' ' -f 9 \| sort -fr`, com **dois pipes** (ou `cat ~/contents.txt \| tr -s ' ' \| cut -d ' ' -f 9 \| sort -fr`, com três). A pergunta "quantos pipes" ficou sem resposta |
+
+Aspas: o caderno tem aspas curvas (`‘test’`) nos comandos. No terminal, só as retas: `'test'`.
+
+**Treino na VM (domingo 15/11).** Rode os cinco comandos corrigidos (G3, G4, G5, E2 e E5) na `lab-ubuntu`, de memória, a partir de um `ls -l > ~/contents.txt`. É o bloco de VM do domingo.
