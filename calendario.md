@@ -1,6 +1,6 @@
 # Calendário até a prova — LPI Linux Essentials (010-160)
 
-**Prova: segunda-feira, 30/11/2026** · Período: 05/11 a 30/11/2026 · Refeito em 15/11 · Para importar no celular ou no Google Agenda: `calendario-ate-a-prova.ics`
+**Prova: segunda-feira, 30/11/2026** · Período: 05/11 a 30/11/2026 · Refeito em 17/11 · Para importar no celular ou no Google Agenda: `calendario-ate-a-prova.ics`
 
 Detalhe de cada sessão, regras e protocolo de correção: `operacao-pratica.md`. Exercícios da LPI: `simulados-práticos.lpi/exercicios-lpi.md`.
 
@@ -8,14 +8,14 @@ Detalhe de cada sessão, regras e protocolo de correção: `operacao-pratica.md`
 
 | Tipo | Sessão | Tempo |
 |---|---|---|
-| **A** | Lacunas (5 a 10 min) · simulado completo (60 min) · correção (20 min) · VM nos comandos errados ou refazer as erradas (30 min) · 2 ou 3 blocos da LPI (50 a 75 min) · à noite, aulas ou refazer as erradas (30 a 40 min) | cerca de 3h30 |
-| **B** | Lacunas · mini-simulado (25 min) · correção (10 min) · VM nos comandos errados (30 min) · 2 blocos da LPI (50 min) · à noite, refazer as erradas (40 min) | cerca de 3h |
-| **Curso** | Dom 22/11: simulado 2 do curso, correção, revisão da LPI e colas | cerca de 2h30 |
-| Leve | Mini-simulado das reincidências e releitura das colas | cerca de 1h30 |
+| **A** | **Simulado primeiro** (60 min) · correção (20 min) · lacunas (5 min) · VM nos comandos errados ou refazer as erradas (30 min) · 1 ou 2 blocos da LPI (25 a 50 min) · à noite, aulas (só em 17/11) ou refazer as erradas | cerca de 3h |
+| Leve | Mini-simulado M6, das reincidências, e releitura das colas | cerca de 1h30 |
 | Reserva | Sex 27/11: só para o que tiver atrasado; se nada atrasou, descanso | até 2h |
 | Descanso | Sem estudo | — |
 
-**Refeito em 15/11**, depois do fim de semana sem estudo. Tudo o que era de 14 e 15/11 entrou em 16 e 17/11, e o plano foi enxugado para caber até 26/11 sem passar de cerca de 3h30 por dia: **saíram o simulado 11 e o M3**; a revisão da LPI caiu para quatro blocos; a **sexta 27/11 virou reserva**. Ficam 8 simulados completos (07, curso 1, 08, 09, 10, curso 2, 05 e 12) e 3 mini-simulados (M1, M4 e M6).
+**Níveis de dificuldade (padrão novo).** Nível 1: situações curtas, um passo de raciocínio (07). Nível 2: dois passos, combinando dois comandos ou conceitos (08 e 09). Nível 3: saídas e scripts para rastrear, mais distratores de um detalhe (10 e 11). Nível 4: o mais próximo da prova, com cenários longos e mais questões de escolher duas (05 reescrito e 12). Os simulados do curso entram entre eles como medida de fora.
+
+**Refeito em 17/11**, a seu pedido: **um simulado completo por dia** de 17 a 25/11, com a dificuldade subindo em quatro níveis, e o **simulado como primeira tarefa do dia**, para não ficar para trás de novo. O simulado 11 voltou; o M1 e o M4 saíram (os erros deles entram como retestes nos simulados seguintes). As lições da LPI que faltam vão até 22/11, uma ou duas por dia.
 
 ---
 
@@ -25,8 +25,8 @@ Detalhe de cada sessão, regras e protocolo de correção: `operacao-pratica.md`
 |---|---|---|---|---|---|---|
 | 2<br>Finados | 3<br>Práticas registradas | 4<br>Lacunas 01 e 02 | **5** · **A**<br>Simulado 03 ✓<br>V5 e V6 ✓ | **6** · **B**<br>R3 ✓<br>4.1 e here doc ✓ | **7** · **B**<br>R4 ✓<br>Lacunas 04 e 05 ✓ | **8** · Remarcado<br>Aulas e LPI remarcadas |
 | **9** · **Conteúdo**<br>LPI 5.1 e 5.2 ✓<br>Lacunas 06 ✓<br>Simulado 05 → 24/11 | **10** · **Conteúdo**<br>Aulas 41–48 ✓<br>LPI 4.2 e 5.3 ✓<br>Lacunas 07 ✓ | **11** · **Conteúdo**<br>LPI 4.3 L1 e L2 ✓<br>Lacunas 08 ✓<br>Aulas 48–55 ✓ | **12** · **A**<br>Simulado 04 ✓<br>Aulas 56–59 ✓<br>LPI 4.4 e 5.4 ✓ | **13** · **A**<br>Simulado 06 ✓<br>LPI 3.1 e 3.2 L1 ✓<br>Lacunas 10 ✓ | **14** · Não realizado<br>Remarcado para 16 e 17/11 | **15** · Não realizado<br>Remarcado para 16 e 17/11 |
-| **16** · **A**<br>Simulado 07<br>Aulas 60–64 (fim do curso)<br>LPI 3.2 L2, 3.3 L1 | **17** · **A**<br>Simulado 1 do curso<br>Refazer erradas<br>LPI 3.3 L2, 2.1 L1, 2.1 L2 | **18** · **A**<br>Simulado 08<br>Refazer erradas<br>LPI 2.2, 2.3 L1 | **19** · **B**<br>M1<br>Refazer erradas<br>LPI 2.3 L2, 2.4 | **20** · **A**<br>Simulado 09<br>feriado<br>LPI 1.1, 1.2 | **21** · **A**<br>Simulado 10<br>**Ponto de ajuste**<br>Fim das lições<br>LPI 1.3, 1.4 | **22** · **Curso**<br>Simulado 2 do curso<br>Colas<br>LPI: revisão |
-| **23** · **A**<br>Simulado 05<br>Refazer erradas<br>LPI: revisão | **24** · **B**<br>M4<br>Refazer erradas<br>LPI: revisão | **25** · **A**<br>**Simulado 12 (final)**<br>LPI: revisão | **26** · Leve<br>M6 (reincidências)<br>Colas | **27** · Reserva<br>Reserva ou descanso | **28** · —<br>Descanso | **29** · —<br>Descanso<br>Não estudar |
+| **16** · **Conteúdo**<br>LPI 3.2 L2 e 3.3 L1 ✓<br>Lacunas 11 e 12 ✓ | **17** · **A**<br>Simulado 07 (nível 1)<br>Aulas 60–64 (fim do curso)<br>LPI 3.3 L2, 2.1 L1 | **18** · **A**<br>Simulado 1 do curso<br>Refazer erradas<br>LPI 2.1 L2, 2.2 | **19** · **A**<br>Simulado 08 (nível 2)<br>Refazer erradas<br>LPI 2.3 L1, 2.3 L2 | **20** · **A**<br>Simulado 09 (nível 2)<br>feriado<br>LPI 2.4, 1.1 | **21** · **A**<br>Simulado 10 (nível 3)<br>**Ponto de ajuste**<br>LPI 1.2, 1.3 | **22** · **A**<br>Simulado 2 do curso<br>Fim das lições<br>LPI 1.4<br>LPI: revisão |
+| **23** · **A**<br>Simulado 11 (nível 3)<br>Refazer erradas<br>LPI: revisão | **24** · **A**<br>Simulado 05 (nível 4)<br>Refazer erradas<br>LPI: revisão | **25** · **A**<br>**Simulado 12 (final, nível 4)**<br>LPI: revisão | **26** · Leve<br>M6 (reincidências)<br>Colas | **27** · Reserva<br>Reserva ou descanso | **28** · —<br>Descanso | **29** · —<br>Descanso<br>Não estudar |
 | **30** · **PROVA**<br>**PROVA**<br>010-160 |   |   |   |   |   |   |
 
 ---
@@ -48,17 +48,17 @@ Marque a coluna "Feito" ao fim de cada sessão.
 | Sex 13/11 | A | **Simulado 06** (feito: 35 de 40, 34 firmes) · LPI 3.1 e 3.2, lição 1 | — | 3.1 (183–184); 3.2, lição 1 (199–200) (feito) | Série 10 + 2 retornos | ✓ |
 | Sáb 14/11 | Não realizado | Não realizado: o simulado 07, a LPI e as aulas 60 a 64 passaram para 16 e 17/11 | — | — | — | — |
 | Dom 15/11 | Não realizado | Não realizado: o simulado 1 do curso e a LPI 2.1 passaram para a ter 17/11 | — | — | — | — |
-| Seg 16/11 | A | **Simulado 07** (`simulado-07.md`, padrão novo) · à noite, **aulas 60 a 64** (fim do conteúdo do curso) | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 3.2, lição 2 (210–211); 3.3, lição 1 (229–231) | Séries 11 e 12 (com o retorno escrito na 11) |  |
-| Ter 17/11 | A | **Simulado 1 do curso** · à noite, refazer as erradas | Os cinco comandos corrigidos da LPI 3.2, lição 1 (G3, G4, G5, E2 e E5) e os que errar no simulado | 3.3, lição 2 (247–249); 2.1, lição 1 (82–84); 2.1, lição 2 (94–95) | Série 13 (com o retorno escrito nela) |  |
-| Qua 18/11 | A | **Simulado 08** (padrão novo) — conta para o ponto de ajuste · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 2.2 (107–109); 2.3, lição 1 (122–124) | Série 14 |  |
-| Qui 19/11 | B | **M1** — os erros dos simulados 03, 04, 06, 07 e 1 do curso, do R3 e do R4, e a checagem das lições 5.1 a 5.3 · à noite, refazer as erradas | Só os comandos que errar no M1 | 2.3, lição 2 (139–141); 2.4 (162–164) | Séries 15 e 16 |  |
-| Sex 20/11 | A | **Simulado 09** (feriado) — conta para o ponto de ajuste · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 1.1 (8–9); 1.2 (30–32) | Série 17 |  |
-| Sáb 21/11 | A | **Simulado 10** · **ponto de ajuste** (média de acertos firmes dos simulados 08, 09 e 10) · **fim das 24 lições da LPI** | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 1.3 (48–49); 1.4 (66–68) | Série 18 |  |
-| Dom 22/11 | Curso | **Simulado 2 do curso** · releitura das colas | Os que errar no simulado do curso | Revisão: erradas dos Tópicos 5 e 4 | Séries 19 e 20 |  |
-| Seg 23/11 | A | **Simulado 05** (reescrito no padrão novo) · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | Revisão: erradas do Tópico 3 | Série 21 |  |
-| Ter 24/11 | B | **M4** — os erros dos simulados 08, 09, 10 e 05 e o foco do ponto de ajuste · à noite, refazer as erradas | Só os comandos que errar no M4 | Revisão: erradas dos Tópicos 2 e 1 | Série 22 |  |
-| Qua 25/11 | A | **Simulado 12** — o simulado final · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | Revisão: as que errou de novo e as reincidências | Série 23 |  |
-| Qui 26/11 | Leve | **M6** — só as reincidências · releitura das colas | Os blocos das reincidências | — | Série 24 |  |
+| Seg 16/11 | Conteúdo | LPI 3.2, lição 2 e 3.3, lição 1 · lacunas 11 e 12 (feitos). O **simulado 07** e as **aulas 60 a 64** passaram para a ter 17/11 | — | 3.2, lição 2 (210–211); 3.3, lição 1 (229–231) | Séries 11 e 12 | ✓ |
+| Ter 17/11 | A | **Simulado 07** (nível 1 do padrão novo) — **primeira tarefa do dia** · à noite, **aulas 60 a 64** (fim do conteúdo do curso) | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 3.3, lição 2 (247–249); 2.1, lição 1 (82–84) | Série 13 (com o retorno escrito nela) |  |
+| Qua 18/11 | A | **Simulado 1 do curso** · à noite, refazer as erradas | Os cinco comandos corrigidos da LPI 3.2, lição 1 e os que errar no simulado | 2.1, lição 2 (94–95); 2.2 (107–109) | Série 14 |  |
+| Qui 19/11 | A | **Simulado 08** (nível 2) · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 2.3, lição 1 (122–124); 2.3, lição 2 (139–141) | Série 15 |  |
+| Sex 20/11 | A | **Simulado 09** (nível 2, feriado) — conta para o ponto de ajuste · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 2.4 (162–164); 1.1 (8–9) | Série 16 |  |
+| Sáb 21/11 | A | **Simulado 10** (nível 3) · **ponto de ajuste** (média de acertos firmes dos simulados 08, 09 e 10) | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 1.2 (30–32); 1.3 (48–49) | Série 17 |  |
+| Dom 22/11 | A | **Simulado 2 do curso** · releitura das colas · **fim das 24 lições da LPI** | Os que errar no simulado do curso | 1.4 (66–68); Revisão: erradas dos Tópicos 5 e 4 | Séries 18 e 19 |  |
+| Seg 23/11 | A | **Simulado 11** (nível 3) · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | Revisão: erradas do Tópico 3 | Série 20 |  |
+| Ter 24/11 | A | **Simulado 05** (nível 4, reescrito) · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | Revisão: erradas dos Tópicos 2 e 1 | Série 21 |  |
+| Qua 25/11 | A | **Simulado 12** (nível 4, o final, o mais próximo da prova) · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | Revisão: as que errou de novo e as reincidências | Série 22 |  |
+| Qui 26/11 | Leve | **M6** — mini-simulado de 20 questões, só com as reincidências · releitura das colas | Os blocos das reincidências | — | Séries 23 e 24 |  |
 | Sex 27/11 | Reserva | **Reserva**: só para o que tiver atrasado; se nada atrasou, descanso | — | — | — |  |
 | Sáb 28/11 | Descanso | Descanso antes da prova | — | — | — |  |
 | Dom 29/11 | Descanso | Descanso antes da prova · não estudar na véspera | — | — | — |  |
@@ -73,9 +73,10 @@ Marque a coluna "Feito" ao fim de cada sessão.
 | Qui 05/11 | Simulado 03: **27 de 40, 20 firmes**, a linha de base |
 | Qui 12/11 | Simulado 04: **32 de 40, 31 firmes** |
 | Sex 13/11 | Simulado 06: **35 de 40, 34 firmes** |
-| Seg 16/11 | Fim do conteúdo do curso (aula 64) e o primeiro simulado no padrão novo (07) |
-| Ter 17/11 e dom 22/11 | Simulados 1 e 2 do curso |
-| Sáb 21/11 | Fim das 24 lições da LPI e **ponto de ajuste**: média de acertos firmes dos simulados 08, 09 e 10. A prova está comprada; a média só decide o foco de 23 a 26/11 |
-| Qua 25/11 | Simulado 12, o final |
+| Ter 17/11 | Simulado 07, o primeiro do padrão novo (nível 1), e fim do conteúdo do curso (aula 64) |
+| Qua 18/11 e dom 22/11 | Simulados 1 e 2 do curso |
+| Sáb 21/11 | **Ponto de ajuste**: média de acertos firmes dos simulados 08, 09 e 10. A prova está comprada; a média só decide o foco de 23 a 26/11 |
+| Dom 22/11 | Fim das 24 lições da LPI |
+| Qua 25/11 | Simulado 12, o final (nível 4) |
 | Sex 27/11 | Reserva para o que tiver atrasado |
 | Seg 30/11 | **Prova (comprada em 09/11)**: chegar 30 minutos antes, com dois documentos com foto |
