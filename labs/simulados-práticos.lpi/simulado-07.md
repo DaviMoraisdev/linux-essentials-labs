@@ -1,6 +1,6 @@
 # Simulado 07 — LPI Linux Essentials (010-160)
 
-Simulado no formato do exame, versão 1.6. Escrito em 13/11/2026 para o sábado 14/11 e remarcado para a **segunda 16/11**. É o primeiro no **novo padrão** pedido em 13/11: questões de situação, em que é preciso seguir o que o comando faz passo a passo, e alternativas que diferem em um detalhe, como nas questões de exemplo públicas do exame. Nenhuma questão repete os simulados 02 a 06, os reforços R2 a R4 ou os Exercícios da LPI.
+Simulado no formato do exame, versão 1.6. Escrito em 13/11/2026 para o sábado 14/11 e remarcado para a **terça 17/11**. É o **nível 1** do padrão novo: os simulados seguintes sobem de dificuldade. É o primeiro no **novo padrão** pedido em 13/11: questões de situação, em que é preciso seguir o que o comando faz passo a passo, e alternativas que diferem em um detalhe, como nas questões de exemplo públicas do exame. Nenhuma questão repete os simulados 02 a 06, os reforços R2 a R4 ou os Exercícios da LPI.
 
 Cinco alternativas por questão, **cinco questões de escolher duas** e cinco lacunas. As questões são escritas sobre os objetivos oficiais; não são questões reais do exame.
 
@@ -455,7 +455,7 @@ echo "ok: $1"
 
 | Campo | Valor |
 | --- | --- |
-| Data | 16/11/2026 |
+| Data | 17/11/2026 |
 | Tempo gasto | |
 | Acertos | de 40 |
 | Questões marcadas como chute | |
