@@ -23,7 +23,7 @@ São as **24 lições** do material oficial, com cerca de **205 exercícios** (G
 
 ## 1. Calendário
 
-**Refeito em 15/11**, depois do fim de semana sem estudo. As 13 lições que faltam vão de 16 a 21/11, duas ou três por dia; de 22 a 25/11, quatro blocos **refazem as questões que você errou**. O que estava em 14 e 15/11 entrou em 16 e 17/11.
+**Refeito em 17/11**, com um simulado por dia: as 11 lições que faltam vão de 17 a 22/11, duas por dia (um ou dois blocos de 25 minutos), e de 22 a 25/11 quatro blocos **refazem as questões que você errou**.
 
 | Dia | Lições | Exercícios (aprox.) | Páginas dos exercícios | Páginas das respostas |
 |---|---|---|---|---|
@@ -33,12 +33,13 @@ São as **24 lições** do material oficial, com cerca de **205 exercícios** (G
 | Qua 11/11 | 4.3, lição 1 e 4.3, lição 2 | 6 + 9 | 303–305 · 321–324 | 308–310 · 328–332 |
 | Qui 12/11 | 4.4 e 5.4 | 9 + 10 | 349–350 · 434–435 | 352–353 · 439–440 |
 | Sex 13/11 | 3.1 e 3.2, lição 1 | 9 + 12 | 183–184 · 199–200 | 187–189 · 202–204 |
-| Seg 16/11 | 3.2, lição 2 e 3.3, lição 1 | 9 + 7 | 210–211 · 229–231 | 213–215 · 234–236 |
-| Ter 17/11 | 3.3, lição 2 e 2.1, lição 1 e 2.1, lição 2 | 3 + 6 + 9 | 247–249 · 82–84 · 94–95 | 251–253 · 86–87 · 97–98 |
-| Qua 18/11 | 2.2 e 2.3, lição 1 | 11 + 7 | 107–109 · 122–124 | 111–114 · 126–129 |
-| Qui 19/11 | 2.3, lição 2 e 2.4 | 5 + 12 | 139–141 · 162–164 | 143–145 · 167–170 |
-| Sex 20/11 | 1.1 e 1.2 | 8 + 11 | 8–9 · 30–32 | 11–13 · 34–36 |
-| Sáb 21/11 | 1.3 e 1.4 | 10 + 8 | 48–49 · 66–68 | 51–52 · 70–72 |
+| Seg 16/11 | 3.2, lição 2 e 3.3, lição 1 (feito) | 9 + 7 | 210–211 · 229–231 | 213–215 · 234–236 |
+| Ter 17/11 | 3.3, lição 2 e 2.1, lição 1 | 3 + 6 | 247–249 · 82–84 | 251–253 · 86–87 |
+| Qua 18/11 | 2.1, lição 2 e 2.2 | 9 + 11 | 94–95 · 107–109 | 97–98 · 111–114 |
+| Qui 19/11 | 2.3, lição 1 e 2.3, lição 2 | 7 + 5 | 122–124 · 139–141 | 126–129 · 143–145 |
+| Sex 20/11 | 2.4 e 1.1 | 12 + 8 | 162–164 · 8–9 | 167–170 · 11–13 |
+| Sáb 21/11 | 1.2 e 1.3 | 11 + 10 | 30–32 · 48–49 | 34–36 · 51–52 |
+| Dom 22/11 | 1.4 | 8 | 66–68 | 70–72 |
 | Dom 22/11 | **Revisão: erradas dos Tópicos 5 e 4** | As erradas da seção 3 | — | — |
 | Seg 23/11 | **Revisão: erradas do Tópico 3** | As erradas da seção 3 | — | — |
 | Ter 24/11 | **Revisão: erradas dos Tópicos 2 e 1** | As erradas da seção 3 | — | — |
@@ -53,15 +54,15 @@ As páginas são as impressas no rodapé do PDF.
 | Lição | Tema | Exercícios | Dia |
 |---|---|---|---|
 | 1.1 | A evolução do Linux e sistemas operacionais populares | G5 E3 | Sex 20/11 |
-| 1.2 | Principais aplicações open source | G7 E4 | Sex 20/11 |
+| 1.2 | Principais aplicações open source | G7 E4 | Sáb 21/11 |
 | 1.3 | Software open source e suas licenças | G5 E5 | Sáb 21/11 |
-| 1.4 | Habilidades ICT e trabalhando no Linux | G5 E3 | Sáb 21/11 |
+| 1.4 | Habilidades ICT e trabalhando no Linux | G5 E3 | Dom 22/11 |
 | 2.1, lição 1 | O básico sobre a linha de comando | G3 E3 | Ter 17/11 |
-| 2.1, lição 2 | O básico sobre a linha de comando (variáveis) | G4 E5 | Ter 17/11 |
+| 2.1, lição 2 | O básico sobre a linha de comando (variáveis) | G4 E5 | Qua 18/11 |
 | 2.2 | Usando a linha de comando para conseguir ajuda | G6 E5 | Qua 18/11 |
-| 2.3, lição 1 | Usando diretórios e listando arquivos | G4 E3 | Qua 18/11 |
+| 2.3, lição 1 | Usando diretórios e listando arquivos | G4 E3 | Qui 19/11 |
 | 2.3, lição 2 | Usando diretórios e listando arquivos (caminhos e ocultos) | G2 E3 | Qui 19/11 |
-| 2.4 | Criando, movendo e deletando arquivos | G7 E5 | Qui 19/11 |
+| 2.4 | Criando, movendo e deletando arquivos | G7 E5 | Sex 20/11 |
 | 3.1 | Empacotando arquivos na linha de comando | G5 E4 | Sex 13/11 |
 | 3.2, lição 1 | Redirecionamento e pipes | G7 E5 | Sex 13/11 |
 | 3.2, lição 2 | `grep` e expressões regulares | G6 E3 | Seg 16/11 |
@@ -96,23 +97,23 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 | Qui 12/11 | 5.4 | **10 de 10** | Nenhuma | — |
 | Sex 13/11 | 3.1 | **8 de 9** | E4: faltou o `tar -xf` depois do `gunzip` | — |
 | Sex 13/11 | 3.2, lição 1 | **7 de 12** | G3, G4, G5 (forma do comando), E2 e E5 | Sim: forma dos comandos |
-| Seg 16/11 | 3.2, lição 2 | de 9 |  |  |
-| Seg 16/11 | 3.3, lição 1 | de 7 |  |  |
-| Ter 17/11 | 3.3, lição 2 | de 3 |  |  |
-| Ter 17/11 | 2.1, lição 1 | de 6 |  |  |
-| Ter 17/11 | 2.1, lição 2 | de 9 |  |  |
-| Qua 18/11 | 2.2 | de 11 |  |  |
-| Qua 18/11 | 2.3, lição 1 | de 7 |  |  |
-| Qui 19/11 | 2.3, lição 2 | de 5 |  |  |
-| Qui 19/11 | 2.4 | de 12 |  |  |
-| Sex 20/11 | 1.1 | de 8 |  |  |
-| Sex 20/11 | 1.2 | de 11 |  |  |
-| Sáb 21/11 | 1.3 | de 10 |  |  |
-| Sáb 21/11 | 1.4 | de 8 |  |  |
-| Dom 22/11 | Revisão: erradas dos Tópicos 5 e 4 | | | |
-| Seg 23/11 | Revisão: erradas do Tópico 3 | | | |
-| Ter 24/11 | Revisão: erradas dos Tópicos 2 e 1 | | | |
-| Qua 25/11 | Revisão: as que errou de novo e as reincidências | | | |
+| Seg 16/11 | 3.2, lição 2 | **8 de 9** | G3: `'^. . .dig'` com espaços entre os pontos | Sim: forma dos comandos |
+| Seg 16/11 | 3.3, lição 1 | **6 de 7** | G1: `export PATH= "..."`, com espaço depois do `=` | Sim: forma dos comandos |
+| Ter 17/11 | 3.3, lição 2 | de 3 | | |
+| Ter 17/11 | 2.1, lição 1 | de 6 | | |
+| Qua 18/11 | 2.1, lição 2 | de 9 | | |
+| Qua 18/11 | 2.2 | de 11 | | |
+| Qui 19/11 | 2.3, lição 1 | de 7 | | |
+| Qui 19/11 | 2.3, lição 2 | de 5 | | |
+| Sex 20/11 | 2.4 | de 12 | | |
+| Sex 20/11 | 1.1 | de 8 | | |
+| Sáb 21/11 | 1.2 | de 11 | | |
+| Sáb 21/11 | 1.3 | de 10 | | |
+| Dom 22/11 | 1.4 | de 8 | | |
+| Dom 22/11 | Revisão: erradas dos Tópicos 5 e 4 |  | | |
+| Seg 23/11 | Revisão: erradas do Tópico 3 |  | | |
+| Ter 24/11 | Revisão: erradas dos Tópicos 2 e 1 |  | | |
+| Qua 25/11 | Revisão: as que errou de novo e as reincidências |  | | |
 
 ---
 
@@ -237,3 +238,27 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 Aspas: o caderno tem aspas curvas (`‘test’`) nos comandos. No terminal, só as retas: `'test'`.
 
 **Treino na VM (domingo 15/11).** Rode os cinco comandos corrigidos (G3, G4, G5, E2 e E5) na `lab-ubuntu`, de memória, a partir de um `ls -l > ~/contents.txt`. É o bloco de VM do domingo.
+
+### 3.2, lição 2 e 3.3, lição 1 — segunda 16/11
+
+**Lição 3.2, lição 2 (8 de 9).**
+
+| Exercício | Observação |
+| --- | --- |
+| G1, G2, G4, G5 e G6 | Certos, com as explicações das classes `[...]`, do `-v`, do `+`, do `\|` com `-E` e do `?` com `-c`. O G6 (`grep -cE '^c?ati'`) é exatamente o tipo de detalhe da prova |
+| G3 | **Errado pela forma.** No caderno está `'^. . .dig'`, com espaço entre os pontos: assim o `grep` exige espaços de verdade na linha e não acha nada. O certo é `'^...dig'`, os três pontos juntos. Se o espaço foi só formatação do Notion (ele às vezes troca `...` por `. . .`), me avise que a lição vira 9 de 9. O mesmo vale para o E3 (`'^....rwx'`) |
+| E1 | Certo nos cinco grupos (`pot$`, `arc\|cap\|zoo`, `[0-9]th.+`, `^[A-Z]a.*i+`). No grupo B, escreva `p+` (com `-E`) ou `pp*`: o `p++` funciona no GNU grep, mas é uma repetição dobrada que a prova não usa |
+| E2 | Certo: `sed`, com o exemplo `s/cat/dog/g` |
+| E3 | Certo na ideia: filtrar a saída do `tr` com o `grep` |
+
+**Lição 3.3, lição 1 (6 de 7).**
+
+| Exercício | Observação |
+| --- | --- |
+| G1 | **Errado pela forma.** `export PATH= "$PATH:$HOME/scripts"` tem um espaço depois do `=`. O shell lê dois argumentos: `PATH=` (que **esvazia** o `PATH`) e `"$PATH:..."`, que não é um nome válido. O certo é sem espaço: `export PATH="$PATH:$HOME/scripts"`. A explicação (o `PATH=~/scripts` substituiu a lista inteira) está certa. É o mesmo erro do `chmod u+x, go-wx` da 5.3: espaço muda o significado |
+| G2 | Certo nas regras (`#!`, `=` sem espaço, espaços dentro do `[ ]`, aspas duplas, `fi`). Para fixar, escreva as linhas corrigidas na VM: `#!/bin/bash`, `fruit1=Apples`, `fruit2=Oranges`, `elif [ $1 -gt $2 ]`, `echo "$fruit1 win!"`, `echo "$fruit2 win!"` e `fi` |
+| G3 | Certo nas três execuções, inclusive o `$#` valendo 2. Grafia: a saída usa as variáveis, então é `Apples and Oranges`, com maiúsculas |
+| E1 | Certo: `[ "$#" -eq 2 ]` e a ordem invertida dos argumentos |
+| E2 | Certo, e com um ótimo exemplo: `[ "01" == "1" ]` é falso e `[ "01" -eq "1" ]` é verdadeiro |
+| E3 | Certo: `env \| grep '^PWD='` |
+| E4 | Certo: compara com `"$PWD"` e testa o número de argumentos |
