@@ -67,19 +67,19 @@ Calendário refeito em 26/10 para a prova de 30/11 (`PLANO.md`, seção 7, e `la
 | 3 | Qui 05/11 | `simulado-03` (escrito em 18/10) | Linha de base | **27** | **67,5%** | 7 | **20** | Não informado | **Concluído: acima do corte do exame** |
 | 4 | Qui 12/11 | `simulado-04` (escrito em 04/11) | 24 ou mais | **32** | **80%** | 1 | **31** | Não informado | **Concluído: o melhor até aqui** |
 | 6 | Sex 13/11 | `simulado-06` (escrito em 12/11) | 28 ou mais | **35** | **87,5%** | 1 | **34** | Não informado | **Concluído, acima da meta** (fácil demais: ver a nota abaixo) |
-| 7 | Seg 16/11 | `simulado-07` (escrito em 13/11, padrão novo) | 28 ou mais | | | | | | A fazer |
-| 8 | Qua 18/11 | `simulado-08` (padrão novo) | 28 ou mais · ponto de ajuste | | | | | | A fazer |
-| 9 | Sex 20/11 | `simulado-09` (padrão novo) | 28 ou mais · ponto de ajuste | | | | | | A fazer |
-| 10 | **Sáb 21/11** | `simulado-10` (padrão novo) | 28 ou mais · **ponto de ajuste** | | | | | | A fazer |
-| 11 | — | `simulado-11` | — | | | | | | **Retirado em 15/11** |
-| 5 | Seg 23/11 | `simulado-05` (reescrito no padrão novo) | 30 ou mais | | | | | | A fazer |
-| 12 | **Qua 25/11** | `simulado-12` | **30 ou mais** (final) | | | | | | A fazer |
+| 7 | Ter 17/11 | `simulado-07` (nível 1 do padrão novo) | 28 ou mais | | | | | | A fazer |
+| 8 | Qui 19/11 | `simulado-08` (nível 2) | 28 ou mais · ponto de ajuste | | | | | | A fazer |
+| 9 | Sex 20/11 | `simulado-09` (nível 2) | 28 ou mais · ponto de ajuste | | | | | | A fazer |
+| 10 | **Sáb 21/11** | `simulado-10` (nível 3) | 28 ou mais · **ponto de ajuste** | | | | | | A fazer |
+| 11 | Seg 23/11 | `simulado-11` (nível 3; voltou em 17/11) | 28 ou mais | | | | | | A fazer |
+| 5 | Ter 24/11 | `simulado-05` (reescrito, nível 4) | 28 ou mais | | | | | | A fazer |
+| 12 | **Qua 25/11** | `simulado-12` (nível 4, o final) | 28 ou mais | | | | | | A fazer |
 
 **Nota sobre o simulado 06.** O resultado é real, mas o simulado ficou mais fácil que a prova: foi escrito para retestar os erros do 04 e cobrou vários conceitos de forma direta. A partir do 07, as questões são de situação (seção 8.1 da `operação_pratica.md`), e é normal os acertos caírem um pouco.
 
 **Simulados do curso:** o simulado 1 no domingo 15/11 e o 2 no domingo 22/11. Registre aqui o acerto e o total de questões de cada um.
 
-**Mini-simulados (20 questões):** R3 em 06/11 (17 de 20), R4 em 07/11 (18 de 20), M1 em 19/11, M4 em 24/11 e M6 em 26/11 (o M3 saiu em 15/11) (`labs/operacao-pratica.md`, seção 3); o M5 saiu em 09/11 e o M2 em 11/11. O R1 saiu do plano em 06/11: os temas dele (permissões, `tar`, redirecionamento, diretórios, lacunas) já aparecem em todo simulado e no banco de lacunas. Ele continua na seção 6 de `praticas_simulados.md` como material de consulta. Calendário refeito em 06/11.
+**Mini-simulados (20 questões):** R3 em 06/11 (17 de 20), R4 em 07/11 (18 de 20), e o M6 em 26/11; o M1, o M3 e o M4 saíram (desde 17/11, um simulado completo por dia) (`labs/operacao-pratica.md`, seção 3); o M5 saiu em 09/11 e o M2 em 11/11. O R1 saiu do plano em 06/11: os temas dele (permissões, `tar`, redirecionamento, diretórios, lacunas) já aparecem em todo simulado e no banco de lacunas. Ele continua na seção 6 de `praticas_simulados.md` como material de consulta. Calendário refeito em 06/11.
 
 ### 2.2 Acertos por tópico, simulado a simulado
 
@@ -185,7 +185,7 @@ Regra de leitura: um tema abaixo de 60% em um simulado vira tema do mini-simulad
 |---|---|---|---|---|---|---|
 | 3 | 1 | Distribuição *upstream* do RHEL | Debian | Fedora | Convicção | Correção 62 |
 | 7 | 1 | Tecnologia em que cada sistema tem seu próprio kernel | Contêineres | Virtualização por hipervisor | Convicção | Correção 63 |
-| 10 | 2 | O que faz `cd -` | Vai para o diretório pai | Volta ao diretório anterior | Convicção | Correção 64 |
+| 10 | **Sáb 21/11** | `simulado-10` (nível 3) | 28 ou mais · **ponto de ajuste** | | | | | | A fazer |
 | 14 | 2 | Significado de `/usr` | *User* | *Unix System Resources* | Convicção | Correção 65 |
 | 15 | 2 | Diretório virtual com informações dos processos | `/dev` | `/proc` | Convicção | Correção 66 |
 | 16 | 2 | Documentação completa do `cp` | `cp --manual` | `man cp` | Convicção | Correção 67 |
@@ -334,9 +334,9 @@ Nota de 06/10: o fechamento da Semana 4 dizia "dez correções (43 a 52)". As co
 | 7 | O `echo $?` deve vir logo após o comando | Sessão 1, 09/09 |
 | 8 | `type ls` = alias | Sessão 3, 10/09 |
 | 9 | O `which ls` devolve `/usr/bin/ls`, com a barra inicial | Sessão 3 |
-| 10 | Digitação: `/usr/share/doc`, não `/usr/share/odc` | Sessão 3 |
+| 10 | **Sáb 21/11** | `simulado-10` (nível 3) | 28 ou mais · **ponto de ajuste** | | | | | | A fazer |
 | 11 | Brace expansion `{01..20}` não é globbing | Sessão 4, 13/09 |
-| 12 | Direção da herança de variáveis | Sessão 4 |
+| 12 | **Qua 25/11** | `simulado-12` (nível 4, o final) | 28 ou mais | | | | | | A fazer |
 | 13 | O que o `grep` filtra | Sessão 4 |
 | 14 | Digitação: `env | wc -l`, não `emv` | Sessão 4 |
 | 15 | O `tar` empacota; a compressão é uma flag | Sessão 4 |
@@ -501,3 +501,4 @@ São erros de conteúdo já estudado. Desde 26/10 eles têm treino próprio na V
 | 12/11/2026 | Simulado 04: **32 de 40, 31 firmes** (meta 24); Tópico 5 com 3 de 7, quatro erros de leitura; lacunas 09 (5 de 5) e os 9 retornos (9 de 9); LPI 4.4 (7 de 9, comandos a confirmar) e 5.4 (8 de 8); aulas 56 a 59; simulado 06 escrito |
 | 13/11/2026 | Simulado 06: **35 de 40, 34 firmes**; você notou temas repetidos e questões óbvias, e os simulados seguintes passam ao padrão novo (`operação_pratica.md`, seção 8.1); simulado 07 escrito; curso termina na aula 64, com dois simulados próprios em 15 e 22/11; R2 retirado; LPI 3.1 (8 de 9) e 3.2, lição 1 (7 de 12); lacunas 10 (4 de 5) |
 | 15/11/2026 | Fim de semana sem estudo; plano refeito até 30/11: simulado 07 e aulas 60 a 64 em 16/11, simulado 1 do curso em 17/11, simulados 08 (18), 09 (20), 10 (21), 2 do curso (22), 05 reescrito (23) e 12 (25); M1 em 19/11, M4 em 24/11 e M6 em 26/11; saíram o simulado 11 e o M3; sexta 27/11 de reserva |
+| 17/11/2026 | Segunda 16/11 sem o simulado 07 nem as aulas; plano refeito com **um simulado completo por dia** de 17 a 25/11 e dificuldade em quatro níveis: 07 (17), 1 do curso (18), 08 (19), 09 (20), 10 e ponto de ajuste (21), 2 do curso (22), 11 (23), 05 reescrito (24) e 12 (25); M6 em 26/11; saíram o M1 e o M4 |
