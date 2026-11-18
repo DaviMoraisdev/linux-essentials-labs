@@ -583,10 +583,10 @@ Respondidas com a série 08, na quarta 11/11: **2 de 2** (`2744` e `chgrp`). Os 
 | 07 | 10/11 | **3 de 5** (conteúdo: 5) | 2 de forma: `update db` (é `updatedb`, junto) e `proc` (o pedido é o caminho: `/proc`). Na 4, `sudo chown` foi aceito, mas o comando é só `chown` | Fechada em 13/11, com a série 10 (as duas certas) |
 | 08 | 11/11 | **4 de 5** (conteúdo: 5) | 1 de forma: `Libre` (o nome é `LibreOffice`). As 2 extras do R4 vieram certas: `2744` e `chgrp` | Fechada em 16/11, com a série 11 (certa) |
 | 09 | 12/11 | **5 de 5** | Nenhuma. No item 1, `term` foi aceito; escreva o nome do sinal em maiúsculas, `TERM` ou `SIGTERM`. **Retornos: 9 de 9**: as séries 01, 02 e 03 estão fechadas | — |
-| 10 | 13/11 | **4 de 5** | 1 de conteúdo: `grpadd` (é `groupadd`). **Retornos: 2 de 2** (`updatedb` e `/proc`): a série 07 está fechada | Ter 17/11: escrita dentro da série 13 |
+| 10 | 13/11 | **4 de 5** | 1 de conteúdo: `grpadd` (é `groupadd`). **Retornos: 2 de 2** (`updatedb` e `/proc`): a série 07 está fechada | Fechada em 17/11, com a série 13 (certa) |
 | 11 | 16/11 | **5 de 5** | Nenhuma. **Retorno: 1 de 1** (`LibreOffice`): a série 08 está fechada | — |
 | 12 | 16/11 | **5 de 5** | Nenhuma | — |
-| 13 | | de 5 | | |
+| 13 | 17/11 | **5 de 5** | Nenhuma. **Retorno: 1 de 1** (`groupadd`): a série 10 está fechada | — |
 | 14 | | de 5 | | |
 | 15 | | de 5 | | |
 | 16 | | de 5 | | |
