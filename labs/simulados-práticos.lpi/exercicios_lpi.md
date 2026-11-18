@@ -99,8 +99,8 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 | Sex 13/11 | 3.2, lição 1 | **7 de 12** | G3, G4, G5 (forma do comando), E2 e E5 | Sim: forma dos comandos |
 | Seg 16/11 | 3.2, lição 2 | **8 de 9** | G3: `'^. . .dig'` com espaços entre os pontos | Sim: forma dos comandos |
 | Seg 16/11 | 3.3, lição 1 | **6 de 7** | G1: `export PATH= "..."`, com espaço depois do `=` | Sim: forma dos comandos |
-| Ter 17/11 | 3.3, lição 2 | de 3 | | |
-| Ter 17/11 | 2.1, lição 1 | de 6 | | |
+| Ter 17/11 | 3.3, lição 2 | **3 de 3** | Nenhuma | — |
+| Ter 17/11 | 2.1, lição 1 | **5 de 6** | E1: `game{1. .5}`, com espaço entre os pontos | Sim: forma dos comandos |
 | Qua 18/11 | 2.1, lição 2 | de 9 | | |
 | Qua 18/11 | 2.2 | de 11 | | |
 | Qui 19/11 | 2.3, lição 1 | de 7 | | |
@@ -262,3 +262,16 @@ Aspas: o caderno tem aspas curvas (`‘test’`) nos comandos. No terminal, só 
 | E2 | Certo, e com um ótimo exemplo: `[ "01" == "1" ]` é falso e `[ "01" -eq "1" ]` é verdadeiro |
 | E3 | Certo: `env \| grep '^PWD='` |
 | E4 | Certo: compara com `"$PWD"` e testa o número de argumentos |
+
+### 3.3, lição 2 e 2.1, lição 1 — terça 17/11
+
+**Lição 3.3, lição 2 (3 de 3).** O G1 está perfeito: os três códigos de saída (1, 2 e 0) e o porquê de cada um, inclusive o `grep` devolvendo 1 quando não acha nada. O G2 identifica o `$1` como o diretório. O E1 funciona e trata o texto `texto` antes de comparar; o `[[ ... =~ ... ]]` vai além da prova, mas está certo.
+
+**Lição 2.1, lição 1 (5 de 6).**
+
+| Exercício | Observação |
+| --- | --- |
+| G1 a G3 | Certos, inclusive o `ls -l -a` sem argumento (usa o diretório atual) e as aspas duplas que expandem o `$USER` em um só argumento |
+| E1 | **Errado pela forma.** No caderno está `touch game{1. .5}`, com espaço entre os pontos: assim o Bash não reconhece a sequência e cria um arquivo chamado `game{1.` e outro chamado `.5}`. O certo é `touch game{1..5}`, os dois pontos juntos. É a segunda vez que os pontos aparecem separados (a primeira foi o `'^. . .dig'` da 3.2). Confira na VM se é assim que você digita ou se é o Notion que separa |
+| E2 | Certo: `rm game[1-5]` (também vale `rm game*` ou `rm game?`) |
+| E3 | Certo: pipe e arquivo intermediário. A terceira forma é a substituição de comando: `echo "Hoje: $(date)"` |
