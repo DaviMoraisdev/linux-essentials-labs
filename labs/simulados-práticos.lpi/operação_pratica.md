@@ -45,6 +45,21 @@ Este arquivo substitui os arquivos semanais a partir de 05/11. O registro de cad
 
 ## 3. Calendário
 
+**Ajustado em 18/11.** O simulado 07 parou na questão 14 e termina na quarta, como primeira tarefa, junto com as duas últimas aulas do curso. Cada simulado seguinte andou um dia, e o simulado 05 saiu do calendário (fica como opcional para a reserva de 27/11).
+
+| Mudança | Antes (17/11) | Agora (18/11) |
+|---|---|---|
+| Simulado 07 | Ter 17/11 | Q1 a 14 na ter 17/11; **Q15 a 40 na qua 18/11** |
+| Aulas finais do curso | Ter 17/11 | Aulas 59 a 63 feitas; **as duas últimas na qua 18/11** |
+| Simulado 1 do curso | Qua 18/11 | **Qui 19/11** |
+| Simulado 08 (nível 2) | Qui 19/11 | **Sex 20/11** (feriado) |
+| Simulado 09 (nível 2) | Sex 20/11 | **Sáb 21/11** |
+| Simulado 10 (nível 3) e ponto de ajuste | Sáb 21/11 | **Dom 22/11** |
+| Simulado 2 do curso | Dom 22/11 | **Seg 23/11** |
+| Simulado 11 | Seg 23/11 (nível 3) | **Ter 24/11** (nível 4) |
+| Simulado 05 reescrito | Ter 24/11 | **Opcional**, na reserva de 27/11 |
+| Simulado 12 (final) | Qua 25/11 | Qua 25/11 |
+
 **Refeito em 17/11**, a seu pedido: um simulado por dia, com dificuldade crescente.
 
 | Mudança | Antes (15/11) | Agora (17/11) |
@@ -70,22 +85,22 @@ Este arquivo substitui os arquivos semanais a partir de 05/11. O registro de cad
 | Simulado 1 do curso e LPI 2.1 | Dom 15/11 | **Ter 17/11** |
 | Simulado 08 | Ter 17/11 | **Qua 18/11** |
 | M1 | Seg 16/11 | Conteúdo | LPI 3.2, lição 2 e 3.3, lição 1 · lacunas 11 e 12 (feitos). O **simulado 07** e as **aulas 60 a 64** passaram para a ter 17/11 | — | 3.2, lição 2; 3.3, lição 1 (feito) | Séries 11 e 12 |
-| **Ter 17/11** | A | **Simulado 07** (nível 1 do padrão novo) — **primeira tarefa do dia** · à noite, **aulas 60 a 64** (fim do conteúdo do curso) | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 3.3, lição 2; 2.1, lição 1 | Série 13 (com o retorno escrito nela) |
-| **Qua 18/11** | A | **Simulado 1 do curso** · à noite, refazer as erradas | Os cinco comandos corrigidos da LPI 3.2, lição 1 e os que errar no simulado | 2.1, lição 2; 2.2 | Série 14 |
-| **Qui 19/11** | A | **Simulado 08** (nível 2) · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 2.3, lição 1; 2.3, lição 2 | Série 15 |
-| **Sex 20/11** | A | **Simulado 09** (nível 2, feriado) — conta para o ponto de ajuste · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 2.4; 1.1 | Série 16 |
-| **Sáb 21/11** | A | **Simulado 10** (nível 3) · **ponto de ajuste** (média de acertos firmes dos simulados 08, 09 e 10) | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 1.2; 1.3 | Série 17 |
-| **Dom 22/11** | A | **Simulado 2 do curso** · releitura das colas · **fim das 24 lições da LPI** | Os que errar no simulado do curso | 1.4; Revisão: erradas dos Tópicos 5 e 4 | Séries 18 e 19 |
-| **Seg 23/11** | A | **Simulado 11** (nível 3) · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | Revisão: erradas do Tópico 3 | Série 20 |
-| **Ter 24/11** | A | **Simulado 05** (nível 4, reescrito) · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | Revisão: erradas dos Tópicos 2 e 1 | Série 21 |
+| Ter 17/11 | A | **Simulado 07** até a questão 14 · LPI 3.3, lição 2 e 2.1, lição 1 · aulas 59 a 63 · lacunas 13 (feitos). O resto do simulado 07 e as **duas últimas aulas** passaram para a qua 18/11 | — | 3.3, lição 2; 2.1, lição 1 (feito) | Série 13 |
+| **Qua 18/11** | A | **Terminar o simulado 07** (questões 15 a 40, cerca de 40 min) — **primeira tarefa do dia** · à noite, **as duas últimas aulas** (fim do conteúdo do curso) | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 2.1, lição 2; 2.2 | Série 14 |
+| **Qui 19/11** | A | **Simulado 1 do curso** · à noite, refazer as erradas | Os cinco comandos corrigidos da LPI 3.2, lição 1 e os que errar no simulado | 2.3, lição 1; 2.3, lição 2 | Série 15 |
+| **Sex 20/11** | A | **Simulado 08** (nível 2, feriado) — conta para o ponto de ajuste · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 2.4; 1.1 | Série 16 |
+| **Sáb 21/11** | A | **Simulado 09** (nível 2) — conta para o ponto de ajuste · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 1.2; 1.3 | Série 17 |
+| **Dom 22/11** | A | **Simulado 10** (nível 3) · **ponto de ajuste** (média de acertos firmes dos simulados 08, 09 e 10) · **fim das 24 lições da LPI** | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 1.4; Revisão: erradas dos Tópicos 5 e 4 | Séries 18 e 19 |
+| **Seg 23/11** | A | **Simulado 2 do curso** · à noite, refazer as erradas | Os que errar no simulado do curso | Revisão: erradas do Tópico 3 | Série 20 |
+| **Ter 24/11** | A | **Simulado 11** (nível 4) · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | Revisão: erradas dos Tópicos 2 e 1 | Série 21 |
 | **Qua 25/11** | A | **Simulado 12** (nível 4, o final, o mais próximo da prova) · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | Revisão: as que errou de novo e as reincidências | Série 22 |
 | Qui 26/11 | Leve | **M6** — mini-simulado de 20 questões, só com as reincidências · releitura das colas | Os blocos das reincidências | — | Séries 23 e 24 |
-| Sex 27/11 | Reserva | **Reserva**: só para o que tiver atrasado; se nada atrasou, descanso | — | — | — |
+| Sex 27/11 | Reserva | **Reserva**: só para o que tiver atrasado; se nada atrasou, descanso (o simulado 05 fica como opcional) | — | — | — |
 | Sáb 28/11 | Descanso | Descanso antes da prova | — | — | — |
 | Dom 29/11 | Descanso | Descanso antes da prova · não estudar na véspera | — | — | — |
 | **Seg 30/11** | Prova | **PROVA — Linux Essentials 010-160** | — | — | — |
 
-**Contas (de 17 a 26/11):** 9 simulados completos, um por dia de 17 a 25/11 (07, 1 do curso, 08, 09, 10, 2 do curso, 11, 05 reescrito e 12), o M6 no dia leve, as 11 lições da LPI que faltam mais quatro blocos de revisão, as séries 13 a 24 das lacunas, a sexta 27 de reserva e dois dias de descanso. Saíram o M1, o M3 e o M4.
+**Contas (de 18 a 26/11):** o fim do simulado 07 e mais 7 simulados completos, um por dia (1 do curso, 08, 09, 10, 2 do curso, 11 e 12), o M6 no dia leve, as 9 lições da LPI que faltam mais quatro blocos de revisão, as séries 14 a 24 das lacunas, a sexta 27 de reserva (simulado 05 opcional) e dois dias de descanso.
 
 **Se um dia cair**, ele não é reposto. O dia seguinte segue o calendário, e a regra 1 vale aqui também.
 
@@ -254,7 +269,7 @@ São os erros que voltaram depois de corrigidos. É a lista que guia os treinos 
 | Herança de variáveis: `export` | **3** (Correções 12 e 71; Q16 do simulado 03) | O `export` marca a variável para os filhos; o `env NOME` tenta executar um comando | V4 |
 | `{}` tratado como globbing | 2 | A expansão de chaves cria os nomes sem olhar o disco | — |
 | Sinal padrão do `kill` | 2 | `SIGTERM` (15); o `SIGKILL` (9) só com `kill -9` | V7 |
-| **Forma das lacunas e dos comandos** (palavra a mais, espaço a mais, caminho sem `/`) | **8** (Q11 do simulado 01; Q7 e Q13 do simulado 02; séries 01 e 02 das lacunas; série 07: `update db` e `proc`; LPI 5.3 G2: `chmod u+x, go-wx`; série 08: `Libre`) | Na lacuna, só o pedido, escrito como se digita: `updatedb`, `/proc`, `chown`, `LibreOffice`. No terminal, espaço separa argumentos: `chmod u+x,go-wx arq`, sem espaço depois da vírgula | — |
+| **Forma das lacunas e dos comandos** (palavra a mais, espaço a mais, caminho sem `/`) | **14** (Q11 do simulado 01; Q7 e Q13 do simulado 02; séries 01 e 02 das lacunas; série 07: `update db` e `proc`; LPI 5.3 G2: `chmod u+x, go-wx`; série 08: `Libre`; LPI 3.2 L1 G4 e G5; LPI 3.2 L2 G3, `'^. . .dig'`; LPI 3.3 L1 G1, `PATH= "..."`; LPI 2.1 L1 E1, `{1. .5}`; aulas 59 a 63, `chmod u=rwx, g=rw, o=rwx`) | Na lacuna, só o pedido, escrito como se digita: `updatedb`, `/proc`, `chown`, `LibreOffice`. No terminal, **espaço separa argumentos**: `chmod u+x,go-wx arq` e `PATH="$PATH:..."`, sem espaço; e os pontos vão juntos: `'^...dig'`, `{1..5}` | — |
 | Seções do `man` (`man 5` contra `man -k`) | 2 (Q16 do simulado 02; Q7 do R3) | `man 5 arquivo` abre o **formato do arquivo**; `man -k` só **procura** a palavra e lista páginas | V2 |
 | `help` para os comandos internos | **3** (Correção 74; Q13 do simulado 02; série 02 das lacunas) | `help cd`; o `man` é para programas, o `type` diz o que é interno | V2 |
 | Padrão de globbing sem correspondência | 2 (Semana 3; Q24 do simulado 03) | O Bash entrega o texto literal, como `*.log`; não há erro | V1 |
@@ -274,8 +289,8 @@ São os erros que voltaram depois de corrigidos. É a lista que guia os treinos 
 | Linha de base | 03 (05/11) | **20** (feito) |
 | Primeira semana | 04 (12/11) | **24 ou mais** |
 | Segunda semana | 06 (13/11: **34**), 07 (17/11, nível 1) e 1 do curso (18/11) | **28 ou mais** |
-| Terceira semana | 08 (19/11) e 09 (20/11), nível 2, e 10 (21/11), nível 3, que contam para o ponto de ajuste | **28 ou mais** (os níveis sobem) |
-| Final | 2 do curso (22/11), 11 (23/11, nível 3), 05 reescrito (24/11) e 12 (25/11), nível 4 | **28 ou mais** nos de nível 4; acima de 26 já é aprovação |
+| Terceira semana | 08 (20/11) e 09 (21/11), nível 2, e 10 (22/11), nível 3, que contam para o ponto de ajuste | **28 ou mais** (os níveis sobem) |
+| Final | 2 do curso (23/11), 11 (24/11) e 12 (25/11), nível 4 | **28 ou mais** nos de nível 4; acima de 26 já é aprovação |
 
 **A prova está comprada para 30/11** (confirmado em 09/11). O sábado 21/11 deixa de ser decisão de data e vira **ponto de ajuste**: a média de acertos firmes dos simulados 08, 09 e 10 define o foco dos últimos dias.
 
@@ -295,7 +310,7 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 | Simulado 03 | Pronto (`simulado-03.md`) |
 | Simulado 04 | Pronto (`simulado-04.md`, escrito em 04/11), para a quarta 11/11. Substitui o exame final do NDG, que fica como treino extra opcional |
 | R3 e R4 | Feitos em 06 e 07/11. O R1 saiu do plano em 06/11 e o R2 em 13/11 |
-| Simulado 05 | Escrito em 04/11 no formato antigo; **reescrito no padrão novo, nível 4**, para a terça 24/11 |
+| Simulado 05 | Escrito em 04/11 no formato antigo. Saiu do calendário em 18/11; fica como opcional para a reserva de 27/11 |
 | Simulados 06 a 12 | 06 e 07 prontos; 08 a 12 escritos no padrão novo, com nível crescente, cada um pronto **pelo menos um dia antes** |
 | M6 | Escrito por mim a partir das reincidências, pronto na véspera. Saíram o M1, o M2, o M3, o M4 e o M5: com um simulado por dia, os erros viram retestes dentro dos próprios simulados |
 | Lacunas | Prontas (`lacunas.md`, 24 séries) |
@@ -315,7 +330,7 @@ Em 13/11 você apontou que o simulado 06 repetiu temas e tinha questões óbvias
 | **Sem repetição** | Nenhuma questão repete os simulados anteriores, os reforços ou os Exercícios da LPI; retestar um erro significa cobrar o mesmo conceito em outra situação |
 | **Objetivos menos cobertos** | NFS, OSI, compatibilidade de licenças, HTTPS, `info`, `/usr/share/doc`, `history`, `find -iname`, `sort` sem `-n`, `uniq` sem `sort`, `/dev/zero`, `/var/tmp`, `load average`, `host`, sub-rede, `lspci`, `/etc/skel` |
 | **Gabarito equilibrado** | As respostas se espalham entre A e E, conferidas por script |
-| **Dificuldade crescente** (desde 17/11) | **Nível 1** (07): situações curtas, um passo de raciocínio. **Nível 2** (08 e 09): dois passos, combinando dois comandos ou conceitos. **Nível 3** (10 e 11): saídas e scripts para rastrear, com mais distratores de um detalhe. **Nível 4** (05 reescrito e 12): o mais próximo da prova, com cenários longos e mais questões de escolher duas |
+| **Dificuldade crescente** (desde 17/11) | **Nível 1** (07): situações curtas, um passo de raciocínio. **Nível 2** (08 e 09): dois passos, combinando dois comandos ou conceitos. **Nível 3** (10): saídas e scripts para rastrear, com mais distratores de um detalhe. **Nível 4** (11 e 12): o mais próximo da prova, com cenários longos e mais questões de escolher duas |
 
 Fontes consultadas: [questões de exemplo do 010-160 (EduSum)](https://www.edusum.com/lpi/lpi-linux-essentials-010-160-certification-sample-questions), [dicas de estilo das questões de navegação (HackMD)](https://hackmd.io/jlCQdqI2RvSVPrK307Sgyg) e [objetivos do exame na LPI](https://www.lpi.org/gljr), esta última já na versão 2.0 (010-200), usada só como lista de termos.
 
@@ -336,14 +351,14 @@ Fontes consultadas: [questões de exemplo do 010-160 (EduSum)](https://www.edusu
 | 14/11 | — | Não realizado (remarcado para 16 e 17/11) | — | — | — | — | — |
 | 15/11 | — | Não realizado (remarcado para 17/11) | — | — | — | — | — |
 | 16/11 | Conteúdo | LPI 3.2, lição 2 e 3.3, lição 1 · lacunas 11 e 12 (simulado 07 e aulas para 17/11) | — | — | Séries 11 e 12: **5 de 5** e **5 de 5** · retorno: **1 de 1** | 3.2, lição 2: **8 de 9** · 3.3, lição 1: **6 de 7** | Forma dos comandos (`^. . .dig`, `PATH= "..."`) |
-| 17/11 | A | Simulado 07 (nível 1) · Aulas 60–64 (fim do curso) | Curso: de |  | Série 13: de | 3.3, lição 2 e 2.1, lição 1 · de | |
-| 18/11 | A | Simulado 1 do curso · Refazer erradas | Curso: de |  | Série 14: de | 2.1, lição 2 e 2.2 · de | |
-| 19/11 | A | Simulado 08 (nível 2) · Refazer erradas | de 40 |  | Série 15: de | 2.3, lição 1 e 2.3, lição 2 · de | |
-| 20/11 | A | Simulado 09 (nível 2) · feriado | de 40 |  | Série 16: de | 2.4 e 1.1 · de | |
-| 21/11 | A | Simulado 10 (nível 3) · Ponto de ajuste | de 40 |  | Série 17: de | 1.2 e 1.3 · de | |
-| 22/11 | A | Simulado 2 do curso · Fim das lições | Curso: de |  | Séries 18 e 19: de | 1.4 e Revisão: erradas dos Tópicos 5 e 4 · de | |
-| 23/11 | A | Simulado 11 (nível 3) · Refazer erradas | de 40 |  | Série 20: de | Revisão: erradas do Tópico 3 · de | |
-| 24/11 | A | Simulado 05 (nível 4) · Refazer erradas | de 40 |  | Série 21: de | Revisão: erradas dos Tópicos 2 e 1 · de | |
+| 17/11 | A | Simulado 07 até a Q14 · LPI 3.3, lição 2 e 2.1, lição 1 · aulas 59 a 63 | Parcial (Q1 a 14) | — | Série 13: **5 de 5** · retorno: **1 de 1** | 3.3, lição 2: **3 de 3** · 2.1, lição 1: **5 de 6** | Forma: `{1. .5}`, `chmod u=rwx, g=rw, o=rwx` |
+| 18/11 | A | Simulado 07: Q15–40 · Últimas 2 aulas (fim do curso) | Curso: de |  | Série 14: de | 2.1, lição 2 e 2.2 · de | |
+| 19/11 | A | Simulado 1 do curso · Refazer erradas | Curso: de |  | Série 15: de | 2.3, lição 1 e 2.3, lição 2 · de | |
+| 20/11 | A | Simulado 08 (nível 2) · feriado | de 40 |  | Série 16: de | 2.4 e 1.1 · de | |
+| 21/11 | A | Simulado 09 (nível 2) · Refazer erradas | de 40 |  | Série 17: de | 1.2 e 1.3 · de | |
+| 22/11 | A | Simulado 10 (nível 3) · Ponto de ajuste · Fim das lições | de 40 |  | Séries 18 e 19: de | 1.4 e Revisão: erradas dos Tópicos 5 e 4 · de | |
+| 23/11 | A | Simulado 2 do curso · Refazer erradas | Curso: de |  | Série 20: de | Revisão: erradas do Tópico 3 · de | |
+| 24/11 | A | Simulado 11 (nível 4) · Refazer erradas | de 40 |  | Série 21: de | Revisão: erradas dos Tópicos 2 e 1 · de | |
 | 25/11 | A | Simulado 12 (final, nível 4) | de 40 |  | Série 22: de | Revisão: as que errou de novo e as reincidências · de | |
 | 26/11 | Leve | M6 (reincidências) · Colas | de 20 |  | Séries 23 e 24: de | — | |
 
@@ -491,3 +506,24 @@ O caderno diz: "`ps` lista os processos do usuário em específico". Sem opçõe
 | `ps -t pts/0` | Unix | Processos do terminal `pts/0` |
 
 Na VM: `ps`, depois `ps aux | wc -l` e compare as quantidades.
+
+### Curso, aulas 59 a 63 — terça 17/11
+
+**Conteúdo registrado**
+
+| Tema | O que ficou anotado |
+|---|---|
+| Sessões e logins | `who` (quem está logado e em qual tty), `w`, `last` (histórico) |
+| Contas | `/etc/passwd`, `/etc/group`, `/etc/skel`, `man 5 shadow`; prática com `groupadd` e `useradd -c -m -G` |
+| `sudo` | Tarefas administrativas que afetam o sistema todo |
+| Permissões | `r` 4, `w` 2, `x` 1; trios dono, grupo e outros; `664` e `775` decompostos; `chmod` simbólico com `u`, `g`, `o` e `-R` |
+| Prática de permissões | `755` = `rwxr-xr-x`; `rwxr-xr--` = `754`; `chmod`, `chown` e `chgrp` |
+
+**Pontos fortes:** o `man 5 shadow` (a seção 5 é a de formatos de arquivo, o erro antigo do R3, agora usado do jeito certo), as conversões de octal, e o `useradd` com `-c`, `-m` e `-G`, que acrescenta o grupo complementar sem tirar o primário.
+
+**Ajustes de caderno (sem correção numerada)**
+
+1. **Espaço depois da vírgula no `chmod`.** `chmod u=rwx, g=rw, o=rwx -R permissoes/` falha: o espaço separa os argumentos, e o `chmod` responde `invalid mode`. Certo: `chmod -R u=rwx,g=rw,o=rwx permissoes/`. A anotação "todas as permissões para todos" também não confere: o grupo fica só com `rw`. É a mesma reincidência da LPI 5.3 G2.
+2. **Prática do `/etc/skel`, passo 4.** `ls /home/skel` lista um diretório que não existe. O que se quer ver é a pasta do `joe`: `ls -a /home/joe` (o `test` deve aparecer lá, copiado do `/etc/skel`).
+3. **Nome do usuário.** O enunciado pede `joe`, minúsculo; no comando está `Joe`. Nomes de usuário são, por convenção, em minúsculas, e o Ubuntu recusa maiúsculas no `adduser`. Use `sudo useradd -c "Joe Joe" -m -G financeiro joe`.
+4. Os comandos que mexem no `/etc/skel`, no `groupadd` e no `useradd` precisam de `sudo`.
