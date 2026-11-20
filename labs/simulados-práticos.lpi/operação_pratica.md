@@ -45,6 +45,20 @@ Este arquivo substitui os arquivos semanais a partir de 05/11. O registro de cad
 
 ## 3. Calendário
 
+**Ajustado em 19/11.** A quinta fez o simulado 07 inteiro (31 de 40), fechou as aulas do curso e a LPI 2.3. Os simulados do curso foram para as vagas que ainda cabem, e o M6 ficou opcional.
+
+| Mudança | Antes (18/11) | Agora (19/11) |
+|---|---|---|
+| Simulado 07 | Q15 a 40 na qua 18/11 | Feito inteiro na qui 19/11: **31 de 40** |
+| Aulas finais | Qua 18/11 | Feitas na qui 19/11: **curso fechado** (restam os dois simulados dele) |
+| Simulado 1 do curso | Qui 19/11 | **Seg 23/11** |
+| Simulado 2 do curso | Seg 23/11 | **Qui 26/11** |
+| M6 | Qui 26/11 | **Opcional**, na reserva de 27/11 |
+| LPI 2.1, lição 2 e 2.2 | Qua 18/11 | **Sex 20/11** |
+| Lições da LPI | Até dom 22/11 | **Até seg 23/11** |
+
+Os simulados 08 (sex 20), 09 (sáb 21), 10 com o ponto de ajuste (dom 22), 11 (ter 24) e 12 (qua 25) não mudaram.
+
 **Ajustado em 18/11.** O simulado 07 parou na questão 14 e termina na quarta, como primeira tarefa, junto com as duas últimas aulas do curso. Cada simulado seguinte andou um dia, e o simulado 05 saiu do calendário (fica como opcional para a reserva de 27/11).
 
 | Mudança | Antes (17/11) | Agora (18/11) |
@@ -86,21 +100,21 @@ Este arquivo substitui os arquivos semanais a partir de 05/11. O registro de cad
 | Simulado 08 | Ter 17/11 | **Qua 18/11** |
 | M1 | Seg 16/11 | Conteúdo | LPI 3.2, lição 2 e 3.3, lição 1 · lacunas 11 e 12 (feitos). O **simulado 07** e as **aulas 60 a 64** passaram para a ter 17/11 | — | 3.2, lição 2; 3.3, lição 1 (feito) | Séries 11 e 12 |
 | Ter 17/11 | A | **Simulado 07** até a questão 14 · LPI 3.3, lição 2 e 2.1, lição 1 · aulas 59 a 63 · lacunas 13 (feitos). O resto do simulado 07 e as **duas últimas aulas** passaram para a qua 18/11 | — | 3.3, lição 2; 2.1, lição 1 (feito) | Série 13 |
-| **Qua 18/11** | A | **Terminar o simulado 07** (questões 15 a 40, cerca de 40 min) — **primeira tarefa do dia** · à noite, **as duas últimas aulas** (fim do conteúdo do curso) | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 2.1, lição 2; 2.2 | Série 14 |
-| **Qui 19/11** | A | **Simulado 1 do curso** · à noite, refazer as erradas | Os cinco comandos corrigidos da LPI 3.2, lição 1 e os que errar no simulado | 2.3, lição 1; 2.3, lição 2 | Série 15 |
-| **Sex 20/11** | A | **Simulado 08** (nível 2, feriado) — conta para o ponto de ajuste · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 2.4; 1.1 | Série 16 |
-| **Sáb 21/11** | A | **Simulado 09** (nível 2) — conta para o ponto de ajuste · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 1.2; 1.3 | Série 17 |
-| **Dom 22/11** | A | **Simulado 10** (nível 3) · **ponto de ajuste** (média de acertos firmes dos simulados 08, 09 e 10) · **fim das 24 lições da LPI** | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 1.4; Revisão: erradas dos Tópicos 5 e 4 | Séries 18 e 19 |
-| **Seg 23/11** | A | **Simulado 2 do curso** · à noite, refazer as erradas | Os que errar no simulado do curso | Revisão: erradas do Tópico 3 | Série 20 |
-| **Ter 24/11** | A | **Simulado 11** (nível 4) · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | Revisão: erradas dos Tópicos 2 e 1 | Série 21 |
-| **Qua 25/11** | A | **Simulado 12** (nível 4, o final, o mais próximo da prova) · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | Revisão: as que errou de novo e as reincidências | Série 22 |
-| Qui 26/11 | Leve | **M6** — mini-simulado de 20 questões, só com as reincidências · releitura das colas | Os blocos das reincidências | — | Séries 23 e 24 |
-| Sex 27/11 | Reserva | **Reserva**: só para o que tiver atrasado; se nada atrasou, descanso (o simulado 05 fica como opcional) | — | — | — |
+| Qua 18/11 | A | Sem registro enviado. O fim do simulado 07 e as aulas passaram para a qui 19/11 | — | — | Série 14 |
+| Qui 19/11 | A | **Simulado 07** completo (31 de 40) · aulas 63 e 64 (fim do conteúdo do curso) · LPI 2.3, lições 1 e 2 · lacunas 15 (feitos). O simulado 1 do curso passou para a seg 23/11 | — | 2.3, lição 1; 2.3, lição 2 (feito) | Série 15 |
+| **Sex 20/11** | A | **Simulado 08** (nível 2, feriado) — **primeira tarefa** · conta para o ponto de ajuste · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 2.1, lição 2; 2.2 | Série 16 (e a 14, se ficou pendente) |
+| **Sáb 21/11** | A | **Simulado 09** (nível 2) — conta para o ponto de ajuste · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 2.4; 1.1 | Série 17 |
+| **Dom 22/11** | A | **Simulado 10** (nível 3) · **ponto de ajuste** (média de acertos firmes dos simulados 08, 09 e 10) | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | 1.2; 1.3 | Séries 18 e 19 |
+| **Seg 23/11** | A | **Simulado 1 do curso** · **fim das 24 lições da LPI** · à noite, refazer as erradas | Os que errar no simulado do curso | 1.4; Revisão: erradas dos Tópicos 5 e 4 | Série 20 |
+| **Ter 24/11** | A | **Simulado 11** (nível 4) · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | Revisão: erradas do Tópico 3 | Série 21 |
+| **Qua 25/11** | A | **Simulado 12** (nível 4, o final, o mais próximo da prova) · à noite, refazer as erradas | Só os comandos que errar no simulado; sem erro de comando, o tempo vai para refazer as erradas | Revisão: erradas dos Tópicos 2 e 1 e as reincidências | Série 22 |
+| **Qui 26/11** | A | **Simulado 2 do curso** · releitura das colas | Os que errar no simulado do curso | — | Séries 23 e 24 |
+| Sex 27/11 | Reserva | **Reserva**: só para o que tiver atrasado; se nada atrasou, descanso. O M6 (reincidências) e o simulado 05 ficam como opcionais | — | — | — |
 | Sáb 28/11 | Descanso | Descanso antes da prova | — | — | — |
 | Dom 29/11 | Descanso | Descanso antes da prova · não estudar na véspera | — | — | — |
 | **Seg 30/11** | Prova | **PROVA — Linux Essentials 010-160** | — | — | — |
 
-**Contas (de 18 a 26/11):** o fim do simulado 07 e mais 7 simulados completos, um por dia (1 do curso, 08, 09, 10, 2 do curso, 11 e 12), o M6 no dia leve, as 9 lições da LPI que faltam mais quatro blocos de revisão, as séries 14 a 24 das lacunas, a sexta 27 de reserva (simulado 05 opcional) e dois dias de descanso.
+**Contas (de 20 a 26/11):** 7 simulados completos, um por dia (08, 09, 10, 1 do curso, 11, 12 e 2 do curso), as 7 lições da LPI que faltam mais três blocos de revisão, as séries 16 a 24 das lacunas, a sexta 27 de reserva (M6 e simulado 05 opcionais) e dois dias de descanso.
 
 **Se um dia cair**, ele não é reposto. O dia seguinte segue o calendário, e a regra 1 vale aqui também.
 
@@ -265,7 +279,7 @@ São os erros que voltaram depois de corrigidos. É a lista que guia os treinos 
 | `/home` tratado como a pasta pessoal | 2 | `/home` contém as pastas; a pessoal é `~` | V1 |
 | `$#` | **3** (Q24 do simulado 02; Q6 da autoavaliação da Semana 5; Q16 do R3) | Conta só os argumentos; o `$0` (nome do script) **não entra**: `./args.sh um dois` dá `$#` = 2 | V4 |
 | O `x` do `/etc/passwd` | 2 | Só diz que o hash está no `/etc/shadow`; o administrador é o UID 0 | V6 |
-| Conversão octal, com e sem bit especial | **6** (Q37 do simulado 01; Q36 do simulado 02; Q36 do simulado 03, `645` no lugar de `4755`; Q14 do R4, `4744` no lugar de `2744`; Q38 do simulado 04, `t` no lugar do `s` do grupo em `2775`; Q35 do simulado 06, `t` no lugar do `s` em `2755`) | Bit especial primeiro (SUID 4, SGID 2, sticky 1), depois trio por trio. **O trio onde está o `s`/`S` diz qual é o bit**: no dono, SUID (4); no grupo, SGID (2); nos outros, `t`/`T`, sticky (1). **4-2-1 = dono-grupo-outros = s-s-t**. `rwsr-xr-x` = 4755; `rwxr-Sr--` = 2744 | V5 |
+| Conversão octal, com e sem bit especial | **6** (Q37 do simulado 01; Q36 do simulado 02; Q36 do simulado 03, `645` no lugar de `4755`; Q14 do R4, `4744` no lugar de `2744`; Q38 do simulado 04, `t` no lugar do `s` do grupo em `2775`; Q35 do simulado 06, `t` no lugar do `s` em `2755`) | Bit especial primeiro (SUID 4, SGID 2, sticky 1), depois trio por trio. **O trio onde está o `s`/`S` diz qual é o bit**: no dono, SUID (4); no grupo, SGID (2); nos outros, `t`/`T`, sticky (1). **4-2-1 = dono-grupo-outros = s-s-t**: o bit especial **não** fica sempre nos outros (anotação das aulas 63 e 64, Correção 84). `rwsr-xr-x` = 4755; `rwxr-Sr--` = 2744 | V5 |
 | Herança de variáveis: `export` | **3** (Correções 12 e 71; Q16 do simulado 03) | O `export` marca a variável para os filhos; o `env NOME` tenta executar um comando | V4 |
 | `{}` tratado como globbing | 2 | A expansão de chaves cria os nomes sem olhar o disco | — |
 | Sinal padrão do `kill` | 2 | `SIGTERM` (15); o `SIGKILL` (9) só com `kill -9` | V7 |
@@ -278,6 +292,8 @@ São os erros que voltaram depois de corrigidos. É a lista que guia os treinos 
 | Comandos de conta contra comandos de arquivo | **3** (Q40 do simulado 02, pesquisada; Q16 do R4; Q37 do simulado 06) | De **arquivo**: `chgrp`, `chown`, `chmod`. De **conta e grupo**: `useradd`, `usermod`, `groupadd`, `passwd`. O `usermod -g` muda o grupo primário de um usuário, nunca o de um arquivo | V5 e V6 |
 | Arquivos de contas (`/etc/shadow`, `/etc/group`) | **4** (Q34 do simulado 02; séries 01 e 02 das lacunas; Q34 e Q40 do simulado 04) | `/etc/passwd` contas, `/etc/shadow` hashes (`!` ou `*` = senha bloqueada), `/etc/group` grupos e membros secundários. O `useradd` grava no `passwd`, no `shadow` e no `group`; o `/etc/hosts` é de rede | V6 |
 | `ps` de todos os processos | 2 (Q29 do simulado 04; Q26 do simulado 06, em branco) | `ps aux` (BSD, sem hífen) e `ps -ef` (Unix, com hífen); o `ps` sozinho mostra só o terminal atual | — |
+| `w` do grupo para gravar (`>>`, edição) | 1 (Q35 do simulado 07) | Acrescentar com `>>` é escrever: precisa de `w`. Com `640`, o grupo só lê | — |
+| `sort` sem `-n` e expressões com `\|` | 1 (Q20 e Q22 do simulado 07) | Sem `-n`, o `sort` compara texto (`10`, `100`, `9`); o `\|` só é "ou" com `grep -E` | — |
 | Contêiner contra máquina virtual | **3** (Q7 do simulado 01, Correção 63; Q4 do simulado 04; Q1 do simulado 06) | Contêiner **compartilha o kernel** do hospedeiro; máquina virtual tem **kernel próprio**, sobre um hipervisor | — |
 
 ---
@@ -288,9 +304,9 @@ São os erros que voltaram depois de corrigidos. É a lista que guia os treinos 
 |---|---|---|
 | Linha de base | 03 (05/11) | **20** (feito) |
 | Primeira semana | 04 (12/11) | **24 ou mais** |
-| Segunda semana | 06 (13/11: **34**), 07 (17/11, nível 1) e 1 do curso (18/11) | **28 ou mais** |
+| Segunda semana | 06 (13/11: **34**) e 07 (19/11, nível 1: **31**) | **28 ou mais** |
 | Terceira semana | 08 (20/11) e 09 (21/11), nível 2, e 10 (22/11), nível 3, que contam para o ponto de ajuste | **28 ou mais** (os níveis sobem) |
-| Final | 2 do curso (23/11), 11 (24/11) e 12 (25/11), nível 4 | **28 ou mais** nos de nível 4; acima de 26 já é aprovação |
+| Final | 1 do curso (23/11), 11 (24/11) e 12 (25/11), nível 4, e 2 do curso (26/11) | **28 ou mais** nos de nível 4; acima de 26 já é aprovação |
 
 **A prova está comprada para 30/11** (confirmado em 09/11). O sábado 21/11 deixa de ser decisão de data e vira **ponto de ajuste**: a média de acertos firmes dos simulados 08, 09 e 10 define o foco dos últimos dias.
 
@@ -312,7 +328,7 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 | R3 e R4 | Feitos em 06 e 07/11. O R1 saiu do plano em 06/11 e o R2 em 13/11 |
 | Simulado 05 | Escrito em 04/11 no formato antigo. Saiu do calendário em 18/11; fica como opcional para a reserva de 27/11 |
 | Simulados 06 a 12 | 06, 07 e 08 prontos (o 08 escrito em 19/11, nível 2); 09 a 12 escritos no padrão novo, com nível crescente, cada um pronto **pelo menos um dia antes** |
-| M6 | Escrito por mim a partir das reincidências, pronto na véspera. Saíram o M1, o M2, o M3, o M4 e o M5: com um simulado por dia, os erros viram retestes dentro dos próprios simulados |
+| M6 | Opcional desde 19/11, na reserva de 27/11. Escrito por mim a partir das reincidências. Saíram o M1, o M2, o M3, o M4 e o M5: com um simulado por dia, os erros viram retestes dentro dos próprios simulados |
 | Lacunas | Prontas (`lacunas.md`, 24 séries) |
 | Exercícios da LPI | No PDF do material oficial; calendário e registro em `exercicios-lpi.md` |
 
@@ -352,15 +368,15 @@ Fontes consultadas: [questões de exemplo do 010-160 (EduSum)](https://www.edusu
 | 15/11 | — | Não realizado (remarcado para 17/11) | — | — | — | — | — |
 | 16/11 | Conteúdo | LPI 3.2, lição 2 e 3.3, lição 1 · lacunas 11 e 12 (simulado 07 e aulas para 17/11) | — | — | Séries 11 e 12: **5 de 5** e **5 de 5** · retorno: **1 de 1** | 3.2, lição 2: **8 de 9** · 3.3, lição 1: **6 de 7** | Forma dos comandos (`^. . .dig`, `PATH= "..."`) |
 | 17/11 | A | Simulado 07 até a Q14 · LPI 3.3, lição 2 e 2.1, lição 1 · aulas 59 a 63 | Parcial (Q1 a 14) | — | Série 13: **5 de 5** · retorno: **1 de 1** | 3.3, lição 2: **3 de 3** · 2.1, lição 1: **5 de 6** | Forma: `{1. .5}`, `chmod u=rwx, g=rw, o=rwx` |
-| 18/11 | A | Simulado 07: Q15–40 · Últimas 2 aulas (fim do curso) | Curso: de |  | Série 14: de | 2.1, lição 2 e 2.2 · de | |
-| 19/11 | A | Simulado 1 do curso · Refazer erradas | Curso: de |  | Série 15: de | 2.3, lição 1 e 2.3, lição 2 · de | |
-| 20/11 | A | Simulado 08 (nível 2) · feriado | de 40 |  | Série 16: de | 2.4 e 1.1 · de | |
-| 21/11 | A | Simulado 09 (nível 2) · Refazer erradas | de 40 |  | Série 17: de | 1.2 e 1.3 · de | |
-| 22/11 | A | Simulado 10 (nível 3) · Ponto de ajuste · Fim das lições | de 40 |  | Séries 18 e 19: de | 1.4 e Revisão: erradas dos Tópicos 5 e 4 · de | |
-| 23/11 | A | Simulado 2 do curso · Refazer erradas | Curso: de |  | Série 20: de | Revisão: erradas do Tópico 3 · de | |
-| 24/11 | A | Simulado 11 (nível 4) · Refazer erradas | de 40 |  | Série 21: de | Revisão: erradas dos Tópicos 2 e 1 · de | |
-| 25/11 | A | Simulado 12 (final, nível 4) | de 40 |  | Série 22: de | Revisão: as que errou de novo e as reincidências · de | |
-| 26/11 | Leve | M6 (reincidências) · Colas | de 20 |  | Séries 23 e 24: de | — | |
+| 18/11 | — | Sem registro enviado (o fim do simulado 07 e as aulas passaram para 19/11) | — | — | Série 14: não enviada | — | — |
+| 19/11 | A | Simulado 07 completo · aulas 63 e 64 (curso fechado) · LPI 2.3, lições 1 e 2 | **31 de 40** | **31** (nenhum chute marcado) | Série 15: **5 de 5** | 2.3, lição 1: **7 de 7** · 2.3, lição 2: **5 de 5** | `mv` de diretório (Q11), `info` (Q13), `sort` sem `-n` (Q20), `grep -E` (Q22), `-z` (Q24), load average (Q30), `/24` (Q32), `w` do grupo (Q35) |
+| 20/11 | A | Simulado 08 (nível 2) · feriado | de 40 |  | Série 16: de | 2.1, lição 2 e 2.2 · de | |
+| 21/11 | A | Simulado 09 (nível 2) | de 40 |  | Série 17: de | 2.4 e 1.1 · de | |
+| 22/11 | A | Simulado 10 (nível 3) · ponto de ajuste | de 40 |  | Séries 18 e 19: de | 1.2 e 1.3 · de | |
+| 23/11 | A | Simulado 1 do curso · fim das lições | Curso: de |  | Série 20: de | 1.4 e revisão dos Tópicos 5 e 4 · de | |
+| 24/11 | A | Simulado 11 (nível 4) | de 40 |  | Série 21: de | Revisão do Tópico 3 · de | |
+| 25/11 | A | Simulado 12 (final, nível 4) | de 40 |  | Série 22: de | Revisão dos Tópicos 2 e 1 e reincidências · de | |
+| 26/11 | A | Simulado 2 do curso · colas | Curso: de |  | Séries 23 e 24: de | — | |
 
 ### Treinos na VM — o que saiu diferente do previsto
 
@@ -527,3 +543,34 @@ Na VM: `ps`, depois `ps aux | wc -l` e compare as quantidades.
 2. **Prática do `/etc/skel`, passo 4.** `ls /home/skel` lista um diretório que não existe. O que se quer ver é a pasta do `joe`: `ls -a /home/joe` (o `test` deve aparecer lá, copiado do `/etc/skel`).
 3. **Nome do usuário.** O enunciado pede `joe`, minúsculo; no comando está `Joe`. Nomes de usuário são, por convenção, em minúsculas, e o Ubuntu recusa maiúsculas no `adduser`. Use `sudo useradd -c "Joe Joe" -m -G financeiro joe`.
 4. Os comandos que mexem no `/etc/skel`, no `groupadd` e no `useradd` precisam de `sudo`.
+
+### Curso, aulas 63 e 64 — quinta 19/11 (curso fechado)
+
+**Conteúdo registrado**
+
+| Tema | O que ficou anotado |
+|---|---|
+| Links | Simbólico aponta para o nome do arquivo; físico aponta para o mesmo inode e sobrevive à remoção do original |
+| Sticky bit | `t` nos outros; `chmod o+t` sobre `777` dá `1777` |
+| Prática de links | `ln -s file1 file2`, `ln file1 file3`, `mv file1 file4` e `cat` nos dois links |
+| Prática do sticky bit | Diretório `testing` com dois usuários, `chmod +t` e tentativa de apagar o arquivo do outro |
+
+**Pontos fortes:** as duas práticas montam exatamente as situações que a prova cobra: o link simbólico que quebra quando o alvo muda de nome e o sticky bit impedindo um usuário de apagar o arquivo do outro.
+
+**Ajustes de caderno (sem correção numerada)**
+
+1. Link simbólico: quando o alvo some ou muda de nome, o link **continua existindo**, mas fica **quebrado** (aponta para um nome que não existe). No passo 3 da prática, depois de `mv file1 file4`: `cat file2` dá *No such file or directory*, e `cat file3` funciona, porque o hard link aponta para o inode.
+2. Anote o resultado do passo 6: com o sticky bit, o `rm` do arquivo do outro usuário responde *Operation not permitted*.
+3. Passo 4: faltou o `touch testing/file_joao` depois do `su joao`.
+
+#### Correção 84 — o bit especial não fica "sempre na coluna dos outros"
+
+O caderno diz: "Permissão especial — sempre aplicada na coluna 'others'". Só o **sticky bit** fica nos outros. Cada bit especial tem o seu trio, e essa é a raiz da reincidência mais antiga da lista (6 vezes):
+
+| Bit | Valor | Trio | Letra (com `x` / sem `x`) | Exemplo |
+|---|---|---|---|---|
+| SUID | 4 | Dono | `s` / `S` | `4755` → `-rwsr-xr-x` (o `passwd`) |
+| SGID | 2 | Grupo | `s` / `S` | `2775` → `drwxrwsr-x` (pasta de equipe) |
+| Sticky | 1 | Outros | `t` / `T` | `1777` → `drwxrwxrwt` (o `/tmp`) |
+
+Regra: **4-2-1 = dono-grupo-outros = s-s-t**. O dígito diz qual bit; o bit diz em qual trio a letra aparece.
