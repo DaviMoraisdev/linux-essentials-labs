@@ -587,8 +587,8 @@ Respondidas com a série 08, na quarta 11/11: **2 de 2** (`2744` e `chgrp`). Os 
 | 11 | 16/11 | **5 de 5** | Nenhuma. **Retorno: 1 de 1** (`LibreOffice`): a série 08 está fechada | — |
 | 12 | 16/11 | **5 de 5** | Nenhuma | — |
 | 13 | 17/11 | **5 de 5** | Nenhuma. **Retorno: 1 de 1** (`groupadd`): a série 10 está fechada | — |
-| 14 | | de 5 | | |
-| 15 | | de 5 | | |
+| 14 | | de 5 | Não enviada (prevista para 18/11): responda junto com a série 16 | |
+| 15 | 19/11 | **5 de 5** | Nenhuma | — |
 | 16 | | de 5 | | |
 | 17 | | de 5 | | |
 | 18 | | de 5 | | |
