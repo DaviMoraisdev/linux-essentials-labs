@@ -311,7 +311,7 @@ O corte do exame é de 26 acertos. Com 26 firmes, os chutes ainda somam: a nota 
 | Simulado 04 | Pronto (`simulado-04.md`, escrito em 04/11), para a quarta 11/11. Substitui o exame final do NDG, que fica como treino extra opcional |
 | R3 e R4 | Feitos em 06 e 07/11. O R1 saiu do plano em 06/11 e o R2 em 13/11 |
 | Simulado 05 | Escrito em 04/11 no formato antigo. Saiu do calendário em 18/11; fica como opcional para a reserva de 27/11 |
-| Simulados 06 a 12 | 06 e 07 prontos; 08 a 12 escritos no padrão novo, com nível crescente, cada um pronto **pelo menos um dia antes** |
+| Simulados 06 a 12 | 06, 07 e 08 prontos (o 08 escrito em 19/11, nível 2); 09 a 12 escritos no padrão novo, com nível crescente, cada um pronto **pelo menos um dia antes** |
 | M6 | Escrito por mim a partir das reincidências, pronto na véspera. Saíram o M1, o M2, o M3, o M4 e o M5: com um simulado por dia, os erros viram retestes dentro dos próprios simulados |
 | Lacunas | Prontas (`lacunas.md`, 24 séries) |
 | Exercícios da LPI | No PDF do material oficial; calendário e registro em `exercicios-lpi.md` |
