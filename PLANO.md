@@ -10,7 +10,7 @@
 
 ## 1. Status atual
 
-**Atualizado em 18/11.** Prova **comprada para 30/11**. Um simulado completo por dia, sempre como primeira tarefa, com dificuldade crescente (`labs/simulados-práticos.lpi/operação_pratica.md`, seção 3). Na terça 17/11 o simulado 07 foi até a questão 14 e termina na quarta; cada simulado seguinte andou um dia, e o 05 ficou opcional para 27/11. Feitos até aqui: simulados 03 (20 firmes), **04 (31)** e **06 (34)**, R3 e R4, lacunas 04 a 13, aulas 41 a 63 e os Exercícios da LPI 4.1 a 4.4, 5.1 a 5.4, 3.1 a 3.3 e 2.1 (lição 1).
+**Atualizado em 19/11.** Prova **comprada para 30/11**. Um simulado completo por dia, sempre como primeira tarefa, com dificuldade crescente (`labs/simulados-práticos.lpi/operação_pratica.md`, seção 3). **Curso fechado em 19/11**; restam os dois simulados dele (23 e 26/11). Feitos até aqui: simulados 03 (20 firmes), **04 (31)**, **06 (34)** e **07 (31, o primeiro do padrão novo)**, R3 e R4, lacunas 04 a 13 e 15, e os Exercícios da LPI 4.1 a 4.4, 5.1 a 5.4, 3.1 a 3.3, 2.1 (lição 1) e 2.3.
 
 ### Concluído
 
@@ -34,7 +34,7 @@ O Tópico 4 está praticado: Práticas 3, 4 e 5 feitas até 02/11 e anotadas at�
 
 | Item | Peso | Quando |
 |---|---|---|
-| **Curso: as duas últimas aulas e 2 simulados** | — | Aulas 41 a 63 feitas até 17/11. As duas últimas na qua 18/11; simulado 1 do curso na qui 19 e simulado 2 na seg 23/11 (ajustado em 18/11) |
+| **Curso: os 2 simulados** | — | Aulas encerradas em 19/11. Simulado 1 do curso na seg 23/11 e simulado 2 na qui 26/11 (ajustado em 19/11) |
 | **Exercícios da LPI de todas as 24 lições** (cerca de 205) | — | 4.1, 4.2, 4.3, 5.1, 5.2 e 5.3 feitas até 11/11. As outras, duas ou três por dia, até 19/11; revisão das erradas de 20 a 25/11 (`labs/simulados-práticos.lpi/exercicios-lpi.md`) |
 
 O 4.1 (Sistemas operacionais) e o here document foram estudados no bloco curto de 06/11. Com isso, todo o conteúdo dos cinco tópicos foi visto; resta só o curso.
@@ -289,8 +289,8 @@ Semanas de **segunda a domingo**. A prova é na **segunda-feira 30/11**. O hist�
 | Práticas de laboratório restantes | Nenhuma: as três do Tópico 4 foram feitas até 02/11 |
 | Dias de operação prática | 05 a 26/11, mais a sexta 27/11 de reserva (o fim de semana de 14 e 15/11 ficou sem estudo) |
 | Simulados completos | 10 (03 a 12) |
-| Mini-simulados | 3 (R3, R4 e M6); desde 17/11, um simulado completo por dia substitui os outros |
-| Exercícios da LPI | 24 lições, cerca de 205 exercícios, até 22/11, e quatro blocos de revisão das erradas de 22 a 25/11 |
+| Mini-simulados | R3 e R4 feitos; o M6 é opcional na reserva de 27/11; desde 17/11, um simulado completo por dia |
+| Exercícios da LPI | 24 lições, cerca de 205 exercícios, até 23/11, e três blocos de revisão das erradas de 23 a 25/11 |
 | Lacunas | 24 séries de cinco (120 questões) |
 
 ### Datas do calendário que afetam o plano
@@ -319,8 +319,8 @@ Refeita em 08/11: cerca de **3h30 de segunda a sábado** e **2h nos domingos 15 
 |---|---|---|
 | 10 (05 a 08/11) | 03 (feito: 20 firmes) | R3 (feito: 17 de 20, com o 4.1 e o here document) · R4 (feito: 18 de 20) |
 | 11 (09 a 15/11) | 04 (qui 12: 31 firmes), 06 (sex 13: 34 firmes) | ter 10 e qua 11: conteúdo e LPI (aulas 41 a 55) · sáb 14 e dom 15 sem estudo |
-| 12 (16 a 22/11) | 07 (ter 17 e qua 18, nível 1), 1 do curso (qui 19), 08 (sex 20) e 09 (sáb 21), nível 2, 10 (dom 22, nível 3, ponto de ajuste) | aulas 59 a 63 (ter 17) e as duas últimas (qua 18) · fim das lições da LPI em 22/11 |
-| 13 (23 a 29/11) | 2 do curso (seg 23), 11 (ter 24) e 12 (qua 25, final), nível 4 | M6 (qui 26) · reserva na sex 27, com o simulado 05 opcional · descanso em 28 e 29/11 |
+| 12 (16 a 22/11) | 07 (ter 17 e qui 19: **31 firmes**), 08 (sex 20) e 09 (sáb 21), nível 2, 10 (dom 22, nível 3, ponto de ajuste) | aulas encerradas em 19/11 |
+| 13 (23 a 29/11) | 1 do curso (seg 23), 11 (ter 24) e 12 (qua 25, final), nível 4, 2 do curso (qui 26) | fim das lições da LPI em 23/11 · reserva na sex 27 (M6 e 05 opcionais) · descanso em 28 e 29/11 |
 
 Calendário dia a dia, metas e registro em `labs/operacao-pratica.md`; visão de mês em `labs/calendario.md`.
 
@@ -333,7 +333,7 @@ Calendário dia a dia, metas e registro em `labs/operacao-pratica.md`; visão de
 | 3 | Qui 05/11 | `simulado-03` | **Feito: 27 de 40, 20 firmes** (linha de base) |
 | 4 | Qui 12/11 | `simulado-04` | **Feito: 32 de 40, 31 firmes** |
 | 6 | Sex 13/11 | `simulado-06` | **Feito: 35 de 40, 34 firmes** |
-| 7 | Ter 17 e qua 18/11 | `simulado-07` (nível 1) | 28 ou mais · Q1 a 14 feitas em 17/11 |
+| 7 | Ter 17 e qui 19/11 | `simulado-07` (nível 1) | **Feito: 31 de 40, 31 firmes** |
 | 8 | Sex 20/11 | `simulado-08` (nível 2, pronto) | 28 ou mais · ponto de ajuste |
 | 9 | Sáb 21/11 | `simulado-09` (nível 2) | 28 ou mais · ponto de ajuste |
 | 10 | **Dom 22/11** | `simulado-10` (nível 3) | 28 ou mais · **ponto de ajuste** |
@@ -473,7 +473,7 @@ A prova foi **comprada e confirmada em 09/11** para 30/11, e a decisão de data 
 
 ### Histórico das decisões
 
-Em 08/10 a compra do voucher foi adiada; em 10/10 a data principal passou a 16/11; em 13/10 a prova foi fixada em 23/11; em 19/10 o Checkpoint A deu vermelho; em 23/10, com o simulado 02 em 22 de 40, o Tópico 4 foi para a Semana 9; **em 26/10 a estratégia mudou para conteúdo seguido de operação prática diária, as dívidas e os checkpoints saíram do plano, e a prova passou para 30/11.** Em 29/10, as Práticas 4 e 5 e o simulado 03 foram para o domingo 01/11, o sábado 31/10 virou descanso e as aulas 41 a 72 foram para a Semana 10. Em 02/11, com as Práticas 4 e 5 feitas, o simulado 03 passou para a terça 03/11, a operação andou dois dias, o simulado 13 saiu e a decisão da data passou para o sábado 21/11. Em 04/11, o que não saiu em 03 e 04/11 foi para o dia 05, a carga diária subiu para cerca de 2h a 2h15 em todos os dias e a decisão passou a usar os simulados 08, 09 e 10. Em 06/11 o calendário foi ajustado sem mexer na data: R4 e Exercícios da LPI atrasados no fim de semana, simulado 05 em 09/11, simulado 04 em 11/11 e R1 fora do plano. Em 08/11, a seu pedido, a carga subiu para cerca de 3h30 por dia, os domingos 15 e 22 passaram a ter sessão curta e os Exercícios da LPI foram espalhados até 18/11. Em 09/11 a prova foi **comprada para 30/11**; a decisão de 21/11 virou ponto de ajuste, o simulado 05 ficou para 24/11 e a terça 10/11 virou dia de conteúdo. Em 10/11 as aulas 49 a 72 foram para as noites de 11 a 13/11 e a LPI 5.4 para 12/11. Em 11/11 o simulado 04 passou para 12/11, o M1 para 16/11 e o M2 saiu. Em 15/11, depois do fim de semana sem estudo, o plano foi refeito: saíram o simulado 11 e o M3, e a sexta 27/11 virou reserva. Em 17/11, a seu pedido, passou a haver um simulado completo por dia, com dificuldade crescente; saíram o M1 e o M4, e o simulado 11 voltou. Em 18/11, cada simulado andou um dia e o 05 ficou opcional.
+Em 08/10 a compra do voucher foi adiada; em 10/10 a data principal passou a 16/11; em 13/10 a prova foi fixada em 23/11; em 19/10 o Checkpoint A deu vermelho; em 23/10, com o simulado 02 em 22 de 40, o Tópico 4 foi para a Semana 9; **em 26/10 a estratégia mudou para conteúdo seguido de operação prática diária, as dívidas e os checkpoints saíram do plano, e a prova passou para 30/11.** Em 29/10, as Práticas 4 e 5 e o simulado 03 foram para o domingo 01/11, o sábado 31/10 virou descanso e as aulas 41 a 72 foram para a Semana 10. Em 02/11, com as Práticas 4 e 5 feitas, o simulado 03 passou para a terça 03/11, a operação andou dois dias, o simulado 13 saiu e a decisão da data passou para o sábado 21/11. Em 04/11, o que não saiu em 03 e 04/11 foi para o dia 05, a carga diária subiu para cerca de 2h a 2h15 em todos os dias e a decisão passou a usar os simulados 08, 09 e 10. Em 06/11 o calendário foi ajustado sem mexer na data: R4 e Exercícios da LPI atrasados no fim de semana, simulado 05 em 09/11, simulado 04 em 11/11 e R1 fora do plano. Em 08/11, a seu pedido, a carga subiu para cerca de 3h30 por dia, os domingos 15 e 22 passaram a ter sessão curta e os Exercícios da LPI foram espalhados até 18/11. Em 09/11 a prova foi **comprada para 30/11**; a decisão de 21/11 virou ponto de ajuste, o simulado 05 ficou para 24/11 e a terça 10/11 virou dia de conteúdo. Em 10/11 as aulas 49 a 72 foram para as noites de 11 a 13/11 e a LPI 5.4 para 12/11. Em 11/11 o simulado 04 passou para 12/11, o M1 para 16/11 e o M2 saiu. Em 15/11, depois do fim de semana sem estudo, o plano foi refeito: saíram o simulado 11 e o M3, e a sexta 27/11 virou reserva. Em 17/11, a seu pedido, passou a haver um simulado completo por dia, com dificuldade crescente; saíram o M1 e o M4, e o simulado 11 voltou. Em 18/11, cada simulado andou um dia e o 05 ficou opcional. Em 19/11, os simulados do curso foram para 23 e 26/11 e o M6 ficou opcional.
 
 ---
 
