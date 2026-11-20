@@ -68,7 +68,7 @@ Calendário refeito em 26/10 para a prova de 30/11 (`PLANO.md`, seção 7, e `la
 | 4 | Qui 12/11 | `simulado-04` (escrito em 04/11) | 24 ou mais | **32** | **80%** | 1 | **31** | Não informado | **Concluído: o melhor até aqui** |
 | 6 | Sex 13/11 | `simulado-06` (escrito em 12/11) | 28 ou mais | **35** | **87,5%** | 1 | **34** | Não informado | **Concluído, acima da meta** (fácil demais: ver a nota abaixo) |
 | 7 | Ter 17 e qua 18/11 | `simulado-07` (nível 1 do padrão novo) | 28 ou mais | | | | | | Em andamento: Q1 a 14 feitas em 17/11 |
-| 8 | Sex 20/11 | `simulado-08` (nível 2) | 28 ou mais · ponto de ajuste | | | | | | A fazer |
+| 8 | Sex 20/11 | `simulado-08` (nível 2, pronto) | 28 ou mais · ponto de ajuste | | | | | | A fazer |
 | 9 | Sáb 21/11 | `simulado-09` (nível 2) | 28 ou mais · ponto de ajuste | | | | | | A fazer |
 | 10 | **Dom 22/11** | `simulado-10` (nível 3) | 28 ou mais · **ponto de ajuste** | | | | | | A fazer |
 | 11 | Ter 24/11 | `simulado-11` (nível 4) | 28 ou mais | | | | | | A fazer |
