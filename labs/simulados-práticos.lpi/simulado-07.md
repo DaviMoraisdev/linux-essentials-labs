@@ -444,26 +444,48 @@ echo "ok: $1"
 
 | Tópico | Peso | Questões | Acertos | Chutes acertados |
 | --- | --- | --- | --- | --- |
-| 1. Comunidade e open source | 7 | 1 a 7 | | |
-| 2. Encontrando seu caminho | 9 | 8 a 16 | | |
-| 3. Poder da linha de comando | 9 | 17 a 25 | | |
-| 4. Sistema operacional | 8 | 26 a 33 | | |
-| 5. Segurança e permissões | 7 | 34 a 40 | | |
-| **Total** | **40** | | | |
+| 1. Comunidade e open source | 7 | 1 a 7 | **6** | 0 |
+| 2. Encontrando seu caminho | 9 | 8 a 16 | **7** | 0 |
+| 3. Poder da linha de comando | 9 | 17 a 25 | **6** | 0 |
+| 4. Sistema operacional | 8 | 26 a 33 | **6** | 0 |
+| 5. Segurança e permissões | 7 | 34 a 40 | **6** | 0 |
+| **Total** | **40** | | **31** | **0** |
 
 ## Registro
 
 | Campo | Valor |
 | --- | --- |
 | Data | 17 e 18/11/2026 |
-| Tempo gasto | |
-| Acertos | de 40 |
-| Questões marcadas como chute | |
-| Acertos firmes | |
-| Erros de forma nas lacunas | |
+| Tempo gasto | Não informado (feito em duas partes: Q1 a 14 em 17/11, Q15 a 40 em 19/11) |
+| Acertos | **31 de 40** (77,5%, cerca de 620 de 800) |
+| Questões marcadas como chute | Nenhuma |
+| Acertos firmes | **31** (meta: 28) |
+| Erros de forma nas lacunas | 0 (`vim` aceito na Q7) |
 
 ## Questões erradas
 
 | Q | Tópico | Tema | Você marcou | Gabarito | Convicção ou chute | Reincidência? |
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | |
+| 2 | 1 | Servidor web e banco de dados | A e E (NGINX e MariaDB; NFS e LibreOffice) | A e D (NGINX e MariaDB; Apache e PostgreSQL) | Convicção | Não |
+| 11 | 2 | `mv` renomeando diretório | C (`salvos` vira arquivo) | D (`./salvos/a.txt`) | Convicção | Não |
+| 13 | 2 | `info` | D (`whatis tar`) | C (`info tar`) | Convicção | Não |
+| 20 | 3 | `sort` sem `-n` | C (`10`, `9`, `100`) | D (`10`, `100`, `9`) | Convicção | Não |
+| 22 | 3 | `grep -E` com `\|` | C (`grep erro falha app.log`) | B (`grep -E 'erro\|falha' app.log`) | Convicção | Não |
+| 24 | 3 | `-z` e `exit` em script | E (`ok:` e `1`) | B (`uso: ./v.sh arquivo` e `1`) | Convicção | **Sim** (`$0` e `$?`) |
+| 30 | 4 | *Load average* | C (memória em três momentos) | A (carga de 1, 5 e 15 minutos) | Convicção | Não |
+| 32 | 4 | Hosts em `/24` | C (255) | D (254) | Convicção | Não |
+| 35 | 5 | `w` do grupo para `>>` | A (acrescenta, porque está no grupo) | C (*Permission denied*) | Convicção | **Sim** (leitura de permissão) |
+
+### Correções do simulado 07
+
+1. **Q2.** O par tinha de ser **servidor web + banco relacional**. NFS compartilha arquivos e LibreOffice é escritório: nenhum dos dois serve. Nas de escolher duas, confira cada alternativa contra **as duas metades** do pedido.
+2. **Q11.** Quando o destino **não existe**, o `mv` **renomeia**: `mv backup salvos` muda o nome do diretório, com tudo o que está dentro. O arquivo continua lá: `./salvos/a.txt`. O `mv` nunca transforma diretório em arquivo.
+3. **Q13.** "Outro formato, com nós e links de navegação" é o **`info`**, a documentação do projeto GNU. O `whatis` só mostra a descrição de uma linha da página do `man`.
+4. **Q20.** Sem `-n`, o `sort` compara **texto**, caractere por caractere: `1` vem antes de `9`, e `10` vem antes de `100`. Resultado: `10`, `100`, `9`. A alternativa que você marcou é a ordem original do arquivo, sem ordenar nada.
+5. **Q22.** Para "um **ou** outro", o `grep` precisa de `-E` (expressão estendida): `grep -E 'erro|falha'`. Em `grep erro falha app.log`, o `falha` vira o **nome de um arquivo** a pesquisar. Você usou o `-E` com `|` certo na LPI 3.2, lição 2 (G5): no papel, faltou reconhecer.
+6. **Q24.** Sem argumento, o `$1` é vazio, então `[ -z "$1" ]` é **verdadeiro**: o script mostra `uso: ./v.sh arquivo` e sai com `exit 1`, **antes** de chegar ao `ok`. O `$0` expande para o nome como foi chamado. Na VM: crie o `v.sh` e rode `./v.sh; echo $?` e `./v.sh x; echo $?`.
+7. **Q30.** Os três números do *load average* são a **carga média** em 1, 5 e 15 minutos. Memória aparece em outra linha do `top` (`MiB Mem`).
+8. **Q32.** `/24` deixa 8 bits para hosts: 256 endereços, menos o **da rede** (`.0`) e o **de broadcast** (`.255`) = **254**. O 255 esqueceu um dos dois.
+9. **Q35.** `640` = `rw-` `r--` `---`: o grupo só **lê**. O `>>` acrescenta, e acrescentar é **escrever**: precisa de `w`. Estar no grupo dá só o que o trio do grupo permite.
+
+**Leitura.** **31 de 40 e 31 firmes**, acima da meta de 28, no primeiro simulado do padrão novo, que é mais difícil que os anteriores: o resultado se manteve no nível do simulado 04. Os Tópicos 1 e 5 erraram uma cada; o **Tópico 3 caiu para 6 de 9**, com três erros de rastrear comando (`sort`, `grep -E` e o script). É o tipo de questão que o simulado 08, de nível 2, continua cobrando. Nenhuma questão foi marcada como chute: no próximo, marque as que tiver dúvida, para a contagem de firmes ficar real.
