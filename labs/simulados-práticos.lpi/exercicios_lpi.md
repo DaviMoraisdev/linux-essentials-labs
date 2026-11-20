@@ -34,16 +34,15 @@ São as **24 lições** do material oficial, com cerca de **205 exercícios** (G
 | Qui 12/11 | 4.4 e 5.4 | 9 + 10 | 349–350 · 434–435 | 352–353 · 439–440 |
 | Sex 13/11 | 3.1 e 3.2, lição 1 | 9 + 12 | 183–184 · 199–200 | 187–189 · 202–204 |
 | Seg 16/11 | 3.2, lição 2 e 3.3, lição 1 (feito) | 9 + 7 | 210–211 · 229–231 | 213–215 · 234–236 |
-| Ter 17/11 | 3.3, lição 2 e 2.1, lição 1 | 3 + 6 | 247–249 · 82–84 | 251–253 · 86–87 |
-| Qua 18/11 | 2.1, lição 2 e 2.2 | 9 + 11 | 94–95 · 107–109 | 97–98 · 111–114 |
-| Qui 19/11 | 2.3, lição 1 e 2.3, lição 2 | 7 + 5 | 122–124 · 139–141 | 126–129 · 143–145 |
-| Sex 20/11 | 2.4 e 1.1 | 12 + 8 | 162–164 · 8–9 | 167–170 · 11–13 |
-| Sáb 21/11 | 1.2 e 1.3 | 11 + 10 | 30–32 · 48–49 | 34–36 · 51–52 |
-| Dom 22/11 | 1.4 | 8 | 66–68 | 70–72 |
-| Dom 22/11 | **Revisão: erradas dos Tópicos 5 e 4** | As erradas da seção 3 | — | — |
-| Seg 23/11 | **Revisão: erradas do Tópico 3** | As erradas da seção 3 | — | — |
-| Ter 24/11 | **Revisão: erradas dos Tópicos 2 e 1** | As erradas da seção 3 | — | — |
-| Qua 25/11 | **Revisão: as que errou de novo e as reincidências** | As erradas da seção 3 | — | — |
+| Ter 17/11 | 3.3, lição 2 e 2.1, lição 1 (feito) | 3 + 6 | 247–249 · 82–84 | 251–253 · 86–87 |
+| Qui 19/11 | 2.3, lição 1 e 2.3, lição 2 (feito) | 7 + 5 | 122–124 · 139–141 | 126–129 · 143–145 |
+| Sex 20/11 | 2.1, lição 2 e 2.2 | 9 + 11 | 94–95 · 107–109 | 97–98 · 111–114 |
+| Sáb 21/11 | 2.4 e 1.1 | 12 + 8 | 162–164 · 8–9 | 167–170 · 11–13 |
+| Dom 22/11 | 1.2 e 1.3 | 11 + 10 | 30–32 · 48–49 | 34–36 · 51–52 |
+| Seg 23/11 | 1.4 | 8 | 66–68 | 70–72 |
+| Seg 23/11 | **Revisão: erradas dos Tópicos 5 e 4** | As erradas da seção 3 | — | — |
+| Ter 24/11 | **Revisão: erradas do Tópico 3** | As erradas da seção 3 | — | — |
+| Qua 25/11 | **Revisão: erradas dos Tópicos 2 e 1 e as reincidências** | As erradas da seção 3 | — | — |
 
 As páginas são as impressas no rodapé do PDF.
 
@@ -53,16 +52,16 @@ As páginas são as impressas no rodapé do PDF.
 
 | Lição | Tema | Exercícios | Dia |
 |---|---|---|---|
-| 1.1 | A evolução do Linux e sistemas operacionais populares | G5 E3 | Sex 20/11 |
-| 1.2 | Principais aplicações open source | G7 E4 | Sáb 21/11 |
-| 1.3 | Software open source e suas licenças | G5 E5 | Sáb 21/11 |
-| 1.4 | Habilidades ICT e trabalhando no Linux | G5 E3 | Dom 22/11 |
+| 1.1 | A evolução do Linux e sistemas operacionais populares | G5 E3 | Sáb 21/11 |
+| 1.2 | Principais aplicações open source | G7 E4 | Dom 22/11 |
+| 1.3 | Software open source e suas licenças | G5 E5 | Dom 22/11 |
+| 1.4 | Habilidades ICT e trabalhando no Linux | G5 E3 | Seg 23/11 |
 | 2.1, lição 1 | O básico sobre a linha de comando | G3 E3 | Ter 17/11 |
-| 2.1, lição 2 | O básico sobre a linha de comando (variáveis) | G4 E5 | Qua 18/11 |
-| 2.2 | Usando a linha de comando para conseguir ajuda | G6 E5 | Qua 18/11 |
+| 2.1, lição 2 | O básico sobre a linha de comando (variáveis) | G4 E5 | Sex 20/11 |
+| 2.2 | Usando a linha de comando para conseguir ajuda | G6 E5 | Sex 20/11 |
 | 2.3, lição 1 | Usando diretórios e listando arquivos | G4 E3 | Qui 19/11 |
 | 2.3, lição 2 | Usando diretórios e listando arquivos (caminhos e ocultos) | G2 E3 | Qui 19/11 |
-| 2.4 | Criando, movendo e deletando arquivos | G7 E5 | Sex 20/11 |
+| 2.4 | Criando, movendo e deletando arquivos | G7 E5 | Sáb 21/11 |
 | 3.1 | Empacotando arquivos na linha de comando | G5 E4 | Sex 13/11 |
 | 3.2, lição 1 | Redirecionamento e pipes | G7 E5 | Sex 13/11 |
 | 3.2, lição 2 | `grep` e expressões regulares | G6 E3 | Seg 16/11 |
@@ -101,19 +100,18 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 | Seg 16/11 | 3.3, lição 1 | **6 de 7** | G1: `export PATH= "..."`, com espaço depois do `=` | Sim: forma dos comandos |
 | Ter 17/11 | 3.3, lição 2 | **3 de 3** | Nenhuma | — |
 | Ter 17/11 | 2.1, lição 1 | **5 de 6** | E1: `game{1. .5}`, com espaço entre os pontos | Sim: forma dos comandos |
-| Qua 18/11 | 2.1, lição 2 | de 9 | | |
-| Qua 18/11 | 2.2 | de 11 | | |
-| Qui 19/11 | 2.3, lição 1 | de 7 | | |
-| Qui 19/11 | 2.3, lição 2 | de 5 | | |
-| Sex 20/11 | 2.4 | de 12 | | |
-| Sex 20/11 | 1.1 | de 8 | | |
-| Sáb 21/11 | 1.2 | de 11 | | |
-| Sáb 21/11 | 1.3 | de 10 | | |
-| Dom 22/11 | 1.4 | de 8 | | |
-| Dom 22/11 | Revisão: erradas dos Tópicos 5 e 4 |  | | |
-| Seg 23/11 | Revisão: erradas do Tópico 3 |  | | |
-| Ter 24/11 | Revisão: erradas dos Tópicos 2 e 1 |  | | |
-| Qua 25/11 | Revisão: as que errou de novo e as reincidências |  | | |
+| Qui 19/11 | 2.3, lição 1 | **7 de 7** | Nenhuma | — |
+| Qui 19/11 | 2.3, lição 2 | **5 de 5** | Nenhuma | — |
+| Sex 20/11 | 2.1, lição 2 | de 9 | | |
+| Sex 20/11 | 2.2 | de 11 | | |
+| Sáb 21/11 | 2.4 | de 12 | | |
+| Sáb 21/11 | 1.1 | de 8 | | |
+| Dom 22/11 | 1.2 | de 11 | | |
+| Dom 22/11 | 1.3 | de 10 | | |
+| Seg 23/11 | 1.4 | de 8 | | |
+| Seg 23/11 | Revisão: erradas dos Tópicos 5 e 4 |  | | |
+| Ter 24/11 | Revisão: erradas do Tópico 3 |  | | |
+| Qua 25/11 | Revisão: erradas dos Tópicos 2 e 1 e as reincidências |  | | |
 
 ---
 
@@ -275,3 +273,11 @@ Aspas: o caderno tem aspas curvas (`‘test’`) nos comandos. No terminal, só 
 | E1 | **Errado pela forma.** No caderno está `touch game{1. .5}`, com espaço entre os pontos: assim o Bash não reconhece a sequência e cria um arquivo chamado `game{1.` e outro chamado `.5}`. O certo é `touch game{1..5}`, os dois pontos juntos. É a segunda vez que os pontos aparecem separados (a primeira foi o `'^. . .dig'` da 3.2). Confira na VM se é assim que você digita ou se é o Notion que separa |
 | E2 | Certo: `rm game[1-5]` (também vale `rm game*` ou `rm game?`) |
 | E3 | Certo: pipe e arquivo intermediário. A terceira forma é a substituição de comando: `echo "Hoje: $(date)"` |
+
+### 2.3, lições 1 e 2 — quinta 19/11
+
+**Lição 2.3, lição 1 (7 de 7).** Os quatro Guiados e os três Exploratórios certos, inclusive o rastreamento do G4 (`cd ../../systemd/user` e `cd ..` terminam em `/etc/systemd`) e o E3 com o `--` para proteger o nome com barra invertida. Grafias: `rules.d` e `udev.conf`. No E2, o Tab completa um **diretório** com uma barra no fim: `cd this\ is\ a\ test/`.
+
+**Lição 2.3, lição 2 (5 de 5).** Certos. Grafia: é `~michael/Music`. No G2 A, a primeira linha do `ls -lrS` é um dos diretórios de `4.0K`, porque o `-S` ordena todas as entradas, inclusive diretórios; o primeiro **arquivo comum** é o `scary.jpg`, como você escreveu.
+
+**Os pontos e hífens separados.** No E3 apareceu `- -` no lugar de `--`, como já tinha aparecido `. . .` no lugar de `...` (LPI 3.2, lição 2) e `{1. .5}` no lugar de `{1..5}` (LPI 2.1, lição 1). Parece ser para o Notion não transformar `--` em travessão e `...` em reticências. Se for isso, as duas lições sobem para 9 de 9 e 6 de 6, e esses três casos saem da reincidência de forma. Uma saída simples: no Notion, escreva os comandos dentro de crase (`` `{1..5}` ``) ou num bloco de código, que ele não altera.
