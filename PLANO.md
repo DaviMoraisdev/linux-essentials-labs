@@ -335,8 +335,8 @@ Calendário dia a dia, metas e registro em `labs/operacao-pratica.md`; visão de
 | 6 | Sex 13/11 | `simulado-06` | **Feito: 35 de 40, 34 firmes** |
 | 7 | Ter 17 e qui 19/11 | `simulado-07` (nível 1) | **Feito: 31 de 40, 31 firmes** |
 | 8 | Sex 20/11 | `simulado-08` (nível 2, pronto) | 28 ou mais · ponto de ajuste |
-| 9 | Sáb 21/11 | `simulado-09` (nível 2) | 28 ou mais · ponto de ajuste |
-| 10 | **Dom 22/11** | `simulado-10` (nível 3) | 28 ou mais · **ponto de ajuste** |
+| 9 | Sáb 21/11 | `simulado-09` (nível 2, pronto) | 28 ou mais · ponto de ajuste |
+| 10 | **Dom 22/11** | `simulado-10` (nível 3, pronto) | 28 ou mais · **ponto de ajuste** |
 | 11 | Ter 24/11 | `simulado-11` (nível 4) | 28 ou mais |
 | 5 | Sex 27/11 | `simulado-05` (formato antigo) | Opcional, na reserva |
 | 12 | **Qua 25/11** | `simulado-12` (nível 4, o final) | 28 ou mais |
