@@ -69,8 +69,8 @@ Calendário refeito em 26/10 para a prova de 30/11 (`PLANO.md`, seção 7, e `la
 | 6 | Sex 13/11 | `simulado-06` (escrito em 12/11) | 28 ou mais | **35** | **87,5%** | 1 | **34** | Não informado | **Concluído, acima da meta** (fácil demais: ver a nota abaixo) |
 | 7 | Ter 17 e qui 19/11 | `simulado-07` (nível 1 do padrão novo) | 28 ou mais | **31** | **77,5%** | 0 | **31** | Não informado | **Concluído, acima da meta** (primeiro do padrão novo) |
 | 8 | Sex 20/11 | `simulado-08` (nível 2, pronto) | 28 ou mais · ponto de ajuste | | | | | | A fazer |
-| 9 | Sáb 21/11 | `simulado-09` (nível 2) | 28 ou mais · ponto de ajuste | | | | | | A fazer |
-| 10 | **Dom 22/11** | `simulado-10` (nível 3) | 28 ou mais · **ponto de ajuste** | | | | | | A fazer |
+| 9 | Sáb 21/11 | `simulado-09` (nível 2, pronto) | 28 ou mais · ponto de ajuste | | | | | | A fazer |
+| 10 | **Dom 22/11** | `simulado-10` (nível 3, pronto) | 28 ou mais · **ponto de ajuste** | | | | | | A fazer |
 | 11 | Ter 24/11 | `simulado-11` (nível 4) | 28 ou mais | | | | | | A fazer |
 | 5 | Sex 27/11 (opcional) | `simulado-05` (formato antigo) | — | | | | | | **Opcional, na reserva** |
 | 12 | **Qua 25/11** | `simulado-12` (nível 4, o final) | 28 ou mais | | | | | | A fazer |
@@ -185,7 +185,7 @@ Regra de leitura: um tema abaixo de 60% em um simulado vira tema do mini-simulad
 |---|---|---|---|---|---|---|
 | 3 | 1 | Distribuição *upstream* do RHEL | Debian | Fedora | Convicção | Correção 62 |
 | 7 | 1 | Tecnologia em que cada sistema tem seu próprio kernel | Contêineres | Virtualização por hipervisor | Convicção | Correção 63 |
-| 10 | **Dom 22/11** | `simulado-10` (nível 3) | 28 ou mais · **ponto de ajuste** | | | | | | A fazer |
+| 10 | **Dom 22/11** | `simulado-10` (nível 3, pronto) | 28 ou mais · **ponto de ajuste** | | | | | | A fazer |
 | 14 | 2 | Significado de `/usr` | *User* | *Unix System Resources* | Convicção | Correção 65 |
 | 15 | 2 | Diretório virtual com informações dos processos | `/dev` | `/proc` | Convicção | Correção 66 |
 | 16 | 2 | Documentação completa do `cp` | `cp --manual` | `man cp` | Convicção | Correção 67 |
@@ -334,7 +334,7 @@ Nota de 06/10: o fechamento da Semana 4 dizia "dez correções (43 a 52)". As co
 | 7 | O `echo $?` deve vir logo após o comando | Sessão 1, 09/09 |
 | 8 | `type ls` = alias | Sessão 3, 10/09 |
 | 9 | O `which ls` devolve `/usr/bin/ls`, com a barra inicial | Sessão 3 |
-| 10 | **Dom 22/11** | `simulado-10` (nível 3) | 28 ou mais · **ponto de ajuste** | | | | | | A fazer |
+| 10 | **Dom 22/11** | `simulado-10` (nível 3, pronto) | 28 ou mais · **ponto de ajuste** | | | | | | A fazer |
 | 11 | Brace expansion `{01..20}` não é globbing | Sessão 4, 13/09 |
 | 12 | **Qua 25/11** | `simulado-12` (nível 4, o final) | 28 ou mais | | | | | | A fazer |
 | 13 | O que o `grep` filtra | Sessão 4 |
