@@ -459,26 +459,48 @@ fi
 
 | Tópico | Peso | Questões | Acertos | Chutes acertados |
 | --- | --- | --- | --- | --- |
-| 1. Comunidade e open source | 7 | 1 a 7 | | |
-| 2. Encontrando seu caminho | 9 | 8 a 16 | | |
-| 3. Poder da linha de comando | 9 | 17 a 25 | | |
-| 4. Sistema operacional | 8 | 26 a 33 | | |
-| 5. Segurança e permissões | 7 | 34 a 40 | | |
-| **Total** | **40** | | | |
+| 1. Comunidade e open source | 7 | 1 a 7 | **6** | 0 |
+| 2. Encontrando seu caminho | 9 | 8 a 16 | **8** | 0 |
+| 3. Poder da linha de comando | 9 | 17 a 25 | **5** | 0 |
+| 4. Sistema operacional | 8 | 26 a 33 | **7** | 0 |
+| 5. Segurança e permissões | 7 | 34 a 40 | **5** | 0 |
+| **Total** | **40** | | **31** | **0** |
 
 ## Registro
 
 | Campo | Valor |
 | --- | --- |
-| Data | 20/11/2026 |
-| Tempo gasto | |
-| Acertos | de 40 |
-| Questões marcadas como chute | |
-| Acertos firmes | |
-| Erros de forma nas lacunas | |
+| Data | 22/11/2026 (previsto para 20/11) |
+| Tempo gasto | Não informado |
+| Acertos | **31 de 40** (77,5%, cerca de 620 de 800) |
+| Questões marcadas como chute | Nenhuma |
+| Acertos firmes | **31** (meta: 28) |
+| Erros de forma nas lacunas | 0 |
 
 ## Questões erradas
 
 | Q | Tópico | Tema | Você marcou | Gabarito | Convicção ou chute | Reincidência? |
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | |
+| 6 | 1 | Rastreamento entre sites | B (trocar a senha) | D (bloquear cookies de terceiros) | Convicção | Não |
+| 8 | 2 | `cd` com `..` duas vezes | C (`/tmp`) | E (`/var/tmp`) | Convicção | Não |
+| 18 | 3 | `uniq` sem `sort` | A (`uniq -c` primeiro) | B (`sort \| uniq -c \| sort -nr \| head -3`) | Convicção | **Sim** (Q21 do simulado 07) |
+| 22 | 3 | Só a quinta linha | A (`head -n 5`) | C (`head -n 5 \| tail -n 1`) | Convicção | Não |
+| 23 | 3 | `$#` | B (`4 números`) | A (`3 números`) | Convicção | **Sim, quarta vez** |
+| 24 | 3 | `-d` e `-f` | A (`dir`) | D (`arq`) | Convicção | Não |
+| 32 | 4 | Destinos fora da rede local | A e D (os da própria rede) | B e E (`8.8.8.8` e `10.0.0.5`) | Convicção | **Sim** (Q32 do simulado 07, `/24`) |
+| 35 | 5 | Grupo de arquivo para editar | D (`usermod -aG` e `o+w`) | E (`chgrp dev` e `chmod g+w`) | Convicção | **Sim, quarta vez** (conta contra arquivo) |
+| 36 | 5 | SGID em diretório | B (`root`) | A (`dev`) | Convicção | **Sim, sétima vez** (bits especiais) |
+
+### Correções do simulado 08
+
+1. **Q6.** O rastreamento entre sites é feito com **cookies de terceiros**, gravados por domínios diferentes do site que você abriu (anunciantes). Bloqueá-los é a medida direta. Trocar senha protege a conta, não a privacidade da navegação.
+2. **Q8.** Passo a passo, a partir de `/var/log`: `..` → `/var`; `lib` → `/var/lib`; `..` → `/var`; `tmp` → `/var/tmp`. O caminho é **relativo**, então nunca sai de `/var`. Para chegar a `/tmp`, seria preciso subir mais um nível ou usar o caminho absoluto. Escreva cada passo na margem.
+3. **Q18.** O `uniq` só junta linhas iguais **vizinhas**. Sem um `sort` antes, os IPs repetidos espalhados pelo arquivo são contados em pedaços. A ordem certa é sempre `sort | uniq -c | sort -nr | head`. Você acertou isso no simulado 07 (Q21): aqui, a alternativa sem o primeiro `sort` pareceu mais curta e certa.
+4. **Q22.** O `head -n 5` mostra as **cinco primeiras**, não só a quinta. Para isolar uma linha, combine os dois: `head -n 5` (as linhas 1 a 5) e depois `tail -n 1` (a última delas).
+5. **Q23 (quarta vez).** O `$#` conta **só os argumentos**: `./soma.sh 2 3 5` tem três. O nome do script é o `$0` e **nunca** entra no `$#`. Regra: conte as palavras **depois** do nome do script.
+6. **Q24.** `/etc/passwd` é um **arquivo** comum, não um diretório: `-d` é falso, `-f` é verdadeiro, e o script imprime `arq`. `-d` = diretório, `-f` = arquivo comum, `-e` = existe (qualquer tipo).
+7. **Q32.** A pergunta pede os destinos que **saem** pelo gateway, ou seja, os que estão **fora** da rede `192.168.0.0/24`: `8.8.8.8` e `10.0.0.5`. Os `192.168.0.x` estão na mesma rede e vão direto, sem gateway. Releia o verbo da pergunta antes de marcar.
+8. **Q35 (quarta vez).** Para o **grupo de um arquivo** editar: `chgrp dev rel.txt` (o arquivo passa a ser do grupo `dev`) e `chmod g+w rel.txt` (o grupo ganha escrita). O `usermod` mexe na conta da `ana`, não no arquivo, e o `o+w` abriria para todo mundo.
+9. **Q36 (sétima vez).** O `2` de `2775` é o **SGID**. Em **diretório**, ele faz todo arquivo criado lá dentro herdar o **grupo do diretório**: `dev`. É exatamente para isso que ele existe (pasta de equipe). O grupo `root` não aparece em nenhum lugar do enunciado.
+
+**Leitura.** **31 de 40 e 31 firmes**, acima da meta de 28, no primeiro de nível 2. Igual ao simulado 07. O **Tópico 3 caiu para 5 de 9**: os quatro erros são de seguir script e pipeline (`uniq`, `head`/`tail`, `$#`, `-d`/`-f`). Quatro dos nove erros são reincidências antigas (`$#`, conta contra arquivo, SGID, rede `/24`). Elas estão no guia `revisao-final.md`, seção 6, e vão ser retestadas nos simulados 11 e 12. De novo, nenhum chute foi marcado: na semana da prova, marque as dúvidas.
