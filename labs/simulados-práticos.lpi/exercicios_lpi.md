@@ -23,7 +23,7 @@ São as **24 lições** do material oficial, com cerca de **205 exercícios** (G
 
 ## 1. Calendário
 
-**Refeito em 17/11**, com um simulado por dia: as 11 lições que faltam vão de 17 a 22/11, duas por dia (um ou dois blocos de 25 minutos), e de 22 a 25/11 quatro blocos **refazem as questões que você errou**.
+**Refeito em 22/11**, para a semana da prova. As 23 lições de 1.1 a 5.4 estão feitas; falta a **1.4**, na segunda 23/11. De 23 a 27/11, no lugar da revisão das erradas lição por lição, entram os quatro blocos do guia `revisao-final.md` (R1 a R4), um por dia, e na sexta a revisão das erradas dos simulados.
 
 | Dia | Lições | Exercícios (aprox.) | Páginas dos exercícios | Páginas das respostas |
 |---|---|---|---|---|
@@ -36,13 +36,15 @@ São as **24 lições** do material oficial, com cerca de **205 exercícios** (G
 | Seg 16/11 | 3.2, lição 2 e 3.3, lição 1 (feito) | 9 + 7 | 210–211 · 229–231 | 213–215 · 234–236 |
 | Ter 17/11 | 3.3, lição 2 e 2.1, lição 1 (feito) | 3 + 6 | 247–249 · 82–84 | 251–253 · 86–87 |
 | Qui 19/11 | 2.3, lição 1 e 2.3, lição 2 (feito) | 7 + 5 | 122–124 · 139–141 | 126–129 · 143–145 |
-| Sex 20/11 | 2.1, lição 2 e 2.2 | 9 + 11 | 94–95 · 107–109 | 97–98 · 111–114 |
-| Sáb 21/11 | 2.4 e 1.1 | 12 + 8 | 162–164 · 8–9 | 167–170 · 11–13 |
-| Dom 22/11 | 1.2 e 1.3 | 11 + 10 | 30–32 · 48–49 | 34–36 · 51–52 |
+| Sex 20/11 | 2.1, lição 2 e 2.2 (feito) | 9 + 11 | 94–95 · 107–109 | 97–98 · 111–114 |
+| Sáb 21/11 | 2.4 e 1.1 (feito) | 12 + 8 | 162–164 · 8–9 | 167–170 · 11–13 |
+| Dom 22/11 | 1.2 e 1.3 (feito) | 11 + 10 | 30–32 · 48–49 | 34–36 · 51–52 |
 | Seg 23/11 | 1.4 | 8 | 66–68 | 70–72 |
-| Seg 23/11 | **Revisão: erradas dos Tópicos 5 e 4** | As erradas da seção 3 | — | — |
-| Ter 24/11 | **Revisão: erradas do Tópico 3** | As erradas da seção 3 | — | — |
-| Qua 25/11 | **Revisão: erradas dos Tópicos 2 e 1 e as reincidências** | As erradas da seção 3 | — | — |
+| Seg 23/11 | **Revisão R1: Tópico 5 (revisao-final.md)** | Guia `revisao-final.md` (seção 0) | — | — |
+| Ter 24/11 | **Revisão R2: Tópico 3 (revisao-final.md)** | Guia `revisao-final.md` (seção 0) | — | — |
+| Qua 25/11 | **Revisão R3: Tópico 4 (revisao-final.md)** | Guia `revisao-final.md` (seção 0) | — | — |
+| Qui 26/11 | **Revisão R4: Tópicos 1 e 2 (revisao-final.md)** | Guia `revisao-final.md` (seção 0) | — | — |
+| Sex 27/11 | **Revisão: as erradas dos simulados 09 a 12** | Seções 7 e 8 do `revisao-final.md` | — | — |
 
 As páginas são as impressas no rodapé do PDF.
 
@@ -102,16 +104,13 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 | Ter 17/11 | 2.1, lição 1 | **5 de 6** | E1: `game{1. .5}`, com espaço entre os pontos | Sim: forma dos comandos |
 | Qui 19/11 | 2.3, lição 1 | **7 de 7** | Nenhuma | — |
 | Qui 19/11 | 2.3, lição 2 | **5 de 5** | Nenhuma | — |
-| Sex 20/11 | 2.1, lição 2 | de 9 | | |
-| Sex 20/11 | 2.2 | de 11 | | |
-| Sáb 21/11 | 2.4 | de 12 | | |
-| Sáb 21/11 | 1.1 | de 8 | | |
-| Dom 22/11 | 1.2 | de 11 | | |
-| Dom 22/11 | 1.3 | de 10 | | |
+| Sex 20/11 | 2.1, lição 2 | **8 de 9** | E3: `ME= "$ME:HOME"` (espaço depois do `=` e faltou o `$`) | Sim: forma dos comandos |
+| Sex 20/11 | 2.2 | **8 de 11** | G2 (o `ls -t` põe o mais **recente** primeiro), E1 (faltou o `help cd`) e E5 (faltou o alvo do `rm -r`) | Não |
+| Sáb 21/11 | 2.4 | **12 de 12** | Nenhuma | — |
+| Sáb 21/11 | 1.1 | **8 de 8** | Nenhuma | — |
+| Dom 22/11 | 1.2 | **11 de 11** | Nenhuma | — |
+| Dom 22/11 | 1.3 | **10 de 10** | Nenhuma | — |
 | Seg 23/11 | 1.4 | de 8 | | |
-| Seg 23/11 | Revisão: erradas dos Tópicos 5 e 4 |  | | |
-| Ter 24/11 | Revisão: erradas do Tópico 3 |  | | |
-| Qua 25/11 | Revisão: erradas dos Tópicos 2 e 1 e as reincidências |  | | |
 
 ---
 
@@ -281,3 +280,26 @@ Aspas: o caderno tem aspas curvas (`‘test’`) nos comandos. No terminal, só 
 **Lição 2.3, lição 2 (5 de 5).** Certos. Grafia: é `~michael/Music`. No G2 A, a primeira linha do `ls -lrS` é um dos diretórios de `4.0K`, porque o `-S` ordena todas as entradas, inclusive diretórios; o primeiro **arquivo comum** é o `scary.jpg`, como você escreveu.
 
 **Os pontos e hífens separados.** No E3 apareceu `- -` no lugar de `--`, como já tinha aparecido `. . .` no lugar de `...` (LPI 3.2, lição 2) e `{1. .5}` no lugar de `{1..5}` (LPI 2.1, lição 1). Parece ser para o Notion não transformar `--` em travessão e `...` em reticências. Se for isso, as duas lições sobem para 9 de 9 e 6 de 6, e esses três casos saem da reincidência de forma. Uma saída simples: no Notion, escreva os comandos dentro de crase (`` `{1..5}` ``) ou num bloco de código, que ele não altera.
+
+### 2.1 (lição 2), 2.2, 2.4, 1.1, 1.2 e 1.3 — fim de semana de 20 a 22/11
+
+**Tópico 1 (1.1, 1.2 e 1.3): 29 de 29.** Sem erro nenhum, inclusive as licenças do E1 da 1.3 (Apache 2.0, GPLv2, CC BY-SA, MPL 2.0 e GPLv3) e a diferença entre agregado e obra derivada sob a GPLv3 (E3). É o tópico mais firme.
+
+**Lição 2.4 (12 de 12).** Certos, com destaque para o G6 (`log_f_201A_Wednesday_01.txt`), o `cp -u` e a leitura do `rm -ri / *`. Grafia no G5: o padrão é `old*` (estava "olda*").
+
+**Lição 2.1, lição 2 (8 de 9).**
+
+| Exercício | Observação |
+| --- | --- |
+| G2 | Certo na ideia; escreva o valor junto: `export ORDER=desc` |
+| E3 | **Errado pela forma.** `ME= "$ME:HOME"` tem dois problemas: o espaço depois do `=` (o shell entende `ME=` vazio e tenta executar o resto como comando) e a falta do `$` antes de `HOME`, que sairia como o texto `HOME`. Certo: `ME="$ME:$HOME"` |
+| E4 | Grafia: o exercício pede `today`, minúsculo; `TODAY` é outra variável, porque o shell diferencia maiúsculas |
+
+**Lição 2.2 (8 de 11).**
+
+| Exercício | Observação |
+| --- | --- |
+| G2 | **Errado.** O `ls -t` ordena do **mais recente para o mais antigo**; o contrário é `ls -tr`. É o mesmo ponto da Q9 do simulado 07, que você acertou |
+| E1 | **Incompleto.** O `cd` é interno, e a ajuda dele é com **`help cd`**: faltou a segunda metade da pergunta |
+| E5 | **Incompleto.** Faltou o alvo: `rm -r User` |
+| Demais | Certos, inclusive o `locate -l 3 README`, o `sudo updatedb` e o `find User -type f -name '*[0-9]'` |
