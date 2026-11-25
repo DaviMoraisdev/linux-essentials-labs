@@ -23,6 +23,8 @@ São as **24 lições** do material oficial, com cerca de **205 exercícios** (G
 
 ## 1. Calendário
 
+**Encerrado em 24/11**, a seu pedido: na última semana, só simulados e revisões. Ficam feitas 23 das 24 lições; a **1.4 saiu do plano**. As linhas de revisão abaixo são os blocos do guia `revisao-final.md`, não exercícios da LPI.
+
 **Refeito em 22/11**, para a semana da prova. As 23 lições de 1.1 a 5.4 estão feitas; falta a **1.4**, na segunda 23/11. De 23 a 27/11, no lugar da revisão das erradas lição por lição, entram os quatro blocos do guia `revisao-final.md` (R1 a R4), um por dia, e na sexta a revisão das erradas dos simulados.
 
 | Dia | Lições | Exercícios (aprox.) | Páginas dos exercícios | Páginas das respostas |
@@ -39,12 +41,11 @@ São as **24 lições** do material oficial, com cerca de **205 exercícios** (G
 | Sex 20/11 | 2.1, lição 2 e 2.2 (feito) | 9 + 11 | 94–95 · 107–109 | 97–98 · 111–114 |
 | Sáb 21/11 | 2.4 e 1.1 (feito) | 12 + 8 | 162–164 · 8–9 | 167–170 · 11–13 |
 | Dom 22/11 | 1.2 e 1.3 (feito) | 11 + 10 | 30–32 · 48–49 | 34–36 · 51–52 |
-| Seg 23/11 | 1.4 | 8 | 66–68 | 70–72 |
-| Seg 23/11 | **Revisão R1: Tópico 5 (revisao-final.md)** | Guia `revisao-final.md` (seção 0) | — | — |
-| Ter 24/11 | **Revisão R2: Tópico 3 (revisao-final.md)** | Guia `revisao-final.md` (seção 0) | — | — |
-| Qua 25/11 | **Revisão R3: Tópico 4 (revisao-final.md)** | Guia `revisao-final.md` (seção 0) | — | — |
-| Qui 26/11 | **Revisão R4: Tópicos 1 e 2 (revisao-final.md)** | Guia `revisao-final.md` (seção 0) | — | — |
-| Sex 27/11 | **Revisão: as erradas dos simulados 09 a 12** | Seções 7 e 8 do `revisao-final.md` | — | — |
+| Ter 24/11 | **Revisão R1: Tópico 5 (revisao-final.md)** | As erradas da seção 3 | — | — |
+| Qua 25/11 | **Revisão R2: Tópico 3 (revisao-final.md)** | As erradas da seção 3 | — | — |
+| Qui 26/11 | **Revisão R3: Tópico 4 (revisao-final.md)** | As erradas da seção 3 | — | — |
+| Sex 27/11 | **Revisão R4: Tópicos 1 e 2 (revisao-final.md)** | As erradas da seção 3 | — | — |
+| Sáb 28/11 | **Revisão: as erradas dos simulados 09 a 11** | As erradas da seção 3 | — | — |
 
 As páginas são as impressas no rodapé do PDF.
 
@@ -57,7 +58,7 @@ As páginas são as impressas no rodapé do PDF.
 | 1.1 | A evolução do Linux e sistemas operacionais populares | G5 E3 | Sáb 21/11 |
 | 1.2 | Principais aplicações open source | G7 E4 | Dom 22/11 |
 | 1.3 | Software open source e suas licenças | G5 E5 | Dom 22/11 |
-| 1.4 | Habilidades ICT e trabalhando no Linux | G5 E3 | Seg 23/11 |
+| 1.4 | Habilidades ICT e trabalhando no Linux | G5 E3 | Saiu em 24/11 |
 | 2.1, lição 1 | O básico sobre a linha de comando | G3 E3 | Ter 17/11 |
 | 2.1, lição 2 | O básico sobre a linha de comando (variáveis) | G4 E5 | Sex 20/11 |
 | 2.2 | Usando a linha de comando para conseguir ajuda | G6 E5 | Sex 20/11 |
@@ -110,7 +111,7 @@ Só as erradas. "Reincidência" quando o mesmo erro já apareceu em simulado, mi
 | Sáb 21/11 | 1.1 | **8 de 8** | Nenhuma | — |
 | Dom 22/11 | 1.2 | **11 de 11** | Nenhuma | — |
 | Dom 22/11 | 1.3 | **10 de 10** | Nenhuma | — |
-| Seg 23/11 | 1.4 | de 8 | | |
+| — | 1.4 | — | Saiu do plano em 24/11 | — |
 
 ---
 
