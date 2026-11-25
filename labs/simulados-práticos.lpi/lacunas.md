@@ -446,6 +446,8 @@ O `/etc/shadow` (série 01, item 5) saiu da lista: foi escrito certo, de memóri
 
 </details>
 
+> **As séries 20 a 24 saíram do plano em 24/11**, a seu pedido: na última semana, só simulados e revisões. Ficam aqui como material opcional; não precisam ser enviadas.
+
 ## Série 20
 
 1. *(Tópico 5)* Forma simbólica, com nove caracteres, de `751`: ______
@@ -593,8 +595,8 @@ Respondidas com a série 08, na quarta 11/11: **2 de 2** (`2744` e `chgrp`). Os 
 | 17 | 21/11 | **5 de 5** | Nenhuma (`permissiva` aceito) | — |
 | 18 | 22/11 | **5 de 5** | Nenhuma | — |
 | 19 | 22/11 | **5 de 5** | Nenhuma | — |
-| 20 | | de 5 | | |
-| 21 | | de 5 | | |
-| 22 | | de 5 | | |
-| 23 | | de 5 | | |
-| 24 | | de 5 | | |
+| 20 | — | Saiu do plano em 24/11 (opcional) | — | — |
+| 21 | — | Saiu do plano em 24/11 (opcional) | — | — |
+| 22 | — | Saiu do plano em 24/11 (opcional) | — | — |
+| 23 | — | Saiu do plano em 24/11 (opcional) | — | — |
+| 24 | — | Saiu do plano em 24/11 (opcional) | — | — |
