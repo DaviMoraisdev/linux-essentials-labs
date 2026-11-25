@@ -69,11 +69,11 @@ Calendário refeito em 26/10 para a prova de 30/11 (`PLANO.md`, seção 7, e `la
 | 6 | Sex 13/11 | `simulado-06` (escrito em 12/11) | 28 ou mais | **35** | **87,5%** | 1 | **34** | Não informado | **Concluído, acima da meta** (fácil demais: ver a nota abaixo) |
 | 7 | Ter 17 e qui 19/11 | `simulado-07` (nível 1 do padrão novo) | 28 ou mais | **31** | **77,5%** | 0 | **31** | Não informado | **Concluído, acima da meta** (primeiro do padrão novo) |
 | 8 | Dom 22/11 | `simulado-08` (nível 2) | 28 ou mais · ponto de ajuste | **31** | **77,5%** | 0 | **31** | Não informado | **Concluído, acima da meta** |
-| 9 | Seg 23/11 | `simulado-09` (nível 2, pronto) | 28 ou mais · ponto de ajuste | | | | | | A fazer |
-| 10 | **Ter 24/11** | `simulado-10` (nível 3, pronto) | 28 ou mais · **ponto de ajuste** | | | | | | A fazer |
-| 11 | Qua 25/11 | `simulado-11` (calibrado como a prova) | 28 ou mais | | | | | | A fazer |
+| 9 | **Ter 24/11** | `simulado-09` (nível 2, pronto) | 28 ou mais · ponto de ajuste | | | | | | A fazer |
+| 10 | **Qua 25/11** | `simulado-10` (nível 3, pronto) | 28 ou mais · **ponto de ajuste** | | | | | | A fazer |
+| 11 | **Qui 26/11** | `simulado-11` (calibrado como a prova, o final) | 28 ou mais | | | | | | A fazer |
 | 5 | — | `simulado-05` (formato antigo) | — | | | | | | **Fora do plano desde 22/11** |
-| 12 | **Qui 26/11** | `simulado-12` (calibrado, o final) | 28 ou mais | | | | | | A fazer |
+| 12 | — | Saiu em 24/11 (a seg 23/11 ficou sem estudo) | — | | | | | | **Fora do plano desde 24/11** |
 
 **Nota sobre o simulado 06.** O resultado é real, mas o simulado ficou mais fácil que a prova: foi escrito para retestar os erros do 04 e cobrou vários conceitos de forma direta. A partir do 07, as questões são de situação (seção 8.1 da `operação_pratica.md`), e é normal os acertos caírem um pouco.
 
@@ -505,3 +505,4 @@ São erros de conteúdo já estudado. Desde 26/10 eles têm treino próprio na V
 | 18/11/2026 | Terça 17/11: simulado 07 até a Q14, LPI 3.3 L2 (3 de 3) e 2.1 L1 (5 de 6), aulas 59 a 63, lacunas 13 (5 de 5, série 10 fechada). Plano ajustado: o 07 termina em 18/11, e cada simulado seguinte anda um dia (curso 1 em 19, 08 em 20, 09 em 21, 10 e ponto de ajuste em 22, curso 2 em 23, 11 em 24, 12 em 25); simulado 05 opcional em 27/11 |
 | 19/11/2026 | Simulado 07 completo: **31 de 40, 31 firmes** (nenhum chute marcado); Tópico 3 com 6 de 9; curso fechado (aulas 63 e 64); LPI 2.3 lições 1 (7 de 7) e 2 (5 de 5); lacunas 15 (5 de 5). Simulados do curso para 23 e 26/11; M6 opcional em 27/11 |
 | 22/11/2026 | Fim de semana: simulado 08 **31 de 40, 31 firmes** (Tópico 3 com 5 de 9); LPI 1.1, 1.2 e 1.3 (29 de 29), 2.4 (12 de 12), 2.1 L2 (8 de 9) e 2.2 (8 de 11); lacunas 14 e 16 a 19 (25 de 25). Semana da prova refeita: 09 (23), 10 e ponto de ajuste (24), 11 e 12 calibrados (25 e 26), simulados do curso (27 e 28); guia `revisao-final.md` com quatro blocos de revisão |
+| 24/11/2026 | Segunda 23/11 sem estudo: tudo andou um dia e o simulado 12 saiu (o 11 passa a ser o final). À noite, a seu pedido, a semana ficou só com simulados e revisões: saíram a LPI 1.4 e as lacunas 20 a 24; dia A de cerca de 2h30 |
