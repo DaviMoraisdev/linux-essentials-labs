@@ -1,6 +1,6 @@
 # Simulado 09 — LPI Linux Essentials (010-160)
 
-Simulado no formato do exame, versão 1.6. Escrito em 20/11/2026 para o **sábado 21/11**. É o segundo de **nível 2**: cada questão pede dois passos, juntando dois comandos ou dois conceitos. Conta para o ponto de ajuste de 22/11. Nenhuma questão repete os simulados 02 a 08, os reforços ou os Exercícios da LPI.
+Simulado no formato do exame, versão 1.6. Escrito em 20/11/2026; feito no **sábado 28/11** (data ajustada em 26/11). É o segundo de **nível 2**: cada questão pede dois passos, juntando dois comandos ou dois conceitos. O ponto de ajuste saiu do plano em 26/11. Nenhuma questão repete os simulados 02 a 08, os reforços ou os Exercícios da LPI.
 
 Cinco alternativas por questão, **cinco questões de escolher duas** e cinco lacunas. As questões são escritas sobre os objetivos oficiais; não são questões reais do exame.
 
@@ -462,7 +462,7 @@ echo "fim $#"
 
 | Campo | Valor |
 | --- | --- |
-| Data | 21/11/2026 |
+| Data | 28/11/2026 |
 | Tempo gasto | |
 | Acertos | de 40 |
 | Questões marcadas como chute | |
