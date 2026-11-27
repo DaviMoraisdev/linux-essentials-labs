@@ -41,11 +41,8 @@ São as **24 lições** do material oficial, com cerca de **205 exercícios** (G
 | Sex 20/11 | 2.1, lição 2 e 2.2 (feito) | 9 + 11 | 94–95 · 107–109 | 97–98 · 111–114 |
 | Sáb 21/11 | 2.4 e 1.1 (feito) | 12 + 8 | 162–164 · 8–9 | 167–170 · 11–13 |
 | Dom 22/11 | 1.2 e 1.3 (feito) | 11 + 10 | 30–32 · 48–49 | 34–36 · 51–52 |
-| Ter 24/11 | **Revisão R1: Tópico 5 (revisao-final.md)** | As erradas da seção 3 | — | — |
-| Qua 25/11 | **Revisão R2: Tópico 3 (revisao-final.md)** | As erradas da seção 3 | — | — |
-| Qui 26/11 | **Revisão R3: Tópico 4 (revisao-final.md)** | As erradas da seção 3 | — | — |
-| Sex 27/11 | **Revisão R4: Tópicos 1 e 2 (revisao-final.md)** | As erradas da seção 3 | — | — |
-| Sáb 28/11 | **Revisão: as erradas dos simulados 09 a 11** | As erradas da seção 3 | — | — |
+| Qui 26/11 | **Revisão: erradas do simulado 11 (seções 7 e 8)** | As erradas da seção 3 | — | — |
+| Sex 27/11 | **Revisão: erradas dos simulados 10 e 11** | As erradas da seção 3 | — | — |
 
 As páginas são as impressas no rodapé do PDF.
 
