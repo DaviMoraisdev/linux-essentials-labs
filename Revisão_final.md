@@ -1,17 +1,14 @@
 # Revisão final — Linux Essentials 010-160
 
-Guia de revisão da última semana antes da prova de **segunda 30/11/2026**. Reúne o que mais cai, por tópico, e os seus erros que se repetiram nos simulados 01 a 08. Escrito em 22/11/2026.
+Guia de revisão da última semana antes da prova de **segunda 30/11/2026**. Reúne o que mais cai, por tópico, e os seus erros que se repetiram nos simulados 01 a 08. Escrito em 22/11/2026; datas ajustadas em 24/11.
 
 ## 0. Como usar
 
 | Dia | Bloco | Seções deste guia |
 | --- | --- | --- |
-| Seg 23/11 | **R1 — Segurança e permissões** (Tópico 5) | 6 e 7 |
-| Ter 24/11 | **R2 — Linha de comando e scripts** (Tópico 3) | 4 e 7 |
-| Qua 25/11 | **R3 — Sistema operacional e rede** (Tópico 4) | 5 e 7 |
-| Qui 26/11 | **R4 — Comunidade e navegação** (Tópicos 1 e 2) | 2, 3 e 7 |
-| Sex 27/11 | Refazer as erradas dos simulados 09 a 12 | 7 e 8 |
-| Sáb 28/11 | Só a cola da seção 9, depois do simulado 2 do curso | 9 |
+| 24 a 26/11 | **R1 a R4** (Tópicos 5, 3, 4, 1 e 2): **feitos** por leitura e anotações manuais | 2 a 7 |
+| Qui 26 e sex 27/11 | Depois de cada simulado: refazer as erradas e reler as linhas correspondentes | 7 e 8 |
+| Sáb 28/11 | Depois do simulado 09: só a cola | 9 |
 | Dom 29/11 | Descanso. No máximo, 15 minutos na seção 9 | 9 |
 
 Em cada bloco: leia a seção (20 min), feche o guia e escreva de memória, numa folha, as linhas marcadas como **cai sempre** (10 min); depois rode na VM os comandos que errar (20 min).
