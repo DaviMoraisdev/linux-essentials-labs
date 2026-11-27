@@ -45,6 +45,17 @@ Este arquivo substitui os arquivos semanais a partir de 05/11. O registro de cad
 
 ## 3. Calendário
 
+**Ajustado em 26/11.** De 24 a 26/11 saíram os **dois simulados do curso** (79% e 89%) e as revisões R1 a R4, por leitura e anotações manuais. Os simulados 09, 10 e 11 ficam um por dia até sábado, com o calibrado primeiro.
+
+| Mudança | Antes (24/11) | Agora (26/11) |
+|---|---|---|
+| Simulados do curso | Sex 27 e sáb 28/11 | **Feitos**: o 1 com **79%** e o 2 com **89%** |
+| Revisões R1 a R4 | Uma por dia, de 24 a 27/11 | **Feitas** por leitura e anotações manuais |
+| Simulado 11 (calibrado, final) | Qui 26/11 | **Qui 26/11** (escrito hoje) |
+| Simulado 10 | Qua 25/11 | **Sex 27/11** |
+| Simulado 09 | Ter 24/11 | **Sáb 28/11**, de manhã (o mais leve, antes do descanso) |
+| Ponto de ajuste | Qua 25/11 | **Saiu**: os simulados do curso já deram a medida de fora, e não há mais dias para mudar o foco |
+
 **Reduzido em 24/11 à noite**, a seu pedido: na última semana, **só simulados e revisões**.
 
 | Mudança | Antes (24/11, de manhã) | Agora (24/11, à noite) |
@@ -141,15 +152,15 @@ Os simulados 08 (sex 20), 09 (sáb 21), 10 com o ponto de ajuste (dom 22), 11 (t
 | Sáb 21/11 | A | Fim de semana: LPI 2.4 e 1.1 e lacunas 17 (feitos). O simulado 09 passou para a seg 23/11 | — | 2.4; 1.1 (feito) | Série 17 |
 | Dom 22/11 | A | **Simulado 08** (31 de 40) · LPI 1.2 e 1.3 · lacunas 18 e 19 (feitos). O simulado 10 passou para a ter 24/11 | — | 1.2; 1.3 (feito) | Séries 18 e 19 |
 | Seg 23/11 | A | Dia sem estudo. O simulado 09, a LPI 1.4, a revisão R1 e as lacunas 20 passaram para a ter 24/11 | — | — | — |
-| **Ter 24/11** | A | **Simulado 09** (nível 2) · **revisão R1: Tópico 5** (`revisao-final.md`, seções 6 e 7). A LPI 1.4 e as lacunas saíram do plano em 24/11 | — | Revisão R1: Tópico 5 (revisao-final.md) | — |
-| **Qua 25/11** | A | **Simulado 10** (nível 3) — primeira tarefa · **ponto de ajuste** (média de firmes dos simulados 08, 09 e 10) · **revisão R2: Tópico 3** (seções 4 e 7) | — | Revisão R2: Tópico 3 (revisao-final.md) | — |
-| **Qui 26/11** | A | **Simulado 11** (calibrado como a prova, o final) · **revisão R3: Tópico 4** (seções 5 e 7) | — | Revisão R3: Tópico 4 (revisao-final.md) | — |
-| **Sex 27/11** | A | **Simulado 1 do curso** — primeira tarefa · **revisão R4: Tópicos 1 e 2** (seções 2, 3 e 7) | — | Revisão R4: Tópicos 1 e 2 (revisao-final.md) | — |
-| Sáb 28/11 | Leve | **Simulado 2 do curso**, de manhã · refazer, sem consulta, as erradas dos simulados 09 a 11 (seções 7 e 8) · cola da seção 9 · parar no meio da tarde | — | Revisão: as erradas dos simulados 09 a 11 | — |
+| Ter 24/11 | A | **Simulados 1 e 2 do curso** (79% e 89%) · revisões R1 a R4 por leitura e anotações manuais, feitos de 24 a 26/11. Os simulados 09 e 10 passaram para sex 27 e sáb 28/11 | — | — (feito) | — |
+| Qua 25/11 | A | Contado na ter 24/11 (simulados do curso e revisões por leitura). O ponto de ajuste saiu: os simulados do curso já deram a medida de fora | — | — (feito) | — |
+| **Qui 26/11** | A | **Simulado 11** (calibrado como a prova, o final) — primeira tarefa · correção · refazer as erradas · seções 7 e 8 do `revisao-final.md` | — | Revisão: erradas do simulado 11 (seções 7 e 8) | — |
+| **Sex 27/11** | A | **Simulado 10** (nível 3) — primeira tarefa · correção · refazer as erradas dos simulados 10 e 11 | — | Revisão: erradas dos simulados 10 e 11 | — |
+| Sáb 28/11 | Leve | **Simulado 09** (nível 2), de manhã · correção · cola da seção 9 · parar no começo da tarde | — | — | — |
 | Dom 29/11 | Descanso | Descanso antes da prova · no máximo 15 minutos na cola da seção 9 | — | — | — |
 | **Seg 30/11** | Prova | **PROVA — Linux Essentials 010-160** | — | — | — |
 
-**Contas (de 24 a 28/11, refeitas em 24/11):** 5 simulados completos, um por dia (09, 10, 11, 1 do curso e 2 do curso), os quatro blocos do guia `revisao-final.md` (R1 a R4), a revisão das erradas no sábado e o domingo de descanso. Sem Exercícios da LPI e sem lacunas.
+**Contas (de 26 a 28/11, refeitas em 26/11):** 3 simulados, um por dia (11, 10 e 09), cada um com correção e as erradas refeitas; a cola no sábado e o domingo de descanso. Os simulados do curso e as revisões R1 a R4 já foram feitos.
 
 **Se um dia cair**, ele não é reposto. O dia seguinte segue o calendário, e a regra 1 vale aqui também.
 
@@ -341,8 +352,10 @@ São os erros que voltaram depois de corrigidos. É a lista que guia os treinos 
 | Linha de base | 03 (05/11) | **20** (feito) |
 | Primeira semana | 04 (12/11) | **24 ou mais** |
 | Segunda semana | 06 (13/11: **34**) e 07 (19/11, nível 1: **31**) | **28 ou mais** |
-| Terceira semana | 08 (22/11: **31**), 09 (23/11) e 10 (24/11), que contam para o ponto de ajuste | **28 ou mais** |
-| Final | 11 (26/11), calibrado como a prova, e os dois do curso (27 e 28/11); o 12 saiu em 24/11 | **28 ou mais**; acima de 26 já é aprovação |
+| Terceira semana | 08 (22/11: **31**) | **28 ou mais** |
+| Final | Curso 1 (**79%**) e curso 2 (**89%**), de 24 a 26/11; 11 (qui 26, calibrado), 10 (sex 27) e 09 (sáb 28); o 12 saiu em 24/11 | **28 ou mais**; acima de 26 já é aprovação |
+
+**O ponto de ajuste saiu em 26/11**: os dois simulados do curso (79% e 89%) já mostraram o nível, acima do corte, e não sobram dias para mudar o foco. O texto abaixo fica como registro.
 
 **A prova está comprada para 30/11** (confirmado em 09/11). O sábado 21/11 deixa de ser decisão de data e vira **ponto de ajuste**: a média de acertos firmes dos simulados 08, 09 e 10 define o foco dos últimos dias.
 
@@ -409,11 +422,10 @@ Fontes consultadas: [questões de exemplo do 010-160 (EduSum)](https://www.edusu
 | 19/11 | A | Simulado 07 completo · aulas 63 e 64 (curso fechado) · LPI 2.3, lições 1 e 2 | **31 de 40** | **31** (nenhum chute marcado) | Série 15: **5 de 5** | 2.3, lição 1: **7 de 7** · 2.3, lição 2: **5 de 5** | `mv` de diretório (Q11), `info` (Q13), `sort` sem `-n` (Q20), `grep -E` (Q22), `-z` (Q24), load average (Q30), `/24` (Q32), `w` do grupo (Q35) |
 | 20 a 22/11 | A | Simulado 08 (no domingo) · LPI 2.1 L2, 2.2, 2.4, 1.1, 1.2 e 1.3 · lacunas 14 e 16 a 19 (simulados 09 e 10 para 23 e 24/11) | **31 de 40** | **31** (nenhum chute marcado) | Séries 14, 16, 17, 18 e 19: **5 de 5** cada | 2.1 L2: **8 de 9** · 2.2: **8 de 11** · 2.4: **12 de 12** · 1.1: **8 de 8** · 1.2: **11 de 11** · 1.3: **10 de 10** | Cookies (Q6), `cd ..` (Q8), `uniq` (Q18), quinta linha (Q22), `$#` (Q23), `-d`/`-f` (Q24), gateway (Q32), conta contra arquivo (Q35), SGID (Q36) |
 | 23/11 | — | Não realizado (tudo passou um dia; o simulado 12 saiu) | — | — | — | — | — |
-| 24/11 | A | Simulado 09 · revisão R1 (Tópico 5); a LPI 1.4 e as lacunas saíram do plano | de 40 |  | — | — | |
-| 25/11 | A | Simulado 10 · ponto de ajuste · revisão R2 (Tópico 3) | de 40 |  | — | — | |
-| 26/11 | A | Simulado 11 (calibrado, final) · revisão R3 (Tópico 4) | de 40 |  | — | — | |
-| 27/11 | A | Simulado 1 do curso · revisão R4 (Tópicos 1 e 2) | Curso: de |  | — | — | |
-| 28/11 | Leve | Simulado 2 do curso · erradas dos simulados 09 a 11 · cola | Curso: de |  | — | — | |
+| 24 a 26/11 | A | Simulados 1 e 2 do curso · revisões R1 a R4 por leitura e anotações manuais | Curso 1: **79%** · curso 2: **89%** | — | — | — | — |
+| 26/11 | A | Simulado 11 (calibrado, final) · erradas | de 40 |  | — | — | |
+| 27/11 | A | Simulado 10 · erradas dos simulados 10 e 11 | de 40 |  | — | — | |
+| 28/11 | Leve | Simulado 09 · cola | de 40 |  | — | — | |
 
 ### Treinos na VM — o que saiu diferente do previsto
 
